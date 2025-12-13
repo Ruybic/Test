@@ -2,88 +2,87 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>osu! Iraq — Recent Scores</title>
-
-<style>
-body {
-  background: #eaeaea;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-#container {
-  width: 900px;
-  margin: 20px auto;
-  background: #ffffff;
-  border: 2px solid #999;
-}
-header {
-  background: #f2f2f2;
-  border-bottom: 2px solid #999;
-  padding: 10px;
-}
-.score {
-  border-bottom: 1px solid #ccc;
-  padding: 10px;
-  overflow: hidden;
-}
-.cover {
-  float: left;
-  width: 160px;
-  height: 90px;
-  background: #ccc;
-  margin-right: 10px;
-  text-align: center;
-  line-height: 90px;
-  font-size: 11px;
-}
-.info {
-  overflow: hidden;
-}
-.player {
-  font-weight: bold;
-}
-.meta {
-  font-size: 12px;
-}
-.time {
-  font-size: 11px;
-  color: #666;
-}
-footer {
-  font-size: 11px;
-  text-align: center;
-  padding: 6px;
-  background: #f2f2f2;
-}
-</style>
+<title>FancyToastOsu! — Daily Scores</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <div id="container">
-<header>
-  <h2>osu! Recent Scores — Iraq</h2>
-  <small>Static test view (JSON-powered)</small>
-</header>
+  <header>
+    <h1>FancyToastOsu! — osu! Iraq Daily Scores</h1>
+    <small id="lastUpdated">Last updated: --</small>
+  </header>
 
-<!-- This is static HTML.
-In real use you would render this from RecentScores.json -->
-<div class="score">
-  <div class="cover">map cover</div>
-  <div class="info">
-    <div class="player">PlayerName (IQ)</div>
-    <div class="meta">
-      Rank: S | Acc: 98.45% | Combo: 1234x | HD HR | 245pp
-    </div>
-    <div class="time">2025-01-01 14:32 UTC</div>
-  </div>
+  <section id="todayScores">
+    <h2>Today’s Scores</h2>
+    <div id="scoresList">Loading...</div>
+  </section>
+
+  <section id="calendarSection">
+    <h2>Previous Days</h2>
+    <div id="calendar"></div>
+  </section>
+
+  <footer>
+    Data powered by osu! API v2 • Archived daily
+  </footer>
 </div>
 
-<footer>
-  Data updated automatically via GitHub Actions
-</footer>
-</div>
+<script>
+/* --------------------------
+   Simple calendar + daily fetch
+-----------------------------*/
+
+// Utility: format ISO date to YYYY-MM-DD
+function formatDate(d){return d.toISOString().split('T')[0];}
+
+// Load index.json to get available dates
+fetch('data/index.json').then(r=>r.json()).then(idx=>{
+  const calendar = document.getElementById('calendar');
+  idx.available_dates.sort((a,b)=>b.localeCompare(a)).forEach(date=>{
+    const btn = document.createElement('button');
+    btn.textContent = date;
+    btn.onclick = ()=>loadDate(date);
+    calendar.appendChild(btn);
+  });
+
+  // Load today if exists, fallback to latest available
+  const today = formatDate(new Date());
+  if(idx.available_dates.includes(today)) loadDate(today);
+  else loadDate(idx.available_dates[idx.available_dates.length-1]);
+});
+
+// Load scores for a given date
+function loadDate(date){
+  fetch(`data/${date.slice(0,4)}/${date.slice(5,7)}/${date.slice(8,10)}.json`)
+    .then(r=>r.json())
+    .then(data=>{
+      document.getElementById('lastUpdated').textContent = 'Last updated: ' + data.generated_at;
+      const container = document.getElementById('scoresList');
+      container.innerHTML = '';
+      if(!data.scores || data.scores.length===0){
+        container.textContent = 'No scores for this day.';
+        return;
+      }
+      data.scores.forEach(s=>{
+        const div = document.createElement('div');
+        div.className = 'score';
+        div.innerHTML = `
+          <div class="cover"><img src="${s.beatmapset.cover}" alt="map cover"></div>
+          <div class="info">
+            <div class="player">${s.user} (${s.country})</div>
+            <div class="meta">
+              Rank: ${s.rank} | Acc: ${(s.accuracy*100).toFixed(2)}% | Combo: ${s.combo}x | Mods: ${s.mods.join(', ')} | ${s.pp}pp
+            </div>
+            <div class="mapTitle">${s.beatmapset.title}</div>
+            <div class="time">Submitted: ${s.created_at}</div>
+          </div>
+        `;
+        container.appendChild(div);
+      });
+    });
+}
+</script>
 
 </body>
 </html>

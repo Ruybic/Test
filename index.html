@@ -33,13 +33,13 @@
    Simple calendar + daily fetch
 -----------------------------*/
 
-// Base path for GitHub Pages: auto-detect
-const BASE_PATH = location.pathname.replace(/\/[^/]*$/, ''); 
-// example: "/REPO_NAME/" if hosted as github.io/REPO_NAME/
+// Base path for GitHub Pages
+const BASE_PATH = '/OsuIraqRecentScores';
 
+// Utility: format ISO date to YYYY-MM-DD
 function formatDate(d){return d.toISOString().split('T')[0];}
 
-// Load index.json
+// Load index.json to get available dates
 fetch(`${BASE_PATH}/data/index.json`).then(r=>r.json()).then(idx=>{
   const calendar = document.getElementById('calendar');
   if(!idx.available_dates || idx.available_dates.length===0){
@@ -55,7 +55,7 @@ fetch(`${BASE_PATH}/data/index.json`).then(r=>r.json()).then(idx=>{
     calendar.appendChild(btn);
   });
 
-  // Load today if exists, fallback to latest
+  // Load today if exists, fallback to latest available
   const today = formatDate(new Date());
   if(idx.available_dates.includes(today)) loadDate(today);
   else loadDate(idx.available_dates[idx.available_dates.length-1]);

@@ -1,0 +1,141 @@
+{
+  "date": "2025-12-15",
+  "country": "IQ",
+  "generated_at": "2025-12-15T01:43:52.498Z",
+  "scores": [
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4954259659,
+      "rank": "A",
+      "accuracy": 0.9808743169398907,
+      "pp": 231.967,
+      "mods": [
+        "HD"
+      ],
+      "combo": 322,
+      "created_at": "2025-12-14T17:35:13Z",
+      "beatmapset": {
+        "id": 413117,
+        "title": "Ghost Rule",
+        "cover": "https://assets.ppy.sh/beatmaps/413117/covers/card.jpg?1650685850"
+      }
+    },
+    {
+      "user": "Biscuits0",
+      "user_id": 23843313,
+      "country": "IQ",
+      "score_id": 4953934111,
+      "rank": "A",
+      "accuracy": 0.9862700228832952,
+      "pp": 307.406,
+      "mods": [
+        "HD"
+      ],
+      "combo": 206,
+      "created_at": "2025-12-14T02:38:53Z",
+      "beatmapset": {
+        "id": 863227,
+        "title": "Lonely Go! (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/863227/covers/card.jpg?1650672519"
+      }
+    },
+    {
+      "user": "Biscuits0",
+      "user_id": 23843313,
+      "country": "IQ",
+      "score_id": 4953933459,
+      "rank": "A",
+      "accuracy": 0.9794050343249427,
+      "pp": 248.139,
+      "mods": [
+        "HD"
+      ],
+      "combo": 259,
+      "created_at": "2025-12-14T02:36:45Z",
+      "beatmapset": {
+        "id": 863227,
+        "title": "Lonely Go! (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/863227/covers/card.jpg?1650672519"
+      }
+    },
+    {
+      "user": "Biscuits0",
+      "user_id": 23843313,
+      "country": "IQ",
+      "score_id": 4953932954,
+      "rank": "A",
+      "accuracy": 0.9778794813119756,
+      "pp": 240.796,
+      "mods": [
+        "HD"
+      ],
+      "combo": 197,
+      "created_at": "2025-12-14T02:35:03Z",
+      "beatmapset": {
+        "id": 863227,
+        "title": "Lonely Go! (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/863227/covers/card.jpg?1650672519"
+      }
+    },
+    {
+      "user": "Biscuits0",
+      "user_id": 23843313,
+      "country": "IQ",
+      "score_id": 4953932084,
+      "rank": "A",
+      "accuracy": 0.959613196814562,
+      "pp": 200.401,
+      "mods": [
+        "HD"
+      ],
+      "combo": 118,
+      "created_at": "2025-12-14T02:32:16Z",
+      "beatmapset": {
+        "id": 2281005,
+        "title": "It's a Monster House!",
+        "cover": "https://assets.ppy.sh/beatmaps/2281005/covers/card.jpg?1748967881"
+      }
+    },
+    {
+      "user": "Biscuits0",
+      "user_id": 23843313,
+      "country": "IQ",
+      "score_id": 4953931706,
+      "rank": "A",
+      "accuracy": 0.9254835039817975,
+      "pp": 157.593,
+      "mods": [
+        "HD"
+      ],
+      "combo": 227,
+      "created_at": "2025-12-14T02:30:59Z",
+      "beatmapset": {
+        "id": 2281005,
+        "title": "It's a Monster House!",
+        "cover": "https://assets.ppy.sh/beatmaps/2281005/covers/card.jpg?1748967881"
+      }
+    },
+    {
+      "user": "6xSeven",
+      "user_id": 29452442,
+      "country": "IQ",
+      "score_id": 0,
+      "rank": "C",
+      "accuracy": 0.7600819155639571,
+      "pp": null,
+      "mods": [
+        "HD",
+        "DT"
+      ],
+      "combo": 81,
+      "created_at": "2025-12-14T02:11:49Z",
+      "beatmapset": {
+        "id": 2186246,
+        "title": "Yomei Senkoku",
+        "cover": "https://assets.ppy.sh/beatmaps/2186246/covers/card.jpg?1749016814"
+      }
+    }
+  ]
+}

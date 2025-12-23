@@ -1,0 +1,94 @@
+{
+  "date": "2025-12-23",
+  "country": "IQ",
+  "generated_at": "2025-12-23T01:40:48.745Z",
+  "scores": [
+    {
+      "user": "ghoul534",
+      "user_id": 24991953,
+      "country": "IQ",
+      "score_id": 4958306289,
+      "rank": "B",
+      "accuracy": 0.8776795284030011,
+      "pp": 82.0941,
+      "mods": [],
+      "combo": 355,
+      "created_at": "2025-12-22T20:42:03Z",
+      "beatmapset": {
+        "id": 2237410,
+        "title": "FREEDOM DiVE",
+        "cover": "https://assets.ppy.sh/beatmaps/2237410/covers/card.jpg?1736838465"
+      }
+    },
+    {
+      "user": "ghoul534",
+      "user_id": 24991953,
+      "country": "IQ",
+      "score_id": 0,
+      "rank": "B",
+      "accuracy": 0.8703241895261845,
+      "pp": null,
+      "mods": [],
+      "combo": 120,
+      "created_at": "2025-12-22T20:29:05Z",
+      "beatmapset": {
+        "id": 2056689,
+        "title": "vampire",
+        "cover": "https://assets.ppy.sh/beatmaps/2056689/covers/card.jpg?1711152045"
+      }
+    },
+    {
+      "user": "ghoul534",
+      "user_id": 24991953,
+      "country": "IQ",
+      "score_id": 4958299657,
+      "rank": "A",
+      "accuracy": 0.9351145038167938,
+      "pp": 281.838,
+      "mods": [],
+      "combo": 191,
+      "created_at": "2025-12-22T20:27:17Z",
+      "beatmapset": {
+        "id": 2352698,
+        "title": "American Girls (Juztan Remix)",
+        "cover": "https://assets.ppy.sh/beatmaps/2352698/covers/card.jpg?1748119114"
+      }
+    },
+    {
+      "user": "ghoul534",
+      "user_id": 24991953,
+      "country": "IQ",
+      "score_id": 0,
+      "rank": "A",
+      "accuracy": 0.9507892293407614,
+      "pp": null,
+      "mods": [],
+      "combo": 332,
+      "created_at": "2025-12-22T20:25:48Z",
+      "beatmapset": {
+        "id": 2348430,
+        "title": "DT Jump Pack 2",
+        "cover": "https://assets.ppy.sh/beatmaps/2348430/covers/card.jpg?1748471420"
+      }
+    },
+    {
+      "user": "ghoul534",
+      "user_id": 24991953,
+      "country": "IQ",
+      "score_id": 0,
+      "rank": "C",
+      "accuracy": 0.7159722222222222,
+      "pp": null,
+      "mods": [
+        "NF"
+      ],
+      "combo": 30,
+      "created_at": "2025-12-22T20:24:00Z",
+      "beatmapset": {
+        "id": 1737583,
+        "title": "Money so big",
+        "cover": "https://assets.ppy.sh/beatmaps/1737583/covers/card.jpg?1662062488"
+      }
+    }
+  ]
+}

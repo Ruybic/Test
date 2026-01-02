@@ -1,0 +1,94 @@
+{
+  "date": "2026-01-02",
+  "country": "IQ",
+  "generated_at": "2026-01-02T01:43:19.119Z",
+  "scores": [
+    {
+      "user": "Biscuits0",
+      "user_id": 23843313,
+      "country": "IQ",
+      "score_id": 4963259320,
+      "rank": "A",
+      "accuracy": 0.9576388888888889,
+      "pp": 113.577,
+      "mods": [
+        "HD"
+      ],
+      "combo": 201,
+      "created_at": "2026-01-02T01:41:55Z",
+      "beatmapset": {
+        "id": 1264838,
+        "title": "Discommunication Alien (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/1264838/covers/card.jpg?1650701962"
+      }
+    },
+    {
+      "user": "6xSeven",
+      "user_id": 29452442,
+      "country": "IQ",
+      "score_id": 4962981032,
+      "rank": "B",
+      "accuracy": 0.9323937908496732,
+      "pp": null,
+      "mods": [],
+      "combo": 583,
+      "created_at": "2026-01-01T12:29:42Z",
+      "beatmapset": {
+        "id": 1036855,
+        "title": "Midorigo Queen Bee (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/1036855/covers/card.jpg?1666216805"
+      }
+    },
+    {
+      "user": "6xSeven",
+      "user_id": 29452442,
+      "country": "IQ",
+      "score_id": 0,
+      "rank": "C",
+      "accuracy": 0.8432263814616756,
+      "pp": null,
+      "mods": [],
+      "combo": 390,
+      "created_at": "2026-01-01T12:25:45Z",
+      "beatmapset": {
+        "id": 1531518,
+        "title": "The Words I Never Said",
+        "cover": "https://assets.ppy.sh/beatmaps/1531518/covers/card.jpg?1650108236"
+      }
+    },
+    {
+      "user": "6xSeven",
+      "user_id": 29452442,
+      "country": "IQ",
+      "score_id": 4962977504,
+      "rank": "A",
+      "accuracy": 0.9548022598870056,
+      "pp": 187.66,
+      "mods": [],
+      "combo": 593,
+      "created_at": "2026-01-01T12:17:30Z",
+      "beatmapset": {
+        "id": 703666,
+        "title": "Tree Village",
+        "cover": "https://assets.ppy.sh/beatmaps/703666/covers/card.jpg?1650665869"
+      }
+    },
+    {
+      "user": "6xSeven",
+      "user_id": 29452442,
+      "country": "IQ",
+      "score_id": 0,
+      "rank": "C",
+      "accuracy": 0.7517825311942959,
+      "pp": null,
+      "mods": [],
+      "combo": 385,
+      "created_at": "2026-01-01T12:10:21Z",
+      "beatmapset": {
+        "id": 1531518,
+        "title": "The Words I Never Said",
+        "cover": "https://assets.ppy.sh/beatmaps/1531518/covers/card.jpg?1650108236"
+      }
+    }
+  ]
+}

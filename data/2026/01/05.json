@@ -1,0 +1,120 @@
+{
+  "date": "2026-01-05",
+  "country": "IQ",
+  "generated_at": "2026-01-05T01:51:51.290Z",
+  "scores": [
+    {
+      "user": "Biscuits0",
+      "user_id": 23843313,
+      "country": "IQ",
+      "score_id": 6009715813,
+      "rank": "A",
+      "accuracy": 0.9154761904761904,
+      "pp": 182.884,
+      "mods": [
+        "HD",
+        "HR"
+      ],
+      "combo": 83,
+      "created_at": "2026-01-04T23:57:55Z",
+      "beatmapset": {
+        "id": 2472271,
+        "title": "Christmas Slop",
+        "cover": "https://assets.ppy.sh/beatmaps/2472271/covers/card.jpg?1765043571"
+      }
+    },
+    {
+      "user": "Biscuits0",
+      "user_id": 23843313,
+      "country": "IQ",
+      "score_id": 6009705305,
+      "rank": "A",
+      "accuracy": 0.9292307692307692,
+      "pp": 208.388,
+      "mods": [
+        "HD"
+      ],
+      "combo": 82,
+      "created_at": "2026-01-04T23:54:50Z",
+      "beatmapset": {
+        "id": 2472271,
+        "title": "Christmas Slop",
+        "cover": "https://assets.ppy.sh/beatmaps/2472271/covers/card.jpg?1765043571"
+      }
+    },
+    {
+      "user": "Biscuits0",
+      "user_id": 23843313,
+      "country": "IQ",
+      "score_id": 6009698694,
+      "rank": "A",
+      "accuracy": 0.9148717948717948,
+      "pp": 180.627,
+      "mods": [
+        "HD"
+      ],
+      "combo": 79,
+      "created_at": "2026-01-04T23:52:55Z",
+      "beatmapset": {
+        "id": 2472271,
+        "title": "Christmas Slop",
+        "cover": "https://assets.ppy.sh/beatmaps/2472271/covers/card.jpg?1765043571"
+      }
+    },
+    {
+      "user": "Biscuits0",
+      "user_id": 23843313,
+      "country": "IQ",
+      "score_id": 6009692983,
+      "rank": "A",
+      "accuracy": 0.9035897435897436,
+      "pp": 156.903,
+      "mods": [
+        "HD"
+      ],
+      "combo": 63,
+      "created_at": "2026-01-04T23:51:18Z",
+      "beatmapset": {
+        "id": 2472271,
+        "title": "Christmas Slop",
+        "cover": "https://assets.ppy.sh/beatmaps/2472271/covers/card.jpg?1765043571"
+      }
+    },
+    {
+      "user": "Biscuits0",
+      "user_id": 23843313,
+      "country": "IQ",
+      "score_id": 6009678875,
+      "rank": "A",
+      "accuracy": 0.9523809523809523,
+      "pp": 256.522,
+      "mods": [
+        "HD"
+      ],
+      "combo": 163,
+      "created_at": "2026-01-04T23:47:19Z",
+      "beatmapset": {
+        "id": 2472271,
+        "title": "Christmas Slop",
+        "cover": "https://assets.ppy.sh/beatmaps/2472271/covers/card.jpg?1765043571"
+      }
+    },
+    {
+      "user": "ghoul534",
+      "user_id": 24991953,
+      "country": "IQ",
+      "score_id": 4964601299,
+      "rank": "S",
+      "accuracy": 0.98989898989899,
+      "pp": 136.455,
+      "mods": [],
+      "combo": 174,
+      "created_at": "2026-01-04T20:51:56Z",
+      "beatmapset": {
+        "id": 503141,
+        "title": "Zen Zen Zense",
+        "cover": "https://assets.ppy.sh/beatmaps/503141/covers/card.jpg?1650642836"
+      }
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "date": "2026-01-06",
+  "country": "IQ",
+  "generated_at": "2026-01-06T01:43:23.348Z",
+  "scores": [
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4964999914,
+      "rank": "A",
+      "accuracy": 0.9373311723392761,
+      "pp": 176.163,
+      "mods": [
+        "DT"
+      ],
+      "combo": 295,
+      "created_at": "2026-01-05T18:44:31Z",
+      "beatmapset": {
+        "id": 2464472,
+        "title": "Take me home",
+        "cover": "https://assets.ppy.sh/beatmaps/2464472/covers/card.jpg?1765223187"
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4964993281,
+      "rank": "B",
+      "accuracy": 0.8848484848484849,
+      "pp": 173.375,
+      "mods": [
+        "HD",
+        "DT"
+      ],
+      "combo": 134,
+      "created_at": "2026-01-05T18:27:15Z",
+      "beatmapset": {
+        "id": 2390209,
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535"
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4964992905,
+      "rank": "A",
+      "accuracy": 0.9797979797979798,
+      "pp": 343.386,
+      "mods": [
+        "HD",
+        "DT"
+      ],
+      "combo": 143,
+      "created_at": "2026-01-05T18:26:19Z",
+      "beatmapset": {
+        "id": 2390209,
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535"
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4964992581,
+      "rank": "A",
+      "accuracy": 0.9171171171171171,
+      "pp": 178.838,
+      "mods": [
+        "HD",
+        "DT"
+      ],
+      "combo": 124,
+      "created_at": "2026-01-05T18:25:26Z",
+      "beatmapset": {
+        "id": 2425417,
+        "title": "Determinate (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172"
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4964990906,
+      "rank": "B",
+      "accuracy": 0.9185351270553064,
+      "pp": 212.334,
+      "mods": [
+        "HD",
+        "DT"
+      ],
+      "combo": 103,
+      "created_at": "2026-01-05T18:21:10Z",
+      "beatmapset": {
+        "id": 2287463,
+        "title": "CHRISTMAS * ROCK",
+        "cover": "https://assets.ppy.sh/beatmaps/2287463/covers/card.jpg?1734432565"
+      }
+    }
+  ]
+}

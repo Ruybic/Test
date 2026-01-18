@@ -1,0 +1,109 @@
+{
+  "date": "2026-01-18",
+  "country": "IQ",
+  "generated_at": "2026-01-18T01:50:37.667Z",
+  "scores": [
+    {
+      "user": "6xSeven",
+      "user_id": 29452442,
+      "country": "IQ",
+      "score_id": 4970555588,
+      "rank": "B",
+      "accuracy": 0.9161702127659574,
+      "pp": 69.4162,
+      "mods": [],
+      "combo": 307,
+      "created_at": "2026-01-17T23:30:10Z",
+      "beatmapset": {
+        "id": 292301,
+        "title": "Blue Zenith",
+        "cover": "https://assets.ppy.sh/beatmaps/292301/covers/card.jpg?1650630372"
+      }
+    },
+    {
+      "user": "6xSeven",
+      "user_id": 29452442,
+      "country": "IQ",
+      "score_id": 4970550927,
+      "rank": "B",
+      "accuracy": 0.8724504051411008,
+      "pp": 85.0127,
+      "mods": [],
+      "combo": 223,
+      "created_at": "2026-01-17T23:16:27Z",
+      "beatmapset": {
+        "id": 1855321,
+        "title": "GR4VITY G4ME",
+        "cover": "https://assets.ppy.sh/beatmaps/1855321/covers/card.jpg?1669261179"
+      }
+    },
+    {
+      "user": "6xSeven",
+      "user_id": 29452442,
+      "country": "IQ",
+      "score_id": 4970549248,
+      "rank": "A",
+      "accuracy": 0.9385369532428356,
+      "pp": 175.402,
+      "mods": [],
+      "combo": 452,
+      "created_at": "2026-01-17T23:11:25Z",
+      "beatmapset": {
+        "id": 1737645,
+        "title": "Blue Zenith (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/1737645/covers/card.jpg?1652905304"
+      }
+    },
+    {
+      "user": "6xSeven",
+      "user_id": 29452442,
+      "country": "IQ",
+      "score_id": 4970548706,
+      "rank": "B",
+      "accuracy": 0.918552036199095,
+      "pp": 141.963,
+      "mods": [],
+      "combo": 164,
+      "created_at": "2026-01-17T23:09:48Z",
+      "beatmapset": {
+        "id": 1737645,
+        "title": "Blue Zenith (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/1737645/covers/card.jpg?1652905304"
+      }
+    },
+    {
+      "user": "6xSeven",
+      "user_id": 29452442,
+      "country": "IQ",
+      "score_id": 4970547896,
+      "rank": "B",
+      "accuracy": 0.9039294039294039,
+      "pp": 95.8587,
+      "mods": [],
+      "combo": 368,
+      "created_at": "2026-01-17T23:07:27Z",
+      "beatmapset": {
+        "id": 1108809,
+        "title": "Aruku",
+        "cover": "https://assets.ppy.sh/beatmaps/1108809/covers/card.jpg?1650693509"
+      }
+    },
+    {
+      "user": "ghoul534",
+      "user_id": 24991953,
+      "country": "IQ",
+      "score_id": 0,
+      "rank": "D",
+      "accuracy": 0.6706036745406824,
+      "pp": null,
+      "mods": [],
+      "combo": 55,
+      "created_at": "2026-01-17T09:05:14Z",
+      "beatmapset": {
+        "id": 1495669,
+        "title": "Jump & Stream Practice",
+        "cover": "https://assets.ppy.sh/beatmaps/1495669/covers/card.jpg?1657980031"
+      }
+    }
+  ]
+}

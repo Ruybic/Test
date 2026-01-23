@@ -1,0 +1,124 @@
+{
+  "date": "2026-01-23",
+  "country": "IQ",
+  "generated_at": "2026-01-23T01:43:53.206Z",
+  "scores": [
+    {
+      "user": "Biscuits0",
+      "user_id": 23843313,
+      "country": "IQ",
+      "score_id": 4972785512,
+      "rank": "A",
+      "accuracy": 0.945054945054945,
+      "pp": 176.364,
+      "mods": [
+        "HD",
+        "HR"
+      ],
+      "combo": 119,
+      "created_at": "2026-01-23T01:04:08Z",
+      "beatmapset": {
+        "id": 2104327,
+        "title": "Brazil",
+        "cover": "https://assets.ppy.sh/beatmaps/2104327/covers/card.jpg?1704552605"
+      }
+    },
+    {
+      "user": "Biscuits0",
+      "user_id": 23843313,
+      "country": "IQ",
+      "score_id": 0,
+      "rank": "A",
+      "accuracy": 0.9515151515151515,
+      "pp": null,
+      "mods": [
+        "HD",
+        "HR"
+      ],
+      "combo": 80,
+      "created_at": "2026-01-23T01:02:54Z",
+      "beatmapset": {
+        "id": 2293648,
+        "title": "DT Jump Pack",
+        "cover": "https://assets.ppy.sh/beatmaps/2293648/covers/card.jpg?1743348618"
+      }
+    },
+    {
+      "user": "Biscuits0",
+      "user_id": 23843313,
+      "country": "IQ",
+      "score_id": 0,
+      "rank": "B",
+      "accuracy": 0.8787878787878788,
+      "pp": null,
+      "mods": [
+        "HD",
+        "HR"
+      ],
+      "combo": 70,
+      "created_at": "2026-01-23T01:02:22Z",
+      "beatmapset": {
+        "id": 2293648,
+        "title": "DT Jump Pack",
+        "cover": "https://assets.ppy.sh/beatmaps/2293648/covers/card.jpg?1743348618"
+      }
+    },
+    {
+      "user": "Biscuits0",
+      "user_id": 23843313,
+      "country": "IQ",
+      "score_id": 4972784593,
+      "rank": "A",
+      "accuracy": 0.9748858447488584,
+      "pp": 226.971,
+      "mods": [
+        "HD",
+        "HR"
+      ],
+      "combo": 303,
+      "created_at": "2026-01-23T01:00:04Z",
+      "beatmapset": {
+        "id": 2474192,
+        "title": "Presenter* (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2474192/covers/card.jpg?1766001186"
+      }
+    },
+    {
+      "user": "Biscuits0",
+      "user_id": 23843313,
+      "country": "IQ",
+      "score_id": 4972783903,
+      "rank": "A",
+      "accuracy": 0.958904109589041,
+      "pp": 204.569,
+      "mods": [
+        "HD",
+        "HR"
+      ],
+      "combo": 304,
+      "created_at": "2026-01-23T00:56:58Z",
+      "beatmapset": {
+        "id": 2474192,
+        "title": "Presenter* (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2474192/covers/card.jpg?1766001186"
+      }
+    },
+    {
+      "user": "ghoul534",
+      "user_id": 24991953,
+      "country": "IQ",
+      "score_id": 4972446066,
+      "rank": "B",
+      "accuracy": 0.8976525821596244,
+      "pp": 75.6197,
+      "mods": [],
+      "combo": 116,
+      "created_at": "2026-01-22T07:18:01Z",
+      "beatmapset": {
+        "id": 2250663,
+        "title": "Zetsubou plantation (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2250663/covers/card.jpg?1734636186"
+      }
+    }
+  ]
+}

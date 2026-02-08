@@ -1,0 +1,24 @@
+{
+  "date": "2026-02-08",
+  "country": "IQ",
+  "generated_at": "2026-02-08T02:31:04.714Z",
+  "scores": [
+    {
+      "user": "6xSeven",
+      "user_id": 29452442,
+      "country": "IQ",
+      "score_id": 4980312148,
+      "rank": "C",
+      "accuracy": 0.8415017279296262,
+      "pp": 67.6975,
+      "mods": [],
+      "combo": 222,
+      "created_at": "2026-02-07T12:51:37Z",
+      "beatmapset": {
+        "id": 540457,
+        "title": "Victims of Contingency",
+        "cover": "https://assets.ppy.sh/beatmaps/540457/covers/card.jpg?1650679580"
+      }
+    }
+  ]
+}

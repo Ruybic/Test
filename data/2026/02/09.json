@@ -1,0 +1,124 @@
+{
+  "date": "2026-02-09",
+  "country": "IQ",
+  "generated_at": "2026-02-09T02:09:11.065Z",
+  "scores": [
+    {
+      "user": "ghoul534",
+      "user_id": 24991953,
+      "country": "IQ",
+      "score_id": 4981055403,
+      "rank": "S",
+      "accuracy": 0.984313725490196,
+      "pp": 126.988,
+      "mods": [],
+      "combo": 231,
+      "created_at": "2026-02-08T21:08:55Z",
+      "beatmapset": {
+        "id": 1825240,
+        "title": "Brazil",
+        "cover": "https://assets.ppy.sh/beatmaps/1825240/covers/card.jpg?1664848201"
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4980950778,
+      "rank": "A",
+      "accuracy": 0.9241071428571429,
+      "pp": 192.455,
+      "mods": [
+        "HD",
+        "DT"
+      ],
+      "combo": 88,
+      "created_at": "2026-02-08T17:10:25Z",
+      "beatmapset": {
+        "id": 2282704,
+        "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849"
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4980949787,
+      "rank": "A",
+      "accuracy": 0.9568965517241379,
+      "pp": 205.591,
+      "mods": [
+        "HD",
+        "DT"
+      ],
+      "combo": 80,
+      "created_at": "2026-02-08T17:08:17Z",
+      "beatmapset": {
+        "id": 2288193,
+        "title": "Backstabber (Sped Up & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2288193/covers/card.jpg?1755044874"
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4980949381,
+      "rank": "A",
+      "accuracy": 0.9515151515151515,
+      "pp": 280.27,
+      "mods": [
+        "HD",
+        "DT"
+      ],
+      "combo": 75,
+      "created_at": "2026-02-08T17:07:23Z",
+      "beatmapset": {
+        "id": 2390209,
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535"
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4980948366,
+      "rank": "B",
+      "accuracy": 0.8964646464646465,
+      "pp": 215.996,
+      "mods": [
+        "HD",
+        "DT"
+      ],
+      "combo": 45,
+      "created_at": "2026-02-08T17:05:10Z",
+      "beatmapset": {
+        "id": 2479183,
+        "title": "I Don't Know (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625"
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4980945062,
+      "rank": "A",
+      "accuracy": 0.9722222222222222,
+      "pp": 304.293,
+      "mods": [
+        "HD",
+        "DT"
+      ],
+      "combo": 227,
+      "created_at": "2026-02-08T16:57:54Z",
+      "beatmapset": {
+        "id": 2472740,
+        "title": "Snow halation (HONOKA Mix) (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2472740/covers/card.jpg?1765726307"
+      }
+    }
+  ]
+}

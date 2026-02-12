@@ -160,157 +160,136 @@
     </div>
 </div>
 
-<script>
-    // --- UTILITIES ---
-    function timeAgo(dateString) {
-        const date = new Date(dateString);
-        const now = new Date();
-        const seconds = Math.floor((now - date) / 1000);
-        let interval = Math.floor(seconds / 3600);
-        if (interval > 24) return date.toLocaleDateString(); // Show date if older than 24h
-        if (interval >= 1) return interval + "h ago";
-        interval = Math.floor(seconds / 60);
-        if (interval >= 1) return interval + "m ago";
-        return "Just now";
-    }
+    <script>
+ // --- UTILITIES ---
+function timeAgo(dateString) {
+    const date = new Date(dateString);
+    const now = new Date();
+    const seconds = Math.floor((now - date) / 1000);
+    let interval = Math.floor(seconds / 3600);
+    if (interval > 24) return date.toLocaleDateString(); 
+    if (interval >= 1) return interval + "h ago";
+    interval = Math.floor(seconds / 60);
+    if (interval >= 1) return interval + "m ago";
+    return "Just now";
+}
 
-    // --- MAIN RENDERER ---
-    async function fetchAndRender(path) {
-        const grid = document.getElementById('scoreGrid');
-        grid.innerHTML = '<div class="status-msg">Loading data...</div>';
+// --- MAIN RENDERER ---
+async function fetchAndRender(path) {
+    const grid = document.getElementById('scoreGrid');
+    grid.innerHTML = '<div class="status-msg">Loading Iraqi Scores...</div>';
 
-        try {
-            // In a real local server, this fetches the file. 
-            // If you are just opening HTML file, browsers block fetch. You need a local server (Live Server extension).
-            const response = await fetch(path);
+    try {
+        // Use a cache-buster (?t=...) so GitHub Pages doesn't show old data
+        const response = await fetch(path + "?t=" + new Date().getTime());
+        
+        if (!response.ok) throw new Error("No data found for this date.");
+        
+        const data = await response.json();
+        
+        if (!data.scores || data.scores.length === 0) {
+            grid.innerHTML = '<div class="status-msg">No scores recorded for this day.</div>';
+            return;
+        }
+
+        grid.innerHTML = ''; 
+
+        data.scores.forEach(score => {
+            const ppText = score.pp ? Math.round(score.pp) + "pp" : "";
+            const accText = (score.accuracy * 100).toFixed(2) + "%";
+            const modsText = score.mods && score.mods.length > 0 ? "+" + score.mods.join("") : "";
+            const avatarUrl = `https://a.ppy.sh/${score.user_id}`;
+            // Use the cover from your JSON
+            const bgUrl = score.beatmapset.cover;
+            const rankClass = `rank-${score.rank}`; 
             
-            if (!response.ok) throw new Error("Data not found for this date.");
-            
-            const data = await response.json();
-            
-            if (!data.scores || data.scores.length === 0) {
-                grid.innerHTML = '<div class="status-msg">No scores recorded for this day.</div>';
-                return;
-            }
-
-            grid.innerHTML = ''; // Clear loading message
-
-            data.scores.forEach(score => {
-                // Formatting Data
-                const ppText = score.pp ? Math.round(score.pp) + "pp" : "";
-                const accText = (score.accuracy * 100).toFixed(2) + "%";
-                const modsText = score.mods && score.mods.length > 0 ? "+" + score.mods.join("") : "";
-                const avatarUrl = `https://a.ppy.sh/${score.user_id}`;
-                const bgUrl = score.beatmapset.cover || 'https://osu.ppy.sh/assets/images/backgrounds/initial.6fa0f4e4.jpg';
-                const rankClass = `rank-${score.rank}`; // For colors
-                
-                // Construct HTML
-                const card = document.createElement('div');
-                card.className = 'score-card';
-                card.innerHTML = `
-                    <div class="map-header" style="background-image: url('${bgUrl}');">
-                        <div class="rank-grade ${rankClass}">${score.rank}</div>
-                        ${ppText ? `<div class="pp-value">${ppText}</div>` : ''}
-                    </div>
-                    <div class="card-body">
-                        <img src="${avatarUrl}" class="user-avatar" onerror="this.src='https://osu.ppy.sh/images/layout/avatar-guest.png'">
-                        <span class="player-name">${score.user}</span>
-                        <span class="map-title">${score.beatmapset.title}</span>
-                        <div class="score-stats">
-                            <div>
-                                <span class="accuracy">${accText}</span>
-                                <span class="mods">${modsText}</span>
-                            </div>
-                            <span class="time-ago">${timeAgo(score.created_at)}</span>
+            const card = document.createElement('div');
+            card.className = 'score-card';
+            card.innerHTML = `
+                <div class="map-header" style="background-image: url('${bgUrl}');">
+                    <div class="rank-grade ${rankClass}">${score.rank}</div>
+                    ${ppText ? `<div class="pp-value">${ppText}</div>` : ''}
+                </div>
+                <div class="card-body">
+                    <img src="${avatarUrl}" class="user-avatar" onerror="this.src='https://osu.ppy.sh/images/layout/avatar-guest.png'">
+                    <span class="player-name">${score.user}</span>
+                    <span class="map-title">${score.beatmapset.title}</span>
+                    <div class="score-stats">
+                        <div>
+                            <span class="accuracy">${accText}</span>
+                            <span class="mods">${modsText}</span>
                         </div>
+                        <span class="time-ago">${timeAgo(score.created_at)}</span>
                     </div>
-                `;
-                grid.appendChild(card);
-            });
+                </div>
+            `;
+            grid.appendChild(card);
+        });
 
-        } catch (error) {
-            console.error(error);
-            grid.innerHTML = `<div class="status-msg">⚠️ No data found (Check path: ${path})</div>`;
-        }
+    } catch (error) {
+        console.error(error);
+        grid.innerHTML = `<div class="status-msg">⚠️ No scores available for this date.</div>`;
     }
+}
 
-    // --- CALENDAR LOGIC ---
-    let currentDate = new Date();
-    
-    function renderCalendar(date) {
-        const month = date.getMonth();
-        const year = date.getFullYear();
-        const firstDay = new Date(year, month, 1).getDay();
-        const daysInMonth = new Date(year, month + 1, 0).getDate();
-        
-        const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        document.getElementById('calMonthYear').innerText = `${monthNames[month]} ${year}`;
-        
-        const grid = document.getElementById('calGrid');
-        grid.innerHTML = `
-            <div class="cal-day-label">S</div><div class="cal-day-label">M</div><div class="cal-day-label">T</div>
-            <div class="cal-day-label">W</div><div class="cal-day-label">T</div><div class="cal-day-label">F</div><div class="cal-day-label">S</div>
-        `;
+// --- CALENDAR LOGIC ---
+let currentDate = new Date();
 
-        for (let i = 0; i < firstDay; i++) grid.innerHTML += `<div class="cal-day empty"></div>`;
-
-        for (let i = 1; i <= daysInMonth; i++) {
-            grid.innerHTML += `<div class="cal-day" onclick="selectDay(${year}, ${month + 1}, ${i})">${i}</div>`;
-        }
+function renderCalendar(date) {
+    const month = date.getMonth();
+    const year = date.getFullYear();
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    document.getElementById('calMonthYear').innerText = `${monthNames[month]} ${year}`;
+    const grid = document.getElementById('calGrid');
+    grid.innerHTML = `<div class="cal-day-label">S</div><div class="cal-day-label">M</div><div class="cal-day-label">T</div><div class="cal-day-label">W</div><div class="cal-day-label">T</div><div class="cal-day-label">F</div><div class="cal-day-label">S</div>`;
+    for (let i = 0; i < firstDay; i++) grid.innerHTML += `<div class="cal-day empty"></div>`;
+    for (let i = 1; i <= daysInMonth; i++) {
+        grid.innerHTML += `<div class="cal-day" onclick="selectDay(${year}, ${month + 1}, ${i})">${i}</div>`;
     }
+}
 
-    function changeMonth(delta) {
-        currentDate.setMonth(currentDate.getMonth() + delta);
-        renderCalendar(currentDate);
-    }
-
-    function selectDay(year, month, day) {
-        const mm = month.toString().padStart(2, '0');
-        const dd = day.toString().padStart(2, '0');
-        
-        // --- PATH HANDLING ---
-        let path = "";
-        
-        // Handles your specific folder structure requirements
-        if (year === 2025) {
-            // Based on your input: Test/Data/"2025/12"/13.json
-            // Note: Browsers usually ignore quotes in paths, assuming standard folder structure here
-            path = `Test/Data/${year}/${mm}/${dd}.json`; 
-        } else {
-            // Standard: Test/Data/2026/01/01.json
-            path = `Test/Data/${year}/${mm}/${dd}.json`;
-        }
-
-        document.getElementById('currentDateLabel').innerText = `ARCHIVE: ${year}-${mm}-${dd}`;
-        document.getElementById('calendarPopup').classList.remove('open');
-        
-        // Trigger the fetch
-        fetchAndRender(path);
-    }
-
-    // --- INITIALIZATION ---
-    document.getElementById('calendarBtn').onclick = () => {
-        document.getElementById('calendarPopup').classList.toggle('open');
-        renderCalendar(currentDate);
-    };
-
-    const menuBtn = document.getElementById('menuBtn');
-    const dropdown = document.getElementById('myDropdown');
-    menuBtn.onclick = (e) => { dropdown.classList.toggle("show"); e.stopPropagation(); };
-    window.onclick = (e) => { 
-        if (!e.target.matches('.dropbtn')) dropdown.classList.remove('show');
-        if (!e.target.closest('#calendarPopup') && !e.target.closest('#calendarBtn')) {
-            document.getElementById('calendarPopup').classList.remove('open');
-        }
-    };
-    
-    // Render calendar immediately
+function changeMonth(delta) {
+    currentDate.setMonth(currentDate.getMonth() + delta);
     renderCalendar(currentDate);
+}
+
+function selectDay(year, month, day) {
+    const mm = month.toString().padStart(2, '0');
+    const dd = day.toString().padStart(2, '0');
     
-    // Optional: Load today's data immediately (if you have it)
-    // selectDay(2026, 2, 1); 
+    // --- UPDATED PATH (small 'd' and relative path) ---
+    const path = `data/${year}/${mm}/${dd}.json`;
 
-</script>
+    document.getElementById('currentDateLabel').innerText = `DATE: ${year}-${mm}-${dd}`;
+    document.getElementById('calendarPopup').classList.remove('open');
+    fetchAndRender(path);
+}
 
+// --- INITIALIZATION ---
+document.getElementById('calendarBtn').onclick = () => {
+    document.getElementById('calendarPopup').classList.toggle('open');
+    renderCalendar(currentDate);
+};
+
+const menuBtn = document.getElementById('menuBtn');
+const dropdown = document.getElementById('myDropdown');
+menuBtn.onclick = (e) => { dropdown.classList.toggle("show"); e.stopPropagation(); };
+window.onclick = (e) => { 
+    if (!e.target.matches('.dropbtn')) dropdown.classList.remove('show');
+    if (!e.target.closest('#calendarPopup') && !e.target.closest('#calendarBtn')) {
+        document.getElementById('calendarPopup').classList.remove('open');
+    }
+};
+
+renderCalendar(currentDate);
+
+// AUTO-LOAD TODAY'S DATA ON PAGE LOAD
+const today = new Date();
+selectDay(today.getFullYear(), today.getMonth() + 1, today.getDate());
+    </script>
+        
+    
 </body>
 </html>

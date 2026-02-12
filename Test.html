@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>osu! Iraq Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --osu-pink: #ff66aa;
+            --dark-base: #1c1c21;
+            --panel-bg: #2e2e38;
+            --text-main: #ffffff;
+            --text-muted: #888895;
+        }
+
+        body {
+            background-color: var(--dark-base);
+            color: var(--text-main);
+            font-family: 'Exo 2', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* High-End Header */
+        header {
+            background: #111116;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid var(--panel-bg);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-box {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-box img {
+            height: 35px;
+            width: auto;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--osu-pink); }
+
+        /* Professional Labeling */
+        .section-header {
+            padding: 60px 20px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .label-category {
+            color: var(--osu-pink);
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 2px;
+            font-size: 12px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .main-title {
+            font-size: 32px;
+            font-weight: 800;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
+        /* The Grid: 5 on PC, 1 on Mobile */
+        .video-container {
+            display: grid;
+            gap: 12px;
+            padding: 20px;
+            max-width: 1600px;
+            margin: 0 auto;
+            grid-template-columns: 1fr; /* Mobile default */
+        }
+
+        @media (min-width: 1024px) {
+            .video-container {
+                grid-template-columns: repeat(5, 1fr); /* 5 Per Row on PC */
+            }
+        }
+
+        .video-card {
+            background: var(--panel-bg);
+            border-radius: 6px;
+            overflow: hidden;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .video-card:hover {
+            background: #383845;
+            transform: translateY(-3px);
+        }
+
+        .thumb-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            background: #000;
+        }
+
+        .thumb-wrapper iframe {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            border: none;
+        }
+
+        .video-meta {
+            padding: 12px;
+        }
+
+        .video-name {
+            font-size: 13px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
+            color: #eee;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Subtle Bottom Actions */
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn-options {
+            background: #444452;
+            color: white;
+            border: none;
+            padding: 4px 10px;
+            border-radius: 3px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+
+        .request-link {
+            font-size: 10px;
+            color: #555562;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .request-link:hover {
+            color: #aa4444;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-box">
+        <img src="https://i.im.ge/2026/02/13/eygP26.Picsart-26-02-13-01-23-55-682.jpeg" alt="osu! Iraq Logo Placeholder">
+        <div class="nav-links">
+            <a href="#">VIDEOS</a>
+            <a href="#">MAPPING</a>
+            <a href="#">COMMUNITY</a>
+        </div>
+    </div>
+</header>
+
+<div class="section-header">
+    <span class="label-category">Featured Player Media</span>
+    <h1 class="main-title">Iraqi Community Showcase</h1>
+</div>
+
+<div class="video-container">
+    <div class="video-card">
+        <div class="thumb-wrapper">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        </div>
+        <div class="video-meta">
+            <span class="video-name">Top Play | PlayerName</span>
+            <div class="actions">
+                <button class="btn-options">OPTIONS</button>
+                <a href="https://discord.com/users/fancytoast551" class="request-link">Report/Remove</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+  </html>
+  

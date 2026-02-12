@@ -19,15 +19,16 @@
             color: var(--text-main);
             font-family: 'Exo 2', sans-serif;
             margin: 0;
-            padding: 0;
+            padding-bottom: 50px;
         }
 
-        /* High-End Header */
+        /* Fixed Header: No shrinking, scrollable nav on mobile */
         header {
             background: #111116;
-            padding: 15px 40px;
+            padding: 10px 20px;
             display: flex;
             align-items: center;
+            justify-content: space-between;
             border-bottom: 2px solid var(--panel-bg);
             position: sticky;
             top: 0;
@@ -37,30 +38,37 @@
         .logo-box {
             display: flex;
             align-items: center;
-            gap: 20px;
+            flex-shrink: 0; /* Prevents logo from getting crushed */
         }
 
         .logo-box img {
             height: 35px;
             width: auto;
+            margin-right: 15px;
         }
+
+        .nav-links {
+            display: flex;
+            overflow-x: auto; /* Allows scrolling on mobile */
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .nav-links::-webkit-scrollbar { display: none; } /* Hides scrollbar for clean look */
 
         .nav-links a {
             color: var(--text-muted);
             text-decoration: none;
-            margin-left: 25px;
+            margin-left: 20px;
             font-weight: 600;
-            font-size: 14px;
-            letter-spacing: 0.5px;
+            font-size: 13px;
             transition: 0.2s;
         }
 
-        .nav-links a:hover { color: var(--osu-pink); }
-
         /* Professional Labeling */
         .section-header {
-            padding: 60px 20px 20px;
-            max-width: 1400px;
+            padding: 40px 20px 10px;
+            max-width: 1600px;
             margin: 0 auto;
         }
 
@@ -69,31 +77,22 @@
             text-transform: uppercase;
             font-weight: 800;
             letter-spacing: 2px;
-            font-size: 12px;
-            margin-bottom: 5px;
-            display: block;
+            font-size: 11px;
         }
 
-        .main-title {
-            font-size: 32px;
-            font-weight: 800;
-            margin: 0;
-            letter-spacing: -1px;
-        }
-
-        /* The Grid: 5 on PC, 1 on Mobile */
+        /* FIXED GRID: One container for ALL videos */
         .video-container {
             display: grid;
-            gap: 12px;
-            padding: 20px;
+            gap: 15px;
+            padding: 0 20px 40px;
             max-width: 1600px;
             margin: 0 auto;
-            grid-template-columns: 1fr; /* Mobile default */
+            grid-template-columns: 1fr; /* Mobile: 1 per row */
         }
 
         @media (min-width: 1024px) {
             .video-container {
-                grid-template-columns: repeat(5, 1fr); /* 5 Per Row on PC */
+                grid-template-columns: repeat(5, 1fr); /* PC: 5 per row */
             }
         }
 
@@ -101,13 +100,10 @@
             background: var(--panel-bg);
             border-radius: 6px;
             overflow: hidden;
-            transition: transform 0.2s, background 0.2s;
+            border: 1px solid transparent;
         }
 
-        .video-card:hover {
-            background: #383845;
-            transform: translateY(-3px);
-        }
+        .video-card:hover { border-color: var(--osu-pink); }
 
         .thumb-wrapper {
             position: relative;
@@ -121,223 +117,97 @@
             border: none;
         }
 
-        .video-meta {
-            padding: 12px;
+        .video-meta { padding: 10px; }
+        .video-name { font-size: 12px; font-weight: 600; display: block; margin-bottom: 5px; }
+
+        .actions { display: flex; justify-content: space-between; align-items: center; }
+        .btn-options { background: #444452; color: white; border: none; padding: 3px 8px; border-radius: 3px; font-size: 9px; cursor: pointer; }
+        .request-link { font-size: 9px; color: #555562; text-decoration: none; }
+
+        /* RECENT SCORES SECTION */
+        .scores-list {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
-        .video-name {
-            font-size: 13px;
-            font-weight: 600;
-            display: block;
-            margin-bottom: 8px;
-            color: #eee;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        /* Subtle Bottom Actions */
-        .actions {
+        .score-entry {
+            background: #25252e;
+            margin-bottom: 5px;
+            padding: 10px 15px;
+            border-radius: 4px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
+            border-left: 4px solid var(--osu-pink);
         }
 
-        .btn-options {
-            background: #444452;
-            color: white;
-            border: none;
-            padding: 4px 10px;
-            border-radius: 3px;
-            font-size: 10px;
-            cursor: pointer;
-        }
+        .score-info { font-size: 14px; }
+        .score-pp { color: var(--osu-pink); font-weight: 800; }
+        .score-date { font-size: 11px; color: var(--text-muted); }
 
-        .request-link {
-            font-size: 10px;
-            color: #555562;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .request-link:hover {
-            color: #aa4444;
-        }
     </style>
 </head>
 <body>
 
 <header>
     <div class="logo-box">
-        <img src="https://i.im.ge/2026/02/13/eygP26.Picsart-26-02-13-01-23-55-682.jpeg" alt="osu! Iraq Logo Placeholder">
-        <div class="nav-links">
-            <a href="#">VIDEOS</a>
-            <a href="#">MAPPING</a>
-            <a href="#">COMMUNITY</a>
-        </div>
+        <img src="https://i.im.ge/2026/02/13/eygP26.Picsart-26-02-13-01-23-55-682.jpeg" alt="osu! Iraq">
+    </div>
+    <div class="nav-links">
+        <a href="#showcase">SHOWCASE</a>
+        <a href="#mapping">MAPPING</a>
+        <a href="#scores">RECENT SCORES</a>
+        <a href="#">DISCORD</a>
     </div>
 </header>
 
-<div class="section-header">
-    <span class="label-category">Featured Player Media</span>
-    <h1 class="main-title">Iraqi Community Showcase</h1>
+<div class="section-header" id="showcase">
+    <span class="label-category">Featured Media</span>
+    <h2 style="margin:0;">Iraqi Community Showcase</h2>
 </div>
 
 <div class="video-container">
-    <div class="video-card">
-        <div class="thumb-wrapper">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-        </div>
-        <div class="video-meta">
-            <span class="video-name">Top Play | PlayerName</span>
-            <div class="actions">
-                <button class="btn-options">OPTIONS</button>
-                <a href="https://discord.com/users/fancytoast551" class="request-link">Report/Remove</a>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <div class="video-container">
-    <div class="video-card">
-        <div class="thumb-wrapper">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-        </div>
-        <div class="video-meta">
-            <span class="video-name">Top Play | PlayerName</span>
-            <div class="actions">
-                <button class="btn-options">OPTIONS</button>
-                <a href="https://discord.com/users/fancytoast551" class="request-link">Report/Remove</a>
-            </div>
-        </div>
-    </div>
-    </div>
     
-    <div class="video-container">
     <div class="video-card">
-        <div class="thumb-wrapper">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-        </div>
+        <div class="thumb-wrapper"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe></div>
         <div class="video-meta">
-            <span class="video-name">Top Play | PlayerName</span>
+            <span class="video-name">PlayerName | Map Title</span>
             <div class="actions">
                 <button class="btn-options">OPTIONS</button>
-                <a href="https://discord.com/users/fancytoast551" class="request-link">Report/Remove</a>
+                <a href="https://discord.com/users/fancytoast551" class="request-link">Report</a>
             </div>
         </div>
     </div>
-    </div>
 
-    <div class="video-container">
     <div class="video-card">
-        <div class="thumb-wrapper">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-        </div>
+        <div class="thumb-wrapper"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe></div>
         <div class="video-meta">
-            <span class="video-name">Top Play | PlayerName</span>
+            <span class="video-name">PlayerName | Map Title</span>
             <div class="actions">
                 <button class="btn-options">OPTIONS</button>
-                <a href="https://discord.com/users/fancytoast551" class="request-link">Report/Remove</a>
+                <a href="https://discord.com/users/fancytoast551" class="request-link">Report</a>
             </div>
         </div>
     </div>
+
     </div>
 
-    <div class="video-container">
-    <div class="video-card">
-        <div class="thumb-wrapper">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-        </div>
-        <div class="video-meta">
-            <span class="video-name">Top Play | PlayerName</span>
-            <div class="actions">
-                <button class="btn-options">OPTIONS</button>
-                <a href="https://discord.com/users/fancytoast551" class="request-link">Report/Remove</a>
-            </div>
-        </div>
-    </div>
-    </div>
+<div class="section-header" id="scores">
+    <span class="label-category">Live Feed</span>
+    <h2 style="margin:0;">Recent Top Scores</h2>
+</div>
 
+<div class="scores-list">
+    <div class="score-entry">
+        <div class="score-info"><strong>PlayerOne</strong> set a <strong>540pp</strong> play on <i>Freedom Dive [Four Dimensions]</i></div>
+        <div class="score-pp">+540pp</div>
+    </div>
+    <div class="score-entry">
+        <div class="score-info"><strong>PlayerTwo</strong> achieved <strong>99.45%</strong> on <i>Big Black</i></div>
+        <div class="score-pp">+420pp</div>
+    </div>
+</div>
 
-    <div class="video-container">
-    <div class="video-card">
-        <div class="thumb-wrapper">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-        </div>
-        <div class="video-meta">
-            <span class="video-name">Top Play | PlayerName</span>
-            <div class="actions">
-                <button class="btn-options">OPTIONS</button>
-                <a href="https://discord.com/users/fancytoast551" class="request-link">Report/Remove</a>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-    <div class="video-container">
-    <div class="video-card">
-        <div class="thumb-wrapper">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-        </div>
-        <div class="video-meta">
-            <span class="video-name">Top Play | PlayerName</span>
-            <div class="actions">
-                <button class="btn-options">OPTIONS</button>
-                <a href="https://discord.com/users/fancytoast551" class="request-link">Report/Remove</a>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-    <div class="video-container">
-    <div class="video-card">
-        <div class="thumb-wrapper">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-        </div>
-        <div class="video-meta">
-            <span class="video-name">Top Play | PlayerName</span>
-            <div class="actions">
-                <button class="btn-options">OPTIONS</button>
-                <a href="https://discord.com/users/fancytoast551" class="request-link">Report/Remove</a>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-    <div class="video-container">
-    <div class="video-card">
-        <div class="thumb-wrapper">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-        </div>
-        <div class="video-meta">
-            <span class="video-name">Top Play | PlayerName</span>
-            <div class="actions">
-                <button class="btn-options">OPTIONS</button>
-                <a href="https://discord.com/users/fancytoast551" class="request-link">Report/Remove</a>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-    <div class="video-container">
-    <div class="video-card">
-        <div class="thumb-wrapper">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-        </div>
-        <div class="video-meta">
-            <span class="video-name">Top Play | PlayerName</span>
-            <div class="actions">
-                <button class="btn-options">OPTIONS</button>
-                <a href="https://discord.com/users/fancytoast551" class="request-link">Report/Remove</a>
-            </div>
-        </div>
-    </div>
-    </div>
-    
 </body>
-  </html>
-  
+</html>

@@ -9,15 +9,15 @@
         :root { --osu-pink: #ff66aa; --dark-base: #1c1c21; --panel-bg: #2e2e38; --text-main: #ffffff; --text-muted: #888895; }
         body { background-color: var(--dark-base); color: var(--text-main); font-family: 'Exo 2', sans-serif; margin: 0; }
 
-        /* HEADER: Logo & Collapsible Menu Only */
+        /* HEADER */
         header {
             background: #111116; padding: 12px 25px; display: flex; align-items: center;
             justify-content: space-between; border-bottom: 2px solid var(--panel-bg);
             position: sticky; top: 0; z-index: 1000;
         }
         .logo-box img { height: 38px; display: block; }
-
-        /* COLLAPSIBLE DROPDOWN */
+        
+        /* DROPDOWN MENU */
         .dropdown { position: relative; }
         .dropbtn { background: var(--panel-bg); color: white; border: none; padding: 10px 18px; border-radius: 6px; cursor: pointer; font-family: 'Exo 2'; font-weight: 600; transition: 0.2s; }
         .dropbtn:hover { background: #3e3e4a; }
@@ -26,55 +26,58 @@
             min-width: 180px; box-shadow: 0px 8px 24px rgba(0,0,0,0.6); z-index: 1; border-radius: 6px; margin-top: 8px; overflow: hidden;
         }
         .dropdown-content a { color: white; padding: 14px 20px; text-decoration: none; display: block; font-size: 14px; border-bottom: 1px solid #333; }
-        .dropdown-content a:hover { background-color: var(--osu-pink); }
         .dropdown-content.show { display: block; }
 
-        /* SCORE FEED GRID */
-        .feed-container { max-width: 1400px; margin: 0 auto; padding: 30px 20px; }
-        .section-label { color: var(--osu-pink); font-weight: 800; font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 20px; display: block; }
+        /* CONTROLS BAR */
+        .controls-bar {
+            max-width: 1400px; margin: 30px auto 10px; padding: 0 20px;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .section-label { color: var(--osu-pink); font-weight: 800; font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; margin: 0; }
         
+        .date-btn {
+            background: transparent; border: 1px solid var(--osu-pink); color: var(--osu-pink);
+            padding: 8px 16px; border-radius: 4px; font-size: 12px; font-weight: bold;
+            cursor: pointer; display: flex; align-items: center; gap: 8px; transition: 0.2s;
+        }
+        .date-btn:hover { background: var(--osu-pink); color: white; }
+
+        /* CALENDAR WIDGET */
+        .calendar-popup {
+            display: none; position: absolute; top: 130px; right: 20px; z-index: 999;
+            background: #25252e; border: 1px solid #444; border-radius: 8px;
+            width: 300px; padding: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .calendar-popup.open { display: block; }
+        
+        .cal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .cal-month { font-weight: 800; color: white; }
+        .cal-nav { cursor: pointer; color: var(--text-muted); padding: 5px; }
+        .cal-nav:hover { color: var(--osu-pink); }
+
+        .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; text-align: center; }
+        .cal-day-label { font-size: 10px; color: var(--text-muted); padding-bottom: 5px; }
+        .cal-day {
+            padding: 8px; font-size: 12px; cursor: pointer; border-radius: 4px; color: #eee;
+        }
+        .cal-day:hover { background: #3e3e4a; }
+        .cal-day.active { background: var(--osu-pink); color: white; font-weight: bold; }
+        .cal-day.empty { pointer-events: none; }
+
+        /* SCORE GRID */
+        .feed-container { max-width: 1400px; margin: 0 auto; padding: 10px 20px 30px; }
         .score-grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
         @media (min-width: 1024px) { .score-grid { grid-template-columns: repeat(5, 1fr); } }
 
-        /* PROFESSIONAL SCORE CARD */
-        .score-card {
-            background: var(--panel-bg); border-radius: 12px; overflow: hidden;
-            display: flex; flex-direction: column; transition: 0.2s cubic-bezier(.4,0,.2,1);
-            border: 1px solid #3e3e4a;
-        }
-        .score-card:hover { transform: translateY(-8px); border-color: var(--osu-pink); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
-
-        .map-header {
-            width: 100%; height: 110px; background-size: cover; background-position: center;
-            position: relative; display: flex; justify-content: space-between; align-items: flex-start;
-        }
-        
-        .rank-grade {
-            background: rgba(0,0,0,0.7); color: #fff; font-weight: 900; font-size: 20px;
-            padding: 4px 10px; border-radius: 0 0 8px 0; text-shadow: 0 0 10px var(--osu-pink);
-        }
-
-        .pp-value {
-            background: var(--osu-pink); padding: 4px 10px; border-radius: 8px;
-            font-weight: 800; font-size: 14px; margin: 8px;
-        }
-
-        .card-body { padding: 15px; position: relative; margin-top: -25px; background: var(--panel-bg); border-radius: 20px 20px 0 0; }
-        
-        .user-avatar {
-            width: 50px; height: 50px; border-radius: 50%; border: 3px solid var(--panel-bg);
-            position: absolute; top: -30px; right: 15px; background: #555;
-        }
-
-        .player-name { font-weight: 800; color: var(--text-main); font-size: 15px; margin-bottom: 2px; display: block; }
-        .map-title { font-size: 12px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
-        
-        .score-stats {
-            margin-top: 12px; padding-top: 10px; border-top: 1px solid #3e3e4a;
-            display: flex; justify-content: space-between; font-size: 11px; font-weight: 600;
-        }
-        .accuracy { color: #88ffcc; }
-        .time-ago { color: var(--text-muted); }
+        /* SCORE CARD STYLES (Same as before) */
+        .score-card { background: var(--panel-bg); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; transition: 0.2s; border: 1px solid #3e3e4a; }
+        .score-card:hover { transform: translateY(-8px); border-color: var(--osu-pink); }
+        .map-header { width: 100%; height: 110px; background-size: cover; position: relative; }
+        .rank-grade { position: absolute; top: 0; left: 0; background: rgba(0,0,0,0.7); color: #fff; font-weight: 900; padding: 4px 10px; border-radius: 0 0 8px 0; }
+        .pp-value { position: absolute; bottom: 8px; right: 8px; background: var(--osu-pink); padding: 4px 10px; border-radius: 8px; font-weight: 800; font-size: 12px; }
+        .card-body { padding: 15px; background: var(--panel-bg); }
+        .player-name { font-weight: 800; color: white; display: block; }
+        .map-title { font-size: 12px; color: var(--text-muted); display: block; margin-bottom: 5px; }
     </style>
 </head>
 <body>
@@ -86,50 +89,117 @@
     <div class="dropdown">
         <button class="dropbtn" id="menuBtn">MENU ▼</button>
         <div class="dropdown-content" id="myDropdown">
-            <a href="#">Showcase (Videos)</a>
-            <a href="#">Mapping</a>
+            <a href="#">Showcase</a>
             <a href="#">Rankings</a>
             <a href="#">Discord</a>
         </div>
     </div>
 </header>
 
+<div class="controls-bar">
+    <span class="section-label" id="currentDateLabel">LATEST COMMUNITY SCORES</span>
+    <button class="date-btn" id="calendarBtn">📅 SELECT DATE</button>
+</div>
+
+<div class="calendar-popup" id="calendarPopup">
+    <div class="cal-header">
+        <span class="cal-nav" onclick="changeMonth(-1)">&#9664;</span>
+        <span class="cal-month" id="calMonthYear">December 2025</span>
+        <span class="cal-nav" onclick="changeMonth(1)">&#9654;</span>
+    </div>
+    <div class="cal-grid" id="calGrid">
+        </div>
+</div>
+
 <div class="feed-container">
-    <span class="section-label">Latest Community Performance</span>
-    <div class="score-grid">
-        
+    <div class="score-grid" id="scoreGrid">
         <div class="score-card">
-            <div class="map-header" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://assets.ppy.sh/beatmaps/1011011/covers/cover.jpg');">
+            <div class="map-header" style="background-image: url('https://assets.ppy.sh/beatmaps/1011011/covers/cover.jpg');">
                 <div class="rank-grade">S</div>
                 <div class="pp-value">540pp</div>
             </div>
             <div class="card-body">
-                <img src="https://a.ppy.sh/2" class="user-avatar" alt="Avatar">
                 <span class="player-name">FancyToast</span>
                 <span class="map-title">Hatsune Miku - Senbonzakura</span>
-                <div class="score-stats">
-                    <span class="accuracy">99.24% ACC</span>
-                    <span class="time-ago">15m ago</span>
-                </div>
             </div>
         </div>
-        </div>
+    </div>
 </div>
 
 <script>
+    /* --- CALENDAR LOGIC --- */
+    let currentDate = new Date();
+    let selectedDate = null;
+    
+    function renderCalendar(date) {
+        const month = date.getMonth();
+        const year = date.getFullYear();
+        const firstDay = new Date(year, month, 1).getDay();
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+        
+        const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        document.getElementById('calMonthYear').innerText = `${monthNames[month]} ${year}`;
+        
+        const grid = document.getElementById('calGrid');
+        grid.innerHTML = `
+            <div class="cal-day-label">S</div><div class="cal-day-label">M</div><div class="cal-day-label">T</div>
+            <div class="cal-day-label">W</div><div class="cal-day-label">T</div><div class="cal-day-label">F</div><div class="cal-day-label">S</div>
+        `;
+
+        for (let i = 0; i < firstDay; i++) grid.innerHTML += `<div class="cal-day empty"></div>`;
+
+        for (let i = 1; i <= daysInMonth; i++) {
+            grid.innerHTML += `<div class="cal-day" onclick="selectDay(${year}, ${month + 1}, ${i})">${i}</div>`;
+        }
+    }
+
+    function changeMonth(delta) {
+        currentDate.setMonth(currentDate.getMonth() + delta);
+        renderCalendar(currentDate);
+    }
+
+    function selectDay(year, month, day) {
+        // --- PATH FINDING LOGIC ---
+        // Formatting month/day to be 2 digits (e.g., 01, 13)
+        const mm = month.toString().padStart(2, '0');
+        const dd = day.toString().padStart(2, '0');
+        
+        let path = "";
+        
+        // Handle 2025 vs 2026 format difference
+        if (year === 2025) {
+            path = `Test/Data/${year}/${mm}/${dd}.json`; // Assuming folders are 2025/12/13.json
+        } else {
+            path = `Test/Data/${year}/${mm}/${dd}.json`;
+        }
+
+        console.log("Fetching data from:", path);
+        document.getElementById('currentDateLabel').innerText = `SCORES FROM: ${year}-${mm}-${dd}`;
+        document.getElementById('calendarPopup').classList.remove('open');
+        
+        // Here you would call fetch(path) to get real data
+        // For now, we simulate a reload or visual update
+    }
+
+    /* --- EVENT LISTENERS --- */
+    document.getElementById('calendarBtn').onclick = () => {
+        document.getElementById('calendarPopup').classList.toggle('open');
+        renderCalendar(currentDate);
+    };
+
+    // Existing Menu Logic
     const menuBtn = document.getElementById('menuBtn');
     const dropdown = document.getElementById('myDropdown');
-
-    menuBtn.onclick = function(e) {
-        dropdown.classList.toggle("show");
-        e.stopPropagation();
-    };
-
-    window.onclick = function(e) {
-        if (!e.target.matches('.dropbtn')) {
-            dropdown.classList.remove('show');
+    menuBtn.onclick = (e) => { dropdown.classList.toggle("show"); e.stopPropagation(); };
+    window.onclick = (e) => { 
+        if (!e.target.matches('.dropbtn')) dropdown.classList.remove('show');
+        if (!e.target.closest('#calendarPopup') && !e.target.closest('#calendarBtn')) {
+            document.getElementById('calendarPopup').classList.remove('open');
         }
     };
+    
+    // Initial Render
+    renderCalendar(currentDate);
 </script>
 
 </body>

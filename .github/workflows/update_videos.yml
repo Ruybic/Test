@@ -2,11 +2,8 @@ name: Update Video Showcase
 
 on:
   schedule:
-    - cron: "0 12 * * *"
-  workflow_dispatch:
-
-permissions:
-  contents: write  # This is the magic line
+    - cron: "0 12 * * *" # Runs daily at 12:00 UTC
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
   build:
@@ -14,15 +11,23 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # Ensures it can push back
 
-      # ... (rest of your steps here) ...
+      - name: Set up Python
+        uses: actions/setup-node@v4 # yt-dlp works best with python/ffmpeg
+
+      - name: Install dependencies
+        run: |
+          sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+          sudo chmod a+rx /usr/local/bin/yt-dlp
+          pip install yt-dlp
+
+      - name: Run Script
+        run: python update_videos.py
 
       - name: Commit and Push
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
           git add Videos.html data/video_db.json
           git commit -m "Auto-update video showcase" || echo "No new videos found"
           git push

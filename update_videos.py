@@ -12,25 +12,35 @@ HTML_FILE = "Videos.html"
 def get_videos():
     all_videos = []
     for url in CHANNELS:
-        print(f"Scanning {url}...")
-        # Get title, id, and upload date
+        print(f"📡 Scanning {url}...")
+        # We add --user-agent to prevent YouTube from blocking the request
         cmd = [
-            "yt-dlp", "--get-title", "--get-id", "--get-filename", 
-            "-o", "%(upload_date)s", "--playlist-items", "1-5", url
+            "yt-dlp", 
+            "--flat-playlist", 
+            "--user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+            "--print", "%(title)s\n%(id)s\n%(upload_date)s", 
+            "--playlist-items", "1-5", 
+            url
         ]
         result = subprocess.run(cmd, capture_output=True, text=True)
-        lines = result.stdout.strip().split('\n')
         
-        # yt-dlp returns: Title, ID, Date per video
+        # DEBUG: Print the raw output to GitHub Logs so we can see it
+        if not result.stdout.strip():
+            print(f"❌ Error: No output from yt-dlp for {url}")
+            print(f"System Message: {result.stderr}")
+            continue
+
+        lines = [line.strip() for line in result.stdout.strip().split('\n') if line.strip()]
+        
         for i in range(0, len(lines), 3):
             if i+2 < len(lines):
                 all_videos.append({
                     "title": lines[i],
                     "id": lines[i+1],
-                    "date": lines[i+2] # YYYYMMDD
+                    "date": lines[i+2]
                 })
     return all_videos
-
+    
 def main():
     # 1. Load existing database to prevent duplicates
     if os.path.exists(DATA_FILE):

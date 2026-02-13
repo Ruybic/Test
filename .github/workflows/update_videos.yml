@@ -1,40 +1,35 @@
-
-name: Update Video Showcase
+name: Update Video Feed
 
 on:
   schedule:
-    - cron: "0 12 * * *"
-  workflow_dispatch:
-
-permissions:
-  contents: write
+    # Runs every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Allows you to run it manually from Actions tab
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v5 # Changed from setup-node
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.9'
 
-      - name: Install yt-dlp
-        run: pip install yt-dlp
-
-      - name: Run Script & Debug
+      - name: Install Dependencies
         run: |
-          python update_videos.py
-          echo "Checking if file was updated:"
-          cat data/video_db.json
+          pip install feedparser
 
-      - name: Commit and Push
+      - name: Fetch Latest Videos
+        run: python scripts/update_videos.py
+
+      - name: Commit and Push Changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add Videos.html data/video_db.json
-          git commit -m "Auto-update video showcase" || echo "No changes to commit"
+          git config --global user.name "osu-iraq-bot"
+          git config --global user.email "bot@osuiraq.com"
+          git add data/videos.json
+          git commit -m "Update video feed" || echo "No new videos found"
           git push
-          

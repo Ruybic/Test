@@ -3,10 +3,10 @@ import os
 import feedparser # Use: pip install feedparser
 from datetime import datetime
 
-# --- CONFIGURATION: Add your target Channel IDs here ---
+# --- CONFIGURATION: The IDs for the links you provided ---
 CHANNELS = {
-    "UCxxxxxxxxxxxx": "Example Channel 1", 
-    "UCyyyyyyyyyyyy": "Example Channel 2"
+    "UCuzHfz9jikRLrow8lcyjEQQ": "FancyToast", 
+    "UC2tN8yIRVdZ8-Ig2REhPPWg": "Ano"
 }
 # Tip: You can get Channel ID from the URL of the channel page
 

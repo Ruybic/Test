@@ -2,8 +2,12 @@ name: Update Video Feed
 
 on:
   schedule:
-    - cron: '0 */12 * * *' # Runs every 12 hours (scans are heavier, so we run less often)
-  workflow_dispatch: # Allows manual run
+    # Runs every 12 hours
+    - cron: '0 */12 * * *'
+  workflow_dispatch: # Allows you to run it manually to test
+
+permissions:
+  contents: write  # Crucial: Gives the bot permission to save the JSON file
 
 jobs:
   build:
@@ -11,27 +15,27 @@ jobs:
     
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.10'
 
       - name: Install Dependencies
         run: |
-          pip install yt-dlp
+          python -m pip install --upgrade pip
+          pip install --upgrade yt-dlp
 
       - name: Fetch Latest Videos
-        # Make sure this points to where your file actually is!
-        # If it is in the root folder, use: python update_videos.py
-        # If it is in scripts folder, use: python scripts/update_videos.py
-        run: python scripts/update_videos.py
+        # If your script is inside a folder, use: python folder_name/update_videos.py
+        run: python update_videos.py
 
       - name: Commit and Push Changes
         run: |
-          git config --global user.name "osu-iraq-bot"
-          git config --global user.email "bot@osuiraq.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data/videos.json
-          git commit -m "Update full video feed" || echo "No changes to commit"
+          # The '|| true' prevents the workflow from failing if there are no new videos
+          git commit -m "Update community video feed" || true
           git push

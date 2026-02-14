@@ -4,20 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>osu! Iraq | Hub</title>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&family=Inter:wght@600;800&display=swap" rel="stylesheet">
     <style>
-        /* --- GLOBAL VARIABLES --- */
-        :root { 
-            --osu-pink: #ff66aa; 
-            --dark-base: #1c1c21; 
-            --panel-bg: #2e2e38; 
-            --text-main: #ffffff; 
-            --text-muted: #888895; 
-        }
-        
+        :root { --osu-pink: #ff66aa; --dark-base: #1c1c21; --panel-bg: #2e2e38; --text-main: #ffffff; --text-muted: #888895; }
         body { background-color: var(--dark-base); color: var(--text-main); font-family: 'Exo 2', sans-serif; margin: 0; }
 
-        /* --- HEADER & NAVIGATION --- */
+        /* HEADER */
         header {
             background: #111116; padding: 12px 25px; display: flex; align-items: center;
             justify-content: space-between; border-bottom: 2px solid var(--panel-bg);
@@ -35,20 +27,20 @@
         .dropdown-content a { color: white; padding: 14px 20px; text-decoration: none; display: block; font-size: 14px; border-bottom: 1px solid #333; }
         .dropdown-content.show { display: block; }
 
-        /* --- CONTROLS --- */
+        /* CONTROLS BAR */
         .controls-bar {
             max-width: 1400px; margin: 30px auto 10px; padding: 0 20px;
             display: flex; justify-content: space-between; align-items: center;
         }
         .section-label { color: var(--osu-pink); font-weight: 800; font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; margin: 0; }
+        
         .date-btn {
             background: transparent; border: 1px solid var(--osu-pink); color: var(--osu-pink);
             padding: 8px 16px; border-radius: 4px; font-size: 12px; font-weight: bold;
             cursor: pointer; display: flex; align-items: center; gap: 8px; transition: 0.2s;
         }
-        .date-btn:hover { background: var(--osu-pink); color: white; }
 
-        /* --- CALENDAR WIDGET --- */
+        /* CALENDAR POPUP */
         .calendar-popup {
             display: none; position: absolute; top: 130px; right: 20px; z-index: 999;
             background: #25252e; border: 1px solid #444; border-radius: 8px;
@@ -58,123 +50,75 @@
         .cal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
         .cal-month { font-weight: 800; color: white; }
         .cal-nav { cursor: pointer; color: var(--text-muted); padding: 5px; }
-        .cal-nav:hover { color: var(--osu-pink); }
         .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; text-align: center; }
-        .cal-day-label { font-size: 10px; color: var(--text-muted); padding-bottom: 5px; }
         .cal-day { padding: 8px; font-size: 12px; cursor: pointer; border-radius: 4px; color: #eee; }
-        .cal-day:hover { background: #3e3e4a; }
         .cal-day.active { background: var(--osu-pink); color: white; font-weight: bold; }
-        .cal-day.empty { pointer-events: none; }
+        .cal-day:hover { background: #3e3e4a; }
 
-        /* --- NEW CARD DESIGN CSS --- */
+        /* SCORE GRID */
         .feed-container { max-width: 1400px; margin: 0 auto; padding: 10px 20px 30px; }
-        .score-grid { display: grid; gap: 20px; grid-template-columns: 1fr; }
-        @media (min-width: 768px) { .score-grid { grid-template-columns: repeat(2, 1fr); } }
-        @media (min-width: 1024px) { .score-grid { grid-template-columns: repeat(4, 1fr); } }
+        .score-grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
+        @media (min-width: 1024px) { .score-grid { grid-template-columns: repeat(5, 1fr); } }
 
+        /* BEAUTIFIED CARD STYLES */
         .score-card { 
-            background: var(--panel-bg); 
-            border-radius: 14px; 
-            overflow: hidden; 
-            display: flex; 
-            flex-direction: column; 
-            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-            border: 1px solid #3e3e4a;
-            text-decoration: none;
-            position: relative;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background: var(--panel-bg); border-radius: 12px; overflow: hidden; 
+            display: flex; flex-direction: column; transition: 0.2s; border: 1px solid #3e3e4a;
+            position: relative; text-decoration: none;
         }
-        .score-card:hover { transform: translateY(-8px); border-color: var(--osu-pink); box-shadow: 0 10px 20px rgba(0,0,0,0.4); }
-
-        /* Map Header */
-        .map-header { 
-            width: 100%; height: 120px; background-size: cover; background-position: center; position: relative; 
-            display: block; /* Make anchor tag behave like block */
-        }
+        .score-card:hover { transform: translateY(-5px); border-color: var(--osu-pink); }
+        
+        .map-header { width: 100%; height: 110px; background-size: cover; background-position: center; position: relative; display: block; }
         .map-header::after {
-            content: ''; position: absolute; top:0; left:0; right:0; bottom:0;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.8));
-            transition: 0.3s;
-        }
-        .map-header:hover::after { background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.6)); }
-
-        /* Badges */
-        .pp-value { 
-            position: absolute; top: 0; left: 0; z-index: 5;
-            background: var(--osu-pink); color: white; padding: 4px 12px; 
-            border-radius: 0 0 12px 0; font-weight: 800; font-size: 13px; 
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
         }
 
         .rank-grade { 
-            position: absolute; top: 0; right: 0; z-index: 5;
-            background: rgba(20,20,25,0.9); font-weight: 900; font-size: 22px;
-            padding: 2px 14px; border-radius: 0 0 0 12px; 
-            border-left: 3px solid var(--osu-pink);
+            position: absolute; top: 0; right: 0; z-index: 2;
+            background: rgba(0,0,0,0.8); font-weight: 900; font-size: 20px;
+            padding: 4px 12px; border-radius: 0 0 0 10px; border-left: 2px solid var(--osu-pink);
         }
-
         /* Rank Colors */
-        .rank-SS, .rank-SSH { color: #f0f0f0; text-shadow: 0 0 8px #fff; }
-        .rank-S, .rank-SH { color: #ffcc22; text-shadow: 0 0 8px orange; }
-        .rank-A { color: #88f000; }
-        .rank-B { color: #22ccff; }
-        .rank-C { color: #ff77ff; }
-        .rank-D { color: #ff4444; }
+        .rank-SS, .rank-SSH { color: silver; text-shadow: 0 0 5px white; }
+        .rank-S, .rank-SH { color: #ffcc22; text-shadow: 0 0 5px orange; }
+        .rank-A { color: #22ff22; } .rank-B { color: #22aaff; } .rank-C { color: #cc22ff; } .rank-D { color: #ff2222; }
 
-        .card-body { padding: 15px; background: var(--panel-bg); position: relative; z-index: 2; }
-
-        /* Avatar overlapping logic */
-        .user-link { position: absolute; top: -30px; right: 15px; z-index: 10; }
-        .user-avatar {
-            width: 50px; height: 50px; border-radius: 12px; border: 4px solid var(--panel-bg);
-            background: #333; transition: 0.2s; object-fit: cover;
+        .pp-value { 
+            position: absolute; top: 0; left: 0; z-index: 2;
+            background: var(--osu-pink); color: white; padding: 4px 10px; 
+            border-radius: 0 0 10px 0; font-weight: 800; font-size: 12px; 
         }
+
+        .card-body { padding: 15px; background: var(--panel-bg); position: relative; z-index: 3; flex-grow: 1; }
+        
+        .user-link { position: absolute; top: -25px; right: 15px; z-index: 4; }
+        .user-avatar { width: 45px; height: 45px; border-radius: 50%; border: 3px solid var(--panel-bg); background: #333; transition: 0.2s; }
         .user-avatar:hover { transform: scale(1.1); border-color: var(--osu-pink); }
 
-        .player-name { 
-            font-weight: 800; color: white; display: flex; align-items: center; 
-            font-size: 15px; text-decoration: none; margin-bottom: 4px; margin-top: 5px;
-        }
+        .player-name { font-weight: 800; color: white; display: block; font-size: 15px; text-decoration: none; margin-bottom: 2px; }
         .player-name:hover { color: var(--osu-pink); }
-        
-        .flag { width: 18px; border-radius: 3px; margin-right: 6px; }
-
-        .map-title { 
-            font-size: 13px; color: var(--text-muted); display: block; 
-            white-space: nowrap; overflow: hidden; text-overflow: ellipsis; 
-            max-width: 100%; text-decoration: none; font-family: 'Inter', sans-serif;
-        }
-        .map-title:hover { color: white; }
+        .map-title { font-size: 12px; color: var(--text-muted); display: block; text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .map-title:hover { color: #fff; }
         
         .score-stats {
-            margin-top: 15px; padding-top: 12px; border-top: 1px solid #3e3e4a;
-            display: flex; justify-content: space-between; align-items: center;
-            font-size: 12px; font-weight: 600;
+            margin-top: 12px; padding-top: 10px; border-top: 1px solid #3e3e4a;
+            display: flex; justify-content: space-between; font-size: 11px; font-weight: 600;
         }
         .accuracy { color: #88ffcc; }
-        .mods { 
-            background: #222; color: #ffcc22; padding: 2px 6px; 
-            border-radius: 4px; font-size: 10px; margin-left: 6px; 
-            vertical-align: middle;
-        }
-        .time-ago { color: #666677; font-size: 11px; }
-
-        .status-msg { grid-column: 1 / -1; text-align: center; padding: 40px; color: var(--text-muted); font-style: italic; }
+        .mods { color: #ffcc22; }
+        .time-ago { color: var(--text-muted); }
+        .status-msg { grid-column: 1 / -1; text-align: center; padding: 40px; color: var(--text-muted); }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo-box">
-        <img src="https://i.im.ge/2026/02/13/eygP26.Picsart-26-02-13-01-23-55-682.jpeg" alt="osu! Iraq">
-    </div>
+    <div class="logo-box"><img src="https://i.im.ge/2026/02/13/eygP26.Picsart-26-02-13-01-23-55-682.jpeg" alt="osu! Iraq"></div>
     <div class="dropdown">
         <button class="dropbtn" id="menuBtn">MENU ▼</button>
         <div class="dropdown-content" id="myDropdown">
-            <a href="#">Showcase (Videos)</a>
-            <a href="#">Mapping</a>
-            <a href="#">Rankings</a>
-            <a href="#">Discord</a>
+            <a href="#">Showcase</a><a href="#">Mapping</a><a href="#">Rankings</a><a href="#">Discord</a>
         </div>
     </div>
 </header>
@@ -187,5 +131,140 @@
 <div class="calendar-popup" id="calendarPopup">
     <div class="cal-header">
         <span class="cal-nav" onclick="changeMonth(-1)">&#9664;</span>
-        <span class="cal-
+        <span class="cal-month" id="calMonthYear"></span>
+        <span class="cal-nav" onclick="changeMonth(1)">&#9654;</span>
+    </div>
+    <div class="cal-grid" id="calGrid"></div>
+</div>
+
+<div class="feed-container">
+    <div class="score-grid" id="scoreGrid">
+        <div class="status-msg">Initializing Feed...</div>
+    </div>
+</div>
+
+<script>
+let currentDate = new Date();
+
+function timeAgo(dateString) {
+    const date = new Date(dateString);
+    const now = new Date();
+    const seconds = Math.floor((now - date) / 1000);
+    let interval = Math.floor(seconds / 3600);
+    if (interval > 24) return date.toLocaleDateString(); 
+    if (interval >= 1) return interval + "h ago";
+    interval = Math.floor(seconds / 60);
+    if (interval >= 1) return interval + "m ago";
+    return "Just now";
+}
+
+async function fetchAndRender(path) {
+    const grid = document.getElementById('scoreGrid');
+    grid.innerHTML = '<div class="status-msg">Loading Iraqi Scores...</div>';
+
+    try {
+        const response = await fetch(path + "?t=" + new Date().getTime());
+        if (!response.ok) throw new Error("No data.");
+        const data = await response.json();
+        
+        if (!data.scores || data.scores.length === 0) {
+            grid.innerHTML = '<div class="status-msg">No scores for this day.</div>';
+            return;
+        }
+
+        grid.innerHTML = ''; 
+        data.scores.forEach(score => {
+            const ppText = score.pp ? Math.round(score.pp) + "pp" : "";
+            const accText = (score.accuracy * 100).toFixed(2) + "%";
+            const modsText = score.mods && score.mods.length > 0 ? "+" + score.mods.join("") : "";
             
+            const card = document.createElement('div');
+            card.className = 'score-card';
+            card.innerHTML = `
+                <a href="https://osu.ppy.sh/beatmapsets/${score.beatmapset.id}" target="_blank" class="map-header" style="background-image: url('${score.beatmapset.cover}');">
+                    <div class="rank-grade rank-${score.rank}">${score.rank}</div>
+                    ${ppText ? `<div class="pp-value">${ppText}</div>` : ''}
+                </a>
+                <div class="card-body">
+                    <a href="https://osu.ppy.sh/users/${score.user_id}" target="_blank" class="user-link">
+                        <img src="https://a.ppy.sh/${score.user_id}" class="user-avatar" onerror="this.src='https://osu.ppy.sh/images/layout/avatar-guest.png'">
+                    </a>
+                    <a href="https://osu.ppy.sh/users/${score.user_id}" target="_blank" class="player-name">${score.user}</a>
+                    <a href="https://osu.ppy.sh/beatmapsets/${score.beatmapset.id}" target="_blank" class="map-title">${score.beatmapset.title}</a>
+                    <div class="score-stats">
+                        <div><span class="accuracy">${accText}</span> <span class="mods">${modsText}</span></div>
+                        <span class="time-ago">${timeAgo(score.created_at)}</span>
+                    </div>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+    } catch (error) {
+        grid.innerHTML = `<div class="status-msg">⚠️ No scores available for this date.</div>`;
+    }
+}
+
+function renderCalendar(date) {
+    const month = date.getMonth();
+    const year = date.getFullYear();
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const startDate = new Date(2025, 11, 13);
+    const today = new Date();
+    today.setHours(0,0,0,0);
+
+    document.getElementById('calMonthYear').innerText = `${date.toLocaleString('default', { month: 'long' })} ${year}`;
+    const grid = document.getElementById('calGrid');
+    grid.innerHTML = ['S','M','T','W','T','F','S'].map(d => `<div class="cal-day-label" style="font-size:10px; color:var(--text-muted)">${d}</div>`).join('');
+
+    for (let i = 0; i < firstDay; i++) grid.innerHTML += `<div class="cal-day empty"></div>`;
+
+    for (let i = 1; i <= daysInMonth; i++) {
+        const checkDate = new Date(year, month, i);
+        let activeClass = (checkDate >= startDate && checkDate <= today) ? " active" : "";
+        grid.innerHTML += `<div class="cal-day${activeClass}" onclick="selectDay(${year}, ${month + 1}, ${i})">${i}</div>`;
+    }
+}
+
+function changeMonth(delta) {
+    currentDate.setMonth(currentDate.getMonth() + delta);
+    renderCalendar(currentDate);
+}
+
+function selectDay(year, month, day) {
+    const mm = month.toString().padStart(2, '0');
+    const dd = day.toString().padStart(2, '0');
+    document.getElementById('currentDateLabel').innerText = `DATE: ${year}-${mm}-${dd}`;
+    document.getElementById('calendarPopup').classList.remove('open');
+    fetchAndRender(`data/${year}/${mm}/${dd}.json`);
+}
+
+// INITIALIZATION LOGIC
+function init() {
+    // 1. Setup Menu Toggle
+    const menuBtn = document.getElementById('menuBtn');
+    menuBtn.onclick = (e) => { document.getElementById('myDropdown').classList.toggle("show"); e.stopPropagation(); };
+    
+    // 2. Setup Calendar Toggle
+    document.getElementById('calendarBtn').onclick = (e) => {
+        document.getElementById('calendarPopup').classList.toggle('open');
+        renderCalendar(currentDate);
+        e.stopPropagation();
+    };
+
+    // 3. Load the Previous Day (Default View)
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    selectDay(yesterday.getFullYear(), yesterday.getMonth() + 1, yesterday.getDate());
+
+    // 4. Global Click to close popups
+    window.onclick = () => {
+        document.getElementById('myDropdown').classList.remove('show');
+        document.getElementById('calendarPopup').classList.remove('open');
+    };
+}
+
+init();
+</script>
+</body>
+</html>

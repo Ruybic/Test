@@ -244,13 +244,12 @@ async function fetchAndRender(path) {
             </a>
             <a href="https://osu.ppy.sh/beatmapsets/${score.beatmapset.id}" target="_blank" class="map-title">${score.beatmapset.title}</a>
             <div class="score-stats">
-                <div>
-                    <span class="accuracy">${(score.accuracy * 100).toFixed(2)}%</span>
-                    <span class="mods">${score.mods.length > 0 ? `<span class="mods">+${score.mods.join('')}</span>` : ''}
-
-                </div>
-                <div class="time-ago">${timeAgo(score.created_at)}</div>
-            </div>
+    <div>
+        <span class="accuracy">${(score.accuracy * 100).toFixed(2)}%</span>
+        ${score.mods.length > 0 ? `<span class="mods">+${score.mods.join('')}</span>` : ''}
+    </div>
+    <div class="time-ago">${timeAgo(score.created_at)}</div>
+</div>
         </div>
     `;
     grid.appendChild(card);

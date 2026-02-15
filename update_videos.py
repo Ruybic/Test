@@ -4,7 +4,7 @@ import os
 
 # Your Target Channels
 CHANNELS = [
-    {"id": "UC_8xOm5AjLPTs_r6zpqsC0A", "name": "FancyToast"},
+    {"id": "UCAZTO65RFJoH3thMzFlnHvw", "name": "FancyToast"},
     {"id": "UCq_f7_7_uN82mX_f9S8h28A", "name": "Ano"}
 ]
 

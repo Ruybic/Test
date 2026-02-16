@@ -97,13 +97,12 @@
 
             grid.innerHTML = ''; // Clear the "Loading" message
 
-            visibleVideos.forEach(video => {
+                        visibleVideos.forEach(video => {
                 const card = document.createElement('div');
                 card.className = 'video-card';
                 
-                // --- ADD THIS LINE HERE ---
-                // If the date is the fallback "2000-01-01", it shows "Archived" instead
-                const displayDate = (video.published === "2000-01-01") ? "Archived" : video.published;
+                // 1. This defines the variable (Make sure this exists!)
+                const displayDate = (video.published === "2000-01-01" || !video.published) ? "Archived" : video.published;
 
                 card.innerHTML = `
                     <div class="thumbnail-container" onclick="playVideo(this, '${video.id}')">

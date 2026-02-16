@@ -15,7 +15,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Gets full history to prevent push conflicts
+          fetch-depth: 0 
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -33,10 +33,10 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Pull latest manual edits from GitHub first
+          # This pulls your manual "No" edits from GitHub before pushing
           git pull origin main --rebase
           
           git add data/video_database.json
-          git commit -m "Update video feed & sequence" || echo "No changes to commit"
+          git commit -m "Update video feed: real dates & sequence" || echo "No changes"
           git push origin main
           

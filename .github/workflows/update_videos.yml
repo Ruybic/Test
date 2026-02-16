@@ -2,8 +2,8 @@ name: Update Video Feed
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # Every 6 hours
-  workflow_dispatch:
+    - cron: '0 */6 * * *' # Runs every 6 hours
+  workflow_dispatch:      # Allows manual testing
 
 permissions:
   contents: write
@@ -33,10 +33,19 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # This pulls your manual "No" edits from GitHub before pushing
+          # 1. Pull any manual "No" changes you made on your phone/GitHub
           git pull origin main --rebase
           
+          # 2. Stage the specific database file
           git add data/video_database.json
-          git commit -m "Update video feed: real dates & sequence" || echo "No changes"
-          git push origin main
+          
+          # 3. Check if there are actually any new videos/changes
+          if git diff --staged --quiet; then
+            echo "No new video data found. Skipping push."
+          else
+            echo "New data detected! Committing changes..."
+            git commit -m "Update video feed: real dates & sequence"
+            git push origin main
+          fi
+
           

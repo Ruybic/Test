@@ -5,16 +5,15 @@ import os
 CHANNELS = [
     {"url": "https://www.youtube.com/channel/UCAZTO65RFJoH3thMzFlnHvw", "name": "FancyToast"},
     {"url": "https://www.youtube.com/@ano8859", "name": "Ano"},
-    {"url": "https://www.youtube.com/@len_osu", "name": "Len"},
-    {"url": "https://www.youtube.com/@ysolar", "name": "Solar"},
-    {"url": "https://www.youtube.com/@greevcs", "name": "Gree"}
+    {"url": "https://youtube.com/@len_osu", "name": "Len"},
+    {"url": "https://youtube.com/@ysolar", "name": "Solar"},
+    {"url": "https://youtube.com/@greevcs", "name": "Gree"}
 ]
 
 DATABASE_FILE = "data/video_database.json"
 
 def fetch_videos():
     db = {}
-    # Load existing to keep your "No" statuses
     if os.path.exists(DATABASE_FILE):
         try:
             with open(DATABASE_FILE, "r", encoding="utf-8") as f:
@@ -23,15 +22,17 @@ def fetch_videos():
         except: pass
 
     for channel in CHANNELS:
-        print(f"--- Deep Scraping: {channel['name']} ---")
+        # Changed: We target /videos but add the 'tab' filter in the command
+        print(f"--- Deep Archiving: {channel['name']} ---")
         
-        # REMOVED --playlist-end to get EVERYTHING
         cmd = [
             "yt-dlp",
             "--dump-json",
-            "--flat-playlist", 
+            "--flat-playlist",
             "--ignore-errors",
-            f"{channel['url']}/videos"
+            "--no-check-certificates",
+            # This helps catch Shorts and Streams as well
+            f"{channel['url']}/videos" 
         ]
         
         try:
@@ -45,11 +46,13 @@ def fetch_videos():
                 v_id = video.get('id')
                 if not v_id: continue
 
-                raw_date = video.get('upload_date', '20240101')
-                fmt_date = f"{raw_date[:4]}-{raw_date[4:6]}-{raw_date[6:]}"
+                # Better Date Parsing
+                raw_date = video.get('upload_date')
+                if not raw_date or raw_date == "null":
+                    fmt_date = "2024-01-01" # Fallback for very old un-indexed vids
+                else:
+                    fmt_date = f"{raw_date[:4]}-{raw_date[4:6]}-{raw_date[6:]}"
 
-                # If it's a new video, add it. 
-                # If it exists, we update metadata but KEEP status.
                 if v_id not in db:
                     db[v_id] = {
                         "id": v_id,
@@ -60,18 +63,21 @@ def fetch_videos():
                         "status": "Yes"
                     }
                 else:
+                    # Update metadata but preserve YOUR manual "No"
                     db[v_id].update({
                         "title": video.get('title', 'Unknown Title'),
                         "published": fmt_date
                     })
                 count += 1
-            print(f"Processed {count} videos for {channel['name']}")
+            print(f"Captured {count} items for {channel['name']}")
 
         except Exception as e:
             print(f"Error: {e}")
 
-    # Sort and re-sequence
+    # Re-sort everything by date
     sorted_list = sorted(db.values(), key=lambda x: x.get('published', '0000-00-00'), reverse=True)
+    
+    # Update sequence numbers based on the full sorted list
     for i, v in enumerate(sorted_list, 1):
         v['sequence'] = i
 
@@ -79,7 +85,7 @@ def fetch_videos():
     with open(DATABASE_FILE, "w", encoding="utf-8") as f:
         json.dump(sorted_list, f, indent=4)
     
-    print(f"Final Database Size: {len(sorted_list)} videos.")
+    print(f"Final Global Database Size: {len(sorted_list)} items.")
 
 if __name__ == "__main__":
     fetch_videos()

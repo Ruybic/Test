@@ -22,71 +22,66 @@ def fetch_videos():
         except: pass
 
     for channel in CHANNELS:
-        # Changed: We target /videos but add the 'tab' filter in the command
-        print(f"--- Deep Archiving: {channel['name']} ---")
-        
+        print(f"--- Archiving: {channel['name']} ---")
+        # We removed --flat-playlist to ensure we get the real 'upload_date'
+        # but kept --playlist-end to avoid a 10-hour run. 
+        # Increase '200' if you need even more history per channel.
         cmd = [
             "yt-dlp",
             "--dump-json",
-            "--flat-playlist",
+            "--playlist-end", "200", 
             "--ignore-errors",
-            "--no-check-certificates",
-            # This helps catch Shorts and Streams as well
-            f"{channel['url']}/videos" 
+            "--no-warnings",
+            f"{channel['url']}/videos"
         ]
         
         try:
             result = subprocess.run(cmd, capture_output=True, text=True, encoding='utf-8')
-            lines = result.stdout.strip().split('\n')
-            
-            count = 0
-            for line in lines:
+            for line in result.stdout.splitlines():
                 if not line.strip(): continue
                 video = json.loads(line)
                 v_id = video.get('id')
-                if not v_id: continue
-
-                # Better Date Parsing
+                
+                # FIXING THE DATE:
+                # yt-dlp uses 'upload_date' (YYYYMMDD). If missing, we try 'timestamp'
                 raw_date = video.get('upload_date')
-                if not raw_date or raw_date == "null":
-                    fmt_date = "2024-01-01" # Fallback for very old un-indexed vids
-                else:
+                if raw_date:
                     fmt_date = f"{raw_date[:4]}-{raw_date[4:6]}-{raw_date[6:]}"
+                else:
+                    fmt_date = "2000-01-01" 
 
                 if v_id not in db:
                     db[v_id] = {
                         "id": v_id,
-                        "title": video.get('title', 'Unknown Title'),
+                        "title": video.get('title'),
                         "channel": channel['name'],
                         "published": fmt_date,
                         "url": f"https://youtu.be/{v_id}",
                         "status": "Yes"
                     }
                 else:
-                    # Update metadata but preserve YOUR manual "No"
-                    db[v_id].update({
-                        "title": video.get('title', 'Unknown Title'),
-                        "published": fmt_date
-                    })
-                count += 1
-            print(f"Captured {count} items for {channel['name']}")
+                    # Update date if it was previously stuck at 2024-01-01
+                    db[v_id]["published"] = fmt_date
 
         except Exception as e:
-            print(f"Error: {e}")
+            print(f"Error on {channel['name']}: {e}")
 
-    # Re-sort everything by date
-    sorted_list = sorted(db.values(), key=lambda x: x.get('published', '0000-00-00'), reverse=True)
+    # --- SORT & REVERSE SEQUENCE ---
+    # 1. Sort by date (Oldest to Newest)
+    all_vids = sorted(db.values(), key=lambda x: x['published'])
     
-    # Update sequence numbers based on the full sorted list
-    for i, v in enumerate(sorted_list, 1):
-        v['sequence'] = i
+    # 2. Assign sequence #1 to oldest, up to #1500 for newest
+    for i, vid in enumerate(all_vids, 1):
+        vid['sequence'] = i
+
+    # 3. Final Sort (Newest first for the Website display)
+    final_list = sorted(all_vids, key=lambda x: x['published'], reverse=True)
 
     os.makedirs("data", exist_ok=True)
     with open(DATABASE_FILE, "w", encoding="utf-8") as f:
-        json.dump(sorted_list, f, indent=4)
+        json.dump(final_list, f, indent=4)
     
-    print(f"Final Global Database Size: {len(sorted_list)} items.")
+    print(f"Saved {len(final_list)} videos. Highest sequence: #{len(final_list)}")
 
 if __name__ == "__main__":
     fetch_videos()
-    

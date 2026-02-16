@@ -3,7 +3,8 @@ import subprocess
 import os
 
 CHANNELS = [
-    {"url": "https://www.youtube.com/@fancytoast501/videos", "name": "FancyToast"},
+    {"url": "https://www.youtube.com/@fancytoast501/videos", "name": "FancyToastOsu!"},
+    {"url": "https://www.youtube.com/@fancytoast551/videos", "name": "FancyToastMain"},
     {"url": "https://www.youtube.com/@ano8859/videos", "name": "Ano"},
     {"url": "https://www.youtube.com/@len_osu/videos", "name": "Len"},
     {"url": "https://www.youtube.com/@ysolar/videos", "name": "Sola"},

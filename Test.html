@@ -83,25 +83,34 @@
         }
         .score-card:hover { transform: translateY(-8px); border-color: var(--osu-pink); box-shadow: 0 10px 20px rgba(0,0,0,0.4); }
 
-        /* NEW: TOP PLAY GOLDEN AURA */
+        /* UPGRADED: ANIMATED TOP PLAY GOLDEN AURA */
+        @keyframes goldenPulse {
+            0% { box-shadow: 0 0 8px rgba(255, 215, 0, 0.4); }
+            50% { box-shadow: 0 0 25px rgba(255, 215, 0, 0.8), inset 0 0 10px rgba(255, 215, 0, 0.2); }
+            100% { box-shadow: 0 0 8px rgba(255, 215, 0, 0.4); }
+        }
+
         .score-card.top-play {
             border: 2px solid #ffd700;
-            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+            animation: goldenPulse 2s infinite ease-in-out; /* The glowing animation */
             transform: scale(1.02);
             z-index: 2;
         }
         .score-card.top-play:hover {
-            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.6);
             transform: scale(1.05) translateY(-8px);
+            animation: none; /* Stops pulse on hover to lock in the bright glow */
+            box-shadow: 0 15px 30px rgba(255, 215, 0, 0.7);
         }
+        
+        /* UPGRADED: POSITIONED TO LEFT, NO EMOJI */
         .top-play-badge {
-            position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
-            background: #ffd700; color: #000; font-weight: 900; font-size: 10px; letter-spacing: 1px;
-            padding: 3px 10px; border-radius: 12px; z-index: 20; box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            position: absolute; bottom: 10px; left: 10px; /* Moved left */
+            background: #ffd700; color: #000; font-weight: 900; font-size: 11px; letter-spacing: 1px;
+            padding: 4px 10px; border-radius: 6px; z-index: 20; box-shadow: 0 2px 10px rgba(0,0,0,0.5);
             white-space: nowrap; pointer-events: none;
         }
 
-        /* NEW: AD CARD STYLING */
+        /* AD CARD STYLING */
         .ad-card {
             background: #1a1a20;
             border-radius: 14px;
@@ -114,7 +123,7 @@
             text-decoration: none;
             transition: 0.3s;
             cursor: pointer;
-            min-height: 200px; /* roughly matches standard card height */
+            min-height: 200px; 
         }
         .ad-card:hover { border-color: #888; box-shadow: 0 10px 20px rgba(0,0,0,0.4); transform: translateY(-8px); }
         .ad-card img { width: 100%; height: 100%; object-fit: cover; }
@@ -137,7 +146,7 @@
             background: var(--osu-pink); color: white; padding: 5px 12px; 
             border-radius: 0 0 12px 0; font-weight: 800; font-size: 14px; 
         }
-        .score-card.top-play .pp-value { background: #ffd700; color: #000; } /* Matches gold theme */
+        .score-card.top-play .pp-value { background: #ffd700; color: #000; } 
 
         .rank-grade { 
             position: absolute; top: 0; right: 0; z-index: 5;
@@ -183,7 +192,51 @@
         .mods { background: #333; color: #ffcc22; padding: 1px 6px; border-radius: 4px; font-size: 10px; margin-left: 5px; }
         .time-ago { color: #666677; font-size: 11px; }
         .flag { width: 16px; vertical-align: middle; margin-right: 4px; border-radius: 2px; }
-        
+
+        /* NEW: SCROLL TO TOP PROGRESS BUTTON */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #25252e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.2s;
+            z-index: 1000;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+        }
+        .scroll-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        .scroll-to-top:hover {
+            transform: translateY(-5px);
+            background: #2e2e38;
+        }
+        .progress-ring {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(-90deg); /* Start circle from top */
+        }
+        .progress-ring__circle {
+            transition: stroke-dashoffset 0.1s;
+            transform-origin: 50% 50%;
+        }
+        .arrow-up {
+            color: var(--osu-pink);
+            font-size: 18px;
+            z-index: 2;
+            font-weight: 900;
+        }
+
     </style>
 </head>
 <body>
@@ -223,7 +276,50 @@
     </div>
 </div>
 
+<div id="scrollToTop" class="scroll-to-top">
+    <svg class="progress-ring" width="50" height="50">
+        <circle stroke="#3e3e4a" stroke-width="4" fill="transparent" r="22" cx="25" cy="25"/>
+        <circle class="progress-ring__circle" stroke="#ff66aa" stroke-width="4" fill="transparent" r="22" cx="25" cy="25"/>
+    </svg>
+    <span class="arrow-up">▲</span>
+</div>
+
 <script>
+// --- SCROLL TO TOP LOGIC ---
+const scrollToTopBtn = document.getElementById('scrollToTop');
+const circle = document.querySelector('.progress-ring__circle');
+const radius = circle.r.baseVal.value;
+const circumference = radius * 2 * Math.PI;
+
+// Set up the dash array/offset for the SVG ring
+circle.style.strokeDasharray = `${circumference} ${circumference}`;
+circle.style.strokeDashoffset = circumference;
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    // Calculate how much user can scroll in total
+    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    
+    // Prevent division by zero if the page is too short to scroll
+    if (docHeight > 0) {
+        const scrollPercent = scrollTop / docHeight;
+        const offset = circumference - (scrollPercent * circumference);
+        circle.style.strokeDashoffset = offset;
+    }
+
+    // Show button only after scrolling down 100px
+    if (scrollTop > 100) {
+        scrollToTopBtn.classList.add('visible');
+    } else {
+        scrollToTopBtn.classList.remove('visible');
+    }
+});
+
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
 // --- UTILITIES ---
 function timeAgo(dateString) {
     const date = new Date(dateString);
@@ -271,7 +367,6 @@ async function fetchAndRender(path) {
             const isTopPlay = score.score_id === topScoreId;
             const card = document.createElement('div');
             
-            // Add top-play class if it matches the highest PP
             card.className = isTopPlay ? 'score-card top-play' : 'score-card';
             
             card.onclick = (e) => {
@@ -280,12 +375,13 @@ async function fetchAndRender(path) {
                 }
             };
 
+            // Notice the badge text is changed to DAILY BEST and moved to the left
             card.innerHTML = `
                 <div class="pp-value">${Math.round(score.pp)}pp</div> 
                 <div class="rank-grade rank-${score.rank}">${score.rank}</div>
                 <a href="https://osu.ppy.sh/beatmapsets/${score.beatmapset.id}" target="_blank" class="map-header" style="background-image: url('${score.beatmapset.cover}');">
                     <div class="star-rating">★ ${score.beatmapset.difficulty_rating || '??'}</div>
-                    ${isTopPlay ? `<div class="top-play-badge">👑 DAILY BEST</div>` : ''}
+                    ${isTopPlay ? `<div class="top-play-badge">DAILY BEST</div>` : ''}
                 </a>
                 <div class="card-body">
                     <a href="https://osu.ppy.sh/users/${score.user_id}" target="_blank" class="user-link">
@@ -308,13 +404,11 @@ async function fetchAndRender(path) {
         });
 
         // 3. INJECT AD CARDS RANDOMLY (Show 3 times)
-        // Ensure we don't spam 3 ads if there's only like 2 scores. 
-        // Math.min makes sure it caps at 3, but scales down if the grid is tiny.
         const numAdsToInject = Math.min(3, Math.max(1, Math.floor(data.scores.length / 3)));
         
         for (let i = 0; i < numAdsToInject; i++) {
             const adCard = document.createElement('a');
-            adCard.href = "https://example.com"; // Replace with actual ad link later
+            adCard.href = "https://example.com"; 
             adCard.target = "_blank";
             adCard.className = "ad-card";
             adCard.innerHTML = `
@@ -322,7 +416,6 @@ async function fetchAndRender(path) {
                 <img src="https://i.imgur.com/1YJfjH6.png" alt="Advertisement">
             `;
             
-            // Pick a random spot in the array to insert the ad
             const randomIndex = Math.floor(Math.random() * (gridItems.length + 1));
             gridItems.splice(randomIndex, 0, adCard);
         }
@@ -379,8 +472,7 @@ function selectDay(year, month, day) {
     const dd = day.toString().padStart(2, '0');
     
     const path = `data/${year}/${mm}/${dd}.json`;
-
-    document.getElementById('currentDateLabel').innerText = `DATE: ${year}-${mm}-${dd}`;
+        document.getElementById('currentDateLabel').innerText = `DATE: ${year}-${mm}-${dd}`;
     document.getElementById('calendarPopup').classList.remove('open');
     fetchAndRender(path);
 }
@@ -394,6 +486,37 @@ document.getElementById('calendarBtn').onclick = () => {
 const menuBtn = document.getElementById('menuBtn');
 const dropdown = document.getElementById('myDropdown');
 menuBtn.onclick = (e) => { dropdown.classList.toggle("show"); e.stopPropagation(); };
+
+// --- SCROLL TO TOP LOGIC ---
+const scrollToTopBtn = document.getElementById('scrollToTop');
+const circle = document.querySelector('.progress-ring__circle');
+const radius = circle.r.baseVal.value;
+const circumference = radius * 2 * Math.PI;
+
+circle.style.strokeDasharray = `${circumference} ${circumference}`;
+circle.style.strokeDashoffset = circumference;
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    
+    if (docHeight > 0) {
+        const scrollPercent = scrollTop / docHeight;
+        const offset = circumference - (scrollPercent * circumference);
+        circle.style.strokeDashoffset = offset;
+    }
+
+    if (scrollTop > 100) {
+        scrollToTopBtn.classList.add('visible');
+    } else {
+        scrollToTopBtn.classList.remove('visible');
+    }
+});
+
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 window.onclick = (e) => { 
     if (!e.target.matches('.dropbtn')) dropdown.classList.remove('show');
     if (!e.target.closest('#calendarPopup') && !e.target.closest('#calendarBtn')) {
@@ -426,3 +549,4 @@ init();
 </script>
 </body>
 </html>
+  

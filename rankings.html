@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>osu! Iraq Today | Rankings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --osu-pink: #ff66aa; --dark-base: #1c1c21; --panel-bg: #2e2e38; --text-main: #ffffff; --text-muted: #888895; --accent-gold: #ffd700; }
+        body { background-color: var(--dark-base); color: var(--text-main); font-family: 'Exo 2', sans-serif; margin: 0; }
+
+        /* HEADER */
+        header { background: #111116; padding: 12px 25px; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--panel-bg); position: sticky; top: 0; z-index: 1000; }
+        .logo-box a { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-box img { height: 38px; }
+        .logo-text { color: var(--osu-pink); font-weight: 800; font-size: 18px; }
+        
+        /* CONTROLS */
+        .controls-bar { max-width: 1000px; margin: 30px auto 15px; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        .sort-select { background: var(--panel-bg); color: white; border: 1px solid #3e3e4a; padding: 8px 12px; border-radius: 6px; font-family: 'Exo 2'; font-weight: 600; outline: none; cursor: pointer; }
+        .sort-select:focus { border-color: var(--osu-pink); }
+
+        /* LEADERBOARD LIST */
+        .leaderboard-container { max-width: 1000px; margin: 0 auto; padding: 0 20px 50px; display: flex; flex-direction: column; gap: 15px; }
+        
+        .player-card { background: var(--panel-bg); border-radius: 12px; padding: 15px; border: 1px solid #3e3e4a; display: flex; flex-direction: column; gap: 10px; transition: 0.2s; }
+        .player-card:hover { border-color: var(--osu-pink); transform: translateX(5px); }
+
+        .player-main { display: flex; justify-content: space-between; align-items: center; }
+        .player-info { display: flex; align-items: center; gap: 15px; }
+        .rank-num { font-size: 20px; font-weight: 900; color: var(--text-muted); width: 40px; text-align: center; }
+        .avatar { width: 50px; height: 50px; border-radius: 8px; }
+        .username { font-size: 18px; font-weight: 800; color: white; text-decoration: none; }
+        .username:hover { color: var(--osu-pink); }
+        .flag { width: 20px; border-radius: 2px; margin-right: 5px; }
+
+        /* DYNAMIC STAT & ACTIVITY */
+        .stat-display { text-align: right; }
+        .primary-stat { font-size: 20px; font-weight: 900; color: var(--osu-pink); }
+        .activity-indicator { display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; color: var(--text-muted); justify-content: flex-end; margin-top: 4px; }
+        .dot { width: 8px; height: 8px; border-radius: 50%; }
+        .dot.online { background-color: #88ffcc; box-shadow: 0 0 8px #88ffcc; }
+        .dot.offline { background-color: #ff4444; }
+
+        /* TOP PLAY BOX */
+        .top-play-box {
+            position: relative; border-radius: 8px; height: 45px; overflow: hidden;
+            display: flex; align-items: center; padding: 0 15px; text-decoration: none;
+            background-size: cover; background-position: center; border: 1px solid #1c1c21;
+        }
+        .top-play-box::before {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(90deg, rgba(20,20,25,0.95) 0%, rgba(20,20,25,0.7) 60%, rgba(20,20,25,0.2) 100%);
+        }
+        .top-play-content { position: relative; z-index: 2; width: 100%; display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; color: #ddd; }
+        .top-play-highlight { color: var(--accent-gold); font-weight: 800; }
+        .top-play-acc { color: #88ffcc; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-box">
+        <a href="index.html">
+            <img src="https://i.imgur.com/1YJfjH6.png" alt="osu! Iraq">
+            <span class="logo-text">Osu! Iraq Today</span>
+        </a>
+    </div>
+</header>
+
+<div class="controls-bar">
+    <h2 style="margin:0; font-size: 16px; color: var(--text-muted);">IRAQ TOP 500</h2>
+    <select id="sortSelect" class="sort-select">
+        <option value="pp">Rank by PP (Default)</option>
+        <option value="daily_pp">Most Recent PP Gained Today</option>
+        <option value="last_active">Last Active</option>
+        <option value="a_ranks">Most A-Ranks</option>
+        <option value="medals">Most Medals</option>
+        <option value="oldest">Oldest Account</option>
+        <option value="accuracy">Highest Accuracy</option>
+        <option value="play_time">Play Time</option>
+        <option value="play_count">Play Count</option>
+        <option value="total_score">Total Score</option>
+        <option value="total_hits">Total Hits</option>
+    </select>
+</div>
+
+<div class="leaderboard-container" id="leaderboardGrid">
+    <div style="text-align:center; color: var(--text-muted); padding: 50px;">Loading Rankings...</div>
+</div>
+
+<script>
+let currentData = [];
+
+// Formatters
+const fmtNum = (num) => Number(num).toLocaleString();
+const fmtTime = (seconds) => (seconds / 3600).toFixed(1) + 'h';
+
+async function fetchLeaderboard() {
+    try {
+        // Find the latest available date from your index
+        const indexRes = await fetch('data/leaderboards/index.json?t=' + Date.now());
+        const index = await indexRes.json();
+        const latestDate = index.available_dates[index.available_dates.length - 1];
+        const [y, m, d] = latestDate.split('-');
+        
+        const dataRes = await fetch(`data/leaderboards/${y}/${m}/${d}.json?t=` + Date.now());
+        currentData = await dataRes.json();
+        
+        renderLeaderboard('pp'); // Default sort
+    } catch (e) {
+        document.getElementById('leaderboardGrid').innerHTML = '<div style="text-align:center;">Failed to load leaderboard data.</div>';
+    }
+}
+
+function renderLeaderboard(sortBy) {
+    const grid = document.getElementById('leaderboardGrid');
+    grid.innerHTML = '';
+
+    // Sort Logic
+    let sortedData = [...currentData];
+    sortedData.sort((a, b) => {
+        if (sortBy === 'oldest') return a.id - b.id; // Lower ID = Older
+        if (sortBy === 'last_active') return new Date(b.last_active) - new Date(a.last_active);
+        return b[sortBy] - a[sortBy]; // Works for numeric values (pp, acc, play_count, etc)
+    });
+
+    sortedData.forEach((player, index) => {
+        // Determine Primary Stat Text
+        let statText = `${Math.round(player.pp)}pp`;
+        if (sortBy === 'daily_pp') statText = `+${Math.round(player.daily_pp)}pp Today`;
+        if (sortBy === 'a_ranks') statText = `${fmtNum(player.a_ranks)} A-Ranks`;
+        if (sortBy === 'medals') statText = `${player.medals} Medals`;
+        if (sortBy === 'accuracy') statText = `${player.accuracy.toFixed(2)}% Acc`;
+        if (sortBy === 'play_time') statText = `${fmtTime(player.play_time)} Played`;
+        if (sortBy === 'play_count') statText = `${fmtNum(player.play_count)} Plays`;
+        if (sortBy === 'total_score') statText = `${fmtNum(player.total_score)} Score`;
+        if (sortBy === 'total_hits') statText = `${fmtNum(player.total_hits)} Hits`;
+        if (sortBy === 'oldest') statText = `ID: ${player.id}`;
+        if (sortBy === 'last_active') statText = ''; // Hidden since we have the dot
+
+        // Activity Dot Logic (Green if active in last 3 days)
+        const daysSinceActive = (Date.now() - new Date(player.last_active)) / (1000 * 3600 * 24);
+        const isActive = daysSinceActive <= 3;
+        const dotClass = isActive ? 'online' : 'offline';
+        const activeText = isActive ? 'Recently Active' : 'Offline';
+
+        // Top Play Box HTML
+        let topPlayHtml = '';
+        if (player.top_play) {
+            const tp = player.top_play;
+            topPlayHtml = `
+                <a href="#" target="_blank" class="top-play-box" style="background-image: url('${tp.cover}');">
+                    <div class="top-play-content">
+                        <span>
+                            <span class="top-play-acc">${tp.acc.toFixed(2)}%</span> 
+                            ${tp.title} [${tp.diff}] <span style="color:#aaa;">${tp.mods}</span>
+                        </span>
+                        <span>
+                            ${tp.stars.toFixed(2)} ⭐ | <span class="top-play-highlight">${Math.round(tp.pp)}PP</span>
+                        </span>
+                    </div>
+                </a>
+            `;
+        }
+
+        const card = document.createElement('div');
+        card.className = 'player-card';
+        card.innerHTML = `
+            <div class="player-main">
+                <div class="player-info">
+                    <span class="rank-num">#${index + 1}</span>
+                    <img src="${player.avatar}" class="avatar">
+                    <div>
+                        <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" class="username">
+                            <img src="https://osu.ppy.sh/images/flags/IQ.png" class="flag">${player.user}
+                        </a>
+                    </div>
+                </div>
+                <div class="stat-display">
+                    <div class="primary-stat">${statText}</div>
+                    <div class="activity-indicator">
+                        ${activeText} <div class="dot ${dotClass}"></div>
+                    </div>
+                </div>
+            </div>
+            ${topPlayHtml}
+        `;
+        grid.appendChild(card);
+    });
+}
+
+document.getElementById('sortSelect').addEventListener('change', (e) => {
+    renderLeaderboard(e.target.value);
+});
+
+fetchLeaderboard();
+</script>
+
+</body>
+</html>
+

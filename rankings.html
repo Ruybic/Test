@@ -133,11 +133,24 @@
 </div>
 
 <script>
-// --- MENU LOGIC ---
+// --- NAVIGATION LOGIC ---
 const menuBtn = document.getElementById('menuBtn');
 const dropdown = document.getElementById('myDropdown');
-menuBtn.onclick = (e) => { dropdown.classList.toggle("show"); e.stopPropagation(); };
-window.onclick = (e) => { if (!e.target.matche// Formatters
+
+menuBtn.onclick = (e) => { 
+    dropdown.classList.toggle("show"); 
+    e.stopPropagation(); 
+};
+
+window.onclick = (e) => { 
+    if (!e.target.matches('.dropbtn')) {
+        dropdown.classList.remove('show');
+    }
+};
+
+// --- DATA LOGIC ---
+let currentData = [];
+
 const fmtNum = (n) => Number(n).toLocaleString();
 const fmtTime = (s) => (s / 3600).toFixed(0) + 'h';
 
@@ -145,77 +158,62 @@ async function fetchRankings() {
     const grid = document.getElementById('leaderboardGrid');
     
     try {
-        // 1. Get the index. Try both 'Data' and 'data' if one fails
-        let indexRes = await fetch('Data/leaderboards/index.json').catch(() => fetch('data/leaderboards/index.json'));
-        if (!indexRes.ok) throw new Error("Could not find index.json in Data/ or data/");
+        // 1. Get the index.
+        const indexRes = await fetch('data/leaderboards/index.json?t=' + Date.now());
+        if (!indexRes.ok) throw new Error("Index not found");
         
         const index = await indexRes.json();
         const latestDate = index.available_dates[index.available_dates.length - 1];
         
-        // 2. Parse Date (stripping leading zeros for your folder structure)
+        // 2. Parse Date. Based on your repo, folders use padding (e.g., /02/22.json)
         const parts = latestDate.split('-');
         const y = parts[0];
-        const m = parseInt(parts[1], 10); // 2
-        const d = parseInt(parts[2], 10); // 22
+        const m = parts[1].padStart(2, '0');
+        const d = parts[2].padStart(2, '0');
         
-        // 3. Construct the path
-        const finalPath = `Data/leaderboards/${y}/${m}/${d}.json?t=${Date.now()}`;
+        // 3. Construct path matching your repo structure
+        const finalPath = `data/leaderboards/${y}/${m}/${d}.json?t=${Date.now()}`;
         console.log("Fetching data from:", finalPath);
 
         const dataRes = await fetch(finalPath);
-        if (!dataRes.ok) throw new Error(`File missing: ${finalPath}`);
+        if (!dataRes.ok) throw new Error(`Data missing at ${finalPath}`);
 
         currentData = await dataRes.json();
-        
-        // 4. Render immediately
         renderList('pp'); 
         
     } catch (e) {
         console.error("Fetch Error:", e);
-        grid.innerHTML = `
-            <div class="loader" style="color: #ff66aa;">
-                DATA NOT FOUND<br>
-                <span style="font-size: 11px; color: #888; font-weight: normal;">
-                    Path: ${e.message.split(' ').pop()}
-                </span>
-            </div>`;
+        grid.innerHTML = `<div class="loader" style="color:#ff66aa">ERROR: ${e.message}</div>`;
     }
 }
-s('.dropbtn')) dropdown.classList.remove('show'); };
-
-let currentData = [];
-
 
 function renderList(sortBy) {
     const grid = document.getElementById('leaderboardGrid');
     grid.innerHTML = '';
 
-    // Sort Logic
     let sorted = [...currentData];
     sorted.sort((a, b) => {
         if (sortBy === 'last_active') return new Date(b.last_active) - new Date(a.last_active);
-        return b[sortBy] - a[sortBy];
+        // Standard descending sort for numbers
+        return (b[sortBy] || 0) - (a[sortBy] || 0);
     });
 
     sorted.forEach((player, index) => {
-        // Dynamic Stat Label
         let primaryStatHtml = `${fmtNum(Math.round(player.pp))}pp`;
+        
+        // Contextual labeling based on sorting
         if (sortBy === 'daily_pp') primaryStatHtml = `<span style="color:#88ffcc">+${Math.round(player.daily_pp)}pp</span> Today`;
-        if (sortBy === 'ss_count') primaryStatHtml = `${fmtNum(player.ss_count)} <span style="color:#f0f; font-size:14px;">SS</span>`;
-        if (sortBy === 's_count') primaryStatHtml = `${fmtNum(player.s_count)} <span style="color:var(--accent-gold); font-size:14px;">S</span>`;
-        if (sortBy === 'medals') primaryStatHtml = `${player.medals} Medals`;
-        if (sortBy === 'accuracy') primaryStatHtml = `${player.accuracy.toFixed(2)}%`;
-        if (sortBy === 'play_time') primaryStatHtml = `${fmtTime(player.play_time)} Played`;
-        if (sortBy === 'play_count') primaryStatHtml = `${fmtNum(player.play_count)} Plays`;
-        if (sortBy === 'total_score') primaryStatHtml = `${(player.total_score / 1000000000).toFixed(1)}B Score`;
+        else if (sortBy === 'ss_count') primaryStatHtml = `${fmtNum(player.ss_count)} <span style="color:#f0f; font-size:14px;">SS</span>`;
+        else if (sortBy === 's_count') primaryStatHtml = `${fmtNum(player.s_count)} <span style="color:var(--accent-gold); font-size:14px;">S</span>`;
+        else if (sortBy === 'medals') primaryStatHtml = `${player.medals} Medals`;
+        else if (sortBy === 'accuracy') primaryStatHtml = `${(player.accuracy * 100).toFixed(2)}%`;
+        else if (sortBy === 'play_time') primaryStatHtml = `${fmtTime(player.play_time)} Played`;
+        else if (sortBy === 'total_score') primaryStatHtml = `${(player.total_score / 1000000000).toFixed(1)}B Score`;
 
-        // Activity logic
         const diffDays = (Date.now() - new Date(player.last_active)) / (1000 * 3600 * 24);
         const isActive = diffDays < 3;
         const dotClass = isActive ? 'online' : 'offline';
-        const activeText = isActive ? 'Recently Active' : 'Inactive';
 
-        // Top Play Segment
         let topPlayHtml = '';
         if (player.top_play) {
             const tp = player.top_play;
@@ -250,7 +248,7 @@ function renderList(sortBy) {
                 <div class="stat-block">
                     <div class="stat-value">${primaryStatHtml}</div>
                     <div class="activity-indicator">
-                        ${activeText} <div class="dot ${dotClass}"></div>
+                        ${isActive ? 'Active' : 'Inactive'} <div class="dot ${dotClass}"></div>
                     </div>
                 </div>
             </div>

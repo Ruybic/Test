@@ -145,10 +145,14 @@ let currentData = [];
 const fmtNum = (n) => Number(n).toLocaleString();
 const fmtTime = (s) => (s / 3600).toFixed(0) + 'h';
 
+// Formatters
+const fmtNum = (n) => Number(n).toLocaleString();
+const fmtTime = (s) => (s / 3600).toFixed(0) + 'h';
+
 async function fetchRankings() {
     try {
-        // 1. Get latest date from index
-        const indexRes = await fetch('data/leaderboards/index.json?t=' + Date.now());
+        // 1. Get latest date from index - Using 'Data' with a capital D
+        const indexRes = await fetch('Data/leaderboards/index.json?t=' + Date.now());
         const index = await indexRes.json();
         
         if (!index.available_dates || index.available_dates.length === 0) {
@@ -163,8 +167,8 @@ async function fetchRankings() {
         const m = parseInt(parts[1], 10).toString(); 
         const d = parseInt(parts[2], 10).toString();
         
-        // 3. Construct Path - Ensure this matches your repo folder case (data vs Data)
-        const finalPath = `data/leaderboards/${y}/${m}/${d}.json?t=` + Date.now();
+        // 3. Construct Path - Matching your Capital "Data" folder
+        const finalPath = `Data/leaderboards/${y}/${m}/${d}.json?t=` + Date.now();
         console.log("Fetching data from:", finalPath);
 
         const dataRes = await fetch(finalPath);
@@ -178,9 +182,12 @@ async function fetchRankings() {
     } catch (e) {
         console.error("Fetch Error:", e);
         document.getElementById('leaderboardGrid').innerHTML = `
-            <div class="loader" style="color: #ff4444;">
+            <div class="loader" style="color: #ff4444; padding: 40px; text-align: center;">
                 FAILED TO LOAD DATA<br>
-                <span style="font-size: 12px; color: #888;">${e.message}</span>
+                <span style="font-size: 13px; color: #888; font-weight: normal; display: block; margin-top: 10px;">
+                    Trying to find: ${e.message.split(': ').pop()}<br>
+                    Make sure the file exists in your repository!
+                </span>
             </div>`;
     }
 }

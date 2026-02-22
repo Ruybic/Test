@@ -408,7 +408,7 @@ async function fetchAndRender(path) {
         
         for (let i = 0; i < numAdsToInject; i++) {
             const adCard = document.createElement('a');
-            adCard.href = "https://example.com"; 
+            adCard.href = "ad.html?target=https://example.com"; 
             adCard.target = "_blank";
             adCard.className = "ad-card";
             adCard.innerHTML = `
@@ -424,7 +424,7 @@ async function fetchAndRender(path) {
         gridItems.forEach(item => grid.appendChild(item));
         
     } catch (error) {
-        console.error(error);
+        console.error("Fetch Error:", error);
         grid.innerHTML = `<div class="status-msg">⚠️ No scores available for this date.</div>`;
     }
 }
@@ -453,11 +453,7 @@ function renderCalendar(date) {
     for (let i = 1; i <= daysInMonth; i++) {
         const checkDate = new Date(year, month, i);
         let activeClass = "";
-
-        if (checkDate >= startDate && checkDate <= today) {
-            activeClass = " active";
-        }
-
+        if (checkDate >= startDate && checkDate <= today) activeClass = " active";
         grid.innerHTML += `<div class="cal-day${activeClass}" onclick="selectDay(${year}, ${month + 1}, ${i})">${i}</div>`;
     }
 }
@@ -470,12 +466,35 @@ function changeMonth(delta) {
 function selectDay(year, month, day) {
     const mm = month.toString().padStart(2, '0');
     const dd = day.toString().padStart(2, '0');
-    
     const path = `data/${year}/${mm}/${dd}.json`;
-        document.getElementById('currentDateLabel').innerText = `DATE: ${year}-${mm}-${dd}`;
+    document.getElementById('currentDateLabel').innerText = `DATE: ${year}-${mm}-${dd}`;
     document.getElementById('calendarPopup').classList.remove('open');
     fetchAndRender(path);
 }
+
+// --- SCROLL TO TOP LOGIC ---
+const scrollToTopBtn = document.getElementById('scrollToTop');
+const circle = document.querySelector('.progress-ring__circle');
+
+if (circle) {
+    const radius = circle.r.baseVal.value;
+    const circumference = radius * 2 * Math.PI;
+    circle.style.strokeDasharray = `${circumference} ${circumference}`;
+    circle.style.strokeDashoffset = circumference;
+
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        if (docHeight > 0) {
+            const scrollPercent = scrollTop / docHeight;
+            circle.style.strokeDashoffset = circumference - (scrollPercent * circumference);
+        }
+        if (scrollTop > 100) scrollToTopBtn.classList.add('visible');
+        else scrollToTopBtn.classList.remove('visible');
+    });
+}
+
+scrollToTopBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
 // --- INITIALIZATION ---
 document.getElementById('calendarBtn').onclick = () => {
@@ -487,36 +506,6 @@ const menuBtn = document.getElementById('menuBtn');
 const dropdown = document.getElementById('myDropdown');
 menuBtn.onclick = (e) => { dropdown.classList.toggle("show"); e.stopPropagation(); };
 
-// --- SCROLL TO TOP LOGIC ---
-const scrollToTopBtn = document.getElementById('scrollToTop');
-const circle = document.querySelector('.progress-ring__circle');
-const radius = circle.r.baseVal.value;
-const circumference = radius * 2 * Math.PI;
-
-circle.style.strokeDasharray = `${circumference} ${circumference}`;
-circle.style.strokeDashoffset = circumference;
-
-window.addEventListener('scroll', () => {
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    
-    if (docHeight > 0) {
-        const scrollPercent = scrollTop / docHeight;
-        const offset = circumference - (scrollPercent * circumference);
-        circle.style.strokeDashoffset = offset;
-    }
-
-    if (scrollTop > 100) {
-        scrollToTopBtn.classList.add('visible');
-    } else {
-        scrollToTopBtn.classList.remove('visible');
-    }
-});
-
-scrollToTopBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
 window.onclick = (e) => { 
     if (!e.target.matches('.dropbtn')) dropdown.classList.remove('show');
     if (!e.target.closest('#calendarPopup') && !e.target.closest('#calendarBtn')) {
@@ -524,23 +513,20 @@ window.onclick = (e) => {
     }
 };
 
-renderCalendar(currentDate);
-
 async function init() {
     try {
         const res = await fetch('data/index.json?t=' + Date.now());
         const idx = await res.json();
-        availableDates = idx.available_dates;
+        const availableDates = idx.available_dates; // Added 'const' here
         
         renderCalendar(currentDate);
-
-        if (availableDates.length > 0) {
+        if (availableDates && availableDates.length > 0) {
             const latest = availableDates[availableDates.length - 1];
             const [y, m, d] = latest.split('-');
             selectDay(parseInt(y), parseInt(m), parseInt(d));
         }
     } catch (e) {
-        console.error(e);
+        console.error("Init Error:", e);
         document.getElementById('scoreGrid').innerHTML = '<div class="status-msg">Failed to load index.json</div>';
     }
 }
@@ -549,4 +535,3 @@ init();
 </script>
 </body>
 </html>
-  

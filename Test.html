@@ -69,7 +69,7 @@
         .score-grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
         @media (min-width: 1024px) { .score-grid { grid-template-columns: repeat(5, 1fr); } }
 
-        /* DYNAMIC SCORE CARD - UPGRADED */
+        /* DYNAMIC SCORE CARD */
         .score-card { 
             background: var(--panel-bg); 
             border-radius: 14px; 
@@ -81,8 +81,47 @@
             text-decoration: none;
             position: relative;
         }
-        
         .score-card:hover { transform: translateY(-8px); border-color: var(--osu-pink); box-shadow: 0 10px 20px rgba(0,0,0,0.4); }
+
+        /* NEW: TOP PLAY GOLDEN AURA */
+        .score-card.top-play {
+            border: 2px solid #ffd700;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+            transform: scale(1.02);
+            z-index: 2;
+        }
+        .score-card.top-play:hover {
+            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.6);
+            transform: scale(1.05) translateY(-8px);
+        }
+        .top-play-badge {
+            position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
+            background: #ffd700; color: #000; font-weight: 900; font-size: 10px; letter-spacing: 1px;
+            padding: 3px 10px; border-radius: 12px; z-index: 20; box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            white-space: nowrap; pointer-events: none;
+        }
+
+        /* NEW: AD CARD STYLING */
+        .ad-card {
+            background: #1a1a20;
+            border-radius: 14px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #3e3e4a;
+            position: relative;
+            text-decoration: none;
+            transition: 0.3s;
+            cursor: pointer;
+            min-height: 200px; /* roughly matches standard card height */
+        }
+        .ad-card:hover { border-color: #888; box-shadow: 0 10px 20px rgba(0,0,0,0.4); transform: translateY(-8px); }
+        .ad-card img { width: 100%; height: 100%; object-fit: cover; }
+        .ad-label {
+            position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.7);
+            color: #ccc; font-size: 9px; font-weight: bold; padding: 2px 6px; border-radius: 4px; z-index: 10;
+        }
 
         .map-header { 
             width: 100%; height: 120px; background-size: cover; background-position: center; position: relative; 
@@ -98,6 +137,7 @@
             background: var(--osu-pink); color: white; padding: 5px 12px; 
             border-radius: 0 0 12px 0; font-weight: 800; font-size: 14px; 
         }
+        .score-card.top-play .pp-value { background: #ffd700; color: #000; } /* Matches gold theme */
 
         .rank-grade { 
             position: absolute; top: 0; right: 0; z-index: 5;
@@ -105,6 +145,7 @@
             padding: 2px 15px; border-radius: 0 0 0 12px; 
             border-left: 3px solid var(--osu-pink);
         }
+        .score-card.top-play .rank-grade { border-left-color: #ffd700; }
 
         .rank-SS, .rank-SSH { color: #f0f0f0; text-shadow: 0 0 8px #fff; }
         .rank-S, .rank-SH { color: #ffcc22; text-shadow: 0 0 8px orange; }
@@ -113,7 +154,7 @@
         .rank-C { color: #ff77ff; }
         .rank-D { color: #ff4444; }
 
-        .card-body { padding: 15px; background: var(--panel-bg); position: relative; }
+        .card-body { padding: 15px; background: var(--panel-bg); position: relative; flex-grow: 1; }
         
         .user-link { position: absolute; top: -30px; right: 15px; z-index: 10; }
         .user-avatar {
@@ -121,6 +162,7 @@
             background: #333; transition: 0.2s;
         }
         .user-avatar:hover { transform: scale(1.1); border-color: var(--osu-pink); }
+        .score-card.top-play .user-avatar { border-color: #ffd700; }
 
         .player-name { font-weight: 800; color: white; display: block; font-size: 16px; text-decoration: none; margin-bottom: 4px; }
         .player-name:hover { color: var(--osu-pink); }
@@ -148,14 +190,15 @@
 
 <header>
     <div class="logo-box">
-        <img src="https://i.imgur.com/GbhUJW2.jpeg" alt="osu! Iraq"> </div>
-<div class="dropdown">
+        <img src="https://i.imgur.com/GbhUJW2.jpeg" alt="osu! Iraq">
+    </div>
+    <div class="dropdown">
         <button class="dropbtn" id="menuBtn">Scores ▼</button>
         <div class="dropdown-content" id="myDropdown">
-    <a href="ad.html?target=rankings.html">Rankings</a>
-    <a href="ad.html?target=videos.html">Videos</a>
-    <a href="ad.html?target=mapping.html">Mapping</a>
-    <a href="ad.html?target=socials.html">Socials</a>
+            <a href="ad.html?target=rankings.html">Rankings</a>
+            <a href="ad.html?target=videos.html">Videos</a>
+            <a href="ad.html?target=mapping.html">Mapping</a>
+            <a href="ad.html?target=socials.html">Socials</a>
         </div>
     </div>
 </header>
@@ -180,8 +223,8 @@
     </div>
 </div>
 
-    <script>
- // --- UTILITIES ---
+<script>
+// --- UTILITIES ---
 function timeAgo(dateString) {
     const date = new Date(dateString);
     const now = new Date();
@@ -200,9 +243,7 @@ async function fetchAndRender(path) {
     grid.innerHTML = '<div class="status-msg">Loading Iraqi Scores...</div>';
 
     try {
-        // Use a cache-buster (?t=...) so GitHub Pages doesn't show old data
         const response = await fetch(path + "?t=" + new Date().getTime());
-        
         if (!response.ok) throw new Error("No data found for this date.");
         
         const data = await response.json();
@@ -214,45 +255,80 @@ async function fetchAndRender(path) {
 
         grid.innerHTML = ''; 
 
-    data.scores.forEach(score => {
-    const card = document.createElement('div');
-    card.className = 'score-card';
-    card.style.cursor = 'pointer';
+        // 1. FIND THE TOP PLAY (Highest PP)
+        let topScoreId = null;
+        let maxPp = -1;
+        data.scores.forEach(s => {
+            if (s.pp > maxPp) {
+                maxPp = s.pp;
+                topScoreId = s.score_id;
+            }
+        });
 
-    // Click handler for the whole card
-    card.onclick = (e) => {
-        // This ensures if they click the Avatar or Map Title, it doesn't open the score too
-        if (!e.target.closest('a')) {
-            window.open(`https://osu.ppy.sh/scores/osu/${score.score_id}`, '_blank');
+        // 2. CREATE SCORE CARDS ARRAY
+        let gridItems = [];
+        data.scores.forEach(score => {
+            const isTopPlay = score.score_id === topScoreId;
+            const card = document.createElement('div');
+            
+            // Add top-play class if it matches the highest PP
+            card.className = isTopPlay ? 'score-card top-play' : 'score-card';
+            
+            card.onclick = (e) => {
+                if (!e.target.closest('a')) {
+                    window.open(`https://osu.ppy.sh/scores/osu/${score.score_id}`, '_blank');
+                }
+            };
+
+            card.innerHTML = `
+                <div class="pp-value">${Math.round(score.pp)}pp</div> 
+                <div class="rank-grade rank-${score.rank}">${score.rank}</div>
+                <a href="https://osu.ppy.sh/beatmapsets/${score.beatmapset.id}" target="_blank" class="map-header" style="background-image: url('${score.beatmapset.cover}');">
+                    <div class="star-rating">★ ${score.beatmapset.difficulty_rating || '??'}</div>
+                    ${isTopPlay ? `<div class="top-play-badge">👑 DAILY BEST</div>` : ''}
+                </a>
+                <div class="card-body">
+                    <a href="https://osu.ppy.sh/users/${score.user_id}" target="_blank" class="user-link">
+                        <img src="https://a.ppy.sh/${score.user_id}" class="user-avatar" alt="Avatar">
+                    </a>
+                    <a href="https://osu.ppy.sh/users/${score.user_id}" target="_blank" class="player-name">
+                        <img src="https://osu.ppy.sh/images/flags/IQ.png" class="flag"> ${score.user}
+                    </a>
+                    <a href="https://osu.ppy.sh/beatmapsets/${score.beatmapset.id}" target="_blank" class="map-title">${score.beatmapset.title}</a>
+                    <div class="score-stats">
+                        <div>
+                            <span class="accuracy">${(score.accuracy * 100).toFixed(2)}%</span>
+                            ${score.mods.length > 0 ? `<span class="mods">+${score.mods.join('')}</span>` : ''}
+                        </div>
+                        <div class="time-ago">${timeAgo(score.created_at)}</div>
+                    </div>
+                </div>
+            `;
+            gridItems.push(card);
+        });
+
+        // 3. INJECT AD CARDS RANDOMLY (Show 3 times)
+        // Ensure we don't spam 3 ads if there's only like 2 scores. 
+        // Math.min makes sure it caps at 3, but scales down if the grid is tiny.
+        const numAdsToInject = Math.min(3, Math.max(1, Math.floor(data.scores.length / 3)));
+        
+        for (let i = 0; i < numAdsToInject; i++) {
+            const adCard = document.createElement('a');
+            adCard.href = "https://example.com"; // Replace with actual ad link later
+            adCard.target = "_blank";
+            adCard.className = "ad-card";
+            adCard.innerHTML = `
+                <span class="ad-label">AD</span>
+                <img src="https://i.imgur.com/1YJfjH6.png" alt="Advertisement">
+            `;
+            
+            // Pick a random spot in the array to insert the ad
+            const randomIndex = Math.floor(Math.random() * (gridItems.length + 1));
+            gridItems.splice(randomIndex, 0, adCard);
         }
-    };
 
-    card.innerHTML = `
-
-        <div class="pp-value">${Math.round(score.pp)}pp</div> 
-        <div class="rank-grade rank-${score.rank}">${score.rank}</div>
-        <a href="https://osu.ppy.sh/beatmapsets/${score.beatmapset.id}" target="_blank" class="map-header" style="background-image: url('${score.beatmapset.cover}');">
-            <div class="star-rating">★ ${score.beatmapset.difficulty_rating || '??'}</div>
-        </a>
-        <div class="card-body">
-            <a href="https://osu.ppy.sh/users/${score.user_id}" target="_blank" class="user-link">
-                <img src="https://a.ppy.sh/${score.user_id}" class="user-avatar" alt="Avatar">
-            </a>
-            <a href="https://osu.ppy.sh/users/${score.user_id}" target="_blank" class="player-name">
-                <img src="https://osu.ppy.sh/images/flags/IQ.png" class="flag"> ${score.user}
-            </a>
-            <a href="https://osu.ppy.sh/beatmapsets/${score.beatmapset.id}" target="_blank" class="map-title">${score.beatmapset.title}</a>
-            <div class="score-stats">
-    <div>
-        <span class="accuracy">${(score.accuracy * 100).toFixed(2)}%</span>
-        ${score.mods.length > 0 ? `<span class="mods">+${score.mods.join('')}</span>` : ''}
-    </div>
-    <div class="time-ago">${timeAgo(score.created_at)}</div>
-</div>
-        </div>
-    `;
-    grid.appendChild(card);
-});
+        // 4. APPEND EVERYTHING TO THE GRID
+        gridItems.forEach(item => grid.appendChild(item));
         
     } catch (error) {
         console.error(error);
@@ -269,10 +345,8 @@ function renderCalendar(date) {
     const firstDay = new Date(year, month, 1).getDay();
     const daysInMonth = new Date(year, month + 1, 0).getDate();
     
-    // Define our start date (Months are 0-indexed, so 11 is December)
     const startDate = new Date(2025, 11, 13);
     const today = new Date();
-    // Reset hours to midnight for clean comparison
     today.setHours(0,0,0,0);
 
     const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -287,7 +361,6 @@ function renderCalendar(date) {
         const checkDate = new Date(year, month, i);
         let activeClass = "";
 
-        // Check if the day is between Dec 13, 2025 and Today
         if (checkDate >= startDate && checkDate <= today) {
             activeClass = " active";
         }
@@ -305,7 +378,6 @@ function selectDay(year, month, day) {
     const mm = month.toString().padStart(2, '0');
     const dd = day.toString().padStart(2, '0');
     
-    // --- UPDATED PATH (small 'd' and relative path) ---
     const path = `data/${year}/${mm}/${dd}.json`;
 
     document.getElementById('currentDateLabel').innerText = `DATE: ${year}-${mm}-${dd}`;
@@ -331,10 +403,8 @@ window.onclick = (e) => {
 
 renderCalendar(currentDate);
 
-// THE FIX: Fetch index first, then load the latest entry
 async function init() {
     try {
-        // Use your base path if needed, e.g., 'data/index.json'
         const res = await fetch('data/index.json?t=' + Date.now());
         const idx = await res.json();
         availableDates = idx.available_dates;
@@ -342,10 +412,7 @@ async function init() {
         renderCalendar(currentDate);
 
         if (availableDates.length > 0) {
-            // This pulls the very last date in your archive (the most recent one)
             const latest = availableDates[availableDates.length - 1];
-            
-            // We split it to send it to your existing selectDay function
             const [y, m, d] = latest.split('-');
             selectDay(parseInt(y), parseInt(m), parseInt(d));
         }
@@ -355,11 +422,7 @@ async function init() {
     }
 }
 
-// Call the new init function
 init();
-        
-    </script>
-        
-    
+</script>
 </body>
 </html>

@@ -137,56 +137,54 @@
 const menuBtn = document.getElementById('menuBtn');
 const dropdown = document.getElementById('myDropdown');
 menuBtn.onclick = (e) => { dropdown.classList.toggle("show"); e.stopPropagation(); };
-window.onclick = (e) => { if (!e.target.matches('.dropbtn')) dropdown.classList.remove('show'); };
-
-let currentData = [];
-
-// Formatters
+window.onclick = (e) => { if (!e.target.matche// Formatters
 const fmtNum = (n) => Number(n).toLocaleString();
 const fmtTime = (s) => (s / 3600).toFixed(0) + 'h';
 
 async function fetchRankings() {
+    const grid = document.getElementById('leaderboardGrid');
+    
     try {
-        // 1. Get latest date from index - Using 'Data' with a capital D
-        const indexRes = await fetch('Data/leaderboards/index.json?t=' + Date.now());
-        const index = await indexRes.json();
+        // 1. Get the index. Try both 'Data' and 'data' if one fails
+        let indexRes = await fetch('Data/leaderboards/index.json').catch(() => fetch('data/leaderboards/index.json'));
+        if (!indexRes.ok) throw new Error("Could not find index.json in Data/ or data/");
         
-        if (!index.available_dates || index.available_dates.length === 0) {
-            throw new Error("No dates available in index.json");
-        }
-
+        const index = await indexRes.json();
         const latestDate = index.available_dates[index.available_dates.length - 1];
         
-        // 2. Remove padding (Converts "2026-02-22" to y:2026, m:2, d:22)
+        // 2. Parse Date (stripping leading zeros for your folder structure)
         const parts = latestDate.split('-');
         const y = parts[0];
-        const m = parseInt(parts[1], 10).toString(); 
-        const d = parseInt(parts[2], 10).toString();
+        const m = parseInt(parts[1], 10); // 2
+        const d = parseInt(parts[2], 10); // 22
         
-        // 3. Construct Path - Matching your Capital "Data" folder
-        const finalPath = `Data/leaderboards/${y}/${m}/${d}.json?t=` + Date.now();
+        // 3. Construct the path
+        const finalPath = `Data/leaderboards/${y}/${m}/${d}.json?t=${Date.now()}`;
         console.log("Fetching data from:", finalPath);
 
         const dataRes = await fetch(finalPath);
-        if (!dataRes.ok) {
-            throw new Error(`Data file not found at: ${finalPath}`);
-        }
+        if (!dataRes.ok) throw new Error(`File missing: ${finalPath}`);
 
         currentData = await dataRes.json();
+        
+        // 4. Render immediately
         renderList('pp'); 
         
     } catch (e) {
         console.error("Fetch Error:", e);
-        document.getElementById('leaderboardGrid').innerHTML = `
-            <div class="loader" style="color: #ff4444; padding: 40px; text-align: center;">
-                FAILED TO LOAD DATA<br>
-                <span style="font-size: 13px; color: #888; font-weight: normal; display: block; margin-top: 10px;">
-                    Trying to find: ${e.message.split(': ').pop()}<br>
-                    Make sure the file exists in your repository!
+        grid.innerHTML = `
+            <div class="loader" style="color: #ff66aa;">
+                DATA NOT FOUND<br>
+                <span style="font-size: 11px; color: #888; font-weight: normal;">
+                    Path: ${e.message.split(' ').pop()}
                 </span>
             </div>`;
     }
 }
+s('.dropbtn')) dropdown.classList.remove('show'); };
+
+let currentData = [];
+
 
 function renderList(sortBy) {
     const grid = document.getElementById('leaderboardGrid');

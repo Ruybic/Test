@@ -31,7 +31,7 @@ header {
 
 /* LOGO BOX */
 .logo-box {
-    margin-left: -10px; /* Moves the whole logo group slightly to the left */
+    margin-left: -10px; /* Still keeps your left-shift request */
 }
 
 .logo-box a {
@@ -39,7 +39,6 @@ header {
     align-items: center;
     gap: 12px;
     text-decoration: none;
-    transition: transform 0.2s ease;
 }
 
 .logo-box img { 
@@ -55,14 +54,9 @@ header {
     white-space: nowrap;
 }
 
-/* Hover effects for the logo */
+/* Minimal hover: Just a very slight brightness change so the user knows it's a link */
 .logo-box a:hover {
-    transform: translateX(-2px); /* Subtle extra nudge on hover */
-}
-
-.logo-box a:hover .logo-text {
-    filter: brightness(1.2);
-    text-shadow: 0 0 10px rgba(255, 102, 170, 0.3); /* Adds a soft pink glow */
+    filter: brightness(1.1);
 }
 
 /* --- DROPDOWN SYSTEM --- */

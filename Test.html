@@ -54,6 +54,7 @@
         }
         .dropdown-content a { color: white; padding: 14px 20px; text-decoration: none; display: block; font-size: 14px; border-bottom: 1px solid #333; }
         .dropdown-content.show { display: block; }
+        .dropdown-content a.active { background-color: var(--osu-pink); color: #111; font-weight: 700; }
 
         /* CONTROLS BAR */
         .controls-bar {
@@ -234,13 +235,29 @@
         </a>
     </div>
     <div class="dropdown">
-        <button class="dropbtn" id="menuBtn">Scores ▼</button>
-        <div class="dropdown-content" id="myDropdown">
-            <a href="rankings.html">Rankings</a>
-            <a href="videos.html">Videos</a>
-            <a href="mapping.html">Mapping</a>
-            <a href="socials.html">Socials</a>
-        </div>
+        <button class="dropbtn" id="menuBtn">Menu ▼</button>
+<div class="dropdown-content" id="myDropdown">
+    <a href="Test.html" class="active">
+        Scores
+        <span class="menu-desc">Track your latest osu! scores</span>
+    </a>
+    <a href="rankings.html">
+        Rankings
+        <span class="menu-desc">See player leaderboards</span>
+    </a>
+    <a href="videos.html">
+        Videos
+        <span class="menu-desc">Watch gameplay and highlights</span>
+    </a>
+    <a href="mapping.html">
+        Mapping
+        <span class="menu-desc">Explore beatmap creations</span>
+    </a>
+    <a href="socials.html">
+        Socials
+        <span class="menu-desc">Connect with the community</span>
+    </a>
+</div>
     </div>
 </header>
 

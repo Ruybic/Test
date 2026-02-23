@@ -346,6 +346,24 @@ header {
         .mods { background: #333; color: #ffcc22; padding: 1px 6px; border-radius: 4px; font-size: 10px; margin-left: 5px; }
         .time-ago { color: #666677; font-size: 11px; }
         .flag { width: 16px; vertical-align: middle; margin-right: 4px; border-radius: 2px; }
+
+        /* FILTER BAR STYLING */
+.filters-container {
+    max-width: 1400px; margin: 0 auto 20px; padding: 0 20px;
+    display: flex; gap: 15px; flex-wrap: wrap; align-items: center;
+}
+.search-input {
+    background: #25252e; border: 1px solid #3e3e4a; color: white;
+    padding: 10px 15px; border-radius: 6px; flex-grow: 1; font-family: 'Exo 2';
+}
+.filter-group { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-muted); }
+.filter-group input[type="checkbox"] { accent-color: var(--osu-pink); cursor: pointer; }
+
+/* NATIONAL RANK BADGE */
+.iraq-rank {
+    font-size: 10px; background: rgba(255, 255, 255, 0.1);
+    padding: 1px 5px; border-radius: 4px; margin-left: 5px; color: #aaa;
+}
         
     </style>
 </head>
@@ -390,6 +408,30 @@ header {
     <button class="date-btn" id="calendarBtn">📅 SELECT DATE</button>
 </div>
 
+<div class="filters-container">
+    <input type="text" id="searchInput" class="search-input" placeholder="Search player or map title...">
+    
+    <div class="filters-bar">
+    <input type="text" id="searchInput" class="search-input" placeholder="Search player or map title...">
+    
+    <label class="filter-opt">
+        <input type="checkbox" id="ppFilter"> Hide < 100pp
+    </label>
+
+    <div class="filter-opt">
+        <span>Grade:</span>
+        <select id="rankFilter" class="date-btn" style="padding: 5px; border-color: #3e3e4a; height: auto;">
+            <option value="ALL">All Grades</option>
+            <option value="SS">SS</option>
+            <option value="S">S</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+    </div>
+</div>
+
 <div class="calendar-popup" id="calendarPopup">
     <div class="cal-header">
         <span class="cal-nav" onclick="changeMonth(-1)">&#9664;</span>
@@ -420,103 +462,7 @@ function timeAgo(dateString) {
 }
 
 // --- MAIN RENDERER ---
-async function fetchAndRender(path) {
-    const grid = document.getElementById('scoreGrid');
-    grid.innerHTML = '<div class="status-msg">Loading Iraqi Scores...</div>';
 
-    try {
-        const response = await fetch(path + "?t=" + new Date().getTime());
-        if (!response.ok) throw new Error("No data found for this date.");
-        
-        const data = await response.json();
-        
-        if (!data.scores || data.scores.length === 0) {
-            grid.innerHTML = '<div class="status-msg">No scores recorded for this day.</div>';
-            return;
-        }
-
-        grid.innerHTML = ''; 
-
-        // 1. FIND THE TOP PLAY (Highest PP)
-        let topScoreId = null;
-        let maxPp = -1;
-        data.scores.forEach(s => {
-            if (s.pp > maxPp) {
-                maxPp = s.pp;
-                topScoreId = s.score_id;
-            }
-        });
-
-        // 2. CREATE SCORE CARDS ARRAY
-        let gridItems = [];
-        data.scores.forEach(score => {
-            const isTopPlay = score.score_id === topScoreId;
-            const card = document.createElement('div');
-            
-            // Add top-play class if it matches the highest PP
-            card.className = isTopPlay ? 'score-card top-play' : 'score-card';
-            
-            card.onclick = (e) => {
-                if (!e.target.closest('a')) {
-                    window.open(`https://osu.ppy.sh/scores/osu/${score.score_id}`, '_blank');
-                }
-            };
-
-            card.innerHTML = `
-                <div class="pp-value">${Math.round(score.pp)}pp</div> 
-                <div class="rank-grade rank-${score.rank}">${score.rank}</div>
-                <a href="https://osu.ppy.sh/beatmapsets/${score.beatmapset.id}" target="_blank" class="map-header" style="background-image: url('${score.beatmapset.cover}');">
-                    <div class="star-rating">★ ${score.beatmapset.difficulty_rating || '??'}</div>
-                    ${isTopPlay ? `<div class="top-play-badge">DAILY BEST</div>` : ''}
-                </a>
-                <div class="card-body">
-                    <a href="https://osu.ppy.sh/users/${score.user_id}" target="_blank" class="user-link">
-                        <img src="https://a.ppy.sh/${score.user_id}" class="user-avatar" alt="Avatar">
-                    </a>
-                    <a href="https://osu.ppy.sh/users/${score.user_id}" target="_blank" class="player-name">
-                        <img src="https://osu.ppy.sh/images/flags/IQ.png" class="flag"> ${score.user}
-                    </a>
-                    <a href="https://osu.ppy.sh/beatmapsets/${score.beatmapset.id}" target="_blank" class="map-title">${score.beatmapset.title}</a>
-                    <div class="score-stats">
-                        <div>
-                            <span class="accuracy">${(score.accuracy * 100).toFixed(2)}%</span>
-                            ${score.mods.length > 0 ? `<span class="mods">+${score.mods.join('')}</span>` : ''}
-                        </div>
-                        <div class="time-ago">${timeAgo(score.created_at)}</div>
-                    </div>
-                </div>
-            `;
-            gridItems.push(card);
-        });
-
-        // 3. INJECT AD CARDS RANDOMLY (Show 3 times)
-        // Ensure we don't spam 3 ads if there's only like 2 scores. 
-        // Math.min makes sure it caps at 3, but scales down if the grid is tiny.
-        const numAdsToInject = Math.min(3, Math.max(1, Math.floor(data.scores.length / 3)));
-        
-        for (let i = 0; i < numAdsToInject; i++) {
-            const adCard = document.createElement('a');
-            adCard.href = "https://example.com"; // Replace with actual ad link later
-            adCard.target = "_blank";
-            adCard.className = "ad-card";
-            adCard.innerHTML = `
-                <span class="ad-label">AD</span>
-                <img src="https://i.imgur.com/1YJfjH6.png" alt="Advertisement">
-            `;
-            
-            // Pick a random spot in the array to insert the ad
-            const randomIndex = Math.floor(Math.random() * (gridItems.length + 1));
-            gridItems.splice(randomIndex, 0, adCard);
-        }
-
-        // 4. APPEND EVERYTHING TO THE GRID
-        gridItems.forEach(item => grid.appendChild(item));
-        
-    } catch (error) {
-        console.error(error);
-        grid.innerHTML = `<div class="status-msg">⚠️ No scores available for this date.</div>`;
-    }
-}
 
 // --- CALENDAR LOGIC ---
 let currentDate = new Date();
@@ -534,7 +480,152 @@ function renderCalendar(date) {
     const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     document.getElementById('calMonthYear').innerText = `${monthNames[month]} ${year}`;
     
-    const grid = document.getElementById('calGrid');
+    con// --- GLOBAL STATE ---
+let cachedScores = []; // Holds the day's scores
+let iraqiRanks = {};   // Holds player ID -> Rank mapping
+
+// --- NEW: FILTERING & RENDERING ENGINE ---
+function applyFiltersAndRender() {
+    const grid = document.getElementById('scoreGrid');
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+    const hideLowPP = document.getElementById('ppFilter').checked;
+    const gradeFilter = document.getElementById('rankFilter').value;
+
+    // Filter the cached data
+    let filtered = cachedScores.filter(s => {
+        const matchesSearch = s.user.toLowerCase().includes(searchTerm) || 
+                              s.beatmapset.title.toLowerCase().includes(searchTerm);
+        const matchesPP = hideLowPP ? s.pp >= 100 : true;
+        const matchesGrade = gradeFilter === "ALL" ? true : s.rank.includes(gradeFilter);
+        return matchesSearch && matchesPP && matchesGrade;
+    });
+
+    if (filtered.length === 0) {
+        grid.innerHTML = '<div class="status-msg">No scores found matching these filters.</div>';
+        return;
+    }
+
+    grid.innerHTML = ''; 
+
+    // 1. FIND THE TOP PLAY (Highest PP) from the CURRENT filtered set
+    let topScoreId = null;
+    let maxPp = -1;
+    filtered.forEach(s => {
+        if (s.pp > maxPp) {
+            maxPp = s.pp;
+            topScoreId = s.score_id;
+        }
+    });
+
+    // 2. CREATE SCORE CARDS
+    let gridItems = [];
+    filtered.forEach(score => {
+        const isTopPlay = score.score_id === topScoreId;
+        const playerRank = iraqiRanks[score.user_id] ? `#${iraqiRanks[score.user_id]}` : '';
+        const card = document.createElement('div');
+        
+        card.className = isTopPlay ? 'score-card top-play' : 'score-card';
+        card.onclick = (e) => {
+            if (!e.target.closest('a')) window.open(`https://osu.ppy.sh/scores/osu/${score.score_id}`, '_blank');
+        };
+
+        card.innerHTML = `
+            <div class="pp-value">${Math.round(score.pp)}pp</div> 
+            <div class="rank-grade rank-${score.rank}">${score.rank}</div>
+            <a href="https://osu.ppy.sh/beatmapsets/${score.beatmapset.id}" target="_blank" class="map-header" style="background-image: url('${score.beatmapset.cover}');">
+                <div class="star-rating">★ ${score.beatmapset.difficulty_rating || '??'}</div>
+                ${isTopPlay ? `<div class="top-play-badge">DAILY BEST</div>` : ''}
+            </a>
+            <div class="card-body">
+                <a href="https://osu.ppy.sh/users/${score.user_id}" target="_blank" class="user-link">
+                    <img src="https://a.ppy.sh/${score.user_id}" class="user-avatar" alt="Avatar">
+                </a>
+                <a href="https://osu.ppy.sh/users/${score.user_id}" target="_blank" class="player-name">
+                    <img src="https://osu.ppy.sh/images/flags/IQ.png" class="flag"> ${score.user}
+                    <span class="iraq-rank">${playerRank}</span>
+                </a>
+                <a href="https://osu.ppy.sh/beatmapsets/${score.beatmapset.id}" target="_blank" class="map-title">${score.beatmapset.title}</a>
+                <div class="score-stats">
+                    <div>
+                        <span class="accuracy">${(score.accuracy * 100).toFixed(2)}%</span>
+                        ${score.mods.length > 0 ? `<span class="mods">+${score.mods.join('')}</span>` : ''}
+                    </div>
+                    <div class="time-ago">${timeAgo(score.created_at)}</div>
+                </div>
+            </div>
+        `;
+        gridItems.push(card);
+    });
+
+    // 3. INJECT ADS (Logic remains same)
+    const numAdsToInject = Math.min(3, Math.max(1, Math.floor(filtered.length / 3)));
+    for (let i = 0; i < numAdsToInject; i++) {
+        const adCard = document.createElement('a');
+        adCard.href = "ad.html"; 
+        adCard.className = "ad-card";
+        adCard.innerHTML = `<span class="ad-label">AD</span><img src="https://i.imgur.com/1YJfjH6.png">`;
+        const randomIndex = Math.floor(Math.random() * (gridItems.length + 1));
+        gridItems.splice(randomIndex, 0, adCard);
+    }
+
+    gridItems.forEach(item => grid.appendChild(item));
+}
+
+// --- UPDATED FETCH FUNCTION ---
+async function fetchAndRender(path, year, month, day) {
+    const grid = document.getElementById('scoreGrid');
+    grid.innerHTML = '<div class="status-msg">Loading Iraqi Scores...</div>';
+
+    try {
+        // Fetch scores and leaderboard in parallel
+        const lbPath = `data/leaderboards/${year}/${month}/${day}.json`;
+        
+        const [scoreRes, lbRes] = await Promise.allSettled([
+            fetch(path + "?t=" + Date.now()),
+            fetch(lbPath + "?t=" + Date.now())
+        ]);
+
+        if (scoreRes.status === 'rejected' || !scoreRes.value.ok) throw new Error("No scores found.");
+        
+        const data = await scoreRes.value.json();
+        cachedScores = data.scores || [];
+
+        // Process Leaderboard for Iraqi Ranks
+        iraqiRanks = {};
+        if (lbRes.status === 'fulfilled' && lbRes.value.ok) {
+            const lbData = await lbRes.value.json();
+            // Assuming users array is sorted by rank
+            lbData.users.forEach((user, idx) => {
+                iraqiRanks[user.user_id] = idx + 1;
+            });
+        }
+
+        applyFiltersAndRender();
+        
+    } catch (error) {
+        console.error(error);
+        grid.innerHTML = `<div class="status-msg">⚠️ No scores available for this date.</div>`;
+    }
+}
+
+// --- EVENT LISTENERS ---
+document.getElementById('searchInput').addEventListener('input', applyFiltersAndRender);
+document.getElementById('ppFilter').addEventListener('change', applyFiltersAndRender);
+document.getElementById('rankFilter').addEventListener('change', applyFiltersAndRender);
+
+// --- UPDATED SELECTDAY ---
+function selectDay(year, month, day) {
+    const mm = month.toString().padStart(2, '0');
+    const dd = day.toString().padStart(2, '0');
+    const path = `data/${year}/${mm}/${dd}.json`;
+
+    document.getElementById('currentDateLabel').innerText = `DATE: ${year}-${mm}-${dd}`;
+    document.getElementById('calendarPopup').classList.remove('open');
+    
+    // Pass components so we can find the leaderboard file too
+    fetchAndRender(path, year, month, dd);
+}
+st grid = document.getElementById('calGrid');
     grid.innerHTML = `<div class="cal-day-label">S</div><div class="cal-day-label">M</div><div class="cal-day-label">T</div><div class="cal-day-label">W</div><div class="cal-day-label">T</div><div class="cal-day-label">F</div><div class="cal-day-label">S</div>`;
 
     for (let i = 0; i < firstDay; i++) grid.innerHTML += `<div class="cal-day empty"></div>`;

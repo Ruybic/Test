@@ -81,7 +81,7 @@
     display: block; 
     font-size: 14px; 
     border-bottom: 1px solid #333; 
-    transition: background 0.2s, color 0.2s;
+    transition: background 0.2s;
 }
 .dropdown-content.show { 
     display: block; 
@@ -96,18 +96,17 @@
     transition: color 0.2s;
 }
 
-/* hover effect */
+/* hover effect: only box highlight, no text recolor */
 .dropdown-content a:hover {
     background-color: #2e2e38; /* subtle dark lift */
-    color: var(--osu-pink);    /* title turns pink */
 }
 .dropdown-content a:hover .menu-desc {
-    color: #ff99c2; /* lighter pink for description */
+    color: var(--osu-pink); /* description brightens */
 }
 
-/* active menu item */
+/* active menu item: styled like the first Scores box */
 .dropdown-content a.active {
-    border-left: 4px solid var(--osu-pink); /* slim pink bar instead of full background */
+    border-left: 4px solid var(--osu-pink); /* slim pink bar */
     background-color: #2a2a33;              /* subtle dark highlight */
     color: white;                           /* keep text clean */
     font-weight: 700;
@@ -115,7 +114,6 @@
 .dropdown-content a.active .menu-desc {
     color: var(--osu-pink); /* description accent in pink */
 }
-
         /* CONTROLS BAR */
         .controls-bar {
             max-width: 1400px; margin: 30px auto 10px; padding: 0 20px;

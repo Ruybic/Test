@@ -19,7 +19,7 @@
         
         body { background-color: var(--dark-base); color: var(--text-main); font-family: 'Exo 2', sans-serif; margin: 0; line-height: 1.6; }
 
-        /* --- NEW PREMIUM HEADER (IMPLANTED) --- */
+        /* --- HEADER & LOGO --- */
         header {
             background: #111116; 
             padding: 12px 25px; 
@@ -38,7 +38,7 @@
         .logo-text { color: var(--osu-pink); font-weight: 800; font-size: 18px; letter-spacing: 0.5px; white-space: nowrap; }
         .logo-box a:hover { filter: brightness(1.1); }
 
-        /* --- NEW PREMIUM DROPDOWN SYSTEM (IMPLANTED) --- */
+        /* --- DROPDOWN SYSTEM --- */
         .dropdown { position: relative; display: flex; align-items: center; }
         .dropbtn { 
             background: var(--panel-bg); color: white; border: 1px solid rgba(255,255,255,0.05); 
@@ -62,13 +62,13 @@
             position: relative; color: var(--text-muted); padding: 12px 16px; text-decoration: none; 
             display: block; font-size: 14px; border-radius: 8px; transition: all 0.25s ease; margin-bottom: 2px;
         }
-        .dropdown-content a:last-child { margin-bottom: 0; }
         .dropdown-content a .menu-desc { display: block; font-size: 11px; color: #6a6a7a; margin-top: 4px; transition: color 0.2s ease; }
 
-        /* STATIONARY HOVER (NO JUMP) */
+        /* Stationary Hover (No Jump) */
         .dropdown-content a:hover { background: rgba(255, 102, 170, 0.1); color: white; }
         .dropdown-content a.active { background: rgba(255, 102, 170, 0.15); color: white; font-weight: 700; }
 
+        /* Sidebar Indicator */
         .dropdown-content a::before {
             content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%) scaleY(0);
             width: 4px; height: 65%; background: var(--osu-pink); border-radius: 0 4px 4px 0;
@@ -77,7 +77,7 @@
         .dropdown-content a.active::before, .dropdown-content a:hover::before { transform: translateY(-50%) scaleY(1); }
         .dropdown-content a.active .menu-desc, .dropdown-content a:hover .menu-desc { color: var(--osu-pink); }
 
-        /* --- KEEPING YOUR RANKING STYLES --- */
+        /* --- RANKINGS PAGE CONTROLS & CARDS --- */
         .controls-container { max-width: 1100px; margin: 30px auto 15px; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
         .sort-select { 
             background: var(--panel-bg); color: white; border: 1px solid #3e3e4a; padding: 10px 15px; 
@@ -86,7 +86,6 @@
         .sort-select:focus { border-color: var(--osu-pink); }
 
         .leaderboard-list { max-width: 1100px; margin: 0 auto; padding: 0 20px 60px; display: flex; flex-direction: column; gap: 12px; }
-        
         .player-card { 
             background: var(--panel-bg); border-radius: 12px; padding: 15px; border: 1px solid #3e3e4a; 
             display: flex; flex-direction: column; gap: 10px; transition: 0.2s; 

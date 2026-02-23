@@ -16,34 +16,6 @@
             justify-content: space-between; border-bottom: 2px solid var(--panel-bg);
             position: sticky; top: 0; z-index: 1000;
         }
- /* Container to align img and text */
-.logo-box a {
-    display: flex;
-    align-items: center;
-    gap: 12px; /* Space between logo and text */
-}
-
-.logo-box img { 
-    height: 38px; 
-    display: block; 
-}
-
-/* The new text styling */
-.logo-text {
-    color: var(--osu-pink);
-    font-weight: 800;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    text-transform: none; /* Keeps it exactly as you typed it */
-    white-space: nowrap; /* Prevents text from wrapping on small screens */
-}
-
-/* Optional: change color slightly on hover */
-.logo-box a:hover .logo-text {
-    filter: brightness(1.2);
-    transition: 0.2s;
-}
-        
 /* --- HEADER --- */
 header {
     background: #111116; 
@@ -57,12 +29,17 @@ header {
     z-index: 1000;
 }
 
-/* Logo Box Alignment */
+/* LOGO BOX */
+.logo-box {
+    margin-left: -10px; /* Moves the whole logo group slightly to the left */
+}
+
 .logo-box a {
     display: flex;
     align-items: center;
     gap: 12px;
     text-decoration: none;
+    transition: transform 0.2s ease;
 }
 
 .logo-box img { 
@@ -78,9 +55,14 @@ header {
     white-space: nowrap;
 }
 
+/* Hover effects for the logo */
+.logo-box a:hover {
+    transform: translateX(-2px); /* Subtle extra nudge on hover */
+}
+
 .logo-box a:hover .logo-text {
     filter: brightness(1.2);
-    transition: 0.2s;
+    text-shadow: 0 0 10px rgba(255, 102, 170, 0.3); /* Adds a soft pink glow */
 }
 
 /* --- DROPDOWN SYSTEM --- */

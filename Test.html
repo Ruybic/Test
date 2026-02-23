@@ -143,11 +143,12 @@ header {
     transition: color 0.2s ease;
 }
 
-/* --- HOVER & ACTIVE LOGIC --- */
+/* --- HOVER & ACTIVE LOGIC (STATIONARY VERSION) --- */
 .dropdown-content a:hover {
+    /* Just the pink tint wash, no movement */
     background: rgba(255, 102, 170, 0.1); 
     color: white;
-    transform: translateX(6px); /* Smooth horizontal nudge */
+    /* transform: translateX(6px);  <-- REMOVED THIS TO STOP THE JUMP */
 }
 
 .dropdown-content a.active {
@@ -155,7 +156,6 @@ header {
     color: white;
     font-weight: 700;
 }
-
 /* The Animated Pink Vertical Bar */
 .dropdown-content a::before {
     content: '';

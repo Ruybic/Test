@@ -133,11 +133,18 @@ header {
     transition: color 0.2s ease;
 }
 
-/* Hover & Active States */
+/* --- HOVER & ACTIVE LOGIC (STATIONARY VERSION) --- */
 .dropdown-content a:hover {
+    /* Just the pink tint wash, no movement */
     background: rgba(255, 102, 170, 0.1); 
     color: white;
-    transform: translateX(6px); 
+    /* transform: translateX(6px);  <-- REMOVED THIS TO STOP THE JUMP */
+}
+
+.dropdown-content a.active {
+    background: rgba(255, 102, 170, 0.15);
+    color: white;
+    font-weight: 700;
 }
 
 /* Target the "Videos" link specifically on this page */

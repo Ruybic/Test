@@ -86,6 +86,10 @@
     border-radius: 10px; 
     padding: 8px; /* Breathing room for the pill-shape highlights */
     z-index: 2000; 
+    .dropdown-content {
+    /* ... your existing stuff ... */
+    backdrop-filter: blur(12px); /* This blurs everything behind the menu */
+    background-color: rgba(28, 28, 33, 0.85); /* Slightly transparent to let colors bleed through */
 }
 
 .dropdown-content.show { 
@@ -152,6 +156,9 @@
 .dropdown-content a.active .menu-desc,
 .dropdown-content a:hover .menu-desc {
     color: var(--osu-pink);
+}
+    .dropbtn:active {
+    transform: scale(0.96);
 }
         /* CONTROLS BAR */
         .controls-bar {

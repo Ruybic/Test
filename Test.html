@@ -67,7 +67,7 @@
     position: absolute; 
     right: 0; 
     background-color: #25252e;
-    min-width: 220px; /* a bit wider for descriptions */
+    min-width: 220px; /* wider for descriptions */
     box-shadow: 0px 8px 24px rgba(0,0,0,0.6); 
     z-index: 1; 
     border-radius: 6px; 
@@ -81,6 +81,7 @@
     display: block; 
     font-size: 14px; 
     border-bottom: 1px solid #333; 
+    transition: background 0.2s, color 0.2s;
 }
 .dropdown-content.show { 
     display: block; 
@@ -92,16 +93,25 @@
     font-size: 12px;
     color: var(--text-muted); /* softer gray tone */
     margin-top: 4px;
+    transition: color 0.2s;
+}
+
+/* hover effect */
+.dropdown-content a:hover {
+    background-color: #3e3e4a;
+}
+.dropdown-content a:hover .menu-desc {
+    color: var(--osu-pink); /* description brightens on hover */
 }
 
 /* active menu item */
 .dropdown-content a.active {
     background-color: var(--osu-pink);
-    color: #111;
+    color: white; /* no more black text */
     font-weight: 700;
 }
 .dropdown-content a.active .menu-desc {
-    color: #222; /* slightly darker so it contrasts with pink background */
+    color: #ffe0f0; /* softer pinkish tone for description */
 }
 
         /* CONTROLS BAR */

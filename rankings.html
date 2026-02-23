@@ -19,64 +19,169 @@
         
         body { background-color: var(--dark-base); color: var(--text-main); font-family: 'Exo 2', sans-serif; margin: 0; line-height: 1.6; }
 
-        /* --- HEADER & LOGO --- */
-        header {
-            background: #111116; 
-            padding: 12px 25px; 
-            display: flex; 
-            align-items: center;
-            justify-content: space-between; 
-            border-bottom: 2px solid var(--panel-bg);
-            position: sticky; 
-            top: 0; 
-            z-index: 1000;
-        }
+      /* --- HEADER --- */
+header {
+    background: #111116; 
+    padding: 12px 25px; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    border-bottom: 2px solid var(--panel-bg);
+    position: sticky; 
+    top: 0; 
+    z-index: 1000;
+}
 
-        .logo-box { margin-left: -10px; }
-        .logo-box a { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-        .logo-box img { height: 38px; display: block; }
-        .logo-text { color: var(--osu-pink); font-weight: 800; font-size: 18px; letter-spacing: 0.5px; white-space: nowrap; }
-        .logo-box a:hover { filter: brightness(1.1); }
+/* LOGO BOX */
+.logo-box {
+    margin-left: -10px; /* Still keeps your left-shift request */
+}
 
-        /* --- DROPDOWN SYSTEM --- */
-        .dropdown { position: relative; display: flex; align-items: center; }
-        .dropbtn { 
-            background: var(--panel-bg); color: white; border: 1px solid rgba(255,255,255,0.05); 
-            padding: 10px 18px; border-radius: 6px; cursor: pointer; font-family: 'Exo 2', sans-serif; 
-            font-weight: 600; font-size: 14px; transition: all 0.2s ease; 
-        }
-        .dropbtn:hover { background: #3e3e4a; border-color: var(--osu-pink); }
-        .dropbtn:active { transform: scale(0.96); }
+.logo-box a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
 
-        .dropdown-content {
-            visibility: hidden; opacity: 0; transform: translateY(10px); 
-            transition: opacity 0.2s ease, transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), visibility 0.2s;
-            position: absolute; right: 0; top: calc(100% + 10px); min-width: 260px; z-index: 2000; 
-            background-color: rgba(28, 28, 33, 0.9); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); 
-            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7); border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px; padding: 8px; 
-        }
-        .dropdown-content.show { visibility: visible; opacity: 1; transform: translateY(0); }
+.logo-box img { 
+    height: 38px; 
+    display: block; 
+}
 
-        .dropdown-content a { 
-            position: relative; color: var(--text-muted); padding: 12px 16px; text-decoration: none; 
-            display: block; font-size: 14px; border-radius: 8px; transition: all 0.25s ease; margin-bottom: 2px;
-        }
-        .dropdown-content a .menu-desc { display: block; font-size: 11px; color: #6a6a7a; margin-top: 4px; transition: color 0.2s ease; }
+.logo-text {
+    color: var(--osu-pink);
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
 
-        /* Stationary Hover (No Jump) */
-        .dropdown-content a:hover { background: rgba(255, 102, 170, 0.1); color: white; }
-        .dropdown-content a.active { background: rgba(255, 102, 170, 0.15); color: white; font-weight: 700; }
+/* Minimal hover: Just a very slight brightness change so the user knows it's a link */
+.logo-box a:hover {
+    filter: brightness(1.1);
+}
+/* --- DROPDOWN SYSTEM --- */
+.dropdown { 
+    position: relative; 
+    display: flex; 
+    align-items: center;
+}
 
-        /* Sidebar Indicator */
-        .dropdown-content a::before {
-            content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%) scaleY(0);
-            width: 4px; height: 65%; background: var(--osu-pink); border-radius: 0 4px 4px 0;
-            transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
-        }
-        .dropdown-content a.active::before, .dropdown-content a:hover::before { transform: translateY(-50%) scaleY(1); }
-        .dropdown-content a.active .menu-desc, .dropdown-content a:hover .menu-desc { color: var(--osu-pink); }
+.dropbtn { 
+    background: var(--panel-bg); 
+    color: white; 
+    border: 1px solid rgba(255,255,255,0.05); 
+    padding: 10px 18px; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    font-family: 'Exo 2', sans-serif; 
+    font-weight: 600; 
+    font-size: 14px;
+    transition: all 0.2s ease; 
+}
 
+.dropbtn:hover { 
+    background: #3e3e4a; 
+    border-color: var(--osu-pink);
+}
+
+.dropbtn:active {
+    transform: scale(0.96); /* Tactile click effect */
+}
+
+.dropdown-content {
+    /* Animation: Slide Up & Fade In */
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px); 
+    transition: opacity 0.2s ease, transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), visibility 0.2s;
+    
+    /* Position */
+    position: absolute; 
+    right: 0; 
+    top: calc(100% + 10px); 
+    min-width: 260px; 
+    z-index: 2000; 
+
+    /* Glassmorphism Design */
+    background-color: rgba(28, 28, 33, 0.9); 
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px; 
+    padding: 8px; 
+}
+
+/* Show Class Toggle */
+.dropdown-content.show { 
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- DROPDOWN MENU ITEMS --- */
+.dropdown-content a { 
+    position: relative;
+    color: var(--text-muted); 
+    padding: 12px 16px; 
+    text-decoration: none; 
+    display: block; 
+    font-size: 14px; 
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    margin-bottom: 2px;
+}
+
+.dropdown-content a:last-child { margin-bottom: 0; }
+
+/* Menu Description Styling */
+.dropdown-content a .menu-desc {
+    display: block;
+    font-size: 11px;
+    color: #6a6a7a;
+    margin-top: 4px;
+    transition: color 0.2s ease;
+}
+
+/* --- HOVER & ACTIVE LOGIC (STATIONARY VERSION) --- */
+.dropdown-content a:hover {
+    /* Just the pink tint wash, no movement */
+    background: rgba(255, 102, 170, 0.1); 
+    color: white;
+    /* transform: translateX(6px);  <-- REMOVED THIS TO STOP THE JUMP */
+}
+
+.dropdown-content a.active {
+    background: rgba(255, 102, 170, 0.15);
+    color: white;
+    font-weight: 700;
+}
+/* The Animated Pink Vertical Bar */
+.dropdown-content a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) scaleY(0);
+    width: 4px;
+    height: 65%;
+    background: var(--osu-pink);
+    border-radius: 0 4px 4px 0;
+    transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.dropdown-content a.active::before,
+.dropdown-content a:hover::before {
+    transform: translateY(-50%) scaleY(1);
+}
+
+/* Color descriptions on interaction */
+.dropdown-content a.active .menu-desc,
+.dropdown-content a:hover .menu-desc {
+    color: var(--osu-pink);
+}
         /* --- RANKINGS PAGE CONTROLS & CARDS --- */
         .controls-container { max-width: 1100px; margin: 30px auto 15px; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
         .sort-select { 

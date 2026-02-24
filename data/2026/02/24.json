@@ -1,0 +1,4381 @@
+{
+  "date": "2026-02-24",
+  "country": "IQ",
+  "generated_at": "2026-02-24T02:05:39.395Z",
+  "scores": [
+    {
+      "user": "6K3aRoTo",
+      "user_id": 9702304,
+      "country": "IQ",
+      "score_id": 4988191579,
+      "rank": "C",
+      "accuracy": 0.7788259958071279,
+      "pp": 33.0086,
+      "mods": [],
+      "combo": 176,
+      "created_at": "2026-02-24T02:00:39Z",
+      "beatmapset": {
+        "id": 799569,
+        "title": "L'Amour Toujours feat. Delaney Jane (Nightcore Mix)",
+        "cover": "https://assets.ppy.sh/beatmaps/799569/covers/card.jpg?1650665599",
+        "stars": 5.32547
+      }
+    },
+    {
+      "user": "6K3aRoTo",
+      "user_id": 9702304,
+      "country": "IQ",
+      "score_id": 4988190986,
+      "rank": "B",
+      "accuracy": 0.909297052154195,
+      "pp": 37.4829,
+      "mods": [],
+      "combo": 136,
+      "created_at": "2026-02-24T01:58:22Z",
+      "beatmapset": {
+        "id": 186141,
+        "title": "Imagination",
+        "cover": "https://assets.ppy.sh/beatmaps/186141/covers/card.jpg?1622075381",
+        "stars": 4.63404
+      }
+    },
+    {
+      "user": "MoDy_",
+      "user_id": 13782218,
+      "country": "IQ",
+      "score_id": 4988190360,
+      "rank": "A",
+      "accuracy": 0.9497716894977168,
+      "pp": 126.482,
+      "mods": [
+        "DT"
+      ],
+      "combo": 154,
+      "created_at": "2026-02-24T01:56:01Z",
+      "beatmapset": {
+        "id": 2382142,
+        "title": "Domino (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2382142/covers/card.jpg?1758314031",
+        "stars": 4.14238
+      }
+    },
+    {
+      "user": "MoDy_",
+      "user_id": 13782218,
+      "country": "IQ",
+      "score_id": 4988189861,
+      "rank": "B",
+      "accuracy": 0.9315068493150684,
+      "pp": 122.97,
+      "mods": [
+        "DT"
+      ],
+      "combo": 173,
+      "created_at": "2026-02-24T01:54:01Z",
+      "beatmapset": {
+        "id": 2382142,
+        "title": "Domino (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2382142/covers/card.jpg?1758314031",
+        "stars": 4.14238
+      }
+    },
+    {
+      "user": "MoDy_",
+      "user_id": 13782218,
+      "country": "IQ",
+      "score_id": 4988189073,
+      "rank": "B",
+      "accuracy": 0.893455098934551,
+      "pp": 78.6218,
+      "mods": [
+        "DT"
+      ],
+      "combo": 91,
+      "created_at": "2026-02-24T01:50:53Z",
+      "beatmapset": {
+        "id": 2382142,
+        "title": "Domino (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2382142/covers/card.jpg?1758314031",
+        "stars": 4.14238
+      }
+    },
+    {
+      "user": "LilyNightMoon",
+      "user_id": 18771081,
+      "country": "IQ",
+      "score_id": 4988186058,
+      "rank": "B",
+      "accuracy": 0.8811965811965812,
+      "pp": 45.4822,
+      "mods": [],
+      "combo": 388,
+      "created_at": "2026-02-24T01:39:02Z",
+      "beatmapset": {
+        "id": 576030,
+        "title": "Battle Against a True Hero",
+        "cover": "https://assets.ppy.sh/beatmaps/576030/covers/card.jpg?1650656824",
+        "stars": 6.42054
+      }
+    },
+    {
+      "user": "LilyNightMoon",
+      "user_id": 18771081,
+      "country": "IQ",
+      "score_id": 4988185381,
+      "rank": "B",
+      "accuracy": 0.8807947019867549,
+      "pp": 59.6991,
+      "mods": [],
+      "combo": 120,
+      "created_at": "2026-02-24T01:36:26Z",
+      "beatmapset": {
+        "id": 646368,
+        "title": "Baby Deathmatch",
+        "cover": "https://assets.ppy.sh/beatmaps/646368/covers/card.jpg?1650654045",
+        "stars": 5.86338
+      }
+    },
+    {
+      "user": "LilyNightMoon",
+      "user_id": 18771081,
+      "country": "IQ",
+      "score_id": 4988184986,
+      "rank": "A",
+      "accuracy": 0.9735294117647059,
+      "pp": 93.5354,
+      "mods": [],
+      "combo": 155,
+      "created_at": "2026-02-24T01:34:50Z",
+      "beatmapset": {
+        "id": 1031221,
+        "title": "Tiny Little Adiantum (deadman's \"Omae Wa Mou\" remix)",
+        "cover": "https://assets.ppy.sh/beatmaps/1031221/covers/card.jpg?1650685119",
+        "stars": 5.0982
+      }
+    },
+    {
+      "user": "LilyNightMoon",
+      "user_id": 18771081,
+      "country": "IQ",
+      "score_id": 4988182644,
+      "rank": "B",
+      "accuracy": 0.9049707602339181,
+      "pp": 43.2446,
+      "mods": [],
+      "combo": 198,
+      "created_at": "2026-02-24T01:25:42Z",
+      "beatmapset": {
+        "id": 684242,
+        "title": "Hey Darling!",
+        "cover": "https://assets.ppy.sh/beatmaps/684242/covers/card.jpg?1650655223",
+        "stars": 5.00948
+      }
+    },
+    {
+      "user": "LilyNightMoon",
+      "user_id": 18771081,
+      "country": "IQ",
+      "score_id": 4988181721,
+      "rank": "A",
+      "accuracy": 0.9482288828337875,
+      "pp": 54.7091,
+      "mods": [],
+      "combo": 206,
+      "created_at": "2026-02-24T01:22:15Z",
+      "beatmapset": {
+        "id": 1794173,
+        "title": "Will of Adamant",
+        "cover": "https://assets.ppy.sh/beatmaps/1794173/covers/card.jpg?1661282375",
+        "stars": 5.0032
+      }
+    },
+    {
+      "user": "LilyNightMoon",
+      "user_id": 18771081,
+      "country": "IQ",
+      "score_id": 4988180248,
+      "rank": "A",
+      "accuracy": 0.981359649122807,
+      "pp": 111.73,
+      "mods": [],
+      "combo": 235,
+      "created_at": "2026-02-24T01:16:40Z",
+      "beatmapset": {
+        "id": 2316148,
+        "title": "NO, Thank You! (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/2316148/covers/card.jpg?1746908378",
+        "stars": 5.00223
+      }
+    },
+    {
+      "user": "AbbasIQ",
+      "user_id": 18418834,
+      "country": "IQ",
+      "score_id": 4988180111,
+      "rank": "A",
+      "accuracy": 0.9424603174603174,
+      "pp": 29.52,
+      "mods": [
+        "HR",
+        "DT"
+      ],
+      "combo": 183,
+      "created_at": "2026-02-24T01:16:04Z",
+      "beatmapset": {
+        "id": 781509,
+        "title": "Black Rover (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/781509/covers/card.jpg?1650664944",
+        "stars": 2.43781
+      }
+    },
+    {
+      "user": "AbbasIQ",
+      "user_id": 18418834,
+      "country": "IQ",
+      "score_id": 4988179809,
+      "rank": "B",
+      "accuracy": 0.8968253968253969,
+      "pp": 28.1368,
+      "mods": [
+        "HD",
+        "HR",
+        "DT"
+      ],
+      "combo": 229,
+      "created_at": "2026-02-24T01:14:47Z",
+      "beatmapset": {
+        "id": 781509,
+        "title": "Black Rover (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/781509/covers/card.jpg?1650664944",
+        "stars": 2.43781
+      }
+    },
+    {
+      "user": "LilyNightMoon",
+      "user_id": 18771081,
+      "country": "IQ",
+      "score_id": 4988179585,
+      "rank": "A",
+      "accuracy": 0.9588652482269504,
+      "pp": 90.7884,
+      "mods": [],
+      "combo": 252,
+      "created_at": "2026-02-24T01:13:58Z",
+      "beatmapset": {
+        "id": 2287463,
+        "title": "CHRISTMAS * ROCK",
+        "cover": "https://assets.ppy.sh/beatmaps/2287463/covers/card.jpg?1734432565",
+        "stars": 5.00159
+      }
+    },
+    {
+      "user": "AbbasIQ",
+      "user_id": 18418834,
+      "country": "IQ",
+      "score_id": 4988179511,
+      "rank": "A",
+      "accuracy": 0.9583333333333334,
+      "pp": 29.7709,
+      "mods": [
+        "HR",
+        "DT"
+      ],
+      "combo": 192,
+      "created_at": "2026-02-24T01:13:40Z",
+      "beatmapset": {
+        "id": 781509,
+        "title": "Black Rover (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/781509/covers/card.jpg?1650664944",
+        "stars": 2.43781
+      }
+    },
+    {
+      "user": "AbbasIQ",
+      "user_id": 18418834,
+      "country": "IQ",
+      "score_id": 4988179253,
+      "rank": "A",
+      "accuracy": 0.9242902208201893,
+      "pp": 59.8423,
+      "mods": [],
+      "combo": 343,
+      "created_at": "2026-02-24T01:12:29Z",
+      "beatmapset": {
+        "id": 781509,
+        "title": "Black Rover (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/781509/covers/card.jpg?1650664944",
+        "stars": 4.5244
+      }
+    },
+    {
+      "user": "LilyNightMoon",
+      "user_id": 18771081,
+      "country": "IQ",
+      "score_id": 4988178950,
+      "rank": "A",
+      "accuracy": 0.9236276849642004,
+      "pp": 40.3938,
+      "mods": [],
+      "combo": 215,
+      "created_at": "2026-02-24T01:11:20Z",
+      "beatmapset": {
+        "id": 2299083,
+        "title": "Hetakuso na Koi (Game Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2299083/covers/card.jpg?1758032050",
+        "stars": 5.00041
+      }
+    },
+    {
+      "user": "LilyNightMoon",
+      "user_id": 18771081,
+      "country": "IQ",
+      "score_id": 4988178323,
+      "rank": "A",
+      "accuracy": 0.954954954954955,
+      "pp": 63.3973,
+      "mods": [],
+      "combo": 190,
+      "created_at": "2026-02-24T01:08:52Z",
+      "beatmapset": {
+        "id": 204428,
+        "title": "KiRa-KiRa Sensation! (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/204428/covers/card.jpg?1650624325",
+        "stars": 5.0002
+      }
+    },
+    {
+      "user": "AbbasIQ",
+      "user_id": 18418834,
+      "country": "IQ",
+      "score_id": 4988178079,
+      "rank": "A",
+      "accuracy": 0.9446009389671362,
+      "pp": 77.9708,
+      "mods": [],
+      "combo": 293,
+      "created_at": "2026-02-24T01:07:49Z",
+      "beatmapset": {
+        "id": 482090,
+        "title": "Inferno",
+        "cover": "https://assets.ppy.sh/beatmaps/482090/covers/card.jpg?1645783744",
+        "stars": 4.96923
+      }
+    },
+    {
+      "user": "AbbasIQ",
+      "user_id": 18418834,
+      "country": "IQ",
+      "score_id": 4988177581,
+      "rank": "B",
+      "accuracy": 0.8872549019607843,
+      "pp": 40.4056,
+      "mods": [],
+      "combo": 252,
+      "created_at": "2026-02-24T01:05:54Z",
+      "beatmapset": {
+        "id": 1263014,
+        "title": "Berserk",
+        "cover": "https://assets.ppy.sh/beatmaps/1263014/covers/card.jpg?1622198073",
+        "stars": 5.19076
+      }
+    },
+    {
+      "user": "AbbasIQ",
+      "user_id": 18418834,
+      "country": "IQ",
+      "score_id": 4988176751,
+      "rank": "A",
+      "accuracy": 0.9491525423728814,
+      "pp": 55.4274,
+      "mods": [],
+      "combo": 254,
+      "created_at": "2026-02-24T01:02:32Z",
+      "beatmapset": {
+        "id": 906786,
+        "title": "Guess Who Is Back (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/906786/covers/card.jpg?1650674521",
+        "stars": 4.3703
+      }
+    },
+    {
+      "user": "MoDy_",
+      "user_id": 13782218,
+      "country": "IQ",
+      "score_id": 4988174851,
+      "rank": "B",
+      "accuracy": 0.9037037037037037,
+      "pp": 109.19,
+      "mods": [
+        "DT"
+      ],
+      "combo": 159,
+      "created_at": "2026-02-24T00:55:12Z",
+      "beatmapset": {
+        "id": 818349,
+        "title": "Sawakaze (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/818349/covers/card.jpg?1650669682",
+        "stars": 3.88399
+      }
+    },
+    {
+      "user": "Ali Ahmed",
+      "user_id": 13542355,
+      "country": "IQ",
+      "score_id": 4988174566,
+      "rank": "A",
+      "accuracy": 0.9505356017643353,
+      "pp": 187.751,
+      "mods": [],
+      "combo": 483,
+      "created_at": "2026-02-24T00:54:05Z",
+      "beatmapset": {
+        "id": 2412924,
+        "title": "Wing my Way (Game Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2412924/covers/card.jpg?1770164027",
+        "stars": 6.65745
+      }
+    },
+    {
+      "user": "MoDy_",
+      "user_id": 13782218,
+      "country": "IQ",
+      "score_id": 4988173959,
+      "rank": "B",
+      "accuracy": 0.8898148148148148,
+      "pp": 114.775,
+      "mods": [
+        "DT"
+      ],
+      "combo": 172,
+      "created_at": "2026-02-24T00:51:54Z",
+      "beatmapset": {
+        "id": 818349,
+        "title": "Sawakaze (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/818349/covers/card.jpg?1650669682",
+        "stars": 3.88399
+      }
+    },
+    {
+      "user": "Ali Ahmed",
+      "user_id": 13542355,
+      "country": "IQ",
+      "score_id": 4988173506,
+      "rank": "A",
+      "accuracy": 0.9401386263390044,
+      "pp": 144.782,
+      "mods": [],
+      "combo": 559,
+      "created_at": "2026-02-24T00:50:15Z",
+      "beatmapset": {
+        "id": 2412924,
+        "title": "Wing my Way (Game Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2412924/covers/card.jpg?1770164027",
+        "stars": 6.65745
+      }
+    },
+    {
+      "user": "MoDy_",
+      "user_id": 13782218,
+      "country": "IQ",
+      "score_id": 4988172540,
+      "rank": "B",
+      "accuracy": 0.9009259259259259,
+      "pp": 119.742,
+      "mods": [
+        "DT"
+      ],
+      "combo": 238,
+      "created_at": "2026-02-24T00:46:34Z",
+      "beatmapset": {
+        "id": 818349,
+        "title": "Sawakaze (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/818349/covers/card.jpg?1650669682",
+        "stars": 3.88399
+      }
+    },
+    {
+      "user": "Ali Ahmed",
+      "user_id": 13542355,
+      "country": "IQ",
+      "score_id": 4988172289,
+      "rank": "A",
+      "accuracy": 0.9543163201008191,
+      "pp": 150.859,
+      "mods": [],
+      "combo": 463,
+      "created_at": "2026-02-24T00:45:38Z",
+      "beatmapset": {
+        "id": 2412924,
+        "title": "Wing my Way (Game Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2412924/covers/card.jpg?1770164027",
+        "stars": 6.65745
+      }
+    },
+    {
+      "user": "Ali Ahmed",
+      "user_id": 13542355,
+      "country": "IQ",
+      "score_id": 4988171247,
+      "rank": "A",
+      "accuracy": 0.9489603024574669,
+      "pp": 141.387,
+      "mods": [],
+      "combo": 482,
+      "created_at": "2026-02-24T00:41:37Z",
+      "beatmapset": {
+        "id": 2412924,
+        "title": "Wing my Way (Game Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2412924/covers/card.jpg?1770164027",
+        "stars": 6.65745
+      }
+    },
+    {
+      "user": "mr5mat",
+      "user_id": 21602268,
+      "country": "IQ",
+      "score_id": 4988170553,
+      "rank": "B",
+      "accuracy": 0.8950906816760476,
+      "pp": 32.9201,
+      "mods": [
+        "NF"
+      ],
+      "combo": 134,
+      "created_at": "2026-02-24T00:39:15Z",
+      "beatmapset": {
+        "id": 580215,
+        "title": "dorchadas",
+        "cover": "https://assets.ppy.sh/beatmaps/580215/covers/card.jpg?1650649809",
+        "stars": 6.22013
+      }
+    },
+    {
+      "user": "Ali Ahmed",
+      "user_id": 13542355,
+      "country": "IQ",
+      "score_id": 4988170086,
+      "rank": "A",
+      "accuracy": 0.9338374291115312,
+      "pp": 143.379,
+      "mods": [],
+      "combo": 196,
+      "created_at": "2026-02-24T00:37:30Z",
+      "beatmapset": {
+        "id": 2412924,
+        "title": "Wing my Way (Game Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2412924/covers/card.jpg?1770164027",
+        "stars": 6.65745
+      }
+    },
+    {
+      "user": "MoDy_",
+      "user_id": 13782218,
+      "country": "IQ",
+      "score_id": 4988169625,
+      "rank": "A",
+      "accuracy": 0.9818688981868898,
+      "pp": 165.403,
+      "mods": [
+        "DT"
+      ],
+      "combo": 261,
+      "created_at": "2026-02-24T00:35:46Z",
+      "beatmapset": {
+        "id": 2323038,
+        "title": "What The Hell (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2323038/covers/card.jpg?1740092483",
+        "stars": 3.89073
+      }
+    },
+    {
+      "user": "MoDy_",
+      "user_id": 13782218,
+      "country": "IQ",
+      "score_id": 4988168675,
+      "rank": "B",
+      "accuracy": 0.9316596931659693,
+      "pp": 122.42,
+      "mods": [
+        "DT"
+      ],
+      "combo": 253,
+      "created_at": "2026-02-24T00:32:16Z",
+      "beatmapset": {
+        "id": 2323038,
+        "title": "What The Hell (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2323038/covers/card.jpg?1740092483",
+        "stars": 3.89073
+      }
+    },
+    {
+      "user": "Ali Ahmed",
+      "user_id": 13542355,
+      "country": "IQ",
+      "score_id": 4988168265,
+      "rank": "B",
+      "accuracy": 0.9155639571518589,
+      "pp": 180.298,
+      "mods": [
+        "HD"
+      ],
+      "combo": 418,
+      "created_at": "2026-02-24T00:30:45Z",
+      "beatmapset": {
+        "id": 2412924,
+        "title": "Wing my Way (Game Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2412924/covers/card.jpg?1770164027",
+        "stars": 6.65745
+      }
+    },
+    {
+      "user": "MoDy_",
+      "user_id": 13782218,
+      "country": "IQ",
+      "score_id": 4988167989,
+      "rank": "A",
+      "accuracy": 0.9135285913528591,
+      "pp": 117.134,
+      "mods": [
+        "DT"
+      ],
+      "combo": 186,
+      "created_at": "2026-02-24T00:29:43Z",
+      "beatmapset": {
+        "id": 2323038,
+        "title": "What The Hell (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2323038/covers/card.jpg?1740092483",
+        "stars": 3.89073
+      }
+    },
+    {
+      "user": "Ali Ahmed",
+      "user_id": 13542355,
+      "country": "IQ",
+      "score_id": 4988166673,
+      "rank": "B",
+      "accuracy": 0.9106570512820513,
+      "pp": 140.118,
+      "mods": [],
+      "combo": 122,
+      "created_at": "2026-02-24T00:25:04Z",
+      "beatmapset": {
+        "id": 922004,
+        "title": "Shitteru? Madousho wa Donki ni mo Naru no yo",
+        "cover": "https://assets.ppy.sh/beatmaps/922004/covers/card.jpg?1650675027",
+        "stars": 6.3682
+      }
+    },
+    {
+      "user": "MoDy_",
+      "user_id": 13782218,
+      "country": "IQ",
+      "score_id": 4988166423,
+      "rank": "A",
+      "accuracy": 0.9609483960948396,
+      "pp": 121.912,
+      "mods": [
+        "DT"
+      ],
+      "combo": 175,
+      "created_at": "2026-02-24T00:24:08Z",
+      "beatmapset": {
+        "id": 2323038,
+        "title": "What The Hell (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2323038/covers/card.jpg?1740092483",
+        "stars": 3.89073
+      }
+    },
+    {
+      "user": "mr5mat",
+      "user_id": 21602268,
+      "country": "IQ",
+      "score_id": 4988164010,
+      "rank": "A",
+      "accuracy": 0.943943943943944,
+      "pp": 91.8492,
+      "mods": [
+        "HD",
+        "HR"
+      ],
+      "combo": 147,
+      "created_at": "2026-02-24T00:15:04Z",
+      "beatmapset": {
+        "id": 765169,
+        "title": "(can you) understand me?",
+        "cover": "https://assets.ppy.sh/beatmaps/765169/covers/card.jpg?1650662185",
+        "stars": 5.12912
+      }
+    },
+    {
+      "user": "RuRySAMA",
+      "user_id": 35051247,
+      "country": "IQ",
+      "score_id": 6270332871,
+      "rank": "C",
+      "accuracy": 0.7261331728840754,
+      "pp": null,
+      "mods": [
+        "HD",
+        "RX"
+      ],
+      "combo": 120,
+      "created_at": "2026-02-24T00:14:40Z",
+      "beatmapset": {
+        "id": 813569,
+        "title": "Sound Chimera",
+        "cover": "https://assets.ppy.sh/beatmaps/813569/covers/card.jpg?1622143597",
+        "stars": 8.21637
+      }
+    },
+    {
+      "user": "RuRySAMA",
+      "user_id": 35051247,
+      "country": "IQ",
+      "score_id": 6270315702,
+      "rank": "C",
+      "accuracy": 0.7575757575757576,
+      "pp": null,
+      "mods": [
+        "HD",
+        "RX"
+      ],
+      "combo": 44,
+      "created_at": "2026-02-24T00:08:58Z",
+      "beatmapset": {
+        "id": 1742920,
+        "title": "TALALALALALALALALALALALAAAAA LALAAAAAAAAAAAAA",
+        "cover": "https://assets.ppy.sh/beatmaps/1742920/covers/card.jpg?1693291316",
+        "stars": 6.60291
+      }
+    },
+    {
+      "user": "RuRySAMA",
+      "user_id": 35051247,
+      "country": "IQ",
+      "score_id": 6270307732,
+      "rank": "B",
+      "accuracy": 0.8912037037037037,
+      "pp": null,
+      "mods": [
+        "HD",
+        "RX"
+      ],
+      "combo": 138,
+      "created_at": "2026-02-24T00:06:20Z",
+      "beatmapset": {
+        "id": 332532,
+        "title": "Highscore",
+        "cover": "https://assets.ppy.sh/beatmaps/332532/covers/card.jpg?1650631844",
+        "stars": 6.99648
+      }
+    },
+    {
+      "user": "mr5mat",
+      "user_id": 21602268,
+      "country": "IQ",
+      "score_id": 4988161616,
+      "rank": "A",
+      "accuracy": 0.9698717948717949,
+      "pp": 118.184,
+      "mods": [],
+      "combo": 258,
+      "created_at": "2026-02-24T00:06:18Z",
+      "beatmapset": {
+        "id": 931452,
+        "title": "Colorful",
+        "cover": "https://assets.ppy.sh/beatmaps/931452/covers/card.jpg?1650678433",
+        "stars": 5.64496
+      }
+    },
+    {
+      "user": "mr5mat",
+      "user_id": 21602268,
+      "country": "IQ",
+      "score_id": 4988160908,
+      "rank": "A",
+      "accuracy": 0.950937950937951,
+      "pp": 111.939,
+      "mods": [],
+      "combo": 169,
+      "created_at": "2026-02-24T00:03:38Z",
+      "beatmapset": {
+        "id": 569503,
+        "title": "Uso no Hibana",
+        "cover": "https://assets.ppy.sh/beatmaps/569503/covers/card.jpg?1650648594",
+        "stars": 6.14123
+      }
+    },
+    {
+      "user": "RuRySAMA",
+      "user_id": 35051247,
+      "country": "IQ",
+      "score_id": 6270281713,
+      "rank": "C",
+      "accuracy": 0.7565011820330969,
+      "pp": null,
+      "mods": [
+        "HD",
+        "RX"
+      ],
+      "combo": 189,
+      "created_at": "2026-02-23T23:57:52Z",
+      "beatmapset": {
+        "id": 2191876,
+        "title": "Sidetracked Day",
+        "cover": "https://assets.ppy.sh/beatmaps/2191876/covers/card.jpg?1761462050",
+        "stars": 7.51647
+      }
+    },
+    {
+      "user": "mr5mat",
+      "user_id": 21602268,
+      "country": "IQ",
+      "score_id": 4988158702,
+      "rank": "A",
+      "accuracy": 0.9626955475330926,
+      "pp": 94.8859,
+      "mods": [],
+      "combo": 342,
+      "created_at": "2026-02-23T23:55:51Z",
+      "beatmapset": {
+        "id": 376552,
+        "title": "Sakura no Uta",
+        "cover": "https://assets.ppy.sh/beatmaps/376552/covers/card.jpg?1650634681",
+        "stars": 5.59958
+      }
+    },
+    {
+      "user": "mr5mat",
+      "user_id": 21602268,
+      "country": "IQ",
+      "score_id": 4988157241,
+      "rank": "A",
+      "accuracy": 0.9271814187068425,
+      "pp": 81.8565,
+      "mods": [],
+      "combo": 264,
+      "created_at": "2026-02-23T23:50:43Z",
+      "beatmapset": {
+        "id": 443751,
+        "title": "Shinsaku no Shiawase wa Kochira!",
+        "cover": "https://assets.ppy.sh/beatmaps/443751/covers/card.jpg?1650639287",
+        "stars": 5.81584
+      }
+    },
+    {
+      "user": "xTHE_CRUISERx",
+      "user_id": 38658226,
+      "country": "IQ",
+      "score_id": 4988156206,
+      "rank": "B",
+      "accuracy": 0.8687707641196013,
+      "pp": null,
+      "mods": [
+        "NF"
+      ],
+      "combo": 290,
+      "created_at": "2026-02-23T23:47:18Z",
+      "beatmapset": {
+        "id": 1225170,
+        "title": "Stronger",
+        "cover": "https://assets.ppy.sh/beatmaps/1225170/covers/card.jpg?1720040206",
+        "stars": 4.56597
+      }
+    },
+    {
+      "user": "mr5mat",
+      "user_id": 21602268,
+      "country": "IQ",
+      "score_id": 4988155765,
+      "rank": "A",
+      "accuracy": 0.9772647778943686,
+      "pp": 144.352,
+      "mods": [],
+      "combo": 320,
+      "created_at": "2026-02-23T23:45:42Z",
+      "beatmapset": {
+        "id": 1115477,
+        "title": "Colors Power ni Omakasero!",
+        "cover": "https://assets.ppy.sh/beatmaps/1115477/covers/card.jpg?1650693288",
+        "stars": 5.906
+      }
+    },
+    {
+      "user": "pupue",
+      "user_id": 25682258,
+      "country": "IQ",
+      "score_id": 4988152090,
+      "rank": "XH",
+      "accuracy": 1,
+      "pp": 50.4316,
+      "mods": [
+        "HD",
+        "HR",
+        "NC"
+      ],
+      "combo": 98,
+      "created_at": "2026-02-23T23:33:23Z",
+      "beatmapset": {
+        "id": 2322925,
+        "title": "Aozora ni Kamihikouki (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/2322925/covers/card.jpg?1755078757",
+        "stars": 2.09756
+      }
+    },
+    {
+      "user": "pupue",
+      "user_id": 25682258,
+      "country": "IQ",
+      "score_id": 4988151511,
+      "rank": "XH",
+      "accuracy": 1,
+      "pp": 67.8136,
+      "mods": [
+        "HD",
+        "HR",
+        "NC"
+      ],
+      "combo": 101,
+      "created_at": "2026-02-23T23:31:21Z",
+      "beatmapset": {
+        "id": 2300823,
+        "title": "Harumachi Clover (Swing Arrangement)",
+        "cover": "https://assets.ppy.sh/beatmaps/2300823/covers/card.jpg?1761681577",
+        "stars": 2.24544
+      }
+    },
+    {
+      "user": "LAWLIMT1",
+      "user_id": 37085851,
+      "country": "IQ",
+      "score_id": 6270191240,
+      "rank": "C",
+      "accuracy": 0.7476435304198801,
+      "pp": 19.1529,
+      "mods": [],
+      "combo": 80,
+      "created_at": "2026-02-23T23:29:23Z",
+      "beatmapset": {
+        "id": 994604,
+        "title": "Sad spring",
+        "cover": "https://assets.ppy.sh/beatmaps/994604/covers/card.jpg?1650697823",
+        "stars": 5.18222
+      }
+    },
+    {
+      "user": "pupue",
+      "user_id": 25682258,
+      "country": "IQ",
+      "score_id": 4988150793,
+      "rank": "XH",
+      "accuracy": 1,
+      "pp": 53.0545,
+      "mods": [
+        "HD",
+        "HR",
+        "NC"
+      ],
+      "combo": 133,
+      "created_at": "2026-02-23T23:28:55Z",
+      "beatmapset": {
+        "id": 2092512,
+        "title": "pweh",
+        "cover": "https://assets.ppy.sh/beatmaps/2092512/covers/card.jpg?1742166646",
+        "stars": 2.18804
+      }
+    },
+    {
+      "user": "pupue",
+      "user_id": 25682258,
+      "country": "IQ",
+      "score_id": 4988150659,
+      "rank": "XH",
+      "accuracy": 1,
+      "pp": 25.1926,
+      "mods": [
+        "HD",
+        "HR",
+        "NC"
+      ],
+      "combo": 94,
+      "created_at": "2026-02-23T23:28:26Z",
+      "beatmapset": {
+        "id": 2092512,
+        "title": "pweh",
+        "cover": "https://assets.ppy.sh/beatmaps/2092512/covers/card.jpg?1742166646",
+        "stars": 1.78306
+      }
+    },
+    {
+      "user": "pupue",
+      "user_id": 25682258,
+      "country": "IQ",
+      "score_id": 4988150454,
+      "rank": "XH",
+      "accuracy": 1,
+      "pp": 69.6239,
+      "mods": [
+        "HD",
+        "HR",
+        "NC"
+      ],
+      "combo": 87,
+      "created_at": "2026-02-23T23:27:47Z",
+      "beatmapset": {
+        "id": 1986826,
+        "title": "Aozora ni Kamihikouki (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1986826/covers/card.jpg?1752528591",
+        "stars": 2.34377
+      }
+    },
+    {
+      "user": "pupue",
+      "user_id": 25682258,
+      "country": "IQ",
+      "score_id": 4988149796,
+      "rank": "XH",
+      "accuracy": 1,
+      "pp": 31.3245,
+      "mods": [
+        "HD",
+        "HR",
+        "NC"
+      ],
+      "combo": 94,
+      "created_at": "2026-02-23T23:25:33Z",
+      "beatmapset": {
+        "id": 1359965,
+        "title": "ChuckleVision (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1359965/covers/card.jpg?1753012456",
+        "stars": 1.81923
+      }
+    },
+    {
+      "user": "pupue",
+      "user_id": 25682258,
+      "country": "IQ",
+      "score_id": 4988149639,
+      "rank": "SH",
+      "accuracy": 0.9861111111111112,
+      "pp": 21.2643,
+      "mods": [
+        "HD",
+        "HR",
+        "NC"
+      ],
+      "combo": 94,
+      "created_at": "2026-02-23T23:25:03Z",
+      "beatmapset": {
+        "id": 1359965,
+        "title": "ChuckleVision (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1359965/covers/card.jpg?1753012456",
+        "stars": 1.81923
+      }
+    },
+    {
+      "user": "pupue",
+      "user_id": 25682258,
+      "country": "IQ",
+      "score_id": 4988149524,
+      "rank": "A",
+      "accuracy": 0.9826388888888888,
+      "pp": 19.8107,
+      "mods": [
+        "HD",
+        "HR",
+        "NC"
+      ],
+      "combo": 94,
+      "created_at": "2026-02-23T23:24:39Z",
+      "beatmapset": {
+        "id": 1359965,
+        "title": "ChuckleVision (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1359965/covers/card.jpg?1753012456",
+        "stars": 1.81923
+      }
+    },
+    {
+      "user": "pupue",
+      "user_id": 25682258,
+      "country": "IQ",
+      "score_id": 4988149108,
+      "rank": "A",
+      "accuracy": 0.9791666666666666,
+      "pp": 16.726,
+      "mods": [
+        "HD",
+        "HR",
+        "NC"
+      ],
+      "combo": 93,
+      "created_at": "2026-02-23T23:23:17Z",
+      "beatmapset": {
+        "id": 1359965,
+        "title": "ChuckleVision (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1359965/covers/card.jpg?1753012456",
+        "stars": 1.81923
+      }
+    },
+    {
+      "user": "pupue",
+      "user_id": 25682258,
+      "country": "IQ",
+      "score_id": 4988148992,
+      "rank": "A",
+      "accuracy": 0.9583333333333334,
+      "pp": 11.9884,
+      "mods": [
+        "HD",
+        "HR",
+        "NC"
+      ],
+      "combo": 92,
+      "created_at": "2026-02-23T23:22:52Z",
+      "beatmapset": {
+        "id": 1359965,
+        "title": "ChuckleVision (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1359965/covers/card.jpg?1753012456",
+        "stars": 1.81923
+      }
+    },
+    {
+      "user": "yuosif",
+      "user_id": 10697971,
+      "country": "IQ",
+      "score_id": 6270050042,
+      "rank": "C",
+      "accuracy": 0.7707129094412332,
+      "pp": 64.792,
+      "mods": [],
+      "combo": 64,
+      "created_at": "2026-02-23T22:46:55Z",
+      "beatmapset": {
+        "id": 2390209,
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+        "stars": 5.71091
+      }
+    },
+    {
+      "user": "yuosif",
+      "user_id": 10697971,
+      "country": "IQ",
+      "score_id": 6270046640,
+      "rank": "C",
+      "accuracy": 0.8402777777777778,
+      "pp": 82.1448,
+      "mods": [],
+      "combo": 143,
+      "created_at": "2026-02-23T22:45:57Z",
+      "beatmapset": {
+        "id": 2390209,
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+        "stars": 5.44566
+      }
+    },
+    {
+      "user": "KURONEKO13",
+      "user_id": 17342734,
+      "country": "IQ",
+      "score_id": 4988132943,
+      "rank": "C",
+      "accuracy": 0.8452380952380952,
+      "pp": 6.7363,
+      "mods": [],
+      "combo": 143,
+      "created_at": "2026-02-23T22:30:43Z",
+      "beatmapset": {
+        "id": 1153984,
+        "title": "Aun no Beats",
+        "cover": "https://assets.ppy.sh/beatmaps/1153984/covers/card.jpg?1650695159",
+        "stars": 3.02882
+      }
+    },
+    {
+      "user": "KURONEKO13",
+      "user_id": 17342734,
+      "country": "IQ",
+      "score_id": 4988131686,
+      "rank": "C",
+      "accuracy": 0.8213333333333334,
+      "pp": 2.43771,
+      "mods": [],
+      "combo": 99,
+      "created_at": "2026-02-23T22:26:58Z",
+      "beatmapset": {
+        "id": 201141,
+        "title": "unravel (TV edit)",
+        "cover": "https://assets.ppy.sh/beatmaps/201141/covers/card.jpg?1650626397",
+        "stars": 2.07272
+      }
+    },
+    {
+      "user": "KURONEKO13",
+      "user_id": 17342734,
+      "country": "IQ",
+      "score_id": 4988129344,
+      "rank": "B",
+      "accuracy": 0.8604417670682731,
+      "pp": 4.98494,
+      "mods": [],
+      "combo": 117,
+      "created_at": "2026-02-23T22:19:59Z",
+      "beatmapset": {
+        "id": 906786,
+        "title": "Guess Who Is Back (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/906786/covers/card.jpg?1650674521",
+        "stars": 2.37813
+      }
+    },
+    {
+      "user": "RuRySAMA",
+      "user_id": 35051247,
+      "country": "IQ",
+      "score_id": 6269932277,
+      "rank": "D",
+      "accuracy": 0.463768115942029,
+      "pp": null,
+      "mods": [
+        "HD",
+        "RX"
+      ],
+      "combo": 22,
+      "created_at": "2026-02-23T22:14:47Z",
+      "beatmapset": {
+        "id": 1287429,
+        "title": "CS-0 Jump Training",
+        "cover": "https://assets.ppy.sh/beatmaps/1287429/covers/card.jpg?1621065627",
+        "stars": 8.03529
+      }
+    },
+    {
+      "user": "RuRySAMA",
+      "user_id": 35051247,
+      "country": "IQ",
+      "score_id": 6269910821,
+      "rank": "C",
+      "accuracy": 0.6990990990990991,
+      "pp": null,
+      "mods": [
+        "HD",
+        "RX"
+      ],
+      "combo": 70,
+      "created_at": "2026-02-23T22:09:04Z",
+      "beatmapset": {
+        "id": 1118549,
+        "title": "Last Surprise -Scramble-",
+        "cover": "https://assets.ppy.sh/beatmaps/1118549/covers/card.jpg?1769508769",
+        "stars": 7.60852
+      }
+    },
+    {
+      "user": "KURONEKO13",
+      "user_id": 17342734,
+      "country": "IQ",
+      "score_id": 4988122218,
+      "rank": "B",
+      "accuracy": 0.9023955147808359,
+      "pp": 34.7046,
+      "mods": [],
+      "combo": 203,
+      "created_at": "2026-02-23T21:59:39Z",
+      "beatmapset": {
+        "id": 235093,
+        "title": "I Will Pick You Up",
+        "cover": "https://assets.ppy.sh/beatmaps/235093/covers/card.jpg?1650626215",
+        "stars": 4.8124
+      }
+    },
+    {
+      "user": "KURONEKO13",
+      "user_id": 17342734,
+      "country": "IQ",
+      "score_id": 4988120779,
+      "rank": "C",
+      "accuracy": 0.8191214470284238,
+      "pp": 45.1944,
+      "mods": [],
+      "combo": 88,
+      "created_at": "2026-02-23T21:55:32Z",
+      "beatmapset": {
+        "id": 1207609,
+        "title": "how to create the weeknd's \"blinding lights\"",
+        "cover": "https://assets.ppy.sh/beatmaps/1207609/covers/card.jpg?1645786654",
+        "stars": 4.60768
+      }
+    },
+    {
+      "user": "RuRySAMA",
+      "user_id": 35051247,
+      "country": "IQ",
+      "score_id": 6269849578,
+      "rank": "C",
+      "accuracy": 0.8404499540863177,
+      "pp": 33.2544,
+      "mods": [
+        "HD"
+      ],
+      "combo": 293,
+      "created_at": "2026-02-23T21:53:03Z",
+      "beatmapset": {
+        "id": 2134935,
+        "title": "It's Going Down Now",
+        "cover": "https://assets.ppy.sh/beatmaps/2134935/covers/card.jpg?1726356148",
+        "stars": 4.74839
+      }
+    },
+    {
+      "user": "MrREXO",
+      "user_id": 25075871,
+      "country": "IQ",
+      "score_id": 650917292,
+      "rank": "S",
+      "accuracy": 0.96137617656605,
+      "pp": null,
+      "mods": [],
+      "combo": 657,
+      "created_at": "2026-02-23T21:52:31Z",
+      "beatmapset": {
+        "id": 2002455,
+        "title": "ISCHEZAYU (Lieless FRENCHCORE BOOTLEG)",
+        "cover": "https://assets.ppy.sh/beatmaps/2002455/covers/card.jpg?1724882567",
+        "stars": 5.53665
+      }
+    },
+    {
+      "user": "MrREXO",
+      "user_id": 25075871,
+      "country": "IQ",
+      "score_id": 650917105,
+      "rank": "A",
+      "accuracy": 0.9491440080563948,
+      "pp": 223.923,
+      "mods": [
+        "MR"
+      ],
+      "combo": 463,
+      "created_at": "2026-02-23T21:49:27Z",
+      "beatmapset": {
+        "id": 2087660,
+        "title": "davay rasskazhem (ily Frenchcore Remix) (Sped Up Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2087660/covers/card.jpg?1707247836",
+        "stars": 5.46702
+      }
+    },
+    {
+      "user": "KURONEKO13",
+      "user_id": 17342734,
+      "country": "IQ",
+      "score_id": 4988117775,
+      "rank": "B",
+      "accuracy": 0.8916666666666667,
+      "pp": 59.6603,
+      "mods": [],
+      "combo": 130,
+      "created_at": "2026-02-23T21:46:58Z",
+      "beatmapset": {
+        "id": 962088,
+        "title": "Marshmary",
+        "cover": "https://assets.ppy.sh/beatmaps/962088/covers/card.jpg?1645788534",
+        "stars": 5.21208
+      }
+    },
+    {
+      "user": "shiro01",
+      "user_id": 31939579,
+      "country": "IQ",
+      "score_id": 4988117753,
+      "rank": "A",
+      "accuracy": 0.8998778998778999,
+      "pp": 40.7892,
+      "mods": [
+        "HR"
+      ],
+      "combo": 285,
+      "created_at": "2026-02-23T21:46:53Z",
+      "beatmapset": {
+        "id": 819112,
+        "title": "You Suck At Love (Speed Up Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/819112/covers/card.jpg?1650668141",
+        "stars": 3.72883
+      }
+    },
+    {
+      "user": "shiro01",
+      "user_id": 31939579,
+      "country": "IQ",
+      "score_id": 4988117255,
+      "rank": "B",
+      "accuracy": 0.8827838827838828,
+      "pp": 33.0847,
+      "mods": [
+        "HR"
+      ],
+      "combo": 159,
+      "created_at": "2026-02-23T21:45:28Z",
+      "beatmapset": {
+        "id": 819112,
+        "title": "You Suck At Love (Speed Up Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/819112/covers/card.jpg?1650668141",
+        "stars": 3.72883
+      }
+    },
+    {
+      "user": "KURONEKO13",
+      "user_id": 17342734,
+      "country": "IQ",
+      "score_id": 4988117211,
+      "rank": "C",
+      "accuracy": 0.8204419889502762,
+      "pp": 50.6397,
+      "mods": [],
+      "combo": 89,
+      "created_at": "2026-02-23T21:45:21Z",
+      "beatmapset": {
+        "id": 765778,
+        "title": "Make a Move (Speed Up Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/765778/covers/card.jpg?1650663123",
+        "stars": 4.90861
+      }
+    },
+    {
+      "user": "RuRySAMA",
+      "user_id": 35051247,
+      "country": "IQ",
+      "score_id": 6269797539,
+      "rank": "A",
+      "accuracy": 0.9479553903345725,
+      "pp": 78.617,
+      "mods": [
+        "HD"
+      ],
+      "combo": 226,
+      "created_at": "2026-02-23T21:39:41Z",
+      "beatmapset": {
+        "id": 613961,
+        "title": "Hoohah (VIP Edit)",
+        "cover": "https://assets.ppy.sh/beatmaps/613961/covers/card.jpg?1650649948",
+        "stars": 4.39208
+      }
+    },
+    {
+      "user": "shiro01",
+      "user_id": 31939579,
+      "country": "IQ",
+      "score_id": 4988115023,
+      "rank": "B",
+      "accuracy": 0.8693528693528694,
+      "pp": 27.5263,
+      "mods": [
+        "HR"
+      ],
+      "combo": 99,
+      "created_at": "2026-02-23T21:39:22Z",
+      "beatmapset": {
+        "id": 819112,
+        "title": "You Suck At Love (Speed Up Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/819112/covers/card.jpg?1650668141",
+        "stars": 3.72883
+      }
+    },
+    {
+      "user": "shiro01",
+      "user_id": 31939579,
+      "country": "IQ",
+      "score_id": 4988114410,
+      "rank": "B",
+      "accuracy": 0.842948717948718,
+      "pp": 10.9837,
+      "mods": [
+        "HR",
+        "DT"
+      ],
+      "combo": 110,
+      "created_at": "2026-02-23T21:37:44Z",
+      "beatmapset": {
+        "id": 819112,
+        "title": "You Suck At Love (Speed Up Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/819112/covers/card.jpg?1650668141",
+        "stars": 2.24652
+      }
+    },
+    {
+      "user": "shiro01",
+      "user_id": 31939579,
+      "country": "IQ",
+      "score_id": 4988113957,
+      "rank": "A",
+      "accuracy": 0.8710045662100456,
+      "pp": 18.7221,
+      "mods": [
+        "HR",
+        "DT"
+      ],
+      "combo": 240,
+      "created_at": "2026-02-23T21:36:31Z",
+      "beatmapset": {
+        "id": 1928560,
+        "title": "Feeling Like The End",
+        "cover": "https://assets.ppy.sh/beatmaps/1928560/covers/card.jpg?1682169344",
+        "stars": 2.13074
+      }
+    },
+    {
+      "user": "shiro01",
+      "user_id": 31939579,
+      "country": "IQ",
+      "score_id": 4988113578,
+      "rank": "B",
+      "accuracy": 0.8299086757990868,
+      "pp": 11.9142,
+      "mods": [
+        "HR",
+        "DT"
+      ],
+      "combo": 147,
+      "created_at": "2026-02-23T21:35:30Z",
+      "beatmapset": {
+        "id": 1928560,
+        "title": "Feeling Like The End",
+        "cover": "https://assets.ppy.sh/beatmaps/1928560/covers/card.jpg?1682169344",
+        "stars": 2.13074
+      }
+    },
+    {
+      "user": "shiro01",
+      "user_id": 31939579,
+      "country": "IQ",
+      "score_id": 4988112955,
+      "rank": "C",
+      "accuracy": 0.8417508417508418,
+      "pp": 35.6385,
+      "mods": [],
+      "combo": 162,
+      "created_at": "2026-02-23T21:33:56Z",
+      "beatmapset": {
+        "id": 1928560,
+        "title": "Feeling Like The End",
+        "cover": "https://assets.ppy.sh/beatmaps/1928560/covers/card.jpg?1682169344",
+        "stars": 4.21872
+      }
+    },
+    {
+      "user": "KURONEKO13",
+      "user_id": 17342734,
+      "country": "IQ",
+      "score_id": 4988112500,
+      "rank": "C",
+      "accuracy": 0.7811016144349477,
+      "pp": 19.9779,
+      "mods": [],
+      "combo": 68,
+      "created_at": "2026-02-23T21:32:43Z",
+      "beatmapset": {
+        "id": 753203,
+        "title": "Torikago",
+        "cover": "https://assets.ppy.sh/beatmaps/753203/covers/card.jpg?1622136509",
+        "stars": 4.62164
+      }
+    },
+    {
+      "user": "RuRySAMA",
+      "user_id": 35051247,
+      "country": "IQ",
+      "score_id": 6269678615,
+      "rank": "B",
+      "accuracy": 0.8857808857808858,
+      "pp": 31.0015,
+      "mods": [
+        "HD"
+      ],
+      "combo": 251,
+      "created_at": "2026-02-23T21:10:48Z",
+      "beatmapset": {
+        "id": 1839623,
+        "title": "Miku",
+        "cover": "https://assets.ppy.sh/beatmaps/1839623/covers/card.jpg?1684864518",
+        "stars": 4.03289
+      }
+    },
+    {
+      "user": "Kosmiku",
+      "user_id": 15209351,
+      "country": "IQ",
+      "score_id": 6269673830,
+      "rank": "B",
+      "accuracy": 0.9112554112554112,
+      "pp": 19.1262,
+      "mods": [],
+      "combo": 242,
+      "created_at": "2026-02-23T21:09:39Z",
+      "beatmapset": {
+        "id": 50913,
+        "title": "Broken Angel (DJ Aligator Remix)",
+        "cover": "https://assets.ppy.sh/beatmaps/50913/covers/card.jpg?1650612248",
+        "stars": 3.30635
+      }
+    },
+    {
+      "user": "Alhemeri",
+      "user_id": 27526375,
+      "country": "IQ",
+      "score_id": 4988102321,
+      "rank": "C",
+      "accuracy": 0.794066317626527,
+      "pp": 32.6537,
+      "mods": [],
+      "combo": 85,
+      "created_at": "2026-02-23T21:06:19Z",
+      "beatmapset": {
+        "id": 2295884,
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
+        "stars": 4.34891
+      }
+    },
+    {
+      "user": "Kosmiku",
+      "user_id": 15209351,
+      "country": "IQ",
+      "score_id": 6269640477,
+      "rank": "S",
+      "accuracy": 0.9381443298969072,
+      "pp": 30.5864,
+      "mods": [],
+      "combo": 152,
+      "created_at": "2026-02-23T21:01:50Z",
+      "beatmapset": {
+        "id": 842412,
+        "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+        "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+        "stars": 3.25361
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4988100344,
+      "rank": "B",
+      "accuracy": 0.8926739926739927,
+      "pp": 134.552,
+      "mods": [],
+      "combo": 188,
+      "created_at": "2026-02-23T21:01:23Z",
+      "beatmapset": {
+        "id": 2191876,
+        "title": "Sidetracked Day",
+        "cover": "https://assets.ppy.sh/beatmaps/2191876/covers/card.jpg?1761462050",
+        "stars": 6.62222
+      }
+    },
+    {
+      "user": "Kosmiku",
+      "user_id": 15209351,
+      "country": "IQ",
+      "score_id": 6269635423,
+      "rank": "C",
+      "accuracy": 0.8230240549828178,
+      "pp": 18.8613,
+      "mods": [],
+      "combo": 144,
+      "created_at": "2026-02-23T21:00:41Z",
+      "beatmapset": {
+        "id": 842412,
+        "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+        "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+        "stars": 3.25361
+      }
+    },
+    {
+      "user": "Kosmiku",
+      "user_id": 15209351,
+      "country": "IQ",
+      "score_id": 6269630960,
+      "rank": "C",
+      "accuracy": 0.8195876288659794,
+      "pp": 19.0751,
+      "mods": [],
+      "combo": 119,
+      "created_at": "2026-02-23T20:59:40Z",
+      "beatmapset": {
+        "id": 842412,
+        "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+        "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+        "stars": 3.25361
+      }
+    },
+    {
+      "user": "Kosmiku",
+      "user_id": 15209351,
+      "country": "IQ",
+      "score_id": 6269626778,
+      "rank": "C",
+      "accuracy": 0.8132887899034892,
+      "pp": 12.8048,
+      "mods": [],
+      "combo": 421,
+      "created_at": "2026-02-23T20:58:42Z",
+      "beatmapset": {
+        "id": 657341,
+        "title": "Hello!My World!!",
+        "cover": "https://assets.ppy.sh/beatmaps/657341/covers/card.jpg?1650653747",
+        "stars": 3.30893
+      }
+    },
+    {
+      "user": "Quake203",
+      "user_id": 22846495,
+      "country": "IQ",
+      "score_id": 6269621825,
+      "rank": "A",
+      "accuracy": 0.9538545059717698,
+      "pp": null,
+      "mods": [],
+      "combo": 458,
+      "created_at": "2026-02-23T20:57:35Z",
+      "beatmapset": {
+        "id": 1740979,
+        "title": "RUSH E",
+        "cover": "https://assets.ppy.sh/beatmaps/1740979/covers/card.jpg?1759829423",
+        "stars": 5.81496
+      }
+    },
+    {
+      "user": "Kosmiku",
+      "user_id": 15209351,
+      "country": "IQ",
+      "score_id": 6269611411,
+      "rank": "A",
+      "accuracy": 0.9625,
+      "pp": 10.1361,
+      "mods": [],
+      "combo": 138,
+      "created_at": "2026-02-23T20:55:10Z",
+      "beatmapset": {
+        "id": 942866,
+        "title": "Rockefeller Street (Nightcore Mix)",
+        "cover": "https://assets.ppy.sh/beatmaps/942866/covers/card.jpg?1650678288",
+        "stars": 2.15425
+      }
+    },
+    {
+      "user": "Quake203",
+      "user_id": 22846495,
+      "country": "IQ",
+      "score_id": 6269609019,
+      "rank": "A",
+      "accuracy": 0.9522869364922671,
+      "pp": 135.711,
+      "mods": [],
+      "combo": 326,
+      "created_at": "2026-02-23T20:54:36Z",
+      "beatmapset": {
+        "id": 980712,
+        "title": "Yuugure Semi Nikki",
+        "cover": "https://assets.ppy.sh/beatmaps/980712/covers/card.jpg?1739702171",
+        "stars": 5.86046
+      }
+    },
+    {
+      "user": "Kosmiku",
+      "user_id": 15209351,
+      "country": "IQ",
+      "score_id": 6269603760,
+      "rank": "C",
+      "accuracy": 0.7942028985507247,
+      "pp": 27.8535,
+      "mods": [],
+      "combo": 126,
+      "created_at": "2026-02-23T20:53:25Z",
+      "beatmapset": {
+        "id": 816264,
+        "title": "MY REZHEM KINOLENTY (feat. Cut The Crap)",
+        "cover": "https://assets.ppy.sh/beatmaps/816264/covers/card.jpg?1622143933",
+        "stars": 3.66756
+      }
+    },
+    {
+      "user": "orashoka",
+      "user_id": 38874590,
+      "country": "IQ",
+      "score_id": 6269599159,
+      "rank": "C",
+      "accuracy": 0.8005401234567902,
+      "pp": 20.0809,
+      "mods": [],
+      "combo": 95,
+      "created_at": "2026-02-23T20:52:25Z",
+      "beatmapset": {
+        "id": 2476973,
+        "title": "Carol of the Bells (Rock Cover) (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2476973/covers/card.jpg?1770449462",
+        "stars": 4.49355
+      }
+    },
+    {
+      "user": "Kosmiku",
+      "user_id": 15209351,
+      "country": "IQ",
+      "score_id": 6269595110,
+      "rank": "C",
+      "accuracy": 0.7875647668393783,
+      "pp": 26.1766,
+      "mods": [],
+      "combo": 267,
+      "created_at": "2026-02-23T20:51:30Z",
+      "beatmapset": {
+        "id": 952409,
+        "title": "Ai no Sukima",
+        "cover": "https://assets.ppy.sh/beatmaps/952409/covers/card.jpg?1645787548",
+        "stars": 3.97573
+      }
+    },
+    {
+      "user": "Kosmiku",
+      "user_id": 15209351,
+      "country": "IQ",
+      "score_id": 6269588587,
+      "rank": "C",
+      "accuracy": 0.7622622622622622,
+      "pp": 29.0909,
+      "mods": [],
+      "combo": 230,
+      "created_at": "2026-02-23T20:50:02Z",
+      "beatmapset": {
+        "id": 770300,
+        "title": "Monochrome Butterfly",
+        "cover": "https://assets.ppy.sh/beatmaps/770300/covers/card.jpg?1650662945",
+        "stars": 4.55135
+      }
+    },
+    {
+      "user": "Quake203",
+      "user_id": 22846495,
+      "country": "IQ",
+      "score_id": 6269584466,
+      "rank": "B",
+      "accuracy": 0.9122807017543859,
+      "pp": null,
+      "mods": [],
+      "combo": 67,
+      "created_at": "2026-02-23T20:49:08Z",
+      "beatmapset": {
+        "id": 517769,
+        "title": "Syaro ga nakisakebinagara Brain Power",
+        "cover": "https://assets.ppy.sh/beatmaps/517769/covers/card.jpg?1717460991",
+        "stars": 5.91869
+      }
+    },
+    {
+      "user": "orashoka",
+      "user_id": 38874590,
+      "country": "IQ",
+      "score_id": 6269584384,
+      "rank": "C",
+      "accuracy": 0.8083832335329342,
+      "pp": 37.0977,
+      "mods": [],
+      "combo": 33,
+      "created_at": "2026-02-23T20:49:07Z",
+      "beatmapset": {
+        "id": 2104327,
+        "title": "Brazil",
+        "cover": "https://assets.ppy.sh/beatmaps/2104327/covers/card.jpg?1704552605",
+        "stars": 4.92542
+      }
+    },
+    {
+      "user": "Quake203",
+      "user_id": 22846495,
+      "country": "IQ",
+      "score_id": 6269581096,
+      "rank": "B",
+      "accuracy": 0.8522267206477733,
+      "pp": null,
+      "mods": [],
+      "combo": 62,
+      "created_at": "2026-02-23T20:48:23Z",
+      "beatmapset": {
+        "id": 517769,
+        "title": "Syaro ga nakisakebinagara Brain Power",
+        "cover": "https://assets.ppy.sh/beatmaps/517769/covers/card.jpg?1717460991",
+        "stars": 5.91869
+      }
+    },
+    {
+      "user": "Kosmiku",
+      "user_id": 15209351,
+      "country": "IQ",
+      "score_id": 6269580815,
+      "rank": "A",
+      "accuracy": 0.9104761904761904,
+      "pp": 8.50878,
+      "mods": [],
+      "combo": 316,
+      "created_at": "2026-02-23T20:48:19Z",
+      "beatmapset": {
+        "id": 770300,
+        "title": "Monochrome Butterfly",
+        "cover": "https://assets.ppy.sh/beatmaps/770300/covers/card.jpg?1650662945",
+        "stars": 2.25371
+      }
+    },
+    {
+      "user": "orashoka",
+      "user_id": 38874590,
+      "country": "IQ",
+      "score_id": 6269577985,
+      "rank": "C",
+      "accuracy": 0.8508620689655172,
+      "pp": null,
+      "mods": [],
+      "combo": 224,
+      "created_at": "2026-02-23T20:47:40Z",
+      "beatmapset": {
+        "id": 53317,
+        "title": "Angel With A Shotgun (Nightcore Mix)",
+        "cover": "https://assets.ppy.sh/beatmaps/53317/covers/card.jpg?1650612771",
+        "stars": 4.15191
+      }
+    },
+    {
+      "user": "Quake203",
+      "user_id": 22846495,
+      "country": "IQ",
+      "score_id": 6269576668,
+      "rank": "B",
+      "accuracy": 0.8662702043305885,
+      "pp": 55.0104,
+      "mods": [],
+      "combo": 132,
+      "created_at": "2026-02-23T20:47:24Z",
+      "beatmapset": {
+        "id": 2217346,
+        "title": "Mellomelloid",
+        "cover": "https://assets.ppy.sh/beatmaps/2217346/covers/card.jpg?1740568580",
+        "stars": 5.8417
+      }
+    },
+    {
+      "user": "orashoka",
+      "user_id": 38874590,
+      "country": "IQ",
+      "score_id": 6269560819,
+      "rank": "C",
+      "accuracy": 0.8177609427609428,
+      "pp": null,
+      "mods": [],
+      "combo": 211,
+      "created_at": "2026-02-23T20:43:49Z",
+      "beatmapset": {
+        "id": 436783,
+        "title": "Angel Wings (ft. Avianna Acid)",
+        "cover": "https://assets.ppy.sh/beatmaps/436783/covers/card.jpg?0",
+        "stars": 4.07821
+      }
+    },
+    {
+      "user": "Quake203",
+      "user_id": 22846495,
+      "country": "IQ",
+      "score_id": 6269558732,
+      "rank": "A",
+      "accuracy": 0.9576023391812866,
+      "pp": 154.708,
+      "mods": [],
+      "combo": 112,
+      "created_at": "2026-02-23T20:43:21Z",
+      "beatmapset": {
+        "id": 2295424,
+        "title": "Johnny Test Theme (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/2295424/covers/card.jpg?1744672306",
+        "stars": 5.98054
+      }
+    },
+    {
+      "user": "Quake203",
+      "user_id": 22846495,
+      "country": "IQ",
+      "score_id": 6269554314,
+      "rank": "B",
+      "accuracy": 0.881578947368421,
+      "pp": 76.9677,
+      "mods": [],
+      "combo": 61,
+      "created_at": "2026-02-23T20:42:23Z",
+      "beatmapset": {
+        "id": 2295424,
+        "title": "Johnny Test Theme (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/2295424/covers/card.jpg?1744672306",
+        "stars": 5.98054
+      }
+    },
+    {
+      "user": "Ali Ahmed",
+      "user_id": 13542355,
+      "country": "IQ",
+      "score_id": 4988092585,
+      "rank": "B",
+      "accuracy": 0.9067422810333964,
+      "pp": 114.422,
+      "mods": [
+        "HD"
+      ],
+      "combo": 184,
+      "created_at": "2026-02-23T20:42:11Z",
+      "beatmapset": {
+        "id": 2412924,
+        "title": "Wing my Way (Game Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2412924/covers/card.jpg?1770164027",
+        "stars": 6.65745
+      }
+    },
+    {
+      "user": "Quake203",
+      "user_id": 22846495,
+      "country": "IQ",
+      "score_id": 6269549624,
+      "rank": "A",
+      "accuracy": 0.9393939393939394,
+      "pp": 127.321,
+      "mods": [],
+      "combo": 114,
+      "created_at": "2026-02-23T20:41:20Z",
+      "beatmapset": {
+        "id": 2295424,
+        "title": "Johnny Test Theme (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/2295424/covers/card.jpg?1744672306",
+        "stars": 5.86749
+      }
+    },
+    {
+      "user": "Quake203",
+      "user_id": 22846495,
+      "country": "IQ",
+      "score_id": 6269545197,
+      "rank": "B",
+      "accuracy": 0.8874458874458875,
+      "pp": 79.5952,
+      "mods": [],
+      "combo": 104,
+      "created_at": "2026-02-23T20:40:21Z",
+      "beatmapset": {
+        "id": 2295424,
+        "title": "Johnny Test Theme (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/2295424/covers/card.jpg?1744672306",
+        "stars": 5.86749
+      }
+    },
+    {
+      "user": "Quake203",
+      "user_id": 22846495,
+      "country": "IQ",
+      "score_id": 6269518059,
+      "rank": "B",
+      "accuracy": 0.9068241469816273,
+      "pp": 104.158,
+      "mods": [],
+      "combo": 166,
+      "created_at": "2026-02-23T20:34:18Z",
+      "beatmapset": {
+        "id": 2279612,
+        "title": "DOGLAND (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/2279612/covers/card.jpg?1744587054",
+        "stars": 6.12002
+      }
+    },
+    {
+      "user": "Ali Ahmed",
+      "user_id": 13542355,
+      "country": "IQ",
+      "score_id": 4988088311,
+      "rank": "A",
+      "accuracy": 0.9350976685570258,
+      "pp": 129.309,
+      "mods": [],
+      "combo": 165,
+      "created_at": "2026-02-23T20:31:58Z",
+      "beatmapset": {
+        "id": 2412924,
+        "title": "Wing my Way (Game Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2412924/covers/card.jpg?1770164027",
+        "stars": 6.65745
+      }
+    },
+    {
+      "user": "Ali Ahmed",
+      "user_id": 13542355,
+      "country": "IQ",
+      "score_id": 4988085451,
+      "rank": "C",
+      "accuracy": 0.8463541666666666,
+      "pp": 71.5433,
+      "mods": [
+        "DT"
+      ],
+      "combo": 67,
+      "created_at": "2026-02-23T20:25:16Z",
+      "beatmapset": {
+        "id": 2379887,
+        "title": "This Little Girl (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2379887/covers/card.jpg?1749535372",
+        "stars": 4.16098
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4988084654,
+      "rank": "C",
+      "accuracy": 0.8340773809523809,
+      "pp": null,
+      "mods": [
+        "NF"
+      ],
+      "combo": 170,
+      "created_at": "2026-02-23T20:23:22Z",
+      "beatmapset": {
+        "id": 1224663,
+        "title": "Bakamitai (Camellia Eurobeat Remix)",
+        "cover": "https://assets.ppy.sh/beatmaps/1224663/covers/card.jpg?1663418660",
+        "stars": 6.96189
+      }
+    },
+    {
+      "user": "Alhemeri",
+      "user_id": 27526375,
+      "country": "IQ",
+      "score_id": 0,
+      "rank": "C",
+      "accuracy": 0.7160737812911726,
+      "pp": null,
+      "mods": [],
+      "combo": 49,
+      "created_at": "2026-02-23T20:20:08Z",
+      "beatmapset": {
+        "id": 2113643,
+        "title": "2024 prod. ojivolta and Kanye West",
+        "cover": "https://assets.ppy.sh/beatmaps/2113643/covers/card.jpg?1706655618",
+        "stars": 4.60756
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4988078661,
+      "rank": "C",
+      "accuracy": 0.8343403826787512,
+      "pp": null,
+      "mods": [
+        "NF"
+      ],
+      "combo": 171,
+      "created_at": "2026-02-23T20:09:22Z",
+      "beatmapset": {
+        "id": 203309,
+        "title": "Shukusai no Elementalia",
+        "cover": "https://assets.ppy.sh/beatmaps/203309/covers/card.jpg?1650636434",
+        "stars": 7.22875
+      }
+    },
+    {
+      "user": "orashoka",
+      "user_id": 38874590,
+      "country": "IQ",
+      "score_id": 6269331086,
+      "rank": "C",
+      "accuracy": 0.8413762287756926,
+      "pp": 19.0359,
+      "mods": [],
+      "combo": 92,
+      "created_at": "2026-02-23T19:52:48Z",
+      "beatmapset": {
+        "id": 410998,
+        "title": "All Night",
+        "cover": "https://assets.ppy.sh/beatmaps/410998/covers/card.jpg?1650636926",
+        "stars": 4.27921
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4988070651,
+      "rank": "A",
+      "accuracy": 0.9491452991452991,
+      "pp": 184.338,
+      "mods": [
+        "DT"
+      ],
+      "combo": 236,
+      "created_at": "2026-02-23T19:50:29Z",
+      "beatmapset": {
+        "id": 1572909,
+        "title": "Hachigatsu no Yoru (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/1572909/covers/card.jpg?1650710425",
+        "stars": 4.94717
+      }
+    },
+    {
+      "user": "orashoka",
+      "user_id": 38874590,
+      "country": "IQ",
+      "score_id": 6269318818,
+      "rank": "C",
+      "accuracy": 0.720558882235529,
+      "pp": 28.7117,
+      "mods": [],
+      "combo": 35,
+      "created_at": "2026-02-23T19:50:11Z",
+      "beatmapset": {
+        "id": 2104327,
+        "title": "Brazil",
+        "cover": "https://assets.ppy.sh/beatmaps/2104327/covers/card.jpg?1704552605",
+        "stars": 4.92542
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4988068373,
+      "rank": "A",
+      "accuracy": 0.9448742746615088,
+      "pp": 209.257,
+      "mods": [
+        "DT"
+      ],
+      "combo": 295,
+      "created_at": "2026-02-23T19:45:04Z",
+      "beatmapset": {
+        "id": 1229091,
+        "title": "Hanatachi ni Kibou o",
+        "cover": "https://assets.ppy.sh/beatmaps/1229091/covers/card.jpg?1638679165",
+        "stars": 4.95219
+      }
+    },
+    {
+      "user": "orashoka",
+      "user_id": 38874590,
+      "country": "IQ",
+      "score_id": 6269293107,
+      "rank": "A",
+      "accuracy": 0.9461942257217848,
+      "pp": null,
+      "mods": [
+        "RX"
+      ],
+      "combo": 184,
+      "created_at": "2026-02-23T19:44:41Z",
+      "beatmapset": {
+        "id": 527431,
+        "title": "Gravity Falls Theme Song",
+        "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+        "stars": 3.8861
+      }
+    },
+    {
+      "user": "orashoka",
+      "user_id": 38874590,
+      "country": "IQ",
+      "score_id": 6269283856,
+      "rank": "C",
+      "accuracy": 0.8169934640522876,
+      "pp": 35.2235,
+      "mods": [],
+      "combo": 101,
+      "created_at": "2026-02-23T19:42:44Z",
+      "beatmapset": {
+        "id": 527431,
+        "title": "Gravity Falls Theme Song",
+        "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+        "stars": 4.43427
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4988066443,
+      "rank": "B",
+      "accuracy": 0.9122807017543859,
+      "pp": 192.224,
+      "mods": [
+        "DT"
+      ],
+      "combo": 276,
+      "created_at": "2026-02-23T19:40:33Z",
+      "beatmapset": {
+        "id": 2250634,
+        "title": "God is a Girl (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2250634/covers/card.jpg?1730395051",
+        "stars": 5.49655
+      }
+    },
+    {
+      "user": "kartel",
+      "user_id": 16368385,
+      "country": "IQ",
+      "score_id": 4988066148,
+      "rank": "B",
+      "accuracy": 0.9190314037079077,
+      "pp": 89.8087,
+      "mods": [
+        "HD"
+      ],
+      "combo": 251,
+      "created_at": "2026-02-23T19:39:48Z",
+      "beatmapset": {
+        "id": 1123944,
+        "title": "Jinsei Matatabi",
+        "cover": "https://assets.ppy.sh/beatmaps/1123944/covers/card.jpg?1650693550",
+        "stars": 6.08292
+      }
+    },
+    {
+      "user": "orashoka",
+      "user_id": 38874590,
+      "country": "IQ",
+      "score_id": 6269262478,
+      "rank": "D",
+      "accuracy": 0.6935380678182982,
+      "pp": 14.5468,
+      "mods": [],
+      "combo": 126,
+      "created_at": "2026-02-23T19:38:07Z",
+      "beatmapset": {
+        "id": 996628,
+        "title": "ONIGIRI FREEWAY",
+        "cover": "https://assets.ppy.sh/beatmaps/996628/covers/card.jpg?1645788391",
+        "stars": 4.75006
+      }
+    },
+    {
+      "user": "kartel",
+      "user_id": 16368385,
+      "country": "IQ",
+      "score_id": 4988064776,
+      "rank": "B",
+      "accuracy": 0.8828703703703704,
+      "pp": 94.4767,
+      "mods": [
+        "HD"
+      ],
+      "combo": 838,
+      "created_at": "2026-02-23T19:36:31Z",
+      "beatmapset": {
+        "id": 968656,
+        "title": "Ascension to Heaven",
+        "cover": "https://assets.ppy.sh/beatmaps/968656/covers/card.jpg?1650707735",
+        "stars": 5.7734
+      }
+    },
+    {
+      "user": "orashoka",
+      "user_id": 38874590,
+      "country": "IQ",
+      "score_id": 6269244495,
+      "rank": "C",
+      "accuracy": 0.8450586264656617,
+      "pp": 48.7546,
+      "mods": [],
+      "combo": 106,
+      "created_at": "2026-02-23T19:34:16Z",
+      "beatmapset": {
+        "id": 1280506,
+        "title": "WONDERFUL WONDER (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1280506/covers/card.jpg?1645786525",
+        "stars": 4.99611
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4988063747,
+      "rank": "A",
+      "accuracy": 0.9575757575757575,
+      "pp": 232.394,
+      "mods": [
+        "DT"
+      ],
+      "combo": 283,
+      "created_at": "2026-02-23T19:34:03Z",
+      "beatmapset": {
+        "id": 2288239,
+        "title": "SANTA SAN (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2288239/covers/card.jpg?1734556992",
+        "stars": 5.57004
+      }
+    },
+    {
+      "user": "kartel",
+      "user_id": 16368385,
+      "country": "IQ",
+      "score_id": 4988063591,
+      "rank": "B",
+      "accuracy": 0.9039351851851852,
+      "pp": 118.124,
+      "mods": [
+        "HD"
+      ],
+      "combo": 984,
+      "created_at": "2026-02-23T19:33:42Z",
+      "beatmapset": {
+        "id": 968656,
+        "title": "Ascension to Heaven",
+        "cover": "https://assets.ppy.sh/beatmaps/968656/covers/card.jpg?1650707735",
+        "stars": 5.7734
+      }
+    },
+    {
+      "user": "krefto1",
+      "user_id": 26346364,
+      "country": "IQ",
+      "score_id": 4988062442,
+      "rank": "A",
+      "accuracy": 0.94875,
+      "pp": 47.4346,
+      "mods": [],
+      "combo": 173,
+      "created_at": "2026-02-23T19:31:03Z",
+      "beatmapset": {
+        "id": 451316,
+        "title": "GO!!! ~NARUTO OPENING MIX~",
+        "cover": "https://assets.ppy.sh/beatmaps/451316/covers/card.jpg?1650640109",
+        "stars": 4.833
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4988061995,
+      "rank": "A",
+      "accuracy": 0.9652173913043478,
+      "pp": 318.195,
+      "mods": [
+        "DT"
+      ],
+      "combo": 116,
+      "created_at": "2026-02-23T19:29:59Z",
+      "beatmapset": {
+        "id": 2297262,
+        "title": "Cold Green Eyes feat. Roos Denayer (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2297262/covers/card.jpg?1740330923",
+        "stars": 5.49769
+      }
+    },
+    {
+      "user": "kartel",
+      "user_id": 16368385,
+      "country": "IQ",
+      "score_id": 4988061544,
+      "rank": "A",
+      "accuracy": 0.9786566227244193,
+      "pp": null,
+      "mods": [
+        "HD"
+      ],
+      "combo": 333,
+      "created_at": "2026-02-23T19:29:01Z",
+      "beatmapset": {
+        "id": 239801,
+        "title": "Soulja Baka",
+        "cover": "https://assets.ppy.sh/beatmaps/239801/covers/card.jpg?1650645109",
+        "stars": 5.59571
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4988061536,
+      "rank": "A",
+      "accuracy": 0.9304347826086956,
+      "pp": 239.04,
+      "mods": [
+        "DT"
+      ],
+      "combo": 115,
+      "created_at": "2026-02-23T19:29:00Z",
+      "beatmapset": {
+        "id": 2297262,
+        "title": "Cold Green Eyes feat. Roos Denayer (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2297262/covers/card.jpg?1740330923",
+        "stars": 5.49769
+      }
+    },
+    {
+      "user": "Y a d",
+      "user_id": 19521102,
+      "country": "IQ",
+      "score_id": 4988060734,
+      "rank": "A",
+      "accuracy": 0.9310344827586207,
+      "pp": 205.841,
+      "mods": [
+        "DT"
+      ],
+      "combo": 182,
+      "created_at": "2026-02-23T19:27:05Z",
+      "beatmapset": {
+        "id": 2296940,
+        "title": "Start Again (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2296940/covers/card.jpg?1743374659",
+        "stars": 5.21419
+      }
+    },
+    {
+      "user": "kartel",
+      "user_id": 16368385,
+      "country": "IQ",
+      "score_id": 4988060092,
+      "rank": "A",
+      "accuracy": 0.9684139784946236,
+      "pp": 116.106,
+      "mods": [
+        "HD"
+      ],
+      "combo": 266,
+      "created_at": "2026-02-23T19:25:32Z",
+      "beatmapset": {
+        "id": 875117,
+        "title": "Rightfully",
+        "cover": "https://assets.ppy.sh/beatmaps/875117/covers/card.jpg?1650673363",
+        "stars": 5.68703
+      }
+    },
+    {
+      "user": "Alhemeri",
+      "user_id": 27526375,
+      "country": "IQ",
+      "score_id": 4988060053,
+      "rank": "C",
+      "accuracy": 0.8188976377952756,
+      "pp": null,
+      "mods": [],
+      "combo": 38,
+      "created_at": "2026-02-23T19:25:27Z",
+      "beatmapset": {
+        "id": 478917,
+        "title": "Corner Jump Training",
+        "cover": "https://assets.ppy.sh/beatmaps/478917/covers/card.jpg?1717297349",
+        "stars": 4.0514
+      }
+    },
+    {
+      "user": "krefto1",
+      "user_id": 26346364,
+      "country": "IQ",
+      "score_id": 4988059666,
+      "rank": "B",
+      "accuracy": 0.9185918591859186,
+      "pp": 58.1824,
+      "mods": [],
+      "combo": 200,
+      "created_at": "2026-02-23T19:24:30Z",
+      "beatmapset": {
+        "id": 935111,
+        "title": "Gold Dust",
+        "cover": "https://assets.ppy.sh/beatmaps/935111/covers/card.jpg?1650676791",
+        "stars": 4.88669
+      }
+    },
+    {
+      "user": "kartel",
+      "user_id": 16368385,
+      "country": "IQ",
+      "score_id": 4988058637,
+      "rank": "A",
+      "accuracy": 0.9585573476702509,
+      "pp": 113.121,
+      "mods": [
+        "HD"
+      ],
+      "combo": 317,
+      "created_at": "2026-02-23T19:22:12Z",
+      "beatmapset": {
+        "id": 875117,
+        "title": "Rightfully",
+        "cover": "https://assets.ppy.sh/beatmaps/875117/covers/card.jpg?1650673363",
+        "stars": 5.68703
+      }
+    },
+    {
+      "user": "kartel",
+      "user_id": 16368385,
+      "country": "IQ",
+      "score_id": 4988057166,
+      "rank": "A",
+      "accuracy": 0.9584185412406271,
+      "pp": 124.233,
+      "mods": [
+        "HD"
+      ],
+      "combo": 382,
+      "created_at": "2026-02-23T19:18:51Z",
+      "beatmapset": {
+        "id": 62962,
+        "title": "Crystal World ~Fracture~",
+        "cover": "https://assets.ppy.sh/beatmaps/62962/covers/card.jpg?1622059639",
+        "stars": 5.20036
+      }
+    },
+    {
+      "user": "kartel",
+      "user_id": 16368385,
+      "country": "IQ",
+      "score_id": 4988055394,
+      "rank": "A",
+      "accuracy": 0.9335378323108384,
+      "pp": 92.9878,
+      "mods": [
+        "HD"
+      ],
+      "combo": 289,
+      "created_at": "2026-02-23T19:14:38Z",
+      "beatmapset": {
+        "id": 62962,
+        "title": "Crystal World ~Fracture~",
+        "cover": "https://assets.ppy.sh/beatmaps/62962/covers/card.jpg?1622059639",
+        "stars": 5.20036
+      }
+    },
+    {
+      "user": "Ds_Jinx",
+      "user_id": 37410533,
+      "country": "IQ",
+      "score_id": 6269147670,
+      "rank": "B",
+      "accuracy": 0.8333333333333334,
+      "pp": 58.5304,
+      "mods": [
+        "NC"
+      ],
+      "combo": 80,
+      "created_at": "2026-02-23T19:13:44Z",
+      "beatmapset": {
+        "id": 2295884,
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
+        "stars": 4.08394
+      }
+    },
+    {
+      "user": "zero702",
+      "user_id": 25897488,
+      "country": "IQ",
+      "score_id": 4988054736,
+      "rank": "C",
+      "accuracy": 0.7285318559556787,
+      "pp": null,
+      "mods": [],
+      "combo": 178,
+      "created_at": "2026-02-23T19:13:04Z",
+      "beatmapset": {
+        "id": 304439,
+        "title": "This Calling",
+        "cover": "https://assets.ppy.sh/beatmaps/304439/covers/card.jpg?1722602928",
+        "stars": 6.52659
+      }
+    },
+    {
+      "user": "Ds_Jinx",
+      "user_id": 37410533,
+      "country": "IQ",
+      "score_id": 6269144026,
+      "rank": "B",
+      "accuracy": 0.8693181818181818,
+      "pp": 69.5825,
+      "mods": [
+        "NC"
+      ],
+      "combo": 86,
+      "created_at": "2026-02-23T19:12:58Z",
+      "beatmapset": {
+        "id": 2295884,
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
+        "stars": 4.08394
+      }
+    },
+    {
+      "user": "zero702",
+      "user_id": 25897488,
+      "country": "IQ",
+      "score_id": 4988053136,
+      "rank": "B",
+      "accuracy": 0.894579811039284,
+      "pp": 68.2246,
+      "mods": [],
+      "combo": 463,
+      "created_at": "2026-02-23T19:09:13Z",
+      "beatmapset": {
+        "id": 362500,
+        "title": "Martyr of the Free Word",
+        "cover": "https://assets.ppy.sh/beatmaps/362500/covers/card.jpg?1622094708",
+        "stars": 6.75282
+      }
+    },
+    {
+      "user": "zero702",
+      "user_id": 25897488,
+      "country": "IQ",
+      "score_id": 4988049573,
+      "rank": "A",
+      "accuracy": 0.945247270391779,
+      "pp": 133.824,
+      "mods": [],
+      "combo": 505,
+      "created_at": "2026-02-23T19:00:47Z",
+      "beatmapset": {
+        "id": 494606,
+        "title": "Delta Decision",
+        "cover": "https://assets.ppy.sh/beatmaps/494606/covers/card.jpg?1650644024",
+        "stars": 5.77586
+      }
+    },
+    {
+      "user": "osaka00",
+      "user_id": 36473293,
+      "country": "IQ",
+      "score_id": 6269077614,
+      "rank": "A",
+      "accuracy": 0.9580970384373031,
+      "pp": null,
+      "mods": [
+        "RX"
+      ],
+      "combo": 263,
+      "created_at": "2026-02-23T18:58:47Z",
+      "beatmapset": {
+        "id": 2335933,
+        "title": "love for you",
+        "cover": "https://assets.ppy.sh/beatmaps/2335933/covers/card.jpg?1753281103",
+        "stars": 4.73439
+      }
+    },
+    {
+      "user": "LAWLIMT1",
+      "user_id": 37085851,
+      "country": "IQ",
+      "score_id": 6269075865,
+      "rank": "D",
+      "accuracy": 0.665893271461717,
+      "pp": null,
+      "mods": [],
+      "combo": 123,
+      "created_at": "2026-02-23T18:58:24Z",
+      "beatmapset": {
+        "id": 778719,
+        "title": "Grievous Lady",
+        "cover": "https://assets.ppy.sh/beatmaps/778719/covers/card.jpg?1650698671",
+        "stars": 5.15546
+      }
+    },
+    {
+      "user": "osaka00",
+      "user_id": 36473293,
+      "country": "IQ",
+      "score_id": 6269064185,
+      "rank": "A",
+      "accuracy": 0.9272211720226843,
+      "pp": null,
+      "mods": [
+        "HD",
+        "RX"
+      ],
+      "combo": 112,
+      "created_at": "2026-02-23T18:55:53Z",
+      "beatmapset": {
+        "id": 2335933,
+        "title": "love for you",
+        "cover": "https://assets.ppy.sh/beatmaps/2335933/covers/card.jpg?1753281103",
+        "stars": 4.73439
+      }
+    },
+    {
+      "user": "osaka00",
+      "user_id": 36473293,
+      "country": "IQ",
+      "score_id": 6269045713,
+      "rank": "C",
+      "accuracy": 0.782422293676313,
+      "pp": null,
+      "mods": [
+        "RX"
+      ],
+      "combo": 119,
+      "created_at": "2026-02-23T18:51:55Z",
+      "beatmapset": {
+        "id": 2252729,
+        "title": "Song That Might Play When You Fight Sans",
+        "cover": "https://assets.ppy.sh/beatmaps/2252729/covers/card.jpg?1729521130",
+        "stars": 6.70126
+      }
+    },
+    {
+      "user": "Ds_Jinx",
+      "user_id": 37410533,
+      "country": "IQ",
+      "score_id": 6269038038,
+      "rank": "A",
+      "accuracy": 0.9705882352941176,
+      "pp": 88.5219,
+      "mods": [],
+      "combo": 92,
+      "created_at": "2026-02-23T18:50:14Z",
+      "beatmapset": {
+        "id": 2282704,
+        "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+        "stars": 4.75677
+      }
+    },
+    {
+      "user": "zero702",
+      "user_id": 25897488,
+      "country": "IQ",
+      "score_id": 4988045041,
+      "rank": "C",
+      "accuracy": 0.831672203765227,
+      "pp": 46.7986,
+      "mods": [],
+      "combo": 328,
+      "created_at": "2026-02-23T18:49:53Z",
+      "beatmapset": {
+        "id": 1889729,
+        "title": "Non-breath oblige",
+        "cover": "https://assets.ppy.sh/beatmaps/1889729/covers/card.jpg?1671759413",
+        "stars": 4.9892
+      }
+    },
+    {
+      "user": "LAWLIMT1",
+      "user_id": 37085851,
+      "country": "IQ",
+      "score_id": 6269033054,
+      "rank": "D",
+      "accuracy": 0.5929963660389825,
+      "pp": 11.3702,
+      "mods": [],
+      "combo": 89,
+      "created_at": "2026-02-23T18:49:11Z",
+      "beatmapset": {
+        "id": 1929568,
+        "title": "Hana ni Ame o, Kimi ni Uta o",
+        "cover": "https://assets.ppy.sh/beatmaps/1929568/covers/card.jpg?1693491580",
+        "stars": 5.74532
+      }
+    },
+    {
+      "user": "Ds_Jinx",
+      "user_id": 37410533,
+      "country": "IQ",
+      "score_id": 6269031047,
+      "rank": "A",
+      "accuracy": 0.9705882352941176,
+      "pp": 94.0631,
+      "mods": [],
+      "combo": 114,
+      "created_at": "2026-02-23T18:48:46Z",
+      "beatmapset": {
+        "id": 2282704,
+        "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+        "stars": 4.75677
+      }
+    },
+    {
+      "user": "Ds_Jinx",
+      "user_id": 37410533,
+      "country": "IQ",
+      "score_id": 6269025856,
+      "rank": "A",
+      "accuracy": 0.9385206532180596,
+      "pp": 99.9829,
+      "mods": [],
+      "combo": 313,
+      "created_at": "2026-02-23T18:47:41Z",
+      "beatmapset": {
+        "id": 2476973,
+        "title": "Carol of the Bells (Rock Cover) (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2476973/covers/card.jpg?1770449462",
+        "stars": 5.23601
+      }
+    },
+    {
+      "user": "osaka00",
+      "user_id": 36473293,
+      "country": "IQ",
+      "score_id": 6269019600,
+      "rank": "B",
+      "accuracy": 0.8700544894574745,
+      "pp": null,
+      "mods": [
+        "RX"
+      ],
+      "combo": 357,
+      "created_at": "2026-02-23T18:46:21Z",
+      "beatmapset": {
+        "id": 2477390,
+        "title": "EINHERJAR",
+        "cover": "https://assets.ppy.sh/beatmaps/2477390/covers/card.jpg?1768106137",
+        "stars": 6.35076
+      }
+    },
+    {
+      "user": "Ds_Jinx",
+      "user_id": 37410533,
+      "country": "IQ",
+      "score_id": 6268996568,
+      "rank": "A",
+      "accuracy": 0.9317738791423001,
+      "pp": 94.8188,
+      "mods": [],
+      "combo": 79,
+      "created_at": "2026-02-23T18:41:26Z",
+      "beatmapset": {
+        "id": 2327424,
+        "title": "chess (slowed down & cut ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2327424/covers/card.jpg?1744499380",
+        "stars": 5.51544
+      }
+    },
+    {
+      "user": "Ds_Jinx",
+      "user_id": 37410533,
+      "country": "IQ",
+      "score_id": 6268992716,
+      "rank": "A",
+      "accuracy": 0.922316384180791,
+      "pp": 73.9231,
+      "mods": [],
+      "combo": 146,
+      "created_at": "2026-02-23T18:40:36Z",
+      "beatmapset": {
+        "id": 2287463,
+        "title": "CHRISTMAS * ROCK",
+        "cover": "https://assets.ppy.sh/beatmaps/2287463/covers/card.jpg?1734432565",
+        "stars": 5.03698
+      }
+    },
+    {
+      "user": "Ds_Jinx",
+      "user_id": 37410533,
+      "country": "IQ",
+      "score_id": 6268986307,
+      "rank": "A",
+      "accuracy": 0.9476831091180867,
+      "pp": 102.623,
+      "mods": [],
+      "combo": 267,
+      "created_at": "2026-02-23T18:39:15Z",
+      "beatmapset": {
+        "id": 2287463,
+        "title": "CHRISTMAS * ROCK",
+        "cover": "https://assets.ppy.sh/beatmaps/2287463/covers/card.jpg?1734432565",
+        "stars": 5.27934
+      }
+    },
+    {
+      "user": "Ds_Jinx",
+      "user_id": 37410533,
+      "country": "IQ",
+      "score_id": 6268980595,
+      "rank": "A",
+      "accuracy": 0.9387144992526159,
+      "pp": 103.63,
+      "mods": [],
+      "combo": 193,
+      "created_at": "2026-02-23T18:38:01Z",
+      "beatmapset": {
+        "id": 2287463,
+        "title": "CHRISTMAS * ROCK",
+        "cover": "https://assets.ppy.sh/beatmaps/2287463/covers/card.jpg?1734432565",
+        "stars": 5.27934
+      }
+    },
+    {
+      "user": "Ds_Jinx",
+      "user_id": 37410533,
+      "country": "IQ",
+      "score_id": 6268974433,
+      "rank": "A",
+      "accuracy": 0.9281345565749235,
+      "pp": 98.2143,
+      "mods": [],
+      "combo": 218,
+      "created_at": "2026-02-23T18:36:43Z",
+      "beatmapset": {
+        "id": 2287463,
+        "title": "CHRISTMAS * ROCK",
+        "cover": "https://assets.ppy.sh/beatmaps/2287463/covers/card.jpg?1734432565",
+        "stars": 5.42662
+      }
+    },
+    {
+      "user": "KURONEKO13",
+      "user_id": 17342734,
+      "country": "IQ",
+      "score_id": 4988025909,
+      "rank": "C",
+      "accuracy": 0.7856589147286822,
+      "pp": null,
+      "mods": [],
+      "combo": 93,
+      "created_at": "2026-02-23T18:05:21Z",
+      "beatmapset": {
+        "id": 731899,
+        "title": "Forward",
+        "cover": "https://assets.ppy.sh/beatmaps/731899/covers/card.jpg?1645783339",
+        "stars": 5.56784
+      }
+    },
+    {
+      "user": "cuzalpha",
+      "user_id": 37322060,
+      "country": "IQ",
+      "score_id": 4988024588,
+      "rank": "B",
+      "accuracy": 0.908974358974359,
+      "pp": 61.7588,
+      "mods": [],
+      "combo": 230,
+      "created_at": "2026-02-23T18:02:13Z",
+      "beatmapset": {
+        "id": 942642,
+        "title": "Chikatto Chika Chika",
+        "cover": "https://assets.ppy.sh/beatmaps/942642/covers/card.jpg?1650677241",
+        "stars": 5.1083
+      }
+    },
+    {
+      "user": "cuzalpha",
+      "user_id": 37322060,
+      "country": "IQ",
+      "score_id": 4988023812,
+      "rank": "A",
+      "accuracy": 0.9689716312056738,
+      "pp": 112.133,
+      "mods": [],
+      "combo": 302,
+      "created_at": "2026-02-23T18:00:30Z",
+      "beatmapset": {
+        "id": 758344,
+        "title": "Colors Power ni Omakasero!",
+        "cover": "https://assets.ppy.sh/beatmaps/758344/covers/card.jpg?1650661435",
+        "stars": 5.10294
+      }
+    },
+    {
+      "user": "Bappo_1337",
+      "user_id": 21688901,
+      "country": "IQ",
+      "score_id": 4988022511,
+      "rank": "B",
+      "accuracy": 0.8558282208588958,
+      "pp": 47.5799,
+      "mods": [],
+      "combo": 64,
+      "created_at": "2026-02-23T17:57:34Z",
+      "beatmapset": {
+        "id": 1019207,
+        "title": "oyasumi (Speed Up Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/1019207/covers/card.jpg?1650684122",
+        "stars": 5.67837
+      }
+    },
+    {
+      "user": "cuzalpha",
+      "user_id": 37322060,
+      "country": "IQ",
+      "score_id": 4988021413,
+      "rank": "A",
+      "accuracy": 0.953405017921147,
+      "pp": 104.607,
+      "mods": [],
+      "combo": 218,
+      "created_at": "2026-02-23T17:55:04Z",
+      "beatmapset": {
+        "id": 497769,
+        "title": "Granat",
+        "cover": "https://assets.ppy.sh/beatmaps/497769/covers/card.jpg?1645785838",
+        "stars": 5.04843
+      }
+    },
+    {
+      "user": "cuzalpha",
+      "user_id": 37322060,
+      "country": "IQ",
+      "score_id": 4988021033,
+      "rank": "A",
+      "accuracy": 0.9742828882294757,
+      "pp": 98.4725,
+      "mods": [],
+      "combo": 295,
+      "created_at": "2026-02-23T17:54:12Z",
+      "beatmapset": {
+        "id": 971957,
+        "title": "V (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/971957/covers/card.jpg?1650681037",
+        "stars": 5.03984
+      }
+    },
+    {
+      "user": "cuzalpha",
+      "user_id": 37322060,
+      "country": "IQ",
+      "score_id": 4988020322,
+      "rank": "A",
+      "accuracy": 0.953921568627451,
+      "pp": 94.7776,
+      "mods": [],
+      "combo": 300,
+      "created_at": "2026-02-23T17:52:35Z",
+      "beatmapset": {
+        "id": 1129819,
+        "title": "Dakara, Hitori ja Nai (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1129819/covers/card.jpg?1645787031",
+        "stars": 5.03892
+      }
+    },
+    {
+      "user": "cuzalpha",
+      "user_id": 37322060,
+      "country": "IQ",
+      "score_id": 4988019099,
+      "rank": "A",
+      "accuracy": 0.9582089552238806,
+      "pp": 96.4204,
+      "mods": [],
+      "combo": 250,
+      "created_at": "2026-02-23T17:49:45Z",
+      "beatmapset": {
+        "id": 950289,
+        "title": "JUSTadICE (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/950289/covers/card.jpg?1650680553",
+        "stars": 5.02572
+      }
+    },
+    {
+      "user": "yuosif",
+      "user_id": 10697971,
+      "country": "IQ",
+      "score_id": 6268753831,
+      "rank": "A",
+      "accuracy": 0.963980463980464,
+      "pp": 138.91,
+      "mods": [],
+      "combo": 340,
+      "created_at": "2026-02-23T17:48:52Z",
+      "beatmapset": {
+        "id": 2398052,
+        "title": "Golden",
+        "cover": "https://assets.ppy.sh/beatmaps/2398052/covers/card.jpg?1753850095",
+        "stars": 5.57291
+      }
+    },
+    {
+      "user": "cuzalpha",
+      "user_id": 37322060,
+      "country": "IQ",
+      "score_id": 4988017564,
+      "rank": "B",
+      "accuracy": 0.8962148962148963,
+      "pp": 48.6043,
+      "mods": [
+        "DT"
+      ],
+      "combo": 173,
+      "created_at": "2026-02-23T17:46:04Z",
+      "beatmapset": {
+        "id": 819112,
+        "title": "You Suck At Love (Speed Up Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/819112/covers/card.jpg?1650668141",
+        "stars": 3.72883
+      }
+    },
+    {
+      "user": "yuosif",
+      "user_id": 10697971,
+      "country": "IQ",
+      "score_id": 6268720035,
+      "rank": "A",
+      "accuracy": 0.9444444444444444,
+      "pp": 102.919,
+      "mods": [],
+      "combo": 153,
+      "created_at": "2026-02-23T17:41:36Z",
+      "beatmapset": {
+        "id": 320118,
+        "title": "No title",
+        "cover": "https://assets.ppy.sh/beatmaps/320118/covers/card.jpg?1650632079",
+        "stars": 5.72269
+      }
+    },
+    {
+      "user": "cuzalpha",
+      "user_id": 37322060,
+      "country": "IQ",
+      "score_id": 4988015243,
+      "rank": "A",
+      "accuracy": 0.9448818897637795,
+      "pp": 68.4735,
+      "mods": [
+        "DT"
+      ],
+      "combo": 161,
+      "created_at": "2026-02-23T17:40:41Z",
+      "beatmapset": {
+        "id": 559248,
+        "title": "Hallelujah*Essaim",
+        "cover": "https://assets.ppy.sh/beatmaps/559248/covers/card.jpg?1650647035",
+        "stars": 3.66121
+      }
+    },
+    {
+      "user": "yuosif",
+      "user_id": 10697971,
+      "country": "IQ",
+      "score_id": 6268712837,
+      "rank": "A",
+      "accuracy": 0.9217069892473119,
+      "pp": 101.945,
+      "mods": [],
+      "combo": 300,
+      "created_at": "2026-02-23T17:40:03Z",
+      "beatmapset": {
+        "id": 2246377,
+        "title": "The Emptiness Machine (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2246377/covers/card.jpg?1726770838",
+        "stars": 6.1855
+      }
+    },
+    {
+      "user": "cuzalpha",
+      "user_id": 37322060,
+      "country": "IQ",
+      "score_id": 4988014694,
+      "rank": "A",
+      "accuracy": 0.9587020648967551,
+      "pp": 92.2235,
+      "mods": [
+        "DT"
+      ],
+      "combo": 342,
+      "created_at": "2026-02-23T17:39:26Z",
+      "beatmapset": {
+        "id": 320118,
+        "title": "No title",
+        "cover": "https://assets.ppy.sh/beatmaps/320118/covers/card.jpg?1650632079",
+        "stars": 3.67081
+      }
+    },
+    {
+      "user": "Kamioo",
+      "user_id": 19494788,
+      "country": "IQ",
+      "score_id": 4988013972,
+      "rank": "A",
+      "accuracy": 0.95968534906588,
+      "pp": null,
+      "mods": [
+        "HR"
+      ],
+      "combo": 397,
+      "created_at": "2026-02-23T17:37:46Z",
+      "beatmapset": {
+        "id": 516109,
+        "title": "Monochrome Butterfly",
+        "cover": "https://assets.ppy.sh/beatmaps/516109/covers/card.jpg?1645788613",
+        "stars": 5.85283
+      }
+    },
+    {
+      "user": "Bappo_1337",
+      "user_id": 21688901,
+      "country": "IQ",
+      "score_id": 4988013678,
+      "rank": "A",
+      "accuracy": 0.9684343434343434,
+      "pp": 209.249,
+      "mods": [
+        "DT"
+      ],
+      "combo": 187,
+      "created_at": "2026-02-23T17:37:06Z",
+      "beatmapset": {
+        "id": 2323038,
+        "title": "What The Hell (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2323038/covers/card.jpg?1740092483",
+        "stars": 4.55445
+      }
+    },
+    {
+      "user": "cuzalpha",
+      "user_id": 37322060,
+      "country": "IQ",
+      "score_id": 4988013271,
+      "rank": "A",
+      "accuracy": 0.942652329749104,
+      "pp": 84.2611,
+      "mods": [
+        "DT"
+      ],
+      "combo": 351,
+      "created_at": "2026-02-23T17:36:12Z",
+      "beatmapset": {
+        "id": 950289,
+        "title": "JUSTadICE (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/950289/covers/card.jpg?1650680553",
+        "stars": 3.54584
+      }
+    },
+    {
+      "user": "XxmalakxX",
+      "user_id": 15271244,
+      "country": "IQ",
+      "score_id": 650899929,
+      "rank": "S",
+      "accuracy": 0.9730496453900709,
+      "pp": 8.09206,
+      "mods": [],
+      "combo": 920,
+      "created_at": "2026-02-23T17:35:55Z",
+      "beatmapset": {
+        "id": 10435,
+        "title": "Bad Apple!!",
+        "cover": "https://assets.ppy.sh/beatmaps/10435/covers/card.jpg?1622029203",
+        "stars": 1.32119
+      }
+    },
+    {
+      "user": "Bappo_1337",
+      "user_id": 21688901,
+      "country": "IQ",
+      "score_id": 4988009404,
+      "rank": "S",
+      "accuracy": 0.991869918699187,
+      "pp": 199.651,
+      "mods": [
+        "DT"
+      ],
+      "combo": 211,
+      "created_at": "2026-02-23T17:27:28Z",
+      "beatmapset": {
+        "id": 2340453,
+        "title": "U make my heart beat fast! (feat. Hatsune Miku)",
+        "cover": "https://assets.ppy.sh/beatmaps/2340453/covers/card.jpg?1750708208",
+        "stars": 3.97725
+      }
+    },
+    {
+      "user": "o0s",
+      "user_id": 30641047,
+      "country": "IQ",
+      "score_id": 6268651162,
+      "rank": "S",
+      "accuracy": 0.970164609053498,
+      "pp": 12.3652,
+      "mods": [],
+      "combo": 261,
+      "created_at": "2026-02-23T17:26:51Z",
+      "beatmapset": {
+        "id": 2462148,
+        "title": "Bloody Darkness",
+        "cover": "https://assets.ppy.sh/beatmaps/2462148/covers/card.jpg?1770601730",
+        "stars": 2.20718
+      }
+    },
+    {
+      "user": "eyeC1",
+      "user_id": 9363838,
+      "country": "IQ",
+      "score_id": 4988007179,
+      "rank": "A",
+      "accuracy": 0.9178403755868545,
+      "pp": 61.0111,
+      "mods": [
+        "HD",
+        "NC"
+      ],
+      "combo": 170,
+      "created_at": "2026-02-23T17:22:27Z",
+      "beatmapset": {
+        "id": 2446228,
+        "title": "bad times (sped up & cut ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2446228/covers/card.jpg?1768233080",
+        "stars": 3.17887
+      }
+    },
+    {
+      "user": "o0s",
+      "user_id": 30641047,
+      "country": "IQ",
+      "score_id": 6268627130,
+      "rank": "S",
+      "accuracy": 0.949928469241774,
+      "pp": 10.6774,
+      "mods": [],
+      "combo": 444,
+      "created_at": "2026-02-23T17:21:43Z",
+      "beatmapset": {
+        "id": 1783108,
+        "title": "Aci-L",
+        "cover": "https://assets.ppy.sh/beatmaps/1783108/covers/card.jpg?1662000205",
+        "stars": 2.21909
+      }
+    },
+    {
+      "user": "o0s",
+      "user_id": 30641047,
+      "country": "IQ",
+      "score_id": 6268604931,
+      "rank": "A",
+      "accuracy": 0.9155937052932761,
+      "pp": 8.30142,
+      "mods": [],
+      "combo": 443,
+      "created_at": "2026-02-23T17:16:57Z",
+      "beatmapset": {
+        "id": 1783108,
+        "title": "Aci-L",
+        "cover": "https://assets.ppy.sh/beatmaps/1783108/covers/card.jpg?1662000205",
+        "stars": 2.21909
+      }
+    },
+    {
+      "user": "Bappo_1337",
+      "user_id": 21688901,
+      "country": "IQ",
+      "score_id": 4988004629,
+      "rank": "A",
+      "accuracy": 0.9365079365079365,
+      "pp": 108.776,
+      "mods": [],
+      "combo": 112,
+      "created_at": "2026-02-23T17:16:33Z",
+      "beatmapset": {
+        "id": 2288607,
+        "title": "Unstoppable",
+        "cover": "https://assets.ppy.sh/beatmaps/2288607/covers/card.jpg?1736633732",
+        "stars": 6.00557
+      }
+    },
+    {
+      "user": "eyeC1",
+      "user_id": 9363838,
+      "country": "IQ",
+      "score_id": 4988003433,
+      "rank": "A",
+      "accuracy": 0.9480968858131488,
+      "pp": 40.312,
+      "mods": [
+        "HD",
+        "DT"
+      ],
+      "combo": 280,
+      "created_at": "2026-02-23T17:14:00Z",
+      "beatmapset": {
+        "id": 2334095,
+        "title": "southview +fish narc",
+        "cover": "https://assets.ppy.sh/beatmaps/2334095/covers/card.jpg?1765312840",
+        "stars": 2.97907
+      }
+    },
+    {
+      "user": "kyleiier",
+      "user_id": 30166704,
+      "country": "IQ",
+      "score_id": 6268567514,
+      "rank": "D",
+      "accuracy": 0.17080459770114942,
+      "pp": 0.280009,
+      "mods": [
+        "NF",
+        "TD"
+      ],
+      "combo": 40,
+      "created_at": "2026-02-23T17:08:50Z",
+      "beatmapset": {
+        "id": 2241601,
+        "title": "Endless, Sleepless Night",
+        "cover": "https://assets.ppy.sh/beatmaps/2241601/covers/card.jpg?1729109511",
+        "stars": 5.17403
+      }
+    },
+    {
+      "user": "o0s",
+      "user_id": 30641047,
+      "country": "IQ",
+      "score_id": 6268476769,
+      "rank": "S",
+      "accuracy": 0.9437367303609342,
+      "pp": 14.5543,
+      "mods": [],
+      "combo": 533,
+      "created_at": "2026-02-23T16:49:07Z",
+      "beatmapset": {
+        "id": 751866,
+        "title": "Moriya set 08 ReEdit ~ Youkai no Yama",
+        "cover": "https://assets.ppy.sh/beatmaps/751866/covers/card.jpg?1650660808",
+        "stars": 2.5014
+      }
+    },
+    {
+      "user": "o0s",
+      "user_id": 30641047,
+      "country": "IQ",
+      "score_id": 6268392346,
+      "rank": "B",
+      "accuracy": 0.9104166666666667,
+      "pp": 11.2907,
+      "mods": [],
+      "combo": 281,
+      "created_at": "2026-02-23T16:30:30Z",
+      "beatmapset": {
+        "id": 842355,
+        "title": "Carol of the Bells (Nightstep Mix)",
+        "cover": "https://assets.ppy.sh/beatmaps/842355/covers/card.jpg?1650668671",
+        "stars": 2.61364
+      }
+    },
+    {
+      "user": "o0s",
+      "user_id": 30641047,
+      "country": "IQ",
+      "score_id": 6268356586,
+      "rank": "S",
+      "accuracy": 0.951048951048951,
+      "pp": 10.7759,
+      "mods": [],
+      "combo": 552,
+      "created_at": "2026-02-23T16:22:44Z",
+      "beatmapset": {
+        "id": 2025686,
+        "title": "For U",
+        "cover": "https://assets.ppy.sh/beatmaps/2025686/covers/card.jpg?1693669977",
+        "stars": 2.17665
+      }
+    },
+    {
+      "user": "surrlender",
+      "user_id": 35849417,
+      "country": "IQ",
+      "score_id": 4987973572,
+      "rank": "A",
+      "accuracy": 0.9337848006019563,
+      "pp": 13.7185,
+      "mods": [],
+      "combo": 134,
+      "created_at": "2026-02-23T16:03:58Z",
+      "beatmapset": {
+        "id": 41242,
+        "title": "The Creator",
+        "cover": "https://assets.ppy.sh/beatmaps/41242/covers/card.jpg?1622051807",
+        "stars": 3.54298
+      }
+    },
+    {
+      "user": "surrlender",
+      "user_id": 35849417,
+      "country": "IQ",
+      "score_id": 4987971564,
+      "rank": "B",
+      "accuracy": 0.9169934640522875,
+      "pp": 17.6689,
+      "mods": [],
+      "combo": 152,
+      "created_at": "2026-02-23T15:59:08Z",
+      "beatmapset": {
+        "id": 661919,
+        "title": "SHIORI -TV size mix-",
+        "cover": "https://assets.ppy.sh/beatmaps/661919/covers/card.jpg?1650653913",
+        "stars": 3.39808
+      }
+    },
+    {
+      "user": "AHM_Habibi",
+      "user_id": 19422690,
+      "country": "IQ",
+      "score_id": 4987970026,
+      "rank": "C",
+      "accuracy": 0.8481012658227848,
+      "pp": 18.7525,
+      "mods": [],
+      "combo": 142,
+      "created_at": "2026-02-23T15:55:18Z",
+      "beatmapset": {
+        "id": 1797993,
+        "title": "Dance In The Game (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1797993/covers/card.jpg?1658278704",
+        "stars": 4.28923
+      }
+    },
+    {
+      "user": "AHM_Habibi",
+      "user_id": 19422690,
+      "country": "IQ",
+      "score_id": 4987968703,
+      "rank": "B",
+      "accuracy": 0.88828089375285,
+      "pp": 29.6057,
+      "mods": [],
+      "combo": 180,
+      "created_at": "2026-02-23T15:52:05Z",
+      "beatmapset": {
+        "id": 985066,
+        "title": "Itte.",
+        "cover": "https://assets.ppy.sh/beatmaps/985066/covers/card.jpg?1622163737",
+        "stars": 4.99609
+      }
+    },
+    {
+      "user": "zero702",
+      "user_id": 25897488,
+      "country": "IQ",
+      "score_id": 4987963069,
+      "rank": "C",
+      "accuracy": 0.741773609740046,
+      "pp": 18.2133,
+      "mods": [
+        "NF"
+      ],
+      "combo": 355,
+      "created_at": "2026-02-23T15:38:22Z",
+      "beatmapset": {
+        "id": 399372,
+        "title": "Road of Resistance",
+        "cover": "https://assets.ppy.sh/beatmaps/399372/covers/card.jpg?1622098276",
+        "stars": 7.43779
+      }
+    },
+    {
+      "user": "zero702",
+      "user_id": 25897488,
+      "country": "IQ",
+      "score_id": 4987960339,
+      "rank": "C",
+      "accuracy": 0.8003663003663004,
+      "pp": 66.4087,
+      "mods": [
+        "NF",
+        "DT"
+      ],
+      "combo": 71,
+      "created_at": "2026-02-23T15:31:33Z",
+      "beatmapset": {
+        "id": 975620,
+        "title": "Vanilla Chocolat (Sped Up Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/975620/covers/card.jpg?1650680911",
+        "stars": 4.59445
+      }
+    },
+    {
+      "user": "zero702",
+      "user_id": 25897488,
+      "country": "IQ",
+      "score_id": 4987959241,
+      "rank": "A",
+      "accuracy": 0.9648692810457516,
+      "pp": 146.59,
+      "mods": [
+        "NF"
+      ],
+      "combo": 406,
+      "created_at": "2026-02-23T15:28:56Z",
+      "beatmapset": {
+        "id": 922004,
+        "title": "Shitteru? Madousho wa Donki ni mo Naru no yo",
+        "cover": "https://assets.ppy.sh/beatmaps/922004/covers/card.jpg?1650675027",
+        "stars": 5.65803
+      }
+    },
+    {
+      "user": "zero702",
+      "user_id": 25897488,
+      "country": "IQ",
+      "score_id": 4987956579,
+      "rank": "B",
+      "accuracy": 0.863147605083089,
+      "pp": 34.3449,
+      "mods": [
+        "NF"
+      ],
+      "combo": 466,
+      "created_at": "2026-02-23T15:22:30Z",
+      "beatmapset": {
+        "id": 528821,
+        "title": "Nobore! Susume! Takai Tou",
+        "cover": "https://assets.ppy.sh/beatmaps/528821/covers/card.jpg?1650644966",
+        "stars": 5.65693
+      }
+    },
+    {
+      "user": "mkawoi14",
+      "user_id": 38343613,
+      "country": "IQ",
+      "score_id": 4987949089,
+      "rank": "C",
+      "accuracy": 0.808263695450325,
+      "pp": 18.1187,
+      "mods": [],
+      "combo": 82,
+      "created_at": "2026-02-23T15:04:02Z",
+      "beatmapset": {
+        "id": 991368,
+        "title": "Hold (Candyland Remix)",
+        "cover": "https://assets.ppy.sh/beatmaps/991368/covers/card.jpg?1650684571",
+        "stars": 4.72632
+      }
+    },
+    {
+      "user": "o0s",
+      "user_id": 30641047,
+      "country": "IQ",
+      "score_id": 6267983556,
+      "rank": "S",
+      "accuracy": 0.9601449275362319,
+      "pp": 12.436,
+      "mods": [],
+      "combo": 301,
+      "created_at": "2026-02-23T14:59:28Z",
+      "beatmapset": {
+        "id": 2467014,
+        "title": "Strobe Light (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2467014/covers/card.jpg?1766547607",
+        "stars": 2.27918
+      }
+    },
+    {
+      "user": "o0s",
+      "user_id": 30641047,
+      "country": "IQ",
+      "score_id": 6267945328,
+      "rank": "S",
+      "accuracy": 0.9569377990430622,
+      "pp": 11.9795,
+      "mods": [],
+      "combo": 402,
+      "created_at": "2026-02-23T14:50:53Z",
+      "beatmapset": {
+        "id": 688987,
+        "title": "Scape Santa",
+        "cover": "https://assets.ppy.sh/beatmaps/688987/covers/card.jpg?1650656378",
+        "stars": 2.2668
+      }
+    },
+    {
+      "user": "o0s",
+      "user_id": 30641047,
+      "country": "IQ",
+      "score_id": 6267931170,
+      "rank": "A",
+      "accuracy": 0.8914373088685015,
+      "pp": 10.6516,
+      "mods": [],
+      "combo": 158,
+      "created_at": "2026-02-23T14:47:43Z",
+      "beatmapset": {
+        "id": 2373992,
+        "title": "Yoru no Kodomo-tachi",
+        "cover": "https://assets.ppy.sh/beatmaps/2373992/covers/card.jpg?1770990225",
+        "stars": 2.41961
+      }
+    },
+    {
+      "user": "Bappo_1337",
+      "user_id": 21688901,
+      "country": "IQ",
+      "score_id": 4987941228,
+      "rank": "B",
+      "accuracy": 0.867816091954023,
+      "pp": 57.1014,
+      "mods": [],
+      "combo": 104,
+      "created_at": "2026-02-23T14:44:19Z",
+      "beatmapset": {
+        "id": 2270785,
+        "title": "my love life needs a lobotomy",
+        "cover": "https://assets.ppy.sh/beatmaps/2270785/covers/card.jpg?1732317168",
+        "stars": 5.59668
+      }
+    },
+    {
+      "user": "Bappo_1337",
+      "user_id": 21688901,
+      "country": "IQ",
+      "score_id": 4987940772,
+      "rank": "C",
+      "accuracy": 0.8201320132013201,
+      "pp": 70.9412,
+      "mods": [],
+      "combo": 64,
+      "created_at": "2026-02-23T14:43:07Z",
+      "beatmapset": {
+        "id": 2270785,
+        "title": "my love life needs a lobotomy",
+        "cover": "https://assets.ppy.sh/beatmaps/2270785/covers/card.jpg?1732317168",
+        "stars": 6.41388
+      }
+    },
+    {
+      "user": "Bappo_1337",
+      "user_id": 21688901,
+      "country": "IQ",
+      "score_id": 4987939461,
+      "rank": "B",
+      "accuracy": 0.8640350877192983,
+      "pp": 45.9027,
+      "mods": [],
+      "combo": 166,
+      "created_at": "2026-02-23T14:39:45Z",
+      "beatmapset": {
+        "id": 1097552,
+        "title": "final phase (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1097552/covers/card.jpg?1650691711",
+        "stars": 5.83333
+      }
+    },
+    {
+      "user": "Bappo_1337",
+      "user_id": 21688901,
+      "country": "IQ",
+      "score_id": 4987937992,
+      "rank": "B",
+      "accuracy": 0.8892979872361315,
+      "pp": 71.6208,
+      "mods": [
+        "DT"
+      ],
+      "combo": 216,
+      "created_at": "2026-02-23T14:36:02Z",
+      "beatmapset": {
+        "id": 461832,
+        "title": "STYX HELIX",
+        "cover": "https://assets.ppy.sh/beatmaps/461832/covers/card.jpg?1650640492",
+        "stars": 3.85203
+      }
+    },
+    {
+      "user": "Hatagori",
+      "user_id": 39278215,
+      "country": "IQ",
+      "score_id": 6267866945,
+      "rank": "D",
+      "accuracy": 0.5597222222222222,
+      "pp": 24.2733,
+      "mods": [],
+      "combo": 37,
+      "created_at": "2026-02-23T14:32:48Z",
+      "beatmapset": {
+        "id": 2300823,
+        "title": "Harumachi Clover (Swing Arrangement)",
+        "cover": "https://assets.ppy.sh/beatmaps/2300823/covers/card.jpg?1761681577",
+        "stars": 4.64263
+      }
+    },
+    {
+      "user": "Hatagori",
+      "user_id": 39278215,
+      "country": "IQ",
+      "score_id": 6267857165,
+      "rank": "D",
+      "accuracy": 0.6955445544554455,
+      "pp": 36.9946,
+      "mods": [],
+      "combo": 261,
+      "created_at": "2026-02-23T14:30:29Z",
+      "beatmapset": {
+        "id": 2463664,
+        "title": "hate the way you love me (nightcore & cut ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2463664/covers/card.jpg?1767818786",
+        "stars": 4.5503
+      }
+    },
+    {
+      "user": "Hatagori",
+      "user_id": 39278215,
+      "country": "IQ",
+      "score_id": 6267837511,
+      "rank": "D",
+      "accuracy": 0.6656843483955468,
+      "pp": 18.0364,
+      "mods": [],
+      "combo": 163,
+      "created_at": "2026-02-23T14:25:54Z",
+      "beatmapset": {
+        "id": 2493675,
+        "title": "Teto the 31st",
+        "cover": "https://assets.ppy.sh/beatmaps/2493675/covers/card.jpg?1768509281",
+        "stars": 4.5417
+      }
+    },
+    {
+      "user": "HighTierMage",
+      "user_id": 38230984,
+      "country": "IQ",
+      "score_id": 4987933723,
+      "rank": "B",
+      "accuracy": 0.8849028400597907,
+      "pp": 39.7102,
+      "mods": [
+        "DT"
+      ],
+      "combo": 159,
+      "created_at": "2026-02-23T14:24:57Z",
+      "beatmapset": {
+        "id": 470741,
+        "title": "Don't let me down",
+        "cover": "https://assets.ppy.sh/beatmaps/470741/covers/card.jpg?1622105112",
+        "stars": 3.40399
+      }
+    },
+    {
+      "user": "HighTierMage",
+      "user_id": 38230984,
+      "country": "IQ",
+      "score_id": 4987933021,
+      "rank": "C",
+      "accuracy": 0.8104575163398693,
+      "pp": 64.2904,
+      "mods": [],
+      "combo": 77,
+      "created_at": "2026-02-23T14:23:07Z",
+      "beatmapset": {
+        "id": 1154585,
+        "title": "The Guinea Pig Is In Your Mind",
+        "cover": "https://assets.ppy.sh/beatmaps/1154585/covers/card.jpg?1650694540",
+        "stars": 5.34411
+      }
+    },
+    {
+      "user": "Hatagori",
+      "user_id": 39278215,
+      "country": "IQ",
+      "score_id": 6267802576,
+      "rank": "C",
+      "accuracy": 0.7188249400479616,
+      "pp": 19.9293,
+      "mods": [],
+      "combo": 115,
+      "created_at": "2026-02-23T14:17:50Z",
+      "beatmapset": {
+        "id": 2284972,
+        "title": "You Suck At Love (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2284972/covers/card.jpg?1759801357",
+        "stars": 4.5159
+      }
+    },
+    {
+      "user": "Hatagori",
+      "user_id": 39278215,
+      "country": "IQ",
+      "score_id": 6267789233,
+      "rank": "D",
+      "accuracy": 0.6849206349206349,
+      "pp": 25.3764,
+      "mods": [],
+      "combo": 82,
+      "created_at": "2026-02-23T14:14:45Z",
+      "beatmapset": {
+        "id": 2459491,
+        "title": "Distance Disturbs Me (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2459491/covers/card.jpg?1766527602",
+        "stars": 4.4513
+      }
+    },
+    {
+      "user": "Hatagori",
+      "user_id": 39278215,
+      "country": "IQ",
+      "score_id": 6267765263,
+      "rank": "C",
+      "accuracy": 0.7320574162679426,
+      "pp": 26.1143,
+      "mods": [],
+      "combo": 66,
+      "created_at": "2026-02-23T14:09:06Z",
+      "beatmapset": {
+        "id": 2445174,
+        "title": "Sunshine (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+        "stars": 4.31124
+      }
+    },
+    {
+      "user": "mr5mat",
+      "user_id": 21602268,
+      "country": "IQ",
+      "score_id": 4987926461,
+      "rank": "A",
+      "accuracy": 0.9305266805266805,
+      "pp": 68.4842,
+      "mods": [],
+      "combo": 285,
+      "created_at": "2026-02-23T14:06:00Z",
+      "beatmapset": {
+        "id": 1037744,
+        "title": "Sakura no Uta",
+        "cover": "https://assets.ppy.sh/beatmaps/1037744/covers/card.jpg?1657810712",
+        "stars": 5.59927
+      }
+    },
+    {
+      "user": "HighTierMage",
+      "user_id": 38230984,
+      "country": "IQ",
+      "score_id": 4987925902,
+      "rank": "D",
+      "accuracy": 0.6204819277108434,
+      "pp": 31.356,
+      "mods": [],
+      "combo": 54,
+      "created_at": "2026-02-23T14:04:31Z",
+      "beatmapset": {
+        "id": 1249048,
+        "title": "Horrible Kids",
+        "cover": "https://assets.ppy.sh/beatmaps/1249048/covers/card.jpg?1650700671",
+        "stars": 5.57066
+      }
+    },
+    {
+      "user": "HighTierMage",
+      "user_id": 38230984,
+      "country": "IQ",
+      "score_id": 4987923032,
+      "rank": "B",
+      "accuracy": 0.8559962228517469,
+      "pp": 51.9576,
+      "mods": [],
+      "combo": 185,
+      "created_at": "2026-02-23T13:57:08Z",
+      "beatmapset": {
+        "id": 748291,
+        "title": "Asymmetry (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/748291/covers/card.jpg?1650662879",
+        "stars": 5.41585
+      }
+    },
+    {
+      "user": "HighTierMage",
+      "user_id": 38230984,
+      "country": "IQ",
+      "score_id": 4987921376,
+      "rank": "C",
+      "accuracy": 0.8173868312757202,
+      "pp": 43.4718,
+      "mods": [],
+      "combo": 125,
+      "created_at": "2026-02-23T13:52:55Z",
+      "beatmapset": {
+        "id": 1060207,
+        "title": "Still Into You (Sped Up & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/1060207/covers/card.jpg?1636481675",
+        "stars": 5.26606
+      }
+    },
+    {
+      "user": "Freddie44",
+      "user_id": 29199724,
+      "country": "IQ",
+      "score_id": 4987908877,
+      "rank": "A",
+      "accuracy": 0.9436717663421419,
+      "pp": 32.0865,
+      "mods": [],
+      "combo": 404,
+      "created_at": "2026-02-23T13:19:50Z",
+      "beatmapset": {
+        "id": 1684705,
+        "title": "twinkle night (feat. somunia)",
+        "cover": "https://assets.ppy.sh/beatmaps/1684705/covers/card.jpg?1645958091",
+        "stars": 3.96144
+      }
+    },
+    {
+      "user": "Freddie44",
+      "user_id": 29199724,
+      "country": "IQ",
+      "score_id": 4987907403,
+      "rank": "A",
+      "accuracy": 0.9574209245742092,
+      "pp": 30.0662,
+      "mods": [],
+      "combo": 155,
+      "created_at": "2026-02-23T13:15:49Z",
+      "beatmapset": {
+        "id": 891712,
+        "title": "Tokyo's Starlight",
+        "cover": "https://assets.ppy.sh/beatmaps/891712/covers/card.jpg?1650672861",
+        "stars": 3.85417
+      }
+    },
+    {
+      "user": "Freddie44",
+      "user_id": 29199724,
+      "country": "IQ",
+      "score_id": 4987906514,
+      "rank": "A",
+      "accuracy": 0.9643255295429208,
+      "pp": 16.0963,
+      "mods": [],
+      "combo": 319,
+      "created_at": "2026-02-23T13:13:11Z",
+      "beatmapset": {
+        "id": 891712,
+        "title": "Tokyo's Starlight",
+        "cover": "https://assets.ppy.sh/beatmaps/891712/covers/card.jpg?1650672861",
+        "stars": 2.90185
+      }
+    },
+    {
+      "user": "Freddie44",
+      "user_id": 29199724,
+      "country": "IQ",
+      "score_id": 4987905187,
+      "rank": "B",
+      "accuracy": 0.8899240855762595,
+      "pp": 20.5062,
+      "mods": [],
+      "combo": 248,
+      "created_at": "2026-02-23T13:09:24Z",
+      "beatmapset": {
+        "id": 1491610,
+        "title": "spy?",
+        "cover": "https://assets.ppy.sh/beatmaps/1491610/covers/card.jpg?1640356486",
+        "stars": 3.7799
+      }
+    },
+    {
+      "user": "Freddie44",
+      "user_id": 29199724,
+      "country": "IQ",
+      "score_id": 4987902170,
+      "rank": "C",
+      "accuracy": 0.8598290598290599,
+      "pp": 11.985,
+      "mods": [],
+      "combo": 201,
+      "created_at": "2026-02-23T13:00:56Z",
+      "beatmapset": {
+        "id": 1461145,
+        "title": "Sapphire On Fire",
+        "cover": "https://assets.ppy.sh/beatmaps/1461145/covers/card.jpg?1650710923",
+        "stars": 3.72459
+      }
+    },
+    {
+      "user": "Freddie44",
+      "user_id": 29199724,
+      "country": "IQ",
+      "score_id": 4987901032,
+      "rank": "A",
+      "accuracy": 0.9427402862985685,
+      "pp": 13.7798,
+      "mods": [],
+      "combo": 181,
+      "created_at": "2026-02-23T12:57:49Z",
+      "beatmapset": {
+        "id": 1377,
+        "title": "Cruel Angel's Thesis",
+        "cover": "https://assets.ppy.sh/beatmaps/1377/covers/card.jpg?1631328797",
+        "stars": 2.81724
+      }
+    },
+    {
+      "user": "Freddie44",
+      "user_id": 29199724,
+      "country": "IQ",
+      "score_id": 4987900144,
+      "rank": "A",
+      "accuracy": 0.8903508771929824,
+      "pp": 16.189,
+      "mods": [],
+      "combo": 66,
+      "created_at": "2026-02-23T12:55:19Z",
+      "beatmapset": {
+        "id": 1864162,
+        "title": "Family Guy Main Title (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1864162/covers/card.jpg?1669890945",
+        "stars": 3.07492
+      }
+    },
+    {
+      "user": "Freddie44",
+      "user_id": 29199724,
+      "country": "IQ",
+      "score_id": 4987899790,
+      "rank": "A",
+      "accuracy": 0.9333333333333333,
+      "pp": 17.1853,
+      "mods": [],
+      "combo": 71,
+      "created_at": "2026-02-23T12:54:23Z",
+      "beatmapset": {
+        "id": 1677078,
+        "title": "SCUNTHORPE",
+        "cover": "https://assets.ppy.sh/beatmaps/1677078/covers/card.jpg?1645782527",
+        "stars": 3.07252
+      }
+    },
+    {
+      "user": "Freddie44",
+      "user_id": 29199724,
+      "country": "IQ",
+      "score_id": 4987899427,
+      "rank": "S",
+      "accuracy": 0.9618055555555556,
+      "pp": 16.3658,
+      "mods": [],
+      "combo": 273,
+      "created_at": "2026-02-23T12:53:18Z",
+      "beatmapset": {
+        "id": 1724172,
+        "title": "It's Boss Time, dude",
+        "cover": "https://assets.ppy.sh/beatmaps/1724172/covers/card.jpg?1650566387",
+        "stars": 2.7624
+      }
+    },
+    {
+      "user": "0ilen",
+      "user_id": 25015591,
+      "country": "IQ",
+      "score_id": 4987875405,
+      "rank": "A",
+      "accuracy": 0.9500734214390602,
+      "pp": 149.93,
+      "mods": [],
+      "combo": 148,
+      "created_at": "2026-02-23T11:36:39Z",
+      "beatmapset": {
+        "id": 2374386,
+        "title": "bbydoll (nightcore & cut ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2374386/covers/card.jpg?1749993995",
+        "stars": 6.40512
+      }
+    },
+    {
+      "user": "Ali_TheMLGpro",
+      "user_id": 26231802,
+      "country": "IQ",
+      "score_id": 6266376441,
+      "rank": "B",
+      "accuracy": 0.91796875,
+      "pp": 45.8844,
+      "mods": [
+        "HD"
+      ],
+      "combo": 148,
+      "created_at": "2026-02-23T06:53:06Z",
+      "beatmapset": {
+        "id": 129299,
+        "title": "Hyouri Ittai (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/129299/covers/card.jpg?1650619168",
+        "stars": 4.123
+      }
+    },
+    {
+      "user": "I AM A GHOUL",
+      "user_id": 24991953,
+      "country": "IQ",
+      "score_id": 4987782221,
+      "rank": "D",
+      "accuracy": 0.6255619781631342,
+      "pp": 14.5654,
+      "mods": [
+        "NF",
+        "DT"
+      ],
+      "combo": 33,
+      "created_at": "2026-02-23T05:00:13Z",
+      "beatmapset": {
+        "id": 41860,
+        "title": "Chinese Snowy Dance",
+        "cover": "https://assets.ppy.sh/beatmaps/41860/covers/card.jpg?1622052126",
+        "stars": 4.89719
+      }
+    },
+    {
+      "user": "I AM A GHOUL",
+      "user_id": 24991953,
+      "country": "IQ",
+      "score_id": 4987780210,
+      "rank": "S",
+      "accuracy": 0.9678942398489141,
+      "pp": 326.545,
+      "mods": [
+        "DT"
+      ],
+      "combo": 210,
+      "created_at": "2026-02-23T04:51:23Z",
+      "beatmapset": {
+        "id": 2472740,
+        "title": "Snow halation (HONOKA Mix) (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2472740/covers/card.jpg?1765726307",
+        "stars": 5.22846
+      }
+    },
+    {
+      "user": "Brood-J",
+      "user_id": 15574211,
+      "country": "IQ",
+      "score_id": 6265761578,
+      "rank": "B",
+      "accuracy": 0.907909604519774,
+      "pp": 57.8672,
+      "mods": [],
+      "combo": 161,
+      "created_at": "2026-02-23T02:55:08Z",
+      "beatmapset": {
+        "id": 713576,
+        "title": "ASH",
+        "cover": "https://assets.ppy.sh/beatmaps/713576/covers/card.jpg?1650658187",
+        "stars": 4.77664
+      }
+    },
+    {
+      "user": "Brood-J",
+      "user_id": 15574211,
+      "country": "IQ",
+      "score_id": 6265740383,
+      "rank": "C",
+      "accuracy": 0.7545098039215686,
+      "pp": 39.036,
+      "mods": [],
+      "combo": 153,
+      "created_at": "2026-02-23T02:47:32Z",
+      "beatmapset": {
+        "id": 1884753,
+        "title": "Surasthana Fantasia",
+        "cover": "https://assets.ppy.sh/beatmaps/1884753/covers/card.jpg?1689090283",
+        "stars": 5.25254
+      }
+    },
+    {
+      "user": "Brood-J",
+      "user_id": 15574211,
+      "country": "IQ",
+      "score_id": 6265711689,
+      "rank": "A",
+      "accuracy": 0.933142311365807,
+      "pp": 78.9103,
+      "mods": [],
+      "combo": 181,
+      "created_at": "2026-02-23T02:37:22Z",
+      "beatmapset": {
+        "id": 1142363,
+        "title": "Stories (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1142363/covers/card.jpg?1650693953",
+        "stars": 5.3615
+      }
+    }
+  ]
+}

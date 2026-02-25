@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osu! Iraq | Community Socials</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="OIT.png">
+    <style>
+        :root { 
+            --osu-pink: #ff66aa; 
+            --dark-base: #1c1c21; 
+            --panel-bg: #2e2e38; 
+            --sidebar-bg: #111116;
+            --text-main: #ffffff; 
+            --text-muted: #888895; 
+        }
+        
+        body { 
+            background-color: var(--dark-base); 
+            color: var(--text-main); 
+            font-family: 'Exo 2', sans-serif; 
+            margin: 0; 
+            display: flex;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* --- HELLA SMOOTH ANIMATIONS --- */
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeRight {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* --- LEFT SIDEBAR MAIN MENU --- */
+        .sidebar {
+            width: 260px;
+            background: var(--sidebar-bg);
+            border-right: 2px solid var(--panel-bg);
+            display: flex;
+            flex-direction: column;
+            padding: 30px 0;
+            position: fixed;
+            height: 100vh;
+            z-index: 1000;
+            box-shadow: 5px 0 25px rgba(0,0,0,0.5);
+            transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .logo-box {
+            padding: 0 25px 40px;
+            animation: fadeRight 0.6s ease forwards;
+        }
+
+        .logo-box a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .logo-box a:hover { filter: brightness(1.2); transform: scale(1.02); }
+        .logo-box img { height: 38px; display: block; }
+        .logo-text { color: var(--osu-pink); font-weight: 800; font-size: 18px; letter-spacing: 0.5px; white-space: nowrap; }
+
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 0 15px;
+        }
+
+        .nav-item {
+            position: relative;
+            color: var(--text-muted);
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+            overflow: hidden;
+            animation: fadeRight 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        /* Stagger the sidebar animations */
+        .nav-item:nth-child(1) { animation-delay: 0.1s; }
+        .nav-item:nth-child(2) { animation-delay: 0.2s; }
+        .nav-item:nth-child(3) { animation-delay: 0.3s; }
+        .nav-item:nth-child(4) { animation-delay: 0.4s; }
+        .nav-item:nth-child(5) { animation-delay: 0.5s; }
+
+        .nav-item .icon { font-size: 18px; transition: transform 0.3s; }
+
+        .nav-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%) scaleY(0);
+            width: 4px;
+            height: 60%;
+            background: var(--osu-pink);
+            border-radius: 0 4px 4px 0;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .nav-item:hover, .nav-item.active {
+            color: white;
+            background: rgba(255, 102, 170, 0.1);
+            transform: translateX(5px);
+        }
+
+        .nav-item:hover .icon, .nav-item.active .icon {
+            transform: scale(1.2);
+            color: var(--osu-pink);
+        }
+
+        .nav-item:hover::before, .nav-item.active::before {
+            transform: translateY(-50%) scaleY(1);
+        }
+
+        /* --- MAIN CONTENT AREA --- */
+        .main-content {
+            flex-grow: 1;
+            margin-left: 260px; /* Offset for sidebar */
+            padding: 50px 60px;
+            min-height: 100vh;
+            background: radial-gradient(circle at top right, rgba(255,102,170,0.05), transparent 40%), var(--dark-base);
+        }
+
+        .page-header {
+            margin-bottom: 40px;
+            animation: slideInUp 0.6s ease forwards;
+        }
+
+        .page-title {
+            font-size: 36px;
+            font-weight: 800;
+            color: white;
+            margin: 0 0 10px 0;
+            letter-spacing: 1px;
+        }
+
+        .page-subtitle {
+            color: var(--osu-pink);
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        /* --- SOCIAL CARDS GRID --- */
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .social-card {
+            background: var(--panel-bg);
+            border-radius: 16px;
+            padding: 30px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #3e3e4a;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            animation: slideInUp 0.6s ease forwards;
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        /* Stagger social card animations */
+        .social-card:nth-child(1) { animation-delay: 0.2s; }
+        .social-card:nth-child(2) { animation-delay: 0.3s; }
+        .social-card:nth-child(3) { animation-delay: 0.4s; }
+        .social-card:nth-child(4) { animation-delay: 0.5s; }
+
+        .social-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: var(--osu-pink);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6), 0 0 20px rgba(255,102,170,0.2);
+        }
+
+        /* Card Background Glow based on platform */
+        .social-card::after {
+            content: '';
+            position: absolute;
+            top: -50%; right: -50%;
+            width: 200px; height: 200px;
+            background: radial-gradient(circle, var(--platform-color) 0%, transparent 70%);
+            opacity: 0;
+            transition: 0.5s ease;
+            z-index: 0;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .social-card:hover::after { opacity: 0.15; }
+
+        /* Platform specific colors */
+        .card-discord { --platform-color: #5865F2; }
+        .card-twitter { --platform-color: #1DA1F2; }
+        .card-twitch { --platform-color: #9146FF; }
+        .card-youtube { --platform-color: #FF0000; }
+
+        .card-content { position: relative; z-index: 1; }
+        
+        .platform-name {
+            font-size: 24px;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .platform-desc {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .join-btn {
+            align-self: flex-start;
+            background: rgba(255,255,255,0.05);
+            color: white;
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            transition: 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .social-card:hover .join-btn {
+            background: var(--platform-color);
+            border-color: var(--platform-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Responsive Fixes */
+        @media (max-width: 1024px) {
+            .sidebar { width: 80px; }
+            .logo-text, .nav-item span { display: none; }
+            .nav-item { justify-content: center; padding: 15px 0; }
+            .main-content { margin-left: 80px; padding: 30px; }
+        }
+
+        @media (max-width: 768px) {
+            body { flex-direction: column; }
+            .sidebar { 
+                width: 100%; height: auto; position: static; 
+                flex-direction: row; padding: 15px; align-items: center; 
+                justify-content: space-between;
+            }
+            .logo-box { padding: 0; margin: 0; }
+            .nav-menu { flex-direction: row; padding: 0; }
+            .main-content { margin-left: 0; padding: 20px; }
+            .nav-item::before { top: auto; bottom: 0; left: 50%; transform: translateX(-50%) scaleX(0); width: 60%; height: 4px; border-radius: 4px 4px 0 0; }
+            .nav-item:hover::before, .nav-item.active::before { transform: translateX(-50%) scaleX(1); }
+            .nav-item:hover { transform: translateY(-3px); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="logo-box">
+            <a href="index.html">
+                <img src="https://i.imgur.com/1YJfjH6.png" alt="osu! Iraq">
+                <span class="logo-text">Osu! Iraq Today</span>
+            </a>
+        </div>
+        <div class="nav-menu">
+            <a href="Test.html" class="nav-item">
+                <span class="icon">🎯</span>
+                <span>Scores</span>
+            </a>
+            <a href="rankings.html" class="nav-item">
+                <span class="icon">🏆</span>
+                <span>Rankings</span>
+            </a>
+            <a href="videos.html" class="nav-item">
+                <span class="icon">🎬</span>
+                <span>Videos</span>
+            </a>
+            <a href="mapping.html" class="nav-item">
+                <span class="icon">🛠️</span>
+                <span>Mapping</span>
+            </a>
+            <a href="socials.html" class="nav-item active">
+                <span class="icon">💬</span>
+                <span>Socials</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="page-header">
+            <p class="page-subtitle">Connect With Us</p>
+            <h1 class="page-title">Community Hub</h1>
+        </div>
+
+        <div class="social-grid">
+            <a href="#" class="social-card card-discord">
+                <div class="card-content">
+                    <div class="platform-name">🎧 Discord</div>
+                    <div class="platform-desc">The main headquarters. Chat with top players, join tournaments, and share your scores live.</div>
+                    <div class="join-btn">Join Server</div>
+                </div>
+            </a>
+
+            <a href="#" class="social-card card-twitter">
+                <div class="card-content">
+                    <div class="platform-name">🐦 Twitter</div>
+                    <div class="platform-desc">Follow us for daily highlights, announcements, and top play clips from the Iraqi community.</div>
+                    <div class="join-btn">Follow Us</div>
+                </div>
+            </a>
+
+            <a href="#" class="social-card card-twitch">
+                <div class="card-content">
+                    <div class="platform-name">📺 Twitch</div>
+                    <div class="platform-desc">Watch live tournament streams, showcases, and our community's top players grinding PP.</div>
+                    <div class="join-btn">Watch Live</div>
+                </div>
+            </a>
+
+            <a href="#" class="social-card card-youtube">
+                <div class="card-content">
+                    <div class="platform-name">▶️ YouTube</div>
+                    <div class="platform-desc">Missed a play? Catch all the high-quality replays, mapping podcasts, and community montages here.</div>
+                    <div class="join-btn">Subscribe</div>
+                </div>
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>

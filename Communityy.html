@@ -227,80 +227,99 @@ function formatAMPM(hour24) {
     return `${hour12}:00 ${suffix}`;
 }
 
-// Load data and paint UI
 async function loadInsights() {
+    const pulseLabel = document.getElementById('pulse-date');
+    
     try {
-const response = await fetch('/Test/data/community_insights.json?t=' + Date.now());
-        if (!response.ok) throw new Error("File not found");
+        // 1. Fetch the insights file with a cache-buster
+        const response = await fetch('/Test/data/community_insights.json?t=' + Date.now());
+        if (!response.ok) throw new Error("Insights file not found on server");
+        
         const data = await response.json();
 
-        // Find the latest date object in daily_stats
-        const dates = Object.keys(data.daily_stats).sort();
-        if (dates.length === 0) throw new Error("No daily stats");
-        const latestDate = dates[dates.length - 1];
-        const todayStats = data.daily_stats[latestDate];
-
-        document.getElementById('pulse-date').innerText = `Data recorded for: ${latestDate}`;
-
-        // 1. Fill Streak Data
-        const streak = data.community_streak;
-        document.getElementById('s-current').innerText = streak.current;
-        document.getElementById('s-longest').innerText = streak.longest;
+        // 2. SMART DATE PICKER: Get all dates and find the most recent one
+        const availableDates = Object.keys(data.daily_stats).sort();
+        if (availableDates.length === 0) throw new Error("No daily stats recorded yet");
         
-        const totalScores = todayStats.total_scores || 0;
+        const latestDate = availableDates[availableDates.length - 1];
+        const stats = data.daily_stats[latestDate];
+
+        // 3. UPDATE DATE LABEL (Informs the user clearly)
+        pulseLabel.innerHTML = `
+            <span style="color: #88ffcc; margin-right: 5px;">●</span> 
+            Showing data for: <strong>${latestDate}</strong> 
+            <span style="font-size: 0.85em; color: var(--text-muted); margin-left: 10px;">(Syncs Daily 04:00 UTC)</span>
+        `;
+
+        // --- 4. STREAK DATA ---
+        const streak = data.community_streak;
+        document.getElementById('s-current').innerText = streak.current || 0;
+        document.getElementById('s-longest').innerText = streak.longest || 0;
+        
+        const totalScores = stats.total_scores || 0;
         document.getElementById('s-label').innerText = `${totalScores} / 50 Scores Today`;
         
-        let progress = Math.min(100, (totalScores / 50) * 100);
         const bar = document.getElementById('s-bar');
-        setTimeout(() => { bar.style.width = progress + '%'; }, 300); // Small animation delay
-        if (progress >= 100) bar.style.backgroundColor = "#ffd700"; // Gold if goal met
+        let progress = Math.min(100, (totalScores / 50) * 100);
+        setTimeout(() => { 
+            bar.style.width = progress + '%';
+            if (progress >= 100) bar.style.backgroundColor = "#ffd700"; // Turn gold if goal met
+        }, 300);
 
-        // 2. Fill Peak Hours
-        document.getElementById('p-time').innerText = formatAMPM(todayStats.peak_hour_baghdad);
-        document.getElementById('p-subtext').innerText = `🔥 ${todayStats.peak_hour_submissions || 0} scores submitted`;
+        // --- 5. PEAK HOURS ---
+        // Ensure formatAMPM exists in your script
+        document.getElementById('p-time').innerText = formatAMPM(stats.peak_hour_baghdad);
+        document.getElementById('p-subtext').innerText = `🔥 ${stats.peak_hour_submissions || 0} scores in one hour`;
 
-        // 3. Fill Map Data
-        if (todayStats.most_played_map) {
-            document.getElementById('m-bg').style.backgroundImage = `url('${todayStats.most_played_map.cover}')`;
-            document.getElementById('m-title').innerText = todayStats.most_played_map.title;
-            document.getElementById('m-players').innerText = `👥 ${todayStats.most_played_map.unique_players} unique players`;
+        // --- 6. MOST PLAYED MAP ---
+        const mapBox = document.getElementById('m-bg');
+        if (stats.most_played_map) {
+            mapBox.style.backgroundImage = `url('${stats.most_played_map.cover}')`;
+            document.getElementById('m-title').innerText = stats.most_played_map.title;
+            document.getElementById('m-players').innerText = `👥 ${stats.most_played_map.unique_players} unique players`;
         } else {
-            document.getElementById('m-title').innerText = "No map data today.";
+            document.getElementById('m-title').innerText = "No map data for this day.";
         }
 
-        // 4. Fill Top Grinder
-        if (todayStats.top_grinder && todayStats.top_grinder.scores.length > 0) {
-            document.getElementById('grinder-empty').style.display = 'none';
-            document.getElementById('grinder-content').style.display = 'block';
+        // --- 7. TOP GRINDER (With Dropdown List) ---
+        const grinderContent = document.getElementById('grinder-content');
+        const grinderEmpty = document.getElementById('grinder-empty');
 
-            const g = todayStats.top_grinder;
+        if (stats.top_grinder && stats.top_grinder.scores.length > 0) {
+            grinderEmpty.style.display = 'none';
+            grinderContent.style.display = 'block';
+
+            const g = stats.top_grinder;
             document.getElementById('g-avatar').src = `https://a.ppy.sh/${g.user_id}`;
             document.getElementById('g-name').innerText = g.user;
-            document.getElementById('g-count').innerText = `${g.count} Submissions Today`;
+            document.getElementById('g-count').innerText = `${g.count} Submissions recorded`;
 
             const scoreList = document.getElementById('g-scores-list');
-            scoreList.innerHTML = ''; // clear
+            scoreList.innerHTML = ''; // Clear previous items
 
-            // Sort scores by PP so the best plays are at the top of the menu
-            g.scores.sort((a, b) => b.pp - a.pp).forEach(score => {
+            // Sort by PP (High to Low) and render
+            const sortedScores = g.scores.sort((a, b) => (b.pp || 0) - (a.pp || 0));
+            sortedScores.forEach(score => {
                 scoreList.innerHTML += `
                     <a href="https://osu.ppy.sh/scores/osu/${score.id}" target="_blank" class="mini-card">
                         <div class="mini-rank r-${score.rank}">${score.rank}</div>
                         <div class="mini-details">
                             <span class="mini-title">${score.title}</span>
-                            <span class="mini-pp">${score.pp}pp</span>
+                            <span class="mini-pp">${score.pp > 0 ? score.pp + 'pp' : 'No PP'}</span>
                         </div>
                     </a>
                 `;
             });
+        } else {
+            grinderContent.style.display = 'none';
+            grinderEmpty.style.display = 'block';
         }
 
     } catch (error) {
-        console.error("Could not load insights:", error);
-        document.getElementById('pulse-date').innerText = "Awaiting first data sync...";
+        console.error("Community Insight Error:", error);
+        pulseLabel.innerHTML = `<span style="color: #ff4444;">⚠️ System Offline:</span> Awaiting community data sync.`;
     }
 }
-
 // Initialize
 loadInsights();
 </script>

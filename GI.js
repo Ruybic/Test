@@ -1,28 +1,34 @@
 const fs = require('fs');
 const path = require('path');
 
-async function generate() {
+async function processYesterday() {
+    // 1. Get Yesterday's Date components
     const date = new Date();
     date.setDate(date.getDate() - 1);
-    const year = date.getUTCFullYear();
+    
+    const year = String(date.getUTCFullYear());
     const month = String(date.getUTCMonth() + 1).padStart(2, '0');
     const day = String(date.getUTCDate()).padStart(2, '0');
     const dateKey = `${year}-${month}-${day}`;
     
-    // Look for data folder in the same directory as this script
-    const dailyPath = path.join(__dirname, 'data', String(year), month, `${day}.json`);
+    // 2. Construct the path: data/2026/02/27.json
+    // Note: If your months/days DON'T have leading zeros (e.g. /2/2/ instead of /02/02/), 
+    // remove the .padStart(2, '0') above.
+    const dailyPath = path.join(__dirname, 'data', year, month, `${day}.json`);
     const insightsPath = path.join(__dirname, 'data', 'community_insights.json');
 
-    console.log(`Searching for: ${dailyPath}`);
+    console.log(`Checking for file: ${dailyPath}`);
 
     if (!fs.existsSync(dailyPath)) {
-        console.error("❌ Yesterday's data not found. Ensure fetch_daily.js ran first.");
+        console.error(`❌ Data for ${dateKey} does not exist at ${dailyPath}`);
         return;
     }
 
+    // 3. Read the existing daily JSON
     const dayData = JSON.parse(fs.readFileSync(dailyPath, 'utf8'));
     const scores = dayData.scores || [];
 
+    // 4. Load or Initialize the Master Insights file
     let insights = { 
         community_streak: { current: 0, longest: 0, last_updated: "" }, 
         daily_stats: {} 
@@ -32,7 +38,7 @@ async function generate() {
         insights = JSON.parse(fs.readFileSync(insightsPath, 'utf8'));
     }
 
-    // Process Stats
+    // 5. Generate the stats for that specific day
     const stats = {
         total_scores: scores.length,
         peak_hour_baghdad: calculatePeakHour(scores),
@@ -40,7 +46,7 @@ async function generate() {
         most_played_map: calculateTopMap(scores)
     };
 
-    // Update Streak
+    // 6. Update Community Streak logic
     if (insights.community_streak.last_updated !== dateKey) {
         if (scores.length >= 50) {
             insights.community_streak.current++;
@@ -53,11 +59,14 @@ async function generate() {
         insights.community_streak.last_updated = dateKey;
     }
 
+    // 7. Save to the master record
     insights.daily_stats[dateKey] = stats;
+    
     fs.writeFileSync(insightsPath, JSON.stringify(insights, null, 2));
-    console.log(`✅ Success! insights updated for ${dateKey}`);
+    console.log(`✅ Success: Insights updated using ${day}.json`);
 }
 
+// --- MATH HELPERS ---
 function calculatePeakHour(scores) {
     if (!scores.length) return 0;
     const hours = scores.map(s => (new Date(s.date).getUTCHours() + 3) % 24);
@@ -65,7 +74,7 @@ function calculatePeakHour(scores) {
 }
 
 function calculateTopGrinder(scores) {
-    if (!scores.length) return { user: "None", user_id: 1, count: 0, scores: [] };
+    if (!scores.length) return null;
     const counts = {};
     scores.forEach(s => counts[s.user] = (counts[s.user] || 0) + 1);
     const topName = Object.keys(counts).reduce((a, b) => counts[a] > counts[b] ? a : b);
@@ -84,4 +93,4 @@ function calculateTopMap(scores) {
     return { title: topMapTitle, cover: maps[topMapTitle].cover, unique_players: maps[topMapTitle].count };
 }
 
-generate();
+processYesterday();

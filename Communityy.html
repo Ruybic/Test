@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osu! Iraq Today | Community Insights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="OIT.png">
+    <style>
+        :root { --osu-pink: #ff66aa; --dark-base: #1c1c21; --panel-bg: #2e2e38; --text-main: #ffffff; --text-muted: #888895; }
+        body { background-color: var(--dark-base); color: var(--text-main); font-family: 'Exo 2', sans-serif; margin: 0; }
+
+        /* --- HEADER (Reused perfectly) --- */
+        header { background: #111116; padding: 12px 25px; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--panel-bg); position: sticky; top: 0; z-index: 1000; }
+        .logo-box { margin-left: -10px; }
+        .logo-box a { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-box img { height: 38px; display: block; }
+        .logo-text { color: var(--osu-pink); font-weight: 800; font-size: 18px; letter-spacing: 0.5px; white-space: nowrap; }
+        .logo-box a:hover { filter: brightness(1.1); }
+        .dropdown { position: relative; display: flex; align-items: center; }
+        .dropbtn { background: var(--panel-bg); color: white; border: 1px solid rgba(255,255,255,0.05); padding: 10px 18px; border-radius: 6px; cursor: pointer; font-family: 'Exo 2', sans-serif; font-weight: 600; font-size: 14px; transition: all 0.2s ease; }
+        .dropbtn:hover { background: #3e3e4a; border-color: var(--osu-pink); }
+        .dropdown-content { visibility: hidden; opacity: 0; transform: translateY(10px); transition: 0.2s; position: absolute; right: 0; top: calc(100% + 10px); min-width: 260px; z-index: 2000; background-color: rgba(28, 28, 33, 0.9); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 8px; }
+        .dropdown-content.show { visibility: visible; opacity: 1; transform: translateY(0); }
+        .dropdown-content a { position: relative; color: var(--text-muted); padding: 12px 16px; text-decoration: none; display: block; font-size: 14px; border-radius: 8px; transition: 0.25s; margin-bottom: 2px; }
+        .dropdown-content a .menu-desc { display: block; font-size: 11px; color: #6a6a7a; margin-top: 4px; }
+        .dropdown-content a:hover { background: rgba(255, 102, 170, 0.1); color: white; }
+        .dropdown-content a.active { background: rgba(255, 102, 170, 0.15); color: white; font-weight: 700; }
+
+        /* --- COMMUNITY DASHBOARD STYLES --- */
+        .dashboard-container { max-width: 1200px; margin: 40px auto; padding: 0 20px; min-height: 60vh; }
+        .section-title { color: white; font-size: 28px; font-weight: 800; margin-bottom: 5px; }
+        .section-subtitle { color: var(--text-muted); font-size: 14px; margin-bottom: 30px; }
+
+        .insights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+
+        /* General Card */
+        .insight-card { background: var(--panel-bg); border-radius: 14px; padding: 25px; border: 1px solid #3e3e4a; position: relative; overflow: hidden; display: flex; flex-direction: column; }
+        .card-header { font-size: 12px; color: var(--osu-pink); font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; }
+
+        /* STREAK WIDGET */
+        .streak-numbers { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 10px; }
+        .streak-big { font-size: 36px; font-weight: 800; color: white; line-height: 1; }
+        .streak-small { font-size: 14px; color: var(--text-muted); font-weight: 600; }
+        .progress-container { width: 100%; height: 8px; background: #1a1a20; border-radius: 4px; overflow: hidden; margin-top: 15px; }
+        .progress-bar { height: 100%; background: var(--osu-pink); width: 0%; transition: width 1s ease-out; box-shadow: 0 0 10px rgba(255,102,170,0.5); }
+        .progress-label { font-size: 11px; color: var(--text-muted); margin-top: 8px; text-align: right; }
+
+        /* PEAK HOURS WIDGET */
+        .time-display { font-size: 42px; font-weight: 800; color: white; margin: 10px 0; }
+        .time-subtext { font-size: 14px; color: #88ffcc; font-weight: 600; background: rgba(136, 255, 204, 0.1); padding: 5px 10px; border-radius: 6px; display: inline-block; }
+
+        /* MOST PLAYED MAP WIDGET */
+        .map-card-inner { background-size: cover; background-position: center; border-radius: 8px; padding: 20px; margin-top: 10px; position: relative; min-height: 100px; display: flex; flex-direction: column; justify-content: flex-end; border: 1px solid #444; }
+        .map-card-inner::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3)); border-radius: 8px; }
+        .map-title { position: relative; z-index: 5; color: white; font-weight: 800; font-size: 18px; margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .map-players { position: relative; z-index: 5; color: #ffcc22; font-size: 13px; font-weight: 600; margin-top: 5px; }
+
+        /* TOP GRINDER WIDGET */
+        .grinder-profile { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+        .grinder-avatar { width: 60px; height: 60px; border-radius: 12px; border: 3px solid #ffd700; box-shadow: 0 0 15px rgba(255, 215, 0, 0.3); }
+        .grinder-info h3 { margin: 0; font-size: 20px; color: white; }
+        .grinder-info p { margin: 2px 0 0; font-size: 13px; color: #ffd700; font-weight: 600; }
+        
+        .toggle-btn { width: 100%; background: #25252e; color: white; border: 1px solid #3e3e4a; padding: 10px; border-radius: 8px; cursor: pointer; font-family: 'Exo 2'; font-weight: 600; transition: 0.2s; }
+        .toggle-btn:hover { background: #3e3e4a; border-color: var(--osu-pink); }
+        
+        .grinder-scores { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .grinder-scores.open { max-height: 400px; overflow-y: auto; margin-top: 15px; }
+        
+        /* SCROLLBAR FOR GRINDER SCORES */
+        .grinder-scores::-webkit-scrollbar { width: 6px; }
+        .grinder-scores::-webkit-scrollbar-track { background: #1a1a20; border-radius: 4px; }
+        .grinder-scores::-webkit-scrollbar-thumb { background: #3e3e4a; border-radius: 4px; }
+
+        .mini-card { display: flex; align-items: center; background: #1a1a20; margin-bottom: 8px; padding: 8px 12px; border-radius: 8px; gap: 10px; border: 1px solid #333; text-decoration: none; transition: 0.2s; }
+        .mini-card:hover { border-color: var(--osu-pink); transform: translateX(5px); }
+        .mini-rank { font-weight: 900; font-size: 16px; width: 25px; text-align: center; }
+        .mini-details { flex-grow: 1; overflow: hidden; }
+        .mini-title { color: white; font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
+        .mini-pp { color: var(--osu-pink); font-size: 11px; font-weight: bold; }
+        
+        /* Rank Colors Recycled */
+        .r-SS, .r-SSH { color: #f0f0f0; text-shadow: 0 0 5px #fff; }
+        .r-S, .r-SH { color: #ffcc22; }
+        .r-A { color: #88f000; }
+        .r-B { color: #22ccff; }
+        .r-C { color: #ff77ff; }
+        .r-D { color: #ff4444; }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-box">
+        <a href="index.html">
+            <img src="https://i.imgur.com/1YJfjH6.png" alt="osu! Iraq">
+            <span class="logo-text">Osu! Iraq Today</span>
+        </a>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn" id="menuBtn">Menu ▼</button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="Test.html">
+                Scores
+                <span class="menu-desc">See what happened today?</span>
+            </a>
+            <a href="rankings.html">
+                Rankings
+                <span class="menu-desc">See player leaderboards</span>
+            </a>
+            <a href="videos.html">
+                Videos
+                <span class="menu-desc">Watch gameplay and highlights</span>
+            </a>
+            <a href="mapping.html">
+                Mapping
+                <span class="menu-desc">Explore beatmap creations</span>
+            </a>
+            <a href="Community.html" class="active">
+                Community
+                <span class="menu-desc">Connect with the community</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<div class="dashboard-container">
+    <h1 class="section-title">Community Daily Pulse</h1>
+    <p class="section-subtitle" id="pulse-date">Loading today's insights...</p>
+
+    <div class="insights-grid">
+        
+        <div class="insight-card">
+            <div class="card-header">🔥 Daily Activity Streak</div>
+            <div class="streak-numbers">
+                <div>
+                    <span class="streak-big" id="s-current">0</span> <span style="color:var(--text-muted)">Days</span>
+                </div>
+                <div class="streak-small">Longest: <span id="s-longest">0</span></div>
+            </div>
+            <p style="font-size: 12px; color: var(--text-muted); margin: 0;">Goal: 50+ scores submitted daily.</p>
+            <div class="progress-container">
+                <div class="progress-bar" id="s-bar"></div>
+            </div>
+            <div class="progress-label" id="s-label">0 / 50 Scores Today</div>
+        </div>
+
+        <div class="insight-card">
+            <div class="card-header">⏰ Peak Active Hour</div>
+            <div class="time-display" id="p-time">--:--</div>
+            <p style="font-size: 12px; color: var(--text-muted); margin: 0 0 10px 0;">Baghdad Time (AST)</p>
+            <div class="time-subtext" id="p-subtext">Calculating...</div>
+        </div>
+
+        <div class="insight-card">
+            <div class="card-header">🎯 Today's Battleground</div>
+            <p style="font-size: 12px; color: var(--text-muted); margin: 0;">The map with the most unique Iraqi players today.</p>
+            <div class="map-card-inner" id="m-bg" style="background-image: none;">
+                <h3 class="map-title" id="m-title">Loading...</h3>
+                <div class="map-players" id="m-players">-- players</div>
+            </div>
+        </div>
+
+        <div class="insight-card" style="grid-column: 1 / -1;">
+            <div class="card-header">👑 Grinder of the Day</div>
+            <div id="grinder-content" style="display: none;">
+                <div class="grinder-profile">
+                    <img src="" class="grinder-avatar" id="g-avatar" alt="Avatar">
+                    <div class="grinder-info">
+                        <h3 id="g-name">Player Name</h3>
+                        <p id="g-count">0 Submissions Today</p>
+                    </div>
+                </div>
+                <button class="toggle-btn" onclick="toggleScores()">View Today's Scores ▼</button>
+                <div class="grinder-scores" id="g-scores-list">
+                    </div>
+            </div>
+            <div id="grinder-empty" style="color: var(--text-muted); font-size: 14px;">No scores recorded yet today.</div>
+        </div>
+
+    </div>
+</div>
+
+<footer style="
+    background-color: #1a1a1a; color: #ffffff; padding: 15px 10px 30px 10px; text-align: center; border-top: 4px solid #ff66aa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: -10px; box-shadow: none; filter: none;">
+    <div style="max-width: 1000px; margin: 0 auto;">
+        <h3 style="color: #ff66aa; margin-bottom: 5px; margin-top: 5px;">Osu! Iraq Today</h3>
+        <p style="margin: 5px 0; font-size: 0.9em; color: #eee;">Built with ❤️ for the Iraqi Community</p>
+        
+        <div style="margin: 15px 0;">
+            <a href="https://github.com/Ruybic/Test" style="color: #ff66aa; text-decoration: none; margin: 0 10px; font-weight: bold;">GitHub</a> • 
+            <a href="#discord" style="color: #ff66aa; text-decoration: none; margin: 0 10px; font-weight: bold;">Discord</a> • 
+            <a href="OIT_Document.html" style="color: #ff66aa; text-decoration: none; margin: 0 10px; font-weight: bold;">Documentation</a>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
+
+        <p style="font-size: 0.8em; color: #aaa; line-height: 1.6;">
+            This is a non-commercial project. No paid ads, no fees, just scores.<br>
+            Any "Ads" shown are <strong>Community Promotions</strong> for Iraqi creators.<br>
+            Not affiliated with ppy Pty Ltd // Data provided by osu! API.<br>
+            © 2026 Ruybic • Commit: <span id="footer-commit" style="color: #ff66aa; font-family: monospace;">7472e02</span> • Update: <span id="footer-time">2026-02-27 04:00 UTC</span>
+        </p>
+    </div>
+</footer>
+
+<script>
+// Menu toggle logic
+const menuBtn = document.getElementById('menuBtn');
+const dropdown = document.getElementById('myDropdown');
+menuBtn.onclick = (e) => { dropdown.classList.toggle("show"); e.stopPropagation(); };
+window.onclick = (e) => { if (!e.target.matches('.dropbtn')) dropdown.classList.remove('show'); };
+
+// Top Grinder Accordion toggle
+function toggleScores() {
+    const list = document.getElementById('g-scores-list');
+    list.classList.toggle('open');
+}
+
+// Format 24h to 12h Baghdad time
+function formatAMPM(hour24) {
+    if (hour24 === undefined || hour24 === null) return "--:--";
+    const suffix = hour24 >= 12 ? 'PM' : 'AM';
+    const hour12 = hour24 % 12 || 12;
+    return `${hour12}:00 ${suffix}`;
+}
+
+// Load data and paint UI
+async function loadInsights() {
+    try {
+        const response = await fetch('data/community_insights.json?t=' + Date.now());
+        if (!response.ok) throw new Error("File not found");
+        const data = await response.json();
+
+        // Find the latest date object in daily_stats
+        const dates = Object.keys(data.daily_stats).sort();
+        if (dates.length === 0) throw new Error("No daily stats");
+        const latestDate = dates[dates.length - 1];
+        const todayStats = data.daily_stats[latestDate];
+
+        document.getElementById('pulse-date').innerText = `Data recorded for: ${latestDate}`;
+
+        // 1. Fill Streak Data
+        const streak = data.community_streak;
+        document.getElementById('s-current').innerText = streak.current;
+        document.getElementById('s-longest').innerText = streak.longest;
+        
+        const totalScores = todayStats.total_scores || 0;
+        document.getElementById('s-label').innerText = `${totalScores} / 50 Scores Today`;
+        
+        let progress = Math.min(100, (totalScores / 50) * 100);
+        const bar = document.getElementById('s-bar');
+        setTimeout(() => { bar.style.width = progress + '%'; }, 300); // Small animation delay
+        if (progress >= 100) bar.style.backgroundColor = "#ffd700"; // Gold if goal met
+
+        // 2. Fill Peak Hours
+        document.getElementById('p-time').innerText = formatAMPM(todayStats.peak_hour_baghdad);
+        document.getElementById('p-subtext').innerText = `🔥 ${todayStats.peak_hour_submissions || 0} scores submitted`;
+
+        // 3. Fill Map Data
+        if (todayStats.most_played_map) {
+            document.getElementById('m-bg').style.backgroundImage = `url('${todayStats.most_played_map.cover}')`;
+            document.getElementById('m-title').innerText = todayStats.most_played_map.title;
+            document.getElementById('m-players').innerText = `👥 ${todayStats.most_played_map.unique_players} unique players`;
+        } else {
+            document.getElementById('m-title').innerText = "No map data today.";
+        }
+
+        // 4. Fill Top Grinder
+        if (todayStats.top_grinder && todayStats.top_grinder.scores.length > 0) {
+            document.getElementById('grinder-empty').style.display = 'none';
+            document.getElementById('grinder-content').style.display = 'block';
+
+            const g = todayStats.top_grinder;
+            document.getElementById('g-avatar').src = `https://a.ppy.sh/${g.user_id}`;
+            document.getElementById('g-name').innerText = g.user;
+            document.getElementById('g-count').innerText = `${g.count} Submissions Today`;
+
+            const scoreList = document.getElementById('g-scores-list');
+            scoreList.innerHTML = ''; // clear
+
+            // Sort scores by PP so the best plays are at the top of the menu
+            g.scores.sort((a, b) => b.pp - a.pp).forEach(score => {
+                scoreList.innerHTML += `
+                    <a href="https://osu.ppy.sh/scores/osu/${score.id}" target="_blank" class="mini-card">
+                        <div class="mini-rank r-${score.rank}">${score.rank}</div>
+                        <div class="mini-details">
+                            <span class="mini-title">${score.title}</span>
+                            <span class="mini-pp">${score.pp}pp</span>
+                        </div>
+                    </a>
+                `;
+            });
+        }
+
+    } catch (error) {
+        console.error("Could not load insights:", error);
+        document.getElementById('pulse-date').innerText = "Awaiting first data sync...";
+    }
+}
+
+// Initialize
+loadInsights();
+</script>
+</body>
+</html>

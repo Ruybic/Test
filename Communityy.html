@@ -10,7 +10,7 @@
         :root { --osu-pink: #ff66aa; --dark-base: #1c1c21; --panel-bg: #2e2e38; --text-main: #ffffff; --text-muted: #888895; }
         body { background-color: var(--dark-base); color: var(--text-main); font-family: 'Exo 2', sans-serif; margin: 0; }
 
-        /* --- HEADER (Reused perfectly) --- */
+        /* --- HEADER --- */
         header { background: #111116; padding: 12px 25px; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--panel-bg); position: sticky; top: 0; z-index: 1000; }
         .logo-box { margin-left: -10px; }
         .logo-box a { display: flex; align-items: center; gap: 12px; text-decoration: none; }
@@ -27,14 +27,32 @@
         .dropdown-content a:hover { background: rgba(255, 102, 170, 0.1); color: white; }
         .dropdown-content a.active { background: rgba(255, 102, 170, 0.15); color: white; font-weight: 700; }
 
+        /* --- CONTROLS & CALENDAR --- */
+        .controls-bar { max-width: 1200px; margin: 30px auto 10px; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; position: relative; }
+        .section-label { color: var(--osu-pink); font-weight: 800; font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; margin: 0; }
+        .date-btn { background: transparent; border: 1px solid var(--osu-pink); color: var(--osu-pink); padding: 8px 16px; border-radius: 4px; font-size: 12px; font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: 0.2s; }
+        .date-btn:hover { background: var(--osu-pink); color: white; }
+        
+        .calendar-popup { display: none; position: absolute; top: 50px; right: 20px; z-index: 999; background: #25252e; border: 1px solid #444; border-radius: 8px; width: 300px; padding: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .calendar-popup.open { display: block; }
+        .cal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .cal-month { font-weight: 800; color: white; }
+        .cal-nav { cursor: pointer; color: var(--text-muted); padding: 5px; }
+        .cal-nav:hover { color: var(--osu-pink); }
+        .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; text-align: center; }
+        .cal-day-label { font-size: 10px; color: var(--text-muted); padding-bottom: 5px; }
+        .cal-day { padding: 8px; font-size: 12px; cursor: pointer; border-radius: 4px; color: #eee; }
+        .cal-day:hover { background: #3e3e4a; }
+        .cal-day.active { background: rgba(255, 102, 170, 0.2); border: 1px solid var(--osu-pink); color: white; font-weight: bold; }
+        .cal-day.empty { pointer-events: none; }
+        .cal-day.no-data { opacity: 0.3; cursor: not-allowed; }
+
         /* --- COMMUNITY DASHBOARD STYLES --- */
-        .dashboard-container { max-width: 1200px; margin: 40px auto; padding: 0 20px; min-height: 60vh; }
+        .dashboard-container { max-width: 1200px; margin: 20px auto 40px; padding: 0 20px; min-height: 60vh; }
         .section-title { color: white; font-size: 28px; font-weight: 800; margin-bottom: 5px; }
         .section-subtitle { color: var(--text-muted); font-size: 14px; margin-bottom: 30px; }
 
         .insights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
-
-        /* General Card */
         .insight-card { background: var(--panel-bg); border-radius: 14px; padding: 25px; border: 1px solid #3e3e4a; position: relative; overflow: hidden; display: flex; flex-direction: column; }
         .card-header { font-size: 12px; color: var(--osu-pink); font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; }
 
@@ -67,8 +85,6 @@
         
         .grinder-scores { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
         .grinder-scores.open { max-height: 400px; overflow-y: auto; margin-top: 15px; }
-        
-        /* SCROLLBAR FOR GRINDER SCORES */
         .grinder-scores::-webkit-scrollbar { width: 6px; }
         .grinder-scores::-webkit-scrollbar-track { background: #1a1a20; border-radius: 4px; }
         .grinder-scores::-webkit-scrollbar-thumb { background: #3e3e4a; border-radius: 4px; }
@@ -80,14 +96,12 @@
         .mini-title { color: white; font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
         .mini-pp { color: var(--osu-pink); font-size: 11px; font-weight: bold; }
         
-        /* Rank Colors Recycled */
         .r-SS, .r-SSH { color: #f0f0f0; text-shadow: 0 0 5px #fff; }
         .r-S, .r-SH { color: #ffcc22; }
         .r-A { color: #88f000; }
         .r-B { color: #22ccff; }
         .r-C { color: #ff77ff; }
         .r-D { color: #ff4444; }
-
     </style>
 </head>
 <body>
@@ -102,49 +116,43 @@
     <div class="dropdown">
         <button class="dropbtn" id="menuBtn">Menu ▼</button>
         <div class="dropdown-content" id="myDropdown">
-            <a href="Test.html">
-                Scores
-                <span class="menu-desc">See what happened today?</span>
-            </a>
-            <a href="rankings.html">
-                Rankings
-                <span class="menu-desc">See player leaderboards</span>
-            </a>
-            <a href="videos.html">
-                Videos
-                <span class="menu-desc">Watch gameplay and highlights</span>
-            </a>
-            <a href="mapping.html">
-                Mapping
-                <span class="menu-desc">Explore beatmap creations</span>
-            </a>
-            <a href="Community.html" class="active">
-                Community
-                <span class="menu-desc">Connect with the community</span>
-            </a>
+            <a href="Test.html">Scores <span class="menu-desc">See what happened today?</span></a>
+            <a href="rankings.html">Rankings <span class="menu-desc">See player leaderboards</span></a>
+            <a href="videos.html">Videos <span class="menu-desc">Watch gameplay and highlights</span></a>
+            <a href="mapping.html">Mapping <span class="menu-desc">Explore beatmap creations</span></a>
+            <a href="Community.html" class="active">Community <span class="menu-desc">Connect with the community</span></a>
         </div>
     </div>
 </header>
 
+<div class="controls-bar">
+    <span class="section-label" id="currentDateLabel">LATEST INSIGHTS</span>
+    <button class="date-btn" id="calendarBtn">📅 SELECT DATE</button>
+    
+    <div class="calendar-popup" id="calendarPopup">
+        <div class="cal-header">
+            <span class="cal-nav" onclick="changeMonth(-1)">&#9664;</span>
+            <span class="cal-month" id="calMonthYear"></span>
+            <span class="cal-nav" onclick="changeMonth(1)">&#9654;</span>
+        </div>
+        <div class="cal-grid" id="calGrid"></div>
+    </div>
+</div>
+
 <div class="dashboard-container">
     <h1 class="section-title">Community Daily Pulse</h1>
-    <p class="section-subtitle" id="pulse-date">Loading today's insights...</p>
+    <p class="section-subtitle" id="pulse-date">Loading insights...</p>
 
     <div class="insights-grid">
-        
         <div class="insight-card">
             <div class="card-header">🔥 Daily Activity Streak</div>
             <div class="streak-numbers">
-                <div>
-                    <span class="streak-big" id="s-current">0</span> <span style="color:var(--text-muted)">Days</span>
-                </div>
+                <div><span class="streak-big" id="s-current">0</span> <span style="color:var(--text-muted)">Days</span></div>
                 <div class="streak-small">Longest: <span id="s-longest">0</span></div>
             </div>
             <p style="font-size: 12px; color: var(--text-muted); margin: 0;">Goal: 50+ scores submitted daily.</p>
-            <div class="progress-container">
-                <div class="progress-bar" id="s-bar"></div>
-            </div>
-            <div class="progress-label" id="s-label">0 / 50 Scores Today</div>
+            <div class="progress-container"><div class="progress-bar" id="s-bar"></div></div>
+            <div class="progress-label" id="s-label">0 / 50 Scores</div>
         </div>
 
         <div class="insight-card">
@@ -170,159 +178,174 @@
                     <img src="" class="grinder-avatar" id="g-avatar" alt="Avatar">
                     <div class="grinder-info">
                         <h3 id="g-name">Player Name</h3>
-                        <p id="g-count">0 Submissions Today</p>
+                        <p id="g-count">0 Submissions</p>
                     </div>
                 </div>
-                <button class="toggle-btn" onclick="toggleScores()">View Today's Scores ▼</button>
-                <div class="grinder-scores" id="g-scores-list">
-                    </div>
+                <button class="toggle-btn" onclick="toggleScores()">View Scores ▼</button>
+                <div class="grinder-scores" id="g-scores-list"></div>
             </div>
-            <div id="grinder-empty" style="color: var(--text-muted); font-size: 14px;">No scores recorded yet today.</div>
+            <div id="grinder-empty" style="color: var(--text-muted); font-size: 14px;">No scores recorded for this date.</div>
         </div>
-
     </div>
 </div>
 
-<footer style="
-    background-color: #1a1a1a; color: #ffffff; padding: 15px 10px 30px 10px; text-align: center; border-top: 4px solid #ff66aa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: -10px; box-shadow: none; filter: none;">
+<footer style="background-color: #1a1a1a; color: #ffffff; padding: 15px 10px 30px 10px; text-align: center; border-top: 4px solid #ff66aa; margin-top: -10px;">
     <div style="max-width: 1000px; margin: 0 auto;">
         <h3 style="color: #ff66aa; margin-bottom: 5px; margin-top: 5px;">Osu! Iraq Today</h3>
         <p style="margin: 5px 0; font-size: 0.9em; color: #eee;">Built with ❤️ for the Iraqi Community</p>
-        
-        <div style="margin: 15px 0;">
-            <a href="https://github.com/Ruybic/Test" style="color: #ff66aa; text-decoration: none; margin: 0 10px; font-weight: bold;">GitHub</a> • 
-            <a href="#discord" style="color: #ff66aa; text-decoration: none; margin: 0 10px; font-weight: bold;">Discord</a> • 
-            <a href="OIT_Document.html" style="color: #ff66aa; text-decoration: none; margin: 0 10px; font-weight: bold;">Documentation</a>
-        </div>
-
-        <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
-
-        <p style="font-size: 0.8em; color: #aaa; line-height: 1.6;">
-            This is a non-commercial project. No paid ads, no fees, just scores.<br>
-            Any "Ads" shown are <strong>Community Promotions</strong> for Iraqi creators.<br>
-            Not affiliated with ppy Pty Ltd // Data provided by osu! API.<br>
-            © 2026 Ruybic • Commit: <span id="footer-commit" style="color: #ff66aa; font-family: monospace;">7472e02</span> • Update: <span id="footer-time">2026-02-27 04:00 UTC</span>
-        </p>
+        <p style="font-size: 0.8em; color: #aaa; line-height: 1.6;">© 2026 Ruybic • Data provided by osu! API.</p>
     </div>
 </footer>
 
 <script>
-// --- UI TOGGLE LOGIC ---
+// --- GLOBALS & UI TOGGLES ---
+let globalInsights = { daily_stats: {}, community_streak: { current: 0, longest: 0 } };
+let currentDate = new Date();
+
 const menuBtn = document.getElementById('menuBtn');
 const dropdown = document.getElementById('myDropdown');
-
-menuBtn.onclick = (e) => { 
-    dropdown.classList.toggle("show"); 
-    e.stopPropagation(); 
-};
-
+menuBtn.onclick = (e) => { dropdown.classList.toggle("show"); e.stopPropagation(); };
 window.onclick = (e) => { 
     if (!e.target.matches('.dropbtn')) dropdown.classList.remove('show'); 
+    if (!e.target.closest('#calendarPopup') && !e.target.closest('#calendarBtn')) {
+        document.getElementById('calendarPopup').classList.remove('open');
+    }
 };
 
-function toggleScores() {
-    const list = document.getElementById('g-scores-list');
-    list.classList.toggle('open');
-}
+document.getElementById('calendarBtn').onclick = () => {
+    document.getElementById('calendarPopup').classList.toggle('open');
+    renderCalendar(currentDate);
+};
 
-// --- FORMATTERS ---
+function toggleScores() { document.getElementById('g-scores-list').classList.toggle('open'); }
 function formatAMPM(hour24) {
-    if (hour24 === undefined || hour24 === null) return "--:--";
+    if (hour24 === undefined || hour24 === null || isNaN(hour24)) return "--:--";
     const suffix = hour24 >= 12 ? 'PM' : 'AM';
     const hour12 = hour24 % 12 || 12;
     return `${hour12}:00 ${suffix}`;
 }
 
-// --- CORE DATA LOGIC ---
-async function loadInsights() {
-    const pulseLabel = document.getElementById('pulse-date');
+// --- CALENDAR LOGIC ---
+function renderCalendar(date) {
+    const month = date.getMonth();
+    const year = date.getFullYear();
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
     
-    try {
-        // 1. Calculate Yesterday's Date (YYYY-MM-DD)
-        const dateObj = new Date();
-        dateObj.setDate(dateObj.getDate() - 1);
-        const targetDate = dateObj.toISOString().split('T')[0];
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    document.getElementById('calMonthYear').innerText = `${monthNames[month]} ${year}`;
+    
+    const grid = document.getElementById('calGrid');
+    grid.innerHTML = `<div class="cal-day-label">S</div><div class="cal-day-label">M</div><div class="cal-day-label">T</div><div class="cal-day-label">W</div><div class="cal-day-label">T</div><div class="cal-day-label">F</div><div class="cal-day-label">S</div>`;
 
-        // 2. Fetch insights with cache-buster
-        const response = await fetch('/Test/data/community_insights.json?t=' + Date.now());
-        if (!response.ok) throw new Error("Insights file not found");
+    for (let i = 0; i < firstDay; i++) grid.innerHTML += `<div class="cal-day empty"></div>`;
+
+    for (let i = 1; i <= daysInMonth; i++) {
+        const mm = String(month + 1).padStart(2, '0');
+        const dd = String(i).padStart(2, '0');
+        const dateKey = `${year}-${mm}-${dd}`;
         
-        const data = await response.json();
-        const stats = data.daily_stats[targetDate];
-
-        // 3. Inform the user (Labeling as Yesterday's Recap)
-        if (!stats) {
-            pulseLabel.innerHTML = `<span style="color: #ffcc22;">⚠️ Note:</span> Recap for <strong>${targetDate}</strong> is being generated. Showing latest available...`;
-            // Fallback: If yesterday isn't there yet, find the most recent key available
-            const fallbackDate = Object.keys(data.daily_stats).sort().reverse()[0];
-            renderUI(data.daily_stats[fallbackDate], data.community_streak, fallbackDate);
+        let extraClass = "";
+        // If data exists for this day, highlight it. Otherwise, dim it.
+        if (globalInsights.daily_stats[dateKey]) {
+            extraClass = " active";
         } else {
-            pulseLabel.innerHTML = `
-                <span style="color: var(--osu-pink); margin-right: 5px;">📊 Yesterday's Recap:</span> 
-                <strong>${targetDate}</strong> 
-                <span style="font-size: 0.85em; color: var(--text-muted); margin-left: 10px;">(Full 24h Report)</span>
-            `;
-            renderUI(stats, data.community_streak, targetDate);
+            extraClass = " no-data";
         }
 
-    } catch (error) {
-        console.error("Community Insight Error:", error);
-        pulseLabel.innerHTML = `<span style="color: #ff4444;">⚠️ System Offline:</span> Check GitHub Actions for data sync status.`;
+        grid.innerHTML += `<div class="cal-day${extraClass}" onclick="selectDay(${year}, ${month + 1}, ${i})">${i}</div>`;
     }
 }
 
-// Separate Render function to keep things clean
-function renderUI(stats, streak, dateString) {
-    // --- STREAK DATA ---
+function changeMonth(delta) {
+    currentDate.setMonth(currentDate.getMonth() + delta);
+    renderCalendar(currentDate);
+}
+
+// --- DATA RENDERING ---
+function selectDay(year, month, day) {
+    const mm = String(month).padStart(2, '0');
+    const dd = String(day).padStart(2, '0');
+    const dateKey = `${year}-${mm}-${dd}`;
+    
+    document.getElementById('calendarPopup').classList.remove('open');
+    
+    const stats = globalInsights.daily_stats[dateKey];
+    if (stats) {
+        document.getElementById('pulse-date').innerHTML = `📊 Insights for: <strong>${dateKey}</strong>`;
+        renderUI(stats, globalInsights.community_streak);
+    } else {
+        document.getElementById('pulse-date').innerHTML = `<span style="color: #ff4444;">⚠️ No data available for ${dateKey}.</span>`;
+        clearUI();
+    }
+}
+
+function clearUI() {
+    document.getElementById('p-time').innerText = "--:--";
+    document.getElementById('p-subtext').innerText = "No data";
+    document.getElementById('m-bg').style.backgroundImage = 'none';
+    document.getElementById('m-title').innerText = "Unknown";
+    document.getElementById('m-players').innerText = "-- players";
+    document.getElementById('grinder-content').style.display = 'none';
+    document.getElementById('grinder-empty').style.display = 'block';
+    document.getElementById('s-bar').style.width = '0%';
+    document.getElementById('s-label').innerText = "0 / 50 Scores";
+}
+
+function renderUI(stats, streak) {
+    // STREAK (Current & Longest remain global, bar updates per day)
     document.getElementById('s-current').innerText = streak.current || 0;
     document.getElementById('s-longest').innerText = streak.longest || 0;
     
     const totalScores = stats.total_scores || 0;
     document.getElementById('s-label').innerText = `${totalScores} / 50 Scores recorded`;
-    
     const bar = document.getElementById('s-bar');
     let progress = Math.min(100, (totalScores / 50) * 100);
     setTimeout(() => { 
         bar.style.width = progress + '%';
-        if (progress >= 100) bar.style.backgroundColor = "#ffd700"; 
-    }, 300);
+        bar.style.backgroundColor = progress >= 100 ? "#ffd700" : "var(--osu-pink)"; 
+    }, 100);
 
-    // --- PEAK HOURS ---
+    // PEAK HOURS
     document.getElementById('p-time').innerText = formatAMPM(stats.peak_hour_baghdad);
-    document.getElementById('p-subtext').innerText = `🔥 Peak of ${stats.peak_hour_submissions || 0} scores`;
+    document.getElementById('p-subtext').innerText = `🔥 Peak activity window`;
 
-    // --- MOST PLAYED MAP ---
+    // MOST PLAYED MAP
     const mapBox = document.getElementById('m-bg');
     if (stats.most_played_map) {
         mapBox.style.backgroundImage = `url('${stats.most_played_map.cover}')`;
         document.getElementById('m-title').innerText = stats.most_played_map.title;
         document.getElementById('m-players').innerText = `👥 ${stats.most_played_map.unique_players} unique players`;
+    } else {
+        mapBox.style.backgroundImage = 'none';
+        document.getElementById('m-title').innerText = "No maps played";
+        document.getElementById('m-players').innerText = "0 players";
     }
 
-    // --- TOP GRINDER ---
+    // TOP GRINDER
     const grinderContent = document.getElementById('grinder-content');
     const grinderEmpty = document.getElementById('grinder-empty');
 
-    if (stats.top_grinder && stats.top_grinder.scores.length > 0) {
+    if (stats.top_grinder && stats.top_grinder.scores && stats.top_grinder.scores.length > 0) {
         grinderEmpty.style.display = 'none';
         grinderContent.style.display = 'block';
 
         const g = stats.top_grinder;
         document.getElementById('g-avatar').src = `https://a.ppy.sh/${g.user_id}`;
         document.getElementById('g-name').innerText = g.user;
-        document.getElementById('g-count').innerText = `${g.count} Submissions on this day`;
+        document.getElementById('g-count').innerText = `${g.count} Submissions`;
 
         const scoreList = document.getElementById('g-scores-list');
         scoreList.innerHTML = ''; 
-
-        // Sort by PP and render mini-cards
         g.scores.sort((a, b) => (b.pp || 0) - (a.pp || 0)).forEach(score => {
+            const beatmapsetId = score.beatmapset ? score.beatmapset.id : '';
+            const title = score.beatmapset ? score.beatmapset.title : 'Unknown Map';
             scoreList.innerHTML += `
-                <a href="https://osu.ppy.sh/scores/osu/${score.id}" target="_blank" class="mini-card">
+                <a href="https://osu.ppy.sh/scores/osu/${score.id || score.score_id}" target="_blank" class="mini-card">
                     <div class="mini-rank r-${score.rank}">${score.rank}</div>
                     <div class="mini-details">
-                        <span class="mini-title">${score.title}</span>
-                        <span class="mini-pp">${score.pp > 0 ? score.pp + 'pp' : 'No PP'}</span>
+                        <span class="mini-title">${title}</span>
+                        <span class="mini-pp">${score.pp ? Math.round(score.pp) + 'pp' : 'No PP'}</span>
                     </div>
                 </a>
             `;
@@ -333,10 +356,37 @@ function renderUI(stats, streak, dateString) {
     }
 }
 
-// Run on page load
-loadInsights();
-</script>
+// --- INIT APP ---
+async function init() {
+    try {
+        const response = await fetch('/Test/data/community_insights.json?t=' + Date.now());
+        if (!response.ok) throw new Error("Could not load insights");
+        
+        globalInsights = await response.json();
+        
+        // Find the most recent date we have data for
+        const availableDates = Object.keys(globalInsights.daily_stats).sort();
+        
+        if (availableDates.length > 0) {
+            const latestDate = availableDates[availableDates.length - 1];
+            const [y, m, d] = latestDate.split('-');
+            
+            // Set calendar to that month
+            currentDate = new Date(y, m - 1, 1);
+            renderCalendar(currentDate);
+            
+            // Select that day
+            selectDay(parseInt(y), parseInt(m), parseInt(d));
+        } else {
+            document.getElementById('pulse-date').innerText = "No historical data found.";
+        }
+    } catch (error) {
+        console.error("Init Error:", error);
+        document.getElementById('pulse-date').innerHTML = `<span style="color: #ff4444;">⚠️ Offline: Unable to load community data.</span>`;
+    }
+}
 
-    
+init();
+</script>
 </body>
 </html>

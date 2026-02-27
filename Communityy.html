@@ -207,19 +207,25 @@
 </footer>
 
 <script>
-// Menu toggle logic
+// --- UI TOGGLE LOGIC ---
 const menuBtn = document.getElementById('menuBtn');
 const dropdown = document.getElementById('myDropdown');
-menuBtn.onclick = (e) => { dropdown.classList.toggle("show"); e.stopPropagation(); };
-window.onclick = (e) => { if (!e.target.matches('.dropbtn')) dropdown.classList.remove('show'); };
 
-// Top Grinder Accordion toggle
+menuBtn.onclick = (e) => { 
+    dropdown.classList.toggle("show"); 
+    e.stopPropagation(); 
+};
+
+window.onclick = (e) => { 
+    if (!e.target.matches('.dropbtn')) dropdown.classList.remove('show'); 
+};
+
 function toggleScores() {
     const list = document.getElementById('g-scores-list');
     list.classList.toggle('open');
 }
 
-// Format 24h to 12h Baghdad time
+// --- FORMATTERS ---
 function formatAMPM(hour24) {
     if (hour24 === undefined || hour24 === null) return "--:--";
     const suffix = hour24 >= 12 ? 'PM' : 'AM';
@@ -227,101 +233,110 @@ function formatAMPM(hour24) {
     return `${hour12}:00 ${suffix}`;
 }
 
+// --- CORE DATA LOGIC ---
 async function loadInsights() {
     const pulseLabel = document.getElementById('pulse-date');
     
     try {
-        // 1. Fetch the insights file with a cache-buster
+        // 1. Calculate Yesterday's Date (YYYY-MM-DD)
+        const dateObj = new Date();
+        dateObj.setDate(dateObj.getDate() - 1);
+        const targetDate = dateObj.toISOString().split('T')[0];
+
+        // 2. Fetch insights with cache-buster
         const response = await fetch('/Test/data/community_insights.json?t=' + Date.now());
-        if (!response.ok) throw new Error("Insights file not found on server");
+        if (!response.ok) throw new Error("Insights file not found");
         
         const data = await response.json();
+        const stats = data.daily_stats[targetDate];
 
-        // 2. SMART DATE PICKER: Get all dates and find the most recent one
-        const availableDates = Object.keys(data.daily_stats).sort();
-        if (availableDates.length === 0) throw new Error("No daily stats recorded yet");
-        
-        const latestDate = availableDates[availableDates.length - 1];
-        const stats = data.daily_stats[latestDate];
-
-        // 3. UPDATE DATE LABEL (Informs the user clearly)
-        pulseLabel.innerHTML = `
-            <span style="color: #88ffcc; margin-right: 5px;">●</span> 
-            Showing data for: <strong>${latestDate}</strong> 
-            <span style="font-size: 0.85em; color: var(--text-muted); margin-left: 10px;">(Syncs Daily 04:00 UTC)</span>
-        `;
-
-        // --- 4. STREAK DATA ---
-        const streak = data.community_streak;
-        document.getElementById('s-current').innerText = streak.current || 0;
-        document.getElementById('s-longest').innerText = streak.longest || 0;
-        
-        const totalScores = stats.total_scores || 0;
-        document.getElementById('s-label').innerText = `${totalScores} / 50 Scores Today`;
-        
-        const bar = document.getElementById('s-bar');
-        let progress = Math.min(100, (totalScores / 50) * 100);
-        setTimeout(() => { 
-            bar.style.width = progress + '%';
-            if (progress >= 100) bar.style.backgroundColor = "#ffd700"; // Turn gold if goal met
-        }, 300);
-
-        // --- 5. PEAK HOURS ---
-        // Ensure formatAMPM exists in your script
-        document.getElementById('p-time').innerText = formatAMPM(stats.peak_hour_baghdad);
-        document.getElementById('p-subtext').innerText = `🔥 ${stats.peak_hour_submissions || 0} scores in one hour`;
-
-        // --- 6. MOST PLAYED MAP ---
-        const mapBox = document.getElementById('m-bg');
-        if (stats.most_played_map) {
-            mapBox.style.backgroundImage = `url('${stats.most_played_map.cover}')`;
-            document.getElementById('m-title').innerText = stats.most_played_map.title;
-            document.getElementById('m-players').innerText = `👥 ${stats.most_played_map.unique_players} unique players`;
+        // 3. Inform the user (Labeling as Yesterday's Recap)
+        if (!stats) {
+            pulseLabel.innerHTML = `<span style="color: #ffcc22;">⚠️ Note:</span> Recap for <strong>${targetDate}</strong> is being generated. Showing latest available...`;
+            // Fallback: If yesterday isn't there yet, find the most recent key available
+            const fallbackDate = Object.keys(data.daily_stats).sort().reverse()[0];
+            renderUI(data.daily_stats[fallbackDate], data.community_streak, fallbackDate);
         } else {
-            document.getElementById('m-title').innerText = "No map data for this day.";
-        }
-
-        // --- 7. TOP GRINDER (With Dropdown List) ---
-        const grinderContent = document.getElementById('grinder-content');
-        const grinderEmpty = document.getElementById('grinder-empty');
-
-        if (stats.top_grinder && stats.top_grinder.scores.length > 0) {
-            grinderEmpty.style.display = 'none';
-            grinderContent.style.display = 'block';
-
-            const g = stats.top_grinder;
-            document.getElementById('g-avatar').src = `https://a.ppy.sh/${g.user_id}`;
-            document.getElementById('g-name').innerText = g.user;
-            document.getElementById('g-count').innerText = `${g.count} Submissions recorded`;
-
-            const scoreList = document.getElementById('g-scores-list');
-            scoreList.innerHTML = ''; // Clear previous items
-
-            // Sort by PP (High to Low) and render
-            const sortedScores = g.scores.sort((a, b) => (b.pp || 0) - (a.pp || 0));
-            sortedScores.forEach(score => {
-                scoreList.innerHTML += `
-                    <a href="https://osu.ppy.sh/scores/osu/${score.id}" target="_blank" class="mini-card">
-                        <div class="mini-rank r-${score.rank}">${score.rank}</div>
-                        <div class="mini-details">
-                            <span class="mini-title">${score.title}</span>
-                            <span class="mini-pp">${score.pp > 0 ? score.pp + 'pp' : 'No PP'}</span>
-                        </div>
-                    </a>
-                `;
-            });
-        } else {
-            grinderContent.style.display = 'none';
-            grinderEmpty.style.display = 'block';
+            pulseLabel.innerHTML = `
+                <span style="color: var(--osu-pink); margin-right: 5px;">📊 Yesterday's Recap:</span> 
+                <strong>${targetDate}</strong> 
+                <span style="font-size: 0.85em; color: var(--text-muted); margin-left: 10px;">(Full 24h Report)</span>
+            `;
+            renderUI(stats, data.community_streak, targetDate);
         }
 
     } catch (error) {
         console.error("Community Insight Error:", error);
-        pulseLabel.innerHTML = `<span style="color: #ff4444;">⚠️ System Offline:</span> Awaiting community data sync.`;
+        pulseLabel.innerHTML = `<span style="color: #ff4444;">⚠️ System Offline:</span> Check GitHub Actions for data sync status.`;
     }
 }
-// Initialize
+
+// Separate Render function to keep things clean
+function renderUI(stats, streak, dateString) {
+    // --- STREAK DATA ---
+    document.getElementById('s-current').innerText = streak.current || 0;
+    document.getElementById('s-longest').innerText = streak.longest || 0;
+    
+    const totalScores = stats.total_scores || 0;
+    document.getElementById('s-label').innerText = `${totalScores} / 50 Scores recorded`;
+    
+    const bar = document.getElementById('s-bar');
+    let progress = Math.min(100, (totalScores / 50) * 100);
+    setTimeout(() => { 
+        bar.style.width = progress + '%';
+        if (progress >= 100) bar.style.backgroundColor = "#ffd700"; 
+    }, 300);
+
+    // --- PEAK HOURS ---
+    document.getElementById('p-time').innerText = formatAMPM(stats.peak_hour_baghdad);
+    document.getElementById('p-subtext').innerText = `🔥 Peak of ${stats.peak_hour_submissions || 0} scores`;
+
+    // --- MOST PLAYED MAP ---
+    const mapBox = document.getElementById('m-bg');
+    if (stats.most_played_map) {
+        mapBox.style.backgroundImage = `url('${stats.most_played_map.cover}')`;
+        document.getElementById('m-title').innerText = stats.most_played_map.title;
+        document.getElementById('m-players').innerText = `👥 ${stats.most_played_map.unique_players} unique players`;
+    }
+
+    // --- TOP GRINDER ---
+    const grinderContent = document.getElementById('grinder-content');
+    const grinderEmpty = document.getElementById('grinder-empty');
+
+    if (stats.top_grinder && stats.top_grinder.scores.length > 0) {
+        grinderEmpty.style.display = 'none';
+        grinderContent.style.display = 'block';
+
+        const g = stats.top_grinder;
+        document.getElementById('g-avatar').src = `https://a.ppy.sh/${g.user_id}`;
+        document.getElementById('g-name').innerText = g.user;
+        document.getElementById('g-count').innerText = `${g.count} Submissions on this day`;
+
+        const scoreList = document.getElementById('g-scores-list');
+        scoreList.innerHTML = ''; 
+
+        // Sort by PP and render mini-cards
+        g.scores.sort((a, b) => (b.pp || 0) - (a.pp || 0)).forEach(score => {
+            scoreList.innerHTML += `
+                <a href="https://osu.ppy.sh/scores/osu/${score.id}" target="_blank" class="mini-card">
+                    <div class="mini-rank r-${score.rank}">${score.rank}</div>
+                    <div class="mini-details">
+                        <span class="mini-title">${score.title}</span>
+                        <span class="mini-pp">${score.pp > 0 ? score.pp + 'pp' : 'No PP'}</span>
+                    </div>
+                </a>
+            `;
+        });
+    } else {
+        grinderContent.style.display = 'none';
+        grinderEmpty.style.display = 'block';
+    }
+}
+
+// Run on page load
 loadInsights();
 </script>
+
+    
 </body>
 </html>

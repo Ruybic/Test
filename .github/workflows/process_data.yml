@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Update Mode'
+        description: 'Update Mode (Daily vs Full History)'
         required: true
         default: 'daily'
         type: choice
@@ -25,7 +25,6 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v4
         with:
-          # Fetches all history so we don't have git conflicts
           fetch-depth: 0 
 
       - name: Setup Node
@@ -35,14 +34,12 @@ jobs:
 
       - name: Run Insights Script
         run: |
-          # If the user clicks "backfill", run the history script. 
-          # Otherwise, run the daily processor.
           if [ "${{ github.event.inputs.mode }}" == "backfill" ]; then
-            echo "🚀 Running FULL HISTORY backfill..."
-            node GI_backfill.js
+            echo "🚀 Mode: FULL BACKFILL - Recalculating all history..."
+            node GI_backfill.js --all
           else
-            echo "📊 Running DAILY insight update..."
-            node GI.js
+            echo "📊 Mode: DAILY - Processing yesterday's data..."
+            node GI_backfill.js
           fi
 
       - name: Commit and Push
@@ -50,9 +47,9 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add data/community_insights.json
-          # Only commit if there are actually changes to the file
+          
           if git diff --staged --quiet; then
-            echo "No changes to commit."
+            echo "No changes to community_insights.json found. Skipping commit."
           else
             git commit -m "Community Pulse Sync [$(date +'%Y-%m-%d')]"
             git push

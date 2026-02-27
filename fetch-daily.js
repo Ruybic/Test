@@ -115,6 +115,35 @@ async function main(){
   }
   fs.writeFileSync(indexFile, JSON.stringify(indexData, null, 2));
 
+    // 4. Update HTML Footers
+  console.log("📝 Updating HTML footers with latest timestamp and commit...");
+  
+  // Get the short commit hash (GitHub Actions provides this automatically)
+  const commitHash = process.env.GITHUB_SHA ? process.env.GITHUB_SHA.substring(0, 7) : 'local';
+  
+  // Format the current time to look clean (e.g., 2026-02-27 04:00 UTC)
+  const updateTime = new Date().toISOString().replace('T', ' ').substring(0, 16) + ' UTC';
+
+  // List all the HTML files that have your footer
+  const htmlFiles = ['Test.html', 'OIT_Document.html', 'index.html', 'rankings.html', 'videos.html', 'mapping.html', 'socials.html']; 
+
+  for (const file of htmlFiles) {
+    if (fs.existsSync(file)) {
+      let content = fs.readFileSync(file, 'utf8');
+      
+      // Check if the IDs exist in the file before trying to replace
+      if (content.includes('id="footer-commit"') && content.includes('id="footer-time"')) {
+          content = content.replace(/(<span[^>]*id="footer-commit"[^>]*>)[^<]*(<\/span>)/i, `$1${commitHash}$2`);
+          content = content.replace(/(<span[^>]*id="footer-time"[^>]*>)[^<]*(<\/span>)/i, `$1${updateTime}$2`);
+          
+          fs.writeFileSync(file, content, 'utf8');
+          console.log(`   ✅ Updated footer in ${file}`);
+      } else {
+          console.log(`   ⚠️ Skipping ${file}: Footer IDs not found.`);
+      }
+    }
+  }
+
   console.log(`🚀 Done! Archived ${uniqueScores.length} scores for today.`);
 }
 

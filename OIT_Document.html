@@ -69,11 +69,16 @@
         
         .doc-container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
         
-        .doc-section {
-            background: var(--panel-bg); border-radius: 14px; padding: 35px; margin-bottom: 30px;
-            border: 1px solid #3e3e4a; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        
+.doc-section {
+    background: var(--panel-bg); 
+    border-radius: 14px; 
+    padding: 35px; 
+    margin-bottom: 30px;
+    border: 1px solid #3e3e4a; 
+    /* REMOVED: box-shadow and any filters that cause glowing */
+    box-shadow: none; 
+}
+
 .doc-section h2 { 
     color: var(--osu-pink); 
     font-size: 24px; 
@@ -84,8 +89,20 @@
     gap: 10px; 
     border-bottom: 2px solid rgba(255, 102, 170, 0.2);
     padding-bottom: 10px;
-    text-shadow: 0 0 10px rgba(255, 102, 170, 0.3); /* Adds a subtle pink glow */
+    /* ADDED: Ensures no text glow */
+    text-shadow: none; 
 }
+
+/* Remove glow from the highlight boxes too */
+.highlight-box {
+    background: #25252e; /* Solid dark color instead of transparent pink */
+    border-left: 4px solid var(--osu-pink);
+    padding: 15px 20px; 
+    border-radius: 0 8px 8px 0; 
+    margin: 20px 0;
+    box-shadow: none;
+}
+
 
 
         .process-flow {

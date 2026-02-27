@@ -2,11 +2,21 @@ name: Generate Community Insights
 
 on:
   schedule:
-    - cron: '0 5 * * *' # Runs at 05:00 UTC (08:00 Baghdad) to ensure files are uploaded
-  workflow_dispatch:      # Allows you to click "Run Workflow" manually
+    # Runs at 05:00 UTC (08:00 Baghdad) daily
+    - cron: '0 5 * * *' 
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Update Mode'
+        required: true
+        default: 'daily'
+        type: choice
+        options:
+          - daily
+          - backfill
 
 jobs:
-  build:
+  process:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -14,19 +24,36 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
+        with:
+          # Fetches all history so we don't have git conflicts
+          fetch-depth: 0 
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      - name: Run Insights Processor
-        run: node GI.js
+      - name: Run Insights Script
+        run: |
+          # If the user clicks "backfill", run the history script. 
+          # Otherwise, run the daily processor.
+          if [ "${{ github.event.inputs.mode }}" == "backfill" ]; then
+            echo "🚀 Running FULL HISTORY backfill..."
+            node GI_backfill.js
+          else
+            echo "📊 Running DAILY insight update..."
+            node GI.js
+          fi
 
-      - name: Save Insights to Repo
+      - name: Commit and Push
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add data/community_insights.json
-          git commit -m "Community Pulse Update [$(date +'%Y-%m-%d')]" || echo "No changes"
-          git push
+          # Only commit if there are actually changes to the file
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Community Pulse Sync [$(date +'%Y-%m-%d')]"
+            git push
+          fi

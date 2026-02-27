@@ -5,8 +5,8 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Helper to get YYYY-MM-DD from a path
 function getFormattedDate(filePath) {
-    // Extracts YYYY-MM-DD from paths like data/2026/02/25.json
     const parts = filePath.split(path.sep);
     const day = parts.pop().replace('.json', '');
     const month = parts.pop();
@@ -14,91 +14,108 @@ function getFormattedDate(filePath) {
     return `${year}-${month}-${day}`;
 }
 
-function processAllHistory() {
+async function run() {
+    const args = process.argv.slice(2);
+    const isFullBackfill = args.includes('--all');
+    
     const dataDir = path.join(__dirname, 'data');
     const insightsPath = path.join(__dirname, 'data', 'community_insights.json');
-    let allValidFiles = [];
+    let filesToProcess = [];
 
-    console.log("🔍 Scanning data directory for historical files...");
-
-    // 1. Gather all JSON files recursively
-    if (fs.existsSync(dataDir)) {
-        const years = fs.readdirSync(dataDir).filter(f => !f.includes('.'));
-        for (const year of years) {
-            const yearPath = path.join(dataDir, year);
-            const months = fs.readdirSync(yearPath).filter(f => !f.includes('.'));
-            for (const month of months) {
-                const monthPath = path.join(yearPath, month);
-                const days = fs.readdirSync(monthPath).filter(f => f.endsWith('.json'));
-                for (const day of days) {
-                    allValidFiles.push(path.join(monthPath, day));
+    if (isFullBackfill) {
+        console.log("📂 Mode: FULL BACKFILL (Scanning all history)");
+        // Find all JSON files in data/YYYY/MM/DD.json
+        if (fs.existsSync(dataDir)) {
+            const years = fs.readdirSync(dataDir).filter(f => !f.includes('.'));
+            for (const year of years) {
+                const yearPath = path.join(dataDir, year);
+                const months = fs.readdirSync(yearPath).filter(f => !f.includes('.'));
+                for (const month of months) {
+                    const monthPath = path.join(yearPath, month);
+                    const days = fs.readdirSync(monthPath).filter(f => f.endsWith('.json'));
+                    for (const day of days) {
+                        filesToProcess.push(path.join(monthPath, day));
+                    }
                 }
             }
         }
+    } else {
+        console.log("📅 Mode: DAILY UPDATE (Processing yesterday)");
+        const yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+        const y = yesterday.getUTCFullYear();
+        const m = String(yesterday.getUTCMonth() + 1).padStart(2, '0');
+        const d = String(yesterday.getUTCDate()).padStart(2, '0');
+        
+        const targetFile = path.join(dataDir, String(y), m, `${d}.json`);
+        if (fs.existsSync(targetFile)) {
+            filesToProcess.push(targetFile);
+        } else {
+            console.error(`❌ No data file found for yesterday: ${targetFile}`);
+            process.exit(0);
+        }
     }
 
-    if (allValidFiles.length === 0) {
-        console.log("⚠️ No historical data found.");
-        return;
-    }
+    filesToProcess.sort(); // Ensure chronological order for streaks
 
-    // Sort chronologically so streak calculates correctly
-    allValidFiles.sort();
-
+    // Load existing insights if they exist
     let insights = { 
         community_streak: { current: 0, longest: 0, last_updated: "" }, 
         daily_stats: {} 
     };
 
-    console.log(`⏳ Processing ${allValidFiles.length} days of history...`);
-
-    // 2. Process each file
-    for (const file of allValidFiles) {
-        const dateKey = getFormattedDate(file);
-        const fileContent = fs.readFileSync(file, 'utf8').trim();
-        
-        if (!fileContent || fileContent === "{}" || fileContent === "[]") continue;
-
-        let dayData;
+    if (fs.existsSync(insightsPath) && !isFullBackfill) {
         try {
-            dayData = JSON.parse(fileContent);
+            const existing = fs.readFileSync(insightsPath, 'utf8');
+            if (existing) insights = JSON.parse(existing);
         } catch (e) {
-            console.log(`   ⏭️ Skipping corrupted file: ${dateKey}`);
-            continue;
+            console.warn("⚠️ insights.json was corrupted, starting fresh.");
         }
-
-        const scores = dayData.scores || [];
-        if (scores.length === 0) continue;
-
-        // Calculate Stats
-        const stats = {
-            total_scores: scores.length,
-            peak_hour_baghdad: calculatePeakHour(scores),
-            top_grinder: calculateTopGrinder(scores),
-            most_played_map: calculateTopMap(scores)
-        };
-
-        // Calculate Streak chronologically
-        if (scores.length >= 50) {
-            insights.community_streak.current++;
-            if (insights.community_streak.current > insights.community_streak.longest) {
-                insights.community_streak.longest = insights.community_streak.current;
-            }
-        } else {
-            insights.community_streak.current = 0;
-        }
-        insights.community_streak.last_updated = dateKey;
-
-        // Save daily stat
-        insights.daily_stats[dateKey] = stats;
     }
 
-    // 3. Save Master File
+    for (const file of filesToProcess) {
+        const dateKey = getFormattedDate(file);
+        console.log(`🔎 Processing: ${dateKey}`);
+        
+        const content = fs.readFileSync(file, 'utf8').trim();
+        if (!content || content === "[]" || content === "{}") continue;
+
+        try {
+            const dayData = JSON.parse(content);
+            const scores = dayData.scores || [];
+            if (scores.length === 0) continue;
+
+            const stats = {
+                total_scores: scores.length,
+                peak_hour_baghdad: calculatePeakHour(scores),
+                top_grinder: calculateTopGrinder(scores),
+                most_played_map: calculateTopMap(scores)
+            };
+
+            // Update streaks
+            if (insights.community_streak.last_updated !== dateKey) {
+                if (scores.length >= 50) {
+                    insights.community_streak.current++;
+                    if (insights.community_streak.current > insights.community_streak.longest) {
+                        insights.community_streak.longest = insights.community_streak.current;
+                    }
+                } else {
+                    insights.community_streak.current = 0;
+                }
+                insights.community_streak.last_updated = dateKey;
+            }
+
+            insights.daily_stats[dateKey] = stats;
+        } catch (err) {
+            console.error(`❌ Error parsing ${file}:`, err.message);
+        }
+    }
+
     fs.writeFileSync(insightsPath, JSON.stringify(insights, null, 2));
-    console.log(`✅ Success! Master history created with ${Object.keys(insights.daily_stats).length} days recorded.`);
+    console.log(`✅ Done. Updated ${insightsPath}`);
 }
 
-// --- MATH HELPERS ---
+// --- MATH HELPERS (Keep these exactly as they are) ---
 function calculatePeakHour(scores) {
     if (!scores.length) return 0;
     const hours = scores.map(s => (new Date(s.created_at || s.date).getUTCHours() + 3) % 24);
@@ -109,7 +126,7 @@ function calculateTopGrinder(scores) {
     if (!scores.length) return null;
     const counts = {};
     scores.forEach(s => counts[s.user] = (counts[s.user] || 0) + 1);
-    const topName = Object.keys(counts).reduce((a, b) => counts[a] > counts[b] ? a : b);
+    const topName = Object.keys(counts).reduce((a, b) => (counts[a] || 0) > (counts[b] || 0) ? a : b);
     const topScores = scores.filter(s => s.user === topName);
     return { user: topName, user_id: topScores[0].user_id, count: counts[topName], scores: topScores.slice(0, 15) };
 }
@@ -118,15 +135,14 @@ function calculateTopMap(scores) {
     if (!scores.length) return null;
     const maps = {};
     scores.forEach(s => {
-        const title = s.beatmapset ? s.beatmapset.title : s.title;
-        const cover = s.beatmapset ? s.beatmapset.cover : s.cover;
+        const title = s.beatmapset?.title || s.title;
+        const cover = s.beatmapset?.cover || s.cover;
         if (!title) return;
         if (!maps[title]) maps[title] = { count: 0, cover: cover || '' };
         maps[title].count++;
     });
-    if (Object.keys(maps).length === 0) return null;
     const topMapTitle = Object.keys(maps).reduce((a, b) => maps[a].count > maps[b].count ? a : b);
     return { title: topMapTitle, cover: maps[topMapTitle].cover, unique_players: maps[topMapTitle].count };
 }
 
-processAllHistory();
+run();

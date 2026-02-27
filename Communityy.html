@@ -230,7 +230,7 @@ function formatAMPM(hour24) {
 // Load data and paint UI
 async function loadInsights() {
     try {
-        const response = await fetch('data/community_insights.json?t=' + Date.now());
+const response = await fetch('/Test/data/community_insights.json?t=' + Date.now());
         if (!response.ok) throw new Error("File not found");
         const data = await response.json();
 

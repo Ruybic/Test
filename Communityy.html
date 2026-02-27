@@ -359,7 +359,7 @@ function renderUI(stats, streak) {
 // --- INIT APP ---
 async function init() {
     try {
-        const response = await fetch('/Test/data/community_insights.json?t=' + Date.now());
+        const response = await fetch('data/community_insights.json?t=' + Date.now());
         if (!response.ok) throw new Error("Could not load insights");
         
         globalInsights = await response.json();

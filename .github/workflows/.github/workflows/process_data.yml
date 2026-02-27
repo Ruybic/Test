@@ -1,0 +1,32 @@
+name: Generate Community Insights
+
+on:
+  schedule:
+    - cron: '0 5 * * *' # Runs at 05:00 UTC (08:00 Baghdad) to ensure files are uploaded
+  workflow_dispatch:      # Allows you to click "Run Workflow" manually
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Run Insights Processor
+        run: node GI.js
+
+      - name: Save Insights to Repo
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add data/community_insights.json
+          git commit -m "Community Pulse Update [$(date +'%Y-%m-%d')]" || echo "No changes"
+          git push

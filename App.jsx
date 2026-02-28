@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
-import ScoreCard from './components/ScoreCard';
-import './App.css'; // Put your CSS here
+import Header from './Header';       // No 'components/' folder!
+import ScoreCard from './ScoreCard'; // No 'components/' folder!
+import './App.css'; 
 
 function App() {
   const [scores, setScores] = useState([]);

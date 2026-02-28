@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     // This is the "Build" logic moving to the browser
     const [year, month, day] = selectedDate.split('-');
-    fetch(`data/${year}/${month}/${day}.json`)
+    fetch(./data/${year}/${month}/${day}.json`)
       .then(res => res.json())
       .then(data => {
         setScores(data.scores);

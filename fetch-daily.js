@@ -57,7 +57,7 @@ async function main(){
 
     const batchPromises = batch.map(async (userId) => {
       try {
-        const res = await fetch(`https://osu.ppy.sh/api/v2/users/${userId}/scores/recent?limit=100&include_fails=0`,{headers});
+        const res = await fetch(`https://osu.ppy.sh/api/v2/users/${userId}/scores/recent?limit=50&include_fails=0`,{headers});
         const data = await res.json();
         if (!Array.isArray(data)) return [];
         

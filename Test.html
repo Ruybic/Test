@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="OIT.png">
     <style>
         :root { --osu-pink: #ff66aa; --dark-base: #1c1c21; --panel-bg: #2e2e38; --text-main: #ffffff; --text-muted: #888895; }
-        body { background-color: var(--dark-base); color: var(--text-main); font-family: 'Exo 2', sans-serif; margin: 0; }
+        body { background-color: var(--dark-base); color: var(--text-main); font-family: 'Exo 2', sans-serif; margin: 0; scroll-behavior: smooth; }
 
         /* HEADER */
         header {
@@ -347,6 +347,49 @@ header {
         .time-ago { color: #666677; font-size: 11px; }
         .flag { width: 16px; vertical-align: middle; margin-right: 4px; border-radius: 2px; }
         
+        /* --- SCROLL PROGRESS WIDGET --- */
+#progress-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: none; /* Starts hidden */
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+#progress-container:hover { transform: scale(1.1); }
+
+.progress-svg { transform: rotate(-90deg); }
+
+.progress-background { 
+    fill: rgba(28, 28, 33, 0.9); 
+    stroke: rgba(255, 255, 255, 0.1); 
+    stroke-width: 4; 
+}
+
+#progress-bar {
+    fill: none;
+    stroke: var(--osu-pink);
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-dasharray: 163.3; /* Full circle circumference */
+    stroke-dashoffset: 163.3; /* Starts empty */
+    transition: stroke-dashoffset 0.1s linear;
+}
+
+.arrow-up {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    margin-top: -2px;
+    pointer-events: none;
+}
+
     </style>
 </head>
 <body>
@@ -405,6 +448,14 @@ header {
     <div class="score-grid" id="scoreGrid">
         <div class="status-msg">Select a date to view history...</div>
     </div>
+</div>
+
+<div id="progress-container" onclick="scrollToTop()">
+    <svg class="progress-svg" width="60" height="60" viewBox="0 0 60 60">
+        <circle class="progress-background" cx="30" cy="30" r="26"></circle>
+        <circle id="progress-bar" cx="30" cy="30" r="26"></circle>
+    </svg>
+    <div class="arrow-up">▲</div>
 </div>
 
 <footer style="
@@ -615,6 +666,34 @@ window.onclick = (e) => {
         document.getElementById('calendarPopup').classList.remove('open');
     }
 };
+
+// --- SCROLL PROGRESS LOGIC ---
+window.onscroll = function() { 
+    const progressContainer = document.getElementById("progress-container");
+    const progressBar = document.getElementById("progress-bar");
+    
+    // Calculate how far we've scrolled
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = window.pageYOffset;
+
+    // Show button after scrolling 100px
+    if (progress > 100) {
+        progressContainer.style.display = "flex";
+        progressContainer.style.opacity = "1";
+    } else {
+        progressContainer.style.opacity = "0";
+    }
+
+    // Circular Math: 163.3 is the circumference
+    const percentage = Math.min(progress / totalHeight, 1);
+    const offset = 163.3 - (percentage * 163.3);
+    progressBar.style.strokeDashoffset = offset;
+};
+
+// Smooth scroll function
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
 
 renderCalendar(currentDate);
 

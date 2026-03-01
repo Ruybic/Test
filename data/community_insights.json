@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 2,
-    "longest": 2,
-    "last_updated": "2026-02-27"
+    "current": 3,
+    "longest": 3,
+    "last_updated": "2026-02-28"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -430,6 +430,316 @@
         "title": "DADDY ! DADDY ! DO ! feat. Suzuki Airi (TV Size)",
         "cover": "https://assets.ppy.sh/beatmaps/1147361/covers/card.jpg?1645786245",
         "unique_players": 6
+      }
+    },
+    "2026-02-28": {
+      "total_scores": 507,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "Meaco",
+        "user_id": 32837861,
+        "count": 50,
+        "scores": [
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4989877233,
+            "rank": "B",
+            "accuracy": 0.9117161716171617,
+            "pp": 130.73,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 151,
+            "created_at": "2026-02-27T20:40:17Z",
+            "beatmapset": {
+              "id": 2463664,
+              "title": "hate the way you love me (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2463664/covers/card.jpg?1767818786",
+              "stars": 4.5503
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4989874819,
+            "rank": "A",
+            "accuracy": 0.9444444444444444,
+            "pp": 208.204,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 90,
+            "created_at": "2026-02-27T20:34:37Z",
+            "beatmapset": {
+              "id": 2210696,
+              "title": "Gravity Falls Theme Song (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2210696/covers/card.jpg?1737310112",
+              "stars": 4.75006
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4989872628,
+            "rank": "A",
+            "accuracy": 0.9253578732106339,
+            "pp": 139.725,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 194,
+            "created_at": "2026-02-27T20:29:13Z",
+            "beatmapset": {
+              "id": 2413378,
+              "title": "Blame Brett (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2413378/covers/card.jpg?1771258747",
+              "stars": 4.92778
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4989871074,
+            "rank": "A",
+            "accuracy": 0.9784722222222222,
+            "pp": 191.547,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 245,
+            "created_at": "2026-02-27T20:25:30Z",
+            "beatmapset": {
+              "id": 1685799,
+              "title": "you",
+              "cover": "https://assets.ppy.sh/beatmaps/1685799/covers/card.jpg?1644269905",
+              "stars": 4.18876
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4989869991,
+            "rank": "A",
+            "accuracy": 0.9773206751054853,
+            "pp": 184.465,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 174,
+            "created_at": "2026-02-27T20:22:57Z",
+            "beatmapset": {
+              "id": 497942,
+              "title": "Harebare Fanfare",
+              "cover": "https://assets.ppy.sh/beatmaps/497942/covers/card.jpg?1650645186",
+              "stars": 4.25128
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4989863598,
+            "rank": "B",
+            "accuracy": 0.9178403755868545,
+            "pp": 151.896,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 108,
+            "created_at": "2026-02-27T20:07:47Z",
+            "beatmapset": {
+              "id": 2190501,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/2190501/covers/card.jpg?1719435483",
+              "stars": 4.51349
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4989860676,
+            "rank": "A",
+            "accuracy": 0.987012987012987,
+            "pp": 290.451,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 190,
+            "created_at": "2026-02-27T20:01:05Z",
+            "beatmapset": {
+              "id": 2382142,
+              "title": "Domino (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2382142/covers/card.jpg?1758314031",
+              "stars": 4.55203
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4989858307,
+            "rank": "A",
+            "accuracy": 0.9555555555555556,
+            "pp": 146.232,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 241,
+            "created_at": "2026-02-27T19:55:38Z",
+            "beatmapset": {
+              "id": 2413378,
+              "title": "Blame Brett (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2413378/covers/card.jpg?1771258747",
+              "stars": 4.18837
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4989854670,
+            "rank": "A",
+            "accuracy": 0.9370199692780338,
+            "pp": 129.192,
+            "mods": [],
+            "combo": 493,
+            "created_at": "2026-02-27T19:47:04Z",
+            "beatmapset": {
+              "id": 1733209,
+              "title": "Aoiro Step",
+              "cover": "https://assets.ppy.sh/beatmaps/1733209/covers/card.jpg?1655116680",
+              "stars": 6.97177
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4989850870,
+            "rank": "A",
+            "accuracy": 0.9788053949903661,
+            "pp": 101.399,
+            "mods": [],
+            "combo": 209,
+            "created_at": "2026-02-27T19:38:02Z",
+            "beatmapset": {
+              "id": 1906151,
+              "title": "BOCCHI ROCK",
+              "cover": "https://assets.ppy.sh/beatmaps/1906151/covers/card.jpg?1681441915",
+              "stars": 5.00082
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4989830092,
+            "rank": "B",
+            "accuracy": 0.8382066276803118,
+            "pp": 128.612,
+            "mods": [],
+            "combo": 50,
+            "created_at": "2026-02-27T18:48:22Z",
+            "beatmapset": {
+              "id": 2448427,
+              "title": "clarity rmx (hayakou bootleg) (cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2448427/covers/card.jpg?1768009040",
+              "stars": 7.27803
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4989828639,
+            "rank": "C",
+            "accuracy": 0.8286516853932584,
+            "pp": 139.649,
+            "mods": [],
+            "combo": 108,
+            "created_at": "2026-02-27T18:44:46Z",
+            "beatmapset": {
+              "id": 2448427,
+              "title": "clarity rmx (hayakou bootleg) (cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2448427/covers/card.jpg?1768009040",
+              "stars": 7.4042
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4989827846,
+            "rank": "B",
+            "accuracy": 0.909853249475891,
+            "pp": 163.486,
+            "mods": [],
+            "combo": 142,
+            "created_at": "2026-02-27T18:42:55Z",
+            "beatmapset": {
+              "id": 2448427,
+              "title": "clarity rmx (hayakou bootleg) (cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2448427/covers/card.jpg?1768009040",
+              "stars": 7.04719
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4989822033,
+            "rank": "A",
+            "accuracy": 0.9287211740041929,
+            "pp": 177.994,
+            "mods": [],
+            "combo": 142,
+            "created_at": "2026-02-27T18:25:11Z",
+            "beatmapset": {
+              "id": 2448427,
+              "title": "clarity rmx (hayakou bootleg) (cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2448427/covers/card.jpg?1768009040",
+              "stars": 7.04719
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4989821739,
+            "rank": "B",
+            "accuracy": 0.8930817610062893,
+            "pp": 125.856,
+            "mods": [],
+            "combo": 120,
+            "created_at": "2026-02-27T18:24:33Z",
+            "beatmapset": {
+              "id": 2448427,
+              "title": "clarity rmx (hayakou bootleg) (cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2448427/covers/card.jpg?1768009040",
+              "stars": 7.04719
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+        "unique_players": 28
       }
     }
   }

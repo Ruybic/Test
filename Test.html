@@ -397,7 +397,7 @@ header {
 <header>
     <div class="logo-box">
         <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
-            <img src="https://i.imgur.com/1YJfjH6.png" alt="osu! Iraq">
+            <img src="https://i.imgur.com/1YJfjH6.png" alt="Osu! Iraq Today">
             <span class="logo-text">Osu! Iraq Today</span>
         </a>
     </div>
@@ -446,7 +446,7 @@ header {
 
 <div class="feed-container">
     <div class="score-grid" id="scoreGrid">
-        <div class="status-msg">Select a date to view history...</div>
+        <div class="status-msg">Select a date to view Archived Scores...</div>
     </div>
 </div>
 
@@ -506,7 +506,7 @@ function timeAgo(dateString) {
 // --- MAIN RENDERER ---
 async function fetchAndRender(path) {
     const grid = document.getElementById('scoreGrid');
-    grid.innerHTML = '<div class="status-msg">Loading Iraqi Scores...</div>';
+    grid.innerHTML = '<div class="status-msg">Loading Scores for today please wait...</div>';
 
     try {
         const response = await fetch(path + "?t=" + new Date().getTime());
@@ -515,7 +515,7 @@ async function fetchAndRender(path) {
         const data = await response.json();
         
         if (!data.scores || data.scores.length === 0) {
-            grid.innerHTML = '<div class="status-msg">No scores recorded for this day.</div>';
+            grid.innerHTML = '<div class="status-msg">No any Scores recorded for this day.</div>';
             return;
         }
 
@@ -598,7 +598,7 @@ async function fetchAndRender(path) {
         
     } catch (error) {
         console.error(error);
-        grid.innerHTML = `<div class="status-msg">⚠️ No scores available for this date.</div>`;
+        grid.innerHTML = `<div class="status-msg">⚠️ No Scores available for this date.</div>`;
     }
 }
 
@@ -712,7 +712,7 @@ async function init() {
         }
     } catch (e) {
         console.error(e);
-        document.getElementById('scoreGrid').innerHTML = '<div class="status-msg">Failed to load index.json</div>';
+        document.getElementById('scoreGrid').innerHTML = '<div class="status-msg">Failed to load Test.json</div>';
     }
 }
 

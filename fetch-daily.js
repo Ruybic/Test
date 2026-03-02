@@ -59,7 +59,7 @@ async function main(){
       try {
         // ("Recent scores" limit) | Ruybic: This line has the amount of recent scores pulled grom the official osu! v2 api.
         // ("Recent scores" limit) | Ruybic: As Limit set to 50, because it is very unlikely a player submits over >50 scores within 24hr period.
-        const res = await fetch(`https://osu.ppy.sh/api/v2/users/${userId}/scores/recent?limit=50&include_fails=0`,{headers});
+        const res = await fetch(`https://osu.ppy.sh/api/v2/users/${userId}/scores/recent?limit=100&include_fails=0`,{headers});
         const data = await res.json();
         if (!Array.isArray(data)) return [];
         

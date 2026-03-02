@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 3,
-    "longest": 3,
-    "last_updated": "2026-02-28"
+    "current": 4,
+    "longest": 4,
+    "last_updated": "2026-03-01"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -740,6 +740,314 @@
         "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
         "unique_players": 28
+      }
+    },
+    "2026-03-01": {
+      "total_scores": 405,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "RAWI03",
+        "user_id": 38341733,
+        "count": 50,
+        "scores": [
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6296637412,
+            "rank": "B",
+            "accuracy": 0.8593340815563038,
+            "pp": 60.7504,
+            "mods": [],
+            "combo": 113,
+            "created_at": "2026-03-01T02:10:22Z",
+            "beatmapset": {
+              "id": 416153,
+              "title": "Sendan Life",
+              "cover": "https://assets.ppy.sh/beatmaps/416153/covers/card.jpg?1650639459",
+              "stars": 7.00612
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6296571184,
+            "rank": "A",
+            "accuracy": 0.9500978473581213,
+            "pp": 87.0691,
+            "mods": [
+              "DT"
+            ],
+            "combo": 488,
+            "created_at": "2026-03-01T01:49:24Z",
+            "beatmapset": {
+              "id": 785731,
+              "title": "Catchit (Radio Edit)",
+              "cover": "https://assets.ppy.sh/beatmaps/785731/covers/card.jpg?1650664120",
+              "stars": 3.41884
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6296561783,
+            "rank": "C",
+            "accuracy": 0.8397435897435898,
+            "pp": 61.2165,
+            "mods": [
+              "DT"
+            ],
+            "combo": 64,
+            "created_at": "2026-03-01T01:46:29Z",
+            "beatmapset": {
+              "id": 788905,
+              "title": "Let Me Hit It (Audiostalkers Original Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/788905/covers/card.jpg?1650664492",
+              "stars": 3.59273
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6296560354,
+            "rank": "B",
+            "accuracy": 0.8653846153846154,
+            "pp": 57.9835,
+            "mods": [
+              "DT"
+            ],
+            "combo": 53,
+            "created_at": "2026-03-01T01:46:04Z",
+            "beatmapset": {
+              "id": 788905,
+              "title": "Let Me Hit It (Audiostalkers Original Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/788905/covers/card.jpg?1650664492",
+              "stars": 3.59273
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6296559037,
+            "rank": "B",
+            "accuracy": 0.8846153846153846,
+            "pp": 63.8704,
+            "mods": [
+              "DT"
+            ],
+            "combo": 58,
+            "created_at": "2026-03-01T01:45:39Z",
+            "beatmapset": {
+              "id": 788905,
+              "title": "Let Me Hit It (Audiostalkers Original Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/788905/covers/card.jpg?1650664492",
+              "stars": 3.59273
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6296555716,
+            "rank": "C",
+            "accuracy": 0.7764705882352941,
+            "pp": 39.1514,
+            "mods": [
+              "DT"
+            ],
+            "combo": 84,
+            "created_at": "2026-03-01T01:44:37Z",
+            "beatmapset": {
+              "id": 2244390,
+              "title": "The Replacements Main Title (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2244390/covers/card.jpg?1730381666",
+              "stars": 3.47566
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6296545017,
+            "rank": "A",
+            "accuracy": 0.9316091954022988,
+            "pp": 96.0115,
+            "mods": [
+              "DT"
+            ],
+            "combo": 144,
+            "created_at": "2026-03-01T01:41:17Z",
+            "beatmapset": {
+              "id": 1083437,
+              "title": "Routine",
+              "cover": "https://assets.ppy.sh/beatmaps/1083437/covers/card.jpg?1622177085",
+              "stars": 3.67074
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6296496864,
+            "rank": "C",
+            "accuracy": 0.8341503267973857,
+            "pp": 48.6239,
+            "mods": [
+              "DT"
+            ],
+            "combo": 66,
+            "created_at": "2026-03-01T01:26:10Z",
+            "beatmapset": {
+              "id": 956145,
+              "title": "Parado no Bailao | Com Grave",
+              "cover": "https://assets.ppy.sh/beatmaps/956145/covers/card.jpg?1650678788",
+              "stars": 3.85254
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6296491989,
+            "rank": "C",
+            "accuracy": 0.7272727272727273,
+            "pp": 60.0234,
+            "mods": [
+              "DT"
+            ],
+            "combo": 46,
+            "created_at": "2026-03-01T01:24:37Z",
+            "beatmapset": {
+              "id": 542081,
+              "title": "Cookie-Butter-Choco-Cookie",
+              "cover": "https://assets.ppy.sh/beatmaps/542081/covers/card.jpg?1650647147",
+              "stars": 4.05682
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6296489520,
+            "rank": "C",
+            "accuracy": 0.7815315315315315,
+            "pp": 86.6095,
+            "mods": [
+              "DT"
+            ],
+            "combo": 31,
+            "created_at": "2026-03-01T01:23:49Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 4.32687
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6296487415,
+            "rank": "A",
+            "accuracy": 0.9408983451536643,
+            "pp": 114.689,
+            "mods": [
+              "DT"
+            ],
+            "combo": 133,
+            "created_at": "2026-03-01T01:23:07Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 3.68271
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6296483685,
+            "rank": "B",
+            "accuracy": 0.9114427860696518,
+            "pp": 95.5747,
+            "mods": [],
+            "combo": 79,
+            "created_at": "2026-03-01T01:21:57Z",
+            "beatmapset": {
+              "id": 411894,
+              "title": "Sendan Life",
+              "cover": "https://assets.ppy.sh/beatmaps/411894/covers/card.jpg?1650637006",
+              "stars": 5.74149
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6296438998,
+            "rank": "S",
+            "accuracy": 0.93646408839779,
+            "pp": 83.9458,
+            "mods": [
+              "DT"
+            ],
+            "combo": 291,
+            "created_at": "2026-03-01T01:07:58Z",
+            "beatmapset": {
+              "id": 2298826,
+              "title": "Merry Bitchmas (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2298826/covers/card.jpg?1735332907",
+              "stars": 3.20316
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6296412885,
+            "rank": "D",
+            "accuracy": 0.6293929712460063,
+            "pp": 33.4104,
+            "mods": [],
+            "combo": 50,
+            "created_at": "2026-03-01T01:00:05Z",
+            "beatmapset": {
+              "id": 794585,
+              "title": "Teopacito feat. Will Stetson",
+              "cover": "https://assets.ppy.sh/beatmaps/794585/covers/card.jpg?1650665123",
+              "stars": 5.48428
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6296360289,
+            "rank": "B",
+            "accuracy": 0.8893632159373889,
+            "pp": 52.0856,
+            "mods": [],
+            "combo": 147,
+            "created_at": "2026-03-01T00:44:19Z",
+            "beatmapset": {
+              "id": 1274098,
+              "title": "Teo",
+              "cover": "https://assets.ppy.sh/beatmaps/1274098/covers/card.jpg?1645780962",
+              "stars": 5.80654
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Sunshine (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+        "unique_players": 12
       }
     }
   }

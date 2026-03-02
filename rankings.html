@@ -387,6 +387,34 @@ window.onclick = (e) => {
     }
 };
 
+            // --- SCROLL PROGRESS LOGIC ---
+window.onscroll = function() { 
+    const progressContainer = document.getElementById("progress-container");
+    const progressBar = document.getElementById("progress-bar");
+    
+    // Calculate how far we've scrolled
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = window.pageYOffset;
+
+    // Show button after scrolling 100px
+    if (progress > 100) {
+        progressContainer.style.display = "flex";
+        progressContainer.style.opacity = "1";
+    } else {
+        progressContainer.style.opacity = "0";
+    }
+
+    // Circular Math: 163.3 is the circumference
+    const percentage = Math.min(progress / totalHeight, 1);
+    const offset = 163.3 - (percentage * 163.3);
+    progressBar.style.strokeDashoffset = offset;
+};
+
+// Smooth scroll function
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
 // --- DATA LOGIC ---
 let currentData = [];
 
@@ -470,36 +498,6 @@ function renderList(sortBy) {
                 </a>
             `;
         }
-
-        // --- SCROLL PROGRESS LOGIC ---
-window.onscroll = function() { 
-    const progressContainer = document.getElementById("progress-container");
-    const progressBar = document.getElementById("progress-bar");
-    
-    // Calculate how far we've scrolled
-    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const progress = window.pageYOffset;
-
-    // Show button after scrolling 100px
-    if (progress > 100) {
-        progressContainer.style.display = "flex";
-        progressContainer.style.opacity = "1";
-    } else {
-        progressContainer.style.opacity = "0";
-    }
-
-    // Circular Math: 163.3 is the circumference
-    const percentage = Math.min(progress / totalHeight, 1);
-    const offset = 163.3 - (percentage * 163.3);
-    progressBar.style.strokeDashoffset = offset;
-};
-
-// Smooth scroll function
-function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-
 
         const card = document.createElement('div');
         card.className = 'player-card';

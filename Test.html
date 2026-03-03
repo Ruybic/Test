@@ -393,7 +393,7 @@ header {
     </style>
 </head>
 <body>
-
+<audio id="hoverSound" src="pop.mp3" preload="auto"></audio>
 <header>
     <div class="logo-box">
         <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
@@ -715,6 +715,36 @@ async function init() {
         document.getElementById('scoreGrid').innerHTML = '<div class="status-msg">Failed to load Test.json</div>';
     }
 }
+
+    // Function to play the pop sound
+function playPop() {
+    const sound = document.getElementById('hoverSound');
+    sound.currentTime = 0; // Reset to start so it can overlap/play fast
+    sound.play().catch(e => {
+        // Browsers block audio until the user clicks something once.
+        // This catch prevents console errors.
+    });
+}
+
+// Event Delegation: Listen for hovers on the scoreGrid
+document.getElementById('scoreGrid').addEventListener('mouseover', (e) => {
+    // Check if the hovered element (or its parent) is a score-card or ad-card
+    const card = e.target.closest('.score-card, .ad-card');
+    
+    // Only play if we are entering a new card (prevents sound repeating while moving inside)
+    if (card && !card.dataset.hovered) {
+        playPop();
+        card.dataset.hovered = "true";
+    }
+});
+
+// Reset the hover state when the mouse leaves the card
+document.getElementById('scoreGrid').addEventListener('mouseout', (e) => {
+    const card = e.target.closest('.score-card, .ad-card');
+    if (card) {
+        delete card.dataset.hovered;
+    }
+});
 
 init();
 </script>

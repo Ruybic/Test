@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 4,
-    "longest": 4,
-    "last_updated": "2026-03-01"
+    "current": 5,
+    "longest": 5,
+    "last_updated": "2026-03-02"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -1048,6 +1048,324 @@
         "title": "Sunshine (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
         "unique_players": 12
+      }
+    },
+    "2026-03-02": {
+      "total_scores": 413,
+      "peak_hour_baghdad": 22,
+      "top_grinder": {
+        "user": "RAWI03",
+        "user_id": 38341733,
+        "count": 50,
+        "scores": [
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6302055627,
+            "rank": "B",
+            "accuracy": 0.9059304703476483,
+            "pp": 77.7078,
+            "mods": [
+              "DT"
+            ],
+            "combo": 138,
+            "created_at": "2026-03-02T01:46:31Z",
+            "beatmapset": {
+              "id": 2008974,
+              "title": "Chasiki (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2008974/covers/card.jpg?1718427446",
+              "stars": 3.82636
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6302048964,
+            "rank": "B",
+            "accuracy": 0.91015625,
+            "pp": 89.5641,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 54,
+            "created_at": "2026-03-02T01:44:06Z",
+            "beatmapset": {
+              "id": 558938,
+              "title": "Step Off Playa",
+              "cover": "https://assets.ppy.sh/beatmaps/558938/covers/card.jpg?1645788647",
+              "stars": 3.90425
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6302043598,
+            "rank": "SH",
+            "accuracy": 0.9430199430199431,
+            "pp": 112.678,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 177,
+            "created_at": "2026-03-02T01:42:09Z",
+            "beatmapset": {
+              "id": 346339,
+              "title": "Unbreakable Heart",
+              "cover": "https://assets.ppy.sh/beatmaps/346339/covers/card.jpg?1650632156",
+              "stars": 3.42482
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6302041841,
+            "rank": "A",
+            "accuracy": 0.9658119658119658,
+            "pp": 105.357,
+            "mods": [
+              "DT"
+            ],
+            "combo": 89,
+            "created_at": "2026-03-02T01:41:30Z",
+            "beatmapset": {
+              "id": 346339,
+              "title": "Unbreakable Heart",
+              "cover": "https://assets.ppy.sh/beatmaps/346339/covers/card.jpg?1650632156",
+              "stars": 3.42482
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6302023237,
+            "rank": "B",
+            "accuracy": 0.8898809523809523,
+            "pp": 71.2343,
+            "mods": [
+              "DT"
+            ],
+            "combo": 236,
+            "created_at": "2026-03-02T01:34:47Z",
+            "beatmapset": {
+              "id": 1031221,
+              "title": "Tiny Little Adiantum (deadman's \"Omae Wa Mou\" remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/1031221/covers/card.jpg?1650685119",
+              "stars": 3.44916
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6302003182,
+            "rank": "C",
+            "accuracy": 0.8106060606060606,
+            "pp": 98.5955,
+            "mods": [
+              "DT"
+            ],
+            "combo": 46,
+            "created_at": "2026-03-02T01:27:38Z",
+            "beatmapset": {
+              "id": 109570,
+              "title": "Princess of the Night",
+              "cover": "https://assets.ppy.sh/beatmaps/109570/covers/card.jpg?1650619505",
+              "stars": 4.26053
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6301980506,
+            "rank": "B",
+            "accuracy": 0.9274193548387096,
+            "pp": 83.4287,
+            "mods": [
+              "DT"
+            ],
+            "combo": 496,
+            "created_at": "2026-03-02T01:19:37Z",
+            "beatmapset": {
+              "id": 1733246,
+              "title": "Nao sou obrigada",
+              "cover": "https://assets.ppy.sh/beatmaps/1733246/covers/card.jpg?1670436697",
+              "stars": 3.35925
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6301971123,
+            "rank": "C",
+            "accuracy": 0.845360824742268,
+            "pp": 81.3093,
+            "mods": [
+              "DT"
+            ],
+            "combo": 181,
+            "created_at": "2026-03-02T01:16:16Z",
+            "beatmapset": {
+              "id": 2390596,
+              "title": "Seifenblasen",
+              "cover": "https://assets.ppy.sh/beatmaps/2390596/covers/card.jpg?1765046892",
+              "stars": 4.51763
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6301957060,
+            "rank": "B",
+            "accuracy": 0.8751608751608752,
+            "pp": 96.6168,
+            "mods": [
+              "DT"
+            ],
+            "combo": 187,
+            "created_at": "2026-03-02T01:11:19Z",
+            "beatmapset": {
+              "id": 2451775,
+              "title": "Kokoro Vitamin (Game Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2451775/covers/card.jpg?1765628496",
+              "stars": 4.3368
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6301952609,
+            "rank": "A",
+            "accuracy": 0.9635854341736695,
+            "pp": 130.614,
+            "mods": [
+              "DT"
+            ],
+            "combo": 244,
+            "created_at": "2026-03-02T01:09:44Z",
+            "beatmapset": {
+              "id": 2451775,
+              "title": "Kokoro Vitamin (Game Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2451775/covers/card.jpg?1765628496",
+              "stars": 3.73647
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6301914483,
+            "rank": "B",
+            "accuracy": 0.8759820426487093,
+            "pp": 52.9206,
+            "mods": [
+              "DT"
+            ],
+            "combo": 95,
+            "created_at": "2026-03-02T00:56:21Z",
+            "beatmapset": {
+              "id": 2116067,
+              "title": "Bling-Bang-Bang-Born (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2116067/covers/card.jpg?1705179260",
+              "stars": 3.65202
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6301910641,
+            "rank": "C",
+            "accuracy": 0.813939393939394,
+            "pp": 73.0489,
+            "mods": [
+              "DT"
+            ],
+            "combo": 114,
+            "created_at": "2026-03-02T00:55:00Z",
+            "beatmapset": {
+              "id": 260881,
+              "title": "&Z (TV size-English ver.-)",
+              "cover": "https://assets.ppy.sh/beatmaps/260881/covers/card.jpg?1622081647",
+              "stars": 4.19556
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6301897333,
+            "rank": "S",
+            "accuracy": 0.9558011049723757,
+            "pp": 97.4797,
+            "mods": [
+              "DT"
+            ],
+            "combo": 292,
+            "created_at": "2026-03-02T00:50:19Z",
+            "beatmapset": {
+              "id": 2298826,
+              "title": "Merry Bitchmas (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2298826/covers/card.jpg?1735332907",
+              "stars": 3.20316
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6301894811,
+            "rank": "A",
+            "accuracy": 0.9484346224677717,
+            "pp": 84.3732,
+            "mods": [
+              "DT"
+            ],
+            "combo": 206,
+            "created_at": "2026-03-02T00:49:27Z",
+            "beatmapset": {
+              "id": 2298826,
+              "title": "Merry Bitchmas (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2298826/covers/card.jpg?1735332907",
+              "stars": 3.20316
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6301888384,
+            "rank": "S",
+            "accuracy": 0.9496124031007752,
+            "pp": 85.3454,
+            "mods": [
+              "DT"
+            ],
+            "combo": 280,
+            "created_at": "2026-03-02T00:47:15Z",
+            "beatmapset": {
+              "id": 2113967,
+              "title": "9mm",
+              "cover": "https://assets.ppy.sh/beatmaps/2113967/covers/card.jpg?1712519257",
+              "stars": 3.20794
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+        "unique_players": 19
       }
     }
   }

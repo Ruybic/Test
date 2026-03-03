@@ -609,14 +609,12 @@ data.scores.forEach((score, index) => { // Added ', index' here!
                 <img src="https://i.imgur.com/1YJfjH6.png" alt="Advertisement">
             `;
             
-            // Pick a random spot in the array to insert the ad
             const randomIndex = Math.floor(Math.random() * (gridItems.length + 1));
+            
+            // MOVE THESE TWO LINES HERE (Inside the brackets):
+            adCard.style.animationDelay = (randomIndex * 0.05) + "s";
             gridItems.splice(randomIndex, 0, adCard);
-        }
-
-    // Inside the for loop for ads:
-adCard.style.animationDelay = (randomIndex * 0.05) + "s";
-gridItems.splice(randomIndex, 0, adCard);
+        };
         
         // 4. APPEND EVERYTHING TO THE GRID
         gridItems.forEach(item => grid.appendChild(item));

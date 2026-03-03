@@ -716,13 +716,15 @@ async function init() {
     }
 }
 
-    // Function to play the pop sound
 function playPop() {
     const sound = document.getElementById('hoverSound');
-    sound.currentTime = 0; // Reset to start so it can overlap/play fast
+    
+    // Set volume to 20% (Adjust 0.2 to whatever feels right)
+    sound.volume = 0.2; 
+    
+    sound.currentTime = 0;
     sound.play().catch(e => {
-        // Browsers block audio until the user clicks something once.
-        // This catch prevents console errors.
+        // Handle browser autoplay restrictions
     });
 }
 

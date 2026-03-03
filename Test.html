@@ -11,11 +11,15 @@
         body { background-color: var(--dark-base); color: var(--text-main); font-family: 'Exo 2', sans-serif; margin: 0; scroll-behavior: smooth; }
 
         /* HEADER */
-        header {
-            background: #111116; padding: 12px 25px; display: flex; align-items: center;
-            justify-content: space-between; border-bottom: 2px solid var(--panel-bg);
-            position: sticky; top: 0; z-index: 1000;
-        }
+header {
+    background: rgba(17, 17, 22, 0.85); /* Slightly transparent */
+    backdrop-filter: blur(15px);        /* This is the magic "app" blur */
+    -webkit-backdrop-filter: blur(15px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
 /* --- HEADER --- */
 header {
     background: #111116; 
@@ -246,6 +250,11 @@ header {
             box-shadow: 0 10px 25px rgba(255, 215, 0, 0.6);
             transform: scale(1.05) translateY(-8px);
         }
+/* Subtle 'squish' effect when clicking any card (new)*/
+.score-card:active, .ad-card:active {
+    transform: scale(0.95) translateY(-4px);
+    transition: transform 0.1s ease;
+}
         .top-play-badge {
     position: absolute; 
     bottom: 10px; 
@@ -388,6 +397,15 @@ header {
     font-size: 18px;
     margin-top: -2px;
     pointer-events: none;
+}
+
+        @keyframes cardFadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.score-card, .ad-card {
+    animation: cardFadeIn 0.4s ease backwards;
 }
 
     </style>
@@ -536,6 +554,11 @@ async function fetchAndRender(path) {
         data.scores.forEach(score => {
             const isTopPlay = score.score_id === topScoreId;
             const card = document.createElement('div');
+
+            // --- ADD THE DELAY HERE ---
+    // This gives the 1st card 0s, 2nd card 0.05s, 3rd card 0.1s, etc.
+    card.style.animationDelay = Math.min(index * 0.05, 1.2) + "s";
+    // --------------------------
             
             // Add top-play class if it matches the highest PP
             card.className = isTopPlay ? 'score-card top-play' : 'score-card';

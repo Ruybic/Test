@@ -10,16 +10,6 @@
         :root { --osu-pink: #ff66aa; --dark-base: #1c1c21; --panel-bg: #2e2e38; --text-main: #ffffff; --text-muted: #888895; }
         body { background-color: var(--dark-base); color: var(--text-main); font-family: 'Exo 2', sans-serif; margin: 0; scroll-behavior: smooth; }
 
-        /* HEADER */
-header {
-    background: rgba(17, 17, 22, 0.85); /* Slightly transparent */
-    backdrop-filter: blur(15px);        /* This is the magic "app" blur */
-    -webkit-backdrop-filter: blur(15px);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
 /* --- HEADER --- */
 header {
     background: #111116; 
@@ -551,14 +541,15 @@ async function fetchAndRender(path) {
 
         // 2. CREATE SCORE CARDS ARRAY
         let gridItems = [];
-        data.scores.forEach(score => {
-            const isTopPlay = score.score_id === topScoreId;
-            const card = document.createElement('div');
+// Change this line:
+data.scores.forEach((score, index) => { // Added ', index' here!
+    const isTopPlay = score.score_id === topScoreId;
+    const card = document.createElement('div');
 
-            // --- ADD THE DELAY HERE ---
-    // This gives the 1st card 0s, 2nd card 0.05s, 3rd card 0.1s, etc.
+    // This now works because 'index' is defined above
     card.style.animationDelay = Math.min(index * 0.05, 1.2) + "s";
-    // --------------------------
+    
+    // ... rest of your code ...
             
             // Add top-play class if it matches the highest PP
             card.className = isTopPlay ? 'score-card top-play' : 'score-card';

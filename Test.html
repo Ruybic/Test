@@ -614,6 +614,10 @@ data.scores.forEach((score, index) => { // Added ', index' here!
             gridItems.splice(randomIndex, 0, adCard);
         }
 
+    // Inside the for loop for ads:
+adCard.style.animationDelay = (randomIndex * 0.05) + "s";
+gridItems.splice(randomIndex, 0, adCard);
+        
         // 4. APPEND EVERYTHING TO THE GRID
         gridItems.forEach(item => grid.appendChild(item));
         
@@ -622,9 +626,6 @@ data.scores.forEach((score, index) => { // Added ', index' here!
         grid.innerHTML = `<div class="status-msg">⚠️ No Scores available for this date.</div>`;
     }
 }
-    // Inside the for loop for ads:
-adCard.style.animationDelay = (randomIndex * 0.05) + "s";
-gridItems.splice(randomIndex, 0, adCard);
 
 // --- CALENDAR LOGIC ---
 let currentDate = new Date();

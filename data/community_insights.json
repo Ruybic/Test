@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 5,
-    "longest": 5,
-    "last_updated": "2026-03-02"
+    "current": 6,
+    "longest": 6,
+    "last_updated": "2026-03-03"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -1366,6 +1366,326 @@
         "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
         "unique_players": 19
+      }
+    },
+    "2026-03-03": {
+      "total_scores": 348,
+      "peak_hour_baghdad": 12,
+      "top_grinder": {
+        "user": "I AM A GHOUL",
+        "user_id": 24991953,
+        "count": 61,
+        "scores": [
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 4991075127,
+            "rank": "B",
+            "accuracy": 0.8964646464646465,
+            "pp": 212.204,
+            "mods": [
+              "DT"
+            ],
+            "combo": 103,
+            "created_at": "2026-03-02T09:31:04Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.2789
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 4991074734,
+            "rank": "A",
+            "accuracy": 0.9464720194647201,
+            "pp": 285.729,
+            "mods": [
+              "DT"
+            ],
+            "combo": 93,
+            "created_at": "2026-03-02T09:29:18Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.18535
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 4991074311,
+            "rank": "B",
+            "accuracy": 0.9118589743589743,
+            "pp": 217.276,
+            "mods": [
+              "DT"
+            ],
+            "combo": 161,
+            "created_at": "2026-03-02T09:27:20Z",
+            "beatmapset": {
+              "id": 2499570,
+              "title": "Still Into You (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499570/covers/card.jpg?1771093258",
+              "stars": 5.21761
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 4991074023,
+            "rank": "A",
+            "accuracy": 0.9535353535353536,
+            "pp": 306.665,
+            "mods": [
+              "NF",
+              "DT"
+            ],
+            "combo": 212,
+            "created_at": "2026-03-02T09:26:08Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 5.20377
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 4991073873,
+            "rank": "C",
+            "accuracy": 0.8550074738415545,
+            "pp": 151.79,
+            "mods": [
+              "NF",
+              "DT"
+            ],
+            "combo": 173,
+            "created_at": "2026-03-02T09:25:27Z",
+            "beatmapset": {
+              "id": 2463664,
+              "title": "hate the way you love me (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2463664/covers/card.jpg?1767818786",
+              "stars": 5.12943
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 4991073632,
+            "rank": "D",
+            "accuracy": 0.6836865767501605,
+            "pp": 25.7112,
+            "mods": [
+              "NF",
+              "DT"
+            ],
+            "combo": 62,
+            "created_at": "2026-03-02T09:24:23Z",
+            "beatmapset": {
+              "id": 41860,
+              "title": "Chinese Snowy Dance",
+              "cover": "https://assets.ppy.sh/beatmaps/41860/covers/card.jpg?1622052126",
+              "stars": 4.89719
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 4991072396,
+            "rank": "B",
+            "accuracy": 0.8992805755395683,
+            "pp": 197.231,
+            "mods": [
+              "DT"
+            ],
+            "combo": 136,
+            "created_at": "2026-03-02T09:19:07Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.18861
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 4991072143,
+            "rank": "A",
+            "accuracy": 0.9664268585131894,
+            "pp": 303.984,
+            "mods": [
+              "DT"
+            ],
+            "combo": 191,
+            "created_at": "2026-03-02T09:18:03Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.18861
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 4991071920,
+            "rank": "B",
+            "accuracy": 0.9117117117117117,
+            "pp": 199.143,
+            "mods": [
+              "NC"
+            ],
+            "combo": 101,
+            "created_at": "2026-03-02T09:17:00Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 5.12476
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 4991071779,
+            "rank": "A",
+            "accuracy": 0.9424460431654677,
+            "pp": 277.358,
+            "mods": [
+              "NC"
+            ],
+            "combo": 175,
+            "created_at": "2026-03-02T09:16:12Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.18861
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 4991071647,
+            "rank": "A",
+            "accuracy": 0.9568345323741008,
+            "pp": 255.592,
+            "mods": [
+              "NC"
+            ],
+            "combo": 132,
+            "created_at": "2026-03-02T09:15:34Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.18861
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 4991071419,
+            "rank": "A",
+            "accuracy": 0.9448441247002398,
+            "pp": 260.768,
+            "mods": [
+              "NC"
+            ],
+            "combo": 145,
+            "created_at": "2026-03-02T09:14:34Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.18861
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 4991071199,
+            "rank": "A",
+            "accuracy": 0.9520383693045563,
+            "pp": 255.795,
+            "mods": [
+              "NC"
+            ],
+            "combo": 171,
+            "created_at": "2026-03-02T09:13:32Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.18861
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 4991070978,
+            "rank": "B",
+            "accuracy": 0.9160671462829736,
+            "pp": 230.209,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 176,
+            "created_at": "2026-03-02T09:12:34Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.18861
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 4991070743,
+            "rank": "A",
+            "accuracy": 0.947242206235012,
+            "pp": 282.068,
+            "mods": [
+              "DT"
+            ],
+            "combo": 189,
+            "created_at": "2026-03-02T09:11:31Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.18861
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+        "unique_players": 44
       }
     }
   }

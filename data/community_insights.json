@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 6,
-    "longest": 6,
-    "last_updated": "2026-03-03"
+    "current": 7,
+    "longest": 7,
+    "last_updated": "2026-03-04"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -1686,6 +1686,335 @@
         "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
         "unique_players": 44
+      }
+    },
+    "2026-03-04": {
+      "total_scores": 306,
+      "peak_hour_baghdad": 22,
+      "top_grinder": {
+        "user": "kartel",
+        "user_id": 16368385,
+        "count": 70,
+        "scores": [
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4991802657,
+            "rank": "A",
+            "accuracy": 0.9772222222222222,
+            "pp": 186.07,
+            "mods": [
+              "HD"
+            ],
+            "combo": 299,
+            "created_at": "2026-03-03T23:05:16Z",
+            "beatmapset": {
+              "id": 326920,
+              "title": "BLUE DRAGON",
+              "cover": "https://assets.ppy.sh/beatmaps/326920/covers/card.jpg?1650644794",
+              "stars": 5.94155
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4991801854,
+            "rank": "A",
+            "accuracy": 0.9722222222222222,
+            "pp": 171.342,
+            "mods": [
+              "HD"
+            ],
+            "combo": 358,
+            "created_at": "2026-03-03T23:02:36Z",
+            "beatmapset": {
+              "id": 326920,
+              "title": "BLUE DRAGON",
+              "cover": "https://assets.ppy.sh/beatmaps/326920/covers/card.jpg?1650644794",
+              "stars": 5.94155
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4991799113,
+            "rank": "C",
+            "accuracy": 0.8295644891122278,
+            "pp": 43.9664,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 128,
+            "created_at": "2026-03-03T22:53:34Z",
+            "beatmapset": {
+              "id": 703957,
+              "title": "Immortal Flame (feat. Anna Yvette)",
+              "cover": "https://assets.ppy.sh/beatmaps/703957/covers/card.jpg?1650658558",
+              "stars": 4.27552
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4991797762,
+            "rank": "B",
+            "accuracy": 0.9236596736596736,
+            "pp": 99.0358,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 102,
+            "created_at": "2026-03-03T22:49:20Z",
+            "beatmapset": {
+              "id": 748291,
+              "title": "Asymmetry (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/748291/covers/card.jpg?1650662879",
+              "stars": 4.26133
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4991796653,
+            "rank": "SH",
+            "accuracy": 0.9584681769147788,
+            "pp": null,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 528,
+            "created_at": "2026-03-03T22:45:46Z",
+            "beatmapset": {
+              "id": 723641,
+              "title": "Gucci Gucci Literature Club's Not Hot (ft. Monika)",
+              "cover": "https://assets.ppy.sh/beatmaps/723641/covers/card.jpg?1650663643",
+              "stars": 3.62757
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4991796251,
+            "rank": "A",
+            "accuracy": 0.9336569579288025,
+            "pp": null,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 210,
+            "created_at": "2026-03-03T22:44:28Z",
+            "beatmapset": {
+              "id": 723641,
+              "title": "Gucci Gucci Literature Club's Not Hot (ft. Monika)",
+              "cover": "https://assets.ppy.sh/beatmaps/723641/covers/card.jpg?1650663643",
+              "stars": 3.62757
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4991795766,
+            "rank": "B",
+            "accuracy": 0.8717139852786541,
+            "pp": 39.0753,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 166,
+            "created_at": "2026-03-03T22:42:54Z",
+            "beatmapset": {
+              "id": 102282,
+              "title": "Terminal",
+              "cover": "https://assets.ppy.sh/beatmaps/102282/covers/card.jpg?1650619433",
+              "stars": 3.61192
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4991795220,
+            "rank": "B",
+            "accuracy": 0.862776025236593,
+            "pp": 35.6693,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 213,
+            "created_at": "2026-03-03T22:41:16Z",
+            "beatmapset": {
+              "id": 102282,
+              "title": "Terminal",
+              "cover": "https://assets.ppy.sh/beatmaps/102282/covers/card.jpg?1650619433",
+              "stars": 3.61192
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4991794416,
+            "rank": "A",
+            "accuracy": 0.9307359307359307,
+            "pp": null,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 372,
+            "created_at": "2026-03-03T22:38:38Z",
+            "beatmapset": {
+              "id": 651399,
+              "title": "Alien Alien (Nhato Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/651399/covers/card.jpg?1645788541",
+              "stars": 3.84659
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4991793689,
+            "rank": "B",
+            "accuracy": 0.9202741702741702,
+            "pp": null,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 156,
+            "created_at": "2026-03-03T22:36:28Z",
+            "beatmapset": {
+              "id": 651399,
+              "title": "Alien Alien (Nhato Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/651399/covers/card.jpg?1645788541",
+              "stars": 3.84659
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4991792858,
+            "rank": "A",
+            "accuracy": 0.9247311827956989,
+            "pp": 103.739,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 44,
+            "created_at": "2026-03-03T22:33:45Z",
+            "beatmapset": {
+              "id": 2377334,
+              "title": "Gypsy In My Mind (Disco Rave Edit 2022) (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2377334/covers/card.jpg?1758681144",
+              "stars": 4.07179
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4991792527,
+            "rank": "SH",
+            "accuracy": 0.9822222222222222,
+            "pp": 166.843,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 562,
+            "created_at": "2026-03-03T22:32:44Z",
+            "beatmapset": {
+              "id": 728885,
+              "title": "Kokoro",
+              "cover": "https://assets.ppy.sh/beatmaps/728885/covers/card.jpg?1650660093",
+              "stars": 3.67685
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4991791965,
+            "rank": "SH",
+            "accuracy": 0.9796511627906976,
+            "pp": 121.966,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 575,
+            "created_at": "2026-03-03T22:31:07Z",
+            "beatmapset": {
+              "id": 1118779,
+              "title": "Houkago Stride",
+              "cover": "https://assets.ppy.sh/beatmaps/1118779/covers/card.jpg?1650695761",
+              "stars": 3.84174
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4991790988,
+            "rank": "A",
+            "accuracy": 0.966327519379845,
+            "pp": 97.873,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 539,
+            "created_at": "2026-03-03T22:28:19Z",
+            "beatmapset": {
+              "id": 1118779,
+              "title": "Houkago Stride",
+              "cover": "https://assets.ppy.sh/beatmaps/1118779/covers/card.jpg?1650695761",
+              "stars": 3.84174
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4991790043,
+            "rank": "A",
+            "accuracy": 0.9635416666666666,
+            "pp": 108.762,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 254,
+            "created_at": "2026-03-03T22:25:30Z",
+            "beatmapset": {
+              "id": 2214329,
+              "title": "NE PLACH'",
+              "cover": "https://assets.ppy.sh/beatmaps/2214329/covers/card.jpg?1755450769",
+              "stars": 3.59706
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Gypsy In My Mind (Disco Rave Edit 2022) (Sped Up & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2377334/covers/card.jpg?1758681144",
+        "unique_players": 20
       }
     }
   }

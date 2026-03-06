@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 7,
-    "longest": 7,
-    "last_updated": "2026-03-04"
+    "current": 8,
+    "longest": 8,
+    "last_updated": "2026-03-05"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -2015,6 +2015,322 @@
         "title": "Gypsy In My Mind (Disco Rave Edit 2022) (Sped Up & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2377334/covers/card.jpg?1758681144",
         "unique_players": 20
+      }
+    },
+    "2026-03-05": {
+      "total_scores": 386,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "kartel",
+        "user_id": 16368385,
+        "count": 54,
+        "scores": [
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4992188531,
+            "rank": "C",
+            "accuracy": 0.8618589743589744,
+            "pp": 81.6041,
+            "mods": [
+              "HD"
+            ],
+            "combo": 585,
+            "created_at": "2026-03-04T20:38:08Z",
+            "beatmapset": {
+              "id": 1108263,
+              "title": "HONESTY",
+              "cover": "https://assets.ppy.sh/beatmaps/1108263/covers/card.jpg?1631513516",
+              "stars": 5.55426
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4992175135,
+            "rank": "B",
+            "accuracy": 0.8836717428087987,
+            "pp": 78.6245,
+            "mods": [
+              "HD"
+            ],
+            "combo": 166,
+            "created_at": "2026-03-04T20:05:22Z",
+            "beatmapset": {
+              "id": 2289479,
+              "title": "Vertex Beta",
+              "cover": "https://assets.ppy.sh/beatmaps/2289479/covers/card.jpg?1740761650",
+              "stars": 5.80889
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4992174165,
+            "rank": "B",
+            "accuracy": 0.8695008460236887,
+            "pp": 69.5103,
+            "mods": [
+              "HD"
+            ],
+            "combo": 302,
+            "created_at": "2026-03-04T20:02:56Z",
+            "beatmapset": {
+              "id": 2289479,
+              "title": "Vertex Beta",
+              "cover": "https://assets.ppy.sh/beatmaps/2289479/covers/card.jpg?1740761650",
+              "stars": 5.80889
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4992168858,
+            "rank": "A",
+            "accuracy": 0.9868496283590623,
+            "pp": 143.869,
+            "mods": [
+              "HD"
+            ],
+            "combo": 493,
+            "created_at": "2026-03-04T19:50:15Z",
+            "beatmapset": {
+              "id": 931072,
+              "title": "Children Record",
+              "cover": "https://assets.ppy.sh/beatmaps/931072/covers/card.jpg?1622156879",
+              "stars": 5.25568
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4992167609,
+            "rank": "A",
+            "accuracy": 0.9868496283590623,
+            "pp": 146.411,
+            "mods": [
+              "HD"
+            ],
+            "combo": 531,
+            "created_at": "2026-03-04T19:47:17Z",
+            "beatmapset": {
+              "id": 931072,
+              "title": "Children Record",
+              "cover": "https://assets.ppy.sh/beatmaps/931072/covers/card.jpg?1622156879",
+              "stars": 5.25568
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4992166382,
+            "rank": "A",
+            "accuracy": 0.9845626072041166,
+            "pp": 135.843,
+            "mods": [
+              "HD"
+            ],
+            "combo": 254,
+            "created_at": "2026-03-04T19:44:28Z",
+            "beatmapset": {
+              "id": 931072,
+              "title": "Children Record",
+              "cover": "https://assets.ppy.sh/beatmaps/931072/covers/card.jpg?1622156879",
+              "stars": 5.25568
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4992165004,
+            "rank": "A",
+            "accuracy": 0.9779693486590039,
+            "pp": 164.148,
+            "mods": [
+              "HD"
+            ],
+            "combo": 324,
+            "created_at": "2026-03-04T19:41:16Z",
+            "beatmapset": {
+              "id": 1189202,
+              "title": "Ranbu no Melody (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1189202/covers/card.jpg?1650697145",
+              "stars": 5.46215
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4992164187,
+            "rank": "A",
+            "accuracy": 0.9741379310344828,
+            "pp": 142.673,
+            "mods": [
+              "HD"
+            ],
+            "combo": 302,
+            "created_at": "2026-03-04T19:39:22Z",
+            "beatmapset": {
+              "id": 1189202,
+              "title": "Ranbu no Melody (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1189202/covers/card.jpg?1650697145",
+              "stars": 5.46215
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4992163449,
+            "rank": "A",
+            "accuracy": 0.9444444444444444,
+            "pp": 82.8488,
+            "mods": [
+              "HD"
+            ],
+            "combo": 117,
+            "created_at": "2026-03-04T19:37:41Z",
+            "beatmapset": {
+              "id": 1189202,
+              "title": "Ranbu no Melody (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1189202/covers/card.jpg?1650697145",
+              "stars": 5.46215
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4992162684,
+            "rank": "SH",
+            "accuracy": 0.9939668174962293,
+            "pp": 141.508,
+            "mods": [
+              "HD"
+            ],
+            "combo": 847,
+            "created_at": "2026-03-04T19:35:51Z",
+            "beatmapset": {
+              "id": 771159,
+              "title": "Sidetracked Day (Short Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/771159/covers/card.jpg?1650663504",
+              "stars": 4.83899
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4992161786,
+            "rank": "SH",
+            "accuracy": 0.9924585218702866,
+            "pp": 137.636,
+            "mods": [
+              "HD"
+            ],
+            "combo": 891,
+            "created_at": "2026-03-04T19:33:49Z",
+            "beatmapset": {
+              "id": 771159,
+              "title": "Sidetracked Day (Short Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/771159/covers/card.jpg?1650663504",
+              "stars": 4.83899
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4992160909,
+            "rank": "SH",
+            "accuracy": 0.9909502262443439,
+            "pp": 134.08,
+            "mods": [
+              "HD"
+            ],
+            "combo": 874,
+            "created_at": "2026-03-04T19:31:45Z",
+            "beatmapset": {
+              "id": 771159,
+              "title": "Sidetracked Day (Short Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/771159/covers/card.jpg?1650663504",
+              "stars": 4.83899
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4992160010,
+            "rank": "A",
+            "accuracy": 0.9584415584415584,
+            "pp": 124.505,
+            "mods": [
+              "HD"
+            ],
+            "combo": 145,
+            "created_at": "2026-03-04T19:29:44Z",
+            "beatmapset": {
+              "id": 911245,
+              "title": "I swear (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/911245/covers/card.jpg?1650674345",
+              "stars": 5.56941
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4992159201,
+            "rank": "A",
+            "accuracy": 0.9701298701298702,
+            "pp": 148.952,
+            "mods": [
+              "HD"
+            ],
+            "combo": 180,
+            "created_at": "2026-03-04T19:27:47Z",
+            "beatmapset": {
+              "id": 911245,
+              "title": "I swear (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/911245/covers/card.jpg?1650674345",
+              "stars": 5.56941
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4992158445,
+            "rank": "A",
+            "accuracy": 0.9584415584415584,
+            "pp": 114.354,
+            "mods": [
+              "HD"
+            ],
+            "combo": 170,
+            "created_at": "2026-03-04T19:26:01Z",
+            "beatmapset": {
+              "id": 911245,
+              "title": "I swear (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/911245/covers/card.jpg?1650674345",
+              "stars": 5.56941
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Determinate (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+        "unique_players": 9
       }
     }
   }

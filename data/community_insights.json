@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 9,
-    "longest": 9,
-    "last_updated": "2026-03-06"
+    "current": 10,
+    "longest": 10,
+    "last_updated": "2026-03-07"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -2654,6 +2654,329 @@
         "title": "hate the way you love me (nightcore & cut ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2463664/covers/card.jpg?1767818786",
         "unique_players": 21
+      }
+    },
+    "2026-03-07": {
+      "total_scores": 503,
+      "peak_hour_baghdad": 21,
+      "top_grinder": {
+        "user": "kartel",
+        "user_id": 16368385,
+        "count": 93,
+        "scores": [
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4993063151,
+            "rank": "B",
+            "accuracy": 0.8864271457085828,
+            "pp": 127.665,
+            "mods": [
+              "HD"
+            ],
+            "combo": 288,
+            "created_at": "2026-03-06T19:11:07Z",
+            "beatmapset": {
+              "id": 965125,
+              "title": "Verflucht",
+              "cover": "https://assets.ppy.sh/beatmaps/965125/covers/card.jpg?1650686769",
+              "stars": 6.39014
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4993060928,
+            "rank": "B",
+            "accuracy": 0.9111453518233179,
+            "pp": 81.3951,
+            "mods": [
+              "HD"
+            ],
+            "combo": 228,
+            "created_at": "2026-03-06T19:06:06Z",
+            "beatmapset": {
+              "id": 46196,
+              "title": "Express Emotion",
+              "cover": "https://assets.ppy.sh/beatmaps/46196/covers/card.jpg?1456500103",
+              "stars": 5.40143
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4993059172,
+            "rank": "A",
+            "accuracy": 0.9572417946401687,
+            "pp": 127.697,
+            "mods": [
+              "HD"
+            ],
+            "combo": 693,
+            "created_at": "2026-03-06T19:02:11Z",
+            "beatmapset": {
+              "id": 140115,
+              "title": "Monosugoi Ikioide Keine ga Monosugoi Uta",
+              "cover": "https://assets.ppy.sh/beatmaps/140115/covers/card.jpg?1650619909",
+              "stars": 5.38805
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4993057316,
+            "rank": "A",
+            "accuracy": 0.9397771755495333,
+            "pp": 91.872,
+            "mods": [
+              "HD"
+            ],
+            "combo": 346,
+            "created_at": "2026-03-06T18:57:50Z",
+            "beatmapset": {
+              "id": 140115,
+              "title": "Monosugoi Ikioide Keine ga Monosugoi Uta",
+              "cover": "https://assets.ppy.sh/beatmaps/140115/covers/card.jpg?1650619909",
+              "stars": 5.38805
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4993055493,
+            "rank": "A",
+            "accuracy": 0.9381210478771455,
+            "pp": 106.595,
+            "mods": [
+              "HD"
+            ],
+            "combo": 463,
+            "created_at": "2026-03-06T18:53:34Z",
+            "beatmapset": {
+              "id": 140115,
+              "title": "Monosugoi Ikioide Keine ga Monosugoi Uta",
+              "cover": "https://assets.ppy.sh/beatmaps/140115/covers/card.jpg?1650619909",
+              "stars": 5.38805
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4993052582,
+            "rank": "A",
+            "accuracy": 0.9398950131233595,
+            "pp": 101.647,
+            "mods": [
+              "HD"
+            ],
+            "combo": 641,
+            "created_at": "2026-03-06T18:47:01Z",
+            "beatmapset": {
+              "id": 359191,
+              "title": "ANiMA",
+              "cover": "https://assets.ppy.sh/beatmaps/359191/covers/card.jpg?1650632964",
+              "stars": 5.63801
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4993051708,
+            "rank": "A",
+            "accuracy": 0.9501312335958005,
+            "pp": 153.529,
+            "mods": [
+              "HD"
+            ],
+            "combo": 799,
+            "created_at": "2026-03-06T18:45:00Z",
+            "beatmapset": {
+              "id": 359191,
+              "title": "ANiMA",
+              "cover": "https://assets.ppy.sh/beatmaps/359191/covers/card.jpg?1650632964",
+              "stars": 5.63801
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4993050913,
+            "rank": "A",
+            "accuracy": 0.9401574803149606,
+            "pp": 114.366,
+            "mods": [
+              "HD"
+            ],
+            "combo": 327,
+            "created_at": "2026-03-06T18:43:01Z",
+            "beatmapset": {
+              "id": 359191,
+              "title": "ANiMA",
+              "cover": "https://assets.ppy.sh/beatmaps/359191/covers/card.jpg?1650632964",
+              "stars": 5.63801
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4993045638,
+            "rank": "A",
+            "accuracy": 0.9295138888888889,
+            "pp": 77.0034,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 297,
+            "created_at": "2026-03-06T18:30:39Z",
+            "beatmapset": {
+              "id": 2449216,
+              "title": "Love Letter",
+              "cover": "https://assets.ppy.sh/beatmaps/2449216/covers/card.jpg?1764023323",
+              "stars": 4.0447
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4993044607,
+            "rank": "A",
+            "accuracy": 0.9329861111111111,
+            "pp": 78.0652,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 372,
+            "created_at": "2026-03-06T18:28:15Z",
+            "beatmapset": {
+              "id": 2449216,
+              "title": "Love Letter",
+              "cover": "https://assets.ppy.sh/beatmaps/2449216/covers/card.jpg?1764023323",
+              "stars": 4.0447
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4993043533,
+            "rank": "B",
+            "accuracy": 0.9097222222222222,
+            "pp": 60.7679,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 137,
+            "created_at": "2026-03-06T18:25:45Z",
+            "beatmapset": {
+              "id": 2449216,
+              "title": "Love Letter",
+              "cover": "https://assets.ppy.sh/beatmaps/2449216/covers/card.jpg?1764023323",
+              "stars": 4.0447
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4993042331,
+            "rank": "B",
+            "accuracy": 0.8645465253239105,
+            "pp": 83.2476,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 207,
+            "created_at": "2026-03-06T18:23:03Z",
+            "beatmapset": {
+              "id": 811447,
+              "title": "Ame ga Furu kara Niji ga Deru (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/811447/covers/card.jpg?1650667003",
+              "stars": 4.04383
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4993041868,
+            "rank": "C",
+            "accuracy": 0.8539458186101295,
+            "pp": 52.4464,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 62,
+            "created_at": "2026-03-06T18:21:58Z",
+            "beatmapset": {
+              "id": 811447,
+              "title": "Ame ga Furu kara Niji ga Deru (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/811447/covers/card.jpg?1650667003",
+              "stars": 4.04383
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4993041354,
+            "rank": "B",
+            "accuracy": 0.8869257950530035,
+            "pp": 70.3263,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 107,
+            "created_at": "2026-03-06T18:20:51Z",
+            "beatmapset": {
+              "id": 811447,
+              "title": "Ame ga Furu kara Niji ga Deru (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/811447/covers/card.jpg?1650667003",
+              "stars": 4.04383
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4993040703,
+            "rank": "B",
+            "accuracy": 0.8772609819121447,
+            "pp": 99.599,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 53,
+            "created_at": "2026-03-06T18:19:23Z",
+            "beatmapset": {
+              "id": 2377334,
+              "title": "Gypsy In My Mind (Disco Rave Edit 2022) (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2377334/covers/card.jpg?1758681144",
+              "stars": 4.10619
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "hate the way you love me (nightcore & cut ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2463664/covers/card.jpg?1767818786",
+        "unique_players": 23
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 10,
-    "longest": 10,
-    "last_updated": "2026-03-07"
+    "current": 11,
+    "longest": 11,
+    "last_updated": "2026-03-08"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -2977,6 +2977,302 @@
         "title": "hate the way you love me (nightcore & cut ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2463664/covers/card.jpg?1767818786",
         "unique_players": 23
+      }
+    },
+    "2026-03-08": {
+      "total_scores": 422,
+      "peak_hour_baghdad": 22,
+      "top_grinder": {
+        "user": "Kosmiku",
+        "user_id": 15209351,
+        "count": 43,
+        "scores": [
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 4993603367,
+            "rank": "B",
+            "accuracy": 0.9233432245301681,
+            "pp": 22.2296,
+            "mods": [],
+            "combo": 239,
+            "created_at": "2026-03-07T20:28:23Z",
+            "beatmapset": {
+              "id": 2428693,
+              "title": "Heart Attack (Rock Ver.) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2428693/covers/card.jpg?1761236977",
+              "stars": 3.69866
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 4993601517,
+            "rank": "S",
+            "accuracy": 0.9925093632958801,
+            "pp": 29.1048,
+            "mods": [
+              "HR"
+            ],
+            "combo": 408,
+            "created_at": "2026-03-07T20:24:04Z",
+            "beatmapset": {
+              "id": 2428693,
+              "title": "Heart Attack (Rock Ver.) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2428693/covers/card.jpg?1761236977",
+              "stars": 2.68337
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 4993600013,
+            "rank": "B",
+            "accuracy": 0.8850129198966409,
+            "pp": 55.2711,
+            "mods": [],
+            "combo": 108,
+            "created_at": "2026-03-07T20:20:29Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 4.61061
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 4993598801,
+            "rank": "S",
+            "accuracy": 0.9935275080906149,
+            "pp": 21.4684,
+            "mods": [
+              "HR"
+            ],
+            "combo": 164,
+            "created_at": "2026-03-07T20:17:32Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 2.45032
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 4993596674,
+            "rank": "C",
+            "accuracy": 0.8161616161616162,
+            "pp": 46.0438,
+            "mods": [],
+            "combo": 97,
+            "created_at": "2026-03-07T20:12:31Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 5.20377
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 4993595158,
+            "rank": "B",
+            "accuracy": 0.8888888888888888,
+            "pp": 37.5425,
+            "mods": [],
+            "combo": 212,
+            "created_at": "2026-03-07T20:08:52Z",
+            "beatmapset": {
+              "id": 2379887,
+              "title": "This Little Girl (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2379887/covers/card.jpg?1749535372",
+              "stars": 4.16098
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 4993593552,
+            "rank": "B",
+            "accuracy": 0.8774774774774775,
+            "pp": 37.9148,
+            "mods": [],
+            "combo": 161,
+            "created_at": "2026-03-07T20:05:09Z",
+            "beatmapset": {
+              "id": 2379887,
+              "title": "This Little Girl (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2379887/covers/card.jpg?1749535372",
+              "stars": 4.29073
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 4993592935,
+            "rank": "C",
+            "accuracy": 0.8567567567567568,
+            "pp": 35.973,
+            "mods": [],
+            "combo": 147,
+            "created_at": "2026-03-07T20:03:38Z",
+            "beatmapset": {
+              "id": 2379887,
+              "title": "This Little Girl (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2379887/covers/card.jpg?1749535372",
+              "stars": 4.29073
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 4993592012,
+            "rank": "C",
+            "accuracy": 0.8357487922705314,
+            "pp": 26.2694,
+            "mods": [],
+            "combo": 167,
+            "created_at": "2026-03-07T20:01:31Z",
+            "beatmapset": {
+              "id": 2379887,
+              "title": "This Little Girl (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2379887/covers/card.jpg?1749535372",
+              "stars": 3.81229
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 4993589577,
+            "rank": "S",
+            "accuracy": 0.9621676891615542,
+            "pp": 24.5739,
+            "mods": [],
+            "combo": 271,
+            "created_at": "2026-03-07T19:55:57Z",
+            "beatmapset": {
+              "id": 2379887,
+              "title": "This Little Girl (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2379887/covers/card.jpg?1749535372",
+              "stars": 3.12926
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 4993587998,
+            "rank": "S",
+            "accuracy": 0.9914529914529915,
+            "pp": 26.4105,
+            "mods": [
+              "HR"
+            ],
+            "combo": 594,
+            "created_at": "2026-03-07T19:52:14Z",
+            "beatmapset": {
+              "id": 2044626,
+              "title": "AImee feat. Aitsuki Nakuru",
+              "cover": "https://assets.ppy.sh/beatmaps/2044626/covers/card.jpg?1692613061",
+              "stars": 2.42796
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 4993586461,
+            "rank": "B",
+            "accuracy": 0.8749046529366895,
+            "pp": 20.7155,
+            "mods": [],
+            "combo": 364,
+            "created_at": "2026-03-07T19:48:41Z",
+            "beatmapset": {
+              "id": 2044626,
+              "title": "AImee feat. Aitsuki Nakuru",
+              "cover": "https://assets.ppy.sh/beatmaps/2044626/covers/card.jpg?1692613061",
+              "stars": 3.77858
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 4993582010,
+            "rank": "S",
+            "accuracy": 0.9906759906759907,
+            "pp": 33.3669,
+            "mods": [
+              "HR"
+            ],
+            "combo": 212,
+            "created_at": "2026-03-07T19:38:28Z",
+            "beatmapset": {
+              "id": 1983389,
+              "title": "Temptation (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1983389/covers/card.jpg?1688570024",
+              "stars": 2.78682
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 4993574965,
+            "rank": "S",
+            "accuracy": 0.9419047619047619,
+            "pp": 13.108,
+            "mods": [
+              "HR"
+            ],
+            "combo": 275,
+            "created_at": "2026-03-07T19:22:53Z",
+            "beatmapset": {
+              "id": 1520433,
+              "title": "0 (zero) (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1520433/covers/card.jpg?1640203529",
+              "stars": 2.52436
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 4993572966,
+            "rank": "B",
+            "accuracy": 0.9118589743589743,
+            "pp": 23.9868,
+            "mods": [],
+            "combo": 311,
+            "created_at": "2026-03-07T19:18:25Z",
+            "beatmapset": {
+              "id": 1520433,
+              "title": "0 (zero) (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1520433/covers/card.jpg?1640203529",
+              "stars": 3.44133
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "PADORU / PADORU",
+        "cover": "https://assets.ppy.sh/beatmaps/1061287/covers/card.jpg?1650688170",
+        "unique_players": 19
       }
     }
   }

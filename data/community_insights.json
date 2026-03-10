@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 11,
-    "longest": 11,
-    "last_updated": "2026-03-08"
+    "current": 12,
+    "longest": 12,
+    "last_updated": "2026-03-09"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -3273,6 +3273,294 @@
         "title": "PADORU / PADORU",
         "cover": "https://assets.ppy.sh/beatmaps/1061287/covers/card.jpg?1650688170",
         "unique_players": 19
+      }
+    },
+    "2026-03-09": {
+      "total_scores": 351,
+      "peak_hour_baghdad": 23,
+      "top_grinder": {
+        "user": "watermouse",
+        "user_id": 28609789,
+        "count": 44,
+        "scores": [
+          {
+            "user": "watermouse",
+            "user_id": 28609789,
+            "country": "IQ",
+            "score_id": 4994071119,
+            "rank": "A",
+            "accuracy": 0.967607973421927,
+            "pp": 35.5422,
+            "mods": [],
+            "combo": 386,
+            "created_at": "2026-03-08T19:45:37Z",
+            "beatmapset": {
+              "id": 2431746,
+              "title": "Wish for you",
+              "cover": "https://assets.ppy.sh/beatmaps/2431746/covers/card.jpg?1768225141",
+              "stars": 3.71086
+            }
+          },
+          {
+            "user": "watermouse",
+            "user_id": 28609789,
+            "country": "IQ",
+            "score_id": 4994068885,
+            "rank": "A",
+            "accuracy": 0.9352896914973664,
+            "pp": 58.1236,
+            "mods": [],
+            "combo": 316,
+            "created_at": "2026-03-08T19:40:35Z",
+            "beatmapset": {
+              "id": 417408,
+              "title": "Lune",
+              "cover": "https://assets.ppy.sh/beatmaps/417408/covers/card.jpg?1650639378",
+              "stars": 4.39954
+            }
+          },
+          {
+            "user": "watermouse",
+            "user_id": 28609789,
+            "country": "IQ",
+            "score_id": 4994067922,
+            "rank": "A",
+            "accuracy": 0.9541666666666667,
+            "pp": 43.3218,
+            "mods": [],
+            "combo": 152,
+            "created_at": "2026-03-08T19:38:25Z",
+            "beatmapset": {
+              "id": 1685799,
+              "title": "you",
+              "cover": "https://assets.ppy.sh/beatmaps/1685799/covers/card.jpg?1644269905",
+              "stars": 4.18876
+            }
+          },
+          {
+            "user": "watermouse",
+            "user_id": 28609789,
+            "country": "IQ",
+            "score_id": 4994067140,
+            "rank": "A",
+            "accuracy": 0.9483378256963163,
+            "pp": 74.0073,
+            "mods": [
+              "DT"
+            ],
+            "combo": 542,
+            "created_at": "2026-03-08T19:36:46Z",
+            "beatmapset": {
+              "id": 2495396,
+              "title": "Corruption",
+              "cover": "https://assets.ppy.sh/beatmaps/2495396/covers/card.jpg?1768882897",
+              "stars": 3.26554
+            }
+          },
+          {
+            "user": "watermouse",
+            "user_id": 28609789,
+            "country": "IQ",
+            "score_id": 4994066138,
+            "rank": "A",
+            "accuracy": 0.8990112994350282,
+            "pp": 23.1634,
+            "mods": [],
+            "combo": 441,
+            "created_at": "2026-03-08T19:34:27Z",
+            "beatmapset": {
+              "id": 2348671,
+              "title": "This Bright Flash",
+              "cover": "https://assets.ppy.sh/beatmaps/2348671/covers/card.jpg?1763236063",
+              "stars": 3.3705
+            }
+          },
+          {
+            "user": "watermouse",
+            "user_id": 28609789,
+            "country": "IQ",
+            "score_id": 4994065150,
+            "rank": "B",
+            "accuracy": 0.8888888888888888,
+            "pp": 29.4163,
+            "mods": [],
+            "combo": 157,
+            "created_at": "2026-03-08T19:32:09Z",
+            "beatmapset": {
+              "id": 2459977,
+              "title": "* Crow Solace *",
+              "cover": "https://assets.ppy.sh/beatmaps/2459977/covers/card.jpg?1766793273",
+              "stars": 4.60549
+            }
+          },
+          {
+            "user": "watermouse",
+            "user_id": 28609789,
+            "country": "IQ",
+            "score_id": 4994064242,
+            "rank": "A",
+            "accuracy": 0.9442724458204335,
+            "pp": 31.0691,
+            "mods": [],
+            "combo": 223,
+            "created_at": "2026-03-08T19:30:01Z",
+            "beatmapset": {
+              "id": 2459977,
+              "title": "* Crow Solace *",
+              "cover": "https://assets.ppy.sh/beatmaps/2459977/covers/card.jpg?1766793273",
+              "stars": 3.80556
+            }
+          },
+          {
+            "user": "watermouse",
+            "user_id": 28609789,
+            "country": "IQ",
+            "score_id": 4994063027,
+            "rank": "A",
+            "accuracy": 0.9641666666666666,
+            "pp": 55.7254,
+            "mods": [],
+            "combo": 257,
+            "created_at": "2026-03-08T19:27:15Z",
+            "beatmapset": {
+              "id": 2246377,
+              "title": "The Emptiness Machine (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2246377/covers/card.jpg?1726770838",
+              "stars": 4.33693
+            }
+          },
+          {
+            "user": "watermouse",
+            "user_id": 28609789,
+            "country": "IQ",
+            "score_id": 4994061698,
+            "rank": "A",
+            "accuracy": 0.9657687991021324,
+            "pp": 29.8487,
+            "mods": [],
+            "combo": 467,
+            "created_at": "2026-03-08T19:24:14Z",
+            "beatmapset": {
+              "id": 2246377,
+              "title": "The Emptiness Machine (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2246377/covers/card.jpg?1726770838",
+              "stars": 3.48677
+            }
+          },
+          {
+            "user": "watermouse",
+            "user_id": 28609789,
+            "country": "IQ",
+            "score_id": 4994060636,
+            "rank": "B",
+            "accuracy": 0.9032376747608536,
+            "pp": 25.6968,
+            "mods": [],
+            "combo": 118,
+            "created_at": "2026-03-08T19:21:48Z",
+            "beatmapset": {
+              "id": 2376493,
+              "title": "NNRT",
+              "cover": "https://assets.ppy.sh/beatmaps/2376493/covers/card.jpg?1753804335",
+              "stars": 4.66146
+            }
+          },
+          {
+            "user": "watermouse",
+            "user_id": 28609789,
+            "country": "IQ",
+            "score_id": 4994059685,
+            "rank": "S",
+            "accuracy": 0.9736614853195165,
+            "pp": 51.6684,
+            "mods": [],
+            "combo": 698,
+            "created_at": "2026-03-08T19:19:34Z",
+            "beatmapset": {
+              "id": 2376493,
+              "title": "NNRT",
+              "cover": "https://assets.ppy.sh/beatmaps/2376493/covers/card.jpg?1753804335",
+              "stars": 3.84797
+            }
+          },
+          {
+            "user": "watermouse",
+            "user_id": 28609789,
+            "country": "IQ",
+            "score_id": 4994058622,
+            "rank": "A",
+            "accuracy": 0.9727969348659004,
+            "pp": 25.0163,
+            "mods": [],
+            "combo": 487,
+            "created_at": "2026-03-08T19:17:08Z",
+            "beatmapset": {
+              "id": 510568,
+              "title": "Russian Roulette",
+              "cover": "https://assets.ppy.sh/beatmaps/510568/covers/card.jpg?1650643553",
+              "stars": 3.13848
+            }
+          },
+          {
+            "user": "watermouse",
+            "user_id": 28609789,
+            "country": "IQ",
+            "score_id": 4994056044,
+            "rank": "A",
+            "accuracy": 0.9744835965978129,
+            "pp": 42.6424,
+            "mods": [],
+            "combo": 449,
+            "created_at": "2026-03-08T19:10:50Z",
+            "beatmapset": {
+              "id": 2481703,
+              "title": "Mo Koinante Shinai (2012 Remaster)",
+              "cover": "https://assets.ppy.sh/beatmaps/2481703/covers/card.jpg?1770399745",
+              "stars": 4.02976
+            }
+          },
+          {
+            "user": "watermouse",
+            "user_id": 28609789,
+            "country": "IQ",
+            "score_id": 4994053928,
+            "rank": "B",
+            "accuracy": 0.9254385964912281,
+            "pp": 49.0864,
+            "mods": [],
+            "combo": 274,
+            "created_at": "2026-03-08T19:05:54Z",
+            "beatmapset": {
+              "id": 864947,
+              "title": "Itazura Fiction",
+              "cover": "https://assets.ppy.sh/beatmaps/864947/covers/card.jpg?1622149184",
+              "stars": 4.93063
+            }
+          },
+          {
+            "user": "watermouse",
+            "user_id": 28609789,
+            "country": "IQ",
+            "score_id": 4994052377,
+            "rank": "A",
+            "accuracy": 0.9667705088265836,
+            "pp": 61.2513,
+            "mods": [],
+            "combo": 326,
+            "created_at": "2026-03-08T19:02:15Z",
+            "beatmapset": {
+              "id": 194394,
+              "title": "Fukagyaku Replace",
+              "cover": "https://assets.ppy.sh/beatmaps/194394/covers/card.jpg?1622076274",
+              "stars": 4.58091
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Say Goodbye (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/1049899/covers/card.jpg?1724193986",
+        "unique_players": 12
       }
     }
   }

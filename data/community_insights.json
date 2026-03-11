@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 12,
-    "longest": 12,
-    "last_updated": "2026-03-09"
+    "current": 13,
+    "longest": 13,
+    "last_updated": "2026-03-10"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -3560,6 +3560,323 @@
       "most_played_map": {
         "title": "Say Goodbye (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/1049899/covers/card.jpg?1724193986",
+        "unique_players": 12
+      }
+    },
+    "2026-03-10": {
+      "total_scores": 386,
+      "peak_hour_baghdad": 21,
+      "top_grinder": {
+        "user": "kartel",
+        "user_id": 16368385,
+        "count": 65,
+        "scores": [
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994523523,
+            "rank": "B",
+            "accuracy": 0.8586739327883742,
+            "pp": null,
+            "mods": [
+              "HD"
+            ],
+            "combo": 285,
+            "created_at": "2026-03-09T20:44:44Z",
+            "beatmapset": {
+              "id": 1435435,
+              "title": "Gate Openerz",
+              "cover": "https://assets.ppy.sh/beatmaps/1435435/covers/card.jpg?1663601542",
+              "stars": 6.73225
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994521276,
+            "rank": "B",
+            "accuracy": 0.8716621253405995,
+            "pp": null,
+            "mods": [
+              "HD"
+            ],
+            "combo": 168,
+            "created_at": "2026-03-09T20:39:16Z",
+            "beatmapset": {
+              "id": 1435435,
+              "title": "Gate Openerz",
+              "cover": "https://assets.ppy.sh/beatmaps/1435435/covers/card.jpg?1663601542",
+              "stars": 6.73225
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994512126,
+            "rank": "B",
+            "accuracy": 0.9050574712643679,
+            "pp": 65.8345,
+            "mods": [
+              "HD"
+            ],
+            "combo": 230,
+            "created_at": "2026-03-09T20:17:09Z",
+            "beatmapset": {
+              "id": 830537,
+              "title": "Hype feat. Such (lapix Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/830537/covers/card.jpg?1650668001",
+              "stars": 6.21307
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994508208,
+            "rank": "B",
+            "accuracy": 0.8693723663783544,
+            "pp": null,
+            "mods": [
+              "HD"
+            ],
+            "combo": 224,
+            "created_at": "2026-03-09T20:07:50Z",
+            "beatmapset": {
+              "id": 618645,
+              "title": "HAELEQUINZ -the clown of 24stairs-",
+              "cover": "https://assets.ppy.sh/beatmaps/618645/covers/card.jpg?1650650641",
+              "stars": 6.11914
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994506173,
+            "rank": "A",
+            "accuracy": 0.9658536585365853,
+            "pp": 193.898,
+            "mods": [
+              "HD"
+            ],
+            "combo": 116,
+            "created_at": "2026-03-09T20:02:49Z",
+            "beatmapset": {
+              "id": 420765,
+              "title": "gabe power",
+              "cover": "https://assets.ppy.sh/beatmaps/420765/covers/card.jpg?1650640091",
+              "stars": 6.06109
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994505111,
+            "rank": "A",
+            "accuracy": 0.9434940383618455,
+            "pp": 108.885,
+            "mods": [
+              "HD",
+              "HR"
+            ],
+            "combo": 527,
+            "created_at": "2026-03-09T20:00:26Z",
+            "beatmapset": {
+              "id": 29257,
+              "title": "UroboroS-Infinity",
+              "cover": "https://assets.ppy.sh/beatmaps/29257/covers/card.jpg?1650608424",
+              "stars": 4.95061
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994503963,
+            "rank": "SH",
+            "accuracy": 0.981078278900985,
+            "pp": 145.31,
+            "mods": [
+              "HD"
+            ],
+            "combo": 925,
+            "created_at": "2026-03-09T19:57:39Z",
+            "beatmapset": {
+              "id": 29257,
+              "title": "UroboroS-Infinity",
+              "cover": "https://assets.ppy.sh/beatmaps/29257/covers/card.jpg?1650608424",
+              "stars": 4.95061
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994502813,
+            "rank": "A",
+            "accuracy": 0.9476412649040954,
+            "pp": 87.2272,
+            "mods": [
+              "HD"
+            ],
+            "combo": 495,
+            "created_at": "2026-03-09T19:54:57Z",
+            "beatmapset": {
+              "id": 29257,
+              "title": "UroboroS-Infinity",
+              "cover": "https://assets.ppy.sh/beatmaps/29257/covers/card.jpg?1650608424",
+              "stars": 4.95061
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994500987,
+            "rank": "A",
+            "accuracy": 0.9848484848484849,
+            "pp": 114.733,
+            "mods": [
+              "HD"
+            ],
+            "combo": 354,
+            "created_at": "2026-03-09T19:50:40Z",
+            "beatmapset": {
+              "id": 21924,
+              "title": "Midsummer Festival",
+              "cover": "https://assets.ppy.sh/beatmaps/21924/covers/card.jpg?1650606914",
+              "stars": 4.93175
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994499611,
+            "rank": "A",
+            "accuracy": 0.9755244755244755,
+            "pp": 102.478,
+            "mods": [
+              "HD"
+            ],
+            "combo": 332,
+            "created_at": "2026-03-09T19:47:23Z",
+            "beatmapset": {
+              "id": 21924,
+              "title": "Midsummer Festival",
+              "cover": "https://assets.ppy.sh/beatmaps/21924/covers/card.jpg?1650606914",
+              "stars": 4.93175
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994498203,
+            "rank": "B",
+            "accuracy": 0.9153194765204004,
+            "pp": 83.9503,
+            "mods": [
+              "HD"
+            ],
+            "combo": 163,
+            "created_at": "2026-03-09T19:44:02Z",
+            "beatmapset": {
+              "id": 11182,
+              "title": "Vampire",
+              "cover": "https://assets.ppy.sh/beatmaps/11182/covers/card.jpg?1622030036",
+              "stars": 4.97341
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994497550,
+            "rank": "B",
+            "accuracy": 0.9210931485758276,
+            "pp": 72.1304,
+            "mods": [
+              "HD"
+            ],
+            "combo": 141,
+            "created_at": "2026-03-09T19:42:25Z",
+            "beatmapset": {
+              "id": 11182,
+              "title": "Vampire",
+              "cover": "https://assets.ppy.sh/beatmaps/11182/covers/card.jpg?1622030036",
+              "stars": 4.97341
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994496912,
+            "rank": "B",
+            "accuracy": 0.9191685912240185,
+            "pp": 85.9248,
+            "mods": [
+              "HD"
+            ],
+            "combo": 206,
+            "created_at": "2026-03-09T19:40:49Z",
+            "beatmapset": {
+              "id": 11182,
+              "title": "Vampire",
+              "cover": "https://assets.ppy.sh/beatmaps/11182/covers/card.jpg?1622030036",
+              "stars": 4.97341
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994494939,
+            "rank": "B",
+            "accuracy": 0.8982213438735178,
+            "pp": 51.2368,
+            "mods": [
+              "HD"
+            ],
+            "combo": 298,
+            "created_at": "2026-03-09T19:36:13Z",
+            "beatmapset": {
+              "id": 30877,
+              "title": "ALL MY TURN",
+              "cover": "https://assets.ppy.sh/beatmaps/30877/covers/card.jpg?1456508793",
+              "stars": 4.80838
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994494079,
+            "rank": "B",
+            "accuracy": 0.8988801054018445,
+            "pp": 68.8665,
+            "mods": [
+              "HD"
+            ],
+            "combo": 399,
+            "created_at": "2026-03-09T19:34:13Z",
+            "beatmapset": {
+              "id": 30877,
+              "title": "ALL MY TURN",
+              "cover": "https://assets.ppy.sh/beatmaps/30877/covers/card.jpg?1456508793",
+              "stars": 4.80838
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Make a Move (Speed Up Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/765778/covers/card.jpg?1650663123",
         "unique_players": 12
       }
     }

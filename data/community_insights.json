@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 13,
-    "longest": 13,
-    "last_updated": "2026-03-10"
+    "current": 14,
+    "longest": 14,
+    "last_updated": "2026-03-11"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -3878,6 +3878,337 @@
         "title": "Make a Move (Speed Up Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/765778/covers/card.jpg?1650663123",
         "unique_players": 12
+      }
+    },
+    "2026-03-11": {
+      "total_scores": 396,
+      "peak_hour_baghdad": 16,
+      "top_grinder": {
+        "user": "kartel",
+        "user_id": 16368385,
+        "count": 47,
+        "scores": [
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994847089,
+            "rank": "A",
+            "accuracy": 0.9327094474153298,
+            "pp": 73.3686,
+            "mods": [
+              "HD"
+            ],
+            "combo": 173,
+            "created_at": "2026-03-10T16:31:03Z",
+            "beatmapset": {
+              "id": 108529,
+              "title": "FREEDMAN",
+              "cover": "https://assets.ppy.sh/beatmaps/108529/covers/card.jpg?1650617551",
+              "stars": 6.08714
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994845890,
+            "rank": "A",
+            "accuracy": 0.9258021390374331,
+            "pp": 63.1769,
+            "mods": [
+              "HD"
+            ],
+            "combo": 215,
+            "created_at": "2026-03-10T16:28:05Z",
+            "beatmapset": {
+              "id": 108529,
+              "title": "FREEDMAN",
+              "cover": "https://assets.ppy.sh/beatmaps/108529/covers/card.jpg?1650617551",
+              "stars": 6.08714
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994844275,
+            "rank": "B",
+            "accuracy": 0.9193548387096774,
+            "pp": 56.3629,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 116,
+            "created_at": "2026-03-10T16:24:20Z",
+            "beatmapset": {
+              "id": 36790,
+              "title": "CaptivAte2~Kakusei~",
+              "cover": "https://assets.ppy.sh/beatmaps/36790/covers/card.jpg?1456507500",
+              "stars": 3.66281
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994843745,
+            "rank": "B",
+            "accuracy": 0.885752688172043,
+            "pp": 46.2131,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 177,
+            "created_at": "2026-03-10T16:23:02Z",
+            "beatmapset": {
+              "id": 36790,
+              "title": "CaptivAte2~Kakusei~",
+              "cover": "https://assets.ppy.sh/beatmaps/36790/covers/card.jpg?1456507500",
+              "stars": 3.66281
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994817769,
+            "rank": "C",
+            "accuracy": 0.7994726616708299,
+            "pp": null,
+            "mods": [
+              "NF",
+              "HD"
+            ],
+            "combo": 134,
+            "created_at": "2026-03-10T15:21:47Z",
+            "beatmapset": {
+              "id": 308759,
+              "title": "C204",
+              "cover": "https://assets.ppy.sh/beatmaps/308759/covers/card.jpg?1622085817",
+              "stars": 7.9075
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994811920,
+            "rank": "C",
+            "accuracy": 0.7925925925925926,
+            "pp": 71.6671,
+            "mods": [
+              "HD",
+              "HR",
+              "DT"
+            ],
+            "combo": 114,
+            "created_at": "2026-03-10T15:07:59Z",
+            "beatmapset": {
+              "id": 12127,
+              "title": "Seeker",
+              "cover": "https://assets.ppy.sh/beatmaps/12127/covers/card.jpg?1622031229",
+              "stars": 3.96111
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994811199,
+            "rank": "C",
+            "accuracy": 0.7648148148148148,
+            "pp": 71.7604,
+            "mods": [
+              "HD",
+              "HR",
+              "DT"
+            ],
+            "combo": 162,
+            "created_at": "2026-03-10T15:06:21Z",
+            "beatmapset": {
+              "id": 12127,
+              "title": "Seeker",
+              "cover": "https://assets.ppy.sh/beatmaps/12127/covers/card.jpg?1622031229",
+              "stars": 3.96111
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994810014,
+            "rank": "SH",
+            "accuracy": 0.9897435897435898,
+            "pp": 151.483,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 358,
+            "created_at": "2026-03-10T15:03:30Z",
+            "beatmapset": {
+              "id": 2368916,
+              "title": "Los! Los! Los! (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2368916/covers/card.jpg?1763962950",
+              "stars": 3.84356
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994809478,
+            "rank": "A",
+            "accuracy": 0.9825641025641025,
+            "pp": 139.778,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 358,
+            "created_at": "2026-03-10T15:02:16Z",
+            "beatmapset": {
+              "id": 2368916,
+              "title": "Los! Los! Los! (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2368916/covers/card.jpg?1763962950",
+              "stars": 3.84356
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994808971,
+            "rank": "A",
+            "accuracy": 0.9569230769230769,
+            "pp": 115.072,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 349,
+            "created_at": "2026-03-10T15:01:11Z",
+            "beatmapset": {
+              "id": 2368916,
+              "title": "Los! Los! Los! (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2368916/covers/card.jpg?1763962950",
+              "stars": 3.84356
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994808212,
+            "rank": "SH",
+            "accuracy": 0.9844961240310077,
+            "pp": 210.846,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 191,
+            "created_at": "2026-03-10T14:59:26Z",
+            "beatmapset": {
+              "id": 2377334,
+              "title": "Gypsy In My Mind (Disco Rave Edit 2022) (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2377334/covers/card.jpg?1758681144",
+              "stars": 3.96978
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994807986,
+            "rank": "A",
+            "accuracy": 0.9560723514211886,
+            "pp": 144.034,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 98,
+            "created_at": "2026-03-10T14:58:53Z",
+            "beatmapset": {
+              "id": 2377334,
+              "title": "Gypsy In My Mind (Disco Rave Edit 2022) (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2377334/covers/card.jpg?1758681144",
+              "stars": 3.96978
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994807608,
+            "rank": "B",
+            "accuracy": 0.9246575342465754,
+            "pp": 72.1333,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 228,
+            "created_at": "2026-03-10T14:58:04Z",
+            "beatmapset": {
+              "id": 2160311,
+              "title": "Full Moon Full Life -Opening Movie version-",
+              "cover": "https://assets.ppy.sh/beatmaps/2160311/covers/card.jpg?1721070529",
+              "stars": 3.94721
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994807034,
+            "rank": "A",
+            "accuracy": 0.9509132420091324,
+            "pp": 96.9804,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 244,
+            "created_at": "2026-03-10T14:56:44Z",
+            "beatmapset": {
+              "id": 2160311,
+              "title": "Full Moon Full Life -Opening Movie version-",
+              "cover": "https://assets.ppy.sh/beatmaps/2160311/covers/card.jpg?1721070529",
+              "stars": 3.94721
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4994806501,
+            "rank": "A",
+            "accuracy": 0.958904109589041,
+            "pp": 111.398,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 224,
+            "created_at": "2026-03-10T14:55:32Z",
+            "beatmapset": {
+              "id": 2160311,
+              "title": "Full Moon Full Life -Opening Movie version-",
+              "cover": "https://assets.ppy.sh/beatmaps/2160311/covers/card.jpg?1721070529",
+              "stars": 3.94721
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Ai no Sukima",
+        "cover": "https://assets.ppy.sh/beatmaps/966339/covers/card.jpg?1650679952",
+        "unique_players": 8
       }
     }
   }

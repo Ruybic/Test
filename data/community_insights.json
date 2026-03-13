@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 14,
-    "longest": 14,
-    "last_updated": "2026-03-11"
+    "current": 15,
+    "longest": 15,
+    "last_updated": "2026-03-12"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -4209,6 +4209,337 @@
         "title": "Ai no Sukima",
         "cover": "https://assets.ppy.sh/beatmaps/966339/covers/card.jpg?1650679952",
         "unique_players": 8
+      }
+    },
+    "2026-03-12": {
+      "total_scores": 468,
+      "peak_hour_baghdad": 23,
+      "top_grinder": {
+        "user": "Meaco",
+        "user_id": 32837861,
+        "count": 57,
+        "scores": [
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4995455602,
+            "rank": "A",
+            "accuracy": 0.9830917874396136,
+            "pp": 299.82,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 150,
+            "created_at": "2026-03-12T00:28:40Z",
+            "beatmapset": {
+              "id": 2210696,
+              "title": "Gravity Falls Theme Song (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2210696/covers/card.jpg?1737310112",
+              "stars": 4.75006
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4995454970,
+            "rank": "C",
+            "accuracy": 0.8194444444444444,
+            "pp": 153.38,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 47,
+            "created_at": "2026-03-12T00:26:15Z",
+            "beatmapset": {
+              "id": 2253247,
+              "title": "El Sonidito x Athletic Theme (DitzyFlama Mashup)",
+              "cover": "https://assets.ppy.sh/beatmaps/2253247/covers/card.jpg?1737229904",
+              "stars": 5.30621
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4995453457,
+            "rank": "A",
+            "accuracy": 0.9350877192982456,
+            "pp": 182.1,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 136,
+            "created_at": "2026-03-12T00:20:14Z",
+            "beatmapset": {
+              "id": 2446228,
+              "title": "bad times (sped up & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2446228/covers/card.jpg?1768233080",
+              "stars": 4.96628
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4995449050,
+            "rank": "SH",
+            "accuracy": 0.9903381642512077,
+            "pp": 318.446,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 166,
+            "created_at": "2026-03-12T00:02:24Z",
+            "beatmapset": {
+              "id": 2210696,
+              "title": "Gravity Falls Theme Song (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2210696/covers/card.jpg?1737310112",
+              "stars": 4.75006
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4995448303,
+            "rank": "A",
+            "accuracy": 0.9710144927536232,
+            "pp": 261.319,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 170,
+            "created_at": "2026-03-11T23:59:41Z",
+            "beatmapset": {
+              "id": 2210696,
+              "title": "Gravity Falls Theme Song (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2210696/covers/card.jpg?1737310112",
+              "stars": 4.75006
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4995446246,
+            "rank": "SH",
+            "accuracy": 0.9855072463768116,
+            "pp": 334.605,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 194,
+            "created_at": "2026-03-11T23:52:27Z",
+            "beatmapset": {
+              "id": 2210696,
+              "title": "Gravity Falls Theme Song (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2210696/covers/card.jpg?1737310112",
+              "stars": 4.75006
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4995445788,
+            "rank": "A",
+            "accuracy": 0.9806763285024155,
+            "pp": 277.276,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 148,
+            "created_at": "2026-03-11T23:50:40Z",
+            "beatmapset": {
+              "id": 2210696,
+              "title": "Gravity Falls Theme Song (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2210696/covers/card.jpg?1737310112",
+              "stars": 4.75006
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4995444939,
+            "rank": "A",
+            "accuracy": 0.9323432343234324,
+            "pp": 131.201,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 153,
+            "created_at": "2026-03-11T23:47:40Z",
+            "beatmapset": {
+              "id": 2463664,
+              "title": "hate the way you love me (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2463664/covers/card.jpg?1767818786",
+              "stars": 4.5503
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4995443868,
+            "rank": "A",
+            "accuracy": 0.9727891156462585,
+            "pp": 188.374,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 138,
+            "created_at": "2026-03-11T23:43:58Z",
+            "beatmapset": {
+              "id": 2405583,
+              "title": "How Do You Do? (Potatoheadz Remix) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2405583/covers/card.jpg?1764783562",
+              "stars": 4.46066
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4995443557,
+            "rank": "B",
+            "accuracy": 0.9032258064516129,
+            "pp": 150.826,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 121,
+            "created_at": "2026-03-11T23:42:56Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.05092
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4995441975,
+            "rank": "C",
+            "accuracy": 0.8128415300546448,
+            "pp": 119.205,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 39,
+            "created_at": "2026-03-11T23:37:04Z",
+            "beatmapset": {
+              "id": 1061287,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/1061287/covers/card.jpg?1650688170",
+              "stars": 4.99431
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4995440808,
+            "rank": "A",
+            "accuracy": 0.9435897435897436,
+            "pp": 194.8,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 179,
+            "created_at": "2026-03-11T23:32:49Z",
+            "beatmapset": {
+              "id": 2295884,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
+              "stars": 4.70769
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4995440529,
+            "rank": "C",
+            "accuracy": 0.8363636363636363,
+            "pp": 129.682,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 54,
+            "created_at": "2026-03-11T23:31:54Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 5.20377
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4995440204,
+            "rank": "A",
+            "accuracy": 0.9706498951781971,
+            "pp": 195.476,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 196,
+            "created_at": "2026-03-11T23:30:41Z",
+            "beatmapset": {
+              "id": 2351045,
+              "title": "Remember When (Push Rewind) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2351045/covers/card.jpg?1755544292",
+              "stars": 4.34104
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "score_id": 4995439942,
+            "rank": "B",
+            "accuracy": 0.9191919191919192,
+            "pp": 176.61,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 141,
+            "created_at": "2026-03-11T23:29:45Z",
+            "beatmapset": {
+              "id": 2351045,
+              "title": "Remember When (Push Rewind) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2351045/covers/card.jpg?1755544292",
+              "stars": 4.58064
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+        "unique_players": 16
       }
     }
   }

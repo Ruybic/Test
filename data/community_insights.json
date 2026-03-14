@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 15,
-    "longest": 15,
-    "last_updated": "2026-03-12"
+    "current": 16,
+    "longest": 16,
+    "last_updated": "2026-03-13"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -4540,6 +4540,322 @@
         "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
         "unique_players": 16
+      }
+    },
+    "2026-03-13": {
+      "total_scores": 528,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "kartel",
+        "user_id": 16368385,
+        "count": 76,
+        "scores": [
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4995659811,
+            "rank": "A",
+            "accuracy": 0.9391727493917275,
+            "pp": 86.282,
+            "mods": [
+              "HD"
+            ],
+            "combo": 187,
+            "created_at": "2026-03-12T14:51:08Z",
+            "beatmapset": {
+              "id": 576022,
+              "title": "Amphisbaena",
+              "cover": "https://assets.ppy.sh/beatmaps/576022/covers/card.jpg?1650654462",
+              "stars": 5.87085
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4995658183,
+            "rank": "A",
+            "accuracy": 0.9340024330900243,
+            "pp": 87.8035,
+            "mods": [
+              "HD"
+            ],
+            "combo": 310,
+            "created_at": "2026-03-12T14:47:11Z",
+            "beatmapset": {
+              "id": 576022,
+              "title": "Amphisbaena",
+              "cover": "https://assets.ppy.sh/beatmaps/576022/covers/card.jpg?1650654462",
+              "stars": 5.87085
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4995656168,
+            "rank": "SH",
+            "accuracy": 0.9686633388796451,
+            "pp": 225.869,
+            "mods": [
+              "HD"
+            ],
+            "combo": 979,
+            "created_at": "2026-03-12T14:42:11Z",
+            "beatmapset": {
+              "id": 771159,
+              "title": "Sidetracked Day (Short Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/771159/covers/card.jpg?1650663504",
+              "stars": 5.85337
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4995655389,
+            "rank": "A",
+            "accuracy": 0.9656128674431503,
+            "pp": 180.313,
+            "mods": [
+              "HD"
+            ],
+            "combo": 639,
+            "created_at": "2026-03-12T14:40:11Z",
+            "beatmapset": {
+              "id": 771159,
+              "title": "Sidetracked Day (Short Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/771159/covers/card.jpg?1650663504",
+              "stars": 5.85337
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4995568019,
+            "rank": "B",
+            "accuracy": 0.9071519188074849,
+            "pp": 99.9684,
+            "mods": [
+              "HD"
+            ],
+            "combo": 537,
+            "created_at": "2026-03-12T09:43:07Z",
+            "beatmapset": {
+              "id": 577414,
+              "title": "Chronostasis",
+              "cover": "https://assets.ppy.sh/beatmaps/577414/covers/card.jpg?1631510161",
+              "stars": 6.68755
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4995563021,
+            "rank": "A",
+            "accuracy": 0.9567369093231162,
+            "pp": 156.852,
+            "mods": [
+              "HD"
+            ],
+            "combo": 436,
+            "created_at": "2026-03-12T09:18:04Z",
+            "beatmapset": {
+              "id": 1188740,
+              "title": "Ange du Blanc Pur",
+              "cover": "https://assets.ppy.sh/beatmaps/1188740/covers/card.jpg?1645779194",
+              "stars": 6.01148
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4995562199,
+            "rank": "A",
+            "accuracy": 0.9458812260536399,
+            "pp": 128.234,
+            "mods": [
+              "HD"
+            ],
+            "combo": 870,
+            "created_at": "2026-03-12T09:13:56Z",
+            "beatmapset": {
+              "id": 1188740,
+              "title": "Ange du Blanc Pur",
+              "cover": "https://assets.ppy.sh/beatmaps/1188740/covers/card.jpg?1645779194",
+              "stars": 6.01148
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4995561455,
+            "rank": "A",
+            "accuracy": 0.9278416347381865,
+            "pp": 110.671,
+            "mods": [
+              "HD"
+            ],
+            "combo": 592,
+            "created_at": "2026-03-12T09:10:01Z",
+            "beatmapset": {
+              "id": 1188740,
+              "title": "Ange du Blanc Pur",
+              "cover": "https://assets.ppy.sh/beatmaps/1188740/covers/card.jpg?1645779194",
+              "stars": 6.01148
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4995560525,
+            "rank": "A",
+            "accuracy": 0.9353146853146853,
+            "pp": 140.517,
+            "mods": [
+              "HD"
+            ],
+            "combo": 273,
+            "created_at": "2026-03-12T09:05:11Z",
+            "beatmapset": {
+              "id": 1115534,
+              "title": "DROPOUT!?",
+              "cover": "https://assets.ppy.sh/beatmaps/1115534/covers/card.jpg?1650692285",
+              "stars": 5.80461
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4995560158,
+            "rank": "B",
+            "accuracy": 0.905011655011655,
+            "pp": 132.219,
+            "mods": [
+              "HD"
+            ],
+            "combo": 411,
+            "created_at": "2026-03-12T09:03:22Z",
+            "beatmapset": {
+              "id": 1115534,
+              "title": "DROPOUT!?",
+              "cover": "https://assets.ppy.sh/beatmaps/1115534/covers/card.jpg?1650692285",
+              "stars": 5.80461
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4995559674,
+            "rank": "A",
+            "accuracy": 0.9411421911421911,
+            "pp": 155.793,
+            "mods": [
+              "HD"
+            ],
+            "combo": 466,
+            "created_at": "2026-03-12T09:01:04Z",
+            "beatmapset": {
+              "id": 1115534,
+              "title": "DROPOUT!?",
+              "cover": "https://assets.ppy.sh/beatmaps/1115534/covers/card.jpg?1650692285",
+              "stars": 5.80461
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4995556009,
+            "rank": "B",
+            "accuracy": 0.9127328195247271,
+            "pp": 131.059,
+            "mods": [
+              "HD"
+            ],
+            "combo": 1366,
+            "created_at": "2026-03-12T08:43:36Z",
+            "beatmapset": {
+              "id": 514938,
+              "title": "there are no angels here.",
+              "cover": "https://assets.ppy.sh/beatmaps/514938/covers/card.jpg?1631509769",
+              "stars": 5.78711
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4995554885,
+            "rank": "B",
+            "accuracy": 0.9245942571785268,
+            "pp": 133.864,
+            "mods": [
+              "HD"
+            ],
+            "combo": 421,
+            "created_at": "2026-03-12T08:37:58Z",
+            "beatmapset": {
+              "id": 1088528,
+              "title": "With Fire and Sword (2013)",
+              "cover": "https://assets.ppy.sh/beatmaps/1088528/covers/card.jpg?1650690619",
+              "stars": 5.76568
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4995554065,
+            "rank": "B",
+            "accuracy": 0.9208489388264669,
+            "pp": 126.829,
+            "mods": [
+              "HD"
+            ],
+            "combo": 578,
+            "created_at": "2026-03-12T08:33:42Z",
+            "beatmapset": {
+              "id": 1088528,
+              "title": "With Fire and Sword (2013)",
+              "cover": "https://assets.ppy.sh/beatmaps/1088528/covers/card.jpg?1650690619",
+              "stars": 5.76568
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4995553288,
+            "rank": "B",
+            "accuracy": 0.9244694132334582,
+            "pp": 124.69,
+            "mods": [
+              "HD"
+            ],
+            "combo": 419,
+            "created_at": "2026-03-12T08:29:29Z",
+            "beatmapset": {
+              "id": 1088528,
+              "title": "With Fire and Sword (2013)",
+              "cover": "https://assets.ppy.sh/beatmaps/1088528/covers/card.jpg?1650690619",
+              "stars": 5.76568
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "hate the way you love me (nightcore & cut ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2463664/covers/card.jpg?1767818786",
+        "unique_players": 21
       }
     }
   }

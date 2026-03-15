@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 16,
-    "longest": 16,
-    "last_updated": "2026-03-13"
+    "current": 17,
+    "longest": 17,
+    "last_updated": "2026-03-14"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -4856,6 +4856,292 @@
         "title": "hate the way you love me (nightcore & cut ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2463664/covers/card.jpg?1767818786",
         "unique_players": 21
+      }
+    },
+    "2026-03-14": {
+      "total_scores": 624,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "Anas2",
+        "user_id": 32297067,
+        "count": 100,
+        "scores": [
+          {
+            "user": "Anas2",
+            "user_id": 32297067,
+            "country": "IQ",
+            "score_id": 6362342075,
+            "rank": "B",
+            "accuracy": 0.899641577060932,
+            "pp": 92.0092,
+            "mods": [],
+            "combo": 155,
+            "created_at": "2026-03-14T01:18:35Z",
+            "beatmapset": {
+              "id": 497769,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/497769/covers/card.jpg?1645785838",
+              "stars": 5.04843
+            }
+          },
+          {
+            "user": "Anas2",
+            "user_id": 32297067,
+            "country": "IQ",
+            "score_id": 6362330103,
+            "rank": "A",
+            "accuracy": 0.9594594594594594,
+            "pp": 112.495,
+            "mods": [],
+            "combo": 102,
+            "created_at": "2026-03-14T01:15:01Z",
+            "beatmapset": {
+              "id": 984684,
+              "title": "Take a Hint feat. Victoria Justice & Elizabeth Gillies (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/984684/covers/card.jpg?1650681093",
+              "stars": 5.10753
+            }
+          },
+          {
+            "user": "Anas2",
+            "user_id": 32297067,
+            "country": "IQ",
+            "score_id": 6362323542,
+            "rank": "A",
+            "accuracy": 0.9350877192982456,
+            "pp": 90.0027,
+            "mods": [],
+            "combo": 194,
+            "created_at": "2026-03-14T01:13:02Z",
+            "beatmapset": {
+              "id": 984684,
+              "title": "Take a Hint feat. Victoria Justice & Elizabeth Gillies (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/984684/covers/card.jpg?1650681093",
+              "stars": 4.68584
+            }
+          },
+          {
+            "user": "Anas2",
+            "user_id": 32297067,
+            "country": "IQ",
+            "score_id": 6362301806,
+            "rank": "S",
+            "accuracy": 0.9704049844236761,
+            "pp": 92.059,
+            "mods": [],
+            "combo": 495,
+            "created_at": "2026-03-14T01:06:25Z",
+            "beatmapset": {
+              "id": 399358,
+              "title": "Silhouette",
+              "cover": "https://assets.ppy.sh/beatmaps/399358/covers/card.jpg?1650636640",
+              "stars": 4.49388
+            }
+          },
+          {
+            "user": "Anas2",
+            "user_id": 32297067,
+            "country": "IQ",
+            "score_id": 6362288934,
+            "rank": "B",
+            "accuracy": 0.9131782945736434,
+            "pp": 61.3139,
+            "mods": [],
+            "combo": 268,
+            "created_at": "2026-03-14T01:02:31Z",
+            "beatmapset": {
+              "id": 952409,
+              "title": "Ai no Sukima",
+              "cover": "https://assets.ppy.sh/beatmaps/952409/covers/card.jpg?1645787548",
+              "stars": 4.58992
+            }
+          },
+          {
+            "user": "Anas2",
+            "user_id": 32297067,
+            "country": "IQ",
+            "score_id": 6362281948,
+            "rank": "B",
+            "accuracy": 0.896358543417367,
+            "pp": 61.7945,
+            "mods": [],
+            "combo": 156,
+            "created_at": "2026-03-14T01:00:24Z",
+            "beatmapset": {
+              "id": 1073074,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/1073074/covers/card.jpg?1650689325",
+              "stars": 4.67433
+            }
+          },
+          {
+            "user": "Anas2",
+            "user_id": 32297067,
+            "country": "IQ",
+            "score_id": 6362279702,
+            "rank": "B",
+            "accuracy": 0.9238845144356955,
+            "pp": 70.6658,
+            "mods": [],
+            "combo": 111,
+            "created_at": "2026-03-14T00:59:43Z",
+            "beatmapset": {
+              "id": 1073074,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/1073074/covers/card.jpg?1650689325",
+              "stars": 4.63801
+            }
+          },
+          {
+            "user": "Anas2",
+            "user_id": 32297067,
+            "country": "IQ",
+            "score_id": 6362277368,
+            "rank": "B",
+            "accuracy": 0.927170868347339,
+            "pp": 71.7981,
+            "mods": [],
+            "combo": 124,
+            "created_at": "2026-03-14T00:59:01Z",
+            "beatmapset": {
+              "id": 1073074,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/1073074/covers/card.jpg?1650689325",
+              "stars": 4.61667
+            }
+          },
+          {
+            "user": "Anas2",
+            "user_id": 32297067,
+            "country": "IQ",
+            "score_id": 6362259007,
+            "rank": "C",
+            "accuracy": 0.8393839383938394,
+            "pp": 59.9114,
+            "mods": [],
+            "combo": 260,
+            "created_at": "2026-03-14T00:53:32Z",
+            "beatmapset": {
+              "id": 354537,
+              "title": "Vagrant (feat. Veela)",
+              "cover": "https://assets.ppy.sh/beatmaps/354537/covers/card.jpg?1650633472",
+              "stars": 5.04435
+            }
+          },
+          {
+            "user": "Anas2",
+            "user_id": 32297067,
+            "country": "IQ",
+            "score_id": 6362248292,
+            "rank": "A",
+            "accuracy": 0.9588477366255144,
+            "pp": 83.8252,
+            "mods": [],
+            "combo": 149,
+            "created_at": "2026-03-14T00:50:20Z",
+            "beatmapset": {
+              "id": 968171,
+              "title": "Mizuoto to Curtain",
+              "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
+              "stars": 4.56498
+            }
+          },
+          {
+            "user": "Anas2",
+            "user_id": 32297067,
+            "country": "IQ",
+            "score_id": 6362243836,
+            "rank": "B",
+            "accuracy": 0.8977900552486188,
+            "pp": 76.8372,
+            "mods": [],
+            "combo": 140,
+            "created_at": "2026-03-14T00:49:02Z",
+            "beatmapset": {
+              "id": 968171,
+              "title": "Mizuoto to Curtain",
+              "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
+              "stars": 5.14361
+            }
+          },
+          {
+            "user": "Anas2",
+            "user_id": 32297067,
+            "country": "IQ",
+            "score_id": 6362210110,
+            "rank": "A",
+            "accuracy": 0.9629629629629629,
+            "pp": 63.1257,
+            "mods": [],
+            "combo": 247,
+            "created_at": "2026-03-14T00:39:04Z",
+            "beatmapset": {
+              "id": 504958,
+              "title": "On My Own",
+              "cover": "https://assets.ppy.sh/beatmaps/504958/covers/card.jpg?1650642924",
+              "stars": 4.2754
+            }
+          },
+          {
+            "user": "Anas2",
+            "user_id": 32297067,
+            "country": "IQ",
+            "score_id": 6362196105,
+            "rank": "A",
+            "accuracy": 0.9362113402061856,
+            "pp": 67.2853,
+            "mods": [],
+            "combo": 437,
+            "created_at": "2026-03-14T00:35:00Z",
+            "beatmapset": {
+              "id": 440169,
+              "title": "Hikaru nara",
+              "cover": "https://assets.ppy.sh/beatmaps/440169/covers/card.jpg?1650639548",
+              "stars": 4.43817
+            }
+          },
+          {
+            "user": "Anas2",
+            "user_id": 32297067,
+            "country": "IQ",
+            "score_id": 6362172584,
+            "rank": "B",
+            "accuracy": 0.8973333333333333,
+            "pp": 61.0752,
+            "mods": [],
+            "combo": 216,
+            "created_at": "2026-03-14T00:28:14Z",
+            "beatmapset": {
+              "id": 222671,
+              "title": "Liar Mask anime size",
+              "cover": "https://assets.ppy.sh/beatmaps/222671/covers/card.jpg?1645786539",
+              "stars": 4.9932
+            }
+          },
+          {
+            "user": "Anas2",
+            "user_id": 32297067,
+            "country": "IQ",
+            "score_id": 6362165764,
+            "rank": "A",
+            "accuracy": 0.9490874159462056,
+            "pp": 95.0345,
+            "mods": [],
+            "combo": 271,
+            "created_at": "2026-03-14T00:26:17Z",
+            "beatmapset": {
+              "id": 497942,
+              "title": "Harebare Fanfare",
+              "cover": "https://assets.ppy.sh/beatmaps/497942/covers/card.jpg?1650645186",
+              "stars": 5.01368
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Lovers (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/28690/covers/card.jpg?1650607934",
+        "unique_players": 16
       }
     }
   }

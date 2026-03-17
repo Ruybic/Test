@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 18,
-    "longest": 18,
-    "last_updated": "2026-03-15"
+    "current": 19,
+    "longest": 19,
+    "last_updated": "2026-03-16"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -5460,6 +5460,324 @@
       "most_played_map": {
         "title": "Skyclad no Kansokusha",
         "cover": "https://assets.ppy.sh/beatmaps/416129/covers/card.jpg?1650639151",
+        "unique_players": 9
+      }
+    },
+    "2026-03-16": {
+      "total_scores": 384,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "kartel",
+        "user_id": 16368385,
+        "count": 47,
+        "scores": [
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4997288880,
+            "rank": "A",
+            "accuracy": 0.9232456140350878,
+            "pp": 133.685,
+            "mods": [
+              "HD",
+              "HR"
+            ],
+            "combo": 83,
+            "created_at": "2026-03-15T22:33:06Z",
+            "beatmapset": {
+              "id": 1073074,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/1073074/covers/card.jpg?1650689325",
+              "stars": 5.69364
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4997288489,
+            "rank": "B",
+            "accuracy": 0.9144736842105263,
+            "pp": 148.005,
+            "mods": [
+              "HD",
+              "HR"
+            ],
+            "combo": 120,
+            "created_at": "2026-03-15T22:31:56Z",
+            "beatmapset": {
+              "id": 1073074,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/1073074/covers/card.jpg?1650689325",
+              "stars": 5.69364
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4997287651,
+            "rank": "A",
+            "accuracy": 0.9560327198364008,
+            "pp": 148.49,
+            "mods": [
+              "HD"
+            ],
+            "combo": 749,
+            "created_at": "2026-03-15T22:29:22Z",
+            "beatmapset": {
+              "id": 62962,
+              "title": "Crystal World ~Fracture~",
+              "cover": "https://assets.ppy.sh/beatmaps/62962/covers/card.jpg?1622059639",
+              "stars": 5.20036
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4997286991,
+            "rank": "A",
+            "accuracy": 0.9410361281526926,
+            "pp": 84.2851,
+            "mods": [
+              "HD"
+            ],
+            "combo": 191,
+            "created_at": "2026-03-15T22:27:25Z",
+            "beatmapset": {
+              "id": 62962,
+              "title": "Crystal World ~Fracture~",
+              "cover": "https://assets.ppy.sh/beatmaps/62962/covers/card.jpg?1622059639",
+              "stars": 5.20036
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4997285877,
+            "rank": "A",
+            "accuracy": 0.9959595959595959,
+            "pp": 156.951,
+            "mods": [
+              "HD"
+            ],
+            "combo": 300,
+            "created_at": "2026-03-15T22:24:11Z",
+            "beatmapset": {
+              "id": 586889,
+              "title": "Oriental Blossom",
+              "cover": "https://assets.ppy.sh/beatmaps/586889/covers/card.jpg?1650648422",
+              "stars": 5.10759
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4997284971,
+            "rank": "A",
+            "accuracy": 0.9952861952861953,
+            "pp": 162.951,
+            "mods": [
+              "HD"
+            ],
+            "combo": 633,
+            "created_at": "2026-03-15T22:21:28Z",
+            "beatmapset": {
+              "id": 586889,
+              "title": "Oriental Blossom",
+              "cover": "https://assets.ppy.sh/beatmaps/586889/covers/card.jpg?1650648422",
+              "stars": 5.10759
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4997284224,
+            "rank": "A",
+            "accuracy": 0.990909090909091,
+            "pp": 148.818,
+            "mods": [
+              "HD"
+            ],
+            "combo": 483,
+            "created_at": "2026-03-15T22:19:21Z",
+            "beatmapset": {
+              "id": 586889,
+              "title": "Oriental Blossom",
+              "cover": "https://assets.ppy.sh/beatmaps/586889/covers/card.jpg?1650648422",
+              "stars": 5.10759
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4997283487,
+            "rank": "A",
+            "accuracy": 0.9532775453277545,
+            "pp": 129.594,
+            "mods": [
+              "HD"
+            ],
+            "combo": 162,
+            "created_at": "2026-03-15T22:17:15Z",
+            "beatmapset": {
+              "id": 2377334,
+              "title": "Gypsy In My Mind (Disco Rave Edit 2022) (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2377334/covers/card.jpg?1758681144",
+              "stars": 5.5828
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4997283137,
+            "rank": "B",
+            "accuracy": 0.9142259414225942,
+            "pp": 77.6321,
+            "mods": [
+              "HD"
+            ],
+            "combo": 137,
+            "created_at": "2026-03-15T22:16:15Z",
+            "beatmapset": {
+              "id": 2377334,
+              "title": "Gypsy In My Mind (Disco Rave Edit 2022) (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2377334/covers/card.jpg?1758681144",
+              "stars": 5.5828
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4997282806,
+            "rank": "B",
+            "accuracy": 0.9295676429567643,
+            "pp": 114.736,
+            "mods": [
+              "HD"
+            ],
+            "combo": 176,
+            "created_at": "2026-03-15T22:15:14Z",
+            "beatmapset": {
+              "id": 2377334,
+              "title": "Gypsy In My Mind (Disco Rave Edit 2022) (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2377334/covers/card.jpg?1758681144",
+              "stars": 5.5828
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4997280430,
+            "rank": "A",
+            "accuracy": 0.9365421455938697,
+            "pp": 105.281,
+            "mods": [
+              "HD"
+            ],
+            "combo": 457,
+            "created_at": "2026-03-15T22:08:34Z",
+            "beatmapset": {
+              "id": 405524,
+              "title": "Joker",
+              "cover": "https://assets.ppy.sh/beatmaps/405524/covers/card.jpg?1650637999",
+              "stars": 5.86027
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4997279189,
+            "rank": "B",
+            "accuracy": 0.9097222222222222,
+            "pp": 85.3481,
+            "mods": [
+              "HD"
+            ],
+            "combo": 198,
+            "created_at": "2026-03-15T22:05:09Z",
+            "beatmapset": {
+              "id": 405524,
+              "title": "Joker",
+              "cover": "https://assets.ppy.sh/beatmaps/405524/covers/card.jpg?1650637999",
+              "stars": 5.86027
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4997277231,
+            "rank": "B",
+            "accuracy": 0.8992805755395683,
+            "pp": 48.5211,
+            "mods": [
+              "HD"
+            ],
+            "combo": 161,
+            "created_at": "2026-03-15T21:59:26Z",
+            "beatmapset": {
+              "id": 799156,
+              "title": "Presenter*",
+              "cover": "https://assets.ppy.sh/beatmaps/799156/covers/card.jpg?1650669255",
+              "stars": 6.23398
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4997275909,
+            "rank": "B",
+            "accuracy": 0.8872901678657075,
+            "pp": 44.375,
+            "mods": [
+              "HD"
+            ],
+            "combo": 268,
+            "created_at": "2026-03-15T21:55:44Z",
+            "beatmapset": {
+              "id": 799156,
+              "title": "Presenter*",
+              "cover": "https://assets.ppy.sh/beatmaps/799156/covers/card.jpg?1650669255",
+              "stars": 6.23398
+            }
+          },
+          {
+            "user": "kartel",
+            "user_id": 16368385,
+            "country": "IQ",
+            "score_id": 4997095402,
+            "rank": "C",
+            "accuracy": 0.7830558276199804,
+            "pp": 30.893,
+            "mods": [
+              "HD"
+            ],
+            "combo": 312,
+            "created_at": "2026-03-15T15:06:07Z",
+            "beatmapset": {
+              "id": 857638,
+              "title": "DORNWALD ~Der Junge im Kaefig~",
+              "cover": "https://assets.ppy.sh/beatmaps/857638/covers/card.jpg?1650689386",
+              "stars": 6.74596
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "GRIM (NIGHTCORE & CUT VER.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
         "unique_players": 9
       }
     }

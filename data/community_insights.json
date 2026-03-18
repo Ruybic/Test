@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 19,
-    "longest": 19,
-    "last_updated": "2026-03-16"
+    "current": 20,
+    "longest": 20,
+    "last_updated": "2026-03-17"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -5779,6 +5779,334 @@
         "title": "GRIM (NIGHTCORE & CUT VER.)",
         "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
         "unique_players": 9
+      }
+    },
+    "2026-03-17": {
+      "total_scores": 617,
+      "peak_hour_baghdad": 23,
+      "top_grinder": {
+        "user": "L e n",
+        "user_id": 10286650,
+        "count": 79,
+        "scores": [
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 4997693917,
+            "rank": "B",
+            "accuracy": 0.9146942800788954,
+            "pp": 299.579,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 127,
+            "created_at": "2026-03-16T21:07:14Z",
+            "beatmapset": {
+              "id": 2294787,
+              "title": "erase u (sped up & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2294787/covers/card.jpg?1741733564",
+              "stars": 6.12067
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 4997691048,
+            "rank": "B",
+            "accuracy": 0.898989898989899,
+            "pp": 256.085,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 55,
+            "created_at": "2026-03-16T21:00:02Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 5.74789
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 4997690399,
+            "rank": "A",
+            "accuracy": 0.9217687074829932,
+            "pp": 249.048,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 92,
+            "created_at": "2026-03-16T20:58:21Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 5.51952
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 4997686231,
+            "rank": "A",
+            "accuracy": 0.9545454545454546,
+            "pp": 301.328,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 116,
+            "created_at": "2026-03-16T20:47:50Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.56999
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 4997685355,
+            "rank": "A",
+            "accuracy": 0.9447983014861996,
+            "pp": 248.464,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 174,
+            "created_at": "2026-03-16T20:45:39Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.42072
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 4997685046,
+            "rank": "A",
+            "accuracy": 0.95,
+            "pp": 295.916,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 176,
+            "created_at": "2026-03-16T20:44:56Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.49159
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 4997683584,
+            "rank": "A",
+            "accuracy": 0.9636015325670498,
+            "pp": 408.762,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 188,
+            "created_at": "2026-03-16T20:41:18Z",
+            "beatmapset": {
+              "id": 983911,
+              "title": "Bass Slut (Original Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/983911/covers/card.jpg?1650683411",
+              "stars": 5.66697
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 4997681921,
+            "rank": "A",
+            "accuracy": 0.9550147492625368,
+            "pp": 293.567,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 122,
+            "created_at": "2026-03-16T20:37:24Z",
+            "beatmapset": {
+              "id": 2296940,
+              "title": "Start Again (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2296940/covers/card.jpg?1743374659",
+              "stars": 5.43223
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 4997680750,
+            "rank": "B",
+            "accuracy": 0.900492264416315,
+            "pp": null,
+            "mods": [],
+            "combo": 178,
+            "created_at": "2026-03-16T20:34:32Z",
+            "beatmapset": {
+              "id": 1245673,
+              "title": "Hot N Cold",
+              "cover": "https://assets.ppy.sh/beatmaps/1245673/covers/card.jpg?1697987787",
+              "stars": 8.22802
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 4997676259,
+            "rank": "B",
+            "accuracy": 0.9107744107744108,
+            "pp": 250.603,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 48,
+            "created_at": "2026-03-16T20:23:34Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 5.74789
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 4997675777,
+            "rank": "A",
+            "accuracy": 0.9795918367346939,
+            "pp": 402.38,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 124,
+            "created_at": "2026-03-16T20:22:19Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 5.51952
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 4997675306,
+            "rank": "A",
+            "accuracy": 0.9523809523809523,
+            "pp": 308.457,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 141,
+            "created_at": "2026-03-16T20:21:12Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 5.51952
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 4997674878,
+            "rank": "A",
+            "accuracy": 0.967687074829932,
+            "pp": 357.299,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 113,
+            "created_at": "2026-03-16T20:20:08Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 5.51952
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 4997674408,
+            "rank": "A",
+            "accuracy": 0.923469387755102,
+            "pp": 232.848,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 91,
+            "created_at": "2026-03-16T20:19:07Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 5.51952
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 4997673656,
+            "rank": "A",
+            "accuracy": 0.9625850340136054,
+            "pp": 330.706,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 88,
+            "created_at": "2026-03-16T20:17:17Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 5.51952
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "GRIM (NIGHTCORE & CUT VER.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+        "unique_players": 65
       }
     }
   }

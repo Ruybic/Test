@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 20,
-    "longest": 20,
-    "last_updated": "2026-03-17"
+    "current": 21,
+    "longest": 21,
+    "last_updated": "2026-03-18"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -6107,6 +6107,294 @@
         "title": "GRIM (NIGHTCORE & CUT VER.)",
         "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
         "unique_players": 65
+      }
+    },
+    "2026-03-18": {
+      "total_scores": 526,
+      "peak_hour_baghdad": 21,
+      "top_grinder": {
+        "user": "ThisIsNotAName1",
+        "user_id": 7615490,
+        "count": 58,
+        "scores": [
+          {
+            "user": "ThisIsNotAName1",
+            "user_id": 7615490,
+            "country": "IQ",
+            "score_id": 6383143173,
+            "rank": "C",
+            "accuracy": 0.7627388535031847,
+            "pp": 22.716,
+            "mods": [],
+            "combo": 60,
+            "created_at": "2026-03-17T23:21:43Z",
+            "beatmapset": {
+              "id": 2301270,
+              "title": "Celebration Music",
+              "cover": "https://assets.ppy.sh/beatmaps/2301270/covers/card.jpg?1771032769",
+              "stars": 4.96976
+            }
+          },
+          {
+            "user": "ThisIsNotAName1",
+            "user_id": 7615490,
+            "country": "IQ",
+            "score_id": 6383139557,
+            "rank": "C",
+            "accuracy": 0.7181528662420382,
+            "pp": 24.4229,
+            "mods": [],
+            "combo": 55,
+            "created_at": "2026-03-17T23:20:34Z",
+            "beatmapset": {
+              "id": 2301270,
+              "title": "Celebration Music",
+              "cover": "https://assets.ppy.sh/beatmaps/2301270/covers/card.jpg?1771032769",
+              "stars": 4.96976
+            }
+          },
+          {
+            "user": "ThisIsNotAName1",
+            "user_id": 7615490,
+            "country": "IQ",
+            "score_id": 6383135285,
+            "rank": "C",
+            "accuracy": 0.8400735294117647,
+            "pp": 39.167,
+            "mods": [
+              "DT"
+            ],
+            "combo": 140,
+            "created_at": "2026-03-17T23:19:12Z",
+            "beatmapset": {
+              "id": 217416,
+              "title": "After Dark",
+              "cover": "https://assets.ppy.sh/beatmaps/217416/covers/card.jpg?1645787610",
+              "stars": 3.3245
+            }
+          },
+          {
+            "user": "ThisIsNotAName1",
+            "user_id": 7615490,
+            "country": "IQ",
+            "score_id": 6383110556,
+            "rank": "C",
+            "accuracy": 0.7096602972399151,
+            "pp": 18.095,
+            "mods": [],
+            "combo": 66,
+            "created_at": "2026-03-17T23:11:30Z",
+            "beatmapset": {
+              "id": 2301270,
+              "title": "Celebration Music",
+              "cover": "https://assets.ppy.sh/beatmaps/2301270/covers/card.jpg?1771032769",
+              "stars": 4.96976
+            }
+          },
+          {
+            "user": "ThisIsNotAName1",
+            "user_id": 7615490,
+            "country": "IQ",
+            "score_id": 6383100434,
+            "rank": "C",
+            "accuracy": 0.7468152866242038,
+            "pp": 22.3898,
+            "mods": [],
+            "combo": 58,
+            "created_at": "2026-03-17T23:08:23Z",
+            "beatmapset": {
+              "id": 2301270,
+              "title": "Celebration Music",
+              "cover": "https://assets.ppy.sh/beatmaps/2301270/covers/card.jpg?1771032769",
+              "stars": 4.96976
+            }
+          },
+          {
+            "user": "ThisIsNotAName1",
+            "user_id": 7615490,
+            "country": "IQ",
+            "score_id": 6383057387,
+            "rank": "C",
+            "accuracy": 0.779723991507431,
+            "pp": 27.1473,
+            "mods": [],
+            "combo": 69,
+            "created_at": "2026-03-17T22:55:44Z",
+            "beatmapset": {
+              "id": 2301270,
+              "title": "Celebration Music",
+              "cover": "https://assets.ppy.sh/beatmaps/2301270/covers/card.jpg?1771032769",
+              "stars": 4.96976
+            }
+          },
+          {
+            "user": "ThisIsNotAName1",
+            "user_id": 7615490,
+            "country": "IQ",
+            "score_id": 6383053369,
+            "rank": "C",
+            "accuracy": 0.779723991507431,
+            "pp": 29.4074,
+            "mods": [],
+            "combo": 114,
+            "created_at": "2026-03-17T22:54:32Z",
+            "beatmapset": {
+              "id": 2301270,
+              "title": "Celebration Music",
+              "cover": "https://assets.ppy.sh/beatmaps/2301270/covers/card.jpg?1771032769",
+              "stars": 4.96976
+            }
+          },
+          {
+            "user": "ThisIsNotAName1",
+            "user_id": 7615490,
+            "country": "IQ",
+            "score_id": 6383049050,
+            "rank": "C",
+            "accuracy": 0.8158174097664543,
+            "pp": 35.309,
+            "mods": [],
+            "combo": 84,
+            "created_at": "2026-03-17T22:53:18Z",
+            "beatmapset": {
+              "id": 2301270,
+              "title": "Celebration Music",
+              "cover": "https://assets.ppy.sh/beatmaps/2301270/covers/card.jpg?1771032769",
+              "stars": 4.96976
+            }
+          },
+          {
+            "user": "ThisIsNotAName1",
+            "user_id": 7615490,
+            "country": "IQ",
+            "score_id": 6383045273,
+            "rank": "C",
+            "accuracy": 0.7760084925690022,
+            "pp": 29.0857,
+            "mods": [],
+            "combo": 74,
+            "created_at": "2026-03-17T22:52:12Z",
+            "beatmapset": {
+              "id": 2301270,
+              "title": "Celebration Music",
+              "cover": "https://assets.ppy.sh/beatmaps/2301270/covers/card.jpg?1771032769",
+              "stars": 4.96976
+            }
+          },
+          {
+            "user": "ThisIsNotAName1",
+            "user_id": 7615490,
+            "country": "IQ",
+            "score_id": 6383041037,
+            "rank": "C",
+            "accuracy": 0.7988322717622081,
+            "pp": 37.7624,
+            "mods": [],
+            "combo": 83,
+            "created_at": "2026-03-17T22:50:59Z",
+            "beatmapset": {
+              "id": 2301270,
+              "title": "Celebration Music",
+              "cover": "https://assets.ppy.sh/beatmaps/2301270/covers/card.jpg?1771032769",
+              "stars": 4.96976
+            }
+          },
+          {
+            "user": "ThisIsNotAName1",
+            "user_id": 7615490,
+            "country": "IQ",
+            "score_id": 6383037046,
+            "rank": "C",
+            "accuracy": 0.7611464968152867,
+            "pp": 25.7915,
+            "mods": [],
+            "combo": 60,
+            "created_at": "2026-03-17T22:49:51Z",
+            "beatmapset": {
+              "id": 2301270,
+              "title": "Celebration Music",
+              "cover": "https://assets.ppy.sh/beatmaps/2301270/covers/card.jpg?1771032769",
+              "stars": 4.96976
+            }
+          },
+          {
+            "user": "ThisIsNotAName1",
+            "user_id": 7615490,
+            "country": "IQ",
+            "score_id": 6383033247,
+            "rank": "C",
+            "accuracy": 0.767515923566879,
+            "pp": 32.2065,
+            "mods": [],
+            "combo": 78,
+            "created_at": "2026-03-17T22:48:45Z",
+            "beatmapset": {
+              "id": 2301270,
+              "title": "Celebration Music",
+              "cover": "https://assets.ppy.sh/beatmaps/2301270/covers/card.jpg?1771032769",
+              "stars": 4.96976
+            }
+          },
+          {
+            "user": "ThisIsNotAName1",
+            "user_id": 7615490,
+            "country": "IQ",
+            "score_id": 6383025395,
+            "rank": "C",
+            "accuracy": 0.8221868365180467,
+            "pp": 40.0176,
+            "mods": [],
+            "combo": 144,
+            "created_at": "2026-03-17T22:46:33Z",
+            "beatmapset": {
+              "id": 2301270,
+              "title": "Celebration Music",
+              "cover": "https://assets.ppy.sh/beatmaps/2301270/covers/card.jpg?1771032769",
+              "stars": 4.96976
+            }
+          },
+          {
+            "user": "ThisIsNotAName1",
+            "user_id": 7615490,
+            "country": "IQ",
+            "score_id": 6383020976,
+            "rank": "C",
+            "accuracy": 0.7983014861995754,
+            "pp": 30.6456,
+            "mods": [],
+            "combo": 83,
+            "created_at": "2026-03-17T22:45:20Z",
+            "beatmapset": {
+              "id": 2301270,
+              "title": "Celebration Music",
+              "cover": "https://assets.ppy.sh/beatmaps/2301270/covers/card.jpg?1771032769",
+              "stars": 4.96976
+            }
+          },
+          {
+            "user": "ThisIsNotAName1",
+            "user_id": 7615490,
+            "country": "IQ",
+            "score_id": 6383016728,
+            "rank": "C",
+            "accuracy": 0.7489384288747346,
+            "pp": 22.7018,
+            "mods": [],
+            "combo": 100,
+            "created_at": "2026-03-17T22:44:08Z",
+            "beatmapset": {
+              "id": 2301270,
+              "title": "Celebration Music",
+              "cover": "https://assets.ppy.sh/beatmaps/2301270/covers/card.jpg?1771032769",
+              "stars": 4.96976
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Celebration Music",
+        "cover": "https://assets.ppy.sh/beatmaps/2301270/covers/card.jpg?1771032769",
+        "unique_players": 34
       }
     }
   }

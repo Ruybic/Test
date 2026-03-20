@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 21,
-    "longest": 21,
-    "last_updated": "2026-03-18"
+    "current": 22,
+    "longest": 22,
+    "last_updated": "2026-03-19"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -6395,6 +6395,298 @@
         "title": "Celebration Music",
         "cover": "https://assets.ppy.sh/beatmaps/2301270/covers/card.jpg?1771032769",
         "unique_players": 34
+      }
+    },
+    "2026-03-19": {
+      "total_scores": 665,
+      "peak_hour_baghdad": 22,
+      "top_grinder": {
+        "user": "Quake203",
+        "user_id": 22846495,
+        "count": 49,
+        "scores": [
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6386827499,
+            "rank": "A",
+            "accuracy": 0.9469135802469136,
+            "pp": 115.829,
+            "mods": [],
+            "combo": 265,
+            "created_at": "2026-03-18T18:33:43Z",
+            "beatmapset": {
+              "id": 2474192,
+              "title": "Presenter* (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2474192/covers/card.jpg?1766001186",
+              "stars": 5.4188
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6386809547,
+            "rank": "A",
+            "accuracy": 0.9518518518518518,
+            "pp": 119.71,
+            "mods": [],
+            "combo": 205,
+            "created_at": "2026-03-18T18:29:47Z",
+            "beatmapset": {
+              "id": 2474192,
+              "title": "Presenter* (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2474192/covers/card.jpg?1766001186",
+              "stars": 5.4188
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6386795140,
+            "rank": "A",
+            "accuracy": 0.9288990825688074,
+            "pp": 111.971,
+            "mods": [],
+            "combo": 127,
+            "created_at": "2026-03-18T18:26:42Z",
+            "beatmapset": {
+              "id": 2352698,
+              "title": "American Girls (Juztan Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2352698/covers/card.jpg?1748119114",
+              "stars": 5.80278
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6386775494,
+            "rank": "A",
+            "accuracy": 0.959349593495935,
+            "pp": 172.05,
+            "mods": [
+              "NC"
+            ],
+            "combo": 311,
+            "created_at": "2026-03-18T18:22:30Z",
+            "beatmapset": {
+              "id": 471261,
+              "title": "Dear My Friend -Mada Minu Mirai e- (TV size)",
+              "cover": "https://assets.ppy.sh/beatmaps/471261/covers/card.jpg?1645785849",
+              "stars": 4.04281
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6386764604,
+            "rank": "A",
+            "accuracy": 0.9579067121729238,
+            "pp": 154.694,
+            "mods": [
+              "NC"
+            ],
+            "combo": 327,
+            "created_at": "2026-03-18T18:20:06Z",
+            "beatmapset": {
+              "id": 402631,
+              "title": "Dear My Friend -Mada Minu Mirai e- (TV size)",
+              "cover": "https://assets.ppy.sh/beatmaps/402631/covers/card.jpg?1622098577",
+              "stars": 3.92444
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6386759614,
+            "rank": "S",
+            "accuracy": 0.9613196814562003,
+            "pp": 171.948,
+            "mods": [
+              "NC"
+            ],
+            "combo": 385,
+            "created_at": "2026-03-18T18:19:02Z",
+            "beatmapset": {
+              "id": 402631,
+              "title": "Dear My Friend -Mada Minu Mirai e- (TV size)",
+              "cover": "https://assets.ppy.sh/beatmaps/402631/covers/card.jpg?1622098577",
+              "stars": 3.92444
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6386742692,
+            "rank": "A",
+            "accuracy": 0.9818181818181818,
+            "pp": 165.451,
+            "mods": [],
+            "combo": 126,
+            "created_at": "2026-03-18T18:15:21Z",
+            "beatmapset": {
+              "id": 2367460,
+              "title": "Adventure Starts Here (Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2367460/covers/card.jpg?1748497522",
+              "stars": 5.60609
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6386739001,
+            "rank": "A",
+            "accuracy": 0.9555555555555556,
+            "pp": 132.424,
+            "mods": [],
+            "combo": 148,
+            "created_at": "2026-03-18T18:14:32Z",
+            "beatmapset": {
+              "id": 2367460,
+              "title": "Adventure Starts Here (Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2367460/covers/card.jpg?1748497522",
+              "stars": 5.60609
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6386728504,
+            "rank": "A",
+            "accuracy": 0.9482631189948263,
+            "pp": 122.939,
+            "mods": [],
+            "combo": 487,
+            "created_at": "2026-03-18T18:12:17Z",
+            "beatmapset": {
+              "id": 2422687,
+              "title": "Of Our Time (osu! Edit)",
+              "cover": "https://assets.ppy.sh/beatmaps/2422687/covers/card.jpg?1757433537",
+              "stars": 5.93767
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6386715062,
+            "rank": "A",
+            "accuracy": 0.9655797101449275,
+            "pp": 184.589,
+            "mods": [],
+            "combo": 92,
+            "created_at": "2026-03-18T18:09:26Z",
+            "beatmapset": {
+              "id": 2367460,
+              "title": "Adventure Starts Here (Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2367460/covers/card.jpg?1748497522",
+              "stars": 5.98459
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6386711094,
+            "rank": "A",
+            "accuracy": 0.9498207885304659,
+            "pp": 120.771,
+            "mods": [],
+            "combo": 91,
+            "created_at": "2026-03-18T18:08:35Z",
+            "beatmapset": {
+              "id": 2367460,
+              "title": "Adventure Starts Here (Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2367460/covers/card.jpg?1748497522",
+              "stars": 5.7413
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6386705113,
+            "rank": "A",
+            "accuracy": 0.96415770609319,
+            "pp": 154.311,
+            "mods": [],
+            "combo": 109,
+            "created_at": "2026-03-18T18:07:18Z",
+            "beatmapset": {
+              "id": 2367460,
+              "title": "Adventure Starts Here (Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2367460/covers/card.jpg?1748497522",
+              "stars": 5.7413
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6386697953,
+            "rank": "S",
+            "accuracy": 0.9878787878787879,
+            "pp": 207.702,
+            "mods": [],
+            "combo": 248,
+            "created_at": "2026-03-18T18:05:46Z",
+            "beatmapset": {
+              "id": 2367460,
+              "title": "Adventure Starts Here (Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2367460/covers/card.jpg?1748497522",
+              "stars": 5.60609
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6386690707,
+            "rank": "S",
+            "accuracy": 0.9904076738609112,
+            "pp": 182.124,
+            "mods": [],
+            "combo": 200,
+            "created_at": "2026-03-18T18:04:08Z",
+            "beatmapset": {
+              "id": 2367460,
+              "title": "Adventure Starts Here (Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2367460/covers/card.jpg?1748497522",
+              "stars": 5.37074
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6386683951,
+            "rank": "A",
+            "accuracy": 0.9878472222222222,
+            "pp": 209.243,
+            "mods": [],
+            "combo": 181,
+            "created_at": "2026-03-18T18:02:40Z",
+            "beatmapset": {
+              "id": 2367460,
+              "title": "Adventure Starts Here (Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2367460/covers/card.jpg?1748497522",
+              "stars": 5.73712
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Celebration Music",
+        "cover": "https://assets.ppy.sh/beatmaps/2301270/covers/card.jpg?1771032769",
+        "unique_players": 37
       }
     }
   }

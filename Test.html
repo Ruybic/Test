@@ -720,23 +720,20 @@ function scrollToTop() {
 
 renderCalendar(currentDate);
 
-async function init() {
-    try {
-        const res = await fetch('data/index.json?t=' + Date.now());
-        const idx = await res.json();
-        availableDates = idx.available_dates;
-        
-        renderCalendar(currentDate);
+function init() {
+    // 1. Render the visual calendar popup
+    renderCalendar(currentDate);
 
-        if (availableDates.length > 0) {
-            const latest = availableDates[availableDates.length - 1];
-            const [y, m, d] = latest.split('-');
-            selectDay(parseInt(y), parseInt(m), parseInt(d));
-        }
-    } catch (e) {
-        console.error(e);
-        document.getElementById('scoreGrid').innerHTML = '<div class="status-msg">Failed to load Test.json</div>';
-    }
+    // 2. Calculate exactly what "yesterday" was
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+
+    const y = yesterday.getFullYear();
+    const m = yesterday.getMonth() + 1; // JS months are 0-indexed (0-11), so we add 1
+    const d = yesterday.getDate();
+
+    // 3. Force the page to load yesterday's JSON file immediately
+    selectDay(y, m, d);
 }
 
 function playPop() {

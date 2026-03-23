@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osu! Iraq Today | Studio</title>
+    <title>Osu! Iraq Today | Custom Renderer</title>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <style>
@@ -16,7 +16,7 @@
         
         body, html { margin: 0; padding: 0; width: 100%; height: 100%; background: var(--bg-color); color: white; font-family: 'Exo 2', sans-serif; overflow: hidden; }
 
-        /* --- DRAG & DROP ZONE --- */
+        /* --- DRAG & DROP & UPLOAD ZONE --- */
         #drop-zone {
             position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
             border: 4px dashed #333; margin: 20px; border-radius: 20px; transition: 0.3s; z-index: 100; background: var(--bg-color);
@@ -24,13 +24,17 @@
         #drop-zone.dragover { border-color: var(--osu-pink); background: rgba(255, 102, 170, 0.05); }
         .drop-title { font-size: 36px; font-weight: 900; letter-spacing: 2px; }
         .drop-title span { color: var(--osu-pink); }
-        .drop-sub { color: #888; margin-top: 10px; font-size: 18px; font-weight: 700; text-align: center; line-height: 1.5; }
+        .drop-sub { color: #888; margin-top: 10px; font-size: 18px; font-weight: 700; text-align: center; line-height: 1.5; margin-bottom: 20px;}
+        
+        .upload-btn { background: var(--osu-pink); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-family: 'Exo 2'; font-weight: 800; font-size: 16px; cursor: pointer; transition: 0.2s; }
+        .upload-btn:hover { background: #ff88bb; transform: scale(1.05); }
+        input[type="file"] { display: none; }
+
         .iraq-colors { display: flex; gap: 10px; margin-top: 25px; }
         .dot { width: 16px; height: 16px; border-radius: 50%; }
 
         /* --- PLAYER UI --- */
         #player-ui { display: none; width: 100%; height: 100%; position: relative; }
-        
         #game-canvas { width: 100%; height: 100%; display: block; background: #000; }
 
         .controls {
@@ -59,14 +63,20 @@
 
     <div id="drop-zone">
         <div class="drop-title">OSU! <span>IRAQ</span> TODAY</div>
-        <div class="drop-sub">Drag and drop your files here.<br>Drop an <b>.osz</b> AND an <b>.osr</b> file together!</div>
+        <div class="drop-sub">Select or Drop your <b>.osz</b> and <b>.osr</b> files together.</div>
+        
+        <label>
+            <input type="file" id="file-input" multiple accept=".osz,.osr">
+            <div class="upload-btn">Browse Files</div>
+        </label>
+
         <div class="iraq-colors">
             <div class="dot" style="background: var(--iraq-red);"></div>
             <div class="dot" style="background: white;"></div>
             <div class="dot" style="background: black; border: 1px solid #333;"></div>
             <div class="dot" style="background: var(--iraq-green);"></div>
         </div>
-        <div id="loading-text">Extracting files...</div>
+        <div id="loading-text">Extracting & Parsing...</div>
     </div>
 
     <div id="player-ui">
@@ -79,14 +89,16 @@
         </div>
         
         <div id="stats-screen" class="overlay-screen">
-            <h1 style="color: white; font-size: 48px; margin-bottom: 0;">FINAL SCORE</h1>
-            <h2 style="color: var(--osu-pink); font-size: 72px; margin: 10px 0;">12,345,678</h2>
+            <h2 id="player-name-display" style="color: #888; font-size: 24px; margin: 0;">Player</h2>
+            <h1 style="color: white; font-size: 48px; margin-bottom: 0; margin-top: 10px;">FINAL SCORE</h1>
+            <h2 id="final-score" style="color: var(--osu-pink); font-size: 72px; margin: 10px 0;">0</h2>
             <div style="display: flex; gap: 30px; margin-top: 20px; color: #888; font-size: 28px; font-weight: 800;">
-                <span>300: <b style="color: white;">1024</b></span>
-                <span>100: <b style="color: var(--iraq-green);">12</b></span>
-                <span>50: <b style="color: var(--iraq-red);">1</b></span>
-                <span>Miss: <b style="color: red;">0</b></span>
+                <span>300: <b id="stat-300" style="color: white;">0</b></span>
+                <span>100: <b id="stat-100" style="color: var(--iraq-green);">0</b></span>
+                <span>50: <b id="stat-50" style="color: var(--iraq-red);">0</b></span>
+                <span>Miss: <b id="stat-miss" style="color: red;">0</b></span>
             </div>
+            <div style="margin-top: 15px; font-size: 20px; color: #aaa;">Max Combo: <b id="stat-combo" style="color: white;">0x</b></div>
         </div>
 
         <div id="outro-screen" class="overlay-screen" style="border-bottom: 15px solid var(--osu-pink); box-sizing: border-box;">
@@ -104,18 +116,21 @@
 
     <script>
         // --- CORE VARIABLES ---
-        let mapText = "", replayData = null, audioBlobUrl = null;
+        let mapData = [], replayStats = {};
+        let audioBlobUrl = null;
         let audioElement = new Audio();
         let isPlaying = false, isRecording = false;
-        let animationFrameId;
         let sequencePhase = 'intro'; // intro -> game -> stats -> outro
+        
+        // Auto-Cursor position
+        let cursorX = window.innerWidth / 2, cursorY = window.innerHeight / 2;
 
-        // Web Audio & Recording setup
         let audioContext, destNode, mediaSource, mediaRecorder;
         let recordedChunks = [];
 
         // UI
         const dropZone = document.getElementById('drop-zone');
+        const fileInput = document.getElementById('file-input');
         const loadingText = document.getElementById('loading-text');
         const playerUi = document.getElementById('player-ui');
         const canvas = document.getElementById('game-canvas');
@@ -125,23 +140,81 @@
         const timeDisplay = document.getElementById('time-display');
         const exportBtn = document.getElementById('export-btn');
 
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
+        function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
         window.addEventListener('resize', resizeCanvas);
         resizeCanvas();
 
-        // --- DRAG & DROP & JSZIP LOGIC ---
-        dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('dragover'); });
-        dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
-        
-        dropZone.addEventListener('drop', async (e) => {
-            e.preventDefault();
-            dropZone.classList.remove('dragover');
-            loadingText.style.display = 'block';
+        // --- FILE PARSERS ---
+
+        // 1. Parses the binary .osr file to get the real score and player stats
+        function parseOSR(buffer) {
+            let view = new DataView(buffer);
+            let offset = 0;
+
+            function readByte() { let v = view.getUint8(offset); offset += 1; return v; }
+            function readShort() { let v = view.getUint16(offset, true); offset += 2; return v; }
+            function readInt() { let v = view.getUint32(offset, true); offset += 4; return v; }
+            function readString() {
+                let head = readByte();
+                if (head === 0x00) return "";
+                if (head === 0x0b) {
+                    let length = 0, shift = 0;
+                    while (true) {
+                        let byte = readByte();
+                        length |= (byte & 0x7F) << shift;
+                        if ((byte & 0x80) === 0) break;
+                        shift += 7;
+                    }
+                    let str = new TextDecoder().decode(new Uint8Array(buffer, offset, length));
+                    offset += length;
+                    return str;
+                }
+                return "";
+            }
+
+            let mode = readByte();
+            let version = readInt();
+            let mapMd5 = readString();
+            let player = readString();
+            let replayMd5 = readString();
             
-            let files = e.dataTransfer.files;
+            let count300 = readShort();
+            let count100 = readShort();
+            let count50 = readShort();
+            let countGeki = readShort();
+            let countKatu = readShort();
+            let countMiss = readShort();
+            let score = readInt();
+            let maxCombo = readShort();
+
+            return { player, score, count300, count100, count50, countMiss, maxCombo };
+        }
+
+        // 2. Parses the .osu text to get actual hit circle locations and times
+        function parseOSU(text) {
+            let hitObjects = [];
+            let inObjects = false;
+            let lines = text.split('\n');
+            for(let line of lines) {
+                line = line.trim();
+                if (line === '[HitObjects]') { inObjects = true; continue; }
+                if (inObjects && line !== '' && !line.startsWith('//')) {
+                    let parts = line.split(',');
+                    if (parts.length >= 5) {
+                        hitObjects.push({
+                            x: parseInt(parts[0]),
+                            y: parseInt(parts[1]),
+                            time: parseInt(parts[2]) / 1000 // Convert ms to seconds
+                        });
+                    }
+                }
+            }
+            return hitObjects.sort((a,b) => a.time - b.time);
+        }
+
+        // --- INPUT HANDLING ---
+        function handleFiles(files) {
+            loadingText.style.display = 'block';
             let oszFile = null, osrFile = null;
 
             for(let file of files) {
@@ -150,50 +223,72 @@
             }
 
             if (!oszFile || !osrFile) {
-                alert("Please drop both an .osz AND an .osr file!");
+                alert("Please select both an .osz AND an .osr file!");
                 loadingText.style.display = 'none';
                 return;
             }
 
-            try {
-                // 1. Read Replay
-                replayData = await osrFile.arrayBuffer();
+            processFiles(oszFile, osrFile);
+        }
 
-                // 2. Unzip .osz and find contents
+        dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('dragover'); });
+        dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('dragover');
+            handleFiles(e.dataTransfer.files);
+        });
+        fileInput.addEventListener('change', (e) => { handleFiles(e.target.files); });
+
+        async function processFiles(oszFile, osrFile) {
+            try {
+                // Parse OSR for Real Stats
+                let osrBuffer = await osrFile.arrayBuffer();
+                replayStats = parseOSR(osrBuffer);
+
+                // Unzip OSZ
                 const zip = await JSZip.loadAsync(oszFile);
                 let audioName = Object.keys(zip.files).find(n => n.endsWith('.mp3') || n.endsWith('.ogg'));
                 let osuName = Object.keys(zip.files).find(n => n.endsWith('.osu'));
 
                 if(!audioName || !osuName) throw new Error("Missing .osu or audio inside .osz");
 
-                // Extract Audio
                 const audioBlob = await zip.file(audioName).async("blob");
                 audioBlobUrl = URL.createObjectURL(audioBlob);
                 
-                // Extract Map Data
-                mapText = await zip.file(osuName).async("text");
+                let osuText = await zip.file(osuName).async("text");
+                mapData = parseOSU(osuText);
 
                 initPlayer();
             } catch (error) {
                 console.error(error);
-                alert("Error extracting files. Make sure the .osz is valid.");
+                alert("Error extracting files. Ensure valid format.");
                 loadingText.style.display = 'none';
             }
-        });
+        }
 
-        // --- PLAYER INITIALIZATION ---
+        // --- PLAYER INIT & LOGIC ---
         function initPlayer() {
             dropZone.style.display = 'none';
             playerUi.style.display = 'block';
+            
+            // Populate Real Stats on UI
+            document.getElementById('player-name-display').innerText = `Player: ${replayStats.player}`;
+            document.getElementById('final-score').innerText = replayStats.score.toLocaleString();
+            document.getElementById('stat-300').innerText = replayStats.count300;
+            document.getElementById('stat-100').innerText = replayStats.count100;
+            document.getElementById('stat-50').innerText = replayStats.count50;
+            document.getElementById('stat-miss').innerText = replayStats.countMiss;
+            document.getElementById('stat-combo').innerText = replayStats.maxCombo + "x";
+
             audioElement.src = audioBlobUrl;
             
-            // Setup Web Audio API so we can record the sound later
             audioContext = new (window.AudioContext || window.webkitAudioContext)();
             mediaSource = audioContext.createMediaElementSource(audioElement);
             destNode = audioContext.createMediaStreamDestination();
             
-            mediaSource.connect(destNode); // Connect to recorder
-            mediaSource.connect(audioContext.destination); // Connect to speakers
+            mediaSource.connect(destNode);
+            mediaSource.connect(audioContext.destination);
 
             audioElement.addEventListener('loadedmetadata', () => {
                 seekBar.max = audioElement.duration;
@@ -202,7 +297,6 @@
             });
         }
 
-        // --- SEQUENCING ---
         function startIntroSequence() {
             sequencePhase = 'intro';
             document.getElementById('intro-screen').classList.add('active');
@@ -210,7 +304,6 @@
             setTimeout(() => {
                 document.getElementById('intro-screen').classList.remove('active');
                 sequencePhase = 'game';
-                // Auto-start map
                 audioContext.resume();
                 audioElement.play();
                 isPlaying = true;
@@ -224,105 +317,117 @@
             sequencePhase = 'stats';
             document.getElementById('stats-screen').classList.add('active');
             
+            // Wait EXACTLY 7 seconds before showing the outro
             setTimeout(() => {
                 document.getElementById('stats-screen').classList.remove('active');
                 document.getElementById('outro-screen').classList.add('active');
                 sequencePhase = 'outro';
 
-                // If we were recording, automatically stop it here
-                if(isRecording) exportBtn.click(); 
-
-            }, 7000); // Wait 7 seconds on stats
+                if(isRecording) exportBtn.click(); // Auto-stop recording
+            }, 7000); 
         }
 
-        // --- RENDERING ENGINE ---
+        // --- GAME RENDERER (Reads actual map coordinates) ---
         function renderLoop() {
             if (!isPlaying && sequencePhase !== 'game') return;
 
-            // Clear frame
             ctx.fillStyle = '#000000';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             let time = audioElement.currentTime;
 
-            // ----------------------------------------------------
-            // MOCK VISUALIZER: Simulating Game Elements
-            // (Since parsing complex slider curves requires thousands of lines of code)
-            // ----------------------------------------------------
-            let centerX = canvas.width / 2;
-            let centerY = canvas.height / 2;
+            // Osu! playfield is 512x384. Scale it to fit the screen.
+            let osuWidth = 512;
+            let osuHeight = 384;
+            let scale = Math.min(canvas.width / osuWidth, canvas.height / osuHeight) * 0.8;
+            let offsetX = (canvas.width - osuWidth * scale) / 2;
+            let offsetY = (canvas.height - osuHeight * scale) / 2;
 
-            // Cursor movement (Mocked based on time)
-            let cursorX = centerX + Math.sin(time * 2.5) * 300;
-            let cursorY = centerY + Math.cos(time * 3.8) * 200;
-
-            // Mock Hit Circle (Iraq Colors)
-            let scale = 1 + Math.sin(time * 8) * 0.1; // pulsing effect
-            ctx.beginPath();
-            ctx.arc(centerX, centerY, 60 * scale, 0, Math.PI * 2);
-            ctx.fillStyle = '#1c1c21';
-            ctx.fill();
-            ctx.lineWidth = 6;
-            ctx.strokeStyle = (Math.floor(time) % 2 === 0) ? 'var(--iraq-red)' : 'var(--iraq-green)';
-            ctx.stroke();
+            // Approach Rate Timing (1.2 seconds for visibility)
+            let arTime = 1.2; 
             
-            // White outline for circle
-            ctx.beginPath();
-            ctx.arc(centerX, centerY, 68 * scale, 0, Math.PI * 2);
-            ctx.lineWidth = 2;
-            ctx.strokeStyle = 'white';
-            ctx.stroke();
+            // Find objects that should be on screen right now
+            let visibleObjects = mapData.filter(obj => time >= obj.time - arTime && time <= obj.time + 0.1);
+            let activeTarget = null;
 
-            // Draw Cursor (White with Osu Pink Trail)
+            // Draw Real Map Objects
+            for (let i = 0; i < visibleObjects.length; i++) {
+                let obj = visibleObjects[i];
+                let screenX = offsetX + obj.x * scale;
+                let screenY = offsetY + obj.y * scale;
+                
+                let timeDiff = obj.time - time;
+                if (timeDiff < 0) timeDiff = 0; // Already hit
+                
+                let progress = 1 - (timeDiff / arTime);
+                
+                // Assign Iraq colors sequentially
+                let colors = ['var(--iraq-red)', 'var(--iraq-green)', 'white'];
+                let color = colors[i % colors.length];
+
+                // Draw hit circle
+                ctx.beginPath();
+                ctx.arc(screenX, screenY, 40 * scale, 0, Math.PI * 2);
+                ctx.fillStyle = '#1c1c21';
+                ctx.fill();
+                ctx.lineWidth = 4;
+                ctx.strokeStyle = color;
+                ctx.stroke();
+
+                // Draw approach circle shrinking
+                let approachRadius = (40 * scale) + (60 * scale * (1 - progress));
+                ctx.beginPath();
+                ctx.arc(screenX, screenY, approachRadius, 0, Math.PI * 2);
+                ctx.lineWidth = 2;
+                ctx.strokeStyle = color;
+                ctx.stroke();
+
+                if (i === 0) activeTarget = {x: screenX, y: screenY}; // First object is current target
+            }
+
+            // Move cursor to actual hit objects smoothly
+            if (activeTarget) {
+                cursorX += (activeTarget.x - cursorX) * 0.3;
+                cursorY += (activeTarget.y - cursorY) * 0.3;
+            }
+
+            // Draw Cursor
             ctx.beginPath();
             ctx.arc(cursorX, cursorY, 20, 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(255, 102, 170, 0.3)'; // Trail
+            ctx.fillStyle = 'rgba(255, 102, 170, 0.3)';
             ctx.fill();
             ctx.beginPath();
             ctx.arc(cursorX, cursorY, 12, 0, Math.PI * 2);
             ctx.fillStyle = 'white';
             ctx.fill();
 
-            // Update UI
             seekBar.value = time;
             updateTimeDisplay();
 
-            // End game check
             if (time >= audioElement.duration && audioElement.duration > 0) {
                 endSequence();
                 return;
             }
 
-            animationFrameId = requestAnimationFrame(renderLoop);
+            requestAnimationFrame(renderLoop);
         }
 
         // --- CONTROLS ---
         playBtn.addEventListener('click', () => {
-            if(sequencePhase !== 'game') return; // Don't interrupt intro/outro
-            
-            if (isPlaying) { 
-                audioElement.pause(); isPlaying = false; playBtn.innerText = "▶ PLAY"; 
-            } else { 
-                audioContext.resume(); audioElement.play(); isPlaying = true; playBtn.innerText = "⏸ PAUSE"; renderLoop(); 
-            }
+            if(sequencePhase !== 'game') return;
+            if (isPlaying) { audioElement.pause(); isPlaying = false; playBtn.innerText = "▶ PLAY"; } 
+            else { audioContext.resume(); audioElement.play(); isPlaying = true; playBtn.innerText = "⏸ PAUSE"; renderLoop(); }
         });
 
         seekBar.addEventListener('input', (e) => {
             if(sequencePhase !== 'game') return;
             audioElement.currentTime = e.target.value;
             updateTimeDisplay();
-            // Force a single frame render while scrubbing
             if(!isPlaying) { isPlaying = true; renderLoop(); audioElement.pause(); isPlaying = false; } 
         });
 
-        function formatTime(seconds) {
-            let m = Math.floor(seconds / 60);
-            let s = Math.floor(seconds % 60).toString().padStart(2, '0');
-            return `${m}:${s}`;
-        }
-        function updateTimeDisplay() {
-            timeDisplay.innerText = `${formatTime(audioElement.currentTime)} / ${formatTime(audioElement.duration || 0)}`;
-        }
+        function formatTime(seconds) { let m = Math.floor(seconds / 60); let s = Math.floor(seconds % 60).toString().padStart(2, '0'); return `${m}:${s}`; }
+        function updateTimeDisplay() { timeDisplay.innerText = `${formatTime(audioElement.currentTime)} / ${formatTime(audioElement.duration || 0)}`; }
 
         // --- VIDEO EXPORT ---
         exportBtn.addEventListener('click', () => {
@@ -335,16 +440,11 @@
                 return;
             }
 
-            // Combine Canvas Video Stream with Web Audio Stream
-            const canvasStream = canvas.captureStream(60); // 60 FPS
+            const canvasStream = canvas.captureStream(60);
             const audioStream = destNode.stream;
-            const combinedStream = new MediaStream([
-                ...canvasStream.getTracks(), 
-                ...audioStream.getTracks()
-            ]);
+            const combinedStream = new MediaStream([...canvasStream.getTracks(), ...audioStream.getTracks()]);
             
             mediaRecorder = new MediaRecorder(combinedStream, { mimeType: 'video/webm; codecs=vp9' });
-            
             mediaRecorder.ondataavailable = e => { if (e.data.size > 0) recordedChunks.push(e.data); };
             
             mediaRecorder.onstop = () => {
@@ -366,7 +466,6 @@
             exportBtn.style.color = "white";
             exportBtn.style.background = "var(--iraq-red)";
             
-            // Restart the entire sequence for a clean recording!
             audioElement.currentTime = 0;
             document.getElementById('outro-screen').classList.remove('active');
             document.getElementById('stats-screen').classList.remove('active');
@@ -374,5 +473,4 @@
         });
     </script>
 </body>
-  </html>
-
+</html>

@@ -3,24 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osu! Iraq Today | Custom Renderer</title>
+    <title>Osu! Iraq Today | Real Replay Renderer</title>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700;900&display=swap" rel="stylesheet">
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spark-md5/3.0.2/spark-md5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lzma/2.3.2/lzma_worker.min.js"></script>
+
     <style>
-        :root { 
-            --osu-pink: #ff66aa; 
-            --iraq-red: #CE1126; 
-            --iraq-green: #007A3D; 
-            --bg-color: #121216; 
-        }
-        
+        :root { --osu-pink: #ff66aa; --iraq-red: #CE1126; --iraq-green: #007A3D; --bg-color: #121216; }
         body, html { margin: 0; padding: 0; width: 100%; height: 100%; background: var(--bg-color); color: white; font-family: 'Exo 2', sans-serif; overflow: hidden; }
 
-        /* --- DRAG & DROP & UPLOAD ZONE --- */
-        #drop-zone {
-            position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
-            border: 4px dashed #333; margin: 20px; border-radius: 20px; transition: 0.3s; z-index: 100; background: var(--bg-color);
-        }
+        /* --- DRAG & DROP ZONE --- */
+        #drop-zone { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 4px dashed #333; margin: 20px; border-radius: 20px; transition: 0.3s; z-index: 100; background: var(--bg-color); }
         #drop-zone.dragover { border-color: var(--osu-pink); background: rgba(255, 102, 170, 0.05); }
         .drop-title { font-size: 36px; font-weight: 900; letter-spacing: 2px; }
         .drop-title span { color: var(--osu-pink); }
@@ -37,11 +32,7 @@
         #player-ui { display: none; width: 100%; height: 100%; position: relative; }
         #game-canvas { width: 100%; height: 100%; display: block; background: #000; }
 
-        .controls {
-            position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(transparent, rgba(0,0,0,0.95));
-            padding: 40px 20px 20px 20px; display: flex; align-items: center; gap: 15px; box-sizing: border-box; z-index: 200;
-        }
-        
+        .controls { position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(transparent, rgba(0,0,0,0.95)); padding: 40px 20px 20px 20px; display: flex; align-items: center; gap: 15px; box-sizing: border-box; z-index: 200; }
         button { background: transparent; border: 2px solid white; color: white; padding: 10px 20px; border-radius: 6px; font-family: 'Exo 2'; font-weight: 800; cursor: pointer; transition: 0.2s; font-size: 14px; }
         button:hover { background: white; color: black; }
         #export-btn { border-color: var(--iraq-red); color: var(--iraq-red); margin-left: auto; }
@@ -51,10 +42,8 @@
         .timeline::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; border-radius: 50%; background: var(--osu-pink); }
         #time-display { font-variant-numeric: tabular-nums; font-weight: 700; font-size: 14px; width: 110px; text-align: right; }
         
-        /* Overlays */
         .overlay-screen { position: absolute; inset: 0; background: black; display: flex; align-items: center; justify-content: center; z-index: 50; flex-direction: column; opacity: 0; pointer-events: none; transition: opacity 0.5s; }
         .overlay-screen.active { opacity: 1; pointer-events: all; }
-
         #loading-text { display: none; color: var(--osu-pink); font-weight: 800; font-size: 24px; margin-top: 20px; animation: pulse 1s infinite; }
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
     </style>
@@ -64,12 +53,10 @@
     <div id="drop-zone">
         <div class="drop-title">OSU! <span>IRAQ</span> TODAY</div>
         <div class="drop-sub">Select or Drop your <b>.osz</b> and <b>.osr</b> files together.</div>
-        
         <label>
             <input type="file" id="file-input" multiple accept=".osz,.osr">
             <div class="upload-btn">Browse Files</div>
         </label>
-
         <div class="iraq-colors">
             <div class="dot" style="background: var(--iraq-red);"></div>
             <div class="dot" style="background: white;"></div>
@@ -85,7 +72,7 @@
         <div id="intro-screen" class="overlay-screen">
             <img src="https://i.imgur.com/1YJfjH6.png" style="width: 180px; margin-bottom: 20px; filter: drop-shadow(0 0 15px rgba(255,102,170,0.4));">
             <h1 style="color: var(--osu-pink); letter-spacing: 5px; margin: 0;">OSU! IRAQ TODAY</h1>
-            <p style="color: #888; font-weight: 600; letter-spacing: 2px;">COMMUNITY SHOWCASE</p>
+            <p style="color: #888; font-weight: 600; letter-spacing: 2px;" id="intro-diff-name">COMMUNITY SHOWCASE</p>
         </div>
         
         <div id="stats-screen" class="overlay-screen">
@@ -116,19 +103,17 @@
 
     <script>
         // --- CORE VARIABLES ---
-        let mapData = [], replayStats = {};
+        let mapData = [], replayFrames = [], replayStats = {};
+        let currentFrameIndex = 0;
         let audioBlobUrl = null;
         let audioElement = new Audio();
-        let isPlaying = false, isRecording = false;
-        let sequencePhase = 'intro'; // intro -> game -> stats -> outro
+        let isPlaying = false, isRecording = false, sequencePhase = 'intro';
         
-        // Auto-Cursor position
         let cursorX = window.innerWidth / 2, cursorY = window.innerHeight / 2;
-
         let audioContext, destNode, mediaSource, mediaRecorder;
         let recordedChunks = [];
 
-        // UI
+        // UI Variables
         const dropZone = document.getElementById('drop-zone');
         const fileInput = document.getElementById('file-input');
         const loadingText = document.getElementById('loading-text');
@@ -144,14 +129,12 @@
         window.addEventListener('resize', resizeCanvas);
         resizeCanvas();
 
-        // --- FILE PARSERS ---
-
-        // 1. Parses the binary .osr file to get the real score and player stats
+        // --- BINARY .OSR PARSER (Reads headers and compressed cursor data) ---
         function parseOSR(buffer) {
             let view = new DataView(buffer);
             let offset = 0;
 
-            function readByte() { let v = view.getUint8(offset); offset += 1; return v; }
+            function readByte() { let v = view.getUint8(offset); offset++; return v; }
             function readShort() { let v = view.getUint16(offset, true); offset += 2; return v; }
             function readInt() { let v = view.getUint32(offset, true); offset += 4; return v; }
             function readString() {
@@ -178,19 +161,19 @@
             let player = readString();
             let replayMd5 = readString();
             
-            let count300 = readShort();
-            let count100 = readShort();
-            let count50 = readShort();
-            let countGeki = readShort();
-            let countKatu = readShort();
-            let countMiss = readShort();
-            let score = readInt();
-            let maxCombo = readShort();
+            let count300 = readShort(); let count100 = readShort(); let count50 = readShort();
+            let countGeki = readShort(); let countKatu = readShort(); let countMiss = readShort();
+            let score = readInt(); let maxCombo = readShort();
+            let perfect = readByte(); let mods = readInt(); let lifebar = readString();
+            
+            offset += 8; // skip timestamp (8 bytes)
+            let replayLength = readInt();
+            let compressedData = new Uint8Array(buffer, offset, replayLength);
 
-            return { player, score, count300, count100, count50, countMiss, maxCombo };
+            return { player, score, count300, count100, count50, countMiss, maxCombo, mapMd5, compressedData };
         }
 
-        // 2. Parses the .osu text to get actual hit circle locations and times
+        // --- MAP .OSU PARSER ---
         function parseOSU(text) {
             let hitObjects = [];
             let inObjects = false;
@@ -198,76 +181,104 @@
             for(let line of lines) {
                 line = line.trim();
                 if (line === '[HitObjects]') { inObjects = true; continue; }
+                if (line.startsWith('[')) { inObjects = false; }
                 if (inObjects && line !== '' && !line.startsWith('//')) {
                     let parts = line.split(',');
                     if (parts.length >= 5) {
-                        hitObjects.push({
-                            x: parseInt(parts[0]),
-                            y: parseInt(parts[1]),
-                            time: parseInt(parts[2]) / 1000 // Convert ms to seconds
-                        });
+                        hitObjects.push({ x: parseInt(parts[0]), y: parseInt(parts[1]), time: parseInt(parts[2]) / 1000 });
                     }
                 }
             }
             return hitObjects.sort((a,b) => a.time - b.time);
         }
 
-        // --- INPUT HANDLING ---
+        // --- FILE HANDLING & EXTRACTION ---
         function handleFiles(files) {
             loadingText.style.display = 'block';
             let oszFile = null, osrFile = null;
-
             for(let file of files) {
                 if (file.name.toLowerCase().endsWith('.osz')) oszFile = file;
                 if (file.name.toLowerCase().endsWith('.osr')) osrFile = file;
             }
-
             if (!oszFile || !osrFile) {
                 alert("Please select both an .osz AND an .osr file!");
                 loadingText.style.display = 'none';
                 return;
             }
-
             processFiles(oszFile, osrFile);
         }
 
         dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('dragover'); });
         dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
-        dropZone.addEventListener('drop', (e) => {
-            e.preventDefault();
-            dropZone.classList.remove('dragover');
-            handleFiles(e.dataTransfer.files);
-        });
+        dropZone.addEventListener('drop', (e) => { e.preventDefault(); dropZone.classList.remove('dragover'); handleFiles(e.dataTransfer.files); });
         fileInput.addEventListener('change', (e) => { handleFiles(e.target.files); });
 
         async function processFiles(oszFile, osrFile) {
             try {
-                // Parse OSR for Real Stats
+                // 1. Parse Real Stats & get LZMA Replay Data
+                loadingText.innerText = "Reading Replay Data...";
                 let osrBuffer = await osrFile.arrayBuffer();
                 replayStats = parseOSR(osrBuffer);
 
-                // Unzip OSZ
-                const zip = await JSZip.loadAsync(oszFile);
-                let audioName = Object.keys(zip.files).find(n => n.endsWith('.mp3') || n.endsWith('.ogg'));
-                let osuName = Object.keys(zip.files).find(n => n.endsWith('.osu'));
+                // 2. Decompress LZMA Mouse Cursor Data
+                loadingText.innerText = "Decompressing Cursor Movements...";
+                await new Promise((resolve, reject) => {
+                    LZMA.decompress(replayStats.compressedData, function(result, error) {
+                        if(error) { reject(error); return; }
+                        let time = 0;
+                        result.split(',').forEach(frameStr => {
+                            let parts = frameStr.split('|');
+                            if(parts.length >= 4) {
+                                time += parseInt(parts[0]); // Time delta
+                                replayFrames.push({ time: time / 1000, x: parseFloat(parts[1]), y: parseFloat(parts[2]) });
+                            }
+                        });
+                        resolve();
+                    });
+                });
 
-                if(!audioName || !osuName) throw new Error("Missing .osu or audio inside .osz");
+                // 3. Unzip Map
+                loadingText.innerText = "Extracting Map Assets...";
+                const zip = await JSZip.loadAsync(oszFile);
+                let audioName = Object.keys(zip.files).find(n => n.toLowerCase().endsWith('.mp3') || n.toLowerCase().endsWith('.ogg'));
+                if(!audioName) throw new Error("Missing audio inside .osz");
 
                 const audioBlob = await zip.file(audioName).async("blob");
                 audioBlobUrl = URL.createObjectURL(audioBlob);
                 
-                let osuText = await zip.file(osuName).async("text");
-                mapData = parseOSU(osuText);
+                // 4. Find the EXACT Difficulty via MD5 Match
+                loadingText.innerText = "Finding Correct Difficulty...";
+                let targetOsuText = "";
+                let fallbackOsuText = "";
+                let difficultyName = "COMMUNITY SHOWCASE";
+
+                for (let filename of Object.keys(zip.files)) {
+                    if (filename.toLowerCase().endsWith('.osu')) {
+                        let buffer = await zip.file(filename).async("arraybuffer");
+                        let hash = SparkMD5.ArrayBuffer.hash(buffer);
+                        
+                        // Check if hash matches the replay's internal target MD5
+                        if(hash === replayStats.mapMd5) {
+                            targetOsuText = new TextDecoder().decode(buffer);
+                            difficultyName = filename.replace('.osu', ''); // Get name for intro screen
+                            break;
+                        }
+                        if(!fallbackOsuText) fallbackOsuText = new TextDecoder().decode(buffer);
+                    }
+                }
+                
+                mapData = parseOSU(targetOsuText || fallbackOsuText);
+                document.getElementById('intro-diff-name').innerText = difficultyName;
 
                 initPlayer();
             } catch (error) {
                 console.error(error);
-                alert("Error extracting files. Ensure valid format.");
+                alert("Error extracting files. Please check the console.");
                 loadingText.style.display = 'none';
             }
         }
 
-        // --- PLAYER INIT & LOGIC ---
+        // --- PLAYER INIT & SEQUENCING ---
         function initPlayer() {
             dropZone.style.display = 'none';
             playerUi.style.display = 'block';
@@ -299,6 +310,7 @@
 
         function startIntroSequence() {
             sequencePhase = 'intro';
+            currentFrameIndex = 0; // Reset replay frames
             document.getElementById('intro-screen').classList.add('active');
             
             setTimeout(() => {
@@ -317,17 +329,15 @@
             sequencePhase = 'stats';
             document.getElementById('stats-screen').classList.add('active');
             
-            // Wait EXACTLY 7 seconds before showing the outro
             setTimeout(() => {
                 document.getElementById('stats-screen').classList.remove('active');
                 document.getElementById('outro-screen').classList.add('active');
                 sequencePhase = 'outro';
-
                 if(isRecording) exportBtn.click(); // Auto-stop recording
             }, 7000); 
         }
 
-        // --- GAME RENDERER (Reads actual map coordinates) ---
+        // --- RENDER LOOP ---
         function renderLoop() {
             if (!isPlaying && sequencePhase !== 'game') return;
 
@@ -336,79 +346,69 @@
 
             let time = audioElement.currentTime;
 
-            // Osu! playfield is 512x384. Scale it to fit the screen.
-            let osuWidth = 512;
-            let osuHeight = 384;
+            // Coordinate System Setup
+            let osuWidth = 512, osuHeight = 384;
             let scale = Math.min(canvas.width / osuWidth, canvas.height / osuHeight) * 0.8;
             let offsetX = (canvas.width - osuWidth * scale) / 2;
             let offsetY = (canvas.height - osuHeight * scale) / 2;
 
-            // Approach Rate Timing (1.2 seconds for visibility)
+            // Approach Rate Timing
             let arTime = 1.2; 
             
-            // Find objects that should be on screen right now
+            // Draw Map Objects
             let visibleObjects = mapData.filter(obj => time >= obj.time - arTime && time <= obj.time + 0.1);
-            let activeTarget = null;
-
-            // Draw Real Map Objects
             for (let i = 0; i < visibleObjects.length; i++) {
                 let obj = visibleObjects[i];
                 let screenX = offsetX + obj.x * scale;
                 let screenY = offsetY + obj.y * scale;
-                
-                let timeDiff = obj.time - time;
-                if (timeDiff < 0) timeDiff = 0; // Already hit
-                
+                let timeDiff = Math.max(0, obj.time - time);
                 let progress = 1 - (timeDiff / arTime);
                 
-                // Assign Iraq colors sequentially
                 let colors = ['var(--iraq-red)', 'var(--iraq-green)', 'white'];
                 let color = colors[i % colors.length];
 
-                // Draw hit circle
-                ctx.beginPath();
-                ctx.arc(screenX, screenY, 40 * scale, 0, Math.PI * 2);
-                ctx.fillStyle = '#1c1c21';
-                ctx.fill();
-                ctx.lineWidth = 4;
-                ctx.strokeStyle = color;
-                ctx.stroke();
+                // Hit circle
+                ctx.beginPath(); ctx.arc(screenX, screenY, 40 * scale, 0, Math.PI * 2);
+                ctx.fillStyle = '#1c1c21'; ctx.fill();
+                ctx.lineWidth = 4; ctx.strokeStyle = color; ctx.stroke();
 
-                // Draw approach circle shrinking
+                // Approach circle
                 let approachRadius = (40 * scale) + (60 * scale * (1 - progress));
-                ctx.beginPath();
-                ctx.arc(screenX, screenY, approachRadius, 0, Math.PI * 2);
-                ctx.lineWidth = 2;
-                ctx.strokeStyle = color;
-                ctx.stroke();
-
-                if (i === 0) activeTarget = {x: screenX, y: screenY}; // First object is current target
+                ctx.beginPath(); ctx.arc(screenX, screenY, approachRadius, 0, Math.PI * 2);
+                ctx.lineWidth = 2; ctx.strokeStyle = color; ctx.stroke();
             }
 
-            // Move cursor to actual hit objects smoothly
-            if (activeTarget) {
-                cursorX += (activeTarget.x - cursorX) * 0.3;
-                cursorY += (activeTarget.y - cursorY) * 0.3;
+            // Sync Cursor with Replay Time
+            if (currentFrameIndex > 0 && replayFrames[currentFrameIndex].time > time) currentFrameIndex = 0; // Reset if seeking backward
+            while (currentFrameIndex < replayFrames.length - 2 && replayFrames[currentFrameIndex + 1].time <= time) {
+                currentFrameIndex++;
             }
 
-            // Draw Cursor
-            ctx.beginPath();
-            ctx.arc(cursorX, cursorY, 20, 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(255, 102, 170, 0.3)';
-            ctx.fill();
-            ctx.beginPath();
-            ctx.arc(cursorX, cursorY, 12, 0, Math.PI * 2);
-            ctx.fillStyle = 'white';
-            ctx.fill();
+            let frame = replayFrames[currentFrameIndex];
+            let nextFrame = replayFrames[currentFrameIndex + 1];
 
+            // Smooth interpolation between frames
+            if (frame && nextFrame && nextFrame.time > frame.time) {
+                let t = (time - frame.time) / (nextFrame.time - frame.time);
+                t = Math.max(0, Math.min(1, t)); // clamp
+                cursorX = offsetX + (frame.x + (nextFrame.x - frame.x) * t) * scale;
+                cursorY = offsetY + (frame.y + (nextFrame.y - frame.y) * t) * scale;
+            } else if (frame) {
+                cursorX = offsetX + frame.x * scale;
+                cursorY = offsetY + frame.y * scale;
+            }
+
+            // Draw Exact Cursor
+            ctx.beginPath(); ctx.arc(cursorX, cursorY, 20, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(255, 102, 170, 0.4)'; ctx.fill();
+            ctx.beginPath(); ctx.arc(cursorX, cursorY, 12, 0, Math.PI * 2);
+            ctx.fillStyle = 'white'; ctx.fill();
+
+            // UI
             seekBar.value = time;
             updateTimeDisplay();
 
-            if (time >= audioElement.duration && audioElement.duration > 0) {
-                endSequence();
-                return;
-            }
-
+            if (time >= audioElement.duration && audioElement.duration > 0) { endSequence(); return; }
             requestAnimationFrame(renderLoop);
         }
 
@@ -429,7 +429,7 @@
         function formatTime(seconds) { let m = Math.floor(seconds / 60); let s = Math.floor(seconds % 60).toString().padStart(2, '0'); return `${m}:${s}`; }
         function updateTimeDisplay() { timeDisplay.innerText = `${formatTime(audioElement.currentTime)} / ${formatTime(audioElement.duration || 0)}`; }
 
-        // --- VIDEO EXPORT ---
+        // --- EXPORT TO WEBM ---
         exportBtn.addEventListener('click', () => {
             if (isRecording) {
                 mediaRecorder.stop();
@@ -439,7 +439,6 @@
                 isRecording = false;
                 return;
             }
-
             const canvasStream = canvas.captureStream(60);
             const audioStream = destNode.stream;
             const combinedStream = new MediaStream([...canvasStream.getTracks(), ...audioStream.getTracks()]);
@@ -451,12 +450,8 @@
                 const blob = new Blob(recordedChunks, { type: 'video/webm' });
                 const url = URL.createObjectURL(blob);
                 const a = document.createElement('a');
-                a.style.display = 'none';
-                a.href = url;
-                a.download = 'OsuIraqToday_Replay.webm';
-                document.body.appendChild(a);
-                a.click();
-                URL.revokeObjectURL(url);
+                a.style.display = 'none'; a.href = url; a.download = 'OsuIraqToday_RealReplay.webm';
+                document.body.appendChild(a); a.click(); URL.revokeObjectURL(url);
                 recordedChunks = [];
             };
 
@@ -467,6 +462,7 @@
             exportBtn.style.background = "var(--iraq-red)";
             
             audioElement.currentTime = 0;
+            currentFrameIndex = 0;
             document.getElementById('outro-screen').classList.remove('active');
             document.getElementById('stats-screen').classList.remove('active');
             startIntroSequence();

@@ -561,7 +561,7 @@
     // --- RENDER PIPELINE ---
     function updateBreadcrumbs() {
         const bc = document.getElementById('breadcrumbTrail');
-        let html = `<span onclick="loadCategory('all', event)">Vault Root</span>`;
+        let html = `<span onclick="loadCategory('all', event)">All Files</span>`;
         
         if (currentCategory !== 'all') {
             const catName = currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1);

@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 25,
-    "longest": 25,
-    "last_updated": "2026-03-22"
+    "current": 26,
+    "longest": 26,
+    "last_updated": "2026-03-23"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -7564,6 +7564,300 @@
         "title": "popal",
         "cover": "https://assets.ppy.sh/beatmaps/2507668/covers/card.jpg?1771096202",
         "unique_players": 12
+      }
+    },
+    "2026-03-23": {
+      "total_scores": 490,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "Kosmiku",
+        "user_id": 15209351,
+        "count": 66,
+        "scores": [
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 5000345870,
+            "rank": "B",
+            "accuracy": 0.8987003058103975,
+            "pp": 51.2731,
+            "mods": [],
+            "combo": 285,
+            "created_at": "2026-03-22T19:35:16Z",
+            "beatmapset": {
+              "id": 473415,
+              "title": "Through My Blood",
+              "cover": "https://assets.ppy.sh/beatmaps/473415/covers/card.jpg?1650640589",
+              "stars": 5.26753
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 5000343441,
+            "rank": "B",
+            "accuracy": 0.8685015290519877,
+            "pp": 45.795,
+            "mods": [],
+            "combo": 280,
+            "created_at": "2026-03-22T19:29:14Z",
+            "beatmapset": {
+              "id": 473415,
+              "title": "Through My Blood",
+              "cover": "https://assets.ppy.sh/beatmaps/473415/covers/card.jpg?1650640589",
+              "stars": 5.26753
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 5000342083,
+            "rank": "B",
+            "accuracy": 0.9102564102564102,
+            "pp": 66.7552,
+            "mods": [],
+            "combo": 574,
+            "created_at": "2026-03-22T19:25:50Z",
+            "beatmapset": {
+              "id": 473415,
+              "title": "Through My Blood",
+              "cover": "https://assets.ppy.sh/beatmaps/473415/covers/card.jpg?1650640589",
+              "stars": 4.64443
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 5000319777,
+            "rank": "B",
+            "accuracy": 0.9309664694280079,
+            "pp": 67.2797,
+            "mods": [],
+            "combo": 546,
+            "created_at": "2026-03-22T18:33:13Z",
+            "beatmapset": {
+              "id": 473415,
+              "title": "Through My Blood",
+              "cover": "https://assets.ppy.sh/beatmaps/473415/covers/card.jpg?1650640589",
+              "stars": 4.64443
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 5000318575,
+            "rank": "B",
+            "accuracy": 0.9087771203155819,
+            "pp": 63.398,
+            "mods": [],
+            "combo": 546,
+            "created_at": "2026-03-22T18:30:31Z",
+            "beatmapset": {
+              "id": 473415,
+              "title": "Through My Blood",
+              "cover": "https://assets.ppy.sh/beatmaps/473415/covers/card.jpg?1650640589",
+              "stars": 4.64443
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 5000317415,
+            "rank": "B",
+            "accuracy": 0.9215893108298172,
+            "pp": 33.7015,
+            "mods": [
+              "DT"
+            ],
+            "combo": 523,
+            "created_at": "2026-03-22T18:27:41Z",
+            "beatmapset": {
+              "id": 1966153,
+              "title": "505",
+              "cover": "https://assets.ppy.sh/beatmaps/1966153/covers/card.jpg?1721582485",
+              "stars": 3.31635
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 5000315506,
+            "rank": "B",
+            "accuracy": 0.8873239436619719,
+            "pp": 54.8252,
+            "mods": [],
+            "combo": 193,
+            "created_at": "2026-03-22T18:23:09Z",
+            "beatmapset": {
+              "id": 2190501,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/2190501/covers/card.jpg?1719435483",
+              "stars": 4.51349
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 5000315128,
+            "rank": "B",
+            "accuracy": 0.9131455399061033,
+            "pp": 60.6509,
+            "mods": [],
+            "combo": 192,
+            "created_at": "2026-03-22T18:22:13Z",
+            "beatmapset": {
+              "id": 2190501,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/2190501/covers/card.jpg?1719435483",
+              "stars": 4.51349
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 5000314745,
+            "rank": "B",
+            "accuracy": 0.8873239436619719,
+            "pp": 44.5493,
+            "mods": [],
+            "combo": 132,
+            "created_at": "2026-03-22T18:21:20Z",
+            "beatmapset": {
+              "id": 2190501,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/2190501/covers/card.jpg?1719435483",
+              "stars": 4.51349
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 5000314137,
+            "rank": "C",
+            "accuracy": 0.8293650793650794,
+            "pp": 45.1194,
+            "mods": [],
+            "combo": 86,
+            "created_at": "2026-03-22T18:19:52Z",
+            "beatmapset": {
+              "id": 2190501,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/2190501/covers/card.jpg?1719435483",
+              "stars": 4.92146
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 5000313678,
+            "rank": "C",
+            "accuracy": 0.8174603174603174,
+            "pp": 49.3065,
+            "mods": [],
+            "combo": 67,
+            "created_at": "2026-03-22T18:18:49Z",
+            "beatmapset": {
+              "id": 2190501,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/2190501/covers/card.jpg?1719435483",
+              "stars": 4.92146
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 5000313196,
+            "rank": "C",
+            "accuracy": 0.8362235067437379,
+            "pp": 69.5099,
+            "mods": [],
+            "combo": 73,
+            "created_at": "2026-03-22T18:17:43Z",
+            "beatmapset": {
+              "id": 2190501,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/2190501/covers/card.jpg?1719435483",
+              "stars": 5.19211
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 5000309767,
+            "rank": "S",
+            "accuracy": 0.9455128205128205,
+            "pp": 32.9613,
+            "mods": [],
+            "combo": 335,
+            "created_at": "2026-03-22T18:09:42Z",
+            "beatmapset": {
+              "id": 1520433,
+              "title": "0 (zero) (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1520433/covers/card.jpg?1640203529",
+              "stars": 3.44133
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 5000305629,
+            "rank": "A",
+            "accuracy": 0.9314285714285714,
+            "pp": 15.551,
+            "mods": [
+              "HR",
+              "FL"
+            ],
+            "combo": 274,
+            "created_at": "2026-03-22T17:59:36Z",
+            "beatmapset": {
+              "id": 1520433,
+              "title": "0 (zero) (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1520433/covers/card.jpg?1640203529",
+              "stars": 2.52436
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 5000304645,
+            "rank": "A",
+            "accuracy": 0.9114285714285715,
+            "pp": 12.7973,
+            "mods": [
+              "HR",
+              "FL"
+            ],
+            "combo": 263,
+            "created_at": "2026-03-22T17:57:19Z",
+            "beatmapset": {
+              "id": 1520433,
+              "title": "0 (zero) (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1520433/covers/card.jpg?1640203529",
+              "stars": 2.52436
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "0 (zero) (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1520433/covers/card.jpg?1640203529",
+        "unique_players": 15
       }
     }
   }

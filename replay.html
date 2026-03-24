@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;900&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/spark-md5/3.0.2/spark-md5.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lzma/2.3.2/lzma_worker.min.js"></script>
   <style>
     :root{--pink:#ff66aa;--red:#ce1126;--green:#007a3d;--bg:#0f1118;--soft:#98a1bc;--danger:#ff4f4f}
     *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:radial-gradient(circle at 20% 20%,#20263a,#0f1118 55%);color:#fff;font-family:"Exo 2",sans-serif}
@@ -97,6 +96,7 @@ const E={
 };
 const C=E.canvas.getContext("2d",{alpha:false});
 const CSS=getComputedStyle(document.documentElement),CLR={pink:CSS.getPropertyValue("--pink").trim()||"#ff66aa",red:CSS.getPropertyValue("--red").trim()||"#ce1126",green:CSS.getPropertyValue("--green").trim()||"#007a3d"};
+let lzmaPromise=null;
 
 function status(msg,cls=""){E.status.className=cls;E.status.textContent=msg}
 function load(on,msg=""){S.loading=on;E.loading.style.display=on?"block":"none";E.loading.textContent=msg||"Extracting and parsing...";E.play.disabled=on;E.record.disabled=on}
@@ -107,6 +107,35 @@ function phase(p){S.phase=p;E.intro.classList.toggle("on",p===PH.INTRO);E.statsO
 function showPlayer(on){E.drop.style.display=on?"none":"flex";E.player.style.display=on?"block":"none"}
 function clearTimers(){if(S.introT)clearTimeout(S.introT);if(S.statsT)clearTimeout(S.statsT);if(S.tailT)clearTimeout(S.tailT);S.introT=S.statsT=S.tailT=0}
 function updateRecordBtn(){if(S.recording){E.record.classList.add("on");E.record.textContent="Stop Recording"}else{E.record.classList.remove("on");E.record.textContent="Record Video"}}
+function hasLZMA(){return !!(window.LZMA&&typeof window.LZMA.decompress==="function")}
+function loadScript(url){
+  return new Promise((resolve,reject)=>{
+    const s=document.createElement("script");
+    s.src=url;s.async=true;
+    s.onload=()=>resolve();
+    s.onerror=()=>reject(new Error(`Failed to load ${url}`));
+    document.head.appendChild(s);
+  });
+}
+function ensureLZMA(){
+  if(hasLZMA())return Promise.resolve();
+  if(lzmaPromise)return lzmaPromise;
+  const urls=[
+    "https://cdn.jsdelivr.net/npm/lzma@2.3.2/src/lzma_worker-min.js",
+    "https://unpkg.com/lzma@2.3.2/src/lzma_worker-min.js",
+    "https://cdn.jsdelivr.net/npm/lzma@2.3.2/src/lzma_worker.js"
+  ];
+  lzmaPromise=(async()=>{
+    for(const u of urls){
+      try{
+        await loadScript(u);
+        if(hasLZMA())return;
+      }catch(_){}
+    }
+    throw new Error("Could not load LZMA decoder from CDN. Check network, adblock, or CSP.");
+  })();
+  return lzmaPromise;
+}
 
 function resetAll(){
   clearTimers(); if(S.raf){cancelAnimationFrame(S.raf);S.raf=0} S.audio.pause(); S.playing=false;
@@ -142,7 +171,7 @@ function parseReplay(text){
 }
 
 function decodeReplay(data){
-  if(!window.LZMA||typeof LZMA.decompress!=="function")throw new Error("LZMA dependency not loaded");
+  if(!hasLZMA())throw new Error("LZMA dependency not loaded");
   return new Promise((resolve,reject)=>{
     LZMA.decompress(data,(res,err)=>{
       if(err){reject(new Error(typeof err==="string"?err:"Replay decompression failed"));return}
@@ -259,6 +288,7 @@ function validate(fileList){
 async function processFiles(fileList){
   const {osz,osr}=validate(fileList); resetAll(); E.files.value=""; load(true,"Reading replay (.osr) ...");
   try{
+    load(true,"Loading LZMA decoder ..."); await ensureLZMA();
     const osrData=parseOSR(await osr.arrayBuffer()); if(osrData.mode!==0)throw new Error("Only osu!standard mode (mode=0) is supported");
     load(true,"Decompressing cursor data ..."); const frames=await decodeReplay(osrData.compressedData);
     load(true,"Opening beatmap package (.osz) ..."); const zip=await JSZip.loadAsync(osz),osuFiles=Object.values(zip.files).filter(f=>!f.dir&&f.name.toLowerCase().endsWith(".osu"));
@@ -288,8 +318,9 @@ async function onRecord(){
 function onSeek(e){if(S.phase!==PH.GAME||!S.map.length)return;const t=Number(e.target.value);if(!Number.isFinite(t))return;S.audio.currentTime=t;S.last=t;draw(t);setTime(t,S.audio.duration||0)}
 
 function deps(){
-  const miss=[]; if(!window.JSZip)miss.push("JSZip"); if(!window.SparkMD5)miss.push("SparkMD5"); if(!window.LZMA)miss.push("LZMA");
-  if(miss.length)status(`Missing dependencies: ${miss.join(", ")}. Check CDN access.`,"err"); else status("Drop both files: one .osz and one .osr","");
+  const miss=[]; if(!window.JSZip)miss.push("JSZip"); if(!window.SparkMD5)miss.push("SparkMD5");
+  if(miss.length){status(`Missing dependencies: ${miss.join(", ")}. Check CDN access.`,"err");return}
+  status("Drop both files: one .osz and one .osr","");
 }
 
 function prevent(e){e.preventDefault();e.stopPropagation()}

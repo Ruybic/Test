@@ -1,472 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osu! Iraq Today | Real Replay Renderer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700;900&display=swap" rel="stylesheet">
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/spark-md5/3.0.2/spark-md5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lzma/2.3.2/lzma_worker.min.js"></script>
-
-    <style>
-        :root { --osu-pink: #ff66aa; --iraq-red: #CE1126; --iraq-green: #007A3D; --bg-color: #121216; }
-        body, html { margin: 0; padding: 0; width: 100%; height: 100%; background: var(--bg-color); color: white; font-family: 'Exo 2', sans-serif; overflow: hidden; }
-
-        /* --- DRAG & DROP ZONE --- */
-        #drop-zone { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 4px dashed #333; margin: 20px; border-radius: 20px; transition: 0.3s; z-index: 100; background: var(--bg-color); }
-        #drop-zone.dragover { border-color: var(--osu-pink); background: rgba(255, 102, 170, 0.05); }
-        .drop-title { font-size: 36px; font-weight: 900; letter-spacing: 2px; }
-        .drop-title span { color: var(--osu-pink); }
-        .drop-sub { color: #888; margin-top: 10px; font-size: 18px; font-weight: 700; text-align: center; line-height: 1.5; margin-bottom: 20px;}
-        
-        .upload-btn { background: var(--osu-pink); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-family: 'Exo 2'; font-weight: 800; font-size: 16px; cursor: pointer; transition: 0.2s; }
-        .upload-btn:hover { background: #ff88bb; transform: scale(1.05); }
-        input[type="file"] { display: none; }
-
-        .iraq-colors { display: flex; gap: 10px; margin-top: 25px; }
-        .dot { width: 16px; height: 16px; border-radius: 50%; }
-
-        /* --- PLAYER UI --- */
-        #player-ui { display: none; width: 100%; height: 100%; position: relative; }
-        #game-canvas { width: 100%; height: 100%; display: block; background: #000; }
-
-        .controls { position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(transparent, rgba(0,0,0,0.95)); padding: 40px 20px 20px 20px; display: flex; align-items: center; gap: 15px; box-sizing: border-box; z-index: 200; }
-        button { background: transparent; border: 2px solid white; color: white; padding: 10px 20px; border-radius: 6px; font-family: 'Exo 2'; font-weight: 800; cursor: pointer; transition: 0.2s; font-size: 14px; }
-        button:hover { background: white; color: black; }
-        #export-btn { border-color: var(--iraq-red); color: var(--iraq-red); margin-left: auto; }
-        #export-btn:hover { background: var(--iraq-red); color: white; }
-
-        .timeline { flex: 1; -webkit-appearance: none; height: 6px; background: rgba(255,255,255,0.2); border-radius: 3px; cursor: pointer; }
-        .timeline::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; border-radius: 50%; background: var(--osu-pink); }
-        #time-display { font-variant-numeric: tabular-nums; font-weight: 700; font-size: 14px; width: 110px; text-align: right; }
-        
-        .overlay-screen { position: absolute; inset: 0; background: black; display: flex; align-items: center; justify-content: center; z-index: 50; flex-direction: column; opacity: 0; pointer-events: none; transition: opacity 0.5s; }
-        .overlay-screen.active { opacity: 1; pointer-events: all; }
-        #loading-text { display: none; color: var(--osu-pink); font-weight: 800; font-size: 24px; margin-top: 20px; animation: pulse 1s infinite; }
-        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Osu! Iraq Today | Replay Renderer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/spark-md5/3.0.2/spark-md5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lzma/2.3.2/lzma_worker.min.js"></script>
+  <style>
+    :root{--pink:#ff66aa;--red:#ce1126;--green:#007a3d;--bg:#0f1118;--soft:#98a1bc;--danger:#ff4f4f}
+    *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:radial-gradient(circle at 20% 20%,#20263a,#0f1118 55%);color:#fff;font-family:"Exo 2",sans-serif}
+    #app{position:relative;width:100%;height:100%}
+    #drop-zone{position:absolute;inset:16px;border:3px dashed #344;border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:5;transition:.2s;background:rgba(5,7,12,.55);padding:20px;text-align:center}
+    #drop-zone.drag{border-color:var(--pink);background:rgba(255,102,170,.08)}
+    .title{font-size:clamp(30px,6vw,56px);font-weight:900;letter-spacing:2px;text-transform:uppercase;margin:0}
+    .title span{color:var(--pink)}.sub{margin:14px 0 0;color:var(--soft);font-size:clamp(14px,2.1vw,19px);font-weight:700;line-height:1.45;max-width:880px}
+    .sub b{color:#fff}.row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;align-items:center;margin-top:20px}
+    input[type=file]{display:none}
+    .btn{border:0;border-radius:10px;padding:12px 20px;font:800 14px "Exo 2",sans-serif;letter-spacing:.4px;text-transform:uppercase;cursor:pointer;transition:.14s}
+    .btn:hover{transform:translateY(-1px)}.btn-primary{background:var(--pink);color:#fff}.btn-light{background:#fff;color:#111}
+    #status{margin-top:16px;min-height:22px;font-weight:700;font-size:14px;color:var(--soft)}#status.err{color:var(--danger)}#status.ok{color:#75de9b}#loading{display:none;color:var(--pink);font-weight:900;font-size:20px;animation:pulse 1.1s infinite}
+    @keyframes pulse{50%{opacity:.5}}
+    #player{display:none;position:relative;width:100%;height:100%}canvas{display:block;width:100%;height:100%;background:#000}
+    .meta{position:absolute;top:14px;left:14px;z-index:9;background:rgba(0,0,0,.48);border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:8px 10px;max-width:min(85vw,520px);backdrop-filter:blur(4px)}
+    .meta .a{font:800 15px/1.3 "Exo 2";white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.meta .b{font:600 12px/1.3 "Exo 2";color:#c0c7da;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .ov{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;background:rgba(0,0,0,.82);z-index:8;opacity:0;pointer-events:none;transition:.28s}
+    .ov.on{opacity:1;pointer-events:auto}.ov h2{margin:0;text-transform:uppercase;letter-spacing:2px;font-weight:900}.ov p{margin:12px 0 0;color:var(--soft);font-weight:700}
+    #intro h2{font-size:clamp(34px,7vw,72px);color:var(--pink)}#intro p{font-size:clamp(14px,2vw,24px)}#stats h2{font-size:clamp(22px,5vw,42px)}
+    #score{font-size:clamp(34px,10vw,92px);font-weight:900;color:var(--pink);line-height:1;margin:12px 0 0}
+    .sg{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:16px;font:800 clamp(15px,2.2vw,30px) "Exo 2";color:#c6cad9}.sg b{color:#fff}
+    #outro{border-bottom:12px solid var(--pink)}#outro h2{font-size:clamp(24px,6vw,60px)}#outro p{color:var(--pink);font-size:clamp(15px,2.2vw,28px)}
+    .controls{position:absolute;left:0;right:0;bottom:0;z-index:12;padding:38px 14px 14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:linear-gradient(180deg,transparent,rgba(0,0,0,.95) 65%)}
+    .cbtn{font:800 12px "Exo 2";text-transform:uppercase;letter-spacing:.3px;padding:10px 14px;border-radius:8px;border:2px solid rgba(255,255,255,.9);background:transparent;color:#fff;cursor:pointer}
+    .cbtn:hover{background:#fff;color:#111}.cbtn:disabled{opacity:.5;cursor:not-allowed}
+    #record{border-color:var(--red);color:var(--red);margin-left:auto}#record.on{background:var(--red);color:#fff}
+    .timeline{flex:1;min-width:180px;appearance:none;height:6px;border-radius:999px;background:rgba(255,255,255,.25)}.timeline::-webkit-slider-thumb{appearance:none;width:16px;height:16px;border-radius:50%;background:var(--pink);border:2px solid #fff}
+    #time{min-width:120px;text-align:right;font:700 14px "Exo 2";font-variant-numeric:tabular-nums}
+  </style>
 </head>
 <body>
-
-    <div id="drop-zone">
-        <div class="drop-title">OSU! <span>IRAQ</span> TODAY</div>
-        <div class="drop-sub">Select or Drop your <b>.osz</b> and <b>.osr</b> files together.</div>
-        <label>
-            <input type="file" id="file-input" multiple accept=".osz,.osr">
-            <div class="upload-btn">Browse Files</div>
-        </label>
-        <div class="iraq-colors">
-            <div class="dot" style="background: var(--iraq-red);"></div>
-            <div class="dot" style="background: white;"></div>
-            <div class="dot" style="background: black; border: 1px solid #333;"></div>
-            <div class="dot" style="background: var(--iraq-green);"></div>
-        </div>
-        <div id="loading-text">Extracting & Parsing...</div>
+<div id="app">
+  <div id="drop-zone">
+    <h1 class="title">OSU! <span>IRAQ</span> TODAY</h1>
+    <p class="sub">Drop <b>.osz</b> and <b>.osr</b> together to render replay. Fully client-side, GitHub Pages friendly.</p>
+    <div class="row">
+      <label><input id="files" type="file" multiple accept=".osz,.osr"><span class="btn btn-primary">Browse Files</span></label>
+      <button id="reset" class="btn btn-light" type="button">Reset Loader</button>
     </div>
+    <div id="loading">Extracting and parsing...</div>
+    <div id="status"></div>
+  </div>
 
-    <div id="player-ui">
-        <canvas id="game-canvas"></canvas>
-        
-        <div id="intro-screen" class="overlay-screen">
-            <img src="https://i.imgur.com/1YJfjH6.png" style="width: 180px; margin-bottom: 20px; filter: drop-shadow(0 0 15px rgba(255,102,170,0.4));">
-            <h1 style="color: var(--osu-pink); letter-spacing: 5px; margin: 0;">OSU! IRAQ TODAY</h1>
-            <p style="color: #888; font-weight: 600; letter-spacing: 2px;" id="intro-diff-name">COMMUNITY SHOWCASE</p>
-        </div>
-        
-        <div id="stats-screen" class="overlay-screen">
-            <h2 id="player-name-display" style="color: #888; font-size: 24px; margin: 0;">Player</h2>
-            <h1 style="color: white; font-size: 48px; margin-bottom: 0; margin-top: 10px;">FINAL SCORE</h1>
-            <h2 id="final-score" style="color: var(--osu-pink); font-size: 72px; margin: 10px 0;">0</h2>
-            <div style="display: flex; gap: 30px; margin-top: 20px; color: #888; font-size: 28px; font-weight: 800;">
-                <span>300: <b id="stat-300" style="color: white;">0</b></span>
-                <span>100: <b id="stat-100" style="color: var(--iraq-green);">0</b></span>
-                <span>50: <b id="stat-50" style="color: var(--iraq-red);">0</b></span>
-                <span>Miss: <b id="stat-miss" style="color: red;">0</b></span>
-            </div>
-            <div style="margin-top: 15px; font-size: 20px; color: #aaa;">Max Combo: <b id="stat-combo" style="color: white;">0x</b></div>
-        </div>
+  <div id="player">
+    <canvas id="canvas"></canvas>
+    <div class="meta"><div id="meta-a" class="a">No replay loaded</div><div id="meta-b" class="b">Drop files to begin</div></div>
 
-        <div id="outro-screen" class="overlay-screen" style="border-bottom: 15px solid var(--osu-pink); box-sizing: border-box;">
-            <h1 style="color: white; font-size: 56px; margin: 0;">Thanks for watching!</h1>
-            <p style="color: var(--osu-pink); font-size: 24px; font-weight: 600;">Built with ❤️ for the Iraqi Community</p>
-        </div>
-
-        <div class="controls">
-            <button id="play-btn">▶ PLAY</button>
-            <input type="range" id="seek-bar" class="timeline" min="0" max="100" value="0" step="0.1">
-            <span id="time-display">0:00 / 0:00</span>
-            <button id="export-btn">⏺ RECORD VIDEO</button>
-        </div>
+    <div id="intro" class="ov"><h2>OSU! IRAQ TODAY</h2><p id="intro-name">Community Showcase</p></div>
+    <div id="stats" class="ov">
+      <p id="player-name">Player</p><h2>Final Score</h2><div id="score">0</div>
+      <div class="sg">
+        <span>300: <b id="s300">0</b></span><span>100: <b id="s100">0</b></span>
+        <span>50: <b id="s50">0</b></span><span>Miss: <b id="smiss">0</b></span><span>Combo: <b id="scombo">0x</b></span>
+      </div>
     </div>
+    <div id="outro" class="ov"><h2>Thanks For Watching</h2><p>Built for osu! Iraq community</p></div>
 
-    <script>
-        // --- CORE VARIABLES ---
-        let mapData = [], replayFrames = [], replayStats = {};
-        let currentFrameIndex = 0;
-        let audioBlobUrl = null;
-        let audioElement = new Audio();
-        let isPlaying = false, isRecording = false, sequencePhase = 'intro';
-        
-        let cursorX = window.innerWidth / 2, cursorY = window.innerHeight / 2;
-        let audioContext, destNode, mediaSource, mediaRecorder;
-        let recordedChunks = [];
+    <div class="controls">
+      <button id="play" class="cbtn" type="button">Play</button>
+      <input id="seek" class="timeline" type="range" min="0" max="100" step="0.01" value="0">
+      <span id="time">0:00 / 0:00</span>
+      <button id="record" class="cbtn" type="button">Record Video</button>
+    </div>
+  </div>
+</div>
 
-        // UI Variables
-        const dropZone = document.getElementById('drop-zone');
-        const fileInput = document.getElementById('file-input');
-        const loadingText = document.getElementById('loading-text');
-        const playerUi = document.getElementById('player-ui');
-        const canvas = document.getElementById('game-canvas');
-        const ctx = canvas.getContext('2d');
-        const playBtn = document.getElementById('play-btn');
-        const seekBar = document.getElementById('seek-bar');
-        const timeDisplay = document.getElementById('time-display');
-        const exportBtn = document.getElementById('export-btn');
+<script>
+"use strict";
+const PH={IDLE:"idle",READY:"ready",INTRO:"intro",GAME:"game",STATS:"stats",OUTRO:"outro"};
+const INTRO_MS=2800,STATS_MS=5200,TAIL_MS=2400,FIELD={w:512,h:384};
+const S={
+  map:[],frames:[],stats:null,info:null,phase:PH.IDLE,loading:false,playing:false,recording:false,raf:0,last:0,
+  introT:0,statsT:0,tailT:0,audioUrl:"",audio:new Audio(),ac:null,source:null,dest:null,mr:null,chunks:[]
+};
+const E={
+  drop:document.getElementById("drop-zone"),files:document.getElementById("files"),reset:document.getElementById("reset"),
+  loading:document.getElementById("loading"),status:document.getElementById("status"),player:document.getElementById("player"),
+  canvas:document.getElementById("canvas"),play:document.getElementById("play"),seek:document.getElementById("seek"),
+  time:document.getElementById("time"),record:document.getElementById("record"),
+  intro:document.getElementById("intro"),statsOv:document.getElementById("stats"),outro:document.getElementById("outro"),
+  introName:document.getElementById("intro-name"),playerName:document.getElementById("player-name"),score:document.getElementById("score"),
+  s300:document.getElementById("s300"),s100:document.getElementById("s100"),s50:document.getElementById("s50"),smiss:document.getElementById("smiss"),scombo:document.getElementById("scombo"),
+  ma:document.getElementById("meta-a"),mb:document.getElementById("meta-b")
+};
+const C=E.canvas.getContext("2d",{alpha:false});
+const CSS=getComputedStyle(document.documentElement),CLR={pink:CSS.getPropertyValue("--pink").trim()||"#ff66aa",red:CSS.getPropertyValue("--red").trim()||"#ce1126",green:CSS.getPropertyValue("--green").trim()||"#007a3d"};
 
-        function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
-        window.addEventListener('resize', resizeCanvas);
-        resizeCanvas();
+function status(msg,cls=""){E.status.className=cls;E.status.textContent=msg}
+function load(on,msg=""){S.loading=on;E.loading.style.display=on?"block":"none";E.loading.textContent=msg||"Extracting and parsing...";E.play.disabled=on;E.record.disabled=on}
+function fmt(t){t=Number.isFinite(t)&&t>0?t:0;const m=Math.floor(t/60),s=Math.floor(t%60).toString().padStart(2,"0");return `${m}:${s}`}
+function setTime(c,d){E.time.textContent=`${fmt(c)} / ${fmt(d)}`}
+function md5(v){return String(v||"").trim().toLowerCase()}
+function phase(p){S.phase=p;E.intro.classList.toggle("on",p===PH.INTRO);E.statsOv.classList.toggle("on",p===PH.STATS);E.outro.classList.toggle("on",p===PH.OUTRO);E.play.textContent=p===PH.READY?"Start":(p===PH.GAME?(S.playing?"Pause":"Play"):"Play")}
+function showPlayer(on){E.drop.style.display=on?"none":"flex";E.player.style.display=on?"block":"none"}
+function clearTimers(){if(S.introT)clearTimeout(S.introT);if(S.statsT)clearTimeout(S.statsT);if(S.tailT)clearTimeout(S.tailT);S.introT=S.statsT=S.tailT=0}
+function updateRecordBtn(){if(S.recording){E.record.classList.add("on");E.record.textContent="Stop Recording"}else{E.record.classList.remove("on");E.record.textContent="Record Video"}}
 
-        // --- BINARY .OSR PARSER (Reads headers and compressed cursor data) ---
-        function parseOSR(buffer) {
-            let view = new DataView(buffer);
-            let offset = 0;
+function resetAll(){
+  clearTimers(); if(S.raf){cancelAnimationFrame(S.raf);S.raf=0} S.audio.pause(); S.playing=false;
+  if(S.mr&&S.recording){try{S.mr.stop()}catch(_){}} S.recording=false; S.chunks=[]; S.mr=null; updateRecordBtn();
+  if(S.audioUrl){URL.revokeObjectURL(S.audioUrl);S.audioUrl=""} if(S.source){try{S.source.disconnect()}catch(_){}S.source=null} if(S.dest){try{S.dest.disconnect()}catch(_){}S.dest=null}
+  if(S.ac){try{S.ac.close()}catch(_){}S.ac=null}
+  S.audio=new Audio(); S.audio.preload="auto";
+  S.map=[];S.frames=[];S.stats=null;S.info=null;S.last=0;phase(PH.IDLE);showPlayer(false);E.seek.value="0";E.seek.max="100";setTime(0,0);draw(0)
+}
 
-            function readByte() { let v = view.getUint8(offset); offset++; return v; }
-            function readShort() { let v = view.getUint16(offset, true); offset += 2; return v; }
-            function readInt() { let v = view.getUint32(offset, true); offset += 4; return v; }
-            function readString() {
-                let head = readByte();
-                if (head === 0x00) return "";
-                if (head === 0x0b) {
-                    let length = 0, shift = 0;
-                    while (true) {
-                        let byte = readByte();
-                        length |= (byte & 0x7F) << shift;
-                        if ((byte & 0x80) === 0) break;
-                        shift += 7;
-                    }
-                    let str = new TextDecoder().decode(new Uint8Array(buffer, offset, length));
-                    offset += length;
-                    return str;
-                }
-                return "";
-            }
+function fit(){E.canvas.width=innerWidth;E.canvas.height=innerHeight;draw(S.audio.currentTime||0)}
+function ensureAudioGraph(){
+  if(S.ac)return;
+  const AC=window.AudioContext||window.webkitAudioContext; if(!AC)throw new Error("Web Audio API not available");
+  S.ac=new AC(); S.source=S.ac.createMediaElementSource(S.audio); S.dest=S.ac.createMediaStreamDestination(); S.source.connect(S.ac.destination); S.source.connect(S.dest);
+}
 
-            let mode = readByte();
-            let version = readInt();
-            let mapMd5 = readString();
-            let player = readString();
-            let replayMd5 = readString();
-            
-            let count300 = readShort(); let count100 = readShort(); let count50 = readShort();
-            let countGeki = readShort(); let countKatu = readShort(); let countMiss = readShort();
-            let score = readInt(); let maxCombo = readShort();
-            let perfect = readByte(); let mods = readInt(); let lifebar = readString();
-            
-            offset += 8; // skip timestamp (8 bytes)
-            let replayLength = readInt();
-            let compressedData = new Uint8Array(buffer, offset, replayLength);
+function parseOSR(buf){
+  const dv=new DataView(buf); let o=0; const dec=new TextDecoder("utf-8");
+  const need=n=>{if(o+n>dv.byteLength)throw new Error("Invalid .osr: unexpected EOF")};
+  const b=()=>{need(1);const v=dv.getUint8(o);o+=1;return v}, u16=()=>{need(2);const v=dv.getUint16(o,true);o+=2;return v}, i32=()=>{need(4);const v=dv.getInt32(o,true);o+=4;return v}, u32=()=>{need(4);const v=dv.getUint32(o,true);o+=4;return v};
+  const s=()=>{const m=b();if(m===0)return "";if(m!==0x0b)throw new Error("Invalid .osr string marker");let len=0,sh=0;for(;;){const x=b();len|=(x&0x7f)<<sh;if((x&0x80)===0)break;sh+=7;if(sh>35)throw new Error("Invalid .osr string length")}need(len);const v=dec.decode(new Uint8Array(buf,o,len));o+=len;return v};
+  const mode=b(),version=i32(),mapMd5=s(),player=s(),replayMd5=s();
+  const count300=u16(),count100=u16(),count50=u16(),countGeki=u16(),countKatu=u16(),countMiss=u16(),score=u32(),maxCombo=u16(),perfect=b(),mods=i32(),life=s();
+  need(8);o+=8; const len=i32(); if(len<0)throw new Error("Invalid replay payload"); need(len); const compressedData=new Uint8Array(buf,o,len);
+  return {mode,version,mapMd5,player,replayMd5,count300,count100,count50,countGeki,countKatu,countMiss,score,maxCombo,perfect,mods,life,compressedData};
+}
 
-            return { player, score, count300, count100, count50, countMiss, maxCombo, mapMd5, compressedData };
-        }
+function parseReplay(text){
+  const out=[]; let ms=0;
+  for(const raw of String(text||"").split(",")){if(!raw)continue;const p=raw.split("|");if(p.length<4)continue;const d=Number(p[0]);if(!Number.isFinite(d)||d<0)continue;ms+=d;const x=Number(p[1]),y=Number(p[2]),k=Number(p[3])||0;if(!Number.isFinite(x)||!Number.isFinite(y))continue;out.push({time:ms/1000,x,y,keys:k})}
+  return out;
+}
 
-        // --- MAP .OSU PARSER ---
-        function parseOSU(text) {
-            let hitObjects = [];
-            let inObjects = false;
-            let lines = text.split('\n');
-            for(let line of lines) {
-                line = line.trim();
-                if (line === '[HitObjects]') { inObjects = true; continue; }
-                if (line.startsWith('[')) { inObjects = false; }
-                if (inObjects && line !== '' && !line.startsWith('//')) {
-                    let parts = line.split(',');
-                    if (parts.length >= 5) {
-                        hitObjects.push({ x: parseInt(parts[0]), y: parseInt(parts[1]), time: parseInt(parts[2]) / 1000 });
-                    }
-                }
-            }
-            return hitObjects.sort((a,b) => a.time - b.time);
-        }
+function decodeReplay(data){
+  if(!window.LZMA||typeof LZMA.decompress!=="function")throw new Error("LZMA dependency not loaded");
+  return new Promise((resolve,reject)=>{
+    LZMA.decompress(data,(res,err)=>{
+      if(err){reject(new Error(typeof err==="string"?err:"Replay decompression failed"));return}
+      let txt;if(typeof res==="string")txt=res;else if(res instanceof Uint8Array||Array.isArray(res))txt=new TextDecoder("utf-8").decode(new Uint8Array(res));else txt=String(res??"");
+      const frames=parseReplay(txt); if(!frames.length){reject(new Error("Replay has no usable cursor frames"));return} resolve(frames);
+    });
+  });
+}
 
-        // --- FILE HANDLING & EXTRACTION ---
-        function handleFiles(files) {
-            loadingText.style.display = 'block';
-            let oszFile = null, osrFile = null;
-            for(let file of files) {
-                if (file.name.toLowerCase().endsWith('.osz')) oszFile = file;
-                if (file.name.toLowerCase().endsWith('.osr')) osrFile = file;
-            }
-            if (!oszFile || !osrFile) {
-                alert("Please select both an .osz AND an .osr file!");
-                loadingText.style.display = 'none';
-                return;
-            }
-            processFiles(oszFile, osrFile);
-        }
+function parseOSU(text){
+  const lines=String(text||"").split(/\r?\n/),o={general:{audioFilename:""},meta:{artist:"",title:"",version:""},diff:{cs:4,od:5,ar:5},objects:[]}; let sec="";
+  for(const raw of lines){const line=raw.trim(); if(!line||line.startsWith("//"))continue; if(line.startsWith("[")&&line.endsWith("]")){sec=line;continue}
+    if(sec==="[General]"||sec==="[Metadata]"||sec==="[Difficulty]"){const k=line.indexOf(":");if(k>0){const key=line.slice(0,k).trim(),val=line.slice(k+1).trim();
+      if(sec==="[General]"&&key==="AudioFilename")o.general.audioFilename=val;
+      if(sec==="[Metadata]"){if(key==="Artist")o.meta.artist=val;else if(key==="Title")o.meta.title=val;else if(key==="Version")o.meta.version=val}
+      if(sec==="[Difficulty]"){if(key==="CircleSize")o.diff.cs=Number(val)||o.diff.cs;else if(key==="OverallDifficulty")o.diff.od=Number(val)||o.diff.od;else if(key==="ApproachRate")o.diff.ar=Number(val)||o.diff.ar}
+    }}
+    if(sec==="[HitObjects]"){const p=line.split(",");if(p.length<5)continue;const x=Number(p[0]),y=Number(p[1]),t=Number(p[2])/1000,tp=Number(p[3]);if(!Number.isFinite(x)||!Number.isFinite(y)||!Number.isFinite(t)||!Number.isFinite(tp))continue;
+      const spin=(tp&8)>0,sl=(tp&2)>0;let end=t,type="circle";if(spin){type="spinner";const se=Number(p[5]);end=Number.isFinite(se)?se/1000:t}else if(sl){type="slider"}
+      o.objects.push({x,y,time:t,endTime:end,type});
+    }
+  }
+  o.objects.sort((a,b)=>a.time-b.time); return o;
+}
 
-        dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('dragover'); });
-        dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
-        dropZone.addEventListener('drop', (e) => { e.preventDefault(); dropZone.classList.remove('dragover'); handleFiles(e.dataTransfer.files); });
-        fileInput.addEventListener('change', (e) => { handleFiles(e.target.files); });
+function pickAudio(zipFiles,pref,osuPath){
+  const all=Object.values(zipFiles).filter(f=>!f.dir),aud=all.filter(f=>/\.(mp3|ogg|wav|m4a|aac)$/i.test(f.name)); if(!aud.length)return null;
+  const n=v=>String(v||"").replace(/\\/g,"/").toLowerCase(),np=n(pref); if(np){const b=np.split("/").pop();const e=aud.find(f=>n(f.name)===np);if(e)return e;const bb=aud.find(f=>n(f.name).split("/").pop()===b);if(bb)return bb}
+  const no=n(osuPath),ix=no.lastIndexOf("/"); if(ix>-1){const folder=no.slice(0,ix+1),same=aud.find(f=>n(f.name).startsWith(folder));if(same)return same}
+  return aud[0];
+}
 
-        async function processFiles(oszFile, osrFile) {
-            try {
-                // 1. Parse Real Stats & get LZMA Replay Data
-                loadingText.innerText = "Reading Replay Data...";
-                let osrBuffer = await osrFile.arrayBuffer();
-                replayStats = parseOSR(osrBuffer);
+function arPreempt(ar){return ar<5?(1800-120*ar)/1000:(1200-150*(ar-5))/1000}
+function cursorAt(t){
+  const a=S.frames;if(!a.length)return{x:FIELD.w/2,y:FIELD.h/2}; if(t<=a[0].time)return{x:a[0].x,y:a[0].y}; const last=a[a.length-1]; if(t>=last.time)return{x:last.x,y:last.y};
+  let lo=0,hi=a.length-1; while(lo<=hi){const m=(lo+hi)>>1;if(a[m].time<=t)lo=m+1;else hi=m-1} const i=Math.max(0,hi),p=a[i],q=a[Math.min(i+1,a.length-1)];
+  if(!q||q.time<=p.time)return{x:p.x,y:p.y}; const u=(t-p.time)/(q.time-p.time); return{x:p.x+(q.x-p.x)*u,y:p.y+(q.y-p.y)*u};
+}
 
-                // 2. Decompress LZMA Mouse Cursor Data
-                loadingText.innerText = "Decompressing Cursor Movements...";
-                await new Promise((resolve, reject) => {
-                    LZMA.decompress(replayStats.compressedData, function(result, error) {
-                        if(error) { reject(error); return; }
-                        let time = 0;
-                        result.split(',').forEach(frameStr => {
-                            let parts = frameStr.split('|');
-                            if(parts.length >= 4) {
-                                time += parseInt(parts[0]); // Time delta
-                                replayFrames.push({ time: time / 1000, x: parseFloat(parts[1]), y: parseFloat(parts[2]) });
-                            }
-                        });
-                        resolve();
-                    });
-                });
+function draw(t){
+  const w=E.canvas.width,h=E.canvas.height; C.fillStyle="#000"; C.fillRect(0,0,w,h); if(!S.map.length)return;
+  const scale=Math.min(w/FIELD.w,h/FIELD.h)*.82,ox=(w-FIELD.w*scale)/2,oy=(h-FIELD.h*scale)/2,cs=S.info?.diff?.cs??4,rad=(54.4-4.48*cs)*scale,pre=arPreempt(S.info?.diff?.ar??5),colors=[CLR.red,CLR.green,"#fff"];
+  const st=Math.max(0,t-.05),et=t+pre+.25;
+  for(let i=0;i<S.map.length;i++){const o=S.map[i]; if(o.time<st||o.time>et)continue; const col=colors[i%colors.length];
+    if(o.type==="spinner"){const prog=Math.max(0,Math.min(1,(t-o.time)/Math.max(.001,o.endTime-o.time))),r=Math.min(w,h)*.24,x=ox+FIELD.w*.5*scale,y=oy+FIELD.h*.5*scale;
+      C.beginPath();C.arc(x,y,r,0,Math.PI*2);C.lineWidth=4;C.strokeStyle="rgba(255,255,255,.25)";C.stroke();
+      C.beginPath();C.arc(x,y,r,-Math.PI*.5,-Math.PI*.5+Math.PI*2*prog);C.lineWidth=6;C.strokeStyle=col;C.stroke(); continue;
+    }
+    const x=ox+o.x*scale,y=oy+o.y*scale,until=o.time-t,prog=1-Math.max(0,until)/pre,ar=rad+rad*1.5*(1-Math.max(0,Math.min(1,prog)));
+    C.beginPath();C.arc(x,y,rad,0,Math.PI*2);C.fillStyle="#1c1f2b";C.fill();
+    C.beginPath();C.arc(x,y,rad,0,Math.PI*2);C.lineWidth=Math.max(2,4*scale);C.strokeStyle=col;C.stroke();
+    C.beginPath();C.arc(x,y,ar,0,Math.PI*2);C.lineWidth=Math.max(1,2*scale);C.strokeStyle=col;C.stroke();
+  }
+  const cur=cursorAt(t),cx=ox+cur.x*scale,cy=oy+cur.y*scale;
+  C.beginPath();C.arc(cx,cy,19,0,Math.PI*2);C.fillStyle="rgba(255,102,170,.36)";C.fill();
+  C.beginPath();C.arc(cx,cy,11,0,Math.PI*2);C.fillStyle="#fff";C.fill();
+  C.beginPath();C.arc(cx,cy,5,0,Math.PI*2);C.fillStyle=CLR.pink;C.fill();
+}
 
-                // 3. Unzip Map
-                loadingText.innerText = "Extracting Map Assets...";
-                const zip = await JSZip.loadAsync(oszFile);
-                let audioName = Object.keys(zip.files).find(n => n.toLowerCase().endsWith('.mp3') || n.toLowerCase().endsWith('.ogg'));
-                if(!audioName) throw new Error("Missing audio inside .osz");
+function renderLoop(){
+  if(S.raf)return;
+  const loop=()=>{S.raf=requestAnimationFrame(loop); if(![PH.READY,PH.INTRO,PH.GAME,PH.STATS,PH.OUTRO].includes(S.phase))return;
+    const d=Number.isFinite(S.audio.duration)?S.audio.duration:0; S.last=S.phase===PH.GAME?S.audio.currentTime:S.last; draw(S.last);
+    if(S.phase===PH.GAME)E.seek.value=String(Math.min(S.last,d||0)); setTime(S.last,d);
+  }; S.raf=requestAnimationFrame(loop);
+}
 
-                const audioBlob = await zip.file(audioName).async("blob");
-                audioBlobUrl = URL.createObjectURL(audioBlob);
-                
-                // 4. Find the EXACT Difficulty via MD5 Match
-                loadingText.innerText = "Finding Correct Difficulty...";
-                let targetOsuText = "";
-                let fallbackOsuText = "";
-                let difficultyName = "COMMUNITY SHOWCASE";
+function stopPlay(){S.audio.pause();S.playing=false;if(S.phase===PH.GAME)E.play.textContent="Play"}
+async function resumePlay(){
+  if(S.phase!==PH.GAME)return;
+  if(S.ac&&S.ac.state==="suspended")await S.ac.resume();
+  try{await S.audio.play();S.playing=true;E.play.textContent="Pause"}catch(_){S.playing=false;E.play.textContent="Play";status("Autoplay blocked by browser. Press Play again.","")}
+}
 
-                for (let filename of Object.keys(zip.files)) {
-                    if (filename.toLowerCase().endsWith('.osu')) {
-                        let buffer = await zip.file(filename).async("arraybuffer");
-                        let hash = SparkMD5.ArrayBuffer.hash(buffer);
-                        
-                        // Check if hash matches the replay's internal target MD5
-                        if(hash === replayStats.mapMd5) {
-                            targetOsuText = new TextDecoder().decode(buffer);
-                            difficultyName = filename.replace('.osu', ''); // Get name for intro screen
-                            break;
-                        }
-                        if(!fallbackOsuText) fallbackOsuText = new TextDecoder().decode(buffer);
-                    }
-                }
-                
-                mapData = parseOSU(targetOsuText || fallbackOsuText);
-                document.getElementById('intro-diff-name').innerText = difficultyName;
+function fillUI(){
+  const r=S.stats||{};E.playerName.textContent=`Player: ${r.player||"Unknown"}`;E.score.textContent=Number(r.score||0).toLocaleString();
+  E.s300.textContent=String(r.count300||0);E.s100.textContent=String(r.count100||0);E.s50.textContent=String(r.count50||0);E.smiss.textContent=String(r.countMiss||0);E.scombo.textContent=`${r.maxCombo||0}x`;
+  const m=S.info?.meta||{},fallback=S.info?.displayName||"Unknown Difficulty",title=[m.artist,m.title].filter(Boolean).join(" - ")||"Beatmap Loaded",ver=m.version||fallback;
+  E.ma.textContent=title;E.mb.textContent=ver;E.introName.textContent=ver;
+}
 
-                initPlayer();
-            } catch (error) {
-                console.error(error);
-                alert("Error extracting files. Please check the console.");
-                loadingText.style.display = 'none';
-            }
-        }
+async function startIntro(fromStart=true){
+  if(!S.map.length)return; clearTimers(); stopPlay();
+  if(fromStart){S.audio.currentTime=0;S.last=0;E.seek.value="0";draw(0)}
+  phase(PH.INTRO);
+  S.introT=setTimeout(async()=>{phase(PH.GAME);await resumePlay()},INTRO_MS);
+}
 
-        // --- PLAYER INIT & SEQUENCING ---
-        function initPlayer() {
-            dropZone.style.display = 'none';
-            playerUi.style.display = 'block';
-            
-            // Populate Real Stats on UI
-            document.getElementById('player-name-display').innerText = `Player: ${replayStats.player}`;
-            document.getElementById('final-score').innerText = replayStats.score.toLocaleString();
-            document.getElementById('stat-300').innerText = replayStats.count300;
-            document.getElementById('stat-100').innerText = replayStats.count100;
-            document.getElementById('stat-50').innerText = replayStats.count50;
-            document.getElementById('stat-miss').innerText = replayStats.countMiss;
-            document.getElementById('stat-combo').innerText = replayStats.maxCombo + "x";
+function finishGame(){
+  if(S.phase!==PH.GAME)return; stopPlay(); phase(PH.STATS);
+  S.statsT=setTimeout(()=>{phase(PH.OUTRO); if(S.recording)S.tailT=setTimeout(()=>stopRec(),TAIL_MS)},STATS_MS);
+}
 
-            audioElement.src = audioBlobUrl;
-            
-            audioContext = new (window.AudioContext || window.webkitAudioContext)();
-            mediaSource = audioContext.createMediaElementSource(audioElement);
-            destNode = audioContext.createMediaStreamDestination();
-            
-            mediaSource.connect(destNode);
-            mediaSource.connect(audioContext.destination);
+function supportedMime(){for(const t of ["video/webm;codecs=vp9,opus","video/webm;codecs=vp8,opus","video/webm"])if(MediaRecorder.isTypeSupported(t))return t;return ""}
+function startRec(){
+  if(!window.MediaRecorder)throw new Error("MediaRecorder not available"); if(!S.dest)throw new Error("Audio graph not ready");
+  const stream=new MediaStream([...E.canvas.captureStream(60).getVideoTracks(),...S.dest.stream.getAudioTracks()]),mime=supportedMime(); S.mr=mime?new MediaRecorder(stream,{mimeType:mime}):new MediaRecorder(stream); S.chunks=[];
+  S.mr.ondataavailable=e=>{if(e.data&&e.data.size>0)S.chunks.push(e.data)}; S.mr.onerror=e=>status(`Recording error: ${e.error?.message||"unknown"}`,"err");
+  S.mr.onstop=()=>{const blob=new Blob(S.chunks,{type:"video/webm"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="OsuIraqToday_Replay.webm";document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);S.chunks=[]};
+  S.mr.start();S.recording=true;updateRecordBtn();
+}
+function stopRec(){if(!S.recording)return;S.recording=false;updateRecordBtn();if(S.mr&&S.mr.state!=="inactive")S.mr.stop()}
 
-            audioElement.addEventListener('loadedmetadata', () => {
-                seekBar.max = audioElement.duration;
-                updateTimeDisplay();
-                startIntroSequence();
-            });
-        }
+function bindAudio(){
+  S.audio.addEventListener("loadedmetadata",()=>{const d=Number.isFinite(S.audio.duration)?S.audio.duration:0;E.seek.max=String(d||0);E.seek.value="0";setTime(0,d)});
+  S.audio.addEventListener("ended",finishGame);
+}
 
-        function startIntroSequence() {
-            sequencePhase = 'intro';
-            currentFrameIndex = 0; // Reset replay frames
-            document.getElementById('intro-screen').classList.add('active');
-            
-            setTimeout(() => {
-                document.getElementById('intro-screen').classList.remove('active');
-                sequencePhase = 'game';
-                audioContext.resume();
-                audioElement.play();
-                isPlaying = true;
-                playBtn.innerText = "⏸ PAUSE";
-                renderLoop();
-            }, 3000);
-        }
+function validate(fileList){
+  const files=Array.from(fileList||[]),osz=files.find(f=>f.name.toLowerCase().endsWith(".osz")),osr=files.find(f=>f.name.toLowerCase().endsWith(".osr"));
+  if(!osz||!osr)throw new Error("Please select both .osz and .osr files"); return {osz,osr};
+}
 
-        function endSequence() {
-            isPlaying = false;
-            sequencePhase = 'stats';
-            document.getElementById('stats-screen').classList.add('active');
-            
-            setTimeout(() => {
-                document.getElementById('stats-screen').classList.remove('active');
-                document.getElementById('outro-screen').classList.add('active');
-                sequencePhase = 'outro';
-                if(isRecording) exportBtn.click(); // Auto-stop recording
-            }, 7000); 
-        }
+async function processFiles(fileList){
+  const {osz,osr}=validate(fileList); resetAll(); E.files.value=""; load(true,"Reading replay (.osr) ...");
+  try{
+    const osrData=parseOSR(await osr.arrayBuffer()); if(osrData.mode!==0)throw new Error("Only osu!standard mode (mode=0) is supported");
+    load(true,"Decompressing cursor data ..."); const frames=await decodeReplay(osrData.compressedData);
+    load(true,"Opening beatmap package (.osz) ..."); const zip=await JSZip.loadAsync(osz),osuFiles=Object.values(zip.files).filter(f=>!f.dir&&f.name.toLowerCase().endsWith(".osu"));
+    if(!osuFiles.length)throw new Error("No .osu files found in package");
+    load(true,"Matching beatmap difficulty ...");
+    const maps=[]; for(const f of osuFiles){const buf=await f.async("arraybuffer");maps.push({path:f.name,displayName:f.name.split("/").pop().replace(/\.osu$/i,""),md5:md5(SparkMD5.ArrayBuffer.hash(buf)),parsed:parseOSU(new TextDecoder("utf-8").decode(buf))})}
+    let chosen=maps.find(m=>m.md5===md5(osrData.mapMd5))||null; if(!chosen){chosen=maps[0];status("Map hash mismatch, using first difficulty fallback.","")}
+    load(true,"Extracting audio ..."); const audioEntry=pickAudio(zip.files,chosen.parsed.general.audioFilename,chosen.path); if(!audioEntry)throw new Error("No audio file found in .osz");
+    const audioBlob=await audioEntry.async("blob"); S.audioUrl=URL.createObjectURL(audioBlob);
+    S.stats=osrData;S.frames=frames;S.map=chosen.parsed.objects;S.info={displayName:chosen.displayName,meta:chosen.parsed.meta,diff:chosen.parsed.diff,beatmapPath:chosen.path,audioPath:audioEntry.name};
+    if(!S.map.length)throw new Error("Parsed map has no hit objects");
+    bindAudio(); S.audio.src=S.audioUrl; ensureAudioGraph(); fillUI(); showPlayer(true); phase(PH.READY); renderLoop();
+    load(false); status(`Loaded ${S.frames.length.toLocaleString()} replay frames from ${S.stats.player||"Unknown"}`,"ok");
+    await startIntro(true);
+  }catch(err){console.error(err);load(false);status(err.message||"Failed to process files","err")}
+}
 
-        // --- RENDER LOOP ---
-        function renderLoop() {
-            if (!isPlaying && sequencePhase !== 'game') return;
+async function onPlay(){
+  if(S.loading)return;
+  if([PH.READY,PH.STATS,PH.OUTRO,PH.INTRO].includes(S.phase)){await startIntro(S.phase!==PH.INTRO);return}
+  if(S.phase!==PH.GAME)return; if(S.playing)stopPlay(); else await resumePlay();
+}
+async function onRecord(){
+  if(!S.map.length||S.loading)return; if(S.recording){stopRec();return}
+  try{if(S.ac&&S.ac.state==="suspended")await S.ac.resume();startRec();await startIntro(true)}catch(err){console.error(err);status(err.message||"Recording failed","err");stopRec()}
+}
+function onSeek(e){if(S.phase!==PH.GAME||!S.map.length)return;const t=Number(e.target.value);if(!Number.isFinite(t))return;S.audio.currentTime=t;S.last=t;draw(t);setTime(t,S.audio.duration||0)}
 
-            ctx.fillStyle = '#000000';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
+function deps(){
+  const miss=[]; if(!window.JSZip)miss.push("JSZip"); if(!window.SparkMD5)miss.push("SparkMD5"); if(!window.LZMA)miss.push("LZMA");
+  if(miss.length)status(`Missing dependencies: ${miss.join(", ")}. Check CDN access.`,"err"); else status("Drop both files: one .osz and one .osr","");
+}
 
-            let time = audioElement.currentTime;
+function prevent(e){e.preventDefault();e.stopPropagation()}
+function dragSetup(){
+  for(const n of ["dragenter","dragover","dragleave","drop"])E.drop.addEventListener(n,prevent,false);
+  for(const n of ["dragenter","dragover"])E.drop.addEventListener(n,()=>E.drop.classList.add("drag"));
+  for(const n of ["dragleave","drop"])E.drop.addEventListener(n,()=>E.drop.classList.remove("drag"));
+  E.drop.addEventListener("drop",e=>processFiles(e.dataTransfer.files));
+}
 
-            // Coordinate System Setup
-            let osuWidth = 512, osuHeight = 384;
-            let scale = Math.min(canvas.width / osuWidth, canvas.height / osuHeight) * 0.8;
-            let offsetX = (canvas.width - osuWidth * scale) / 2;
-            let offsetY = (canvas.height - osuHeight * scale) / 2;
-
-            // Approach Rate Timing
-            let arTime = 1.2; 
-            
-            // Draw Map Objects
-            let visibleObjects = mapData.filter(obj => time >= obj.time - arTime && time <= obj.time + 0.1);
-            for (let i = 0; i < visibleObjects.length; i++) {
-                let obj = visibleObjects[i];
-                let screenX = offsetX + obj.x * scale;
-                let screenY = offsetY + obj.y * scale;
-                let timeDiff = Math.max(0, obj.time - time);
-                let progress = 1 - (timeDiff / arTime);
-                
-                let colors = ['var(--iraq-red)', 'var(--iraq-green)', 'white'];
-                let color = colors[i % colors.length];
-
-                // Hit circle
-                ctx.beginPath(); ctx.arc(screenX, screenY, 40 * scale, 0, Math.PI * 2);
-                ctx.fillStyle = '#1c1c21'; ctx.fill();
-                ctx.lineWidth = 4; ctx.strokeStyle = color; ctx.stroke();
-
-                // Approach circle
-                let approachRadius = (40 * scale) + (60 * scale * (1 - progress));
-                ctx.beginPath(); ctx.arc(screenX, screenY, approachRadius, 0, Math.PI * 2);
-                ctx.lineWidth = 2; ctx.strokeStyle = color; ctx.stroke();
-            }
-
-            // Sync Cursor with Replay Time
-            if (currentFrameIndex > 0 && replayFrames[currentFrameIndex].time > time) currentFrameIndex = 0; // Reset if seeking backward
-            while (currentFrameIndex < replayFrames.length - 2 && replayFrames[currentFrameIndex + 1].time <= time) {
-                currentFrameIndex++;
-            }
-
-            let frame = replayFrames[currentFrameIndex];
-            let nextFrame = replayFrames[currentFrameIndex + 1];
-
-            // Smooth interpolation between frames
-            if (frame && nextFrame && nextFrame.time > frame.time) {
-                let t = (time - frame.time) / (nextFrame.time - frame.time);
-                t = Math.max(0, Math.min(1, t)); // clamp
-                cursorX = offsetX + (frame.x + (nextFrame.x - frame.x) * t) * scale;
-                cursorY = offsetY + (frame.y + (nextFrame.y - frame.y) * t) * scale;
-            } else if (frame) {
-                cursorX = offsetX + frame.x * scale;
-                cursorY = offsetY + frame.y * scale;
-            }
-
-            // Draw Exact Cursor
-            ctx.beginPath(); ctx.arc(cursorX, cursorY, 20, 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(255, 102, 170, 0.4)'; ctx.fill();
-            ctx.beginPath(); ctx.arc(cursorX, cursorY, 12, 0, Math.PI * 2);
-            ctx.fillStyle = 'white'; ctx.fill();
-
-            // UI
-            seekBar.value = time;
-            updateTimeDisplay();
-
-            if (time >= audioElement.duration && audioElement.duration > 0) { endSequence(); return; }
-            requestAnimationFrame(renderLoop);
-        }
-
-        // --- CONTROLS ---
-        playBtn.addEventListener('click', () => {
-            if(sequencePhase !== 'game') return;
-            if (isPlaying) { audioElement.pause(); isPlaying = false; playBtn.innerText = "▶ PLAY"; } 
-            else { audioContext.resume(); audioElement.play(); isPlaying = true; playBtn.innerText = "⏸ PAUSE"; renderLoop(); }
-        });
-
-        seekBar.addEventListener('input', (e) => {
-            if(sequencePhase !== 'game') return;
-            audioElement.currentTime = e.target.value;
-            updateTimeDisplay();
-            if(!isPlaying) { isPlaying = true; renderLoop(); audioElement.pause(); isPlaying = false; } 
-        });
-
-        function formatTime(seconds) { let m = Math.floor(seconds / 60); let s = Math.floor(seconds % 60).toString().padStart(2, '0'); return `${m}:${s}`; }
-        function updateTimeDisplay() { timeDisplay.innerText = `${formatTime(audioElement.currentTime)} / ${formatTime(audioElement.duration || 0)}`; }
-
-        // --- EXPORT TO WEBM ---
-        exportBtn.addEventListener('click', () => {
-            if (isRecording) {
-                mediaRecorder.stop();
-                exportBtn.innerText = "⏺ RECORD VIDEO";
-                exportBtn.style.color = "var(--iraq-red)";
-                exportBtn.style.background = "transparent";
-                isRecording = false;
-                return;
-            }
-            const canvasStream = canvas.captureStream(60);
-            const audioStream = destNode.stream;
-            const combinedStream = new MediaStream([...canvasStream.getTracks(), ...audioStream.getTracks()]);
-            
-            mediaRecorder = new MediaRecorder(combinedStream, { mimeType: 'video/webm; codecs=vp9' });
-            mediaRecorder.ondataavailable = e => { if (e.data.size > 0) recordedChunks.push(e.data); };
-            
-            mediaRecorder.onstop = () => {
-                const blob = new Blob(recordedChunks, { type: 'video/webm' });
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.style.display = 'none'; a.href = url; a.download = 'OsuIraqToday_RealReplay.webm';
-                document.body.appendChild(a); a.click(); URL.revokeObjectURL(url);
-                recordedChunks = [];
-            };
-
-            mediaRecorder.start();
-            isRecording = true;
-            exportBtn.innerText = "⏹ STOP RECORDING";
-            exportBtn.style.color = "white";
-            exportBtn.style.background = "var(--iraq-red)";
-            
-            audioElement.currentTime = 0;
-            currentFrameIndex = 0;
-            document.getElementById('outro-screen').classList.remove('active');
-            document.getElementById('stats-screen').classList.remove('active');
-            startIntroSequence();
-        });
-    </script>
+function init(){
+  fit(); window.addEventListener("resize",fit); E.files.addEventListener("change",e=>processFiles(e.target.files)); E.play.addEventListener("click",onPlay); E.seek.addEventListener("input",onSeek); E.record.addEventListener("click",onRecord);
+  E.reset.addEventListener("click",()=>{resetAll();E.files.value="";load(false);status("Drop both files: one .osz and one .osr","")});
+  dragSetup(); load(false); deps();
+}
+init();
+</script>
 </body>
 </html>

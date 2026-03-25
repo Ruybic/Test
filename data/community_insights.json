@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 26,
-    "longest": 26,
-    "last_updated": "2026-03-23"
+    "current": 27,
+    "longest": 27,
+    "last_updated": "2026-03-24"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -7858,6 +7858,332 @@
         "title": "0 (zero) (TV Size)",
         "cover": "https://assets.ppy.sh/beatmaps/1520433/covers/card.jpg?1640203529",
         "unique_players": 15
+      }
+    },
+    "2026-03-24": {
+      "total_scores": 613,
+      "peak_hour_baghdad": 23,
+      "top_grinder": {
+        "user": "I AM A GHOUL",
+        "user_id": 24991953,
+        "count": 80,
+        "scores": [
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5000596958,
+            "rank": "A",
+            "accuracy": 0.9378185524974516,
+            "pp": 205.367,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 223,
+            "created_at": "2026-03-23T11:59:22Z",
+            "beatmapset": {
+              "id": 1440767,
+              "title": "SAVE (Encore)",
+              "cover": "https://assets.ppy.sh/beatmaps/1440767/covers/card.jpg?1650709123",
+              "stars": 5.09504
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5000596507,
+            "rank": "B",
+            "accuracy": 0.8695652173913043,
+            "pp": 230.897,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 64,
+            "created_at": "2026-03-23T11:57:49Z",
+            "beatmapset": {
+              "id": 2499570,
+              "title": "Still Into You (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499570/covers/card.jpg?1771093258",
+              "stars": 5.59733
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5000595425,
+            "rank": "A",
+            "accuracy": 0.9356060606060606,
+            "pp": 192.572,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 92,
+            "created_at": "2026-03-23T11:54:09Z",
+            "beatmapset": {
+              "id": 2240889,
+              "title": "Some Kind Of Magic (feat. MYZICA) (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2240889/covers/card.jpg?1734649789",
+              "stars": 4.99611
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5000594902,
+            "rank": "C",
+            "accuracy": 0.7048811817597945,
+            "pp": 26.601,
+            "mods": [
+              "NF",
+              "DT"
+            ],
+            "combo": 95,
+            "created_at": "2026-03-23T11:52:23Z",
+            "beatmapset": {
+              "id": 41860,
+              "title": "Chinese Snowy Dance",
+              "cover": "https://assets.ppy.sh/beatmaps/41860/covers/card.jpg?1622052126",
+              "stars": 4.89719
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5000593701,
+            "rank": "D",
+            "accuracy": 0.6817597944765574,
+            "pp": 25.5604,
+            "mods": [
+              "NF",
+              "DT"
+            ],
+            "combo": 73,
+            "created_at": "2026-03-23T11:48:19Z",
+            "beatmapset": {
+              "id": 41860,
+              "title": "Chinese Snowy Dance",
+              "cover": "https://assets.ppy.sh/beatmaps/41860/covers/card.jpg?1622052126",
+              "stars": 4.89719
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5000592951,
+            "rank": "A",
+            "accuracy": 0.9514285714285714,
+            "pp": 228.334,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 305,
+            "created_at": "2026-03-23T11:45:50Z",
+            "beatmapset": {
+              "id": 2363063,
+              "title": "Blame Brett (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2363063/covers/card.jpg?1753576499",
+              "stars": 5.11564
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5000592502,
+            "rank": "B",
+            "accuracy": 0.909952606635071,
+            "pp": 256.839,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 191,
+            "created_at": "2026-03-23T11:44:27Z",
+            "beatmapset": {
+              "id": 2379887,
+              "title": "This Little Girl (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2379887/covers/card.jpg?1749535372",
+              "stars": 5.4834
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5000590226,
+            "rank": "A",
+            "accuracy": 0.9571428571428572,
+            "pp": 242.328,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 120,
+            "created_at": "2026-03-23T11:36:36Z",
+            "beatmapset": {
+              "id": 2363063,
+              "title": "Blame Brett (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2363063/covers/card.jpg?1753576499",
+              "stars": 5.11564
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5000589162,
+            "rank": "A",
+            "accuracy": 0.9458912037037037,
+            "pp": 204.3,
+            "mods": [
+              "DT"
+            ],
+            "combo": 258,
+            "created_at": "2026-03-23T11:32:51Z",
+            "beatmapset": {
+              "id": 2505860,
+              "title": "Blame Brett (Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2505860/covers/card.jpg?1771625233",
+              "stars": 5.31979
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5000587849,
+            "rank": "B",
+            "accuracy": 0.9042553191489362,
+            "pp": 262.5,
+            "mods": [
+              "DT"
+            ],
+            "combo": 120,
+            "created_at": "2026-03-23T11:28:25Z",
+            "beatmapset": {
+              "id": 2487912,
+              "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+              "stars": 5.5625
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5000587627,
+            "rank": "A",
+            "accuracy": 0.9595375722543352,
+            "pp": 329.444,
+            "mods": [
+              "DT"
+            ],
+            "combo": 147,
+            "created_at": "2026-03-23T11:27:46Z",
+            "beatmapset": {
+              "id": 2487912,
+              "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+              "stars": 5.31255
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5000587163,
+            "rank": "A",
+            "accuracy": 0.9392265193370166,
+            "pp": 212.121,
+            "mods": [
+              "NC"
+            ],
+            "combo": 171,
+            "created_at": "2026-03-23T11:26:09Z",
+            "beatmapset": {
+              "id": 2499570,
+              "title": "Still Into You (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499570/covers/card.jpg?1771093258",
+              "stars": 5.08382
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5000586879,
+            "rank": "A",
+            "accuracy": 0.9600694444444444,
+            "pp": 302.269,
+            "mods": [
+              "NC"
+            ],
+            "combo": 221,
+            "created_at": "2026-03-23T11:25:12Z",
+            "beatmapset": {
+              "id": 2499570,
+              "title": "Still Into You (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499570/covers/card.jpg?1771093258",
+              "stars": 5.28216
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5000586117,
+            "rank": "B",
+            "accuracy": 0.9060283687943262,
+            "pp": 242.586,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 133,
+            "created_at": "2026-03-23T11:22:34Z",
+            "beatmapset": {
+              "id": 2487912,
+              "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+              "stars": 5.5625
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5000585726,
+            "rank": "A",
+            "accuracy": 0.924645390070922,
+            "pp": 311.987,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 97,
+            "created_at": "2026-03-23T11:21:12Z",
+            "beatmapset": {
+              "id": 2487912,
+              "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+              "stars": 5.5625
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+        "unique_players": 39
       }
     }
   }

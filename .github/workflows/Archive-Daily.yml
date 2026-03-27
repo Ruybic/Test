@@ -1,6 +1,3 @@
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-  
 name: Archive Daily Scores
 
 # Triggers: daily + manual
@@ -34,6 +31,7 @@ jobs:
       # 4️⃣ Fetch daily scores
       - name: Fetch daily scores
         env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
           OSU_CLIENT_ID: ${{ secrets.OSU_CLIENT_ID }}
           OSU_CLIENT_SECRET: ${{ secrets.OSU_CLIENT_SECRET }}
         run: npm run fetch

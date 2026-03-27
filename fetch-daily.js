@@ -10,6 +10,10 @@ const MODE = "osu";
 // --- CONFIGURATION ---
 const PAGES_TO_SCAN = 10; // 10 pages = Top 500 players. 
 const MANUAL_USER_IDS = []; // Add specific IDs here (e.g. [123456, 789101]) to track them regardless of rank.
+
+// NEW: Opt-out system. Add player IDs here that you want to completely ignore.
+const IGNORED_USER_IDS = [99999999, 88888888]; 
+
 const DELAY_BETWEEN_BATCHES = 1000; // 1 second pause to stay safe from API bans.
 
 // Helpers
@@ -44,8 +48,9 @@ async function main(){
     } catch (e) { console.error(`Failed to fetch ranking page ${page}`); }
   }
 
-  const userList = Array.from(allUserIds);
-  console.log(`✅ Total players to check: ${userList.length}`);
+  // NEW: Filter out any IDs that are in the IGNORED_USER_IDS list
+  const userList = Array.from(allUserIds).filter(id => !IGNORED_USER_IDS.includes(id));
+  console.log(`✅ Total players to check (after opt-outs): ${userList.length}`);
 
   let allScores = [];
 
@@ -117,7 +122,7 @@ async function main(){
   }
   fs.writeFileSync(indexFile, JSON.stringify(indexData, null, 2));
 
-    // 4. Update HTML Footers
+  // 4. Update HTML Footers
   console.log("📝 Updating HTML footers with latest timestamp and commit...");
   
   // Get the short commit hash (GitHub Actions provides this automatically)
@@ -135,8 +140,11 @@ async function main(){
       
       // Check if the IDs exist in the file before trying to replace
       if (content.includes('id="footer-commit"') && content.includes('id="footer-time"')) {
-          content = content.replace(/(<span[^>]*id="footer-commit"[^>]*>)[^<]*(<\/span>)/i, `$1${commitHash}$2`);
-          content = content.replace(/(<span[^>]*id="footer-time"[^>]*>)[^<]*(<\/span>)/i, `$1${updateTime}$2`);
+          
+          // NEW: Upgraded the Regex here! The 's' flag and '.*?' ensure it safely catches 
+          // whatever is inside the span tags, even if there are spaces or newlines.
+          content = content.replace(/(<span[^>]*id="footer-commit"[^>]*>).*?(<\/span>)/is, `$1${commitHash}$2`);
+          content = content.replace(/(<span[^>]*id="footer-time"[^>]*>).*?(<\/span>)/is, `$1${updateTime}$2`);
           
           fs.writeFileSync(file, content, 'utf8');
           console.log(`   ✅ Updated footer in ${file}`);

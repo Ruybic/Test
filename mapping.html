@@ -154,7 +154,7 @@
         const grid = document.getElementById('mapGrid');
         try {
             // Points to the newly generated iraqi_maps.json file
-            const response = await fetch('data/mapping/iraqi_maps.json?t=' + Date.now());
+            const response = await fetch('data/mapping/iraqi_mappers.json' + Date.now());
             if (!response.ok) throw new Error(`Database not found.`);
             
             const data = await response.json();

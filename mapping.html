@@ -65,7 +65,8 @@
 
         .map-info { padding: 15px; flex-grow: 1; display: flex; flex-direction: column; }
         .map-title { font-weight: 800; color: white; font-size: 16px; margin-bottom: 2px; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .map-artist { color: var(--text-muted); font-size: 12px; font-weight: 600; margin-bottom: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .map-artist { color: var(--text-muted); font-size: 12px; font-weight: 600; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .map-meta { color: #888895; font-size: 11px; margin-bottom: 12px; font-weight: 600; }
         
         .mapper-row { display: flex; justify-content: space-between; align-items: center; margin-top: auto; border-top: 1px solid #3e3e4a; padding-top: 12px; }
         .mapper-name { color: var(--osu-pink); font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 6px; }
@@ -136,7 +137,7 @@
         <p style="font-size: 0.8em; color: #aaa; line-height: 1.6;">
             A <strong>non-commercial</strong> osu! community project | Data provided by the <strong>osu! API v2.</strong><br>
             © 2026 Ruybic • Running commit: <span id="footer-commit" style="color: #ff66aa; font-family: monospace;">7472e02</span><br>
-            Last Update: <span id="footer-time">2026-02-27 04:00 UTC</span>
+            Last Update: <span id="footer-time">Loading...</span>
         </p>
     </div>
 </footer>
@@ -159,6 +160,12 @@
             
             const data = await response.json();
             ALL_MAPS = data.maps;
+
+            // Automatically update the footer time based on the JSON timestamp
+            if (data.last_updated) {
+                const dateObj = new Date(data.last_updated);
+                document.getElementById('footer-time').textContent = dateObj.toUTCString();
+            }
 
             setupFilters();
             renderMaps('All'); 
@@ -209,6 +216,13 @@
             card.target = "_blank";
             card.className = 'map-card';
             
+            // Format the submission date nicely (e.g., Mar 13, 2026)
+            let formattedDate = "Unknown Date";
+            if (map.submitted_date) {
+                const dateObj = new Date(map.submitted_date);
+                formattedDate = dateObj.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+            }
+            
             card.innerHTML = `
                 <div class="cover-container">
                     <img src="${map.cover}" class="cover-img" alt="cover" onerror="this.src='https://osu.ppy.sh/assets/images/default-bg.7594e945.png'">
@@ -217,6 +231,7 @@
                 <div class="map-info">
                     <div class="map-title">${map.title}</div>
                     <div class="map-artist">by ${map.artist}</div>
+                    <div class="map-meta">📅 ${formattedDate} • 🎵 ${map.bpm || '?'} BPM</div>
                     
                     <div class="mapper-row">
                         <div class="mapper-name">
@@ -224,8 +239,8 @@
                             ${map.creator}
                         </div>
                         <div class="map-stats">
-                            <span>▶ ${Math.floor(map.playcount / 1000)}k</span>
-                            <span>❤️ ${map.favourite_count}</span>
+                            <span>▶ ${map.playcount.toLocaleString()}</span>
+                            <span>❤️ ${map.favourite_count.toLocaleString()}</span>
                         </div>
                     </div>
                 </div>

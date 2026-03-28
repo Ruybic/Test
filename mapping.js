@@ -6,14 +6,14 @@ import path from 'path';
 const CLIENT_ID = process.env.OSU_CLIENT_ID;
 const CLIENT_SECRET = process.env.OSU_CLIENT_SECRET;
 const COUNTRY = "IQ"; 
-const MODE = "osu"; 
 
 // --- CONFIGURATION ---
-const MAX_PAGES = 200; 
-const DELAY_BETWEEN_REQUESTS = 1500; // Safe throttling
+const MODES = ['osu', 'taiko', 'fruits', 'mania']; // Scans all 4 modes
+const MAX_PAGES_PER_MODE = 100; // Up to 5000 players per mode
+const DELAY_BETWEEN_REQUESTS = 1500; // Mandatory 1.5s delay to protect API limit
 const DATA_DIR = path.join('data', 'mapping');
 
-// NEW: Opt-out system. Add IDs of people who don't want to be on the Mapping list.
+// Opt-out system: Add User IDs here to completely ignore them
 const IGNORED_USER_IDS = [99999999, 88888888]; 
 
 function mkdirp(dir){if(!fs.existsSync(dir)) fs.mkdirSync(dir,{recursive:true});}
@@ -31,73 +31,92 @@ async function getToken(){
 async function main(){
   const token = await getToken();
   const headers = { Authorization: `Bearer ${token}` };
-  
   mkdirp(DATA_DIR);
-  let mapperList = [];
-
-  console.log(`📡 Scraping Iraqi player list...`);
 
   let allUserIds = new Set();
-  for(let page = 1; page <= MAX_PAGES; page++) {
-    try {
-        const res = await fetch(`https://osu.ppy.sh/api/v2/rankings/${MODE}/performance?country=${COUNTRY}&cursor[page]=${page}`, {headers});
-        const data = await res.json();
-        if (!data.ranking || data.ranking.length === 0) break;
-        data.ranking.forEach(u => allUserIds.add(u.user.id));
-    } catch (e) { break; }
+  
+  // 1. Gather players from ALL 4 MODES
+  console.log(`📡 Scraping leaderboards across all 4 modes...`);
+  for (const mode of MODES) {
+      console.log(`-> Scanning ${mode}...`);
+      for(let page = 1; page <= MAX_PAGES_PER_MODE; page++) {
+        try {
+            const res = await fetch(`https://osu.ppy.sh/api/v2/rankings/${mode}/performance?country=${COUNTRY}&cursor[page]=${page}`, {headers});
+            const data = await res.json();
+            if (!data.ranking || data.ranking.length === 0) break;
+            data.ranking.forEach(u => allUserIds.add(u.user.id));
+        } catch (e) { break; }
+        await sleep(500); // Small pause between ranking pages
+      }
   }
 
-  // Apply Opt-out Filter
+  // Apply Opt-out
   const filteredUsers = Array.from(allUserIds).filter(id => !IGNORED_USER_IDS.includes(id));
-  console.log(`✅ Checking ${filteredUsers.length} players for mapping data...`);
+  console.log(`✅ Found ${filteredUsers.length} unique players. Checking for maps...`);
 
+  let allMaps = [];
+
+  // 2. Scan Profiles and Extract Maps
   for (const userId of filteredUsers) {
     try {
-      const res = await fetch(`https://osu.ppy.sh/api/v2/users/${userId}/${MODE}`, {headers});
+      // First, check profile to see if they even map (saves API calls)
+      const res = await fetch(`https://osu.ppy.sh/api/v2/users/${userId}/osu`, {headers});
       const user = await res.json();
 
       if (!user.username) continue;
 
-      // STRICT FILTER: Only proceed if they have at least 1 map of any kind
-      const rankedCount = user.ranked_and_approved_beatmapset_count || 0;
-      const unrankedCount = user.unranked_beatmapset_count || 0;
-      const guestCount = user.guest_beatmapset_count || 0;
-      const lovedCount = user.loved_beatmapset_count || 0;
+      const totalMaps = (user.ranked_and_approved_beatmapset_count || 0) + 
+                        (user.unranked_beatmapset_count || 0) + 
+                        (user.loved_beatmapset_count || 0);
 
-      if (rankedCount + unrankedCount + guestCount + lovedCount > 0) {
-        console.log(`✨ Adding Mapper: ${user.username}`);
-        mapperList.push({
-          username: user.username,
-          id: user.id,
-          avatar: user.avatar_url,
-          banner: user.cover_url, // Added banner for the card top
-          statistics: {
-            ranked_sets: rankedCount,
-            unranked_sets: unrankedCount,
-            guest_sets: guestCount,
-            loved_sets: lovedCount
-          }
-        });
+      if (totalMaps > 0) {
+        console.log(`✨ Extracting maps for: ${user.username} (${totalMaps} mapsets)`);
+        
+        // Map types to fetch
+        const mapTypes = ['ranked', 'loved', 'pending', 'graveyard'];
+        
+        for (const type of mapTypes) {
+            const mapRes = await fetch(`https://osu.ppy.sh/api/v2/users/${userId}/beatmapsets/${type}?limit=100`, {headers});
+            if (!mapRes.ok) continue;
+            const maps = await mapRes.json();
+            
+            maps.forEach(m => {
+                allMaps.push({
+                    id: m.id,
+                    title: m.title,
+                    artist: m.artist,
+                    creator: m.creator,
+                    creator_id: m.user_id,
+                    status: type, // ranked, loved, pending, graveyard
+                    cover: m.covers.card,
+                    playcount: m.play_count,
+                    favourite_count: m.favourite_count,
+                    bpm: m.bpm,
+                    submitted_date: m.submitted_date
+                });
+            });
+            await sleep(DELAY_BETWEEN_REQUESTS);
+        }
+      } else {
+        // If they have 0 maps, we just sleep and move on
+        await sleep(DELAY_BETWEEN_REQUESTS);
       }
-    } catch (e) { console.error(`Failed ${userId}`); }
-    await sleep(DELAY_BETWEEN_REQUESTS);
+    } catch (e) { 
+        console.error(`Failed on user ${userId}`); 
+        await sleep(DELAY_BETWEEN_REQUESTS);
+    }
   }
 
-  // Sort by Ranked Sets descending, then by Unranked
-  mapperList.sort((a, b) => {
-    if (b.statistics.ranked_sets !== a.statistics.ranked_sets) {
-        return b.statistics.ranked_sets - a.statistics.ranked_sets;
-    }
-    return b.statistics.unranked_sets - a.statistics.unranked_sets;
-  });
+  // 3. Sort Maps (Newest first, or by playcount. Let's do newest first)
+  allMaps.sort((a, b) => new Date(b.submitted_date) - new Date(a.submitted_date));
 
-  fs.writeFileSync(path.join(DATA_DIR, 'iraqi_mappers.json'), JSON.stringify({
+  fs.writeFileSync(path.join(DATA_DIR, 'iraqi_maps.json'), JSON.stringify({
     last_updated: new Date().toISOString(),
-    mappers: mapperList
+    total_maps: allMaps.length,
+    maps: allMaps
   }, null, 2));
 
-  console.log(`🚀 Done! Found ${mapperList.length} Iraqi mappers.`);
+  console.log(`🚀 Done! Extracted ${allMaps.length} maps into iraqi_maps.json.`);
 }
 
 main();
-

@@ -5,7 +5,7 @@ on:
     # Runs every Sunday at 00:00 UTC
     - cron: '0 0 * * 0'
   workflow_dispatch:
-    # Allows you to run it manually from the "Actions" tab whenever you want
+    # Allows manual runs from the Actions tab
 
 jobs:
   build:
@@ -18,17 +18,18 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24' # Updated to Node 24 to remove deprecation warnings
 
       - name: Install Dependencies
         run: npm install node-fetch
 
+      - name: Create Data Directory
+        run: mkdir -p data/mapping
+
       - name: Run Mapper Scanner
         env:
-          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
           OSU_CLIENT_ID: ${{ secrets.OSU_CLIENT_ID }}
           OSU_CLIENT_SECRET: ${{ secrets.OSU_CLIENT_SECRET }}
-          # Increase timeout to 2 hours just in case the API is slow
         run: node mapping.js
         timeout-minutes: 120
 
@@ -36,8 +37,15 @@ jobs:
         run: |
           git config --global user.name "OIT Bot"
           git config --global user.email "bot@osuiraq.today"
-          git add data/mapping/iraqi_mappers.json
           
-          # Only commit if there are actually changes
-          git diff --quiet && git diff --staged --quiet || (git commit -m "📊 Update Iraqi Mapper Database [skip ci]" && git push)
+          # We add the whole directory to be safe, or specify the exact filename from the script
+          git add data/mapping/*.json
+          
+          # Check if there are changes, if so, commit and push
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "📊 Update Iraqi Mapper Database [skip ci]"
+            git push
+          else
+            echo "No changes detected in the mapping database."
+          fi
           

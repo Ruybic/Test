@@ -143,12 +143,12 @@ async function main(){
   // 3. Sort Maps (Newest first)
   allMaps.sort((a, b) => new Date(b.submitted_date) - new Date(a.submitted_date));
 
-  // Saving exactly as iraqi_maps.json (Ensure your HTML fetches this exact name!)
-  fs.writeFileSync(path.join(DATA_DIR, 'iraqi_maps.json'), JSON.stringify({
-    last_updated: new Date().toISOString(),
-    total_maps: allMaps.length,
-    maps: allMaps
-  }, null, 2));
+// Ensure this path matches what your HTML is looking for!
+fs.writeFileSync(path.join(DATA_DIR, 'iraqi_maps.json'), JSON.stringify({
+  last_updated: new Date().toISOString(),
+  total_maps: allMaps.length,
+  maps: allMaps
+}, null, 2));
 
   console.log(`🚀 Done! Extracted ${allMaps.length} maps into iraqi_maps.json.`);
 }

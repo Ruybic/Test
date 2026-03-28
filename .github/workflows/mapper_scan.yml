@@ -25,6 +25,7 @@ jobs:
 
       - name: Run Mapper Scanner
         env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
           OSU_CLIENT_ID: ${{ secrets.OSU_CLIENT_ID }}
           OSU_CLIENT_SECRET: ${{ secrets.OSU_CLIENT_SECRET }}
           # Increase timeout to 2 hours just in case the API is slow

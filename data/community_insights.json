@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 31,
-    "longest": 31,
-    "last_updated": "2026-03-28"
+    "current": 32,
+    "longest": 32,
+    "last_updated": "2026-03-29"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -9417,6 +9417,294 @@
         "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
         "unique_players": 25
+      }
+    },
+    "2026-03-29": {
+      "total_scores": 436,
+      "peak_hour_baghdad": 15,
+      "top_grinder": {
+        "user": "manicide",
+        "user_id": 39330365,
+        "count": 48,
+        "scores": [
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5003179301,
+            "rank": "C",
+            "accuracy": 0.8378787878787879,
+            "pp": 13.9918,
+            "mods": [],
+            "combo": 83,
+            "created_at": "2026-03-29T02:24:34Z",
+            "beatmapset": {
+              "id": 1843515,
+              "title": "Colorful Dreams! Colorful Smiles!",
+              "cover": "https://assets.ppy.sh/beatmaps/1843515/covers/card.jpg?1678719291",
+              "stars": 4.98427
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5003178156,
+            "rank": "B",
+            "accuracy": 0.8909214092140921,
+            "pp": 18.4161,
+            "mods": [],
+            "combo": 88,
+            "created_at": "2026-03-29T02:20:03Z",
+            "beatmapset": {
+              "id": 2179968,
+              "title": "Dark seeks light (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2179968/covers/card.jpg?1734798865",
+              "stars": 3.89529
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5003176373,
+            "rank": "B",
+            "accuracy": 0.9134860050890585,
+            "pp": 15.8728,
+            "mods": [],
+            "combo": 361,
+            "created_at": "2026-03-29T02:13:15Z",
+            "beatmapset": {
+              "id": 2205623,
+              "title": "Takeyabu no Naka",
+              "cover": "https://assets.ppy.sh/beatmaps/2205623/covers/card.jpg?1734627898",
+              "stars": 3.61396
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5003174305,
+            "rank": "B",
+            "accuracy": 0.8929110105580694,
+            "pp": 14.6406,
+            "mods": [],
+            "combo": 96,
+            "created_at": "2026-03-29T02:05:21Z",
+            "beatmapset": {
+              "id": 2519862,
+              "title": "Hane no Komichi e (Game Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2519862/covers/card.jpg?1773626803",
+              "stars": 3.51887
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5003173809,
+            "rank": "C",
+            "accuracy": 0.7665692007797271,
+            "pp": 8.51783,
+            "mods": [],
+            "combo": 43,
+            "created_at": "2026-03-29T02:03:20Z",
+            "beatmapset": {
+              "id": 2518640,
+              "title": "Absolute Zero",
+              "cover": "https://assets.ppy.sh/beatmaps/2518640/covers/card.jpg?1773011713",
+              "stars": 4.79588
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5003172821,
+            "rank": "B",
+            "accuracy": 0.8841463414634146,
+            "pp": 12.9318,
+            "mods": [],
+            "combo": 157,
+            "created_at": "2026-03-29T01:59:30Z",
+            "beatmapset": {
+              "id": 2518640,
+              "title": "Absolute Zero",
+              "cover": "https://assets.ppy.sh/beatmaps/2518640/covers/card.jpg?1773011713",
+              "stars": 3.75333
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5003170808,
+            "rank": "S",
+            "accuracy": 0.9690949227373068,
+            "pp": 19.5615,
+            "mods": [
+              "HR"
+            ],
+            "combo": 245,
+            "created_at": "2026-03-29T01:52:06Z",
+            "beatmapset": {
+              "id": 2510235,
+              "title": "Honma ni \"Yada\"",
+              "cover": "https://assets.ppy.sh/beatmaps/2510235/covers/card.jpg?1773717176",
+              "stars": 2.66347
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5003169598,
+            "rank": "A",
+            "accuracy": 0.932013201320132,
+            "pp": 13.3022,
+            "mods": [],
+            "combo": 329,
+            "created_at": "2026-03-29T01:47:37Z",
+            "beatmapset": {
+              "id": 2419008,
+              "title": "Mugen",
+              "cover": "https://assets.ppy.sh/beatmaps/2419008/covers/card.jpg?1770237577",
+              "stars": 3.05608
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5003166224,
+            "rank": "B",
+            "accuracy": 0.9213250517598344,
+            "pp": 15.1027,
+            "mods": [],
+            "combo": 169,
+            "created_at": "2026-03-29T01:34:58Z",
+            "beatmapset": {
+              "id": 2459491,
+              "title": "Distance Disturbs Me (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2459491/covers/card.jpg?1766527602",
+              "stars": 3.27289
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5002788718,
+            "rank": "A",
+            "accuracy": 0.9368968077208611,
+            "pp": 33.4228,
+            "mods": [],
+            "combo": 726,
+            "created_at": "2026-03-28T09:26:41Z",
+            "beatmapset": {
+              "id": 1743604,
+              "title": "Hanatachi ni Kibou o (2020 Remaster)",
+              "cover": "https://assets.ppy.sh/beatmaps/1743604/covers/card.jpg?1773807453",
+              "stars": 3.94455
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5002785992,
+            "rank": "S",
+            "accuracy": 0.9679012345679012,
+            "pp": 42.3001,
+            "mods": [],
+            "combo": 457,
+            "created_at": "2026-03-28T09:17:26Z",
+            "beatmapset": {
+              "id": 2214952,
+              "title": "Moon Atomizer",
+              "cover": "https://assets.ppy.sh/beatmaps/2214952/covers/card.jpg?1766324049",
+              "stars": 3.71737
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5002784673,
+            "rank": "S",
+            "accuracy": 0.9660493827160493,
+            "pp": 28.8212,
+            "mods": [],
+            "combo": 212,
+            "created_at": "2026-03-28T09:13:05Z",
+            "beatmapset": {
+              "id": 2472404,
+              "title": "Promotion Movie (R10)",
+              "cover": "https://assets.ppy.sh/beatmaps/2472404/covers/card.jpg?1772807864",
+              "stars": 3.67747
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5002783951,
+            "rank": "A",
+            "accuracy": 0.9619883040935673,
+            "pp": 27.2882,
+            "mods": [],
+            "combo": 287,
+            "created_at": "2026-03-28T09:10:34Z",
+            "beatmapset": {
+              "id": 2468170,
+              "title": "Five Nights at Freddy's",
+              "cover": "https://assets.ppy.sh/beatmaps/2468170/covers/card.jpg?1766427293",
+              "stars": 3.49219
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5002783103,
+            "rank": "S",
+            "accuracy": 0.9478319783197832,
+            "pp": 26.2655,
+            "mods": [],
+            "combo": 284,
+            "created_at": "2026-03-28T09:07:45Z",
+            "beatmapset": {
+              "id": 2358172,
+              "title": "Kairos",
+              "cover": "https://assets.ppy.sh/beatmaps/2358172/covers/card.jpg?1766646151",
+              "stars": 3.45978
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5002782442,
+            "rank": "B",
+            "accuracy": 0.929718875502008,
+            "pp": 15.5057,
+            "mods": [],
+            "combo": 239,
+            "created_at": "2026-03-28T09:05:26Z",
+            "beatmapset": {
+              "id": 848976,
+              "title": "Treason",
+              "cover": "https://assets.ppy.sh/beatmaps/848976/covers/card.jpg?1650669309",
+              "stars": 3.36752
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "GRIM (NIGHTCORE & CUT VER.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+        "unique_players": 11
       }
     }
   }

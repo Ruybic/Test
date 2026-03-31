@@ -55,8 +55,6 @@
             font-weight: 600; font-size: 14px; transition: all 0.2s ease; 
         }
         .dropbtn:hover { background: #3e3e4a; border-color: var(--osu-pink); }
-        .dropbtn:active { transform: scale(0.96); }
-
         .dropdown-content {
             visibility: hidden; opacity: 0; transform: translateY(10px); 
             transition: opacity 0.2s ease, transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), visibility 0.2s;
@@ -71,7 +69,6 @@
             text-decoration: none; display: block; font-size: 14px; border-radius: 8px; 
             transition: all 0.25s ease; margin-bottom: 2px; 
         }
-        .dropdown-content a:last-child { margin-bottom: 0; }
         .dropdown-content a .menu-desc { display: block; font-size: 11px; color: #6a6a7a; margin-top: 4px; transition: color 0.2s ease; }
         .dropdown-content a:hover { background: rgba(255, 102, 170, 0.1); color: white; }
         .dropdown-content a.active { background: rgba(255, 102, 170, 0.15); color: white; font-weight: 700; }
@@ -85,18 +82,14 @@
         .dropdown-content a.active .menu-desc, .dropdown-content a:hover .menu-desc { color: var(--osu-pink); }
 
         /* --- LAYOUT --- */
-        .container { 
-            flex: 1; width: 100%; max-width: 1200px; margin: 40px auto; 
-            padding: 0 20px; box-sizing: border-box;
-        }
-        
+        .container { flex: 1; width: 100%; max-width: 1200px; margin: 40px auto; padding: 0 20px; box-sizing: border-box; }
         .section-label { color: var(--osu-pink); font-weight: 800; font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 10px; display: block; }
         .section-title { color: white; font-size: 32px; font-weight: 800; margin: 0 0 10px 0; }
         .section-subtitle { color: var(--text-muted); font-size: 15px; margin-bottom: 30px; }
         .section-divider { width: 100%; height: 1px; background: #3e3e4a; margin: 40px 0; }
 
         /* --- INSIGHTS WIDGETS --- */
-        .insights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; margin-bottom: 20px; }
+        .insights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 20px; }
         .insight-card { 
             background: var(--panel-bg); border-radius: 14px; padding: 25px; 
             border: 1px solid #3e3e4a; position: relative; overflow: hidden; display: flex; flex-direction: column; 
@@ -105,43 +98,46 @@
         .insight-card:hover { border-color: var(--osu-pink); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
         .card-header { font-size: 12px; color: var(--osu-pink); font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; }
 
-        /* LINKABLE OVERRIDES */
         a.link-wrapper { text-decoration: none; color: inherit; display: block; flex-grow: 1; }
-        a.link-wrapper:hover .map-title { color: var(--osu-pink); }
-        a.link-wrapper:hover .grinder-info h3 { color: var(--osu-pink); }
+        a.link-wrapper:hover .map-title, a.link-wrapper:hover .grinder-info h3 { color: var(--osu-pink); }
+
+        /* STREAK WIDGET */
+        .streak-container { display: flex; justify-content: space-between; align-items: center; height: 100%; }
+        .streak-box { text-align: center; flex: 1; }
+        .streak-box:first-child { border-right: 1px solid #3e3e4a; }
+        .streak-num { font-size: 36px; font-weight: 800; color: white; line-height: 1; margin-bottom: 5px; }
+        .streak-label { font-size: 12px; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        .fire-text { background: -webkit-linear-gradient(#ffaa00, #ff0055); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
         /* MOST PLAYED MAP WIDGET */
         .map-card-inner { 
             background-size: cover; background-position: center; border-radius: 8px; 
-            padding: 20px; position: relative; min-height: 100px; display: flex; 
+            padding: 20px; position: relative; min-height: 110px; display: flex; 
             flex-direction: column; justify-content: flex-end; border: 1px solid #444; 
             height: 100%; box-sizing: border-box;
         }
         .map-card-inner::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3)); border-radius: 8px; }
-        .map-title { position: relative; z-index: 5; color: white; font-weight: 800; font-size: 18px; margin: 0; transition: color 0.2s; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .map-title { position: relative; z-index: 5; color: white; font-weight: 800; font-size: 18px; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .map-players { position: relative; z-index: 5; color: #ffcc22; font-size: 13px; font-weight: 600; margin-top: 5px; }
 
         /* TOP GRINDER WIDGET */
-        .grinder-profile { display: flex; align-items: center; gap: 15px; height: 100%; }
+        .grinder-profile { display: flex; align-items: flex-start; gap: 15px; height: 100%; }
         .grinder-avatar { width: 70px; height: 70px; border-radius: 12px; border: 3px solid #ffd700; box-shadow: 0 0 15px rgba(255, 215, 0, 0.3); object-fit: cover; }
-        .grinder-info h3 { margin: 0; font-size: 22px; color: white; transition: color 0.2s; }
-        .grinder-info p { margin: 2px 0 0; font-size: 14px; color: #ffd700; font-weight: 600; }
+        .grinder-info { flex: 1; }
+        .grinder-info h3 { margin: 0; font-size: 22px; color: white; line-height: 1.2; }
+        .grinder-info p.stats { margin: 4px 0 6px; font-size: 14px; color: #ffd700; font-weight: 600; }
+        .grinder-maps { font-size: 12px; color: var(--text-muted); line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
         /* --- 24 HOUR CHART --- */
         .chart-wrapper { width: 100%; height: 140px; display: flex; align-items: flex-end; gap: 4px; padding-bottom: 5px; border-bottom: 1px solid #444; margin-top: 10px; }
-        .chart-bar-container { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; height: 100%; position: relative; group; }
-        .chart-bar { 
-            width: 100%; background: var(--osu-pink); border-radius: 4px 4px 0 0; 
-            min-height: 4px; transition: height 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-        }
+        .chart-bar-container { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; height: 100%; position: relative; }
+        .chart-bar { width: 100%; background: var(--osu-pink); border-radius: 4px 4px 0 0; min-height: 4px; transition: height 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); }
         .chart-bar:hover { background: #ffd700; cursor: crosshair; }
         
-        /* Chart Tooltip */
         .chart-tooltip {
             position: absolute; bottom: calc(100% + 5px); left: 50%; transform: translateX(-50%);
             background: #111; color: white; font-size: 11px; padding: 4px 8px; border-radius: 4px;
-            white-space: nowrap; opacity: 0; pointer-events: none; transition: 0.2s; border: 1px solid #444;
-            z-index: 10;
+            white-space: nowrap; opacity: 0; pointer-events: none; transition: 0.2s; border: 1px solid #444; z-index: 10;
         }
         .chart-bar-container:hover .chart-tooltip { opacity: 1; }
         .chart-labels { display: flex; justify-content: space-between; color: var(--text-muted); font-size: 11px; font-weight: 600; margin-top: 8px; }
@@ -151,21 +147,13 @@
         .social-card { 
             background: var(--panel-bg); border-radius: 14px; padding: 30px; 
             border: 1px solid #3e3e4a; text-decoration: none; position: relative;
-            transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); overflow: hidden;
-            display: flex; flex-direction: column;
+            transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); overflow: hidden; display: flex; flex-direction: column;
         }
-        .social-card:hover { 
-            transform: translateY(-8px); border-color: var(--platform-color);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3), 0 0 15px rgba(var(--platform-glow), 0.2);
-        }
+        .social-card:hover { transform: translateY(-8px); border-color: var(--platform-color); box-shadow: 0 10px 20px rgba(0,0,0,0.3), 0 0 15px rgba(var(--platform-glow), 0.2); }
         .social-card .card-header { color: var(--platform-color); }
         .platform-name { color: white; font-size: 24px; font-weight: 800; margin-bottom: 10px; }
         .platform-desc { color: var(--text-muted); font-size: 14px; margin-bottom: 25px; flex-grow: 1; }
-        .join-btn { 
-            background: #25252e; color: white; border: 1px solid #3e3e4a; 
-            padding: 10px; border-radius: 8px; text-align: center;
-            font-weight: 600; font-size: 13px; transition: 0.2s; 
-        }
+        .join-btn { background: #25252e; color: white; border: 1px solid #3e3e4a; padding: 10px; border-radius: 8px; text-align: center; font-weight: 600; font-size: 13px; transition: 0.2s; }
         .social-card:hover .join-btn { background: var(--platform-color); border-color: var(--platform-color); color: white; }
 
         .discord { --platform-color: #5865F2; --platform-glow: 88, 101, 242; }
@@ -173,11 +161,7 @@
         .twitch  { --platform-color: #9146FF; --platform-glow: 145, 70, 255; }
         .youtube { --platform-color: #FF0000; --platform-glow: 255, 0, 0; }
 
-        /* Footer */
-        footer {
-            background-color: #1a1a1a; color: #ffffff; padding: 15px 10px 30px 10px; 
-            text-align: center; border-top: 4px solid #ff66aa; margin-top: auto; 
-        }
+        footer { background-color: #1a1a1a; color: #ffffff; padding: 15px 10px 30px 10px; text-align: center; border-top: 4px solid #ff66aa; margin-top: auto; }
     </style>
 </head>
 <body>
@@ -194,10 +178,7 @@
         <div class="dropdown-content" id="myDropdown">
             <a href="Test.html">Scores<span class="menu-desc">See what happened today?</span></a>
             <a href="rankings.html">Rankings<span class="menu-desc">See player leaderboards</span></a>
-            <a href="videos.html">Videos<span class="menu-desc">Watch gameplay and highlights</span></a>
-            <a href="mapping.html">Mapping<span class="menu-desc">Explore beatmap creations</span></a>
-            <a href="archive.html">Archive<span class="menu-desc">Explore community History</span></a>
-            <a href="socials.html" class="active">Socials<span class="menu-desc">Connect with the community</span></a>
+            <a href="socials.html" class="active">Community Hub<span class="menu-desc">Insights & Socials</span></a>
         </div>
     </div>
 </header>
@@ -208,25 +189,27 @@
     <p class="section-subtitle" id="pulse-date">Loading today's data...</p>
 
     <div class="insights-grid">
-        <div class="insight-card" style="grid-column: 1 / -1;">
-            <div class="card-header">📈 24-Hour Activity (Baghdad Time)</div>
-            <div class="chart-wrapper" id="activity-chart">
+        
+        <div class="insight-card">
+            <div class="card-header">🔥 Community Streak</div>
+            <div class="streak-container">
+                <div class="streak-box">
+                    <div class="streak-num fire-text" id="s-current">--</div>
+                    <div class="streak-label">Days Active</div>
                 </div>
-            <div class="chart-labels">
-                <span>00:00</span>
-                <span>06:00</span>
-                <span>12:00</span>
-                <span>18:00</span>
-                <span>23:59</span>
+                <div class="streak-box">
+                    <div class="streak-num" id="s-longest">--</div>
+                    <div class="streak-label">All-Time Best</div>
+                </div>
             </div>
         </div>
 
         <div class="insight-card">
-            <div class="card-header">🎯 Today's Battleground</div>
+            <div class="card-header">🎯 Community Battleground</div>
             <a href="#" target="_blank" id="m-link" class="link-wrapper">
                 <div class="map-card-inner" id="m-bg" style="background-image: none;">
                     <h3 class="map-title" id="m-title">Loading...</h3>
-                    <div class="map-players" id="m-players">-- plays</div>
+                    <div class="map-players" id="m-players">-- plays today</div>
                 </div>
             </a>
         </div>
@@ -238,17 +221,31 @@
                     <img src="" class="grinder-avatar" id="g-avatar" alt="Avatar" style="display: none;">
                     <div class="grinder-info">
                         <h3 id="g-name">Loading...</h3>
-                        <p id="g-count">-- scores</p>
+                        <p class="stats" id="g-count">-- submissions</p>
+                        <div class="grinder-maps" id="g-maps">Played: ...</div>
                     </div>
                 </div>
             </a>
+        </div>
+
+        <div class="insight-card" style="grid-column: 1 / -1;">
+            <div class="card-header">📈 Community Active Hours (Baghdad Time)</div>
+            <div class="chart-wrapper" id="activity-chart">
+                </div>
+            <div class="chart-labels">
+                <span>00:00</span>
+                <span>06:00</span>
+                <span>12:00</span>
+                <span>18:00</span>
+                <span>23:59</span>
+            </div>
         </div>
     </div>
 
     <div class="section-divider"></div>
 
     <span class="section-label">GET CONNECTED</span>
-    <h1 class="section-title">Community Hub</h1>
+    <h1 class="section-title">Community Networks</h1>
     <p class="section-subtitle">Join the largest gathering of Iraqi osu! players across all platforms.</p>
 
     <div class="social-grid">
@@ -265,20 +262,6 @@
             <div class="platform-desc">Daily highlight clips, community announcements, and regional ranking updates.</div>
             <div class="join-btn">Follow Us</div>
         </a>
-
-        <a href="#" class="social-card twitch">
-            <div class="card-header">Live Action</div>
-            <div class="platform-name">Twitch</div>
-            <div class="platform-desc">Watch official Iraqi tournaments and community showcases live with real-time commentary.</div>
-            <div class="join-btn">Watch Live</div>
-        </a>
-
-        <a href="#" class="social-card youtube">
-            <div class="card-header">Archive</div>
-            <div class="platform-name">YouTube</div>
-            <div class="platform-desc">High-quality replay renders, mapping podcasts, and community montages stored for the history books.</div>
-            <div class="join-btn">Subscribe</div>
-        </a>
     </div>
 </main>
 
@@ -286,91 +269,87 @@
     <div style="max-width: 1000px; margin: 0 auto;">
         <h3 style="color: #ff66aa; margin-bottom: 5px; margin-top: 5px;">Osu! Iraq Today</h3>
         <p style="margin: 5px 0; font-size: 0.9em; color: #eee;">Built with ❤️ for the Iraqi Community</p>
-        
-        <div style="margin: 15px 0;">
-            <a href="https://github.com/Ruybic/Test" style="color: #ff66aa; text-decoration: none; margin: 0 10px; font-weight: bold;">GitHub</a> • 
-            <a href="#discord" style="color: #ff66aa; text-decoration: none; margin: 0 10px; font-weight: bold;">Discord</a> • 
-            <a href="OIT_Document.html" style="color: #ff66aa; text-decoration: none; margin: 0 10px; font-weight: bold;">Documentation</a>
-        </div>
-
-        <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
-
         <p style="font-size: 0.8em; color: #aaa; line-height: 1.6;">
-            A <strong>non-commercial</strong> osu! community project | Data provided by the <strong>osu! API v2.</strong><br>
-            © 2026 Ruybic • Running commit: <span id="footer-commit" style="color: #ff66aa; font-family: monospace;">7472e02</span><br>
-            Last Update: <span id="footer-time">2026-03-31</span>
+            Data provided by the <strong>osu! API v2.</strong><br>
+            © 2026 Ruybic
         </p>
     </div>
 </footer>
 
 <script>
     // --- DROPDOWN LOGIC ---
-    const menuBtn = document.getElementById('menuBtn');
-    const dropdown = document.getElementById('myDropdown');
-    
-    menuBtn.onclick = (e) => { 
-        dropdown.classList.toggle("show"); 
+    document.getElementById('menuBtn').onclick = (e) => { 
+        document.getElementById('myDropdown').classList.toggle("show"); 
         e.stopPropagation(); 
     };
-
     window.onclick = (e) => { 
-        if (!e.target.matches('.dropbtn')) {
-            dropdown.classList.remove('show');
-        }
+        if (!e.target.matches('.dropbtn')) document.getElementById('myDropdown').classList.remove('show');
     };
 
-    // --- INSIGHTS DATA PROCESSING ---
-    // Simulating fetching your JSON file. Replace this string with your actual fetch call.
+    // --- MOCK DATA (Notice the new streak fields added to the root) ---
     const rawJSON = `{
       "date": "2026-03-31",
       "country": "IQ",
       "generated_at": "2026-03-31T02:25:28.284Z",
+      "current_streak": 42,
+      "longest_streak": 108,
       "scores": [
         {
           "user": "xTHE_CRUISERx", "user_id": 38658226, "score_id": 5004086932,
           "created_at": "2026-03-31T02:00:40Z",
-          "beatmapset": { "id": 1889729, "title": "Non-breath oblige", "cover": "https://assets.ppy.sh/beatmaps/1889729/covers/card.jpg?1671759413" }
+          "beatmapset": { "id": 1889729, "title": "Non-breath oblige", "cover": "https://assets.ppy.sh/beatmaps/1889729/covers/card.jpg" }
         },
         {
           "user": "xTHE_CRUISERx", "user_id": 38658226, "score_id": 5004086933,
           "created_at": "2026-03-31T03:15:40Z",
-          "beatmapset": { "id": 1889729, "title": "Non-breath oblige", "cover": "https://assets.ppy.sh/beatmaps/1889729/covers/card.jpg?1671759413" }
+          "beatmapset": { "id": 1889729, "title": "Non-breath oblige", "cover": "https://assets.ppy.sh/beatmaps/1889729/covers/card.jpg" }
+        },
+        {
+          "user": "xTHE_CRUISERx", "user_id": 38658226, "score_id": 5004086939,
+          "created_at": "2026-03-31T04:10:40Z",
+          "beatmapset": { "id": 12345, "title": "Blue Zenith", "cover": "https://assets.ppy.sh/beatmaps/1889729/covers/card.jpg" }
         },
         {
           "user": "FancyToast", "user_id": 12345678, "score_id": 5004086934,
           "created_at": "2026-03-31T18:40:40Z",
-          "beatmapset": { "id": 999999, "title": "Some other map", "cover": "https://assets.ppy.sh/beatmaps/1889729/covers/card.jpg?1671759413" }
+          "beatmapset": { "id": 999999, "title": "Freedom Dive", "cover": "https://assets.ppy.sh/beatmaps/1889729/covers/card.jpg" }
         }
       ]
     }`;
 
     function loadInsights() {
         try {
-            const data = JSON.parse(rawJSON); // Swap this for await fetch(...)
+            const data = JSON.parse(rawJSON);
             document.getElementById('pulse-date').innerText = `Data for: ${data.date}`;
+
+            // 1. Populate Streaks
+            document.getElementById('s-current').innerText = data.current_streak || 0;
+            document.getElementById('s-longest').innerText = data.longest_streak || 0;
 
             const scores = data.scores;
             if(!scores || scores.length === 0) return;
 
-            // 1. Calculate 24-hour activity (Baghdad Time: UTC+3)
             let hourlyCounts = new Array(24).fill(0);
             let userCounts = {};
             let mapCounts = {};
             
+            // Loop through ENTIRE community scores array
             scores.forEach(score => {
-                // Time Math
+                // Community Active Hours Math
                 const utcDate = new Date(score.created_at);
-                // Get UTC hour and add 3 for Baghdad Time. Modulo 24 keeps it within 0-23
                 const baghdadHour = (utcDate.getUTCHours() + 3) % 24; 
                 hourlyCounts[baghdadHour]++;
 
-                // User Math
+                // Grinder Math (Track count AND unique map titles)
                 if(!userCounts[score.user_id]) {
-                    userCounts[score.user_id] = { name: score.user, count: 0 };
+                    userCounts[score.user_id] = { name: score.user, count: 0, maps: new Set() };
                 }
                 userCounts[score.user_id].count++;
+                if(score.beatmapset && score.beatmapset.title) {
+                    userCounts[score.user_id].maps.add(score.beatmapset.title);
+                }
 
-                // Map Math
+                // Community Battleground (Map) Math
                 if(score.beatmapset && score.beatmapset.id) {
                     if(!mapCounts[score.beatmapset.id]) {
                         mapCounts[score.beatmapset.id] = { title: score.beatmapset.title, cover: score.beatmapset.cover, count: 0 };
@@ -379,16 +358,16 @@
                 }
             });
 
-            // 2. Render Chart
+            // 2. Render 24H Community Chart
             renderChart(hourlyCounts);
 
-            // 3. Find Top Grinder
+            // 3. Find & Render Top Grinder
             let topUser = null;
             let maxScores = 0;
             for(const [id, user] of Object.entries(userCounts)) {
                 if(user.count > maxScores) {
                     maxScores = user.count;
-                    topUser = { id, name: user.name, count: user.count };
+                    topUser = { id, name: user.name, count: user.count, maps: user.maps };
                 }
             }
 
@@ -396,11 +375,17 @@
                 document.getElementById('g-avatar').src = `https://a.ppy.sh/${topUser.id}`;
                 document.getElementById('g-avatar').style.display = "block";
                 document.getElementById('g-name').innerText = topUser.name;
-                document.getElementById('g-count').innerText = `${topUser.count} scores submitted`;
+                document.getElementById('g-count').innerText = `${topUser.count} submissions`;
                 document.getElementById('g-link').href = `https://osu.ppy.sh/users/${topUser.id}`;
+                
+                // Format the maps they played
+                const mapArray = Array.from(topUser.maps);
+                let mapsText = mapArray.slice(0, 2).join(", ");
+                if(mapArray.length > 2) mapsText += ` + ${mapArray.length - 2} more`;
+                document.getElementById('g-maps').innerText = `Played: ${mapsText}`;
             }
 
-            // 4. Find Top Map
+            // 4. Find & Render Community Most Played Map
             let topMap = null;
             let maxMapPlays = 0;
             for(const [id, map] of Object.entries(mapCounts)) {
@@ -413,28 +398,23 @@
             if(topMap) {
                 document.getElementById('m-bg').style.backgroundImage = `url('${topMap.cover}')`;
                 document.getElementById('m-title').innerText = topMap.title;
-                document.getElementById('m-players').innerText = `${topMap.count} plays recorded`;
+                document.getElementById('m-players').innerText = `${topMap.count} community plays today`;
                 document.getElementById('m-link').href = `https://osu.ppy.sh/beatmapsets/${topMap.id}`;
             }
 
         } catch (err) {
             console.error("Error loading insights:", err);
-            document.getElementById('pulse-date').innerText = "Failed to load today's data.";
         }
     }
 
     function renderChart(hourlyData) {
         const chartContainer = document.getElementById('activity-chart');
-        chartContainer.innerHTML = ''; // Clear existing
-        
-        // Find max value to scale the graph heights appropriately
+        chartContainer.innerHTML = ''; 
         const maxVal = Math.max(...hourlyData) || 1; 
 
         for (let i = 0; i < 24; i++) {
             const val = hourlyData[i];
-            const heightPercent = val === 0 ? 0 : Math.max(5, (val / maxVal) * 100); // 5% minimum height so the bar is visible if it has data
-            
-            // Format hour string (e.g., 00:00, 14:00)
+            const heightPercent = val === 0 ? 0 : Math.max(5, (val / maxVal) * 100); 
             const hourStr = String(i).padStart(2, '0') + ':00';
             
             chartContainer.innerHTML += `
@@ -446,7 +426,6 @@
         }
     }
 
-    // Initialize the widgets
     loadInsights();
 </script>
 

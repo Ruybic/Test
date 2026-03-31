@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 32,
-    "longest": 32,
-    "last_updated": "2026-03-29"
+    "current": 33,
+    "longest": 33,
+    "last_updated": "2026-03-30"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -9705,6 +9705,332 @@
         "title": "GRIM (NIGHTCORE & CUT VER.)",
         "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
         "unique_players": 11
+      }
+    },
+    "2026-03-30": {
+      "total_scores": 485,
+      "peak_hour_baghdad": 21,
+      "top_grinder": {
+        "user": "I AM A GHOUL",
+        "user_id": 24991953,
+        "count": 67,
+        "scores": [
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5003732054,
+            "rank": "B",
+            "accuracy": 0.8920521945432978,
+            "pp": null,
+            "mods": [],
+            "combo": 165,
+            "created_at": "2026-03-30T08:40:02Z",
+            "beatmapset": {
+              "id": 988751,
+              "title": "Homicide feat. Eminem (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/988751/covers/card.jpg?1696199771",
+              "stars": 7.26296
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5003731561,
+            "rank": "B",
+            "accuracy": 0.8909574468085106,
+            "pp": 255.127,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 132,
+            "created_at": "2026-03-30T08:37:56Z",
+            "beatmapset": {
+              "id": 2487912,
+              "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+              "stars": 5.5625
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5003731432,
+            "rank": "B",
+            "accuracy": 0.9113475177304965,
+            "pp": 254.811,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 130,
+            "created_at": "2026-03-30T08:37:20Z",
+            "beatmapset": {
+              "id": 2487912,
+              "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+              "stars": 5.5625
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5003731220,
+            "rank": "B",
+            "accuracy": 0.9060283687943262,
+            "pp": 287.015,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 131,
+            "created_at": "2026-03-30T08:36:25Z",
+            "beatmapset": {
+              "id": 2487912,
+              "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+              "stars": 5.5625
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5003731040,
+            "rank": "B",
+            "accuracy": 0.9069148936170213,
+            "pp": 287.275,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 125,
+            "created_at": "2026-03-30T08:35:39Z",
+            "beatmapset": {
+              "id": 2487912,
+              "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+              "stars": 5.5625
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5003730880,
+            "rank": "B",
+            "accuracy": 0.8847517730496454,
+            "pp": 274.883,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 102,
+            "created_at": "2026-03-30T08:34:56Z",
+            "beatmapset": {
+              "id": 2487912,
+              "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+              "stars": 5.5625
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5003730200,
+            "rank": "A",
+            "accuracy": 0.9516908212560387,
+            "pp": 317.813,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 133,
+            "created_at": "2026-03-30T08:31:58Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.47155
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5003729977,
+            "rank": "A",
+            "accuracy": 0.9589371980676329,
+            "pp": 351.597,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 178,
+            "created_at": "2026-03-30T08:30:56Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.47155
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5003729725,
+            "rank": "A",
+            "accuracy": 0.9565217391304348,
+            "pp": 355.701,
+            "mods": [
+              "DT"
+            ],
+            "combo": 186,
+            "created_at": "2026-03-30T08:29:44Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.47155
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5003729539,
+            "rank": "A",
+            "accuracy": 0.9484953703703703,
+            "pp": 279.555,
+            "mods": [
+              "DT"
+            ],
+            "combo": 290,
+            "created_at": "2026-03-30T08:28:55Z",
+            "beatmapset": {
+              "id": 2505860,
+              "title": "Blame Brett (Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2505860/covers/card.jpg?1771625233",
+              "stars": 5.31979
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5003728662,
+            "rank": "A",
+            "accuracy": 0.9523809523809523,
+            "pp": 350.067,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 138,
+            "created_at": "2026-03-30T08:24:40Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 5.44566
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5003728481,
+            "rank": "A",
+            "accuracy": 0.9320594479830149,
+            "pp": 259.693,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 169,
+            "created_at": "2026-03-30T08:23:55Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.42072
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5003728356,
+            "rank": "B",
+            "accuracy": 0.9087048832271762,
+            "pp": 215.766,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 169,
+            "created_at": "2026-03-30T08:23:15Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.42072
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5003728218,
+            "rank": "B",
+            "accuracy": 0.8776493256262042,
+            "pp": 267.428,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 127,
+            "created_at": "2026-03-30T08:22:36Z",
+            "beatmapset": {
+              "id": 2487912,
+              "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+              "stars": 5.31255
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5003728004,
+            "rank": "B",
+            "accuracy": 0.8839285714285714,
+            "pp": 193.643,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 214,
+            "created_at": "2026-03-30T08:21:39Z",
+            "beatmapset": {
+              "id": 2464474,
+              "title": "Cherry Pop (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2464474/covers/card.jpg?1763827557",
+              "stars": 5.30029
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "I Don't Know (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+        "unique_players": 16
       }
     }
   }

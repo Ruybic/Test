@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osu! Iraq Today | Community Socials</title>
+    <title>Osu! Iraq Today | Community Hub</title>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="OIT.png">
     <style>
-        /* --- STYLES --- */
+        /* --- CORE STYLES --- */
         :root { 
             --osu-pink: #ff66aa; 
             --dark-base: #1c1c21; 
@@ -16,7 +16,6 @@
             --text-muted: #888895; 
         }
         
-        /* Flexbox added here to force sticky footer */
         body { 
             background-color: var(--dark-base); 
             color: var(--text-main); 
@@ -42,184 +41,126 @@
             z-index: 1000;
         }
 
-        /* LOGO BOX */
-        .logo-box {
-            margin-left: -10px;
-        }
+        .logo-box { margin-left: -10px; }
+        .logo-box a { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-box img { height: 38px; display: block; }
+        .logo-text { color: var(--osu-pink); font-weight: 800; font-size: 18px; letter-spacing: 0.5px; white-space: nowrap; }
+        .logo-box a:hover { filter: brightness(1.1); }
 
-        .logo-box a {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            text-decoration: none;
-        }
-
-        .logo-box img { 
-            height: 38px; 
-            display: block; 
-        }
-
-        .logo-text {
-            color: var(--osu-pink);
-            font-weight: 800;
-            font-size: 18px;
-            letter-spacing: 0.5px;
-            white-space: nowrap;
-        }
-
-        .logo-box a:hover {
-            filter: brightness(1.1);
-        }
-
-        /* --- THE MODERN DROPDOWN SYSTEM --- */
-        .dropdown { 
-            position: relative; 
-            display: flex; 
-            align-items: center;
-        }
-
+        /* --- DROPDOWN --- */
+        .dropdown { position: relative; display: flex; align-items: center; }
         .dropbtn { 
-            background: var(--panel-bg); 
-            color: white; 
-            border: 1px solid rgba(255,255,255,0.05); 
-            padding: 10px 18px; 
-            border-radius: 6px; 
-            cursor: pointer; 
-            font-family: 'Exo 2', sans-serif; 
-            font-weight: 600; 
-            font-size: 14px;
-            transition: all 0.2s ease; 
+            background: var(--panel-bg); color: white; border: 1px solid rgba(255,255,255,0.05); 
+            padding: 10px 18px; border-radius: 6px; cursor: pointer; font-family: 'Exo 2', sans-serif; 
+            font-weight: 600; font-size: 14px; transition: all 0.2s ease; 
         }
-
-        .dropbtn:hover { 
-            background: #3e3e4a; 
-            border-color: var(--osu-pink);
-        }
-
+        .dropbtn:hover { background: #3e3e4a; border-color: var(--osu-pink); }
         .dropbtn:active { transform: scale(0.96); }
 
         .dropdown-content {
-            visibility: hidden;
-            opacity: 0;
-            transform: translateY(10px); 
+            visibility: hidden; opacity: 0; transform: translateY(10px); 
             transition: opacity 0.2s ease, transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), visibility 0.2s;
-            position: absolute; 
-            right: 0; 
-            top: calc(100% + 10px); 
-            min-width: 260px; 
-            z-index: 2000; 
-
-            /* Glassmorphism */
-            background-color: rgba(28, 28, 33, 0.9); 
-            backdrop-filter: blur(15px); 
-            -webkit-backdrop-filter: blur(15px); 
-            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7); 
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px; 
-            padding: 8px; 
+            position: absolute; right: 0; top: calc(100% + 10px); min-width: 260px; z-index: 2000; 
+            background-color: rgba(28, 28, 33, 0.9); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); 
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7); border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px; padding: 8px; 
         }
-
-        .dropdown-content.show { 
-            visibility: visible;
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Menu Items */
+        .dropdown-content.show { visibility: visible; opacity: 1; transform: translateY(0); }
         .dropdown-content a { 
-            position: relative;
-            color: var(--text-muted); 
-            padding: 12px 16px; 
-            text-decoration: none; 
-            display: block; 
-            font-size: 14px; 
-            border-radius: 8px;
-            transition: all 0.25s ease;
-            margin-bottom: 2px;
+            position: relative; color: var(--text-muted); padding: 12px 16px; 
+            text-decoration: none; display: block; font-size: 14px; border-radius: 8px; 
+            transition: all 0.25s ease; margin-bottom: 2px; 
         }
-
         .dropdown-content a:last-child { margin-bottom: 0; }
-
-        .dropdown-content a .menu-desc {
-            display: block;
-            font-size: 11px;
-            color: #6a6a7a;
-            margin-top: 4px;
-            transition: color 0.2s ease;
-        }
-
-        /* Hover & Active Logic */
-        .dropdown-content a:hover {
-            background: rgba(255, 102, 170, 0.1); 
-            color: white;
-        }
-
-        .dropdown-content a.active {
-            background: rgba(255, 102, 170, 0.15);
-            color: white;
-            font-weight: 700;
-        }
-
-        /* Pink Indicator Bar */
+        .dropdown-content a .menu-desc { display: block; font-size: 11px; color: #6a6a7a; margin-top: 4px; transition: color 0.2s ease; }
+        .dropdown-content a:hover { background: rgba(255, 102, 170, 0.1); color: white; }
+        .dropdown-content a.active { background: rgba(255, 102, 170, 0.15); color: white; font-weight: 700; }
+        
         .dropdown-content a::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%) scaleY(0);
-            width: 4px;
-            height: 65%;
-            background: var(--osu-pink);
-            border-radius: 0 4px 4px 0;
+            content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%) scaleY(0);
+            width: 4px; height: 65%; background: var(--osu-pink); border-radius: 0 4px 4px 0;
             transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
         }
+        .dropdown-content a.active::before, .dropdown-content a:hover::before { transform: translateY(-50%) scaleY(1); }
+        .dropdown-content a.active .menu-desc, .dropdown-content a:hover .menu-desc { color: var(--osu-pink); }
 
-        .dropdown-content a.active::before,
-        .dropdown-content a:hover::before {
-            transform: translateY(-50%) scaleY(1);
-        }
-
-        .dropdown-content a.active .menu-desc,
-        .dropdown-content a:hover .menu-desc {
-            color: var(--osu-pink);
-        }
-
-        /* --- CONTENT LAYOUT --- */
-        /* Flex: 1 forces this container to take up remaining height */
+        /* --- LAYOUT --- */
         .container { 
-            flex: 1;
-            width: 100%;
-            max-width: 1200px; 
-            margin: 40px auto; 
-            padding: 0 20px; 
-            box-sizing: border-box;
+            flex: 1; width: 100%; max-width: 1200px; margin: 40px auto; 
+            padding: 0 20px; box-sizing: border-box;
         }
         
         .section-label { color: var(--osu-pink); font-weight: 800; font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 10px; display: block; }
         .section-title { color: white; font-size: 32px; font-weight: 800; margin: 0 0 10px 0; }
-        .section-subtitle { color: var(--text-muted); font-size: 15px; margin-bottom: 40px; }
+        .section-subtitle { color: var(--text-muted); font-size: 15px; margin-bottom: 30px; }
+        .section-divider { width: 100%; height: 1px; background: #3e3e4a; margin: 40px 0; }
+
+        /* --- INSIGHTS WIDGETS --- */
+        .insights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; margin-bottom: 20px; }
+        .insight-card { 
+            background: var(--panel-bg); border-radius: 14px; padding: 25px; 
+            border: 1px solid #3e3e4a; position: relative; overflow: hidden; display: flex; flex-direction: column; 
+            transition: 0.2s ease;
+        }
+        .insight-card:hover { border-color: var(--osu-pink); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .card-header { font-size: 12px; color: var(--osu-pink); font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; }
+
+        /* LINKABLE OVERRIDES */
+        a.link-wrapper { text-decoration: none; color: inherit; display: block; flex-grow: 1; }
+        a.link-wrapper:hover .map-title { color: var(--osu-pink); }
+        a.link-wrapper:hover .grinder-info h3 { color: var(--osu-pink); }
+
+        /* MOST PLAYED MAP WIDGET */
+        .map-card-inner { 
+            background-size: cover; background-position: center; border-radius: 8px; 
+            padding: 20px; position: relative; min-height: 100px; display: flex; 
+            flex-direction: column; justify-content: flex-end; border: 1px solid #444; 
+            height: 100%; box-sizing: border-box;
+        }
+        .map-card-inner::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3)); border-radius: 8px; }
+        .map-title { position: relative; z-index: 5; color: white; font-weight: 800; font-size: 18px; margin: 0; transition: color 0.2s; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .map-players { position: relative; z-index: 5; color: #ffcc22; font-size: 13px; font-weight: 600; margin-top: 5px; }
+
+        /* TOP GRINDER WIDGET */
+        .grinder-profile { display: flex; align-items: center; gap: 15px; height: 100%; }
+        .grinder-avatar { width: 70px; height: 70px; border-radius: 12px; border: 3px solid #ffd700; box-shadow: 0 0 15px rgba(255, 215, 0, 0.3); object-fit: cover; }
+        .grinder-info h3 { margin: 0; font-size: 22px; color: white; transition: color 0.2s; }
+        .grinder-info p { margin: 2px 0 0; font-size: 14px; color: #ffd700; font-weight: 600; }
+
+        /* --- 24 HOUR CHART --- */
+        .chart-wrapper { width: 100%; height: 140px; display: flex; align-items: flex-end; gap: 4px; padding-bottom: 5px; border-bottom: 1px solid #444; margin-top: 10px; }
+        .chart-bar-container { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; height: 100%; position: relative; group; }
+        .chart-bar { 
+            width: 100%; background: var(--osu-pink); border-radius: 4px 4px 0 0; 
+            min-height: 4px; transition: height 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+        .chart-bar:hover { background: #ffd700; cursor: crosshair; }
+        
+        /* Chart Tooltip */
+        .chart-tooltip {
+            position: absolute; bottom: calc(100% + 5px); left: 50%; transform: translateX(-50%);
+            background: #111; color: white; font-size: 11px; padding: 4px 8px; border-radius: 4px;
+            white-space: nowrap; opacity: 0; pointer-events: none; transition: 0.2s; border: 1px solid #444;
+            z-index: 10;
+        }
+        .chart-bar-container:hover .chart-tooltip { opacity: 1; }
+        .chart-labels { display: flex; justify-content: space-between; color: var(--text-muted); font-size: 11px; font-weight: 600; margin-top: 8px; }
 
         /* --- SOCIAL GRID --- */
         .social-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        
         .social-card { 
             background: var(--panel-bg); border-radius: 14px; padding: 30px; 
             border: 1px solid #3e3e4a; text-decoration: none; position: relative;
             transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); overflow: hidden;
             display: flex; flex-direction: column;
         }
-
         .social-card:hover { 
-            transform: translateY(-8px); 
-            border-color: var(--platform-color);
+            transform: translateY(-8px); border-color: var(--platform-color);
             box-shadow: 0 10px 20px rgba(0,0,0,0.3), 0 0 15px rgba(var(--platform-glow), 0.2);
         }
-
-        .card-header { font-size: 12px; color: var(--platform-color); font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 15px; }
+        .social-card .card-header { color: var(--platform-color); }
         .platform-name { color: white; font-size: 24px; font-weight: 800; margin-bottom: 10px; }
         .platform-desc { color: var(--text-muted); font-size: 14px; margin-bottom: 25px; flex-grow: 1; }
-
-        /* --- BUTTONS --- */
         .join-btn { 
             background: #25252e; color: white; border: 1px solid #3e3e4a; 
             padding: 10px; border-radius: 8px; text-align: center;
@@ -227,12 +168,16 @@
         }
         .social-card:hover .join-btn { background: var(--platform-color); border-color: var(--platform-color); color: white; }
 
-        /* Platform Colors & Glows */
         .discord { --platform-color: #5865F2; --platform-glow: 88, 101, 242; }
         .twitter { --platform-color: #1DA1F2; --platform-glow: 29, 161, 242; }
         .twitch  { --platform-color: #9146FF; --platform-glow: 145, 70, 255; }
         .youtube { --platform-color: #FF0000; --platform-glow: 255, 0, 0; }
 
+        /* Footer */
+        footer {
+            background-color: #1a1a1a; color: #ffffff; padding: 15px 10px 30px 10px; 
+            text-align: center; border-top: 4px solid #ff66aa; margin-top: auto; 
+        }
     </style>
 </head>
 <body>
@@ -246,36 +191,62 @@
     </div>
     <div class="dropdown">
         <button class="dropbtn" id="menuBtn">Menu ▼</button>
-<div class="dropdown-content" id="myDropdown">
-    <a href="Test.html">
-        Scores
-        <span class="menu-desc">See what happened today?</span>
-    </a>
-    <a href="rankings.html">
-        Rankings
-        <span class="menu-desc">See player leaderboards</span>
-    </a>
-    <a href="videos.html">
-        Videos
-        <span class="menu-desc">Watch gameplay and highlights</span>
-    </a>
-    <a href="mapping.html">
-        Mapping
-        <span class="menu-desc">Explore beatmap creations</span>
-    </a>
-    <a href="archive.html">
-        Archive
-    <span class="menu-desc">Explore community History</span>
-    </a>
-    <a href="socials.html"  class="active">
-        Socials
-        <span class="menu-desc">Connect with the community</span>
-    </a>
-</div>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="Test.html">Scores<span class="menu-desc">See what happened today?</span></a>
+            <a href="rankings.html">Rankings<span class="menu-desc">See player leaderboards</span></a>
+            <a href="videos.html">Videos<span class="menu-desc">Watch gameplay and highlights</span></a>
+            <a href="mapping.html">Mapping<span class="menu-desc">Explore beatmap creations</span></a>
+            <a href="archive.html">Archive<span class="menu-desc">Explore community History</span></a>
+            <a href="socials.html" class="active">Socials<span class="menu-desc">Connect with the community</span></a>
+        </div>
     </div>
 </header>
 
 <main class="container">
+    <span class="section-label">DAILY PULSE</span>
+    <h1 class="section-title">Community Insights</h1>
+    <p class="section-subtitle" id="pulse-date">Loading today's data...</p>
+
+    <div class="insights-grid">
+        <div class="insight-card" style="grid-column: 1 / -1;">
+            <div class="card-header">📈 24-Hour Activity (Baghdad Time)</div>
+            <div class="chart-wrapper" id="activity-chart">
+                </div>
+            <div class="chart-labels">
+                <span>00:00</span>
+                <span>06:00</span>
+                <span>12:00</span>
+                <span>18:00</span>
+                <span>23:59</span>
+            </div>
+        </div>
+
+        <div class="insight-card">
+            <div class="card-header">🎯 Today's Battleground</div>
+            <a href="#" target="_blank" id="m-link" class="link-wrapper">
+                <div class="map-card-inner" id="m-bg" style="background-image: none;">
+                    <h3 class="map-title" id="m-title">Loading...</h3>
+                    <div class="map-players" id="m-players">-- plays</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="insight-card">
+            <div class="card-header">👑 Top Grinder</div>
+            <a href="#" target="_blank" id="g-link" class="link-wrapper">
+                <div class="grinder-profile">
+                    <img src="" class="grinder-avatar" id="g-avatar" alt="Avatar" style="display: none;">
+                    <div class="grinder-info">
+                        <h3 id="g-name">Loading...</h3>
+                        <p id="g-count">-- scores</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
     <span class="section-label">GET CONNECTED</span>
     <h1 class="section-title">Community Hub</h1>
     <p class="section-subtitle">Join the largest gathering of Iraqi osu! players across all platforms.</p>
@@ -311,17 +282,7 @@
     </div>
 </main>
 
-    <footer style="
-    background-color: #1a1a1a; 
-    color: #ffffff; 
-    padding: 15px 10px 30px 10px; 
-    text-align: center; 
-    border-top: 4px solid #ff66aa; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: -10px; 
-    box-shadow: none; /* Removes any accidental glow */
-    filter: none;     /* Removes any accidental blur/glow */
-">
+<footer>
     <div style="max-width: 1000px; margin: 0 auto;">
         <h3 style="color: #ff66aa; margin-bottom: 5px; margin-top: 5px;">Osu! Iraq Today</h3>
         <p style="margin: 5px 0; font-size: 0.9em; color: #eee;">Built with ❤️ for the Iraqi Community</p>
@@ -337,7 +298,7 @@
         <p style="font-size: 0.8em; color: #aaa; line-height: 1.6;">
             A <strong>non-commercial</strong> osu! community project | Data provided by the <strong>osu! API v2.</strong><br>
             © 2026 Ruybic • Running commit: <span id="footer-commit" style="color: #ff66aa; font-family: monospace;">7472e02</span><br>
-            Last Update: <span id="footer-time">2026-02-27 04:00 UTC</span>
+            Last Update: <span id="footer-time">2026-03-31</span>
         </p>
     </div>
 </footer>
@@ -357,6 +318,136 @@
             dropdown.classList.remove('show');
         }
     };
+
+    // --- INSIGHTS DATA PROCESSING ---
+    // Simulating fetching your JSON file. Replace this string with your actual fetch call.
+    const rawJSON = `{
+      "date": "2026-03-31",
+      "country": "IQ",
+      "generated_at": "2026-03-31T02:25:28.284Z",
+      "scores": [
+        {
+          "user": "xTHE_CRUISERx", "user_id": 38658226, "score_id": 5004086932,
+          "created_at": "2026-03-31T02:00:40Z",
+          "beatmapset": { "id": 1889729, "title": "Non-breath oblige", "cover": "https://assets.ppy.sh/beatmaps/1889729/covers/card.jpg?1671759413" }
+        },
+        {
+          "user": "xTHE_CRUISERx", "user_id": 38658226, "score_id": 5004086933,
+          "created_at": "2026-03-31T03:15:40Z",
+          "beatmapset": { "id": 1889729, "title": "Non-breath oblige", "cover": "https://assets.ppy.sh/beatmaps/1889729/covers/card.jpg?1671759413" }
+        },
+        {
+          "user": "FancyToast", "user_id": 12345678, "score_id": 5004086934,
+          "created_at": "2026-03-31T18:40:40Z",
+          "beatmapset": { "id": 999999, "title": "Some other map", "cover": "https://assets.ppy.sh/beatmaps/1889729/covers/card.jpg?1671759413" }
+        }
+      ]
+    }`;
+
+    function loadInsights() {
+        try {
+            const data = JSON.parse(rawJSON); // Swap this for await fetch(...)
+            document.getElementById('pulse-date').innerText = `Data for: ${data.date}`;
+
+            const scores = data.scores;
+            if(!scores || scores.length === 0) return;
+
+            // 1. Calculate 24-hour activity (Baghdad Time: UTC+3)
+            let hourlyCounts = new Array(24).fill(0);
+            let userCounts = {};
+            let mapCounts = {};
+            
+            scores.forEach(score => {
+                // Time Math
+                const utcDate = new Date(score.created_at);
+                // Get UTC hour and add 3 for Baghdad Time. Modulo 24 keeps it within 0-23
+                const baghdadHour = (utcDate.getUTCHours() + 3) % 24; 
+                hourlyCounts[baghdadHour]++;
+
+                // User Math
+                if(!userCounts[score.user_id]) {
+                    userCounts[score.user_id] = { name: score.user, count: 0 };
+                }
+                userCounts[score.user_id].count++;
+
+                // Map Math
+                if(score.beatmapset && score.beatmapset.id) {
+                    if(!mapCounts[score.beatmapset.id]) {
+                        mapCounts[score.beatmapset.id] = { title: score.beatmapset.title, cover: score.beatmapset.cover, count: 0 };
+                    }
+                    mapCounts[score.beatmapset.id].count++;
+                }
+            });
+
+            // 2. Render Chart
+            renderChart(hourlyCounts);
+
+            // 3. Find Top Grinder
+            let topUser = null;
+            let maxScores = 0;
+            for(const [id, user] of Object.entries(userCounts)) {
+                if(user.count > maxScores) {
+                    maxScores = user.count;
+                    topUser = { id, name: user.name, count: user.count };
+                }
+            }
+
+            if(topUser) {
+                document.getElementById('g-avatar').src = `https://a.ppy.sh/${topUser.id}`;
+                document.getElementById('g-avatar').style.display = "block";
+                document.getElementById('g-name').innerText = topUser.name;
+                document.getElementById('g-count').innerText = `${topUser.count} scores submitted`;
+                document.getElementById('g-link').href = `https://osu.ppy.sh/users/${topUser.id}`;
+            }
+
+            // 4. Find Top Map
+            let topMap = null;
+            let maxMapPlays = 0;
+            for(const [id, map] of Object.entries(mapCounts)) {
+                if(map.count > maxMapPlays) {
+                    maxMapPlays = map.count;
+                    topMap = { id, title: map.title, cover: map.cover, count: map.count };
+                }
+            }
+
+            if(topMap) {
+                document.getElementById('m-bg').style.backgroundImage = `url('${topMap.cover}')`;
+                document.getElementById('m-title').innerText = topMap.title;
+                document.getElementById('m-players').innerText = `${topMap.count} plays recorded`;
+                document.getElementById('m-link').href = `https://osu.ppy.sh/beatmapsets/${topMap.id}`;
+            }
+
+        } catch (err) {
+            console.error("Error loading insights:", err);
+            document.getElementById('pulse-date').innerText = "Failed to load today's data.";
+        }
+    }
+
+    function renderChart(hourlyData) {
+        const chartContainer = document.getElementById('activity-chart');
+        chartContainer.innerHTML = ''; // Clear existing
+        
+        // Find max value to scale the graph heights appropriately
+        const maxVal = Math.max(...hourlyData) || 1; 
+
+        for (let i = 0; i < 24; i++) {
+            const val = hourlyData[i];
+            const heightPercent = val === 0 ? 0 : Math.max(5, (val / maxVal) * 100); // 5% minimum height so the bar is visible if it has data
+            
+            // Format hour string (e.g., 00:00, 14:00)
+            const hourStr = String(i).padStart(2, '0') + ':00';
+            
+            chartContainer.innerHTML += `
+                <div class="chart-bar-container">
+                    <div class="chart-bar" style="height: ${heightPercent}%;"></div>
+                    <div class="chart-tooltip">${hourStr} AST<br>${val} scores</div>
+                </div>
+            `;
+        }
+    }
+
+    // Initialize the widgets
+    loadInsights();
 </script>
 
 </body>

@@ -1,162 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Osu! Iraq Replay Renderer</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>osu! Iraq Replay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/spark-md5/3.0.2/spark-md5.min.js"></script>
+<style>
+:root{
+  --iraq-black:#000000;
+  --iraq-white:#FFFFFF;
+  --iraq-red:#CE1126;
+  --iraq-green:#007A3D;
+  --bg:#05080f;
+  --surface:rgba(255,255,255,0.04);
+  --border:rgba(255,255,255,0.08);
+  --text-primary:#e8eaf0;
+  --text-muted:#5a6075;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--text-primary);font-family:'Rajdhani',sans-serif}
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700;900&display=swap" rel="stylesheet" />
+/* ─── DROP ZONE ─── */
+#drop-zone{
+  position:fixed;inset:0;z-index:50;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;
+  background:var(--bg);
+}
+#drop-zone.hidden{display:none}
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/spark-md5/3.0.2/spark-md5.min.js"></script>
+.flag-bar{
+  position:absolute;top:0;left:0;right:0;
+  display:flex;height:5px;
+}
+.flag-bar span:nth-child(1){flex:1;background:var(--iraq-black)}
+.flag-bar span:nth-child(2){flex:1;background:var(--iraq-white)}
+.flag-bar span:nth-child(3){flex:1;background:var(--iraq-red)}
 
-  <style>
-    :root{
-      --pink:#ff66aa;
-      --red:#ce1126;
-      --green:#007a3d;
-      --bg:#0d111a;
-      --soft:#9aa4bf;
-      --ok:#7de39f;
-      --err:#ff5757;
-    }
-    *{box-sizing:border-box}
-    html,body{
-      margin:0;width:100%;height:100%;overflow:hidden;
-      background:radial-gradient(circle at 20% 20%, #202740, #0d111a 58%);
-      color:#fff;font-family:"Exo 2",sans-serif;
-    }
-    #app{position:relative;width:100%;height:100%}
+.drop-inner{
+  position:relative;
+  width:min(680px,92vw);
+  border:1.5px solid var(--border);
+  border-radius:4px;
+  padding:60px 48px 52px;
+  text-align:center;
+  background:rgba(255,255,255,0.02);
+  transition:border-color .2s,background .2s;
+}
+.drop-inner.dragover{
+  border-color:var(--iraq-red);
+  background:rgba(206,17,38,0.06);
+}
 
-    #drop-zone{
-      position:absolute;inset:16px;z-index:10;
-      border:3px dashed rgba(255,255,255,.23);border-radius:18px;
-      display:flex;flex-direction:column;align-items:center;justify-content:center;
-      text-align:center;padding:20px;
-      background:rgba(4,8,15,.56);
-      transition:.2s;
-    }
-    #drop-zone.dragover{
-      border-color:var(--pink);
-      background:rgba(255,102,170,.09);
-    }
-    .title{
-      margin:0;
-      font-size:clamp(34px,7vw,64px);
-      font-weight:900;letter-spacing:2px;text-transform:uppercase;
-    }
-    .title span{color:var(--pink)}
-    .sub{
-      margin-top:14px;max-width:960px;line-height:1.45;
-      color:var(--soft);font-weight:700;font-size:clamp(14px,2.2vw,20px);
-    }
-    .sub b{color:#fff}
-    .row{
-      margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;align-items:center;
-    }
-    input[type="file"]{display:none}
-    .btn{
-      border:0;border-radius:10px;padding:12px 20px;cursor:pointer;
-      font:800 14px "Exo 2",sans-serif;letter-spacing:.4px;text-transform:uppercase;
-      transition:.15s;
-    }
-    .btn:hover{transform:translateY(-1px)}
-    .btn-main{background:var(--pink);color:#fff}
-    .btn-light{background:#fff;color:#111}
-    #loading{
-      margin-top:12px;display:none;color:var(--pink);
-      font-size:20px;font-weight:900;animation:pulse 1.2s infinite;
-    }
-    @keyframes pulse{50%{opacity:.55}}
-    #status{
-      margin-top:10px;min-height:20px;max-width:980px;
-      font:700 14px/1.4 "Exo 2",sans-serif;color:var(--soft);
-    }
-    #status.ok{color:var(--ok)}
-    #status.error{color:var(--err)}
+.wordmark{
+  font-family:'Orbitron',sans-serif;
+  font-weight:900;
+  font-size:clamp(28px,6vw,52px);
+  letter-spacing:6px;
+  text-transform:uppercase;
+  color:var(--text-primary);
+  line-height:1;
+  margin-bottom:6px;
+}
+.wordmark em{color:var(--iraq-red);font-style:normal}
 
-    #player{display:none;position:relative;width:100%;height:100%}
-    #canvas{display:block;width:100%;height:100%;background:#000}
+.flag-stripe{
+  display:flex;height:3px;width:180px;margin:18px auto 28px;border-radius:2px;overflow:hidden;
+}
+.flag-stripe span:nth-child(1){flex:1;background:var(--iraq-black)}
+.flag-stripe span:nth-child(2){flex:1;background:var(--iraq-white)}
+.flag-stripe span:nth-child(3){flex:1;background:var(--iraq-red)}
 
-    .meta{
-      position:absolute;top:14px;left:14px;z-index:8;
-      max-width:min(86vw,620px);padding:9px 11px;
-      background:rgba(0,0,0,.45);backdrop-filter:blur(4px);
-      border:1px solid rgba(255,255,255,.2);border-radius:10px;
-    }
-    .meta-main{
-      font:800 15px/1.2 "Exo 2",sans-serif;
-      white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-    }
-    .meta-sub{
-      margin-top:3px;color:#b8c1da;font:700 12px/1.2 "Exo 2",sans-serif;
-      white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-    }
+.drop-hint{
+  font-size:15px;font-weight:600;color:var(--text-muted);
+  line-height:1.7;margin-bottom:28px;
+}
+.drop-hint b{color:var(--text-primary)}
+.drop-hint code{
+  background:rgba(255,255,255,0.07);
+  border:1px solid var(--border);
+  border-radius:3px;padding:1px 6px;
+  font-family:monospace;font-size:13px;
+  color:var(--iraq-green);
+}
 
-    .controls{
-      position:absolute;left:0;right:0;bottom:0;z-index:12;
-      display:flex;gap:10px;align-items:center;flex-wrap:wrap;
-      padding:42px 14px 14px;
-      background:linear-gradient(180deg,transparent,rgba(0,0,0,.95) 65%);
-    }
-    .cbtn{
-      border:2px solid rgba(255,255,255,.9);border-radius:8px;
-      background:transparent;color:#fff;cursor:pointer;
-      padding:10px 14px;font:800 12px "Exo 2",sans-serif;
-      text-transform:uppercase;letter-spacing:.3px;
-    }
-    .cbtn:hover{background:#fff;color:#111}
-    .cbtn:disabled{opacity:.45;cursor:not-allowed}
-    #export-btn{border-color:var(--red);color:var(--red);margin-left:auto}
-    #export-btn.active{background:var(--red);color:#fff}
+.btn-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn{
+  border:0;border-radius:3px;cursor:pointer;
+  font:700 13px 'Rajdhani',sans-serif;
+  letter-spacing:1.5px;text-transform:uppercase;
+  padding:11px 24px;transition:.15s;
+}
+.btn-primary{background:var(--iraq-red);color:#fff}
+.btn-primary:hover{background:#a80e1e}
+.btn-ghost{background:transparent;color:var(--text-muted);border:1.5px solid var(--border)}
+.btn-ghost:hover{border-color:rgba(255,255,255,0.3);color:#fff}
+input[type="file"]{display:none}
 
-    .timeline{
-      flex:1;min-width:180px;height:6px;border-radius:999px;
-      appearance:none;background:rgba(255,255,255,.25);
-    }
-    .timeline::-webkit-slider-thumb{
-      appearance:none;width:16px;height:16px;border-radius:50%;
-      background:var(--pink);border:2px solid #fff;
-    }
-    #time{
-      min-width:120px;text-align:right;
-      font:700 14px "Exo 2",sans-serif;
-      font-variant-numeric:tabular-nums;
-    }
-  </style>
+#status{
+  margin-top:20px;min-height:20px;
+  font:600 13px/1.5 'Rajdhani',sans-serif;
+  letter-spacing:.5px;color:var(--text-muted);
+}
+#status.ok{color:var(--iraq-green)}
+#status.err{color:var(--iraq-red)}
+
+#loading-bar{
+  position:absolute;bottom:0;left:0;right:0;height:2px;
+  background:rgba(255,255,255,0.05);border-radius:0 0 4px 4px;overflow:hidden;
+  display:none;
+}
+#loading-bar.visible{display:block}
+#loading-fill{
+  height:100%;width:30%;background:linear-gradient(90deg,var(--iraq-green),var(--iraq-red));
+  animation:loading-slide 1.4s ease-in-out infinite;
+}
+@keyframes loading-slide{
+  0%{transform:translateX(-100%)}
+  100%{transform:translateX(400%)}
+}
+
+/* ─── PLAYER ─── */
+#player{position:fixed;inset:0;display:none}
+#player.visible{display:block}
+canvas{display:block;width:100%;height:100%}
+
+/* ─── META overlay ─── */
+#meta{
+  position:fixed;top:16px;left:16px;z-index:20;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,0.08);
+  border-left:3px solid var(--iraq-red);
+  border-radius:3px;
+  padding:10px 16px;
+  max-width:min(70vw,440px);
+}
+#meta-title{font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;letter-spacing:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#meta-sub{margin-top:3px;font-size:13px;font-weight:600;color:var(--text-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#meta-player{margin-top:2px;font-size:12px;font-weight:600;color:var(--iraq-green);letter-spacing:.5px}
+
+/* ─── SCORE HUD ─── */
+#score-hud{
+  position:fixed;top:16px;right:16px;z-index:20;
+  text-align:right;pointer-events:none;
+}
+#hud-score{
+  font-family:'Orbitron',sans-serif;font-size:clamp(22px,4vw,36px);
+  font-weight:900;letter-spacing:-1px;color:#fff;
+  text-shadow:0 0 30px rgba(255,255,255,0.2);
+}
+#hud-acc{font-size:16px;font-weight:700;color:rgba(255,255,255,0.55);margin-top:-4px}
+
+/* ─── BOTTOM CONTROLS ─── */
+#controls{
+  position:fixed;left:0;right:0;bottom:0;z-index:20;
+  padding:50px 20px 18px;
+  background:linear-gradient(transparent,rgba(0,0,0,0.92) 55%);
+  display:flex;flex-direction:column;gap:10px;
+}
+.seek-row{display:flex;align-items:center;gap:12px}
+.time{font:600 13px 'Rajdhani',sans-serif;color:var(--text-muted);min-width:105px}
+.time.right{text-align:right}
+
+/* Custom range */
+input[type=range]{
+  -webkit-appearance:none;appearance:none;
+  flex:1;height:4px;border-radius:2px;cursor:pointer;
+  background:rgba(255,255,255,0.12);outline:none;
+}
+input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  width:14px;height:14px;border-radius:50%;
+  background:#fff;border:2px solid var(--iraq-red);cursor:pointer;
+  transition:.1s;
+}
+input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.25)}
+
+.ctrl-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.cbtn{
+  border:1.5px solid rgba(255,255,255,0.2);border-radius:3px;
+  background:transparent;color:#fff;cursor:pointer;
+  padding:8px 16px;
+  font:700 12px 'Rajdhani',sans-serif;
+  letter-spacing:1px;text-transform:uppercase;
+  transition:.12s;
+}
+.cbtn:hover{border-color:#fff;background:rgba(255,255,255,0.08)}
+.cbtn:disabled{opacity:.35;cursor:not-allowed}
+#cbtn-export{border-color:var(--iraq-green);color:var(--iraq-green);margin-left:auto}
+#cbtn-export:hover{background:rgba(0,122,61,0.2)}
+#cbtn-export.active{background:var(--iraq-green);color:#fff}
+#cbtn-reset{border-color:var(--iraq-red);color:var(--iraq-red)}
+#cbtn-reset:hover{background:rgba(206,17,38,0.2)}
+
+/* ─── COMBO HUD bottom-left ─── */
+#combo-hud{
+  position:fixed;bottom:100px;left:20px;z-index:20;
+  pointer-events:none;
+}
+#hud-combo{
+  font-family:'Orbitron',sans-serif;font-size:clamp(28px,5vw,52px);
+  font-weight:900;color:var(--iraq-green);
+  text-shadow:0 0 24px rgba(0,122,61,0.5);
+  transition:transform .05s;
+}
+#hud-combo.pop{transform:scale(1.18)}
+
+/* ─── KEY OVERLAY ─── */
+#keys{
+  position:fixed;bottom:100px;right:20px;z-index:20;
+  display:flex;flex-direction:column;gap:6px;pointer-events:none;
+}
+.key-box{
+  width:44px;height:44px;
+  display:flex;align-items:center;justify-content:center;
+  font:700 11px 'Rajdhani',sans-serif;letter-spacing:1px;
+  border:1.5px solid rgba(255,255,255,0.12);
+  border-radius:3px;color:rgba(255,255,255,0.2);
+  background:rgba(0,0,0,0.5);transition:.06s;
+}
+.key-box.active{
+  border-color:#fff;color:#000;
+  background:#fff;
+  box-shadow:0 0 12px rgba(255,255,255,0.5);
+}
+
+/* ─── DIFF PICKER MODAL ─── */
+#diff-modal{
+  position:fixed;inset:0;z-index:60;
+  background:rgba(0,0,0,0.88);
+  display:none;flex-direction:column;
+  align-items:center;justify-content:center;gap:16px;
+  padding:20px;
+}
+#diff-modal.visible{display:flex}
+.modal-box{
+  background:#0d1120;
+  border:1px solid rgba(255,255,255,0.1);
+  border-top:3px solid var(--iraq-red);
+  border-radius:4px;padding:32px 36px;
+  width:min(520px,95vw);
+  max-height:80vh;overflow-y:auto;
+}
+.modal-title{
+  font-family:'Orbitron',sans-serif;font-size:16px;font-weight:700;
+  letter-spacing:2px;margin-bottom:6px;
+}
+.modal-hint{font-size:13px;color:var(--text-muted);margin-bottom:20px}
+.diff-list{display:flex;flex-direction:column;gap:6px}
+.diff-item{
+  display:flex;align-items:center;gap:12px;
+  padding:12px 14px;border-radius:3px;cursor:pointer;
+  border:1px solid rgba(255,255,255,0.06);
+  background:rgba(255,255,255,0.02);
+  transition:.12s;
+}
+.diff-item:hover{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.15)}
+.diff-item.match{border-color:var(--iraq-green);background:rgba(0,122,61,0.08)}
+.diff-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.diff-name{font-size:15px;font-weight:700;flex:1}
+.diff-badge{
+  font-size:11px;font-weight:700;letter-spacing:1px;
+  padding:2px 8px;border-radius:2px;
+  background:rgba(0,122,61,0.25);color:var(--iraq-green);
+  border:1px solid rgba(0,122,61,0.4);
+}
+</style>
 </head>
 <body>
-<div id="app">
-  <div id="drop-zone">
-    <h1 class="title">OSU! <span>IRAQ</span> TODAY</h1>
-    <p class="sub">
-      Drop <b>.osr only</b> if map is cached.
-      First time per map: drop <b>.osr + .osz</b> together, then replay-only works with song.
-    </p>
-    <div class="row">
-      <label>
-        <input id="file-input" type="file" multiple accept=".osr,.osz" />
-        <span class="btn btn-main">Browse Files</span>
-      </label>
-      <button id="reset-btn" class="btn btn-light" type="button">Reset</button>
-    </div>
-    <div id="loading">Loading...</div>
-    <div id="status"></div>
-  </div>
 
-  <div id="player">
-    <canvas id="canvas"></canvas>
-    <div class="meta">
-      <div id="meta-main" class="meta-main">No replay loaded</div>
-      <div id="meta-sub" class="meta-sub">Drop files to start</div>
+<!-- ─── DROP ZONE ─── -->
+<div id="drop-zone">
+  <div class="flag-bar"><span></span><span></span><span></span></div>
+  <div class="drop-inner" id="drop-inner">
+    <div class="wordmark">osu! <em>Iraq</em></div>
+    <div class="flag-stripe"><span></span><span></span><span></span></div>
+    <p class="drop-hint">
+      Drop your <code>.osr</code> + <code>.osz</code> files here<br>
+      (or <b>.osr alone</b> if the map was previously cached)
+    </p>
+    <div class="btn-row">
+      <label>
+        <input id="file-input" type="file" multiple accept=".osr,.osz"/>
+        <span class="btn btn-primary">Browse Files</span>
+      </label>
     </div>
-    <div class="controls">
-      <button id="play-btn" class="cbtn" type="button">Play</button>
-      <input id="seek" class="timeline" type="range" min="0" max="100" value="0" step="0.01" />
-      <span id="time">0:00 / 0:00</span>
-      <button id="export-btn" class="cbtn" type="button">Export Video</button>
+    <div id="status"></div>
+    <div id="loading-bar"><div id="loading-fill"></div></div>
+  </div>
+</div>
+
+<!-- ─── DIFF PICKER ─── -->
+<div id="diff-modal">
+  <div class="modal-box">
+    <div class="modal-title">Select Difficulty</div>
+    <div class="modal-hint" id="modal-hint">The replay's exact map couldn't be found. Select a difficulty:</div>
+    <div class="diff-list" id="diff-list"></div>
+  </div>
+</div>
+
+<!-- ─── PLAYER ─── -->
+<div id="player">
+  <canvas id="canvas"></canvas>
+  <div id="meta">
+    <div id="meta-title">—</div>
+    <div id="meta-sub">—</div>
+    <div id="meta-player">—</div>
+  </div>
+  <div id="score-hud">
+    <div id="hud-score">00,000,000</div>
+    <div id="hud-acc">100.00%</div>
+  </div>
+  <div id="combo-hud"><div id="hud-combo">0x</div></div>
+  <div id="keys">
+    <div class="key-box" id="k1">K1</div>
+    <div class="key-box" id="k2">K2</div>
+    <div class="key-box" id="k3">M1</div>
+    <div class="key-box" id="k4">M2</div>
+  </div>
+  <div id="controls">
+    <div class="seek-row">
+      <span class="time" id="time-cur">0:00</span>
+      <input type="range" id="seek" min="0" max="100" value="0" step="0.01"/>
+      <span class="time right" id="time-dur">0:00</span>
+    </div>
+    <div class="ctrl-row">
+      <button class="cbtn" id="cbtn-play">▶ Play</button>
+      <button class="cbtn" id="cbtn-reset">✕ Reset</button>
+      <span id="ctrl-status" style="font:600 12px 'Rajdhani',sans-serif;color:var(--text-muted);letter-spacing:.5px"></span>
+      <button class="cbtn" id="cbtn-export">⬡ Export WebM</button>
     </div>
   </div>
 </div>
@@ -164,812 +340,1134 @@
 <script>
 "use strict";
 
-/* ---------- Constants ---------- */
+/* ════════════════════════════════════════
+   CONSTANTS
+════════════════════════════════════════ */
 const FIELD = { w: 512, h: 384 };
-const DB_NAME = "osu_replay_cache_v2";
+const OSU_COLORS = [
+  "#CE1126", // Iraq red
+  "#007A3D", // Iraq green
+  "#FFFFFF", // Iraq white
+  "#CE1126",
+  "#007A3D",
+  "#FFFFFF",
+  "#CE1126",
+  "#007A3D",
+];
+
+const DB_NAME  = "osu_iraq_cache_v1";
 const DB_STORE = "maps";
 
-/* ---------- State ---------- */
-const state = {
+/* ════════════════════════════════════════
+   STATE
+════════════════════════════════════════ */
+const S = {
   loading: false,
   playing: false,
   exporting: false,
   raf: 0,
-  lastTime: 0,
 
-  replayFrames: [],
-  mapObjects: [],
-  replayStats: null,
-  mapInfo: null,
+  replayFrames: [],  // {time,x,y,keys}
+  mapObjects:   [],  // parsed hit objects
+  replayMeta:   null,
+  mapInfo:      null,
 
-  audio: new Audio(),
-  audioUrl: "",
-  audioCtx: null,
-  audioSource: null,
-  audioDest: null,
+  // runtime HUD state (driven by replay keys)
+  score: 0,
+  combo: 0,
+  acc: 100,
+  k1: false, k2: false, k3: false, k4: false,
 
-  recorder: null,
-  chunks: [],
+  trailPts: [],
 
-  lzmaPromise: null
+  audio:      new Audio(),
+  audioUrl:   "",
+  audioCtx:   null,
+  audioSrc:   null,
+  audioDest:  null,
+
+  recorder:   null,
+  chunks:     [],
+
+  lzmaLoaded: false,
 };
 
-/* ---------- Elements ---------- */
-const el = {
-  dropZone: document.getElementById("drop-zone"),
-  fileInput: document.getElementById("file-input"),
-  resetBtn: document.getElementById("reset-btn"),
-  loading: document.getElementById("loading"),
-  status: document.getElementById("status"),
+/* ════════════════════════════════════════
+   CANVAS
+════════════════════════════════════════ */
+const cvs = document.getElementById("canvas");
+const ctx = cvs.getContext("2d", { alpha: false, willReadFrequently: false });
 
-  player: document.getElementById("player"),
-  canvas: document.getElementById("canvas"),
-  metaMain: document.getElementById("meta-main"),
-  metaSub: document.getElementById("meta-sub"),
+function resizeCanvas(){
+  cvs.width  = window.innerWidth;
+  cvs.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener("resize", () => { resizeCanvas(); renderFrame(S.audio.currentTime || 0); });
 
-  playBtn: document.getElementById("play-btn"),
-  seek: document.getElementById("seek"),
-  time: document.getElementById("time"),
-  exportBtn: document.getElementById("export-btn")
-};
+/* ════════════════════════════════════════
+   PLAYFIELD MATH
+════════════════════════════════════════ */
+function playfieldMetrics(){
+  const margin = 60;
+  const W = cvs.width, H = cvs.height;
+  const scale = Math.min((W - margin*2) / FIELD.w, (H - margin*2) / FIELD.h);
+  const ox = (W - FIELD.w * scale) / 2;
+  const oy = (H - FIELD.h * scale) / 2;
+  return { scale, ox, oy };
+}
+function osuToCanvas(x, y){
+  const {scale, ox, oy} = playfieldMetrics();
+  return [ox + x * scale, oy + y * scale];
+}
+function arPreempt(ar){
+  if (ar < 5)  return (1800 - 120 * ar) / 1000;
+  if (ar === 5) return 1.2;
+  return (1200 - 150 * (ar - 5)) / 1000;
+}
+function circleDiameter(cs){ return 54.4 - 4.48 * cs; }
+function circleRadius(cs){ return circleDiameter(cs) / 2; }
 
-const ctx = el.canvas.getContext("2d", { alpha: false });
-const css = getComputedStyle(document.documentElement);
-const C = {
-  pink: css.getPropertyValue("--pink").trim() || "#ff66aa",
-  red: css.getPropertyValue("--red").trim() || "#ce1126",
-  green: css.getPropertyValue("--green").trim() || "#007a3d"
-};
-
-/* ---------- UI helpers ---------- */
-function setStatus(msg, type = "") {
-  el.status.className = type;
-  el.status.textContent = msg;
-}
-function setLoading(on, text = "Loading...") {
-  state.loading = on;
-  el.loading.style.display = on ? "block" : "none";
-  el.loading.textContent = text;
-  el.playBtn.disabled = on;
-  el.exportBtn.disabled = on;
-}
-function formatTime(sec) {
-  const t = Number.isFinite(sec) && sec > 0 ? sec : 0;
-  const m = Math.floor(t / 60);
-  const s = Math.floor(t % 60).toString().padStart(2, "0");
-  return `${m}:${s}`;
-}
-function updateTime() {
-  const cur = state.audio.currentTime || 0;
-  const dur = Number.isFinite(state.audio.duration) ? state.audio.duration : 0;
-  el.time.textContent = `${formatTime(cur)} / ${formatTime(dur)}`;
-}
-function updateExportBtn() {
-  if (state.exporting) {
-    el.exportBtn.textContent = "Stop Export";
-    el.exportBtn.classList.add("active");
-  } else {
-    el.exportBtn.textContent = "Export Video";
-    el.exportBtn.classList.remove("active");
-  }
-}
-function resizeCanvas() {
-  el.canvas.width = window.innerWidth;
-  el.canvas.height = window.innerHeight;
-  draw(state.audio.currentTime || 0);
-}
-
-/* ---------- LZMA loader ---------- */
-function hasLZMA() {
-  return !!(window.LZMA && typeof window.LZMA.decompress === "function");
-}
-function loadScript(url) {
-  return new Promise((resolve, reject) => {
-    const s = document.createElement("script");
-    s.src = url;
-    s.async = true;
-    s.onload = resolve;
-    s.onerror = () => reject(new Error(`Failed to load ${url}`));
-    document.head.appendChild(s);
-  });
-}
-async function ensureLZMA() {
+/* ════════════════════════════════════════
+   LZMA LOADER
+════════════════════════════════════════ */
+function hasLZMA(){ return !!(window.LZMA && typeof window.LZMA.decompress === "function"); }
+async function ensureLZMA(){
   if (hasLZMA()) return;
-  if (state.lzmaPromise) return state.lzmaPromise;
-
   const urls = [
     "https://cdn.jsdelivr.net/npm/lzma@2.3.2/src/lzma_worker-min.js",
     "https://unpkg.com/lzma@2.3.2/src/lzma_worker-min.js",
     "https://cdn.jsdelivr.net/npm/lzma@2.3.2/src/lzma_worker.js"
   ];
-
-  state.lzmaPromise = (async () => {
-    for (const url of urls) {
-      try {
-        await loadScript(url);
-        if (hasLZMA()) return;
-      } catch (_) {}
-    }
-    throw new Error("Could not load LZMA decoder.");
-  })();
-
-  return state.lzmaPromise;
+  for (const u of urls){
+    await new Promise((res, rej) => {
+      const s = document.createElement("script");
+      s.src = u; s.onload = res; s.onerror = rej;
+      document.head.appendChild(s);
+    }).catch(() => {});
+    if (hasLZMA()) return;
+  }
+  throw new Error("Could not load LZMA decoder. Check network.");
 }
 
-/* ---------- IndexedDB cache ---------- */
-function openDB() {
-  return new Promise((resolve, reject) => {
+/* ════════════════════════════════════════
+   INDEXEDDB CACHE
+════════════════════════════════════════ */
+async function dbOpen(){
+  return new Promise((res, rej) => {
     const req = indexedDB.open(DB_NAME, 1);
     req.onupgradeneeded = () => {
-      const db = req.result;
-      if (!db.objectStoreNames.contains(DB_STORE)) db.createObjectStore(DB_STORE, { keyPath: "hash" });
+      if (!req.result.objectStoreNames.contains(DB_STORE))
+        req.result.createObjectStore(DB_STORE, { keyPath: "hash" });
     };
-    req.onsuccess = () => resolve(req.result);
-    req.onerror = () => reject(req.error || new Error("IndexedDB open failed"));
+    req.onsuccess = () => res(req.result);
+    req.onerror = () => rej(req.error);
   });
 }
-async function cacheSet(hash, oszBlob) {
+async function dbSet(hash, blob){
   if (!("indexedDB" in window)) return;
-  const db = await openDB();
-  await new Promise((resolve, reject) => {
+  const db = await dbOpen();
+  await new Promise((res, rej) => {
     const tx = db.transaction(DB_STORE, "readwrite");
-    tx.objectStore(DB_STORE).put({ hash, oszBlob, updatedAt: Date.now() });
-    tx.oncomplete = resolve;
-    tx.onerror = () => reject(tx.error || new Error("IndexedDB write failed"));
+    tx.objectStore(DB_STORE).put({ hash, blob, ts: Date.now() });
+    tx.oncomplete = res; tx.onerror = () => rej(tx.error);
   });
   db.close();
 }
-async function cacheGet(hash) {
+async function dbGet(hash){
   if (!("indexedDB" in window)) return null;
-  const db = await openDB();
-  const row = await new Promise((resolve, reject) => {
+  const db = await dbOpen();
+  const row = await new Promise((res, rej) => {
     const tx = db.transaction(DB_STORE, "readonly");
     const req = tx.objectStore(DB_STORE).get(hash);
-    req.onsuccess = () => resolve(req.result || null);
-    req.onerror = () => reject(req.error || new Error("IndexedDB read failed"));
+    req.onsuccess = () => res(req.result || null);
+    req.onerror = () => rej(req.error);
   });
   db.close();
   return row;
 }
 
-/* ---------- Audio graph ---------- */
-function ensureAudioGraph() {
-  if (state.audioCtx) return;
-  const AC = window.AudioContext || window.webkitAudioContext;
-  if (!AC) throw new Error("Web Audio API not supported");
-
-  state.audioCtx = new AC();
-  state.audioSource = state.audioCtx.createMediaElementSource(state.audio);
-  state.audioDest = state.audioCtx.createMediaStreamDestination();
-  state.audioSource.connect(state.audioCtx.destination);
-  state.audioSource.connect(state.audioDest);
-}
-
-/* ---------- Reset ---------- */
-function clearApp() {
-  if (state.raf) {
-    cancelAnimationFrame(state.raf);
-    state.raf = 0;
-  }
-  state.audio.pause();
-  state.playing = false;
-  state.exporting = false;
-  updateExportBtn();
-
-  if (state.recorder && state.recorder.state !== "inactive") {
-    try { state.recorder.stop(); } catch (_) {}
-  }
-  state.recorder = null;
-  state.chunks = [];
-
-  if (state.audioUrl) {
-    URL.revokeObjectURL(state.audioUrl);
-    state.audioUrl = "";
-  }
-
-  if (state.audioSource) { try { state.audioSource.disconnect(); } catch (_) {} state.audioSource = null; }
-  if (state.audioDest) { try { state.audioDest.disconnect(); } catch (_) {} state.audioDest = null; }
-  if (state.audioCtx) { try { state.audioCtx.close(); } catch (_) {} state.audioCtx = null; }
-
-  state.audio = new Audio();
-  state.audio.preload = "auto";
-
-  state.replayFrames = [];
-  state.mapObjects = [];
-  state.replayStats = null;
-  state.mapInfo = null;
-  state.lastTime = 0;
-
-  el.player.style.display = "none";
-  el.dropZone.style.display = "flex";
-  el.seek.max = "100";
-  el.seek.value = "0";
-  updateTime();
-  draw(0);
-}
-
-/* ---------- Parsers ---------- */
-function normMd5(v) {
-  return String(v || "").trim().toLowerCase();
-}
-function parseOSR(buffer) {
-  const view = new DataView(buffer);
-  const decoder = new TextDecoder("utf-8");
+/* ════════════════════════════════════════
+   OSR PARSER
+════════════════════════════════════════ */
+function parseOSR(buf){
+  const view = new DataView(buf);
+  const dec  = new TextDecoder("utf-8");
   let o = 0;
 
-  function need(n) { if (o + n > view.byteLength) throw new Error("Invalid .osr (EOF)"); }
-  function b() { need(1); const v = view.getUint8(o); o += 1; return v; }
-  function u16() { need(2); const v = view.getUint16(o, true); o += 2; return v; }
-  function i32() { need(4); const v = view.getInt32(o, true); o += 4; return v; }
-  function u32() { need(4); const v = view.getUint32(o, true); o += 4; return v; }
-
-  function s() {
-    const m = b();
+  const u8  = () => { const v = view.getUint8(o);         o+=1; return v; };
+  const i32 = () => { const v = view.getInt32(o, true);   o+=4; return v; };
+  const u32 = () => { const v = view.getUint32(o, true);  o+=4; return v; };
+  const u16 = () => { const v = view.getUint16(o, true);  o+=2; return v; };
+  const str = () => {
+    const m = u8();
     if (m === 0x00) return "";
-    if (m !== 0x0b) throw new Error("Invalid .osr string marker");
+    if (m !== 0x0b) throw new Error(".osr string marker invalid");
     let len = 0, shift = 0;
-    while (true) {
-      const x = b();
-      len |= (x & 0x7f) << shift;
-      if ((x & 0x80) === 0) break;
-      shift += 7;
-      if (shift > 35) throw new Error("Invalid .osr string length");
+    while (true){
+      const x = u8(); len |= (x & 0x7f) << shift;
+      if (!(x & 0x80)) break; shift += 7;
     }
-    need(len);
-    const out = decoder.decode(new Uint8Array(buffer, o, len));
-    o += len;
-    return out;
-  }
-
-  const mode = b();
-  const version = i32();
-  const mapMd5 = s();
-  const player = s();
-  const replayMd5 = s();
-
-  const count300 = u16();
-  const count100 = u16();
-  const count50 = u16();
-  const countGeki = u16();
-  const countKatu = u16();
-  const countMiss = u16();
-  const score = u32();
-  const maxCombo = u16();
-  const perfect = b();
-  const mods = i32();
-  const lifeBar = s();
-
-  need(8); o += 8; // timestamp
-  const len = i32();
-  if (len < 0) throw new Error("Invalid replay payload length");
-  need(len);
-  const compressedData = new Uint8Array(buffer, o, len);
-
-  return {
-    mode, version, mapMd5, player, replayMd5,
-    count300, count100, count50, countGeki, countKatu, countMiss,
-    score, maxCombo, perfect, mods, lifeBar, compressedData
+    const s = dec.decode(new Uint8Array(buf, o, len)); o += len; return s;
   };
+
+  const mode    = u8();
+  /* version */     i32();
+  const mapMd5  = str().toLowerCase().trim();
+  const player  = str();
+  /* replayMd5 */ str();
+  const n300    = u16();
+  const n100    = u16();
+  const n50     = u16();
+  /* geki */     u16();
+  /* katu */     u16();
+  const miss    = u16();
+  const score   = u32();
+  const maxCombo= u16();
+  /* perfect */  u8();
+  const mods    = i32();
+  /* lifebar */  str();
+  /* timestamp */ o += 8;
+  const cLen    = i32();
+  if (cLen < 0) throw new Error("Invalid replay data length");
+  const compressed = new Uint8Array(buf, o, cLen);
+
+  return { mode, mapMd5, player, n300, n100, n50, miss, score, maxCombo, mods, compressed };
 }
-function parseReplayText(text) {
+
+/* ════════════════════════════════════════
+   REPLAY FRAME DECODER
+════════════════════════════════════════ */
+function parseReplayData(text){
   const frames = [];
   let ms = 0;
-  const chunks = String(text || "").split(",");
-  for (const raw of chunks) {
-    if (!raw) continue;
-    const p = raw.split("|");
-    if (p.length < 4) continue;
-
-    const delta = Number(p[0]);
-    if (!Number.isFinite(delta)) continue;
-    if (delta < 0) continue; // ignores seed frame like -12345|0|0|...
+  for (const chunk of String(text||"").split(",")){
+    if (!chunk) continue;
+    const parts = chunk.split("|");
+    if (parts.length < 4) continue;
+    const delta = Number(parts[0]);
+    if (!Number.isFinite(delta) || delta < 0) continue;
     ms += delta;
-
-    const x = Number(p[1]);
-    const y = Number(p[2]);
+    const x    = Number(parts[1]);
+    const y    = Number(parts[2]);
+    const keys = Number(parts[3]) | 0;
     if (!Number.isFinite(x) || !Number.isFinite(y)) continue;
-
-    if (x < -32 || x > 544 || y < -32 || y > 416) continue;
     frames.push({
       time: ms / 1000,
       x: Math.max(0, Math.min(FIELD.w, x)),
-      y: Math.max(0, Math.min(FIELD.h, y))
+      y: Math.max(0, Math.min(FIELD.h, y)),
+      keys
     });
   }
   return frames;
 }
-function decodeReplay(compressed) {
-  if (!hasLZMA()) throw new Error("LZMA not loaded");
-  return new Promise((resolve, reject) => {
-    window.LZMA.decompress(compressed, (result, error) => {
-      if (error) {
-        reject(new Error(typeof error === "string" ? error : "Replay decompression failed"));
-        return;
-      }
+
+async function decodeReplay(compressed){
+  await ensureLZMA();
+  return new Promise((res, rej) => {
+    window.LZMA.decompress(compressed, (result, err) => {
+      if (err) { rej(new Error("Replay decompression failed: " + err)); return; }
       let text = "";
       if (typeof result === "string") text = result;
-      else if (result instanceof Uint8Array || Array.isArray(result)) text = new TextDecoder("utf-8").decode(new Uint8Array(result));
-      else text = String(result ?? "");
-      const frames = parseReplayText(text);
-      if (!frames.length) {
-        reject(new Error("Replay decoded but no cursor frames detected"));
-        return;
-      }
-      resolve(frames);
+      else text = new TextDecoder("utf-8").decode(new Uint8Array(result));
+      const frames = parseReplayData(text);
+      if (!frames.length) { rej(new Error("No cursor frames in replay")); return; }
+      res(frames);
     });
   });
 }
-function parseOSU(text) {
+
+/* ════════════════════════════════════════
+   OSU FILE PARSER
+════════════════════════════════════════ */
+function parseOSU(text){
   const out = {
-    general: { audioFilename: "" },
-    metadata: { artist: "", title: "", version: "" },
-    diff: { cs: 4, ar: 5 },
+    general:  { audioFilename: "" },
+    metadata: { artist: "", title: "", creator: "", version: "" },
+    diff:     { cs: 4, ar: 5, od: 8, hp: 5 },
+    timing:   [],
     hitObjects: []
   };
-  const lines = String(text || "").split(/\r?\n/);
+  const lines = String(text||"").split(/\r?\n/);
   let sec = "";
-
-  for (const raw of lines) {
+  for (const raw of lines){
     const line = raw.trim();
     if (!line || line.startsWith("//")) continue;
+    if (line.startsWith("[") && line.endsWith("]")){ sec = line; continue; }
 
-    if (line.startsWith("[") && line.endsWith("]")) {
-      sec = line;
-      continue;
-    }
-
-    if (sec === "[General]" || sec === "[Metadata]" || sec === "[Difficulty]") {
-      const idx = line.indexOf(":");
-      if (idx > 0) {
-        const key = line.slice(0, idx).trim();
-        const value = line.slice(idx + 1).trim();
-
-        if (sec === "[General]" && key === "AudioFilename") out.general.audioFilename = value;
-        if (sec === "[Metadata]") {
-          if (key === "Artist") out.metadata.artist = value;
-          else if (key === "Title") out.metadata.title = value;
-          else if (key === "Version") out.metadata.version = value;
-        }
-        if (sec === "[Difficulty]") {
-          if (key === "CircleSize") out.diff.cs = Number(value) || out.diff.cs;
-          else if (key === "ApproachRate") out.diff.ar = Number(value) || out.diff.ar;
-        }
+    if ([`[General]`,`[Metadata]`,`[Difficulty]`].includes(sec)){
+      const ci = line.indexOf(":");
+      if (ci < 0) continue;
+      const k = line.slice(0, ci).trim();
+      const v = line.slice(ci + 1).trim();
+      if (sec === "[General]"   && k === "AudioFilename") out.general.audioFilename = v;
+      if (sec === "[Metadata]"){
+        if (k === "Artist")   out.metadata.artist   = v;
+        if (k === "Title")    out.metadata.title    = v;
+        if (k === "Creator")  out.metadata.creator  = v;
+        if (k === "Version")  out.metadata.version  = v;
+      }
+      if (sec === "[Difficulty]"){
+        if (k === "CircleSize")   out.diff.cs = parseFloat(v)||out.diff.cs;
+        if (k === "ApproachRate") out.diff.ar = parseFloat(v)||out.diff.ar;
+        if (k === "OverallDifficulty") out.diff.od = parseFloat(v)||out.diff.od;
       }
     }
-
-    if (sec === "[HitObjects]") {
+    if (sec === "[TimingPoints]"){
+      const p = line.split(",");
+      if (p.length >= 7){
+        out.timing.push({ offset: Number(p[0])/1000, beatLength: Number(p[1]), inherited: Number(p[6]) === 0 });
+      }
+    }
+    if (sec === "[HitObjects]"){
       const p = line.split(",");
       if (p.length < 5) continue;
+      const x   = Number(p[0]);
+      const y   = Number(p[1]);
+      const t   = Number(p[2]) / 1000;
+      const typ = Number(p[3]);
+      if (!Number.isFinite(x)||!Number.isFinite(y)||!Number.isFinite(t)) continue;
 
-      const x = Number(p[0]);
-      const y = Number(p[1]);
-      const t = Number(p[2]) / 1000;
-      const type = Number(p[3]);
-      if (!Number.isFinite(x) || !Number.isFinite(y) || !Number.isFinite(t) || !Number.isFinite(type)) continue;
-
-      let objType = "circle";
-      let endTime = t;
-      if ((type & 8) > 0) {
-        objType = "spinner";
-        const e = Number(p[5]);
-        endTime = Number.isFinite(e) ? e / 1000 : t;
-      } else if ((type & 2) > 0) {
-        objType = "slider";
+      let type = "circle", endTime = t, sliderPath = null, slides = 1, pixelLen = 0;
+      if (typ & 8){
+        type = "spinner";
+        endTime = (Number(p[5])||0) / 1000;
+      } else if (typ & 2){
+        type = "slider";
+        if (p.length > 7){
+          slides   = Number(p[6]) || 1;
+          pixelLen = Number(p[7]) || 0;
+        }
+        if (p.length > 5) sliderPath = p[5];
+        // endTime estimated later via timing
       }
-
-      out.hitObjects.push({ x, y, time: t, endTime, type: objType });
+      const newCombo = !!(typ & 4);
+      out.hitObjects.push({ x, y, time: t, endTime, type, newCombo, sliderPath, slides, pixelLen });
     }
   }
+  out.hitObjects.sort((a,b) => a.time - b.time);
 
-  out.hitObjects.sort((a, b) => a.time - b.time);
+  // Estimate slider durations
+  const tps = out.timing.filter(t => t.inherited);
+  for (const obj of out.hitObjects){
+    if (obj.type !== "slider" || !tps.length) continue;
+    let beatLen = tps[0].beatLength;
+    for (const tp of tps){ if (tp.offset <= obj.time) beatLen = tp.beatLength; }
+    // Get SV multiplier from inherited timing points
+    let sv = 1;
+    for (const tp of out.timing){
+      if (!tp.inherited && tp.offset <= obj.time && tp.beatLength < 0){
+        sv = -100 / tp.beatLength;
+      }
+    }
+    const sliderMult = 1.4; // default base slider mult; embedded in .osu header but we use 1.4 typical
+    const dur = (obj.pixelLen * obj.slides) / (sliderMult * sv * 100) * beatLen;
+    obj.endTime = obj.time + dur / 1000;
+  }
+
   return out;
 }
-function chooseAudioEntry(zipFiles, preferredAudio, osuPath) {
-  const all = Object.values(zipFiles).filter((f) => !f.dir);
-  const audio = all.filter((f) => /\.(mp3|ogg|wav|m4a|aac)$/i.test(f.name));
+
+/* ════════════════════════════════════════
+   OSZ LOADER
+════════════════════════════════════════ */
+function normMd5(v){ return String(v||"").trim().toLowerCase(); }
+
+function pickAudioFile(zipFiles, preferred, osuPath){
+  const all = Object.values(zipFiles).filter(f => !f.dir);
+  const audio = all.filter(f => /\.(mp3|ogg|wav|m4a|aac)$/i.test(f.name));
   if (!audio.length) return null;
-
-  const norm = (v) => String(v || "").replace(/\\/g, "/").toLowerCase();
-  const pref = norm(preferredAudio);
-
-  if (pref) {
-    const exact = audio.find((a) => norm(a.name) === pref);
+  const norm = v => String(v||"").replace(/\\/g, "/").toLowerCase();
+  const pref = norm(preferred);
+  if (pref){
+    const exact = audio.find(a => norm(a.name) === pref);
     if (exact) return exact;
     const base = pref.split("/").pop();
-    const byBase = audio.find((a) => norm(a.name).split("/").pop() === base);
+    const byBase = audio.find(a => norm(a.name).split("/").pop() === base);
     if (byBase) return byBase;
   }
-
-  const mapPath = norm(osuPath);
-  const slash = mapPath.lastIndexOf("/");
-  if (slash > -1) {
-    const folder = mapPath.slice(0, slash + 1);
-    const sameFolder = audio.find((a) => norm(a.name).startsWith(folder));
-    if (sameFolder) return sameFolder;
-  }
-
-  return audio[0];
+  const folder = norm(osuPath).replace(/\/[^/]*$/, "/");
+  const same = audio.find(a => norm(a.name).startsWith(folder));
+  return same || audio[0];
 }
-async function loadMapPack(oszBlob, targetMd5) {
+
+async function readOSZ(oszBlob, targetMd5){
   const zip = await window.JSZip.loadAsync(oszBlob);
-  const osuFiles = Object.values(zip.files).filter((f) => !f.dir && f.name.toLowerCase().endsWith(".osu"));
-  if (!osuFiles.length) throw new Error("No .osu files found in .osz");
+  const osuFiles = Object.values(zip.files).filter(f => !f.dir && f.name.toLowerCase().endsWith(".osu"));
+  if (!osuFiles.length) throw new Error("No .osu files in .osz");
 
-  const parsed = [];
-  for (const f of osuFiles) {
-    const buf = await f.async("arraybuffer");
-    const md5 = normMd5(window.SparkMD5.ArrayBuffer.hash(buf));
-    parsed.push({
-      path: f.name,
-      name: f.name.split("/").pop().replace(/\.osu$/i, ""),
-      md5,
-      parsed: parseOSU(new TextDecoder("utf-8").decode(buf))
-    });
+  const diffs = [];
+  for (const f of osuFiles){
+    const buf  = await f.async("arraybuffer");
+    const md5  = normMd5(SparkMD5.ArrayBuffer.hash(buf));
+    const text = new TextDecoder("utf-8").decode(buf);
+    const parsed = parseOSU(text);
+    diffs.push({ path: f.name, md5, parsed, name: parsed.metadata.version || f.name });
   }
 
-  let selected = parsed.find((m) => m.md5 === normMd5(targetMd5)) || null;
-  let exact = true;
-  if (!selected) {
-    selected = parsed[0];
-    exact = false;
-  }
+  const target = normMd5(targetMd5);
+  const exactMatch = diffs.find(d => d.md5 === target);
 
-  const audioEntry = chooseAudioEntry(zip.files, selected.parsed.general.audioFilename, selected.path);
-  if (!audioEntry) throw new Error("No audio found in .osz");
-
-  const audioBlob = await audioEntry.async("blob");
-  return { selected, audioBlob, exact };
+  return { diffs, exactMatch, zip };
 }
 
-/* ---------- Render ---------- */
-function arPreempt(ar) {
-  if (ar < 5) return (1800 - 120 * ar) / 1000;
-  return (1200 - 150 * (ar - 5)) / 1000;
+async function getAudioBlob(zip, osuPath, audioFilename){
+  const entry = pickAudioFile(zip.files, audioFilename, osuPath);
+  if (!entry) throw new Error("No audio found in .osz");
+  return entry.async("blob");
 }
-function cursorAt(t) {
-  const a = state.replayFrames;
-  if (!a.length) return { x: FIELD.w / 2, y: FIELD.h / 2 };
-  if (t <= a[0].time) return { x: a[0].x, y: a[0].y };
-  const last = a[a.length - 1];
-  if (t >= last.time) return { x: last.x, y: last.y };
 
-  let lo = 0, hi = a.length - 1;
-  while (lo <= hi) {
-    const m = (lo + hi) >> 1;
-    if (a[m].time <= t) lo = m + 1;
-    else hi = m - 1;
-  }
+/* ════════════════════════════════════════
+   AUDIO GRAPH
+════════════════════════════════════════ */
+function ensureAudioGraph(){
+  if (S.audioCtx) return;
+  const AC = window.AudioContext || window.webkitAudioContext;
+  S.audioCtx  = new AC();
+  S.audioSrc  = S.audioCtx.createMediaElementSource(S.audio);
+  S.audioDest = S.audioCtx.createMediaStreamDestination();
+  S.audioSrc.connect(S.audioCtx.destination);
+  S.audioSrc.connect(S.audioDest);
+}
 
-  const i = Math.max(0, hi);
-  const p = a[i];
-  const q = a[Math.min(i + 1, a.length - 1)];
-  if (!q || q.time <= p.time) return { x: p.x, y: p.y };
+/* ════════════════════════════════════════
+   UI HELPERS
+════════════════════════════════════════ */
+function setStatus(msg, type=""){
+  const el = document.getElementById("status");
+  el.className = type; el.textContent = msg;
+}
+function setLoading(on){
+  document.getElementById("loading-bar").className = on ? "visible" : "";
+}
+function fmtTime(sec){
+  sec = Math.max(0, Number.isFinite(sec) ? sec : 0);
+  const m = Math.floor(sec/60), s = Math.floor(sec%60).toString().padStart(2,"0");
+  return `${m}:${s}`;
+}
+function fmtScore(n){ return Math.floor(n).toLocaleString("en-US"); }
 
+/* ════════════════════════════════════════
+   CURSOR INTERPOLATION
+════════════════════════════════════════ */
+function getCursorAt(t){
+  const a = S.replayFrames;
+  if (!a.length) return { x: FIELD.w/2, y: FIELD.h/2, keys: 0 };
+  if (t <= a[0].time) return a[0];
+  const last = a[a.length-1];
+  if (t >= last.time) return last;
+
+  let lo=0, hi=a.length-1;
+  while (lo <= hi){ const m=(lo+hi)>>1; a[m].time<=t ? lo=m+1 : hi=m-1; }
+  const p = a[Math.max(0,hi)];
+  const q = a[Math.min(hi+1, a.length-1)];
+  if (!q || q.time <= p.time) return p;
   const u = (t - p.time) / (q.time - p.time);
-  return { x: p.x + (q.x - p.x) * u, y: p.y + (q.y - p.y) * u };
+  return { x: p.x+(q.x-p.x)*u, y: p.y+(q.y-p.y)*u, keys: p.keys };
 }
-function draw(t) {
-  const w = el.canvas.width, h = el.canvas.height;
-  ctx.fillStyle = "#000";
-  ctx.fillRect(0, 0, w, h);
 
-  const scale = Math.min(w / FIELD.w, h / FIELD.h) * 0.82;
-  const ox = (w - FIELD.w * scale) / 2;
-  const oy = (h - FIELD.h * scale) / 2;
+/* ════════════════════════════════════════
+   HUD ESTIMATION
+   (real-time score estimation from replay frames vs hit objects)
+════════════════════════════════════════ */
+function buildHitLog(frames, hitObjects, cs, od){
+  const hw300 = 79.5 - 6*od;
+  const hw100 = 139.5 - 8*od;
+  const hw50  = 199.5 - 10*od;
+  const {scale, ox, oy} = playfieldMetrics();
+  const rPx = circleRadius(cs) * scale;
 
-  ctx.strokeStyle = "rgba(255,255,255,.08)";
-  ctx.lineWidth = 1;
-  ctx.strokeRect(ox, oy, FIELD.w * scale, FIELD.h * scale);
+  const log = [];
+  let hitIdx = new Set();
 
-  if (state.mapObjects.length) {
-    const cs = state.mapInfo?.diff?.cs ?? 4;
-    const rad = (54.4 - 4.48 * cs) * scale;
-    const pre = arPreempt(state.mapInfo?.diff?.ar ?? 5);
-    const palette = [C.red, C.green, "#fff"];
+  for (let fi = 0; fi < frames.length; fi++){
+    const f = frames[fi];
+    const pressed = (f.keys & 0b11111) && !(fi > 0 && (frames[fi-1].keys & 0b11111));
+    if (!pressed) continue;
 
-    const st = Math.max(0, t - 0.05);
-    const et = t + pre + 0.25;
+    const [cx, cy] = [ox + f.x*scale, oy + f.y*scale];
 
-    for (let i = 0; i < state.mapObjects.length; i += 1) {
-      const o = state.mapObjects[i];
-      if (o.time < st || o.time > et) continue;
-      const col = palette[i % palette.length];
+    for (let oi = 0; oi < hitObjects.length; oi++){
+      if (hitIdx.has(oi)) continue;
+      const obj = hitObjects[oi];
+      if (obj.type !== "circle") continue;
+      const dt = Math.abs(f.time - obj.time)*1000;
+      if (dt > hw50 + 50) continue;
 
-      if (o.type === "spinner") {
-        const duration = Math.max(0.001, o.endTime - o.time);
-        const p = Math.max(0, Math.min(1, (t - o.time) / duration));
-        const r = Math.min(w, h) * 0.24;
-        const x = ox + (FIELD.w / 2) * scale;
-        const y = oy + (FIELD.h / 2) * scale;
+      const [ox2, oy2] = [ox + obj.x*scale, oy + obj.y*scale];
+      const dist = Math.hypot(cx - ox2, cy - oy2);
+      if (dist > rPx) continue;
 
-        ctx.beginPath();
-        ctx.arc(x, y, r, 0, Math.PI * 2);
-        ctx.lineWidth = 4;
-        ctx.strokeStyle = "rgba(255,255,255,.25)";
-        ctx.stroke();
-
-        ctx.beginPath();
-        ctx.arc(x, y, r, -Math.PI * 0.5, -Math.PI * 0.5 + Math.PI * 2 * p);
-        ctx.lineWidth = 6;
-        ctx.strokeStyle = col;
-        ctx.stroke();
-        continue;
-      }
-
-      const x = ox + o.x * scale;
-      const y = oy + o.y * scale;
-      const until = o.time - t;
-      const prog = 1 - Math.max(0, until) / pre;
-      const ar = rad + rad * 1.5 * (1 - Math.max(0, Math.min(1, prog)));
-
-      ctx.beginPath();
-      ctx.arc(x, y, rad, 0, Math.PI * 2);
-      ctx.fillStyle = "#1c1f2b";
-      ctx.fill();
-
-      ctx.beginPath();
-      ctx.arc(x, y, rad, 0, Math.PI * 2);
-      ctx.lineWidth = Math.max(2, 4 * scale);
-      ctx.strokeStyle = col;
-      ctx.stroke();
-
-      ctx.beginPath();
-      ctx.arc(x, y, ar, 0, Math.PI * 2);
-      ctx.lineWidth = Math.max(1, 2 * scale);
-      ctx.strokeStyle = col;
-      ctx.stroke();
+      let hit = dt <= hw300 ? 300 : dt <= hw100 ? 100 : 50;
+      hitIdx.add(oi);
+      log.push({ time: f.time, oi, hit });
+      break;
     }
   }
+  return log;
+}
 
-  const cur = cursorAt(t);
-  const cx = ox + cur.x * scale;
-  const cy = oy + cur.y * scale;
+/* ════════════════════════════════════════
+   RENDER
+════════════════════════════════════════ */
+function drawPlayfield(){
+  const W = cvs.width, H = cvs.height;
+  const {scale, ox, oy} = playfieldMetrics();
+  // bg
+  ctx.fillStyle = "#000";
+  ctx.fillRect(0, 0, W, H);
+  // playfield border
+  ctx.strokeStyle = "rgba(255,255,255,0.06)";
+  ctx.lineWidth = 1;
+  ctx.strokeRect(ox, oy, FIELD.w*scale, FIELD.h*scale);
+  // Iraqi stripe overlay
+  const sw = FIELD.w*scale / 3;
+  ctx.fillStyle = "rgba(0,0,0,0.15)";       ctx.fillRect(ox,      oy, sw, FIELD.h*scale);
+  ctx.fillStyle = "rgba(255,255,255,0.03)";  ctx.fillRect(ox+sw,   oy, sw, FIELD.h*scale);
+  ctx.fillStyle = "rgba(206,17,38,0.07)";   ctx.fillRect(ox+sw*2, oy, sw, FIELD.h*scale);
+}
 
+function drawApproachCircle(x, y, r, prog, color){
+  // prog: 0 = just appeared (large), 1 = at note (radius = r)
+  const ap = r + r * 3.5 * (1 - Math.max(0, Math.min(1, prog)));
   ctx.beginPath();
-  ctx.arc(cx, cy, 19, 0, Math.PI * 2);
-  ctx.fillStyle = "rgba(255,102,170,.36)";
-  ctx.fill();
+  ctx.arc(x, y, ap, 0, Math.PI*2);
+  ctx.strokeStyle = color;
+  ctx.lineWidth = Math.max(1.5, r * 0.08);
+  ctx.globalAlpha = Math.max(0, Math.min(1, prog));
+  ctx.stroke();
+  ctx.globalAlpha = 1;
+}
 
-  ctx.beginPath();
-  ctx.arc(cx, cy, 11, 0, Math.PI * 2);
+function drawHitCircle(cx, cy, r, color, number){
+  // shadow
+  ctx.shadowColor = color;
+  ctx.shadowBlur  = 18;
+  // filled body
+  ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI*2);
+  ctx.fillStyle = "rgba(0,0,0,0.75)"; ctx.fill();
+  // colored ring
+  ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI*2);
+  ctx.strokeStyle = color; ctx.lineWidth = Math.max(2.5, r*0.12); ctx.stroke();
+  // inner white ring
+  ctx.beginPath(); ctx.arc(cx, cy, r*0.82, 0, Math.PI*2);
+  ctx.strokeStyle = "rgba(255,255,255,0.18)"; ctx.lineWidth = 1; ctx.stroke();
+  ctx.shadowBlur = 0;
+  // combo number
   ctx.fillStyle = "#fff";
-  ctx.fill();
+  ctx.font = `bold ${Math.max(10, Math.floor(r*0.72))}px Rajdhani,sans-serif`;
+  ctx.textAlign = "center"; ctx.textBaseline = "middle";
+  ctx.fillText(number, cx, cy+1);
+}
 
+function drawSlider(obj, t, r, color, idx){
+  const {scale, ox, oy} = playfieldMetrics();
+  if (!obj.sliderPath) return;
+
+  const pts = getSliderPoints(obj, scale, ox, oy);
+  if (pts.length < 2) return;
+
+  const rPx = r;
+  ctx.save();
+  ctx.lineCap = "round"; ctx.lineJoin = "round";
+
+  // track body
   ctx.beginPath();
-  ctx.arc(cx, cy, 5, 0, Math.PI * 2);
-  ctx.fillStyle = C.pink;
-  ctx.fill();
-}
-function startLoop() {
-  if (state.raf) return;
-  const step = () => {
-    state.raf = requestAnimationFrame(step);
-    if (!state.mapObjects.length) return;
+  ctx.moveTo(pts[0].x, pts[0].y);
+  for (let i=1; i<pts.length; i++) ctx.lineTo(pts[i].x, pts[i].y);
+  ctx.strokeStyle = "rgba(0,0,0,0.85)"; ctx.lineWidth = rPx*2+5; ctx.stroke();
 
-    const d = Number.isFinite(state.audio.duration) ? state.audio.duration : 0;
-    state.lastTime = state.audio.currentTime || 0;
-    draw(state.lastTime);
+  // colored track
+  ctx.beginPath();
+  ctx.moveTo(pts[0].x, pts[0].y);
+  for (let i=1; i<pts.length; i++) ctx.lineTo(pts[i].x, pts[i].y);
+  ctx.strokeStyle = "rgba(255,255,255,0.12)"; ctx.lineWidth = rPx*2; ctx.stroke();
 
-    el.seek.value = String(Math.min(state.lastTime, d || 0));
-    updateTime();
-  };
-  state.raf = requestAnimationFrame(step);
-}
-
-/* ---------- Export ---------- */
-function pickMime() {
-  if (!window.MediaRecorder) return "";
-  const list = ["video/webm;codecs=vp9,opus", "video/webm;codecs=vp8,opus", "video/webm"];
-  for (const m of list) if (MediaRecorder.isTypeSupported(m)) return m;
-  return "";
-}
-function startExport() {
-  if (!window.MediaRecorder) throw new Error("MediaRecorder not supported");
-  if (!state.audioDest) throw new Error("Audio pipeline not ready");
-
-  const canvasTracks = el.canvas.captureStream(60).getVideoTracks();
-  const audioTracks = state.audioDest.stream.getAudioTracks();
-  const stream = new MediaStream([...canvasTracks, ...audioTracks]);
-
-  const mime = pickMime();
-  state.recorder = mime ? new MediaRecorder(stream, { mimeType: mime }) : new MediaRecorder(stream);
-  state.chunks = [];
-
-  state.recorder.ondataavailable = (e) => {
-    if (e.data && e.data.size > 0) state.chunks.push(e.data);
-  };
-  state.recorder.onerror = (e) => {
-    setStatus(`Export error: ${e.error?.message || "unknown"}`, "error");
-  };
-  state.recorder.onstop = () => {
-    const blob = new Blob(state.chunks, { type: "video/webm" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "OsuIraqToday_Export.webm";
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    URL.revokeObjectURL(url);
-    state.chunks = [];
-  };
-
-  state.recorder.start();
-  state.exporting = true;
-  updateExportBtn();
-}
-function stopExport() {
-  if (!state.exporting) return;
-  state.exporting = false;
-  updateExportBtn();
-  if (state.recorder && state.recorder.state !== "inactive") state.recorder.stop();
-}
-
-/* ---------- Main load ---------- */
-async function processFiles(fileList) {
-  const files = Array.from(fileList || []);
-  const osr = files.find((f) => f.name.toLowerCase().endsWith(".osr"));
-  const osz = files.find((f) => f.name.toLowerCase().endsWith(".osz")) || null;
-  if (!osr) {
-    setStatus("Please drop at least one .osr file.", "error");
-    return;
+  // Iraqi gradient stripe
+  if (pts.length >= 2){
+    const grd = ctx.createLinearGradient(pts[0].x, pts[0].y, pts[pts.length-1].x, pts[pts.length-1].y);
+    grd.addColorStop(0,   "rgba(0,0,0,0.4)");
+    grd.addColorStop(0.5, "rgba(255,255,255,0.06)");
+    grd.addColorStop(1,   "rgba(206,17,38,0.2)");
+    ctx.beginPath();
+    ctx.moveTo(pts[0].x, pts[0].y);
+    for (let i=1; i<pts.length; i++) ctx.lineTo(pts[i].x, pts[i].y);
+    ctx.strokeStyle = grd; ctx.lineWidth = rPx*2-4; ctx.stroke();
   }
 
-  clearApp();
-  el.fileInput.value = "";
+  // end circle
+  const ep = pts[pts.length-1];
+  ctx.beginPath(); ctx.arc(ep.x, ep.y, rPx, 0, Math.PI*2);
+  ctx.fillStyle = "rgba(0,0,0,0.7)"; ctx.fill();
+  ctx.strokeStyle = "rgba(255,255,255,0.35)"; ctx.lineWidth=2; ctx.stroke();
+
+  // slider ball
+  const dur = Math.max(0.001, obj.endTime - obj.time);
+  const prog = Math.max(0, Math.min(1, (t - obj.time) / dur));
+  if (t >= obj.time && t <= obj.endTime){
+    const bi = Math.min(pts.length-1, Math.floor(prog * (pts.length-1)));
+    const bp = pts[bi];
+    ctx.shadowColor = "#007A3D"; ctx.shadowBlur = 22;
+    ctx.beginPath(); ctx.arc(bp.x, bp.y, rPx, 0, Math.PI*2);
+    ctx.fillStyle = "rgba(255,255,255,0.12)"; ctx.fill();
+    ctx.strokeStyle = "#007A3D"; ctx.lineWidth=3; ctx.stroke();
+    ctx.beginPath(); ctx.arc(bp.x, bp.y, rPx*1.7, 0, Math.PI*2);
+    ctx.strokeStyle = "rgba(255,255,255,0.15)"; ctx.lineWidth=1.5; ctx.stroke();
+    ctx.shadowBlur = 0;
+  }
+  ctx.restore();
+}
+
+function getSliderPoints(obj, scale, ox, oy){
+  const path = obj.sliderPath || "";
+  const parts = path.split("|");
+  if (parts.length < 2) return [{ x: ox+obj.x*scale, y: oy+obj.y*scale }];
+
+  const type = parts[0]; // L, P, B, C
+  const rawPts = [{ x: obj.x, y: obj.y }];
+  for (let i=1; i<parts.length; i++){
+    const [px, py] = parts[i].split(":").map(Number);
+    if (Number.isFinite(px) && Number.isFinite(py)) rawPts.push({ x:px, y:py });
+  }
+
+  if (type === "L" || rawPts.length <= 2){
+    return rawPts.map(p => ({ x: ox+p.x*scale, y: oy+p.y*scale }));
+  }
+  // For P (perfect circle arc) and B (bezier) — approximate with catmull-rom
+  const out = [];
+  const steps = Math.max(20, Math.floor(obj.pixelLen / 5));
+  for (let i=0; i<=steps; i++){
+    const t = i/steps;
+    const bi = Math.floor(t * (rawPts.length-1));
+    const p0 = rawPts[Math.max(0, bi-1)];
+    const p1 = rawPts[bi];
+    const p2 = rawPts[Math.min(rawPts.length-1, bi+1)];
+    const p3 = rawPts[Math.min(rawPts.length-1, bi+2)];
+    const lt = t*(rawPts.length-1) - bi;
+    const x = catmull(p0.x, p1.x, p2.x, p3.x, lt);
+    const y = catmull(p0.y, p1.y, p2.y, p3.y, lt);
+    out.push({ x: ox+x*scale, y: oy+y*scale });
+  }
+  return out;
+}
+function catmull(p0,p1,p2,p3,t){
+  return 0.5*((2*p1)+(-p0+p2)*t+(2*p0-5*p1+4*p2-p3)*t*t+(-p0+3*p1-3*p2+p3)*t*t*t);
+}
+
+function drawSpinner(obj, t, color){
+  const {scale, ox, oy} = playfieldMetrics();
+  const cx = ox + FIELD.w/2*scale;
+  const cy = oy + FIELD.h/2*scale;
+  const maxR = Math.min(cvs.width, cvs.height) * 0.26;
+  const dur  = Math.max(0.001, obj.endTime - obj.time);
+  const prog = Math.max(0, Math.min(1, (t - obj.time) / dur));
+
+  // outer static ring
+  ctx.beginPath(); ctx.arc(cx, cy, maxR, 0, Math.PI*2);
+  ctx.strokeStyle = "rgba(255,255,255,0.08)"; ctx.lineWidth=2; ctx.stroke();
+
+  // progress arc — Iraqi flag: green → white → red
+  const pc = prog < 0.40 ? "#007A3D" : prog < 0.70 ? "#FFFFFF" : "#CE1126";
+  ctx.shadowColor = pc; ctx.shadowBlur = 18;
+  ctx.beginPath(); ctx.arc(cx, cy, maxR, -Math.PI/2, -Math.PI/2 + Math.PI*2*prog);
+  ctx.strokeStyle = pc; ctx.lineWidth=5; ctx.stroke();
+  ctx.shadowBlur=0;
+
+  // rotating spokes
+  const angle = t * 4;
+  for (let i=0; i<3; i++){
+    const a = angle + i * (Math.PI*2/3);
+    const r1 = maxR*0.22, r2 = maxR*0.72;
+    const spkCol = i===0?"#CE1126":i===1?"#FFFFFF":"#007A3D";
+    ctx.beginPath();
+    ctx.moveTo(cx+Math.cos(a)*r1, cy+Math.sin(a)*r1);
+    ctx.lineTo(cx+Math.cos(a)*r2, cy+Math.sin(a)*r2);
+    ctx.strokeStyle=spkCol; ctx.lineWidth=3; ctx.shadowColor=spkCol; ctx.shadowBlur=12; ctx.stroke();
+    ctx.shadowBlur=0;
+  }
+  // inner dot ring
+  ctx.setLineDash([3,6]);
+  ctx.beginPath(); ctx.arc(cx, cy, maxR*0.42, 0, Math.PI*2);
+  ctx.strokeStyle="rgba(255,255,255,0.1)"; ctx.lineWidth=1; ctx.stroke();
+  ctx.setLineDash([]);
+  // center
+  ctx.beginPath(); ctx.arc(cx, cy, 8, 0, Math.PI*2);
+  ctx.fillStyle="#fff"; ctx.fill();
+}
+
+function drawCursorTrail(trail){
+  if (trail.length < 2) return;
+  ctx.save();
+  for (let i=1; i<trail.length; i++){
+    const a = i/trail.length;
+    const p = trail[i-1], q = trail[i];
+    ctx.beginPath();
+    ctx.moveTo(p.x, p.y);
+    ctx.lineTo(q.x, q.y);
+    ctx.globalAlpha = a * 0.55;
+    ctx.strokeStyle = "#007A3D";
+    ctx.lineWidth = 4 * a;
+    ctx.lineCap = "round";
+    ctx.stroke();
+  }
+  ctx.restore();
+}
+
+function drawCursor(cx, cy){
+  ctx.save();
+  // glow ring
+  ctx.beginPath(); ctx.arc(cx, cy, 18, 0, Math.PI*2);
+  ctx.fillStyle="rgba(0,122,61,0.18)"; ctx.fill();
+  // white body
+  ctx.shadowColor="#fff"; ctx.shadowBlur=12;
+  ctx.beginPath(); ctx.arc(cx, cy, 10, 0, Math.PI*2);
+  ctx.fillStyle="#fff"; ctx.fill();
+  // green center
+  ctx.shadowColor="#007A3D"; ctx.shadowBlur=16;
+  ctx.beginPath(); ctx.arc(cx, cy, 4, 0, Math.PI*2);
+  ctx.fillStyle="#007A3D"; ctx.fill();
+  ctx.shadowBlur=0;
+  ctx.restore();
+}
+
+function renderFrame(t){
+  if (!S.mapObjects.length){ drawPlayfield(); return; }
+
+  drawPlayfield();
+
+  const mi   = S.mapInfo;
+  const cs   = mi?.diff?.cs ?? 4;
+  const ar   = mi?.diff?.ar ?? 5;
+  const pre  = arPreempt(ar);
+  const {scale, ox, oy} = playfieldMetrics();
+  const rPx  = circleRadius(cs) * scale;
+
+  const fadeIn = pre * 0.4;
+
+  // visible window: objects whose hitTime is between [t-0.3, t+pre+0.1]
+  // Draw back-to-front (earlier objects drawn first => later ones on top)
+  const vis = [];
+  let comboN = 0, comboColor = OSU_COLORS[0], colorIdx = 0;
+  for (let i=0; i<S.mapObjects.length; i++){
+    const obj = S.mapObjects[i];
+    if (obj.newCombo){ colorIdx = (colorIdx+1) % OSU_COLORS.length; comboN = 0; }
+    comboN++;
+    const color = OSU_COLORS[colorIdx % OSU_COLORS.length];
+    const pre2 = obj.time - t;
+    const post  = t - obj.time;
+    if (pre2 > pre + 0.3 || post > 0.5) continue;
+    vis.push({ obj, color, comboN, i });
+  }
+  // Draw in reverse (back to front)
+  for (let k = vis.length-1; k >= 0; k--){
+    const { obj, color, comboN, i } = vis[k];
+    const pre2 = obj.time - t;
+    const fadeAlpha = pre2 > 0 ? Math.min(1, (pre - pre2) / fadeIn) : 1;
+    const prog = 1 - Math.max(0, pre2) / pre;
+
+    ctx.globalAlpha = Math.max(0, fadeAlpha);
+
+    if (obj.type === "spinner"){
+      ctx.globalAlpha = 1;
+      if (t >= obj.time - 0.5) drawSpinner(obj, t, color);
+    } else if (obj.type === "slider"){
+      drawSlider(obj, t, rPx, color, i);
+      if (t < obj.time){
+        const [cx2, cy2] = osuToCanvas(obj.x, obj.y);
+        drawApproachCircle(cx2, cy2, rPx, prog, color);
+        drawHitCircle(cx2, cy2, rPx, color, comboN);
+      }
+    } else {
+      const [cx2, cy2] = osuToCanvas(obj.x, obj.y);
+      drawApproachCircle(cx2, cy2, rPx, prog, color);
+      drawHitCircle(cx2, cy2, rPx, color, comboN);
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  // Cursor trail + cursor
+  const cur = getCursorAt(t);
+  const [cx2, cy2] = osuToCanvas(cur.x, cur.y);
+  S.trailPts.push({ x: cx2, y: cy2 });
+  if (S.trailPts.length > 28) S.trailPts.shift();
+  drawCursorTrail(S.trailPts);
+  drawCursor(cx2, cy2);
+
+  // Key states
+  updateKeys(cur.keys);
+}
+
+/* ════════════════════════════════════════
+   KEY OVERLAY
+════════════════════════════════════════ */
+const KEY_BITS = { k1:0x1, k2:0x2, k3:0x4, k4:0x8 };
+function updateKeys(bits){
+  for (const [id, bit] of Object.entries(KEY_BITS)){
+    const el = document.getElementById(id);
+    const on = !!(bits & bit);
+    el.classList.toggle("active", on);
+  }
+}
+
+/* ════════════════════════════════════════
+   HUD SCORING
+   (approximate live score from replay frames)
+════════════════════════════════════════ */
+let _hitLog = [], _hitLogIdx = 0;
+function buildHitLogFromReplay(){
+  _hitLog = [];
+  const od = S.mapInfo?.diff?.od ?? 8;
+  const cs = S.mapInfo?.diff?.cs ?? 4;
+  const {scale, ox, oy} = playfieldMetrics();
+  const rPx = circleRadius(cs)*scale;
+  const hw300 = (79.5 - 6*od)/1000;
+  const hw100 = (139.5 - 8*od)/1000;
+  const hw50  = (199.5 - 10*od)/1000;
+
+  const usedObjs = new Set();
+  const frames = S.replayFrames;
+  let prevKeys = 0;
+
+  for (let fi=0; fi<frames.length; fi++){
+    const f = frames[fi];
+    const pressed = (f.keys & 0b11111) && !(prevKeys & 0b11111);
+    prevKeys = f.keys;
+    if (!pressed) continue;
+    const [fpx, fpy] = osuToCanvas(f.x, f.y);
+
+    for (let oi=0; oi<S.mapObjects.length; oi++){
+      if (usedObjs.has(oi)) continue;
+      const obj = S.mapObjects[oi];
+      if (obj.type !== "circle") continue;
+      const dt = f.time - obj.time;
+      if (dt < -hw50) continue;
+      if (dt >  hw50) continue;
+      const [opx, opy] = osuToCanvas(obj.x, obj.y);
+      const dist = Math.hypot(fpx-opx, fpy-opy);
+      if (dist > rPx) continue;
+      const adt = Math.abs(dt);
+      const hit = adt<=hw300 ? 300 : adt<=hw100 ? 100 : 50;
+      usedObjs.add(oi);
+      _hitLog.push({ time: f.time, oi, hit });
+      break;
+    }
+  }
+  _hitLog.sort((a,b) => a.time-b.time);
+  _hitLogIdx = 0;
+}
+
+function updateHUDAtTime(t){
+  // advance hit log
+  while (_hitLogIdx < _hitLog.length && _hitLog[_hitLogIdx].time <= t){
+    _hitLogIdx++;
+  }
+  // compute score up to _hitLogIdx
+  let sc=0, combo=0, maxCombo=0;
+  for (let i=0; i<_hitLogIdx; i++){
+    combo++; if(combo>maxCombo) maxCombo=combo;
+    sc += _hitLog[i].hit * (1 + combo*0.12);
+  }
+  // acc
+  const total = S.mapObjects.filter(o=>o.type==="circle").length;
+  const hits  = _hitLog.slice(0,_hitLogIdx);
+  const w300  = hits.filter(h=>h.hit===300).length;
+  const w100  = hits.filter(h=>h.hit===100).length;
+  const w50   = hits.filter(h=>h.hit===50).length;
+  const accVal = total === 0 ? 100 : ((w300*300+w100*100+w50*50)/(total*300))*100;
+
+  document.getElementById("hud-score").textContent = fmtScore(sc);
+  document.getElementById("hud-acc").textContent   = accVal.toFixed(2)+"%";
+  document.getElementById("hud-combo").textContent = combo+"x";
+}
+
+/* ════════════════════════════════════════
+   RENDER LOOP
+════════════════════════════════════════ */
+function startLoop(){
+  if (S.raf) return;
+  const step = () => {
+    S.raf = requestAnimationFrame(step);
+    const t = S.audio.currentTime || 0;
+    const dur = Number.isFinite(S.audio.duration) ? S.audio.duration : 0;
+    renderFrame(t);
+    updateHUDAtTime(t);
+    document.getElementById("seek").value = String(Math.min(t, dur));
+    document.getElementById("time-cur").textContent = fmtTime(t);
+    document.getElementById("time-dur").textContent = fmtTime(dur);
+  };
+  S.raf = requestAnimationFrame(step);
+}
+
+/* ════════════════════════════════════════
+   EXPORT
+════════════════════════════════════════ */
+function startExport(){
+  if (!window.MediaRecorder) throw new Error("MediaRecorder not supported");
+  ensureAudioGraph();
+  const mime = ["video/webm;codecs=vp9,opus","video/webm;codecs=vp8,opus","video/webm"]
+    .find(m => MediaRecorder.isTypeSupported(m)) || "";
+  const stream = new MediaStream([
+    ...cvs.captureStream(60).getVideoTracks(),
+    ...S.audioDest.stream.getAudioTracks()
+  ]);
+  S.recorder = mime ? new MediaRecorder(stream,{mimeType:mime}) : new MediaRecorder(stream);
+  S.chunks = [];
+  S.recorder.ondataavailable = e => { if (e.data?.size>0) S.chunks.push(e.data); };
+  S.recorder.onstop = () => {
+    const blob = new Blob(S.chunks, {type:"video/webm"});
+    const a = Object.assign(document.createElement("a"),{
+      href: URL.createObjectURL(blob),
+      download: "osu_iraq_replay.webm"
+    });
+    document.body.appendChild(a); a.click(); a.remove();
+    S.chunks = [];
+  };
+  S.recorder.start();
+  S.exporting = true;
+  document.getElementById("cbtn-export").classList.add("active");
+  document.getElementById("cbtn-export").textContent="⬡ Stop & Save";
+}
+function stopExport(){
+  if (!S.exporting) return;
+  S.exporting = false;
+  document.getElementById("cbtn-export").classList.remove("active");
+  document.getElementById("cbtn-export").textContent="⬡ Export WebM";
+  if (S.recorder?.state !== "inactive") S.recorder.stop();
+}
+
+/* ════════════════════════════════════════
+   RESET
+════════════════════════════════════════ */
+function resetAll(){
+  if (S.raf){ cancelAnimationFrame(S.raf); S.raf=0; }
+  S.audio.pause();
+  stopExport();
+  if (S.audioUrl){ URL.revokeObjectURL(S.audioUrl); S.audioUrl=""; }
+  try { S.audioSrc?.disconnect(); } catch(_){}
+  try { S.audioDest?.disconnect(); } catch(_){}
+  try { S.audioCtx?.close(); } catch(_){}
+  S.audioCtx=S.audioSrc=S.audioDest=null;
+  S.audio=new Audio(); S.audio.preload="auto";
+  S.replayFrames=[]; S.mapObjects=[]; S.replayMeta=null; S.mapInfo=null;
+  S.trailPts=[]; _hitLog=[]; _hitLogIdx=0;
+  S.playing=false;
+
+  document.getElementById("player").classList.remove("visible");
+  document.getElementById("drop-zone").classList.remove("hidden");
+  document.getElementById("cbtn-play").textContent="▶ Play";
+  setLoading(false);
+  setStatus("");
+}
+
+/* ════════════════════════════════════════
+   DIFF PICKER
+════════════════════════════════════════ */
+function showDiffPicker(diffs, exactMd5, cb){
+  const modal = document.getElementById("diff-modal");
+  const list  = document.getElementById("diff-list");
+  const hint  = document.getElementById("modal-hint");
+  const target = normMd5(exactMd5);
+
+  hint.textContent = target
+    ? "Exact difficulty not found by MD5. Choose manually:"
+    : "Multiple difficulties found. Choose one:";
+
+  const colors = ["#CE1126","#007A3D","#FFFFFF","#CE1126","#007A3D","#FFFFFF"];
+  list.innerHTML = diffs.map((d,i) => {
+    const isMatch = d.md5 === target;
+    return `<div class="diff-item ${isMatch?"match":""}" data-idx="${i}">
+      <div class="diff-dot" style="background:${colors[i%colors.length]}"></div>
+      <span class="diff-name">${d.name || d.path}</span>
+      ${isMatch?'<span class="diff-badge">Closest MD5</span>':''}
+    </div>`;
+  }).join("");
+
+  modal.classList.add("visible");
+  list.querySelectorAll(".diff-item").forEach(el => {
+    el.addEventListener("click", () => {
+      modal.classList.remove("visible");
+      cb(diffs[Number(el.dataset.idx)]);
+    });
+  });
+}
+
+/* ════════════════════════════════════════
+   MAIN LOAD
+════════════════════════════════════════ */
+async function processFiles(fileList){
+  const files = Array.from(fileList||[]);
+  const osr = files.find(f => f.name.toLowerCase().endsWith(".osr"));
+  const osz = files.find(f => f.name.toLowerCase().endsWith(".osz")) || null;
+  if (!osr){ setStatus("Please include an .osr file.", "err"); return; }
+
+  resetAll();
+  document.getElementById("file-input").value="";
+  setLoading(true);
+  setStatus("Reading .osr…");
 
   try {
-    setLoading(true, "Loading LZMA decoder...");
     await ensureLZMA();
+    setStatus("Parsing replay…");
+    const meta = parseOSR(await osr.arrayBuffer());
+    if (meta.mode !== 0) throw new Error("Only osu!standard (mode 0) is supported.");
 
-    setLoading(true, "Reading replay (.osr)...");
-    const replay = parseOSR(await osr.arrayBuffer());
-    if (replay.mode !== 0) throw new Error("Only osu!standard (mode=0) is supported.");
+    setStatus("Decoding cursor data…");
+    const frames = await decodeReplay(meta.compressed);
 
-    setLoading(true, "Decoding cursor movement...");
-    const frames = await decodeReplay(replay.compressedData);
-
-    const hash = normMd5(replay.mapMd5);
-    let oszBlob = osz || null;
-    let source = "dropped .osz";
-
-    if (!oszBlob) {
-      setLoading(true, "Searching local cache...");
-      const cached = await cacheGet(hash);
-      if (!cached || !cached.oszBlob) {
-        throw new Error("No cached map for this replay. First time: drop .osr + matching .osz together.");
-      }
-      oszBlob = cached.oszBlob;
-      source = "local cache";
+    // Get .osz blob
+    let oszBlob = osz;
+    let cacheSource = "";
+    if (!oszBlob){
+      setStatus("Checking cache…");
+      const cached = await dbGet(normMd5(meta.mapMd5));
+      if (!cached?.blob) throw new Error("No cached map found. Drop .osr + .osz together for first load.");
+      oszBlob = cached.blob;
+      cacheSource = " (from cache)";
     }
 
-    setLoading(true, "Reading map and audio...");
-    const pack = await loadMapPack(oszBlob, replay.mapMd5);
-    if (!pack.exact) setStatus("Hash mismatch in package; fallback to first difficulty.", "");
+    setStatus("Reading map pack…");
+    const { diffs, exactMatch, zip } = await readOSZ(oszBlob, meta.mapMd5);
 
-    if (osz) {
-      try { await cacheSet(hash, osz); } catch (_) {}
+    // Pick difficulty — exact match or ask user
+    const pickDiff = (diff) => finishLoad(meta, frames, diff, zip, oszBlob, cacheSource);
+
+    if (exactMatch){
+      await pickDiff(exactMatch);
+    } else {
+      setLoading(false);
+      showDiffPicker(diffs, meta.mapMd5, async (chosen) => {
+        setLoading(true);
+        await pickDiff(chosen);
+      });
+    }
+  } catch(err){
+    console.error(err);
+    setLoading(false);
+    setStatus(err.message||"Failed to load.", "err");
+  }
+}
+
+async function finishLoad(meta, frames, diff, zip, oszBlob, cacheSource){
+  try {
+    // Cache the osz if freshly dropped
+    if (!cacheSource){
+      try { await dbSet(normMd5(meta.mapMd5), oszBlob); } catch(_){}
     }
 
-    state.replayStats = replay;
-    state.replayFrames = frames;
-    state.mapObjects = pack.selected.parsed.hitObjects;
-    state.mapInfo = {
-      displayName: pack.selected.name,
-      metadata: pack.selected.parsed.metadata,
-      diff: pack.selected.parsed.diff
-    };
+    // Load audio
+    const audioBlob = await getAudioBlob(zip, diff.path, diff.parsed.general.audioFilename);
+    S.audioUrl = URL.createObjectURL(audioBlob);
+    S.audio.src = S.audioUrl;
+    S.audio.preload = "auto";
 
-    if (!state.mapObjects.length) throw new Error("Beatmap has no hit objects.");
+    S.replayFrames = frames;
+    S.mapObjects   = diff.parsed.hitObjects;
+    S.replayMeta   = meta;
+    S.mapInfo      = { diff: diff.parsed.diff, metadata: diff.parsed.metadata, name: diff.name };
 
-    state.audioUrl = URL.createObjectURL(pack.audioBlob);
-    state.audio.src = state.audioUrl;
-    state.audio.addEventListener("loadedmetadata", () => {
-      const d = Number.isFinite(state.audio.duration) ? state.audio.duration : 0;
-      el.seek.max = String(d || 0);
-      el.seek.value = "0";
-      updateTime();
+    // Precompute hit log for HUD
+    buildHitLogFromReplay();
+
+    // Update meta overlay
+    const m = diff.parsed.metadata;
+    document.getElementById("meta-title").textContent =
+      [m.artist, m.title].filter(Boolean).join(" – ") || "Unknown Map";
+    document.getElementById("meta-sub").textContent =
+      diff.name || "Unknown Difficulty";
+    document.getElementById("meta-player").textContent =
+      "▶ " + (meta.player || "Unknown Player");
+
+    // Audio events
+    S.audio.addEventListener("loadedmetadata", () => {
+      const dur = S.audio.duration || 0;
+      document.getElementById("seek").max = String(dur);
+      document.getElementById("time-dur").textContent = fmtTime(dur);
     });
-    state.audio.addEventListener("ended", () => {
-      state.playing = false;
-      el.playBtn.textContent = "Play";
-      if (state.exporting) stopExport();
+    S.audio.addEventListener("ended", () => {
+      S.playing = false;
+      document.getElementById("cbtn-play").textContent = "▶ Play";
+      if (S.exporting) stopExport();
     });
 
     ensureAudioGraph();
 
-    const m = state.mapInfo.metadata || {};
-    const title = [m.artist, m.title].filter(Boolean).join(" - ") || "Beatmap Loaded";
-    const ver = m.version || state.mapInfo.displayName || "Unknown Difficulty";
-    el.metaMain.textContent = title;
-    el.metaSub.textContent = ver;
-
-    el.dropZone.style.display = "none";
-    el.player.style.display = "block";
-
+    // Show player
+    document.getElementById("drop-zone").classList.add("hidden");
+    document.getElementById("player").classList.add("visible");
     setLoading(false);
-    setStatus(`Loaded ${frames.length.toLocaleString()} replay frames (${source}).`, "ok");
+    document.getElementById("ctrl-status").textContent =
+      `${frames.length.toLocaleString()} frames${cacheSource}`;
 
     startLoop();
-    if (state.audioCtx && state.audioCtx.state === "suspended") {
-      await state.audioCtx.resume();
-    }
-    await state.audio.play();
-    state.playing = true;
-    el.playBtn.textContent = "Pause";
-  } catch (err) {
+
+    if (S.audioCtx?.state === "suspended") await S.audioCtx.resume();
+    await S.audio.play();
+    S.playing = true;
+    document.getElementById("cbtn-play").textContent = "⏸ Pause";
+
+  } catch(err){
     console.error(err);
     setLoading(false);
-    setStatus(err.message || "Failed to load replay.", "error");
+    setStatus(err.message||"Load failed.", "err");
   }
 }
 
-/* ---------- Events ---------- */
-function setupDragDrop() {
-  function prevent(e) { e.preventDefault(); e.stopPropagation(); }
-  ["dragenter", "dragover", "dragleave", "drop"].forEach((n) => el.dropZone.addEventListener(n, prevent, false));
-  ["dragenter", "dragover"].forEach((n) => el.dropZone.addEventListener(n, () => el.dropZone.classList.add("dragover")));
-  ["dragleave", "drop"].forEach((n) => el.dropZone.addEventListener(n, () => el.dropZone.classList.remove("dragover")));
-  el.dropZone.addEventListener("drop", (e) => processFiles(e.dataTransfer.files));
-}
+/* ════════════════════════════════════════
+   EVENTS
+════════════════════════════════════════ */
+// Drag & drop on the inner box
+const dropInner = document.getElementById("drop-inner");
+["dragenter","dragover","dragleave","drop"].forEach(n =>
+  dropInner.addEventListener(n, e => { e.preventDefault(); e.stopPropagation(); }));
+["dragenter","dragover"].forEach(n =>
+  dropInner.addEventListener(n, () => dropInner.classList.add("dragover")));
+["dragleave","drop"].forEach(n =>
+  dropInner.addEventListener(n, () => dropInner.classList.remove("dragover")));
+dropInner.addEventListener("drop", e => processFiles(e.dataTransfer.files));
 
-window.addEventListener("resize", resizeCanvas);
-el.fileInput.addEventListener("change", (e) => processFiles(e.target.files));
-el.resetBtn.addEventListener("click", () => {
-  clearApp();
-  setLoading(false);
-  setStatus("Drop .osr only (if cached), or .osr + .osz for first run.", "");
-});
-el.playBtn.addEventListener("click", async () => {
-  if (!state.mapObjects.length || state.loading) return;
+document.getElementById("file-input").addEventListener("change", e => processFiles(e.target.files));
+document.getElementById("cbtn-reset").addEventListener("click", resetAll);
 
-  if (state.playing) {
-    state.audio.pause();
-    state.playing = false;
-    el.playBtn.textContent = "Play";
+document.getElementById("cbtn-play").addEventListener("click", async () => {
+  if (!S.mapObjects.length) return;
+  if (S.playing){
+    S.audio.pause();
+    S.playing = false;
+    document.getElementById("cbtn-play").textContent = "▶ Play";
   } else {
-    try {
-      if (state.audioCtx && state.audioCtx.state === "suspended") await state.audioCtx.resume();
-      await state.audio.play();
-      state.playing = true;
-      el.playBtn.textContent = "Pause";
-    } catch (_) {
-      setStatus("Autoplay blocked. Press Play again.", "");
-    }
+    if (S.audioCtx?.state === "suspended") await S.audioCtx.resume();
+    await S.audio.play().catch(() => setStatus("Autoplay blocked. Press Play again.",""));
+    S.playing = true;
+    document.getElementById("cbtn-play").textContent = "⏸ Pause";
   }
 });
-el.seek.addEventListener("input", (e) => {
-  if (!state.mapObjects.length) return;
+
+document.getElementById("seek").addEventListener("input", e => {
   const t = Number(e.target.value);
   if (!Number.isFinite(t)) return;
-  state.audio.currentTime = t;
-  draw(t);
-  updateTime();
+  S.audio.currentTime = t;
+  S.trailPts = [];
+  // reset hit log idx
+  _hitLogIdx = 0;
+  while (_hitLogIdx < _hitLog.length && _hitLog[_hitLogIdx].time <= t) _hitLogIdx++;
+  renderFrame(t);
 });
-el.exportBtn.addEventListener("click", async () => {
-  if (!state.mapObjects.length || state.loading) return;
+
+document.getElementById("cbtn-export").addEventListener("click", async () => {
+  if (!S.mapObjects.length) return;
+  if (S.exporting){ stopExport(); return; }
   try {
-    if (state.exporting) {
-      stopExport();
-      return;
-    }
-    if (state.audioCtx && state.audioCtx.state === "suspended") await state.audioCtx.resume();
+    if (S.audioCtx?.state === "suspended") await S.audioCtx.resume();
     startExport();
-    state.audio.currentTime = 0;
-    await state.audio.play();
-    state.playing = true;
-    el.playBtn.textContent = "Pause";
-  } catch (err) {
-    console.error(err);
-    setStatus(err.message || "Failed to start export.", "error");
+    S.audio.currentTime = 0;
+    await S.audio.play();
+    S.playing = true;
+    document.getElementById("cbtn-play").textContent = "⏸ Pause";
+  } catch(err){
+    setStatus(err.message||"Export failed.","err");
     stopExport();
   }
 });
-
-/* ---------- Init ---------- */
-resizeCanvas();
-setupDragDrop();
-setStatus("Drop .osr only (if cached), or .osr + .osz for first run.", "");
 </script>
 </body>
 </html>

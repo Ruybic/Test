@@ -14,24 +14,17 @@
             --text-main: #ffffff; 
             --text-muted: #888895;
             --accent-gold: #ffd700;
-            --accent-blue: #22ccff;
             --accent-green: #88ffcc;
             --accent-red: #ff4444;
         }
         
-        body { background-color: var(--dark-base); color: var(--text-main); font-family: 'Exo 2', sans-serif; margin: 0; scroll-behavior: smooth; }
+        body { background-color: var(--dark-base); color: var(--text-main); font-family: 'Exo 2', sans-serif; margin: 0; scroll-behavior: smooth; overflow-x: hidden; }
         
         /* --- HEADER --- */
         header {
-            background: #111116; 
-            padding: 12px 25px; 
-            display: flex; 
-            align-items: center;
-            justify-content: space-between; 
-            border-bottom: 2px solid var(--panel-bg);
-            position: sticky; 
-            top: 0; 
-            z-index: 1000;
+            background: #111116; padding: 12px 25px; display: flex; align-items: center;
+            justify-content: space-between; border-bottom: 2px solid var(--panel-bg);
+            position: sticky; top: 0; z-index: 1000;
         }
         .logo-box { margin-left: -10px; }
         .logo-box a { display: flex; align-items: center; gap: 12px; text-decoration: none; }
@@ -47,84 +40,105 @@
             font-weight: 600; font-size: 14px; transition: all 0.2s ease; 
         }
         .dropbtn:hover { background: #3e3e4a; border-color: var(--osu-pink); }
-        .dropbtn:active { transform: scale(0.96); }
         .dropdown-content {
             visibility: hidden; opacity: 0; transform: translateY(10px); 
-            transition: opacity 0.2s ease, transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), visibility 0.2s;
+            transition: opacity 0.2s ease, transform 0.2s, visibility 0.2s;
             position: absolute; right: 0; top: calc(100% + 10px); min-width: 260px; z-index: 2000; 
-            background-color: rgba(28, 28, 33, 0.9); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); 
+            background-color: rgba(28, 28, 33, 0.9); backdrop-filter: blur(15px); 
             box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7); border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 12px; padding: 8px; 
         }
         .dropdown-content.show { visibility: visible; opacity: 1; transform: translateY(0); }
-        .dropdown-content a { 
+        .menu-item { 
             position: relative; color: var(--text-muted); padding: 12px 16px; text-decoration: none; 
             display: block; font-size: 14px; border-radius: 8px; transition: all 0.25s ease; margin-bottom: 2px;
         }
-        .dropdown-content a:last-child { margin-bottom: 0; }
-        .dropdown-content a .menu-desc { display: block; font-size: 11px; color: #6a6a7a; margin-top: 4px; transition: color 0.2s ease; }
-        .dropdown-content a:hover { background: rgba(255, 102, 170, 0.1); color: white; }
-        .dropdown-content a.active { background: rgba(255, 102, 170, 0.15); color: white; font-weight: 700; }
-        .dropdown-content a::before {
+        .menu-item:last-child { margin-bottom: 0; }
+        .menu-item .menu-desc { display: block; font-size: 11px; color: #6a6a7a; margin-top: 4px; transition: color 0.2s ease; }
+        .menu-item:hover { background: rgba(255, 102, 170, 0.1); color: white; }
+        .menu-item.active { background: rgba(255, 102, 170, 0.15); color: white; font-weight: 700; }
+        .menu-item::before {
             content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%) scaleY(0);
             width: 4px; height: 65%; background: var(--osu-pink); border-radius: 0 4px 4px 0;
             transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
         }
-        .dropdown-content a.active::before, .dropdown-content a:hover::before { transform: translateY(-50%) scaleY(1); }
-        .dropdown-content a.active .menu-desc, .dropdown-content a:hover .menu-desc { color: var(--osu-pink); }
+        .menu-item.active::before, .menu-item:hover::before { transform: translateY(-50%) scaleY(1); }
+        .menu-item.active .menu-desc, .menu-item:hover .menu-desc { color: var(--osu-pink); }
 
-        /* --- RANKINGS PAGE CONTROLS --- */
+        /* --- LAYOUT & CONTROLS --- */
         .controls-container { 
-            max-width: 1100px; margin: 30px auto 15px; padding: 0 20px; 
+            max-width: 1400px; margin: 30px auto 15px; padding: 0 20px; 
             display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;
         }
-        .search-bar {
-            flex-grow: 1; max-width: 400px; position: relative;
-        }
-        .search-input {
-            width: 100%; box-sizing: border-box; background: var(--panel-bg); color: white; 
-            border: 1px solid #3e3e4a; padding: 10px 15px; border-radius: 8px; font-family: 'Exo 2'; 
-            font-weight: 600; outline: none; transition: 0.2s;
-        }
-        .search-input:focus { border-color: var(--osu-pink); }
-        
-        .sort-select { 
+        .controls-group { display: flex; gap: 10px; flex-grow: 1; max-width: 600px; }
+        .search-input, .styled-select, .date-picker {
             background: var(--panel-bg); color: white; border: 1px solid #3e3e4a; padding: 10px 15px; 
-            border-radius: 8px; font-family: 'Exo 2'; font-weight: 600; outline: none; cursor: pointer; transition: 0.2s;
+            border-radius: 8px; font-family: 'Exo 2'; font-weight: 600; outline: none; transition: 0.2s; box-sizing: border-box;
         }
-        .sort-select:focus { border-color: var(--osu-pink); }
+        .search-input { flex-grow: 1; }
+        .search-input:focus, .styled-select:focus, .date-picker:focus { border-color: var(--osu-pink); }
+        
+        /* Color scheme for datepicker icon */
+        ::-webkit-calendar-picker-indicator { filter: invert(1) opacity(0.7); cursor: pointer; }
 
-        /* --- PLAYER CARDS (OSU! STYLE) --- */
-        .leaderboard-list { max-width: 1100px; margin: 0 auto; padding: 0 20px 20px; display: flex; flex-direction: column; gap: 12px; }
+        .main-layout {
+            display: flex; max-width: 1400px; margin: 0 auto; padding: 0 20px 20px; gap: 20px; align-items: flex-start;
+        }
+
+        /* --- LEFT PANEL (PLAYER DATA) --- */
+        .left-panel {
+            width: 320px; position: sticky; top: 90px; background: var(--panel-bg); 
+            border: 1px solid #3e3e4a; border-radius: 12px; padding: 20px; display: none; /* Hidden until clicked */
+            flex-direction: column; gap: 15px;
+        }
+        .left-panel.active { display: flex; }
+        .panel-avatar { width: 100px; height: 100px; border-radius: 15px; border: 3px solid var(--dark-base); margin: 0 auto; display: block; }
+        .panel-name { text-align: center; font-size: 24px; font-weight: 800; color: white; margin: 0; }
+        .panel-rank { text-align: center; color: var(--osu-pink); font-size: 18px; font-weight: 700; margin-top: -10px; }
+        .panel-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+        .panel-stat { background: var(--dark-base); padding: 10px; border-radius: 8px; text-align: center; }
+        .panel-stat span { display: block; font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; }
+        .panel-stat strong { display: block; font-size: 16px; color: white; margin-top: 3px; }
+        .btn-visit-profile {
+            display: block; width: 100%; text-align: center; background: rgba(255, 102, 170, 0.1); 
+            color: var(--osu-pink); border: 1px solid var(--osu-pink); padding: 10px 0; border-radius: 8px; 
+            text-decoration: none; font-weight: 700; transition: 0.2s; margin-top: 10px; box-sizing: border-box;
+        }
+        .btn-visit-profile:hover { background: var(--osu-pink); color: white; }
+        .placeholder-panel {
+            width: 320px; position: sticky; top: 90px; border: 1px dashed #3e3e4a; border-radius: 12px; 
+            display: flex; align-items: center; justify-content: center; height: 400px; color: var(--text-muted);
+            font-weight: 600; text-align: center; padding: 20px; box-sizing: border-box;
+        }
+
+        /* --- CENTER PANEL (LEADERBOARD) --- */
+        .center-panel { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+
         .player-card { 
             background: var(--panel-bg); border-radius: 12px; padding: 12px 15px; border: 1px solid #3e3e4a; 
-            display: flex; flex-direction: column; gap: 8px; transition: 0.2s; position: relative; overflow: hidden;
+            display: flex; flex-direction: column; gap: 8px; transition: 0.2s; cursor: pointer;
         }
         .player-card:hover { border-color: var(--osu-pink); transform: translateX(5px); background: #343440; }
-
         .player-main { display: flex; justify-content: space-between; align-items: center; }
         .player-identity { display: flex; align-items: center; gap: 15px; }
         .rank-badge { font-size: 20px; font-weight: 900; color: var(--text-muted); width: 45px; text-align: center; }
-        .avatar { width: 48px; height: 48px; border-radius: 10px; border: 2px solid #1c1c21; cursor: pointer; }
+        .avatar-small { width: 48px; height: 48px; border-radius: 10px; border: 2px solid #1c1c21; }
         .user-details { display: flex; flex-direction: column; justify-content: center; }
-        .user-link { font-size: 18px; font-weight: 800; color: white; text-decoration: none; display: flex; align-items: center; gap: 8px; }
-        .user-link:hover { color: var(--osu-pink); }
+        .user-name { font-size: 18px; font-weight: 800; color: white; display: flex; align-items: center; gap: 8px; }
         .flag { width: 22px; border-radius: 3px; }
-        .global-rank { font-size: 11px; color: var(--text-muted); font-weight: 600; margin-top: 2px; }
-
         .stat-block { text-align: right; }
         .stat-value { font-size: 22px; font-weight: 900; color: var(--osu-pink); line-height: 1; display: flex; align-items: center; justify-content: flex-end; gap: 8px; }
-        .daily-change { font-size: 12px; font-weight: 800; padding: 2px 6px; border-radius: 4px; background: rgba(0,0,0,0.3); display: flex; align-items: center; gap: 3px; }
+        
+        .daily-change { font-size: 12px; font-weight: 800; padding: 2px 6px; border-radius: 4px; background: rgba(0,0,0,0.3); }
         .daily-change.up { color: var(--accent-green); }
         .daily-change.down { color: var(--accent-red); }
+        .daily-change.new { color: var(--accent-gold); }
 
-        /* --- TOP PLAY BANNER --- */
         .top-play-banner {
             position: relative; border-radius: 6px; height: 45px; overflow: hidden;
             display: flex; align-items: center; padding: 0 15px; text-decoration: none;
             background-size: cover; background-position: center; border: 1px solid #1c1c21;
-            margin-left: 60px; /* Aligns with text past the rank number */
-            transition: filter 0.2s ease;
+            margin-left: 60px; transition: filter 0.2s ease;
         }
         .top-play-banner:hover { filter: brightness(1.2); }
         .top-play-banner::before {
@@ -137,79 +151,55 @@
         .tp-stats { font-weight: 800; color: var(--text-main); display: flex; gap: 10px; }
         .tp-acc { color: #88ffcc; }
 
-        .loader { text-align: center; padding: 100px; color: var(--text-muted); font-weight: 800; letter-spacing: 2px; }
+        .loader { text-align: center; padding: 50px; color: var(--text-muted); font-weight: 800; letter-spacing: 2px; }
 
-        /* --- PAGINATION --- */
-        .pagination {
-            display: flex; justify-content: center; align-items: center; gap: 10px; margin: 20px auto 40px; max-width: 1100px;
+        /* --- RIGHT PANEL (ADVERTISEMENT) --- */
+        .right-panel {
+            width: 250px; position: sticky; top: 90px; background: var(--panel-bg);
+            border: 1px solid #3e3e4a; border-radius: 12px; height: 600px;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            color: #4a4a5a; font-weight: 800; letter-spacing: 2px; text-align: center;
         }
+
+        /* --- PAGINATION (PINK CSS) --- */
+        .pagination { display: flex; justify-content: center; align-items: center; gap: 10px; padding: 10px 0; }
         .page-btn {
-            background: var(--panel-bg); color: white; border: 1px solid #3e3e4a; padding: 8px 16px; 
-            border-radius: 6px; cursor: pointer; font-family: 'Exo 2'; font-weight: 700; transition: 0.2s;
+            background: transparent; color: var(--osu-pink); border: 2px solid var(--osu-pink); 
+            padding: 8px 16px; border-radius: 6px; cursor: pointer; font-family: 'Exo 2'; 
+            font-weight: 700; transition: 0.2s;
         }
-        .page-btn:hover:not(:disabled) { background: var(--osu-pink); border-color: var(--osu-pink); }
-        .page-btn:disabled { opacity: 0.5; cursor: not-allowed; }
-        .page-info { font-weight: 700; color: var(--text-muted); }
+        .page-btn:hover:not(:disabled) { background: var(--osu-pink); color: white; }
+        .page-btn:disabled { opacity: 0.3; cursor: not-allowed; border-color: #555; color: #555; background: transparent; }
+        .page-info { font-weight: 700; color: white; background: var(--panel-bg); padding: 8px 16px; border-radius: 6px; border: 1px solid #3e3e4a; }
 
         /* --- NOTIFICATION TOAST --- */
         #notif-toast {
             position: fixed; background: rgba(28, 28, 33, 0.95); backdrop-filter: blur(10px);
-            border: 1px solid #3e3e4a; border-radius: 8px; padding: 15px 20px; z-index: 9999;
+            border: 1px solid #3e3e4a; border-radius: 12px; padding: 15px; z-index: 9999;
             box-shadow: 0 10px 30px rgba(0,0,0,0.5); display: flex; flex-direction: column; gap: 10px;
             transform: translateY(150%); opacity: 0; transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.4s;
-            overflow: hidden; min-width: 250px;
+            overflow: hidden; min-width: 280px; bottom: 30px; left: 30px;
         }
         #notif-toast.show { transform: translateY(0); opacity: 1; }
-        
-        .notif-header { display: flex; justify-content: space-between; align-items: center; font-weight: 800; color: white; }
-        .notif-desc { font-size: 13px; color: var(--text-muted); margin-bottom: 5px; }
-        .notif-btn {
-            background: rgba(255, 102, 170, 0.2); color: var(--osu-pink); border: 1px solid var(--osu-pink);
-            padding: 8px; border-radius: 6px; font-family: 'Exo 2'; font-weight: 700; cursor: pointer;
-            text-align: center; text-decoration: none; transition: 0.2s; display: block;
-        }
-        .notif-btn:hover { background: var(--osu-pink); color: white; }
-        
-        .notif-progress {
-            position: absolute; bottom: 0; left: 0; height: 4px; background: var(--osu-pink); width: 100%;
-        }
+        .notif-header { display: flex; justify-content: space-between; align-items: center; font-weight: 800; color: white; padding-bottom: 5px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .notif-progress { position: absolute; bottom: 0; left: 0; height: 4px; background: var(--osu-pink); width: 100%; }
         @keyframes shrinkBar { from { width: 100%; } to { width: 0%; } }
 
-        /* PC / Tablet Notif Position */
-        @media (min-width: 768px) {
-            #notif-toast { bottom: 30px; left: 30px; }
+        /* --- RESPONSIVENESS --- */
+        @media (max-width: 1100px) {
+            .right-panel { display: none; } /* Hide ad on smaller screens */
         }
-
-        /* --- MOBILE RESPONSIVENESS --- */
-        @media (max-width: 768px) {
-            .controls-container { flex-direction: column; align-items: stretch; }
-            .search-bar { max-width: 100%; }
+        @media (max-width: 850px) {
+            .left-panel, .placeholder-panel { display: none; } /* Hide sticky sidebar on mobile */
+            .controls-group { flex-direction: column; max-width: 100%; }
             .player-main { flex-direction: column; align-items: flex-start; gap: 10px; }
             .stat-block { width: 100%; display: flex; justify-content: space-between; align-items: center; }
             .top-play-banner { margin-left: 0; margin-top: 5px; height: auto; padding: 10px; }
             .tp-content { flex-direction: column; align-items: flex-start; gap: 5px; }
             .tp-title { max-width: 100%; white-space: normal; }
-            .tp-stats { width: 100%; justify-content: space-between; }
-            
-            /* Mobile Notif Position */
-            #notif-toast { top: 20px; bottom: auto; left: 50%; transform: translate(-50%, -150%); width: 85%; max-width: 400px; }
+            #notif-toast { bottom: auto; top: 20px; left: 50%; transform: translate(-50%, -150%); width: 85%; max-width: 400px; }
             #notif-toast.show { transform: translate(-50%, 0); }
         }
-
-        /* --- SCROLL PROGRESS WIDGET --- */
-        #progress-container {
-            position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px;
-            cursor: pointer; display: none; align-items: center; justify-content: center;
-            z-index: 2000; transition: transform 0.2s ease, opacity 0.3s ease;
-        }
-        #progress-container:hover { transform: scale(1.1); }
-        .progress-svg { transform: rotate(-90deg); width: 100%; height: 100%; }
-        .progress-background { fill: rgba(28, 28, 33, 0.9); stroke: rgba(255, 255, 255, 0.1); stroke-width: 4; }
-        #progress-bar {
-            fill: none; stroke: var(--osu-pink); stroke-width: 4; stroke-linecap: round;
-            stroke-dasharray: 163.3; stroke-dashoffset: 163.3; transition: stroke-dashoffset 0.1s linear;
-        }
-        .scroll-arrow-up { position: absolute; color: white; font-size: 16px; margin-top: -2px; pointer-events: none; }
     </style>
 </head>
 <body>
@@ -224,23 +214,23 @@
     <div class="dropdown">
         <button class="dropbtn" id="menuBtn">Menu ▼</button>
         <div class="dropdown-content" id="myDropdown">
-            <a href="Test.html">Scores<span class="menu-desc">See what happened today?</span></a>
-            <a href="rankings.html" class="active">Rankings<span class="menu-desc">See player leaderboards</span></a>
-            <a href="videos.html">Videos<span class="menu-desc">Watch gameplay and highlights</span></a>
-            <a href="mapping.html">Mapping<span class="menu-desc">Explore beatmap creations</span></a>
-            <a href="archive.html">Archive<span class="menu-desc">Explore community History</span></a>
-            <a href="socials.html">Socials<span class="menu-desc">Connect with the community</span></a>
+            <a href="Test.html" class="menu-item">Scores<span class="menu-desc">See what happened today?</span></a>
+            <a href="rankings.html" class="menu-item active">Rankings<span class="menu-desc">See player leaderboards</span></a>
+            <a href="videos.html" class="menu-item">Videos<span class="menu-desc">Watch gameplay and highlights</span></a>
+            <a href="mapping.html" class="menu-item">Mapping<span class="menu-desc">Explore beatmap creations</span></a>
+            <a href="archive.html" class="menu-item">Archive<span class="menu-desc">Explore community History</span></a>
+            <a href="socials.html" class="menu-item">Socials<span class="menu-desc">Connect with the community</span></a>
         </div>
     </div>
 </header>
 
 <div class="controls-container">
-    <div class="search-bar">
-        <input type="text" id="searchInput" class="search-input" placeholder="Search by Player Name or Rank #...">
+    <div class="controls-group">
+        <input type="text" id="searchInput" class="search-input" placeholder="Search by Player Name...">
+        <input type="date" id="datePicker" class="date-picker" title="View past leaderboards">
     </div>
-    <select id="sortSelect" class="sort-select">
+    <select id="sortSelect" class="styled-select">
         <option value="pp">Rank by PP (Default)</option>
-        <option value="daily_pp">Most PP Gained Today</option>
         <option value="play_count">Play Count</option>
         <option value="play_time">Play Time</option>
         <option value="accuracy">Global Accuracy</option>
@@ -248,53 +238,57 @@
         <option value="s_count">Total S Count</option>
         <option value="medals">Medal Count</option>
         <option value="total_score">Total Score</option>
-        <option value="last_active">Recently Active</option>
     </select>
 </div>
 
-<div class="leaderboard-list" id="leaderboardGrid">
-    <div class="loader">FETCHING PLAYER DATA...</div>
+<div class="main-layout">
+    <aside class="placeholder-panel" id="placeholderPanel">
+        Select a player card to view detailed stats here.
+    </aside>
+    <aside class="left-panel" id="playerDetailsPanel">
+        </aside>
+
+    <main class="center-panel">
+        <div class="pagination" id="topPagination" style="display: none;">
+            <button class="page-btn" onclick="changePage(-1)">◀ Prev</button>
+            <span class="page-info" class="pageInfoText">Page 1 / 1</span>
+            <button class="page-btn" onclick="changePage(1)">Next ▶</button>
+        </div>
+
+        <div id="leaderboardGrid">
+            <div class="loader">FETCHING PLAYER DATA...</div>
+        </div>
+
+        <div class="pagination" id="bottomPagination" style="display: none;">
+            <button class="page-btn" onclick="changePage(-1)">◀ Prev</button>
+            <span class="page-info" class="pageInfoText">Page 1 / 1</span>
+            <button class="page-btn" onclick="changePage(1)">Next ▶</button>
+        </div>
+    </main>
+
+    <aside class="right-panel">
+        <span>YOUR AD<br>HERE</span>
+        <p style="font-size: 10px; color: #555; margin-top: 10px;">Support the Community</p>
+    </aside>
 </div>
 
-<div class="pagination" id="paginationControls" style="display: none;">
-    <button class="page-btn" id="prevBtn" onclick="changePage(-1)">◀ Previous</button>
-    <span class="page-info" id="pageInfo">Page 1 / 1</span>
-    <button class="page-btn" id="nextBtn" onclick="changePage(1)">Next ▶</button>
-</div>
-
-<footer id="mainFooter" style="background-color: #1a1a1a; color: #ffffff; padding: 15px 10px 30px 10px; text-align: center; border-top: 4px solid #ff66aa; margin-top: 20px;">
+<footer id="mainFooter" style="background-color: #1a1a1a; color: #ffffff; padding: 15px 10px 30px 10px; text-align: center; border-top: 4px solid #ff66aa;">
     <div style="max-width: 1000px; margin: 0 auto;">
         <h3 style="color: #ff66aa; margin-bottom: 5px; margin-top: 5px;">Osu! Iraq Today</h3>
         <p style="margin: 5px 0; font-size: 0.9em; color: #eee;">Built with ❤️ for the Iraqi Community</p>
-        <div style="margin: 15px 0;">
-            <a href="https://github.com/Ruybic/Test" style="color: #ff66aa; text-decoration: none; margin: 0 10px; font-weight: bold;">GitHub</a> • 
-            <a href="#discord" style="color: #ff66aa; text-decoration: none; margin: 0 10px; font-weight: bold;">Discord</a> • 
-            <a href="OIT_Document.html" style="color: #ff66aa; text-decoration: none; margin: 0 10px; font-weight: bold;">Documentation</a>
-        </div>
-        <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
-        <p style="font-size: 0.8em; color: #aaa; line-height: 1.6;">
-            A <strong>non-commercial</strong> osu! community project | Data provided by the <strong>osu! API v2.</strong><br>
-            © 2026 Ruybic
-        </p>
     </div>
 </footer>
 
 <div id="notif-toast">
     <div class="notif-header">
         <span id="notif-title">Keep Exploring!</span>
-        <button style="background:none; border:none; color:#888; cursor:pointer; font-weight:bold;" onclick="closeNotif()">✕</button>
+        <button style="background:none; border:none; color:#888; cursor:pointer; font-weight:bold; font-size:16px;" onclick="closeNotif()">✕</button>
     </div>
-    <div class="notif-desc" id="notif-msg">Want to see more top players?</div>
-    <a href="#" id="notif-action" class="notif-btn" onclick="handleNotifAction(event)">Go to Page 2</a>
+    <a href="#" id="notif-action" class="menu-item" onclick="handleNotifAction(event)" style="background: var(--dark-base);">
+        <span id="notif-main-text">Next Page</span>
+        <span class="menu-desc" id="notif-sub-text">Continue exploring the leaderboard</span>
+    </a>
     <div class="notif-progress" id="notif-bar"></div>
-</div>
-
-<div id="progress-container" onclick="scrollToTop()">
-    <svg class="progress-svg" viewBox="0 0 60 60">
-        <circle class="progress-background" cx="30" cy="30" r="26"></circle>
-        <circle id="progress-bar" cx="30" cy="30" r="26"></circle>
-    </svg>
-    <div class="scroll-arrow-up">▲</div>
 </div>
 
 <audio id="notifSound" src="https://assets.ppy.sh/audio/notification.mp3" preload="auto"></audio>
@@ -302,77 +296,102 @@
 <script>
 // --- STATE ---
 let allData = [];
+let previousDataMap = new Map(); // Store yesterday's data by player ID
 let filteredData = [];
 let currentPage = 1;
 const itemsPerPage = 50;
 let notifTimeout;
 
-// --- NAVIGATION LOGIC ---
+// Init DOM elements
+const grid = document.getElementById('leaderboardGrid');
+const searchInput = document.getElementById('searchInput');
+const sortSelect = document.getElementById('sortSelect');
+const datePicker = document.getElementById('datePicker');
+const playerPanel = document.getElementById('playerDetailsPanel');
+const placeholderPanel = document.getElementById('placeholderPanel');
+
+// --- MENU LOGIC ---
 const menuBtn = document.getElementById('menuBtn');
 const dropdown = document.getElementById('myDropdown');
 menuBtn.onclick = (e) => { dropdown.classList.toggle("show"); e.stopPropagation(); };
 window.onclick = (e) => { if (!e.target.matches('.dropbtn')) dropdown.classList.remove('show'); };
 
-// --- FETCH DATA ---
-async function fetchRankings() {
-    const grid = document.getElementById('leaderboardGrid');
-    try {
-        // Fallback or Test Implementation - For Production replace with your index.json logic
-        const indexRes = await fetch('data/leaderboards/index.json?t=' + Date.now()).catch(()=>null);
-        let finalPath = '';
-        
-        if (indexRes && indexRes.ok) {
-            const index = await indexRes.json();
-            const latestDate = index.available_dates[index.available_dates.length - 1];
-            const parts = latestDate.split('-');
-            finalPath = `data/leaderboards/${parts[0]}/${parts[1].padStart(2, '0')}/${parts[2].padStart(2, '0')}.json?t=${Date.now()}`;
-        } else {
-            // For testing purposes if you run this locally without the JSON paths mapping perfectly
-            finalPath = 'data/leaderboards/latest.json'; 
-        }
+// Set max date picker to today
+const today = new Date().toISOString().split('T')[0];
+datePicker.max = today;
+datePicker.value = today;
 
-        // Mock data fetch for preview (Replace this catch block with your actual throw in production)
-        const dataRes = await fetch(finalPath);
-        if(!dataRes.ok) throw new Error("Data missing");
-        
-        allData = await dataRes.json();
-        
-        // Map native indices for global rank tracking if missing
-        allData = allData.map((p, i) => ({ ...p, original_rank: i + 1 }));
-        
-        applyFiltersAndRender();
-        
-    } catch (e) {
-        console.error("Fetch Error:", e);
-        // Displaying a mock data piece so you can see it working if JSON fails locally
-        grid.innerHTML = `<div class="loader" style="color:#ff66aa">Data fetched or Error occurred: ${e.message}</div>`;
-    }
-}
-
-// --- FILTER, SORT, PAGINATE ---
+// Formatter
 const fmtNum = (n) => Number(n).toLocaleString();
 const fmtTime = (s) => (s / 3600).toFixed(0) + 'h';
 
-function applyFiltersAndRender() {
-    const sortBy = document.getElementById('sortSelect').value;
-    const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+// --- DATA FETCHING (Current & Previous Date) ---
+async function fetchRankingsForDate(dateStr) {
+    grid.innerHTML = '<div class="loader">FETCHING DATA...</div>';
+    
+    try {
+        // Parse the selected date
+        const d = new Date(dateStr);
+        const y = d.getUTCFullYear();
+        const m = String(d.getUTCMonth() + 1).padStart(2, '0');
+        const day = String(d.getUTCDate()).padStart(2, '0');
+        
+        // Calculate previous day for historical rank comparison
+        const prevD = new Date(d);
+        prevD.setUTCDate(prevD.getUTCDate() - 1);
+        const py = prevD.getUTCFullYear();
+        const pm = String(prevD.getUTCMonth() + 1).padStart(2, '0');
+        const pday = String(prevD.getUTCDate()).padStart(2, '0');
 
-    // Filter
+        // Note: For production, ensure paths match your repo exactly
+        const currentPath = `data/leaderboards/${y}/${m}/${day}.json?t=${Date.now()}`;
+        const prevPath = `data/leaderboards/${py}/${pm}/${pday}.json?t=${Date.now()}`;
+
+        // Fetch current data
+        const currentRes = await fetch(currentPath).catch(() => null);
+        if (!currentRes || !currentRes.ok) {
+            throw new Error(`No data found for ${dateStr}`);
+        }
+        allData = await currentRes.json();
+        
+        // Assign absolute current ranks based on pure PP
+        allData.sort((a, b) => b.pp - a.pp);
+        allData.forEach((p, i) => p.current_iraq_rank = i + 1);
+
+        // Fetch previous data to map rank changes
+        previousDataMap.clear();
+        const prevRes = await fetch(prevPath).catch(() => null);
+        if (prevRes && prevRes.ok) {
+            const prevDataArr = await prevRes.json();
+            prevDataArr.sort((a, b) => b.pp - a.pp);
+            prevDataArr.forEach((p, i) => {
+                previousDataMap.set(p.id, i + 1); // map user ID to yesterday's rank
+            });
+        }
+
+        applyFiltersAndRender();
+
+    } catch (e) {
+        grid.innerHTML = `<div class="loader" style="color:var(--accent-red)">${e.message}</div>`;
+        allData = [];
+        updatePaginationUI(0);
+    }
+}
+
+// --- FILTER & RENDER LOGIC ---
+function applyFiltersAndRender() {
+    const sortBy = sortSelect.value;
+    const searchTerm = searchInput.value.toLowerCase().trim();
+
+    // Filter strictly by name
     filteredData = allData.filter(player => {
         if (!searchTerm) return true;
-        const isNameMatch = player.user.toLowerCase().includes(searchTerm);
-        // Allow searching by exact original Iraq Rank
-        const isRankMatch = player.original_rank.toString() === searchTerm;
-        return isNameMatch || isRankMatch;
+        return player.user.toLowerCase().includes(searchTerm);
     });
 
     // Sort
-    filteredData.sort((a, b) => {
-        if (sortBy === 'last_active') return new Date(b.last_active) - new Date(a.last_active);
-        return (b[sortBy] || 0) - (a[sortBy] || 0);
-    });
+    filteredData.sort((a, b) => (b[sortBy] || 0) - (a[sortBy] || 0));
 
-    // Reset to page 1 on filter/search change
     currentPage = 1; 
     renderPage();
 }
@@ -386,25 +405,30 @@ function changePage(direction) {
     window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-function renderPage() {
-    const grid = document.getElementById('leaderboardGrid');
-    const sortBy = document.getElementById('sortSelect').value;
-    grid.innerHTML = '';
-
-    const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+function updatePaginationUI(totalPages) {
+    const topPag = document.getElementById('topPagination');
+    const botPag = document.getElementById('bottomPagination');
     
-    // Pagination Controls
-    const pagControls = document.getElementById('paginationControls');
     if (totalPages > 1) {
-        pagControls.style.display = 'flex';
-        document.getElementById('pageInfo').innerText = `Page ${currentPage} / ${totalPages}`;
-        document.getElementById('prevBtn').disabled = currentPage === 1;
-        document.getElementById('nextBtn').disabled = currentPage === totalPages;
+        topPag.style.display = 'flex'; botPag.style.display = 'flex';
+        
+        document.querySelectorAll('.page-info').forEach(el => el.innerText = `Page ${currentPage} / ${totalPages}`);
+        
+        const prevDisabled = currentPage === 1;
+        const nextDisabled = currentPage === totalPages;
+        
+        topPag.children[0].disabled = prevDisabled; topPag.children[2].disabled = nextDisabled;
+        botPag.children[0].disabled = prevDisabled; botPag.children[2].disabled = nextDisabled;
     } else {
-        pagControls.style.display = 'none';
+        topPag.style.display = 'none'; botPag.style.display = 'none';
     }
+}
 
-    // Handle Empty Search
+function renderPage() {
+    grid.innerHTML = '';
+    const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+    updatePaginationUI(totalPages);
+
     if (filteredData.length === 0) {
         grid.innerHTML = `<div class="loader">NO PLAYERS FOUND</div>`;
         return;
@@ -412,48 +436,46 @@ function renderPage() {
 
     const startIndex = (currentPage - 1) * itemsPerPage;
     const paginatedItems = filteredData.slice(startIndex, startIndex + itemsPerPage);
+    const sortBy = sortSelect.value;
 
     paginatedItems.forEach((player, loopIndex) => {
-        const actualRank = startIndex + loopIndex + 1; // Rank based on current sort & filter
+        const displayRank = startIndex + loopIndex + 1; // Visual rank based on current sort
+        
+        // Calculate Rank Change (Only makes sense if sorted by PP)
+        let changeHtml = '';
+        if (sortBy === 'pp') {
+            const oldRank = previousDataMap.get(player.id);
+            if (!oldRank) {
+                changeHtml = `<div class="daily-change new">NEW</div>`;
+            } else {
+                const diff = oldRank - player.current_iraq_rank;
+                if (diff > 0) changeHtml = `<div class="daily-change up">▲ ${diff}</div>`;
+                else if (diff < 0) changeHtml = `<div class="daily-change down">▼ ${Math.abs(diff)}</div>`;
+                else changeHtml = `<div class="daily-change" style="color:#777">-</div>`;
+            }
+        }
 
-        // Determine strictly what data to show based on dropdown filter
         let primaryStatHtml = '';
         if (sortBy === 'pp') primaryStatHtml = `${fmtNum(Math.round(player.pp))} <span style="font-size:14px; color:var(--text-muted)">pp</span>`;
-        else if (sortBy === 'daily_pp') primaryStatHtml = `<span style="color:#88ffcc">+${Math.round(player.daily_pp)} pp</span> <span style="font-size:14px; color:var(--text-muted)">Today</span>`;
+        else if (sortBy === 'play_count') primaryStatHtml = `${fmtNum(player.play_count)} <span style="font-size:14px; color:var(--text-muted)">Plays</span>`;
+        else if (sortBy === 'play_time') primaryStatHtml = `${fmtTime(player.play_time)} <span style="font-size:14px; color:var(--text-muted)">Played</span>`;
+        else if (sortBy === 'accuracy') primaryStatHtml = `${(player.accuracy).toFixed(2)}% <span style="font-size:14px; color:var(--text-muted)">Acc</span>`;
         else if (sortBy === 'ss_count') primaryStatHtml = `${fmtNum(player.ss_count)} <span style="color:#f0f; font-size:14px;">SS</span>`;
         else if (sortBy === 's_count') primaryStatHtml = `${fmtNum(player.s_count)} <span style="color:var(--accent-gold); font-size:14px;">S</span>`;
         else if (sortBy === 'medals') primaryStatHtml = `${player.medals} <span style="font-size:14px; color:var(--text-muted)">Medals</span>`;
-        else if (sortBy === 'accuracy') primaryStatHtml = `${(player.accuracy).toFixed(2)}% <span style="font-size:14px; color:var(--text-muted)">Acc</span>`;
-        else if (sortBy === 'play_time') primaryStatHtml = `${fmtTime(player.play_time)} <span style="font-size:14px; color:var(--text-muted)">Played</span>`;
-        else if (sortBy === 'play_count') primaryStatHtml = `${fmtNum(player.play_count)} <span style="font-size:14px; color:var(--text-muted)">Plays</span>`;
         else if (sortBy === 'total_score') primaryStatHtml = `${(player.total_score / 1000000000).toFixed(2)}B <span style="font-size:14px; color:var(--text-muted)">Score</span>`;
-        else if (sortBy === 'last_active') primaryStatHtml = `Active <span style="font-size:14px; color:var(--text-muted)">Recently</span>`;
-
-        // Daily changes logic (Only show if sorting by PP to avoid cluttering other stats)
-        let changeHtml = '';
-        if (sortBy === 'pp' && player.daily_pp) {
-            if (player.daily_pp > 0) changeHtml = `<div class="daily-change up">▲ +${Math.round(player.daily_pp)}</div>`;
-            else if (player.daily_pp < 0) changeHtml = `<div class="daily-change down">▼ ${Math.round(player.daily_pp)}</div>`;
-        }
 
         let topPlayHtml = '';
         if (player.top_play) {
             const tp = player.top_play;
-            // Extract mapset ID from cover URL for clickability
             let mapsetId = tp.cover.match(/beatmaps\/(\d+)/)?.[1] || '';
             let mapLink = mapsetId ? `https://osu.ppy.sh/beatmapsets/${mapsetId}` : `https://osu.ppy.sh/users/${player.id}`;
             
             topPlayHtml = `
-                <a href="${mapLink}" target="_blank" class="top-play-banner" style="background-image: url('${tp.cover}');">
+                <a href="${mapLink}" target="_blank" onclick="event.stopPropagation()" class="top-play-banner" style="background-image: url('${tp.cover}');">
                     <div class="tp-content">
-                        <div class="tp-title">
-                            <span class="tp-acc">${tp.acc.toFixed(2)}%</span>
-                            ${tp.title} [${tp.diff}] <strong>${tp.mods}</strong>
-                        </div>
-                        <div class="tp-stats">
-                            <span>${tp.stars.toFixed(2)}⭐</span> 
-                            <span>${Math.round(tp.pp)} PP</span>
-                        </div>
+                        <div class="tp-title"><span class="tp-acc">${tp.acc.toFixed(2)}%</span> ${tp.title} [${tp.diff}] <strong>${tp.mods}</strong></div>
+                        <div class="tp-stats"><span>${tp.stars.toFixed(2)}⭐</span> <span>${Math.round(tp.pp)} PP</span></div>
                     </div>
                 </a>
             `;
@@ -461,25 +483,21 @@ function renderPage() {
 
         const card = document.createElement('div');
         card.className = 'player-card';
+        // Open player details on click
+        card.onclick = () => showPlayerDetails(player);
+        
         card.innerHTML = `
             <div class="player-main">
                 <div class="player-identity">
-                    <div class="rank-badge">#${actualRank}</div>
-                    <a href="https://osu.ppy.sh/users/${player.id}" target="_blank">
-                        <img src="${player.avatar}" class="avatar" loading="lazy" alt="Avatar">
-                    </a>
+                    <div class="rank-badge">#${displayRank}</div>
+                    <img src="${player.avatar}" class="avatar-small" loading="lazy">
                     <div class="user-details">
-                        <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" class="user-link">
-                            <img src="https://osu.ppy.sh/images/flags/IQ.png" class="flag"> ${player.user}
-                        </a>
-                        <div class="global-rank">Global #${fmtNum(player.rank || 0)}</div>
+                        <span class="user-name"><img src="https://osu.ppy.sh/images/flags/IQ.png" class="flag"> ${player.user}</span>
+                        <div style="font-size: 11px; color: var(--text-muted); font-weight: 600;">Global #${fmtNum(player.rank || 0)}</div>
                     </div>
                 </div>
                 <div class="stat-block">
-                    <div class="stat-value">
-                        ${changeHtml}
-                        ${primaryStatHtml}
-                    </div>
+                    <div class="stat-value">${changeHtml} ${primaryStatHtml}</div>
                 </div>
             </div>
             ${topPlayHtml}
@@ -488,51 +506,77 @@ function renderPage() {
     });
 }
 
-// Event Listeners for Filters
-document.getElementById('sortSelect').addEventListener('change', applyFiltersAndRender);
-document.getElementById('searchInput').addEventListener('input', applyFiltersAndRender);
+// --- SIDEBAR PLAYER DETAILS ---
+function showPlayerDetails(player) {
+    placeholderPanel.style.display = 'none';
+    playerPanel.classList.add('active');
+    
+    playerPanel.innerHTML = `
+        <img src="${player.avatar}" class="panel-avatar">
+        <h2 class="panel-name">${player.user}</h2>
+        <div class="panel-rank">Iraq #${player.current_iraq_rank} | Global #${fmtNum(player.rank || 0)}</div>
+        
+        <div class="panel-stat-grid">
+            <div class="panel-stat"><span>Total PP</span><strong>${fmtNum(Math.round(player.pp))}</strong></div>
+            <div class="panel-stat"><span>Accuracy</span><strong>${player.accuracy.toFixed(2)}%</strong></div>
+            <div class="panel-stat"><span>Play Count</span><strong>${fmtNum(player.play_count)}</strong></div>
+            <div class="panel-stat"><span>Play Time</span><strong>${fmtTime(player.play_time)}</strong></div>
+            <div class="panel-stat"><span>SS Count</span><strong style="color:#f0f">${player.ss_count}</strong></div>
+            <div class="panel-stat"><span>S Count</span><strong style="color:var(--accent-gold)">${player.s_count}</strong></div>
+            <div class="panel-stat"><span>Total Hits</span><strong>${fmtNum(player.total_hits || 0)}</strong></div>
+            <div class="panel-stat"><span>Medals</span><strong>${player.medals}</strong></div>
+        </div>
+        
+        <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" class="btn-visit-profile">Visit osu! Profile</a>
+    `;
+    
+    // Smooth scroll back up slightly if on mobile
+    if(window.innerWidth <= 850) {
+        playerPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
 
-
-// --- FOOTER NOTIFICATION LOGIC ---
-const notifToast = document.getElementById('notif-toast');
-const notifMsg = document.getElementById('notif-msg');
-const notifAction = document.getElementById('notif-action');
-const notifBar = document.getElementById('notif-bar');
-const notifSound = document.getElementById('notifSound');
-
+// --- NOTIFICATION LOGIC ---
 function showNotification() {
-    // Determine state
+    // Prevent false trigger if content is too short (e.g. searching filtered to 2 players)
+    if (document.body.scrollHeight <= window.innerHeight + 100) return;
+
     const totalPages = Math.ceil(filteredData.length / itemsPerPage);
     const isLastPage = currentPage >= totalPages;
 
+    const mainText = document.getElementById('notif-main-text');
+    const subText = document.getElementById('notif-sub-text');
+    const notifAction = document.getElementById('notif-action');
+
     if (!isLastPage) {
-        notifMsg.innerText = "There are more players waiting!";
-        notifAction.innerText = `Go to Page ${currentPage + 1}`;
+        document.getElementById('notif-title').innerText = "Keep Exploring!";
+        mainText.innerText = `Go to Page ${currentPage + 1}`;
+        subText.innerText = "There are more players waiting";
+        notifAction.classList.remove('active');
     } else {
-        notifMsg.innerText = "You've reached the end of the rankings!";
-        notifAction.innerText = "Watch Videos";
+        document.getElementById('notif-title').innerText = "End of List!";
+        mainText.innerText = "Watch Videos";
+        subText.innerText = "Check out community highlights";
+        notifAction.classList.add('active'); // Give it the pink active state
     }
 
-    // Reset animation
+    const notifBar = document.getElementById('notif-bar');
     notifBar.style.animation = 'none';
-    notifBar.offsetHeight; /* trigger reflow */
+    notifBar.offsetHeight; 
     notifBar.style.animation = 'shrinkBar 10s linear forwards';
 
-    notifToast.classList.add('show');
+    const toast = document.getElementById('notif-toast');
+    toast.classList.add('show');
     
-    // Play sound gently (browsers may block if no interaction)
-    notifSound.volume = 0.4;
-    notifSound.play().catch(e => console.log("Audio play blocked by browser."));
+    document.getElementById('notifSound').volume = 0.4;
+    document.getElementById('notifSound').play().catch(() => {});
 
-    // Auto hide after 10s
     clearTimeout(notifTimeout);
-    notifTimeout = setTimeout(() => {
-        closeNotif();
-    }, 10000);
+    notifTimeout = setTimeout(closeNotif, 10000);
 }
 
 function closeNotif() {
-    notifToast.classList.remove('show');
+    document.getElementById('notif-toast').classList.remove('show');
 }
 
 function handleNotifAction(e) {
@@ -546,46 +590,22 @@ function handleNotifAction(e) {
     closeNotif();
 }
 
-// Intersection Observer to trigger on Footer
+// Observer for footer (Triggers Notification)
 const footerObserver = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-        // Only show if there is data
-        if (filteredData.length > 0) {
-            showNotification();
-        }
+    if (entries[0].isIntersecting && filteredData.length > 0) {
+        showNotification();
     }
-}, { threshold: 0.5 });
-
+}, { threshold: 0.1 });
 footerObserver.observe(document.getElementById('mainFooter'));
 
-
-// --- SCROLL PROGRESS LOGIC ---
-window.onscroll = function() { 
-    const progressContainer = document.getElementById("progress-container");
-    const progressBar = document.getElementById("progress-bar");
-    
-    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const progress = window.pageYOffset;
-
-    if (progress > 150) {
-        progressContainer.style.display = "flex";
-        setTimeout(() => progressContainer.style.opacity = "1", 10);
-    } else {
-        progressContainer.style.opacity = "0";
-        setTimeout(() => progressContainer.style.display = "none", 300);
-    }
-
-    const percentage = Math.min(progress / totalHeight, 1) || 0;
-    const offset = 163.3 - (percentage * 163.3);
-    progressBar.style.strokeDashoffset = offset;
-};
-
-function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-}
+// --- EVENT LISTENERS ---
+sortSelect.addEventListener('change', applyFiltersAndRender);
+searchInput.addEventListener('input', applyFiltersAndRender);
+datePicker.addEventListener('change', (e) => fetchRankingsForDate(e.target.value));
 
 // Init
-fetchRankings();
+fetchRankingsForDate(today);
+
 </script>
 </body>
 </html>

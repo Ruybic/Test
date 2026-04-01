@@ -66,7 +66,6 @@
         .menu-item.active .menu-desc, .menu-item:hover .menu-desc { color: var(--osu-pink); }
 
         /* --- LAYOUT & CONTROLS --- */
-        /* Removed strict max-width constraints to use full screen space */
         .controls-container { 
             width: 96%; max-width: 1800px; margin: 30px auto 15px; padding: 0; 
             display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;
@@ -99,7 +98,6 @@
         .panel-stat span { display: block; font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; }
         .panel-stat strong { display: block; font-size: 16px; color: white; margin-top: 3px; }
         
-        /* Solid Profile Button Style */
         .btn-visit-profile {
             display: block; width: 100%; text-align: center; background: var(--osu-pink); 
             color: white; border: none; padding: 12px 0; border-radius: 8px; 
@@ -263,7 +261,7 @@
     <main class="center-panel">
         <div class="pagination" id="topPagination" style="display: none;">
             <button class="page-btn" onclick="changePage(-1)">◀ Prev</button>
-            <span class="page-info" class="pageInfoText">Page 1 / 1</span>
+            <span class="page-info pageInfoText">Page 1 / 1</span>
             <button class="page-btn" onclick="changePage(1)">Next ▶</button>
         </div>
 
@@ -273,7 +271,7 @@
 
         <div class="pagination" id="bottomPagination" style="display: none;">
             <button class="page-btn" onclick="changePage(-1)">◀ Prev</button>
-            <span class="page-info" class="pageInfoText">Page 1 / 1</span>
+            <span class="page-info pageInfoText">Page 1 / 1</span>
             <button class="page-btn" onclick="changePage(1)">Next ▶</button>
         </div>
     </main>
@@ -326,12 +324,24 @@ const dropdown = document.getElementById('myDropdown');
 menuBtn.onclick = (e) => { dropdown.classList.toggle("show"); e.stopPropagation(); };
 window.onclick = (e) => { if (!e.target.matches('.dropbtn')) dropdown.classList.remove('show'); };
 
-// Set default date to YESTERDAY (because Github actions fetch at night)
-const d = new Date();
-d.setDate(d.getDate() - 1);
-const yesterday = d.toISOString().split('T')[0];
-datePicker.max = new Date().toISOString().split('T')[0]; // Allow manual override to today if they want
-datePicker.value = yesterday;
+// Date helper to strictly format local YYYY-MM-DD
+function getLocalYMD(dateObj) {
+    const y = dateObj.getFullYear();
+    const m = String(dateObj.getMonth() + 1).padStart(2, '0');
+    const d = String(dateObj.getDate()).padStart(2, '0');
+    return `${y}-${m}-${d}`;
+}
+
+// Set default date to YESTERDAY locally
+const dToday = new Date();
+const dYesterday = new Date();
+dYesterday.setDate(dYesterday.getDate() - 1);
+
+const todayStr = getLocalYMD(dToday);
+const yesterdayStr = getLocalYMD(dYesterday);
+
+datePicker.max = todayStr;
+datePicker.value = yesterdayStr;
 
 // Formatter
 const fmtNum = (n) => Number(n).toLocaleString();
@@ -342,23 +352,23 @@ async function fetchRankingsForDate(dateStr) {
     grid.innerHTML = '<div class="loader">FETCHING DATA...</div>';
     
     try {
-        const selectedDate = new Date(dateStr);
-        const y = selectedDate.getUTCFullYear();
-        const m = String(selectedDate.getUTCMonth() + 1).padStart(2, '0');
-        const day = String(selectedDate.getUTCDate()).padStart(2, '0');
+        // String splitting avoids JS Date timezone conversion bugs entirely
+        const [y, m, day] = dateStr.split('-');
         
-        const prevD = new Date(selectedDate);
-        prevD.setUTCDate(prevD.getUTCDate() - 1);
-        const py = prevD.getUTCFullYear();
-        const pm = String(prevD.getUTCMonth() + 1).padStart(2, '0');
-        const pday = String(prevD.getUTCDate()).padStart(2, '0');
+        // Calculate previous day safely
+        const prevD = new Date(y, m - 1, day);
+        prevD.setDate(prevD.getDate() - 1);
+        const py = prevD.getFullYear();
+        const pm = String(prevD.getMonth() + 1).padStart(2, '0');
+        const pday = String(prevD.getDate()).padStart(2, '0');
 
-        const currentPath = \`data/leaderboards/\${y}/\${m}/\${day}.json?t=\${Date.now()}\`;
-        const prevPath = \`data/leaderboards/\${py}/\${pm}/\${pday}.json?t=\${Date.now()}\`;
+        // Note: Using standard backticks below for correct URL generation!
+        const currentPath = `data/leaderboards/${y}/${m}/${day}.json?t=${Date.now()}`;
+        const prevPath = `data/leaderboards/${py}/${pm}/${pday}.json?t=${Date.now()}`;
 
         const currentRes = await fetch(currentPath).catch(() => null);
         if (!currentRes || !currentRes.ok) {
-            throw new Error(\`No data found for \${dateStr}\`);
+            throw new Error(`No data found for ${dateStr}`);
         }
         allData = await currentRes.json();
         
@@ -378,7 +388,7 @@ async function fetchRankingsForDate(dateStr) {
         applyFiltersAndRender();
 
     } catch (e) {
-        grid.innerHTML = \`<div class="loader" style="color:var(--accent-red)">\${e.message}</div>\`;
+        grid.innerHTML = `<div class="loader" style="color:var(--accent-red)">${e.message}</div>`;
         allData = [];
         updatePaginationUI(0);
     }
@@ -416,7 +426,7 @@ function updatePaginationUI(totalPages) {
     if (totalPages > 1) {
         topPag.style.display = 'flex'; botPag.style.display = 'flex';
         
-        document.querySelectorAll('.page-info').forEach(el => el.innerText = \`Page \${currentPage} / \${totalPages}\`);
+        document.querySelectorAll('.pageInfoText').forEach(el => el.innerText = `Page ${currentPage} / ${totalPages}`);
         
         const prevDisabled = currentPage === 1;
         const nextDisabled = currentPage === totalPages;
@@ -434,7 +444,7 @@ function renderPage() {
     updatePaginationUI(totalPages);
 
     if (filteredData.length === 0) {
-        grid.innerHTML = \`<div class="loader">NO PLAYERS FOUND</div>\`;
+        grid.innerHTML = `<div class="loader">NO PLAYERS FOUND</div>`;
         return;
     }
 
@@ -449,61 +459,61 @@ function renderPage() {
         if (sortBy === 'pp') {
             const oldRank = previousDataMap.get(player.id);
             if (!oldRank) {
-                changeHtml = \`<div class="daily-change new">NEW</div>\`;
+                changeHtml = `<div class="daily-change new">NEW</div>`;
             } else {
                 const diff = oldRank - player.current_iraq_rank;
-                if (diff > 0) changeHtml = \`<div class="daily-change up">▲ \${diff}</div>\`;
-                else if (diff < 0) changeHtml = \`<div class="daily-change down">▼ \${Math.abs(diff)}</div>\`;
-                else changeHtml = \`<div class="daily-change" style="color:#777">-</div>\`;
+                if (diff > 0) changeHtml = `<div class="daily-change up">▲ ${diff}</div>`;
+                else if (diff < 0) changeHtml = `<div class="daily-change down">▼ ${Math.abs(diff)}</div>`;
+                else changeHtml = `<div class="daily-change" style="color:#777">-</div>`;
             }
         }
 
         let primaryStatHtml = '';
-        if (sortBy === 'pp') primaryStatHtml = \`\${fmtNum(Math.round(player.pp))} <span style="font-size:14px; color:var(--text-muted)">pp</span>\`;
-        else if (sortBy === 'play_count') primaryStatHtml = \`\${fmtNum(player.play_count)} <span style="font-size:14px; color:var(--text-muted)">Plays</span>\`;
-        else if (sortBy === 'play_time') primaryStatHtml = \`\${fmtTime(player.play_time)} <span style="font-size:14px; color:var(--text-muted)">Played</span>\`;
-        else if (sortBy === 'accuracy') primaryStatHtml = \`\${(player.accuracy).toFixed(2)}% <span style="font-size:14px; color:var(--text-muted)">Acc</span>\`;
-        else if (sortBy === 'ss_count') primaryStatHtml = \`\${fmtNum(player.ss_count)} <span style="color:#f0f; font-size:14px;">SS</span>\`;
-        else if (sortBy === 's_count') primaryStatHtml = \`\${fmtNum(player.s_count)} <span style="color:var(--accent-gold); font-size:14px;">S</span>\`;
-        else if (sortBy === 'medals') primaryStatHtml = \`\${player.medals} <span style="font-size:14px; color:var(--text-muted)">Medals</span>\`;
-        else if (sortBy === 'total_score') primaryStatHtml = \`\${(player.total_score / 1000000000).toFixed(2)}B <span style="font-size:14px; color:var(--text-muted)">Score</span>\`;
+        if (sortBy === 'pp') primaryStatHtml = `${fmtNum(Math.round(player.pp))} <span style="font-size:14px; color:var(--text-muted)">pp</span>`;
+        else if (sortBy === 'play_count') primaryStatHtml = `${fmtNum(player.play_count)} <span style="font-size:14px; color:var(--text-muted)">Plays</span>`;
+        else if (sortBy === 'play_time') primaryStatHtml = `${fmtTime(player.play_time)} <span style="font-size:14px; color:var(--text-muted)">Played</span>`;
+        else if (sortBy === 'accuracy') primaryStatHtml = `${(player.accuracy).toFixed(2)}% <span style="font-size:14px; color:var(--text-muted)">Acc</span>`;
+        else if (sortBy === 'ss_count') primaryStatHtml = `${fmtNum(player.ss_count)} <span style="color:#f0f; font-size:14px;">SS</span>`;
+        else if (sortBy === 's_count') primaryStatHtml = `${fmtNum(player.s_count)} <span style="color:var(--accent-gold); font-size:14px;">S</span>`;
+        else if (sortBy === 'medals') primaryStatHtml = `${player.medals} <span style="font-size:14px; color:var(--text-muted)">Medals</span>`;
+        else if (sortBy === 'total_score') primaryStatHtml = `${(player.total_score / 1000000000).toFixed(2)}B <span style="font-size:14px; color:var(--text-muted)">Score</span>`;
 
         let topPlayHtml = '';
         if (player.top_play) {
             const tp = player.top_play;
-            let mapsetId = tp.cover.match(/beatmaps\\/(\\d+)/)?.[1] || '';
-            let mapLink = mapsetId ? \`https://osu.ppy.sh/beatmapsets/\${mapsetId}\` : \`https://osu.ppy.sh/users/\${player.id}\`;
+            let mapsetId = tp.cover.match(/beatmaps\/(\d+)/)?.[1] || '';
+            let mapLink = mapsetId ? `https://osu.ppy.sh/beatmapsets/${mapsetId}` : `https://osu.ppy.sh/users/${player.id}`;
             
-            topPlayHtml = \`
-                <a href="\${mapLink}" target="_blank" onclick="event.stopPropagation()" class="top-play-banner" style="background-image: url('\${tp.cover}');">
+            topPlayHtml = `
+                <a href="${mapLink}" target="_blank" onclick="event.stopPropagation()" class="top-play-banner" style="background-image: url('${tp.cover}');">
                     <div class="tp-content">
-                        <div class="tp-title"><span class="tp-acc">\${tp.acc.toFixed(2)}%</span> \${tp.title} [\${tp.diff}] <strong>\${tp.mods}</strong></div>
-                        <div class="tp-stats"><span>\${tp.stars.toFixed(2)}⭐</span> <span>\${Math.round(tp.pp)} PP</span></div>
+                        <div class="tp-title"><span class="tp-acc">${tp.acc.toFixed(2)}%</span> ${tp.title} [${tp.diff}] <strong>${tp.mods}</strong></div>
+                        <div class="tp-stats"><span>${tp.stars.toFixed(2)}⭐</span> <span>${Math.round(tp.pp)} PP</span></div>
                     </div>
                 </a>
-            \`;
+            `;
         }
 
         const card = document.createElement('div');
         card.className = 'player-card';
         card.onclick = () => showPlayerDetails(player);
         
-        card.innerHTML = \`
+        card.innerHTML = `
             <div class="player-main">
                 <div class="player-identity">
-                    <div class="rank-badge">#\${displayRank}</div>
-                    <img src="\${player.avatar}" class="avatar-small" loading="lazy">
+                    <div class="rank-badge">#${displayRank}</div>
+                    <img src="${player.avatar}" class="avatar-small" loading="lazy">
                     <div class="user-details">
-                        <span class="user-name"><img src="https://osu.ppy.sh/images/flags/IQ.png" class="flag"> \${player.user}</span>
-                        <div style="font-size: 11px; color: var(--text-muted); font-weight: 600;">Global #\${fmtNum(player.rank || 0)}</div>
+                        <span class="user-name"><img src="https://osu.ppy.sh/images/flags/IQ.png" class="flag"> ${player.user}</span>
+                        <div style="font-size: 11px; color: var(--text-muted); font-weight: 600;">Global #${fmtNum(player.rank || 0)}</div>
                     </div>
                 </div>
                 <div class="stat-block">
-                    <div class="stat-value">\${changeHtml} \${primaryStatHtml}</div>
+                    <div class="stat-value">${changeHtml} ${primaryStatHtml}</div>
                 </div>
             </div>
-            \${topPlayHtml}
-        \`;
+            ${topPlayHtml}
+        `;
         grid.appendChild(card);
     });
 }
@@ -513,24 +523,24 @@ function showPlayerDetails(player) {
     placeholderPanel.style.display = 'none';
     playerPanel.classList.add('active');
     
-    playerPanel.innerHTML = \`
-        <img src="\${player.avatar}" class="panel-avatar">
-        <h2 class="panel-name">\${player.user}</h2>
-        <div class="panel-rank">Iraq #\${player.current_iraq_rank} | Global #\${fmtNum(player.rank || 0)}</div>
+    playerPanel.innerHTML = `
+        <img src="${player.avatar}" class="panel-avatar">
+        <h2 class="panel-name">${player.user}</h2>
+        <div class="panel-rank">Iraq #${player.current_iraq_rank} | Global #${fmtNum(player.rank || 0)}</div>
         
         <div class="panel-stat-grid">
-            <div class="panel-stat"><span>Total PP</span><strong>\${fmtNum(Math.round(player.pp))}</strong></div>
-            <div class="panel-stat"><span>Accuracy</span><strong>\${player.accuracy.toFixed(2)}%</strong></div>
-            <div class="panel-stat"><span>Play Count</span><strong>\${fmtNum(player.play_count)}</strong></div>
-            <div class="panel-stat"><span>Play Time</span><strong>\${fmtTime(player.play_time)}</strong></div>
-            <div class="panel-stat"><span>SS Count</span><strong style="color:#f0f">\${player.ss_count}</strong></div>
-            <div class="panel-stat"><span>S Count</span><strong style="color:var(--accent-gold)">\${player.s_count}</strong></div>
-            <div class="panel-stat"><span>Total Hits</span><strong>\${fmtNum(player.total_hits || 0)}</strong></div>
-            <div class="panel-stat"><span>Medals</span><strong>\${player.medals}</strong></div>
+            <div class="panel-stat"><span>Total PP</span><strong>${fmtNum(Math.round(player.pp))}</strong></div>
+            <div class="panel-stat"><span>Accuracy</span><strong>${player.accuracy.toFixed(2)}%</strong></div>
+            <div class="panel-stat"><span>Play Count</span><strong>${fmtNum(player.play_count)}</strong></div>
+            <div class="panel-stat"><span>Play Time</span><strong>${fmtTime(player.play_time)}</strong></div>
+            <div class="panel-stat"><span>SS Count</span><strong style="color:#f0f">${player.ss_count}</strong></div>
+            <div class="panel-stat"><span>S Count</span><strong style="color:var(--accent-gold)">${player.s_count}</strong></div>
+            <div class="panel-stat"><span>Total Hits</span><strong>${fmtNum(player.total_hits || 0)}</strong></div>
+            <div class="panel-stat"><span>Medals</span><strong>${player.medals}</strong></div>
         </div>
         
-        <a href="https://osu.ppy.sh/users/\${player.id}" target="_blank" class="btn-visit-profile">Visit osu! Profile</a>
-    \`;
+        <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" class="btn-visit-profile">Visit osu! Profile</a>
+    `;
     
     if(window.innerWidth <= 850) {
         playerPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -548,18 +558,18 @@ function showNotification() {
 
     if (!isLastPage) {
         document.getElementById('notif-title').innerText = "Keep Exploring!";
-        notifAction.className = 'page-btn'; // Use your standard pink button css
+        notifAction.className = 'page-btn';
         notifAction.style.width = '100%';
         notifAction.style.boxSizing = 'border-box';
-        notifAction.innerHTML = \`Next Page ▶\`;
+        notifAction.innerHTML = `Next Page ▶`;
     } else {
         document.getElementById('notif-title').innerText = "End of List!";
-        notifAction.className = 'menu-item active'; // Use the animated menu vertical bar css
-        notifAction.style.width = 'auto'; // Reset width for menu item style
-        notifAction.innerHTML = \`
+        notifAction.className = 'menu-item active';
+        notifAction.style.width = 'auto';
+        notifAction.innerHTML = `
             <span id="notif-main-text">Watch Videos</span>
             <span class="menu-desc" id="notif-sub-text">Check out community highlights</span>
-        \`;
+        `;
     }
 
     const notifBar = document.getElementById('notif-bar');
@@ -606,7 +616,7 @@ searchInput.addEventListener('input', applyFiltersAndRender);
 datePicker.addEventListener('change', (e) => fetchRankingsForDate(e.target.value));
 
 // Init with yesterday's date
-fetchRankingsForDate(yesterday);
+fetchRankingsForDate(yesterdayStr);
 
 </script>
 </body>

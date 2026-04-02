@@ -307,40 +307,20 @@
         if (!e.target.matches('.dropbtn')) document.getElementById('myDropdown').classList.remove('show');
     };
 
-    // --- MOCK DATA (Notice the new streak fields added to the root) ---
-    const rawJSON = `{
-      "date": "2026-03-31",
-      "country": "IQ",
-      "generated_at": "2026-03-31T02:25:28.284Z",
-      "current_streak": 42,
-      "longest_streak": 108,
-      "scores": [
-        {
-          "user": "xTHE_CRUISERx", "user_id": 38658226, "score_id": 5004086932,
-          "created_at": "2026-03-31T02:00:40Z",
-          "beatmapset": { "id": 1889729, "title": "Non-breath oblige", "cover": "https://assets.ppy.sh/beatmaps/1889729/covers/card.jpg" }
-        },
-        {
-          "user": "xTHE_CRUISERx", "user_id": 38658226, "score_id": 5004086933,
-          "created_at": "2026-03-31T03:15:40Z",
-          "beatmapset": { "id": 1889729, "title": "Non-breath oblige", "cover": "https://assets.ppy.sh/beatmaps/1889729/covers/card.jpg" }
-        },
-        {
-          "user": "xTHE_CRUISERx", "user_id": 38658226, "score_id": 5004086939,
-          "created_at": "2026-03-31T04:10:40Z",
-          "beatmapset": { "id": 12345, "title": "Blue Zenith", "cover": "https://assets.ppy.sh/beatmaps/1889729/covers/card.jpg" }
-        },
-        {
-          "user": "FancyToast", "user_id": 12345678, "score_id": 5004086934,
-          "created_at": "2026-03-31T18:40:40Z",
-          "beatmapset": { "id": 999999, "title": "Freedom Dive", "cover": "https://assets.ppy.sh/beatmaps/1889729/covers/card.jpg" }
-        }
-      ]
-    }`;
-
-    function loadInsights() {
+    // --- FETCH AND PROCESS LIVE DATA ---
+    async function loadInsights() {
         try {
-            const data = JSON.parse(rawJSON);
+            // Fetch the daily updated JSON file
+            const response = await fetch('data/community_insights.json');
+            
+            // Catch routing or missing file errors
+            if (!response.ok) {
+                throw new Error(`Failed to load data: HTTP ${response.status}`);
+            }
+
+            const data = await response.json();
+            
+            // Uses the date provided in your JSON file. 
             document.getElementById('pulse-date').innerText = `Data for: ${data.date}`;
 
             // 1. Populate Streaks
@@ -348,7 +328,10 @@
             document.getElementById('s-longest').innerText = data.longest_streak || 0;
 
             const scores = data.scores;
-            if(!scores || scores.length === 0) return;
+            if(!scores || scores.length === 0) {
+                document.getElementById('pulse-date').innerText += " (No scores recorded)";
+                return;
+            }
 
             let hourlyCounts = new Array(24).fill(0);
             let userCounts = {};
@@ -425,6 +408,7 @@
 
         } catch (err) {
             console.error("Error loading insights:", err);
+            document.getElementById('pulse-date').innerText = "Failed to load today's data.";
         }
     }
 
@@ -447,6 +431,7 @@
         }
     }
 
+    // Initialize
     loadInsights();
 </script>
 

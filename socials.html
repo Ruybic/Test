@@ -307,20 +307,19 @@
         if (!e.target.matches('.dropbtn')) document.getElementById('myDropdown').classList.remove('show');
     };
 
-    // --- FETCH AND PROCESS LIVE DATA ---
+    // --- ASYNC DATA FETCH ---
     async function loadInsights() {
         try {
-            // Fetch the daily updated JSON file
+            // Fetch the real data from the local folder
             const response = await fetch('data/community_insights.json');
             
-            // Catch routing or missing file errors
             if (!response.ok) {
-                throw new Error(`Failed to load data: HTTP ${response.status}`);
+                throw new Error(`Failed to load data: ${response.status} ${response.statusText}`);
             }
-
+            
+            // Parse the JSON directly from the response
             const data = await response.json();
             
-            // Uses the date provided in your JSON file. 
             document.getElementById('pulse-date').innerText = `Data for: ${data.date}`;
 
             // 1. Populate Streaks
@@ -328,10 +327,7 @@
             document.getElementById('s-longest').innerText = data.longest_streak || 0;
 
             const scores = data.scores;
-            if(!scores || scores.length === 0) {
-                document.getElementById('pulse-date').innerText += " (No scores recorded)";
-                return;
-            }
+            if(!scores || scores.length === 0) return;
 
             let hourlyCounts = new Array(24).fill(0);
             let userCounts = {};
@@ -431,9 +427,7 @@
         }
     }
 
-    // Initialize
     loadInsights();
 </script>
-
 </body>
 </html>

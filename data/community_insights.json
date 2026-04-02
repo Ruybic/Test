@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 34,
-    "longest": 34,
-    "last_updated": "2026-03-31"
+    "current": 35,
+    "longest": 35,
+    "last_updated": "2026-04-01"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -10357,6 +10357,292 @@
         "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
         "unique_players": 15
+      }
+    },
+    "2026-04-01": {
+      "total_scores": 627,
+      "peak_hour_baghdad": 21,
+      "top_grinder": {
+        "user": "marcyy",
+        "user_id": 32832996,
+        "count": 70,
+        "scores": [
+          {
+            "user": "marcyy",
+            "user_id": 32832996,
+            "country": "IQ",
+            "score_id": 5004529114,
+            "rank": "B",
+            "accuracy": 0.905,
+            "pp": 42.0706,
+            "mods": [],
+            "combo": 147,
+            "created_at": "2026-04-01T01:06:06Z",
+            "beatmapset": {
+              "id": 2043094,
+              "title": "Gotoubun no Mirai (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2043094/covers/card.jpg?1700159409",
+              "stars": 4.57131
+            }
+          },
+          {
+            "user": "marcyy",
+            "user_id": 32832996,
+            "country": "IQ",
+            "score_id": 5004528234,
+            "rank": "B",
+            "accuracy": 0.8879781420765027,
+            "pp": 59.7801,
+            "mods": [],
+            "combo": 223,
+            "created_at": "2026-04-01T01:02:40Z",
+            "beatmapset": {
+              "id": 773801,
+              "title": "Kimi no Shiranai Monogatari -TV Edit-",
+              "cover": "https://assets.ppy.sh/beatmaps/773801/covers/card.jpg?1650663154",
+              "stars": 4.75889
+            }
+          },
+          {
+            "user": "marcyy",
+            "user_id": 32832996,
+            "country": "IQ",
+            "score_id": 5004527597,
+            "rank": "B",
+            "accuracy": 0.8946015424164524,
+            "pp": 49.3741,
+            "mods": [],
+            "combo": 137,
+            "created_at": "2026-04-01T01:00:06Z",
+            "beatmapset": {
+              "id": 901880,
+              "title": "Gotoubun no Kimochi (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/901880/covers/card.jpg?1650673732",
+              "stars": 4.88003
+            }
+          },
+          {
+            "user": "marcyy",
+            "user_id": 32832996,
+            "country": "IQ",
+            "score_id": 5004525950,
+            "rank": "C",
+            "accuracy": 0.8597883597883598,
+            "pp": 36.2511,
+            "mods": [],
+            "combo": 365,
+            "created_at": "2026-04-01T00:53:51Z",
+            "beatmapset": {
+              "id": 1146195,
+              "title": "Megumi no Ame (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1146195/covers/card.jpg?1650694169",
+              "stars": 4.58097
+            }
+          },
+          {
+            "user": "marcyy",
+            "user_id": 32832996,
+            "country": "IQ",
+            "score_id": 5004524705,
+            "rank": "B",
+            "accuracy": 0.9277958740499457,
+            "pp": 53.4509,
+            "mods": [],
+            "combo": 104,
+            "created_at": "2026-04-01T00:49:10Z",
+            "beatmapset": {
+              "id": 596704,
+              "title": "Hitorigoto -TV MIX-",
+              "cover": "https://assets.ppy.sh/beatmaps/596704/covers/card.jpg?1650648964",
+              "stars": 4.63644
+            }
+          },
+          {
+            "user": "marcyy",
+            "user_id": 32832996,
+            "country": "IQ",
+            "score_id": 5004523967,
+            "rank": "A",
+            "accuracy": 0.9249131944444444,
+            "pp": 42.1807,
+            "mods": [],
+            "combo": 138,
+            "created_at": "2026-04-01T00:46:25Z",
+            "beatmapset": {
+              "id": 1124391,
+              "title": "ROCK-mode",
+              "cover": "https://assets.ppy.sh/beatmaps/1124391/covers/card.jpg?1650692695",
+              "stars": 4.63684
+            }
+          },
+          {
+            "user": "marcyy",
+            "user_id": 32832996,
+            "country": "IQ",
+            "score_id": 5004520040,
+            "rank": "B",
+            "accuracy": 0.8834876543209876,
+            "pp": 24.2874,
+            "mods": [],
+            "combo": 207,
+            "created_at": "2026-04-01T00:31:14Z",
+            "beatmapset": {
+              "id": 2476973,
+              "title": "Carol of the Bells (Rock Cover) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2476973/covers/card.jpg?1770449462",
+              "stars": 4.49355
+            }
+          },
+          {
+            "user": "marcyy",
+            "user_id": 32832996,
+            "country": "IQ",
+            "score_id": 5004518505,
+            "rank": "B",
+            "accuracy": 0.9084132055378061,
+            "pp": 34.9119,
+            "mods": [],
+            "combo": 291,
+            "created_at": "2026-04-01T00:25:36Z",
+            "beatmapset": {
+              "id": 2506632,
+              "title": "Eroiko (Short Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506632/covers/card.jpg?1773571712",
+              "stars": 4.47838
+            }
+          },
+          {
+            "user": "marcyy",
+            "user_id": 32832996,
+            "country": "IQ",
+            "score_id": 5004518029,
+            "rank": "C",
+            "accuracy": 0.8573333333333333,
+            "pp": 47.6221,
+            "mods": [],
+            "combo": 150,
+            "created_at": "2026-04-01T00:23:47Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 4.47811
+            }
+          },
+          {
+            "user": "marcyy",
+            "user_id": 32832996,
+            "country": "IQ",
+            "score_id": 5004487914,
+            "rank": "C",
+            "accuracy": 0.8382675438596491,
+            "pp": 46.8457,
+            "mods": [],
+            "combo": 104,
+            "created_at": "2026-03-31T22:40:36Z",
+            "beatmapset": {
+              "id": 1330999,
+              "title": "Gotoubun no Katachi (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1330999/covers/card.jpg?1650705313",
+              "stars": 4.74099
+            }
+          },
+          {
+            "user": "marcyy",
+            "user_id": 32832996,
+            "country": "IQ",
+            "score_id": 5004486900,
+            "rank": "B",
+            "accuracy": 0.890686274509804,
+            "pp": 51.4131,
+            "mods": [],
+            "combo": 164,
+            "created_at": "2026-03-31T22:37:28Z",
+            "beatmapset": {
+              "id": 1330999,
+              "title": "Gotoubun no Katachi (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1330999/covers/card.jpg?1650705313",
+              "stars": 4.72622
+            }
+          },
+          {
+            "user": "marcyy",
+            "user_id": 32832996,
+            "country": "IQ",
+            "score_id": 5004486378,
+            "rank": "B",
+            "accuracy": 0.8930921052631579,
+            "pp": 37.1934,
+            "mods": [],
+            "combo": 192,
+            "created_at": "2026-03-31T22:35:50Z",
+            "beatmapset": {
+              "id": 2219791,
+              "title": "Silhouette (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2219791/covers/card.jpg?1771521305",
+              "stars": 4.72388
+            }
+          },
+          {
+            "user": "marcyy",
+            "user_id": 32832996,
+            "country": "IQ",
+            "score_id": 5004485218,
+            "rank": "B",
+            "accuracy": 0.892836510687464,
+            "pp": 36.622,
+            "mods": [],
+            "combo": 161,
+            "created_at": "2026-03-31T22:32:06Z",
+            "beatmapset": {
+              "id": 2391775,
+              "title": "Sina tiedat sen",
+              "cover": "https://assets.ppy.sh/beatmaps/2391775/covers/card.jpg?1764092538",
+              "stars": 4.71074
+            }
+          },
+          {
+            "user": "marcyy",
+            "user_id": 32832996,
+            "country": "IQ",
+            "score_id": 5004483431,
+            "rank": "B",
+            "accuracy": 0.8765112262521589,
+            "pp": 44.9323,
+            "mods": [],
+            "combo": 220,
+            "created_at": "2026-03-31T22:26:39Z",
+            "beatmapset": {
+              "id": 1244123,
+              "title": "Natsukoi Hanabi (Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1244123/covers/card.jpg?1650700413",
+              "stars": 4.68664
+            }
+          },
+          {
+            "user": "marcyy",
+            "user_id": 32832996,
+            "country": "IQ",
+            "score_id": 5004481997,
+            "rank": "B",
+            "accuracy": 0.8746958637469586,
+            "pp": 46.5376,
+            "mods": [],
+            "combo": 48,
+            "created_at": "2026-03-31T22:22:22Z",
+            "beatmapset": {
+              "id": 727392,
+              "title": "Hitorigoto -Instrumental-",
+              "cover": "https://assets.ppy.sh/beatmaps/727392/covers/card.jpg?1650658741",
+              "stars": 4.72456
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Jingle Bells (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/1925533/covers/card.jpg?1765469224",
+        "unique_players": 23
       }
     }
   }

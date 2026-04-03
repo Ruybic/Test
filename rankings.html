@@ -210,7 +210,7 @@
 }
         @media (max-width: 850px) {
             .controls-container, .main-layout { width: 92%; }
-            .left-panel, .placeholder-panel { display: none; } /* Hide sticky sidebar on mobile */
+            .left-panel.active, .left-panel, .placeholder-panel { display: none !important; }} /* Hide sticky sidebar on mobile */
             .controls-group { flex-direction: column; max-width: 100%; }
             .player-main { flex-direction: column; align-items: flex-start; gap: 10px; }
             .stat-block { width: 100%; display: flex; justify-content: space-between; align-items: center; }
@@ -506,7 +506,7 @@ function renderPage() {
 
         const card = document.createElement('div');
         card.className = 'player-card';
-        card.onclick = () => showPlayerDetails(player);
+        card.onclick = () => showPlayerDetails(player, card);
         
         card.innerHTML = `
             <div class="player-main">
@@ -529,34 +529,68 @@ function renderPage() {
 }
 
 // --- SIDEBAR PLAYER DETAILS ---
-function showPlayerDetails(player) {
-    placeholderPanel.style.display = 'none';
-    playerPanel.classList.add('active');
-    
-    playerPanel.innerHTML = `
-        <img src="${player.avatar}" class="panel-avatar">
-        <h2 class="panel-name">${player.user}</h2>
-        <div class="panel-rank">Iraq #${player.current_iraq_rank} | Global #${fmtNum(player.rank || 0)}</div>
+function showPlayerDetails(player, cardElement) {
+    if (window.innerWidth <= 850) {
+        // --- MOBILE BEHAVIOR: Inline Expansion ---
         
-        <div class="panel-stat-grid">
-            <div class="panel-stat"><span>Total PP</span><strong>${fmtNum(Math.round(player.pp))}</strong></div>
-            <div class="panel-stat"><span>Accuracy</span><strong>${player.accuracy.toFixed(2)}%</strong></div>
-            <div class="panel-stat"><span>Play Count</span><strong>${fmtNum(player.play_count)}</strong></div>
-            <div class="panel-stat"><span>Play Time</span><strong>${fmtTime(player.play_time)}</strong></div>
-            <div class="panel-stat"><span>SS Count</span><strong style="color:#f0f">${player.ss_count}</strong></div>
-            <div class="panel-stat"><span>S Count</span><strong style="color:var(--accent-gold)">${player.s_count}</strong></div>
-            <div class="panel-stat"><span>Total Hits</span><strong>${fmtNum(player.total_hits || 0)}</strong></div>
-            <div class="panel-stat"><span>Medals</span><strong>${player.medals}</strong></div>
-        </div>
+        // If clicking a card that is already open, just close it and stop
+        const existingDetails = cardElement.querySelector('.inline-details');
+        if (existingDetails) {
+            existingDetails.remove();
+            return;
+        }
+
+        // Remove any other open inline details first
+        document.querySelectorAll('.inline-details').forEach(el => el.remove());
+
+        // Create the inline panel
+        const inlineDetails = document.createElement('div');
+        inlineDetails.className = 'inline-details';
         
-        <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" class="btn-visit-profile">Visit osu! Profile</a>
-    `;
-    
-    if(window.innerWidth <= 850) {
-        playerPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Build the HTML. Reusing your existing CSS classes so it looks perfect!
+        inlineDetails.innerHTML = `
+            <div class="panel-stat-grid" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #3e3e4a;">
+                <div class="panel-stat"><span>Total PP</span><strong>${fmtNum(Math.round(player.pp))}</strong></div>
+                <div class="panel-stat"><span>Accuracy</span><strong>${player.accuracy.toFixed(2)}%</strong></div>
+                <div class="panel-stat"><span>Play Count</span><strong>${fmtNum(player.play_count)}</strong></div>
+                <div class="panel-stat"><span>Play Time</span><strong>${fmtTime(player.play_time)}</strong></div>
+                <div class="panel-stat"><span>SS Count</span><strong style="color:#f0f">${player.ss_count}</strong></div>
+                <div class="panel-stat"><span>S Count</span><strong style="color:var(--accent-gold)">${player.s_count}</strong></div>
+                <div class="panel-stat"><span>Total Hits</span><strong>${fmtNum(player.total_hits || 0)}</strong></div>
+                <div class="panel-stat"><span>Medals</span><strong>${player.medals}</strong></div>
+            </div>
+            <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" class="btn-visit-profile" style="margin-top: 15px;">Visit osu! Profile</a>
+        `;
+
+        // Inject it straight into the bottom of the clicked card
+        cardElement.appendChild(inlineDetails);
+
+    } else {
+        // --- DESKTOP BEHAVIOR: Sidebar ---
+        placeholderPanel.style.display = 'none';
+        playerPanel.classList.add('active');
+        
+        playerPanel.innerHTML = `
+            <img src="${player.avatar}" class="panel-avatar">
+            <h2 class="panel-name">${player.user}</h2>
+            <div class="panel-rank">Iraq #${player.current_iraq_rank} | Global #${fmtNum(player.rank || 0)}</div>
+            
+            <div class="panel-stat-grid">
+                <div class="panel-stat"><span>Total PP</span><strong>${fmtNum(Math.round(player.pp))}</strong></div>
+                <div class="panel-stat"><span>Accuracy</span><strong>${player.accuracy.toFixed(2)}%</strong></div>
+                <div class="panel-stat"><span>Play Count</span><strong>${fmtNum(player.play_count)}</strong></div>
+                <div class="panel-stat"><span>Play Time</span><strong>${fmtTime(player.play_time)}</strong></div>
+                <div class="panel-stat"><span>SS Count</span><strong style="color:#f0f">${player.ss_count}</strong></div>
+                <div class="panel-stat"><span>S Count</span><strong style="color:var(--accent-gold)">${player.s_count}</strong></div>
+                <div class="panel-stat"><span>Total Hits</span><strong>${fmtNum(player.total_hits || 0)}</strong></div>
+                <div class="panel-stat"><span>Medals</span><strong>${player.medals}</strong></div>
+            </div>
+            
+            <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" class="btn-visit-profile">Visit osu! Profile</a>
+        `;
     }
 }
-
+    
 // --- NOTIFICATION LOGIC ---
 function showNotification() {
     if (document.body.scrollHeight <= window.innerHeight + 100) return;

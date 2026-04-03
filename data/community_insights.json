@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 35,
-    "longest": 35,
-    "last_updated": "2026-04-01"
+    "current": 36,
+    "longest": 36,
+    "last_updated": "2026-04-02"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -10643,6 +10643,329 @@
         "title": "Jingle Bells (Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/1925533/covers/card.jpg?1765469224",
         "unique_players": 23
+      }
+    },
+    "2026-04-02": {
+      "total_scores": 551,
+      "peak_hour_baghdad": 9,
+      "top_grinder": {
+        "user": "dabmlfz",
+        "user_id": 39506574,
+        "count": 40,
+        "scores": [
+          {
+            "user": "dabmlfz",
+            "user_id": 39506574,
+            "country": "IQ",
+            "score_id": 6460789500,
+            "rank": "A",
+            "accuracy": 0.9848139711465452,
+            "pp": 127.954,
+            "mods": [
+              "NC"
+            ],
+            "combo": 314,
+            "created_at": "2026-04-02T00:41:47Z",
+            "beatmapset": {
+              "id": 52361,
+              "title": "Hero",
+              "cover": "https://assets.ppy.sh/beatmaps/52361/covers/card.jpg?1650612281",
+              "stars": 3.40506
+            }
+          },
+          {
+            "user": "dabmlfz",
+            "user_id": 39506574,
+            "country": "IQ",
+            "score_id": 6460780009,
+            "rank": "A",
+            "accuracy": 0.9955849889624724,
+            "pp": 142.001,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 613,
+            "created_at": "2026-04-02T00:38:51Z",
+            "beatmapset": {
+              "id": 738909,
+              "title": "Monster",
+              "cover": "https://assets.ppy.sh/beatmaps/738909/covers/card.jpg?1650660196",
+              "stars": 3.04397
+            }
+          },
+          {
+            "user": "dabmlfz",
+            "user_id": 39506574,
+            "country": "IQ",
+            "score_id": 6460502576,
+            "rank": "SH",
+            "accuracy": 0.9911504424778761,
+            "pp": 137.694,
+            "mods": [
+              "HD"
+            ],
+            "combo": 341,
+            "created_at": "2026-04-01T23:12:39Z",
+            "beatmapset": {
+              "id": 2461278,
+              "title": "Everything Everything (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2461278/covers/card.jpg?1774318551",
+              "stars": 4.50329
+            }
+          },
+          {
+            "user": "dabmlfz",
+            "user_id": 39506574,
+            "country": "IQ",
+            "score_id": 6460496285,
+            "rank": "A",
+            "accuracy": 0.9580838323353293,
+            "pp": 88.7203,
+            "mods": [
+              "HD"
+            ],
+            "combo": 222,
+            "created_at": "2026-04-01T23:10:49Z",
+            "beatmapset": {
+              "id": 2352698,
+              "title": "American Girls (Juztan Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2352698/covers/card.jpg?1748119114",
+              "stars": 4.66467
+            }
+          },
+          {
+            "user": "dabmlfz",
+            "user_id": 39506574,
+            "country": "IQ",
+            "score_id": 6460489785,
+            "rank": "A",
+            "accuracy": 0.9347826086956522,
+            "pp": 113.21,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 74,
+            "created_at": "2026-04-01T23:08:52Z",
+            "beatmapset": {
+              "id": 432314,
+              "title": "Bill Nye the Science Guy Theme Song (Chinese Intro)",
+              "cover": "https://assets.ppy.sh/beatmaps/432314/covers/card.jpg?1622101468",
+              "stars": 4.01224
+            }
+          },
+          {
+            "user": "dabmlfz",
+            "user_id": 39506574,
+            "country": "IQ",
+            "score_id": 6460485614,
+            "rank": "SH",
+            "accuracy": 0.9579710144927536,
+            "pp": 155.957,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 158,
+            "created_at": "2026-04-01T23:07:37Z",
+            "beatmapset": {
+              "id": 816264,
+              "title": "MY REZHEM KINOLENTY (feat. Cut The Crap)",
+              "cover": "https://assets.ppy.sh/beatmaps/816264/covers/card.jpg?1622143933",
+              "stars": 3.66756
+            }
+          },
+          {
+            "user": "dabmlfz",
+            "user_id": 39506574,
+            "country": "IQ",
+            "score_id": 6460481448,
+            "rank": "SH",
+            "accuracy": 0.9905437352245863,
+            "pp": 186.095,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 221,
+            "created_at": "2026-04-01T23:06:21Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 3.68271
+            }
+          },
+          {
+            "user": "dabmlfz",
+            "user_id": 39506574,
+            "country": "IQ",
+            "score_id": 6460478316,
+            "rank": "A",
+            "accuracy": 0.9868421052631579,
+            "pp": 114.714,
+            "mods": [
+              "HD"
+            ],
+            "combo": 233,
+            "created_at": "2026-04-01T23:05:25Z",
+            "beatmapset": {
+              "id": 765778,
+              "title": "Make a Move (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/765778/covers/card.jpg?1650663123",
+              "stars": 4.61016
+            }
+          },
+          {
+            "user": "dabmlfz",
+            "user_id": 39506574,
+            "country": "IQ",
+            "score_id": 6460470507,
+            "rank": "S",
+            "accuracy": 0.9952038369304557,
+            "pp": 162.543,
+            "mods": [
+              "NC"
+            ],
+            "combo": 169,
+            "created_at": "2026-04-01T23:03:02Z",
+            "beatmapset": {
+              "id": 325112,
+              "title": "Yoru no Kodomo tachi",
+              "cover": "https://assets.ppy.sh/beatmaps/325112/covers/card.jpg?1650631180",
+              "stars": 3.30967
+            }
+          },
+          {
+            "user": "dabmlfz",
+            "user_id": 39506574,
+            "country": "IQ",
+            "score_id": 6460463361,
+            "rank": "A",
+            "accuracy": 0.988009592326139,
+            "pp": 140.276,
+            "mods": [
+              "NC"
+            ],
+            "combo": 102,
+            "created_at": "2026-04-01T23:00:53Z",
+            "beatmapset": {
+              "id": 325112,
+              "title": "Yoru no Kodomo tachi",
+              "cover": "https://assets.ppy.sh/beatmaps/325112/covers/card.jpg?1650631180",
+              "stars": 3.30967
+            }
+          },
+          {
+            "user": "dabmlfz",
+            "user_id": 39506574,
+            "country": "IQ",
+            "score_id": 6460460510,
+            "rank": "B",
+            "accuracy": 0.8898148148148148,
+            "pp": 124.066,
+            "mods": [
+              "NC"
+            ],
+            "combo": 159,
+            "created_at": "2026-04-01T23:00:01Z",
+            "beatmapset": {
+              "id": 818349,
+              "title": "Sawakaze (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/818349/covers/card.jpg?1650669682",
+              "stars": 3.88399
+            }
+          },
+          {
+            "user": "dabmlfz",
+            "user_id": 39506574,
+            "country": "IQ",
+            "score_id": 6460457678,
+            "rank": "A",
+            "accuracy": 0.9201388888888888,
+            "pp": 109.223,
+            "mods": [
+              "NC"
+            ],
+            "combo": 241,
+            "created_at": "2026-04-01T22:59:11Z",
+            "beatmapset": {
+              "id": 1628667,
+              "title": "Enemy (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1628667/covers/card.jpg?1645778076",
+              "stars": 3.65667
+            }
+          },
+          {
+            "user": "dabmlfz",
+            "user_id": 39506574,
+            "country": "IQ",
+            "score_id": 6460453778,
+            "rank": "SH",
+            "accuracy": 0.9878787878787879,
+            "pp": 205.925,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 339,
+            "created_at": "2026-04-01T22:58:00Z",
+            "beatmapset": {
+              "id": 2461278,
+              "title": "Everything Everything (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2461278/covers/card.jpg?1774318551",
+              "stars": 3.83893
+            }
+          },
+          {
+            "user": "dabmlfz",
+            "user_id": 39506574,
+            "country": "IQ",
+            "score_id": 6460450699,
+            "rank": "A",
+            "accuracy": 0.9912280701754386,
+            "pp": 164.881,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 316,
+            "created_at": "2026-04-01T22:57:04Z",
+            "beatmapset": {
+              "id": 2463664,
+              "title": "hate the way you love me (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2463664/covers/card.jpg?1767818786",
+              "stars": 3.58046
+            }
+          },
+          {
+            "user": "dabmlfz",
+            "user_id": 39506574,
+            "country": "IQ",
+            "score_id": 6460446820,
+            "rank": "SH",
+            "accuracy": 0.9841269841269841,
+            "pp": 166.62,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 388,
+            "created_at": "2026-04-01T22:55:54Z",
+            "beatmapset": {
+              "id": 456986,
+              "title": "(can you) understand me?",
+              "cover": "https://assets.ppy.sh/beatmaps/456986/covers/card.jpg?1645783310",
+              "stars": 3.60728
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Cats (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2488678/covers/card.jpg?1773866179",
+        "unique_players": 22
       }
     }
   }

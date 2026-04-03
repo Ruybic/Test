@@ -195,9 +195,19 @@
         @keyframes shrinkBar { from { width: 100%; } to { width: 0%; } }
 
         /* --- RESPONSIVENESS --- */
-        @media (max-width: 1200px) {
-            .right-panel { display: none; } /* Hide ad on smaller screens */
-        }
+@media (max-width: 1200px) {
+    .main-layout { 
+        flex-direction: column; /* Stacks the panels vertically */
+        align-items: center; /* Centers everything */
+    }
+    .right-panel {
+        position: static; /* Removes the sticky behavior so it flows normally */
+        width: 100%; /* Makes the ad take up full width */
+        max-width: 500px; /* Prevents it from getting absurdly wide */
+        height: 250px; /* Makes it shorter since it's now a bottom banner */
+        margin-top: 20px;
+    }
+}
         @media (max-width: 850px) {
             .controls-container, .main-layout { width: 92%; }
             .left-panel, .placeholder-panel { display: none; } /* Hide sticky sidebar on mobile */

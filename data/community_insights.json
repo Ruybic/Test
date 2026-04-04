@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 36,
-    "longest": 36,
-    "last_updated": "2026-04-02"
+    "current": 37,
+    "longest": 37,
+    "last_updated": "2026-04-03"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -10966,6 +10966,333 @@
         "title": "Cats (Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2488678/covers/card.jpg?1773866179",
         "unique_players": 22
+      }
+    },
+    "2026-04-03": {
+      "total_scores": 661,
+      "peak_hour_baghdad": 17,
+      "top_grinder": {
+        "user": "FARMAN123",
+        "user_id": 21192903,
+        "count": 79,
+        "scores": [
+          {
+            "user": "FARMAN123",
+            "user_id": 21192903,
+            "country": "IQ",
+            "score_id": 5005322284,
+            "rank": "S",
+            "accuracy": 0.9878787878787879,
+            "pp": 13.8434,
+            "mods": [
+              "HR",
+              "SD",
+              "DT"
+            ],
+            "combo": 143,
+            "created_at": "2026-04-02T17:40:38Z",
+            "beatmapset": {
+              "id": 2515511,
+              "title": "WONDERFUL WONDER (TV Size & Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2515511/covers/card.jpg?1774252089",
+              "stars": 1.66563
+            }
+          },
+          {
+            "user": "FARMAN123",
+            "user_id": 21192903,
+            "country": "IQ",
+            "score_id": 5005321537,
+            "rank": "A",
+            "accuracy": 0.9236559139784947,
+            "pp": 7.77649,
+            "mods": [
+              "HR"
+            ],
+            "combo": 199,
+            "created_at": "2026-04-02T17:39:02Z",
+            "beatmapset": {
+              "id": 2502608,
+              "title": "Himitsu Dolls (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2502608/covers/card.jpg?1771476616",
+              "stars": 2.27214
+            }
+          },
+          {
+            "user": "FARMAN123",
+            "user_id": 21192903,
+            "country": "IQ",
+            "score_id": 5005320514,
+            "rank": "S",
+            "accuracy": 0.9927536231884058,
+            "pp": 17.7726,
+            "mods": [
+              "HR",
+              "SD",
+              "DT"
+            ],
+            "combo": 157,
+            "created_at": "2026-04-02T17:36:48Z",
+            "beatmapset": {
+              "id": 2502608,
+              "title": "Himitsu Dolls (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2502608/covers/card.jpg?1771476616",
+              "stars": 1.60994
+            }
+          },
+          {
+            "user": "FARMAN123",
+            "user_id": 21192903,
+            "country": "IQ",
+            "score_id": 5005320033,
+            "rank": "A",
+            "accuracy": 0.947463768115942,
+            "pp": 7.35457,
+            "mods": [
+              "HR",
+              "SD",
+              "DT"
+            ],
+            "combo": 157,
+            "created_at": "2026-04-02T17:35:42Z",
+            "beatmapset": {
+              "id": 2502608,
+              "title": "Himitsu Dolls (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2502608/covers/card.jpg?1771476616",
+              "stars": 1.60994
+            }
+          },
+          {
+            "user": "FARMAN123",
+            "user_id": 21192903,
+            "country": "IQ",
+            "score_id": 5005307825,
+            "rank": "S",
+            "accuracy": 0.9425287356321839,
+            "pp": 7.30456,
+            "mods": [
+              "HR"
+            ],
+            "combo": 103,
+            "created_at": "2026-04-02T17:09:47Z",
+            "beatmapset": {
+              "id": 2466732,
+              "title": "Yume",
+              "cover": "https://assets.ppy.sh/beatmaps/2466732/covers/card.jpg?1774209549",
+              "stars": 2.06394
+            }
+          },
+          {
+            "user": "FARMAN123",
+            "user_id": 21192903,
+            "country": "IQ",
+            "score_id": 5005307091,
+            "rank": "A",
+            "accuracy": 0.9166666666666666,
+            "pp": 9.50759,
+            "mods": [
+              "HR",
+              "DT"
+            ],
+            "combo": 81,
+            "created_at": "2026-04-02T17:08:16Z",
+            "beatmapset": {
+              "id": 2466732,
+              "title": "Yume",
+              "cover": "https://assets.ppy.sh/beatmaps/2466732/covers/card.jpg?1774209549",
+              "stars": 1.74511
+            }
+          },
+          {
+            "user": "FARMAN123",
+            "user_id": 21192903,
+            "country": "IQ",
+            "score_id": 5005306834,
+            "rank": "C",
+            "accuracy": 0.8397435897435898,
+            "pp": 6.55136,
+            "mods": [
+              "HR",
+              "DT"
+            ],
+            "combo": 75,
+            "created_at": "2026-04-02T17:07:43Z",
+            "beatmapset": {
+              "id": 2466732,
+              "title": "Yume",
+              "cover": "https://assets.ppy.sh/beatmaps/2466732/covers/card.jpg?1774209549",
+              "stars": 1.74511
+            }
+          },
+          {
+            "user": "FARMAN123",
+            "user_id": 21192903,
+            "country": "IQ",
+            "score_id": 5005306489,
+            "rank": "X",
+            "accuracy": 1,
+            "pp": 10.0677,
+            "mods": [
+              "HR",
+              "DT"
+            ],
+            "combo": 47,
+            "created_at": "2026-04-02T17:06:59Z",
+            "beatmapset": {
+              "id": 2466732,
+              "title": "Yume",
+              "cover": "https://assets.ppy.sh/beatmaps/2466732/covers/card.jpg?1774209549",
+              "stars": 1.08183
+            }
+          },
+          {
+            "user": "FARMAN123",
+            "user_id": 21192903,
+            "country": "IQ",
+            "score_id": 5005306185,
+            "rank": "X",
+            "accuracy": 1,
+            "pp": 4.44538,
+            "mods": [
+              "HR",
+              "DT"
+            ],
+            "combo": 38,
+            "created_at": "2026-04-02T17:06:22Z",
+            "beatmapset": {
+              "id": 2466732,
+              "title": "Yume",
+              "cover": "https://assets.ppy.sh/beatmaps/2466732/covers/card.jpg?1774209549",
+              "stars": 0.786726
+            }
+          },
+          {
+            "user": "FARMAN123",
+            "user_id": 21192903,
+            "country": "IQ",
+            "score_id": 5005305567,
+            "rank": "X",
+            "accuracy": 1,
+            "pp": 4.44538,
+            "mods": [
+              "HR",
+              "DT"
+            ],
+            "combo": 38,
+            "created_at": "2026-04-02T17:05:12Z",
+            "beatmapset": {
+              "id": 2466732,
+              "title": "Yume",
+              "cover": "https://assets.ppy.sh/beatmaps/2466732/covers/card.jpg?1774209549",
+              "stars": 0.786726
+            }
+          },
+          {
+            "user": "FARMAN123",
+            "user_id": 21192903,
+            "country": "IQ",
+            "score_id": 5005298819,
+            "rank": "S",
+            "accuracy": 0.9419684308263695,
+            "pp": 18.9423,
+            "mods": [
+              "HR"
+            ],
+            "combo": 568,
+            "created_at": "2026-04-02T16:51:10Z",
+            "beatmapset": {
+              "id": 2493412,
+              "title": "Timeless (feat. Veela)",
+              "cover": "https://assets.ppy.sh/beatmaps/2493412/covers/card.jpg?1774200350",
+              "stars": 2.71316
+            }
+          },
+          {
+            "user": "FARMAN123",
+            "user_id": 21192903,
+            "country": "IQ",
+            "score_id": 5005297055,
+            "rank": "B",
+            "accuracy": 0.904363974001857,
+            "pp": 13.8519,
+            "mods": [
+              "HR"
+            ],
+            "combo": 322,
+            "created_at": "2026-04-02T16:47:30Z",
+            "beatmapset": {
+              "id": 2493412,
+              "title": "Timeless (feat. Veela)",
+              "cover": "https://assets.ppy.sh/beatmaps/2493412/covers/card.jpg?1774200350",
+              "stars": 2.71316
+            }
+          },
+          {
+            "user": "FARMAN123",
+            "user_id": 21192903,
+            "country": "IQ",
+            "score_id": 5005294347,
+            "rank": "S",
+            "accuracy": 0.968048359240069,
+            "pp": 5.77592,
+            "mods": [
+              "HR"
+            ],
+            "combo": 210,
+            "created_at": "2026-04-02T16:41:57Z",
+            "beatmapset": {
+              "id": 2493412,
+              "title": "Timeless (feat. Veela)",
+              "cover": "https://assets.ppy.sh/beatmaps/2493412/covers/card.jpg?1774200350",
+              "stars": 1.9145
+            }
+          },
+          {
+            "user": "FARMAN123",
+            "user_id": 21192903,
+            "country": "IQ",
+            "score_id": 5005289278,
+            "rank": "S",
+            "accuracy": 0.9484719260838664,
+            "pp": 22.8998,
+            "mods": [
+              "HR"
+            ],
+            "combo": 744,
+            "created_at": "2026-04-02T16:31:23Z",
+            "beatmapset": {
+              "id": 1963851,
+              "title": "Laugh it up, Roll with it!",
+              "cover": "https://assets.ppy.sh/beatmaps/1963851/covers/card.jpg?1687588449",
+              "stars": 2.81269
+            }
+          },
+          {
+            "user": "FARMAN123",
+            "user_id": 21192903,
+            "country": "IQ",
+            "score_id": 5005287440,
+            "rank": "B",
+            "accuracy": 0.9196872778962332,
+            "pp": 13.7978,
+            "mods": [
+              "HR"
+            ],
+            "combo": 324,
+            "created_at": "2026-04-02T16:27:40Z",
+            "beatmapset": {
+              "id": 1963851,
+              "title": "Laugh it up, Roll with it!",
+              "cover": "https://assets.ppy.sh/beatmaps/1963851/covers/card.jpg?1687588449",
+              "stars": 2.81269
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Time to Say Goodbye (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/2285243/covers/card.jpg?1736632238",
+        "unique_players": 13
       }
     }
   }

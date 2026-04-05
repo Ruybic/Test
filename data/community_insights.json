@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 37,
-    "longest": 37,
-    "last_updated": "2026-04-03"
+    "current": 38,
+    "longest": 38,
+    "last_updated": "2026-04-04"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -11293,6 +11293,305 @@
         "title": "Time to Say Goodbye (TV Size)",
         "cover": "https://assets.ppy.sh/beatmaps/2285243/covers/card.jpg?1736632238",
         "unique_players": 13
+      }
+    },
+    "2026-04-04": {
+      "total_scores": 607,
+      "peak_hour_baghdad": 23,
+      "top_grinder": {
+        "user": "Kosmiku",
+        "user_id": 15209351,
+        "count": 38,
+        "scores": [
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6470498851,
+            "rank": "C",
+            "accuracy": 0.819431852523421,
+            "pp": 38.766,
+            "mods": [],
+            "combo": 192,
+            "created_at": "2026-04-03T18:04:35Z",
+            "beatmapset": {
+              "id": 292077,
+              "title": "Asymmetry",
+              "cover": "https://assets.ppy.sh/beatmaps/292077/covers/card.jpg?1650629132",
+              "stars": 5.6979
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6470440395,
+            "rank": "C",
+            "accuracy": 0.7761584454409567,
+            "pp": 40.375,
+            "mods": [],
+            "combo": 113,
+            "created_at": "2026-04-03T17:54:12Z",
+            "beatmapset": {
+              "id": 2195963,
+              "title": "Glaza",
+              "cover": "https://assets.ppy.sh/beatmaps/2195963/covers/card.jpg?1724068368",
+              "stars": 5.63738
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6470384040,
+            "rank": "A",
+            "accuracy": 0.9456521739130435,
+            "pp": 55.3016,
+            "mods": [
+              "DT"
+            ],
+            "combo": 105,
+            "created_at": "2026-04-03T17:44:07Z",
+            "beatmapset": {
+              "id": 346339,
+              "title": "Unbreakable Heart",
+              "cover": "https://assets.ppy.sh/beatmaps/346339/covers/card.jpg?1650632156",
+              "stars": 2.99899
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6470377942,
+            "rank": "B",
+            "accuracy": 0.9094202898550725,
+            "pp": 46.4525,
+            "mods": [
+              "DT"
+            ],
+            "combo": 114,
+            "created_at": "2026-04-03T17:43:02Z",
+            "beatmapset": {
+              "id": 346339,
+              "title": "Unbreakable Heart",
+              "cover": "https://assets.ppy.sh/beatmaps/346339/covers/card.jpg?1650632156",
+              "stars": 2.99899
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6470371350,
+            "rank": "S",
+            "accuracy": 0.9487179487179487,
+            "pp": 107.86,
+            "mods": [
+              "DT"
+            ],
+            "combo": 177,
+            "created_at": "2026-04-03T17:41:51Z",
+            "beatmapset": {
+              "id": 346339,
+              "title": "Unbreakable Heart",
+              "cover": "https://assets.ppy.sh/beatmaps/346339/covers/card.jpg?1650632156",
+              "stars": 3.42482
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6470367338,
+            "rank": "A",
+            "accuracy": 0.9202279202279202,
+            "pp": 95.2699,
+            "mods": [
+              "DT"
+            ],
+            "combo": 177,
+            "created_at": "2026-04-03T17:41:08Z",
+            "beatmapset": {
+              "id": 346339,
+              "title": "Unbreakable Heart",
+              "cover": "https://assets.ppy.sh/beatmaps/346339/covers/card.jpg?1650632156",
+              "stars": 3.42482
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6470362585,
+            "rank": "C",
+            "accuracy": 0.8361823361823362,
+            "pp": 55.3749,
+            "mods": [
+              "DT"
+            ],
+            "combo": 116,
+            "created_at": "2026-04-03T17:40:18Z",
+            "beatmapset": {
+              "id": 346339,
+              "title": "Unbreakable Heart",
+              "cover": "https://assets.ppy.sh/beatmaps/346339/covers/card.jpg?1650632156",
+              "stars": 3.42482
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6470348008,
+            "rank": "A",
+            "accuracy": 0.8842459173871278,
+            "pp": 33.0748,
+            "mods": [
+              "HR",
+              "NC"
+            ],
+            "combo": 543,
+            "created_at": "2026-04-03T17:37:43Z",
+            "beatmapset": {
+              "id": 2504742,
+              "title": "I Don't Know (Nightcore Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2504742/covers/card.jpg?1770681378",
+              "stars": 2.45158
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6470307457,
+            "rank": "B",
+            "accuracy": 0.9022781774580336,
+            "pp": 69.3987,
+            "mods": [],
+            "combo": 340,
+            "created_at": "2026-04-03T17:30:28Z",
+            "beatmapset": {
+              "id": 2504742,
+              "title": "I Don't Know (Nightcore Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2504742/covers/card.jpg?1770681378",
+              "stars": 4.84447
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6470250730,
+            "rank": "A",
+            "accuracy": 0.9482456140350877,
+            "pp": 35.3189,
+            "mods": [],
+            "combo": 213,
+            "created_at": "2026-04-03T17:20:18Z",
+            "beatmapset": {
+              "id": 873811,
+              "title": "quaver",
+              "cover": "https://assets.ppy.sh/beatmaps/873811/covers/card.jpg?1650672502",
+              "stars": 3.59287
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6470219180,
+            "rank": "B",
+            "accuracy": 0.8638888888888889,
+            "pp": 45.8764,
+            "mods": [],
+            "combo": 121,
+            "created_at": "2026-04-03T17:14:42Z",
+            "beatmapset": {
+              "id": 873811,
+              "title": "quaver",
+              "cover": "https://assets.ppy.sh/beatmaps/873811/covers/card.jpg?1650672502",
+              "stars": 4.72186
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6470212209,
+            "rank": "A",
+            "accuracy": 0.9543859649122807,
+            "pp": 36.031,
+            "mods": [],
+            "combo": 205,
+            "created_at": "2026-04-03T17:13:29Z",
+            "beatmapset": {
+              "id": 873811,
+              "title": "quaver",
+              "cover": "https://assets.ppy.sh/beatmaps/873811/covers/card.jpg?1650672502",
+              "stars": 3.59287
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6470170732,
+            "rank": "B",
+            "accuracy": 0.9260869565217391,
+            "pp": 53.7041,
+            "mods": [],
+            "combo": 282,
+            "created_at": "2026-04-03T17:06:08Z",
+            "beatmapset": {
+              "id": 873811,
+              "title": "quaver",
+              "cover": "https://assets.ppy.sh/beatmaps/873811/covers/card.jpg?1650672502",
+              "stars": 4.29825
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6470161430,
+            "rank": "B",
+            "accuracy": 0.913768115942029,
+            "pp": 51.1112,
+            "mods": [],
+            "combo": 274,
+            "created_at": "2026-04-03T17:04:28Z",
+            "beatmapset": {
+              "id": 873811,
+              "title": "quaver",
+              "cover": "https://assets.ppy.sh/beatmaps/873811/covers/card.jpg?1650672502",
+              "stars": 4.29825
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6469168026,
+            "rank": "C",
+            "accuracy": 0.7287793047696038,
+            "pp": 20.0505,
+            "mods": [],
+            "combo": 277,
+            "created_at": "2026-04-03T14:07:09Z",
+            "beatmapset": {
+              "id": 1031435,
+              "title": "Sidetracked Day",
+              "cover": "https://assets.ppy.sh/beatmaps/1031435/covers/card.jpg?1631512490",
+              "stars": 5.44251
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Domino (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2382142/covers/card.jpg?1758314031",
+        "unique_players": 10
       }
     }
   }

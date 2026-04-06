@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 38,
-    "longest": 38,
-    "last_updated": "2026-04-04"
+    "current": 39,
+    "longest": 39,
+    "last_updated": "2026-04-05"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -11592,6 +11592,292 @@
         "title": "Domino (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2382142/covers/card.jpg?1758314031",
         "unique_players": 10
+      }
+    },
+    "2026-04-05": {
+      "total_scores": 485,
+      "peak_hour_baghdad": 23,
+      "top_grinder": {
+        "user": "MoDy_",
+        "user_id": 13782218,
+        "count": 55,
+        "scores": [
+          {
+            "user": "MoDy_",
+            "user_id": 13782218,
+            "country": "IQ",
+            "score_id": 5006499205,
+            "rank": "A",
+            "accuracy": 0.9290123456790124,
+            "pp": 102.924,
+            "mods": [],
+            "combo": 362,
+            "created_at": "2026-04-04T22:46:05Z",
+            "beatmapset": {
+              "id": 1507386,
+              "title": "Kinou ni Kanaderu Ashita no Uta (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1507386/covers/card.jpg?1650710303",
+              "stars": 6.13702
+            }
+          },
+          {
+            "user": "MoDy_",
+            "user_id": 13782218,
+            "country": "IQ",
+            "score_id": 5006498082,
+            "rank": "A",
+            "accuracy": 0.9603174603174603,
+            "pp": 169.87,
+            "mods": [],
+            "combo": 244,
+            "created_at": "2026-04-04T22:42:50Z",
+            "beatmapset": {
+              "id": 1017271,
+              "title": "AaAaAaAAaAaAAa",
+              "cover": "https://assets.ppy.sh/beatmaps/1017271/covers/card.jpg?1650683889",
+              "stars": 6.13302
+            }
+          },
+          {
+            "user": "MoDy_",
+            "user_id": 13782218,
+            "country": "IQ",
+            "score_id": 5006497139,
+            "rank": "A",
+            "accuracy": 0.9773716275021758,
+            "pp": 158.368,
+            "mods": [],
+            "combo": 234,
+            "created_at": "2026-04-04T22:40:07Z",
+            "beatmapset": {
+              "id": 1384619,
+              "title": "Kira Kira Days (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1384619/covers/card.jpg?1650707631",
+              "stars": 5.89884
+            }
+          },
+          {
+            "user": "MoDy_",
+            "user_id": 13782218,
+            "country": "IQ",
+            "score_id": 5006496131,
+            "rank": "A",
+            "accuracy": 0.9576107899807321,
+            "pp": 149.467,
+            "mods": [],
+            "combo": 226,
+            "created_at": "2026-04-04T22:37:09Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 5.71091
+            }
+          },
+          {
+            "user": "MoDy_",
+            "user_id": 13782218,
+            "country": "IQ",
+            "score_id": 5006495346,
+            "rank": "A",
+            "accuracy": 0.9273301737756714,
+            "pp": 76.1921,
+            "mods": [],
+            "combo": 140,
+            "created_at": "2026-04-04T22:35:03Z",
+            "beatmapset": {
+              "id": 2374386,
+              "title": "bbydoll (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2374386/covers/card.jpg?1749993995",
+              "stars": 5.656
+            }
+          },
+          {
+            "user": "MoDy_",
+            "user_id": 13782218,
+            "country": "IQ",
+            "score_id": 5006494713,
+            "rank": "A",
+            "accuracy": 0.9526143790849673,
+            "pp": 112.068,
+            "mods": [],
+            "combo": 506,
+            "created_at": "2026-04-04T22:33:16Z",
+            "beatmapset": {
+              "id": 931452,
+              "title": "Colorful",
+              "cover": "https://assets.ppy.sh/beatmaps/931452/covers/card.jpg?1650678433",
+              "stars": 5.42614
+            }
+          },
+          {
+            "user": "MoDy_",
+            "user_id": 13782218,
+            "country": "IQ",
+            "score_id": 5006492518,
+            "rank": "A",
+            "accuracy": 0.9403935185185185,
+            "pp": 101.061,
+            "mods": [],
+            "combo": 90,
+            "created_at": "2026-04-04T22:27:00Z",
+            "beatmapset": {
+              "id": 431082,
+              "title": "Historia",
+              "cover": "https://assets.ppy.sh/beatmaps/431082/covers/card.jpg?1650637791",
+              "stars": 5.57986
+            }
+          },
+          {
+            "user": "MoDy_",
+            "user_id": 13782218,
+            "country": "IQ",
+            "score_id": 5006491875,
+            "rank": "A",
+            "accuracy": 0.9372453137734311,
+            "pp": 119.971,
+            "mods": [],
+            "combo": 503,
+            "created_at": "2026-04-04T22:25:08Z",
+            "beatmapset": {
+              "id": 1180255,
+              "title": "Dandelion",
+              "cover": "https://assets.ppy.sh/beatmaps/1180255/covers/card.jpg?1650696371",
+              "stars": 5.42926
+            }
+          },
+          {
+            "user": "MoDy_",
+            "user_id": 13782218,
+            "country": "IQ",
+            "score_id": 5006490884,
+            "rank": "A",
+            "accuracy": 0.928395061728395,
+            "pp": 59.3944,
+            "mods": [],
+            "combo": 173,
+            "created_at": "2026-04-04T22:22:17Z",
+            "beatmapset": {
+              "id": 2474192,
+              "title": "Presenter* (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2474192/covers/card.jpg?1766001186",
+              "stars": 5.4188
+            }
+          },
+          {
+            "user": "MoDy_",
+            "user_id": 13782218,
+            "country": "IQ",
+            "score_id": 5006489451,
+            "rank": "A",
+            "accuracy": 0.9478114478114478,
+            "pp": 133.172,
+            "mods": [],
+            "combo": 145,
+            "created_at": "2026-04-04T22:18:23Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 5.74789
+            }
+          },
+          {
+            "user": "MoDy_",
+            "user_id": 13782218,
+            "country": "IQ",
+            "score_id": 5006487577,
+            "rank": "A",
+            "accuracy": 0.9444444444444444,
+            "pp": 121.547,
+            "mods": [],
+            "combo": 261,
+            "created_at": "2026-04-04T22:13:22Z",
+            "beatmapset": {
+              "id": 1148073,
+              "title": "One by One",
+              "cover": "https://assets.ppy.sh/beatmaps/1148073/covers/card.jpg?1645788262",
+              "stars": 6.09232
+            }
+          },
+          {
+            "user": "MoDy_",
+            "user_id": 13782218,
+            "country": "IQ",
+            "score_id": 5006486766,
+            "rank": "A",
+            "accuracy": 0.9525862068965517,
+            "pp": 129.307,
+            "mods": [],
+            "combo": 285,
+            "created_at": "2026-04-04T22:11:08Z",
+            "beatmapset": {
+              "id": 2246377,
+              "title": "The Emptiness Machine (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2246377/covers/card.jpg?1726770838",
+              "stars": 6.12097
+            }
+          },
+          {
+            "user": "MoDy_",
+            "user_id": 13782218,
+            "country": "IQ",
+            "score_id": 5006485515,
+            "rank": "A",
+            "accuracy": 0.9368279569892473,
+            "pp": 106.023,
+            "mods": [],
+            "combo": 262,
+            "created_at": "2026-04-04T22:07:48Z",
+            "beatmapset": {
+              "id": 2246377,
+              "title": "The Emptiness Machine (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2246377/covers/card.jpg?1726770838",
+              "stars": 6.1855
+            }
+          },
+          {
+            "user": "MoDy_",
+            "user_id": 13782218,
+            "country": "IQ",
+            "score_id": 5006483840,
+            "rank": "A",
+            "accuracy": 0.9515738498789347,
+            "pp": 145.638,
+            "mods": [],
+            "combo": 198,
+            "created_at": "2026-04-04T22:03:07Z",
+            "beatmapset": {
+              "id": 2284092,
+              "title": "Parasite (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2284092/covers/card.jpg?1741658673",
+              "stars": 6.4177
+            }
+          },
+          {
+            "user": "MoDy_",
+            "user_id": 13782218,
+            "country": "IQ",
+            "score_id": 5006482424,
+            "rank": "A",
+            "accuracy": 0.9221763085399449,
+            "pp": 101.523,
+            "mods": [],
+            "combo": 142,
+            "created_at": "2026-04-04T21:59:31Z",
+            "beatmapset": {
+              "id": 1049899,
+              "title": "Say Goodbye (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1049899/covers/card.jpg?1724193986",
+              "stars": 6.07028
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+        "unique_players": 7
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 40,
-    "longest": 40,
-    "last_updated": "2026-04-06"
+    "current": 41,
+    "longest": 41,
+    "last_updated": "2026-04-07"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -12199,6 +12199,301 @@
         "title": "Honeypie",
         "cover": "https://assets.ppy.sh/beatmaps/2283381/covers/card.jpg?1736660924",
         "unique_players": 10
+      }
+    },
+    "2026-04-07": {
+      "total_scores": 407,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "RAWI03",
+        "user_id": 38341733,
+        "count": 36,
+        "scores": [
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6488616369,
+            "rank": "C",
+            "accuracy": 0.8125472411186697,
+            "pp": 58.6686,
+            "mods": [
+              "HD",
+              "HR"
+            ],
+            "combo": 102,
+            "created_at": "2026-04-06T21:11:56Z",
+            "beatmapset": {
+              "id": 2266870,
+              "title": "promise (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2266870/covers/card.jpg?1737764739",
+              "stars": 6.22945
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6488604631,
+            "rank": "C",
+            "accuracy": 0.8065843621399177,
+            "pp": null,
+            "mods": [],
+            "combo": 158,
+            "created_at": "2026-04-06T21:08:58Z",
+            "beatmapset": {
+              "id": 1887429,
+              "title": "REALxEYEZ (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1887429/covers/card.jpg?1674025249",
+              "stars": 5.4068
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6488594480,
+            "rank": "C",
+            "accuracy": 0.8105893861579848,
+            "pp": 34.717,
+            "mods": [],
+            "combo": 147,
+            "created_at": "2026-04-06T21:06:23Z",
+            "beatmapset": {
+              "id": 1756743,
+              "title": "Installation",
+              "cover": "https://assets.ppy.sh/beatmaps/1756743/covers/card.jpg?1654188116",
+              "stars": 6.86209
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6488551273,
+            "rank": "C",
+            "accuracy": 0.809610705596107,
+            "pp": 32.7542,
+            "mods": [],
+            "combo": 111,
+            "created_at": "2026-04-06T20:55:44Z",
+            "beatmapset": {
+              "id": 1450065,
+              "title": "Odo",
+              "cover": "https://assets.ppy.sh/beatmaps/1450065/covers/card.jpg?1624568192",
+              "stars": 6.0816
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6488527255,
+            "rank": "C",
+            "accuracy": 0.8083123425692695,
+            "pp": 34.7647,
+            "mods": [],
+            "combo": 105,
+            "created_at": "2026-04-06T20:49:56Z",
+            "beatmapset": {
+              "id": 2347113,
+              "title": "Songs Compilation VI",
+              "cover": "https://assets.ppy.sh/beatmaps/2347113/covers/card.jpg?1744408567",
+              "stars": 7.21304
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6488475062,
+            "rank": "C",
+            "accuracy": 0.7792998477929984,
+            "pp": null,
+            "mods": [],
+            "combo": 426,
+            "created_at": "2026-04-06T20:37:38Z",
+            "beatmapset": {
+              "id": 123162,
+              "title": "Justifaiz",
+              "cover": "https://assets.ppy.sh/beatmaps/123162/covers/card.jpg?1458270618",
+              "stars": 4.45109
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6488437331,
+            "rank": "A",
+            "accuracy": 0.9805045871559633,
+            "pp": null,
+            "mods": [
+              "RX"
+            ],
+            "combo": 526,
+            "created_at": "2026-04-06T20:29:01Z",
+            "beatmapset": {
+              "id": 2531866,
+              "title": "bloody events caused by traumatic experiences",
+              "cover": "https://assets.ppy.sh/beatmaps/2531866/covers/card.jpg?1774992097",
+              "stars": 6.27416
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6488405718,
+            "rank": "C",
+            "accuracy": 0.7465943842090631,
+            "pp": null,
+            "mods": [
+              "NF"
+            ],
+            "combo": 127,
+            "created_at": "2026-04-06T20:21:56Z",
+            "beatmapset": {
+              "id": 472946,
+              "title": "In The Middle Of The Night (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/472946/covers/card.jpg?1645785494",
+              "stars": 8.03311
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6488355729,
+            "rank": "C",
+            "accuracy": 0.7644221851233537,
+            "pp": 22.3622,
+            "mods": [],
+            "combo": 133,
+            "created_at": "2026-04-06T20:10:45Z",
+            "beatmapset": {
+              "id": 879767,
+              "title": "Gid V",
+              "cover": "https://assets.ppy.sh/beatmaps/879767/covers/card.jpg?1622150886",
+              "stars": 6.54864
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6488232785,
+            "rank": "C",
+            "accuracy": 0.829225352112676,
+            "pp": 45.1311,
+            "mods": [],
+            "combo": 101,
+            "created_at": "2026-04-06T19:43:28Z",
+            "beatmapset": {
+              "id": 1733246,
+              "title": "Nao sou obrigada",
+              "cover": "https://assets.ppy.sh/beatmaps/1733246/covers/card.jpg?1670436697",
+              "stars": 6.17528
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6488217574,
+            "rank": "C",
+            "accuracy": 0.7375,
+            "pp": 57.0137,
+            "mods": [],
+            "combo": 53,
+            "created_at": "2026-04-06T19:40:05Z",
+            "beatmapset": {
+              "id": 2472271,
+              "title": "Christmas Slop",
+              "cover": "https://assets.ppy.sh/beatmaps/2472271/covers/card.jpg?1765043571",
+              "stars": 7.0325
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6488202718,
+            "rank": "C",
+            "accuracy": 0.827020202020202,
+            "pp": 85.9576,
+            "mods": [],
+            "combo": 51,
+            "created_at": "2026-04-06T19:36:50Z",
+            "beatmapset": {
+              "id": 2472271,
+              "title": "Christmas Slop",
+              "cover": "https://assets.ppy.sh/beatmaps/2472271/covers/card.jpg?1765043571",
+              "stars": 6.75349
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6488195345,
+            "rank": "C",
+            "accuracy": 0.7391857506361323,
+            "pp": 89.0553,
+            "mods": [],
+            "combo": 176,
+            "created_at": "2026-04-06T19:35:09Z",
+            "beatmapset": {
+              "id": 1049899,
+              "title": "Say Goodbye (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1049899/covers/card.jpg?1724193986",
+              "stars": 6.20725
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6488184739,
+            "rank": "A",
+            "accuracy": 0.9369747899159664,
+            "pp": 116.056,
+            "mods": [
+              "DT"
+            ],
+            "combo": 103,
+            "created_at": "2026-04-06T19:32:49Z",
+            "beatmapset": {
+              "id": 750963,
+              "title": "Koigokoro",
+              "cover": "https://assets.ppy.sh/beatmaps/750963/covers/card.jpg?1650660813",
+              "stars": 3.89506
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6488179919,
+            "rank": "B",
+            "accuracy": 0.8905622489959839,
+            "pp": 94.5543,
+            "mods": [],
+            "combo": 253,
+            "created_at": "2026-04-06T19:31:44Z",
+            "beatmapset": {
+              "id": 411894,
+              "title": "Sendan Life",
+              "cover": "https://assets.ppy.sh/beatmaps/411894/covers/card.jpg?1650637006",
+              "stars": 6.06927
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+        "unique_players": 8
       }
     }
   }

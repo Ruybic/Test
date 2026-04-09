@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 41,
-    "longest": 41,
-    "last_updated": "2026-04-07"
+    "current": 42,
+    "longest": 42,
+    "last_updated": "2026-04-08"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -12494,6 +12494,292 @@
         "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
         "unique_players": 8
+      }
+    },
+    "2026-04-08": {
+      "total_scores": 426,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "Kosmiku",
+        "user_id": 15209351,
+        "count": 37,
+        "scores": [
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6493155895,
+            "rank": "B",
+            "accuracy": 0.8892245720040282,
+            "pp": 57.4516,
+            "mods": [],
+            "combo": 441,
+            "created_at": "2026-04-07T19:03:06Z",
+            "beatmapset": {
+              "id": 906786,
+              "title": "Guess Who Is Back (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/906786/covers/card.jpg?1650674521",
+              "stars": 4.62554
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6493139548,
+            "rank": "A",
+            "accuracy": 0.9630801687763713,
+            "pp": 75.9977,
+            "mods": [],
+            "combo": 301,
+            "created_at": "2026-04-07T18:59:38Z",
+            "beatmapset": {
+              "id": 380545,
+              "title": "Sweets Weekend",
+              "cover": "https://assets.ppy.sh/beatmaps/380545/covers/card.jpg?1622096656",
+              "stars": 4.28596
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6493129495,
+            "rank": "S",
+            "accuracy": 0.9535864978902954,
+            "pp": 78.3594,
+            "mods": [],
+            "combo": 462,
+            "created_at": "2026-04-07T18:57:35Z",
+            "beatmapset": {
+              "id": 380545,
+              "title": "Sweets Weekend",
+              "cover": "https://assets.ppy.sh/beatmaps/380545/covers/card.jpg?1622096656",
+              "stars": 4.28596
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6493082505,
+            "rank": "A",
+            "accuracy": 0.9396433470507545,
+            "pp": 52.8628,
+            "mods": [],
+            "combo": 283,
+            "created_at": "2026-04-07T18:47:49Z",
+            "beatmapset": {
+              "id": 375648,
+              "title": "Bass Slut (Original Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/375648/covers/card.jpg?1650635238",
+              "stars": 4.07036
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6493061311,
+            "rank": "B",
+            "accuracy": 0.9266381766381766,
+            "pp": 33.102,
+            "mods": [],
+            "combo": 267,
+            "created_at": "2026-04-07T18:43:27Z",
+            "beatmapset": {
+              "id": 2500296,
+              "title": "P+P",
+              "cover": "https://assets.ppy.sh/beatmaps/2500296/covers/card.jpg?1774098932",
+              "stars": 3.65435
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6493047603,
+            "rank": "B",
+            "accuracy": 0.8895631067961165,
+            "pp": null,
+            "mods": [],
+            "combo": 235,
+            "created_at": "2026-04-07T18:40:37Z",
+            "beatmapset": {
+              "id": 2046161,
+              "title": "Virus",
+              "cover": "https://assets.ppy.sh/beatmaps/2046161/covers/card.jpg?1694707272",
+              "stars": 4.65113
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6493034407,
+            "rank": "B",
+            "accuracy": 0.8742063492063492,
+            "pp": 55.913,
+            "mods": [],
+            "combo": 235,
+            "created_at": "2026-04-07T18:37:51Z",
+            "beatmapset": {
+              "id": 737714,
+              "title": "Putin's Boner",
+              "cover": "https://assets.ppy.sh/beatmaps/737714/covers/card.jpg?1650660262",
+              "stars": 4.73489
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6493011601,
+            "rank": "C",
+            "accuracy": 0.7784743991640544,
+            "pp": 34.3065,
+            "mods": [],
+            "combo": 178,
+            "created_at": "2026-04-07T18:33:04Z",
+            "beatmapset": {
+              "id": 2395248,
+              "title": "Die Young",
+              "cover": "https://assets.ppy.sh/beatmaps/2395248/covers/card.jpg?1753062745",
+              "stars": 4.58541
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6492997371,
+            "rank": "D",
+            "accuracy": 0.7101990049751243,
+            "pp": null,
+            "mods": [],
+            "combo": 112,
+            "created_at": "2026-04-07T18:30:05Z",
+            "beatmapset": {
+              "id": 2461418,
+              "title": "Sayt",
+              "cover": "https://assets.ppy.sh/beatmaps/2461418/covers/card.jpg?1765992610",
+              "stars": 3.86253
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6492990311,
+            "rank": "B",
+            "accuracy": 0.879182156133829,
+            "pp": 49.7536,
+            "mods": [],
+            "combo": 279,
+            "created_at": "2026-04-07T18:28:38Z",
+            "beatmapset": {
+              "id": 1927238,
+              "title": "MP3",
+              "cover": "https://assets.ppy.sh/beatmaps/1927238/covers/card.jpg?1678894184",
+              "stars": 4.29183
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6492918094,
+            "rank": "C",
+            "accuracy": 0.772264631043257,
+            "pp": 32.8554,
+            "mods": [],
+            "combo": 139,
+            "created_at": "2026-04-07T18:13:30Z",
+            "beatmapset": {
+              "id": 2136811,
+              "title": "Brain Implosion Energy Drink (feat. Kasane Teto)",
+              "cover": "https://assets.ppy.sh/beatmaps/2136811/covers/card.jpg?1711301841",
+              "stars": 4.99277
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6492904707,
+            "rank": "B",
+            "accuracy": 0.8778040141676505,
+            "pp": null,
+            "mods": [],
+            "combo": 183,
+            "created_at": "2026-04-07T18:10:41Z",
+            "beatmapset": {
+              "id": 609057,
+              "title": "Vanity Clock",
+              "cover": "https://assets.ppy.sh/beatmaps/609057/covers/card.jpg?1650649633",
+              "stars": 5.77083
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6492844847,
+            "rank": "B",
+            "accuracy": 0.8985215053763441,
+            "pp": 29.5745,
+            "mods": [],
+            "combo": 248,
+            "created_at": "2026-04-07T17:58:15Z",
+            "beatmapset": {
+              "id": 2150088,
+              "title": "Rabbit Hole feat. Hatsune Miku",
+              "cover": "https://assets.ppy.sh/beatmaps/2150088/covers/card.jpg?1714929064",
+              "stars": 3.9634
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6492792344,
+            "rank": "B",
+            "accuracy": 0.8638117283950617,
+            "pp": 26.8656,
+            "mods": [],
+            "combo": 282,
+            "created_at": "2026-04-07T17:47:23Z",
+            "beatmapset": {
+              "id": 863183,
+              "title": "Medicina",
+              "cover": "https://assets.ppy.sh/beatmaps/863183/covers/card.jpg?1622148983",
+              "stars": 3.82639
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6492738086,
+            "rank": "S",
+            "accuracy": 0.9645299145299145,
+            "pp": 56.9905,
+            "mods": [],
+            "combo": 573,
+            "created_at": "2026-04-07T17:36:12Z",
+            "beatmapset": {
+              "id": 2178003,
+              "title": "Part Of Me (Whippa Hardstyle Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2178003/covers/card.jpg?1717004735",
+              "stars": 3.86484
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Ai Dua Em Ve (Cukak Remix) (Agnes Tachyon Low Cortisol Edit) (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2510616/covers/card.jpg?1772320588",
+        "unique_players": 16
       }
     }
   }

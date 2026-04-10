@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 42,
-    "longest": 42,
-    "last_updated": "2026-04-08"
+    "current": 43,
+    "longest": 43,
+    "last_updated": "2026-04-09"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -12780,6 +12780,292 @@
         "title": "Ai Dua Em Ve (Cukak Remix) (Agnes Tachyon Low Cortisol Edit) (Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2510616/covers/card.jpg?1772320588",
         "unique_players": 16
+      }
+    },
+    "2026-04-09": {
+      "total_scores": 463,
+      "peak_hour_baghdad": 23,
+      "top_grinder": {
+        "user": "Ishaqs60",
+        "user_id": 6188870,
+        "count": 67,
+        "scores": [
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6498865356,
+            "rank": "D",
+            "accuracy": 0.5184563758389261,
+            "pp": null,
+            "mods": [],
+            "combo": 35,
+            "created_at": "2026-04-08T21:30:30Z",
+            "beatmapset": {
+              "id": 1485845,
+              "title": "MAKE IT FUNKY NOW (BMS EDIT)",
+              "cover": "https://assets.ppy.sh/beatmaps/1485845/covers/card.jpg?1638398681",
+              "stars": 6.10481
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6498856152,
+            "rank": "C",
+            "accuracy": 0.8273195876288659,
+            "pp": 35.6886,
+            "mods": [],
+            "combo": 128,
+            "created_at": "2026-04-08T21:28:09Z",
+            "beatmapset": {
+              "id": 653835,
+              "title": "JINGO JUNGLE",
+              "cover": "https://assets.ppy.sh/beatmaps/653835/covers/card.jpg?1622123311",
+              "stars": 5.31674
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6498786493,
+            "rank": "D",
+            "accuracy": 0.6682305630026809,
+            "pp": 23.61,
+            "mods": [],
+            "combo": 76,
+            "created_at": "2026-04-08T21:10:34Z",
+            "beatmapset": {
+              "id": 41823,
+              "title": "The Big Black",
+              "cover": "https://assets.ppy.sh/beatmaps/41823/covers/card.jpg?1650610126",
+              "stars": 6.7852
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6498700931,
+            "rank": "C",
+            "accuracy": 0.8244444444444444,
+            "pp": 29.5367,
+            "mods": [],
+            "combo": 107,
+            "created_at": "2026-04-08T20:49:27Z",
+            "beatmapset": {
+              "id": 422045,
+              "title": "Night sky",
+              "cover": "https://assets.ppy.sh/beatmaps/422045/covers/card.jpg?1650637439",
+              "stars": 5.26873
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6498480229,
+            "rank": "B",
+            "accuracy": 0.8864406779661017,
+            "pp": 64.062,
+            "mods": [],
+            "combo": 147,
+            "created_at": "2026-04-08T19:57:58Z",
+            "beatmapset": {
+              "id": 404658,
+              "title": "-BWW SCREAM-",
+              "cover": "https://assets.ppy.sh/beatmaps/404658/covers/card.jpg?1650636569",
+              "stars": 5.04114
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6498473970,
+            "rank": "B",
+            "accuracy": 0.8887005649717514,
+            "pp": 46.8805,
+            "mods": [],
+            "combo": 117,
+            "created_at": "2026-04-08T19:56:36Z",
+            "beatmapset": {
+              "id": 404658,
+              "title": "-BWW SCREAM-",
+              "cover": "https://assets.ppy.sh/beatmaps/404658/covers/card.jpg?1650636569",
+              "stars": 5.04114
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6498466566,
+            "rank": "C",
+            "accuracy": 0.8084745762711865,
+            "pp": 39.9541,
+            "mods": [],
+            "combo": 114,
+            "created_at": "2026-04-08T19:54:59Z",
+            "beatmapset": {
+              "id": 404658,
+              "title": "-BWW SCREAM-",
+              "cover": "https://assets.ppy.sh/beatmaps/404658/covers/card.jpg?1650636569",
+              "stars": 5.04114
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6498459937,
+            "rank": "C",
+            "accuracy": 0.8344632768361582,
+            "pp": 30.7927,
+            "mods": [],
+            "combo": 148,
+            "created_at": "2026-04-08T19:53:32Z",
+            "beatmapset": {
+              "id": 404658,
+              "title": "-BWW SCREAM-",
+              "cover": "https://assets.ppy.sh/beatmaps/404658/covers/card.jpg?1650636569",
+              "stars": 5.04114
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6498218608,
+            "rank": "C",
+            "accuracy": 0.8365896980461812,
+            "pp": 53.747,
+            "mods": [],
+            "combo": 180,
+            "created_at": "2026-04-08T19:01:06Z",
+            "beatmapset": {
+              "id": 364574,
+              "title": "TSUBAKI",
+              "cover": "https://assets.ppy.sh/beatmaps/364574/covers/card.jpg?1650635552",
+              "stars": 6.04656
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6498196673,
+            "rank": "C",
+            "accuracy": 0.8025458851391356,
+            "pp": 29.5825,
+            "mods": [],
+            "combo": 126,
+            "created_at": "2026-04-08T18:56:28Z",
+            "beatmapset": {
+              "id": 364574,
+              "title": "TSUBAKI",
+              "cover": "https://assets.ppy.sh/beatmaps/364574/covers/card.jpg?1650635552",
+              "stars": 6.04656
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6498184255,
+            "rank": "C",
+            "accuracy": 0.8034339846062759,
+            "pp": 32.0223,
+            "mods": [],
+            "combo": 89,
+            "created_at": "2026-04-08T18:53:49Z",
+            "beatmapset": {
+              "id": 364574,
+              "title": "TSUBAKI",
+              "cover": "https://assets.ppy.sh/beatmaps/364574/covers/card.jpg?1650635552",
+              "stars": 6.04656
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6498113980,
+            "rank": "C",
+            "accuracy": 0.7424242424242424,
+            "pp": 24.8415,
+            "mods": [],
+            "combo": 135,
+            "created_at": "2026-04-08T18:38:48Z",
+            "beatmapset": {
+              "id": 2412328,
+              "title": "Vespera Stella",
+              "cover": "https://assets.ppy.sh/beatmaps/2412328/covers/card.jpg?1763492249",
+              "stars": 4.94664
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6498036459,
+            "rank": "C",
+            "accuracy": 0.7504006410256411,
+            "pp": 28.7309,
+            "mods": [],
+            "combo": 75,
+            "created_at": "2026-04-08T18:22:32Z",
+            "beatmapset": {
+              "id": 700384,
+              "title": "Bittersweet (feat. Kuishinboakachan a.k.a Kiato)",
+              "cover": "https://assets.ppy.sh/beatmaps/700384/covers/card.jpg?1650656582",
+              "stars": 5.70636
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6498021268,
+            "rank": "A",
+            "accuracy": 0.9695340501792115,
+            "pp": 69.1432,
+            "mods": [],
+            "combo": 267,
+            "created_at": "2026-04-08T18:19:22Z",
+            "beatmapset": {
+              "id": 700384,
+              "title": "Bittersweet (feat. Kuishinboakachan a.k.a Kiato)",
+              "cover": "https://assets.ppy.sh/beatmaps/700384/covers/card.jpg?1650656582",
+              "stars": 4.7826
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6498012703,
+            "rank": "A",
+            "accuracy": 0.9354838709677419,
+            "pp": 43.1743,
+            "mods": [],
+            "combo": 117,
+            "created_at": "2026-04-08T18:17:35Z",
+            "beatmapset": {
+              "id": 700384,
+              "title": "Bittersweet (feat. Kuishinboakachan a.k.a Kiato)",
+              "cover": "https://assets.ppy.sh/beatmaps/700384/covers/card.jpg?1650656582",
+              "stars": 4.7826
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Bittersweet (feat. Kuishinboakachan a.k.a Kiato)",
+        "cover": "https://assets.ppy.sh/beatmaps/700384/covers/card.jpg?1650656582",
+        "unique_players": 13
       }
     }
   }

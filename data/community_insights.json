@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 44,
-    "longest": 44,
-    "last_updated": "2026-04-10"
+    "current": 45,
+    "longest": 45,
+    "last_updated": "2026-04-11"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -13352,6 +13352,296 @@
         "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
         "unique_players": 12
+      }
+    },
+    "2026-04-11": {
+      "total_scores": 407,
+      "peak_hour_baghdad": 22,
+      "top_grinder": {
+        "user": "Ishaqs60",
+        "user_id": 6188870,
+        "count": 32,
+        "scores": [
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6510678176,
+            "rank": "X",
+            "accuracy": 1,
+            "pp": null,
+            "mods": [],
+            "combo": 1,
+            "created_at": "2026-04-11T01:59:39Z",
+            "beatmapset": {
+              "id": 36323,
+              "title": "Ievan Polkka",
+              "cover": "https://assets.ppy.sh/beatmaps/36323/covers/card.jpg?1772572877",
+              "stars": 0.138415
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6510554124,
+            "rank": "C",
+            "accuracy": 0.769325912183055,
+            "pp": 30.4874,
+            "mods": [],
+            "combo": 110,
+            "created_at": "2026-04-11T01:21:04Z",
+            "beatmapset": {
+              "id": 2031865,
+              "title": "Rocking to the Beat (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2031865/covers/card.jpg?1737427715",
+              "stars": 5.60791
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6510533763,
+            "rank": "C",
+            "accuracy": 0.6959338695263628,
+            "pp": 27.9506,
+            "mods": [],
+            "combo": 84,
+            "created_at": "2026-04-11T01:14:52Z",
+            "beatmapset": {
+              "id": 41823,
+              "title": "The Big Black",
+              "cover": "https://assets.ppy.sh/beatmaps/41823/covers/card.jpg?1650610126",
+              "stars": 6.7852
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6510521775,
+            "rank": "D",
+            "accuracy": 0.7059123343527013,
+            "pp": 29.1605,
+            "mods": [],
+            "combo": 64,
+            "created_at": "2026-04-11T01:11:13Z",
+            "beatmapset": {
+              "id": 398819,
+              "title": "The Biggest Dreamer (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/398819/covers/card.jpg?1650636333",
+              "stars": 5.03084
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6510509933,
+            "rank": "B",
+            "accuracy": 0.8635790800252048,
+            "pp": 55.3815,
+            "mods": [],
+            "combo": 229,
+            "created_at": "2026-04-11T01:07:36Z",
+            "beatmapset": {
+              "id": 477725,
+              "title": "Virtual Paradise",
+              "cover": "https://assets.ppy.sh/beatmaps/477725/covers/card.jpg?1622105891",
+              "stars": 5.09344
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6510409034,
+            "rank": "C",
+            "accuracy": 0.7675606641123882,
+            "pp": 57.7486,
+            "mods": [],
+            "combo": 188,
+            "created_at": "2026-04-11T00:36:46Z",
+            "beatmapset": {
+              "id": 737128,
+              "title": "Bombs away",
+              "cover": "https://assets.ppy.sh/beatmaps/737128/covers/card.jpg?1650659486",
+              "stars": 5.16707
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6510351809,
+            "rank": "B",
+            "accuracy": 0.8719682335265079,
+            "pp": 36.5169,
+            "mods": [],
+            "combo": 194,
+            "created_at": "2026-04-11T00:19:20Z",
+            "beatmapset": {
+              "id": 36319,
+              "title": "Fallen Angel (El Poco Maro Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/36319/covers/card.jpg?1622049721",
+              "stars": 5.54825
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6510214180,
+            "rank": "C",
+            "accuracy": 0.8133468834688347,
+            "pp": 45.3061,
+            "mods": [],
+            "combo": 120,
+            "created_at": "2026-04-10T23:39:13Z",
+            "beatmapset": {
+              "id": 194188,
+              "title": "Polygon (feat. Reija Lee)",
+              "cover": "https://assets.ppy.sh/beatmaps/194188/covers/card.jpg?1650623899",
+              "stars": 5.44938
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6510206745,
+            "rank": "C",
+            "accuracy": 0.7804878048780488,
+            "pp": 31.9295,
+            "mods": [],
+            "combo": 85,
+            "created_at": "2026-04-10T23:37:08Z",
+            "beatmapset": {
+              "id": 194188,
+              "title": "Polygon (feat. Reija Lee)",
+              "cover": "https://assets.ppy.sh/beatmaps/194188/covers/card.jpg?1650623899",
+              "stars": 5.44938
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6510172476,
+            "rank": "C",
+            "accuracy": 0.7325428194993412,
+            "pp": 15.0076,
+            "mods": [
+              "HD"
+            ],
+            "combo": 77,
+            "created_at": "2026-04-10T23:27:46Z",
+            "beatmapset": {
+              "id": 804233,
+              "title": "sideflip (tpz Despair Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/804233/covers/card.jpg?1650667981",
+              "stars": 5.69306
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6510157363,
+            "rank": "C",
+            "accuracy": 0.6931702344546381,
+            "pp": 19.8067,
+            "mods": [
+              "HD"
+            ],
+            "combo": 59,
+            "created_at": "2026-04-10T23:23:38Z",
+            "beatmapset": {
+              "id": 398819,
+              "title": "The Biggest Dreamer (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/398819/covers/card.jpg?1650636333",
+              "stars": 5.03084
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6508403571,
+            "rank": "C",
+            "accuracy": 0.8073727933541017,
+            "pp": 39.3045,
+            "mods": [],
+            "combo": 135,
+            "created_at": "2026-04-10T17:19:06Z",
+            "beatmapset": {
+              "id": 689957,
+              "title": "My Hero",
+              "cover": "https://assets.ppy.sh/beatmaps/689957/covers/card.jpg?1650656912",
+              "stars": 5.3012
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6508324991,
+            "rank": "C",
+            "accuracy": 0.7875816993464052,
+            "pp": 26.8434,
+            "mods": [],
+            "combo": 90,
+            "created_at": "2026-04-10T17:04:32Z",
+            "beatmapset": {
+              "id": 364574,
+              "title": "TSUBAKI",
+              "cover": "https://assets.ppy.sh/beatmaps/364574/covers/card.jpg?1650635552",
+              "stars": 6.45637
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6508182896,
+            "rank": "C",
+            "accuracy": 0.8620283018867925,
+            "pp": 46.7464,
+            "mods": [],
+            "combo": 287,
+            "created_at": "2026-04-10T16:38:39Z",
+            "beatmapset": {
+              "id": 256467,
+              "title": "Chinese Restaurant",
+              "cover": "https://assets.ppy.sh/beatmaps/256467/covers/card.jpg?1650626970",
+              "stars": 4.61538
+            }
+          },
+          {
+            "user": "Ishaqs60",
+            "user_id": 6188870,
+            "country": "IQ",
+            "score_id": 6508097426,
+            "rank": "D",
+            "accuracy": 0.6287593984962406,
+            "pp": null,
+            "mods": [],
+            "combo": 86,
+            "created_at": "2026-04-10T16:23:13Z",
+            "beatmapset": {
+              "id": 539221,
+              "title": "crystallized",
+              "cover": "https://assets.ppy.sh/beatmaps/539221/covers/card.jpg?1650649071",
+              "stars": 6.94233
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "I Don't Know (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+        "unique_players": 13
       }
     }
   }

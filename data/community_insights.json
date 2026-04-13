@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 45,
-    "longest": 45,
-    "last_updated": "2026-04-11"
+    "current": 46,
+    "longest": 46,
+    "last_updated": "2026-04-12"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -13642,6 +13642,292 @@
         "title": "I Don't Know (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
         "unique_players": 13
+      }
+    },
+    "2026-04-12": {
+      "total_scores": 483,
+      "peak_hour_baghdad": 18,
+      "top_grinder": {
+        "user": "manicide",
+        "user_id": 39330365,
+        "count": 66,
+        "scores": [
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5009856687,
+            "rank": "B",
+            "accuracy": 0.9126016260162602,
+            "pp": 36.2439,
+            "mods": [],
+            "combo": 194,
+            "created_at": "2026-04-11T21:47:55Z",
+            "beatmapset": {
+              "id": 2499570,
+              "title": "Still Into You (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499570/covers/card.jpg?1771093258",
+              "stars": 4.07052
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5009854559,
+            "rank": "B",
+            "accuracy": 0.8795518207282913,
+            "pp": 19.5155,
+            "mods": [],
+            "combo": 168,
+            "created_at": "2026-04-11T21:42:22Z",
+            "beatmapset": {
+              "id": 718040,
+              "title": "Ame to Kusari",
+              "cover": "https://assets.ppy.sh/beatmaps/718040/covers/card.jpg?1650661402",
+              "stars": 3.89043
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5009849553,
+            "rank": "B",
+            "accuracy": 0.8716153127917834,
+            "pp": 32.0099,
+            "mods": [],
+            "combo": 206,
+            "created_at": "2026-04-11T21:29:42Z",
+            "beatmapset": {
+              "id": 2474734,
+              "title": "BULLET MERMAID (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2474734/covers/card.jpg?1771944555",
+              "stars": 4.6758
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5009848235,
+            "rank": "C",
+            "accuracy": 0.8278061224489796,
+            "pp": 32.822,
+            "mods": [],
+            "combo": 94,
+            "created_at": "2026-04-11T21:26:36Z",
+            "beatmapset": {
+              "id": 2179968,
+              "title": "Dark seeks light (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2179968/covers/card.jpg?1734798865",
+              "stars": 4.95441
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5009847503,
+            "rank": "C",
+            "accuracy": 0.8180076628352491,
+            "pp": 19.7233,
+            "mods": [],
+            "combo": 83,
+            "created_at": "2026-04-11T21:24:47Z",
+            "beatmapset": {
+              "id": 2520630,
+              "title": "Megane o Hazushite (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2520630/covers/card.jpg?1774882238",
+              "stars": 4.48747
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5009844938,
+            "rank": "A",
+            "accuracy": 0.9869565217391304,
+            "pp": 49.4239,
+            "mods": [],
+            "combo": 355,
+            "created_at": "2026-04-11T21:18:43Z",
+            "beatmapset": {
+              "id": 2269829,
+              "title": "RESISTER (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2269829/covers/card.jpg?1742120867",
+              "stars": 3.72058
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5009844163,
+            "rank": "B",
+            "accuracy": 0.8838541666666667,
+            "pp": 21.0136,
+            "mods": [],
+            "combo": 75,
+            "created_at": "2026-04-11T21:16:51Z",
+            "beatmapset": {
+              "id": 2269829,
+              "title": "RESISTER (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2269829/covers/card.jpg?1742120867",
+              "stars": 4.72093
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5009841790,
+            "rank": "C",
+            "accuracy": 0.7883693045563549,
+            "pp": 19.7704,
+            "mods": [],
+            "combo": 41,
+            "created_at": "2026-04-11T21:10:59Z",
+            "beatmapset": {
+              "id": 2510235,
+              "title": "Honma ni \"Yada\"",
+              "cover": "https://assets.ppy.sh/beatmaps/2510235/covers/card.jpg?1773717176",
+              "stars": 4.74374
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5009840889,
+            "rank": "B",
+            "accuracy": 0.8873015873015873,
+            "pp": 31.351,
+            "mods": [],
+            "combo": 89,
+            "created_at": "2026-04-11T21:08:49Z",
+            "beatmapset": {
+              "id": 2459491,
+              "title": "Distance Disturbs Me (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2459491/covers/card.jpg?1766527602",
+              "stars": 4.4513
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5009839070,
+            "rank": "C",
+            "accuracy": 0.8401997503121099,
+            "pp": 23.8428,
+            "mods": [],
+            "combo": 89,
+            "created_at": "2026-04-11T21:04:27Z",
+            "beatmapset": {
+              "id": 2492332,
+              "title": "Mr. Brightside (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2492332/covers/card.jpg?1773710116",
+              "stars": 4.86416
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5009837517,
+            "rank": "C",
+            "accuracy": 0.8229166666666666,
+            "pp": 28.7483,
+            "mods": [],
+            "combo": 32,
+            "created_at": "2026-04-11T21:00:51Z",
+            "beatmapset": {
+              "id": 798007,
+              "title": "Despacito ft. R3 Music Box",
+              "cover": "https://assets.ppy.sh/beatmaps/798007/covers/card.jpg?1650665377",
+              "stars": 4.84857
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5009836792,
+            "rank": "C",
+            "accuracy": 0.8285163776493256,
+            "pp": 31.0651,
+            "mods": [],
+            "combo": 95,
+            "created_at": "2026-04-11T20:59:09Z",
+            "beatmapset": {
+              "id": 798007,
+              "title": "Despacito ft. R3 Music Box",
+              "cover": "https://assets.ppy.sh/beatmaps/798007/covers/card.jpg?1650665377",
+              "stars": 4.45622
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5009836242,
+            "rank": "C",
+            "accuracy": 0.8434782608695652,
+            "pp": 9.93618,
+            "mods": [],
+            "combo": 137,
+            "created_at": "2026-04-11T20:57:55Z",
+            "beatmapset": {
+              "id": 2523081,
+              "title": "Unwritten in the Stars",
+              "cover": "https://assets.ppy.sh/beatmaps/2523081/covers/card.jpg?1774289220",
+              "stars": 3.44934
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5009834917,
+            "rank": "C",
+            "accuracy": 0.7286585365853658,
+            "pp": 21.3637,
+            "mods": [],
+            "combo": 48,
+            "created_at": "2026-04-11T20:54:52Z",
+            "beatmapset": {
+              "id": 2253508,
+              "title": "Wer ist Faust?",
+              "cover": "https://assets.ppy.sh/beatmaps/2253508/covers/card.jpg?1770099245",
+              "stars": 4.46726
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5009834595,
+            "rank": "S",
+            "accuracy": 0.946236559139785,
+            "pp": 29.7667,
+            "mods": [],
+            "combo": 145,
+            "created_at": "2026-04-11T20:54:08Z",
+            "beatmapset": {
+              "id": 2253508,
+              "title": "Wer ist Faust?",
+              "cover": "https://assets.ppy.sh/beatmaps/2253508/covers/card.jpg?1770099245",
+              "stars": 3.43411
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "So Am I (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2496558/covers/card.jpg?1775073996",
+        "unique_players": 16
       }
     }
   }

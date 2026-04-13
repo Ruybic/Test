@@ -1,226 +1,599 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>osu! Iraq Today | Rankings</title>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="https://i.imgur.com/Zgd9kDC.jpg">
     <style>
         :root { 
             --osu-pink: #ff66aa; 
-            --dark-base: #1c1c21; 
-            --panel-bg: #2e2e38; 
+            --osu-pink-dark: #cc4488;
+            --dark-base: #1a1a20; 
+            --dark-deeper: #13131a;
+            --panel-bg: #272730; 
+            --panel-border: rgba(255,255,255,0.07);
             --text-main: #ffffff; 
-            --text-muted: #888895;
+            --text-muted: #8888a0;
             --accent-gold: #ffd700;
-            --accent-green: #88ffcc;
-            --accent-red: #ff4444;
-        }
-        
-        body { background-color: var(--dark-base); color: var(--text-main); font-family: 'Exo 2', sans-serif; margin: 0; padding: 0; scroll-behavior: smooth; overflow-x: hidden; }
-        
-        /* --- HEADER --- */
-        header {
-            background: #111116; padding: 12px 25px; display: flex; align-items: center;
-            justify-content: space-between; border-bottom: 2px solid var(--panel-bg);
-            position: sticky; top: 0; z-index: 1000;
-        }
-        .logo-box { margin-left: -10px; }
-        .logo-box a { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-        .logo-box img { height: 38px; display: block; }
-        .logo-text { color: #ffffff; font-weight: 800; font-size: 25px; letter-spacing: 0px; white-space: nowrap; }
-        .logo-box a:hover { filter: brightness(1.1); }
-
-        /* --- DROPDOWN --- */
-        .dropdown { position: relative; display: flex; align-items: center; }
-        .dropbtn { 
-            background: var(--panel-bg); color: white; border: 1px solid rgba(255,255,255,0.05); 
-            padding: 10px 18px; border-radius: 6px; cursor: pointer; font-family: 'Exo 2', sans-serif; 
-            font-weight: 600; font-size: 14px; transition: all 0.2s ease; 
-        }
-        .dropbtn:hover { background: #3e3e4a; border-color: var(--osu-pink); }
-        .dropdown-content {
-            visibility: hidden; opacity: 0; transform: translateY(10px); 
-            transition: opacity 0.2s ease, transform 0.2s, visibility 0.2s;
-            position: absolute; right: 0; top: calc(100% + 10px); min-width: 260px; z-index: 2000; 
-            background-color: rgba(28, 28, 33, 0.9); backdrop-filter: blur(15px); 
-            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7); border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px; padding: 8px; 
-        }
-        .dropdown-content.show { visibility: visible; opacity: 1; transform: translateY(0); }
-        .menu-item { 
-            position: relative; color: var(--text-muted); padding: 12px 16px; text-decoration: none; 
-            display: block; font-size: 14px; border-radius: 8px; transition: all 0.25s ease; margin-bottom: 2px;
-        }
-        .menu-item:last-child { margin-bottom: 0; }
-        .menu-item .menu-desc { display: block; font-size: 11px; color: #6a6a7a; margin-top: 4px; transition: color 0.2s ease; }
-        .menu-item:hover { background: rgba(255, 102, 170, 0.1); color: white; }
-        .menu-item.active { background: rgba(255, 102, 170, 0.15); color: white; font-weight: 700; }
-        .menu-item::before {
-            content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%) scaleY(0);
-            width: 4px; height: 65%; background: var(--osu-pink); border-radius: 0 4px 4px 0;
-            transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
-        }
-        .menu-item.active::before, .menu-item:hover::before { transform: translateY(-50%) scaleY(1); }
-        .menu-item.active .menu-desc, .menu-item:hover .menu-desc { color: var(--osu-pink); }
-
-        /* --- LAYOUT & CONTROLS --- */
-        .controls-container { 
-            width: 96%; max-width: 1800px; margin: 30px auto 15px; padding: 0; 
-            display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;
-        }
-        .controls-group { display: flex; gap: 10px; flex-grow: 1; max-width: 600px; }
-        .search-input, .styled-select, .date-picker {
-            background: var(--panel-bg); color: white; border: 1px solid #3e3e4a; padding: 10px 15px; 
-            border-radius: 8px; font-family: 'Exo 2'; font-weight: 600; outline: none; transition: 0.2s; box-sizing: border-box;
-        }
-        .search-input { flex-grow: 1; }
-        .search-input:focus, .styled-select:focus, .date-picker:focus { border-color: var(--osu-pink); }
-        ::-webkit-calendar-picker-indicator { filter: invert(1) opacity(0.7); cursor: pointer; }
-
-        .main-layout {
-            display: flex; width: 96%; max-width: 1800px; margin: 0 auto; padding: 0 0 20px 0; gap: 20px; align-items: flex-start;
+            --accent-green: #66ffbb;
+            --accent-red: #ff4466;
         }
 
-        /* --- LEFT PANEL (PLAYER DATA) --- */
-        .left-panel {
-            width: 320px; position: sticky; top: 90px; background: var(--panel-bg); 
-            border: 1px solid #3e3e4a; border-radius: 12px; padding: 20px; display: none; 
-            flex-direction: column; gap: 15px; flex-shrink: 0;
-        }
-        .left-panel.active { display: flex; }
-        .panel-avatar { width: 100px; height: 100px; border-radius: 15px; border: 3px solid var(--dark-base); margin: 0 auto; display: block; }
-        .panel-name { text-align: center; font-size: 24px; font-weight: 800; color: white; margin: 0; }
-        .panel-rank { text-align: center; color: var(--osu-pink); font-size: 18px; font-weight: 700; margin-top: -10px; }
-        .panel-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
-        .panel-stat { background: var(--dark-base); padding: 10px; border-radius: 8px; text-align: center; }
-        .panel-stat span { display: block; font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; }
-        .panel-stat strong { display: block; font-size: 16px; color: white; margin-top: 3px; }
-        
-        .btn-visit-profile {
-            display: block; width: 100%; text-align: center; background: var(--osu-pink); 
-            color: white; border: none; padding: 12px 0; border-radius: 8px; 
-            text-decoration: none; font-weight: 800; transition: 0.2s; margin-top: 10px; box-sizing: border-box;
-            box-shadow: 0 4px 15px rgba(255, 102, 170, 0.25);
-        }
-        .btn-visit-profile:hover { background: #ff4d94; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255, 102, 170, 0.4); }
-        
-        .placeholder-panel {
-            width: 320px; position: sticky; top: 90px; border: 1px dashed #3e3e4a; border-radius: 12px; 
-            display: flex; align-items: center; justify-content: center; height: 400px; color: var(--text-muted);
-            font-weight: 600; text-align: center; padding: 20px; box-sizing: border-box; flex-shrink: 0;
-        }
-
-        /* --- CENTER PANEL (LEADERBOARD) --- */
-        .center-panel { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
-
-        .player-card { 
-            background: var(--panel-bg); border-radius: 12px; padding: 12px 15px; border: 1px solid #3e3e4a; 
-            display: flex; flex-direction: column; gap: 8px; transition: 0.2s; cursor: pointer; margin-bottom: 12px;
-        }
-        .player-card:hover { border-color: var(--osu-pink); transform: translateX(5px); background: #343440; }
-        .player-main { display: flex; justify-content: space-between; align-items: center; }
-        .player-identity { display: flex; align-items: center; gap: 15px; }
-        .rank-badge { font-size: 20px; font-weight: 900; color: var(--text-muted); width: 45px; text-align: center; }
-        .avatar-small { width: 48px; height: 48px; border-radius: 10px; border: 2px solid #1c1c21; }
-        .user-details { display: flex; flex-direction: column; justify-content: center; }
-        .user-name { font-size: 18px; font-weight: 800; color: white; display: flex; align-items: center; gap: 8px; }
-        .flag { width: 22px; border-radius: 3px; }
-        .stat-block { text-align: right; }
-        .stat-value { font-size: 22px; font-weight: 900; color: var(--osu-pink); line-height: 1; display: flex; align-items: center; justify-content: flex-end; gap: 8px; }
-        
-        .daily-change { font-size: 12px; font-weight: 800; padding: 2px 6px; border-radius: 4px; background: rgba(0,0,0,0.3); }
-        .daily-change.up { color: var(--accent-green); }
-        .daily-change.down { color: var(--accent-red); }
-        .daily-change.new { color: var(--accent-gold); }
-
-        .top-play-banner {
-            position: relative; border-radius: 6px; height: 45px; overflow: hidden;
-            display: flex; align-items: center; padding: 0 15px; text-decoration: none;
-            background-size: cover; background-position: center; border: 1px solid #1c1c21;
-            margin-left: 60px; transition: filter 0.2s ease;
-        }
-        .top-play-banner:hover { filter: brightness(1.2); }
-        .top-play-banner::before {
-            content: ''; position: absolute; inset: 0;
-            background: linear-gradient(90deg, rgba(15,15,20,0.95) 0%, rgba(15,15,20,0.8) 40%, rgba(15,15,20,0.4) 100%);
-        }
-        .tp-content { position: relative; z-index: 2; width: 100%; display: flex; justify-content: space-between; align-items: center; font-size: 12px; font-weight: 600; color: #eee; }
-        .tp-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 65%; }
-        .tp-title strong { color: var(--accent-gold); }
-        .tp-stats { font-weight: 800; color: var(--text-main); display: flex; gap: 10px; }
-        .tp-acc { color: #88ffcc; }
-
-        .loader { text-align: center; padding: 50px; color: var(--text-muted); font-weight: 800; letter-spacing: 2px; }
-
-        /* --- RIGHT PANEL (ADVERTISEMENT) --- */
-        .right-panel {
-            width: 300px; position: sticky; top: 90px; background: var(--panel-bg);
-            border: 1px solid #3e3e4a; border-radius: 12px; height: 600px;
-            display: flex; flex-direction: column; align-items: center; justify-content: center;
-            color: #4a4a5a; font-weight: 800; letter-spacing: 2px; text-align: center; flex-shrink: 0;
-        }
-
-        /* --- BUTTONS & PAGINATION (PINK CSS) --- */
-        .pagination { display: flex; justify-content: center; align-items: center; gap: 10px; padding: 10px 0; }
-        .page-btn {
-            background: transparent; color: var(--osu-pink); border: 2px solid var(--osu-pink); 
-            padding: 8px 16px; border-radius: 6px; cursor: pointer; font-family: 'Exo 2'; 
-            font-weight: 700; transition: 0.2s; text-decoration: none; display: inline-block; text-align: center;
-        }
-        .page-btn:hover:not(:disabled) { background: var(--osu-pink); color: white; }
-        .page-btn:disabled { opacity: 0.3; cursor: not-allowed; border-color: #555; color: #555; background: transparent; }
-        
-        .btn-close {
-            background: transparent; color: var(--osu-pink); border: 2px solid var(--osu-pink);
-            border-radius: 6px; width: 28px; height: 28px; display: flex; align-items: center; 
-            justify-content: center; cursor: pointer; font-weight: bold; font-family: 'Exo 2'; transition: 0.2s;
-        }
-        .btn-close:hover { background: var(--osu-pink); color: white; }
-
-        .page-info { font-weight: 700; color: white; background: var(--panel-bg); padding: 8px 16px; border-radius: 6px; border: 1px solid #3e3e4a; }
-
-        /* --- NOTIFICATION TOAST --- */
-        #notif-toast {
-            position: fixed; background: rgba(28, 28, 33, 0.95); backdrop-filter: blur(10px);
-            border: 1px solid #3e3e4a; border-radius: 12px; padding: 15px; z-index: 9999;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5); display: flex; flex-direction: column; gap: 10px;
-            transform: translateY(150%); opacity: 0; transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.4s;
-            overflow: hidden; min-width: 280px; bottom: 30px; left: 30px;
-        }
-        #notif-toast.show { transform: translateY(0); opacity: 1; }
-        .notif-header { display: flex; justify-content: space-between; align-items: center; font-weight: 800; color: white; padding-bottom: 5px; border-bottom: 1px solid rgba(255,255,255,0.05); }
-        .notif-progress { position: absolute; bottom: 0; left: 0; height: 4px; background: var(--osu-pink); width: 100%; }
-        @keyframes shrinkBar { from { width: 100%; } to { width: 0%; } }
-
-        /* --- RESPONSIVENESS --- */
-@media (max-width: 1200px) {
-    .main-layout { 
-        flex-direction: column; /* Stacks the panels vertically */
-        align-items: center; /* Centers everything */
+```
+    *, *::before, *::after { box-sizing: border-box; }
+    
+    body { 
+        background-color: var(--dark-base); 
+        background-image: radial-gradient(ellipse at 20% 0%, rgba(255,102,170,0.06) 0%, transparent 50%),
+                          radial-gradient(ellipse at 80% 100%, rgba(100,60,180,0.05) 0%, transparent 50%);
+        color: var(--text-main); 
+        font-family: 'Exo 2', sans-serif; 
+        margin: 0; padding: 0; 
+        scroll-behavior: smooth; 
+        overflow-x: hidden;
     }
+    
+    /* ─── HEADER ─── */
+    header {
+        background: rgba(15,15,20,0.85);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        padding: 0 24px;
+        display: flex; align-items: center; justify-content: space-between;
+        border-bottom: 1px solid rgba(255,102,170,0.15);
+        position: sticky; top: 0; z-index: 1000;
+        height: 60px;
+    }
+    .logo-box a { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .logo-box img { height: 34px; border-radius: 8px; display: block; }
+    .logo-text { color: #fff; font-weight: 800; font-size: 18px; white-space: nowrap; letter-spacing: -0.3px; }
+    .logo-text span { color: var(--osu-pink); }
+    .logo-box a:hover .logo-text { color: var(--osu-pink); transition: color 0.2s; }
+
+    /* ─── DROPDOWN ─── */
+    .dropdown { position: relative; display: flex; align-items: center; }
+    .dropbtn { 
+        background: rgba(255,255,255,0.06); 
+        color: white; 
+        border: 1px solid rgba(255,255,255,0.1); 
+        padding: 8px 18px; border-radius: 8px; cursor: pointer; 
+        font-family: 'Exo 2'; font-weight: 700; font-size: 14px; 
+        transition: all 0.2s ease; letter-spacing: 0.3px;
+    }
+    .dropbtn:hover { background: rgba(255,102,170,0.15); border-color: var(--osu-pink); color: var(--osu-pink); }
+    .dropdown-content {
+        visibility: hidden; opacity: 0; transform: translateY(8px) scale(0.97);
+        transition: opacity 0.2s ease, transform 0.25s cubic-bezier(0.2,0.8,0.2,1), visibility 0.2s;
+        position: absolute; right: 0; top: calc(100% + 12px); min-width: 270px; z-index: 2000; 
+        background: rgba(20,20,28,0.97);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 20px 60px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,102,170,0.1);
+        border-radius: 14px; padding: 8px; 
+    }
+    .dropdown-content.show { visibility: visible; opacity: 1; transform: translateY(0) scale(1); }
+    .menu-item { 
+        position: relative; color: var(--text-muted); padding: 11px 14px; text-decoration: none; 
+        display: block; font-size: 14px; border-radius: 8px; transition: all 0.2s ease; margin-bottom: 2px;
+        overflow: hidden;
+    }
+    .menu-item:last-child { margin-bottom: 0; }
+    .menu-item .menu-desc { display: block; font-size: 11px; color: #55556a; margin-top: 3px; transition: color 0.2s; }
+    .menu-item:hover { background: rgba(255,102,170,0.12); color: white; }
+    .menu-item.active { background: rgba(255,102,170,0.15); color: white; font-weight: 700; }
+    .menu-item::before {
+        content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%) scaleY(0);
+        width: 3px; height: 60%; background: var(--osu-pink); border-radius: 0 3px 3px 0;
+        transition: transform 0.25s cubic-bezier(0.2,0.8,0.2,1);
+    }
+    .menu-item.active::before, .menu-item:hover::before { transform: translateY(-50%) scaleY(1); }
+    .menu-item:hover .menu-desc, .menu-item.active .menu-desc { color: rgba(255,102,170,0.7); }
+
+    /* ─── CONTROLS BAR ─── */
+    .controls-container { 
+        width: 95%; max-width: 1700px; margin: 24px auto 16px;
+    }
+    .controls-inner {
+        background: var(--panel-bg);
+        border: 1px solid var(--panel-border);
+        border-radius: 14px;
+        padding: 14px 18px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+    .controls-search-wrap {
+        position: relative;
+        flex: 1 1 200px;
+        min-width: 160px;
+    }
+    .controls-search-wrap svg {
+        position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+        color: var(--text-muted); pointer-events: none;
+    }
+    .search-input {
+        width: 100%;
+        background: var(--dark-base); 
+        color: white; 
+        border: 1px solid rgba(255,255,255,0.08); 
+        padding: 9px 12px 9px 36px; 
+        border-radius: 8px; 
+        font-family: 'Exo 2'; font-weight: 600; font-size: 14px;
+        outline: none; transition: border-color 0.2s;
+    }
+    .search-input:focus { border-color: var(--osu-pink); }
+    .search-input::placeholder { color: var(--text-muted); }
+
+    .controls-divider {
+        width: 1px; height: 32px; background: rgba(255,255,255,0.08);
+        flex-shrink: 0;
+    }
+
+    .date-picker-wrap {
+        position: relative;
+        display: flex; align-items: center; gap: 8px;
+        color: var(--text-muted); font-size: 13px; font-weight: 600;
+        flex-shrink: 0;
+    }
+    .date-picker-wrap label { white-space: nowrap; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .date-picker {
+        background: var(--dark-base); color: white; 
+        border: 1px solid rgba(255,255,255,0.08); 
+        padding: 9px 12px; border-radius: 8px; 
+        font-family: 'Exo 2'; font-weight: 600; font-size: 14px;
+        outline: none; transition: border-color 0.2s; cursor: pointer;
+    }
+    .date-picker:focus { border-color: var(--osu-pink); }
+    ::-webkit-calendar-picker-indicator { filter: invert(0.7) sepia(1) hue-rotate(290deg) saturate(5); cursor: pointer; opacity: 0.8; }
+
+    .sort-wrap {
+        position: relative;
+        display: flex; align-items: center; gap: 8px;
+        flex-shrink: 0;
+    }
+    .sort-wrap label { 
+        font-size: 12px; font-weight: 700; color: var(--text-muted); 
+        text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;
+    }
+    .styled-select {
+        background: var(--dark-base); color: white; 
+        border: 1px solid rgba(255,255,255,0.08); 
+        padding: 9px 32px 9px 12px; border-radius: 8px;
+        font-family: 'Exo 2'; font-weight: 700; font-size: 13px;
+        outline: none; transition: border-color 0.2s; cursor: pointer;
+        appearance: none; -webkit-appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23ff66aa' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+    }
+    .styled-select:focus { border-color: var(--osu-pink); }
+
+    /* ─── MAIN LAYOUT ─── */
+    .main-layout {
+        display: flex; width: 95%; max-width: 1700px; margin: 0 auto 30px; gap: 18px; align-items: flex-start;
+    }
+
+    /* ─── LEFT PANEL ─── */
+    .left-panel {
+        width: 300px; position: sticky; top: 78px;
+        background: var(--panel-bg); 
+        border: 1px solid var(--panel-border); 
+        border-radius: 16px; 
+        padding: 0;
+        display: none; flex-direction: column; gap: 0; flex-shrink: 0;
+        overflow: hidden;
+    }
+    .left-panel.active { display: flex; }
+    
+    .panel-cover {
+        height: 90px;
+        background: linear-gradient(135deg, #2a1a3a, #1a1a2e);
+        position: relative;
+        overflow: hidden;
+    }
+    .panel-cover::after {
+        content: '';
+        position: absolute; inset: 0;
+        background: linear-gradient(to bottom, transparent 40%, var(--panel-bg) 100%);
+    }
+    .panel-cover-bg {
+        position: absolute; inset: 0; background-size: cover; background-position: center;
+        opacity: 0.3; filter: blur(8px) saturate(1.5);
+    }
+    
+    .panel-body { padding: 0 18px 18px; }
+    
+    .panel-avatar-wrap {
+        display: flex; justify-content: space-between; align-items: flex-end;
+        margin-top: -36px; margin-bottom: 12px; position: relative; z-index: 2;
+    }
+    .panel-avatar { 
+        width: 72px; height: 72px; border-radius: 14px; 
+        border: 3px solid var(--panel-bg); 
+        box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    }
+    .panel-rank-badge {
+        background: rgba(255,102,170,0.15);
+        border: 1px solid rgba(255,102,170,0.3);
+        color: var(--osu-pink);
+        font-size: 12px; font-weight: 800;
+        padding: 4px 10px; border-radius: 20px;
+        letter-spacing: 0.3px;
+    }
+
+    .panel-name { font-size: 20px; font-weight: 900; color: white; margin: 0 0 2px; }
+    .panel-global { color: var(--text-muted); font-size: 12px; font-weight: 600; margin-bottom: 14px; }
+    
+    .panel-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .panel-stat { 
+        background: var(--dark-base); 
+        padding: 10px 12px; border-radius: 10px; 
+        border: 1px solid rgba(255,255,255,0.04);
+    }
+    .panel-stat span { display: block; font-size: 10px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px; }
+    .panel-stat strong { display: block; font-size: 15px; color: white; margin-top: 3px; font-weight: 800; }
+    
+    .btn-visit-profile {
+        display: flex; align-items: center; justify-content: center; gap: 8px;
+        width: 100%; margin-top: 14px;
+        background: linear-gradient(135deg, var(--osu-pink), var(--osu-pink-dark));
+        color: white; border: none; padding: 12px; border-radius: 10px; 
+        text-decoration: none; font-weight: 800; font-size: 14px;
+        transition: all 0.2s; letter-spacing: 0.3px;
+        box-shadow: 0 4px 20px rgba(255,102,170,0.25);
+    }
+    .btn-visit-profile:hover { 
+        transform: translateY(-2px); 
+        box-shadow: 0 8px 28px rgba(255,102,170,0.4);
+        filter: brightness(1.1);
+    }
+
+    .placeholder-panel {
+        width: 300px; position: sticky; top: 78px; 
+        border: 1px dashed rgba(255,255,255,0.08); border-radius: 16px; 
+        display: flex; flex-direction: column; align-items: center; justify-content: center; 
+        height: 320px; color: var(--text-muted);
+        font-weight: 600; text-align: center; padding: 20px; flex-shrink: 0;
+        gap: 12px;
+    }
+    .placeholder-panel svg { opacity: 0.3; }
+    .placeholder-panel p { font-size: 13px; line-height: 1.6; margin: 0; opacity: 0.7; }
+
+    /* ─── CENTER PANEL (LEADERBOARD) ─── */
+    .center-panel { flex: 1; min-width: 0; }
+
+    /* ─── PLAYER CARD (osu-style) ─── */
+    .player-card { 
+        background: var(--panel-bg); 
+        border-radius: 12px; 
+        border: 1px solid var(--panel-border); 
+        transition: border-color 0.2s, background 0.2s, transform 0.2s; 
+        cursor: pointer; 
+        margin-bottom: 8px;
+        overflow: hidden;
+    }
+    .player-card:hover { 
+        border-color: rgba(255,102,170,0.4); 
+        background: #2c2c38; 
+        transform: translateX(4px);
+    }
+    .player-card.selected { border-color: var(--osu-pink); background: #2c2c38; }
+    
+    .card-main { 
+        display: flex; align-items: center; 
+        padding: 12px 16px; gap: 0;
+    }
+
+    /* Rank number */
+    .rank-col {
+        width: 52px; flex-shrink: 0;
+        display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
+    }
+    .rank-num { 
+        font-size: 18px; font-weight: 900; 
+        color: var(--text-muted); line-height: 1;
+    }
+    .rank-num.top1 { color: var(--accent-gold); font-size: 22px; }
+    .rank-num.top2 { color: #c0c0c0; font-size: 20px; }
+    .rank-num.top3 { color: #cd7f32; font-size: 20px; }
+
+    /* Avatar */
+    .avatar-col { flex-shrink: 0; margin: 0 14px 0 4px; }
+    .avatar-wrap {
+        position: relative; width: 52px; height: 52px;
+    }
+    .avatar-small { 
+        width: 52px; height: 52px; border-radius: 12px; 
+        border: 2px solid rgba(255,255,255,0.08);
+        display: block;
+    }
+    .avatar-flag {
+        position: absolute; bottom: -4px; right: -4px;
+        width: 18px; height: auto; border-radius: 3px;
+        border: 1px solid var(--panel-bg);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    }
+
+    /* Name + secondary */
+    .info-col { flex: 1; min-width: 0; }
+    .user-name { 
+        font-size: 16px; font-weight: 800; color: white; 
+        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        line-height: 1.2;
+    }
+    .user-sub { 
+        font-size: 11px; color: var(--text-muted); font-weight: 600; 
+        margin-top: 3px; display: flex; align-items: center; gap: 6px;
+    }
+
+    /* Stats */
+    .stat-col { 
+        text-align: right; flex-shrink: 0; margin-left: 12px;
+    }
+    .stat-value { 
+        font-size: 20px; font-weight: 900; color: var(--osu-pink); 
+        line-height: 1; display: flex; align-items: center; justify-content: flex-end; gap: 8px;
+    }
+    .stat-unit { font-size: 13px; color: var(--text-muted); font-weight: 700; }
+    .stat-sub { 
+        font-size: 11px; color: var(--text-muted); font-weight: 600; 
+        margin-top: 4px; text-align: right;
+    }
+
+    .daily-change { 
+        font-size: 11px; font-weight: 800; padding: 3px 7px; 
+        border-radius: 6px;
+    }
+    .daily-change.up { color: var(--accent-green); background: rgba(102,255,187,0.1); }
+    .daily-change.down { color: var(--accent-red); background: rgba(255,68,102,0.1); }
+    .daily-change.same { color: #555; background: rgba(255,255,255,0.04); }
+    .daily-change.new { color: var(--accent-gold); background: rgba(255,215,0,0.1); }
+
+    /* Top play banner */
+    .top-play-banner {
+        position: relative; height: 42px; overflow: hidden;
+        display: flex; align-items: center; padding: 0 16px;
+        text-decoration: none;
+        background-size: cover; background-position: center;
+        border-top: 1px solid rgba(255,255,255,0.05);
+        transition: filter 0.2s;
+    }
+    .top-play-banner:hover { filter: brightness(1.25); }
+    .top-play-banner::before {
+        content: ''; position: absolute; inset: 0;
+        background: linear-gradient(90deg, rgba(10,10,18,0.96) 0%, rgba(10,10,18,0.75) 50%, rgba(10,10,18,0.4) 100%);
+    }
+    .tp-content { 
+        position: relative; z-index: 2; width: 100%; 
+        display: flex; justify-content: space-between; align-items: center; 
+        font-size: 12px; font-weight: 700;
+    }
+    .tp-left { display: flex; align-items: center; gap: 8px; min-width: 0; }
+    .tp-icon { font-size: 10px; color: var(--osu-pink); opacity: 0.8; white-space: nowrap; }
+    .tp-title { color: #ddd; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .tp-diff { color: var(--osu-pink); }
+    .tp-mods { color: var(--accent-gold); }
+    .tp-right { display: flex; gap: 12px; flex-shrink: 0; margin-left: 12px; }
+    .tp-pp { color: white; font-weight: 900; }
+    .tp-acc { color: var(--accent-green); }
+    .tp-stars { color: var(--accent-gold); }
+
+    /* Inline details (mobile expansion) */
+    .inline-details {
+        padding: 14px 16px 16px;
+        border-top: 1px solid rgba(255,255,255,0.06);
+        animation: expandIn 0.25s ease;
+    }
+    @keyframes expandIn {
+        from { opacity: 0; transform: translateY(-6px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .inline-stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+    .inline-stat { 
+        background: var(--dark-base); padding: 10px 8px; border-radius: 8px; text-align: center;
+        border: 1px solid rgba(255,255,255,0.04);
+    }
+    .inline-stat span { display: block; font-size: 10px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; letter-spacing: 0.3px; }
+    .inline-stat strong { display: block; font-size: 14px; font-weight: 800; margin-top: 3px; }
+
+    .loader { 
+        text-align: center; padding: 60px 20px; color: var(--text-muted); 
+        font-weight: 800; letter-spacing: 3px; font-size: 13px;
+    }
+    .loader::after {
+        content: ''; display: block; width: 40px; height: 2px; 
+        background: var(--osu-pink); margin: 16px auto 0;
+        animation: loaderPulse 1.2s ease-in-out infinite;
+    }
+    @keyframes loaderPulse {
+        0%, 100% { width: 40px; opacity: 0.5; }
+        50% { width: 80px; opacity: 1; }
+    }
+
+    /* ─── RIGHT PANEL (AD) ─── */
     .right-panel {
-        position: static; /* Removes the sticky behavior so it flows normally */
-        width: 100%; /* Makes the ad take up full width */
-        max-width: 500px; /* Prevents it from getting absurdly wide */
-        height: 250px; /* Makes it shorter since it's now a bottom banner */
-        margin-top: 20px;
+        width: 260px; position: sticky; top: 78px;
+        background: var(--panel-bg);
+        border: 1px solid var(--panel-border); 
+        border-radius: 16px; 
+        height: 560px;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        gap: 10px; flex-shrink: 0;
     }
-}
-        @media (max-width: 850px) {
-            .controls-container, .main-layout { width: 92%; }
-            .left-panel.active, .left-panel, .placeholder-panel { display: none !important; } /* Hide sticky sidebar on mobile */
-            .controls-group { flex-direction: column; max-width: 100%; }
-            .player-main { flex-direction: column; align-items: flex-start; gap: 10px; }
-            .stat-block { width: 100%; display: flex; justify-content: space-between; align-items: center; }
-            .top-play-banner { margin-left: 0; margin-top: 5px; height: auto; padding: 10px; }
-            .tp-content { flex-direction: column; align-items: flex-start; gap: 5px; }
-            .tp-title { max-width: 100%; white-space: normal; }
-            #notif-toast { bottom: auto; top: 20px; left: 50%; transform: translate(-50%, -150%); width: 85%; max-width: 400px; }
-            #notif-toast.show { transform: translate(-50%, 0); }
+    .ad-inner {
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        gap: 10px; width: 100%; height: 100%;
+        border: 1px dashed rgba(255,255,255,0.07);
+        margin: 12px; border-radius: 12px;
+    }
+    .ad-label { 
+        color: #3a3a50; font-weight: 800; font-size: 11px; 
+        letter-spacing: 2px; text-transform: uppercase;
+    }
+    .ad-sub { color: #2a2a40; font-size: 11px; font-weight: 600; }
+
+    /* ─── PAGINATION ─── */
+    .pagination { 
+        display: flex; justify-content: center; align-items: center; 
+        gap: 8px; padding: 12px 0;
+    }
+    .page-btn {
+        background: transparent; color: var(--osu-pink); 
+        border: 1.5px solid rgba(255,102,170,0.4); 
+        padding: 8px 18px; border-radius: 8px; cursor: pointer; 
+        font-family: 'Exo 2'; font-weight: 700; font-size: 13px;
+        transition: all 0.2s; display: inline-flex; align-items: center; gap: 6px;
+    }
+    .page-btn:hover:not(:disabled) { 
+        background: rgba(255,102,170,0.15); 
+        border-color: var(--osu-pink);
+        transform: translateY(-1px);
+    }
+    .page-btn:disabled { opacity: 0.25; cursor: not-allowed; }
+    .page-info { 
+        font-weight: 700; font-size: 13px; color: white; 
+        background: var(--dark-base); 
+        padding: 8px 16px; border-radius: 8px; 
+        border: 1px solid rgba(255,255,255,0.07);
+    }
+
+    /* ─── NOTIFICATION TOAST ─── */
+    #notif-toast {
+        position: fixed;
+        background: rgba(22,22,30,0.98);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 14px; 
+        padding: 0; 
+        z-index: 9999;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,102,170,0.15);
+        display: flex; flex-direction: column;
+        transform: translateY(150%); opacity: 0; 
+        transition: transform 0.45s cubic-bezier(0.2,0.8,0.2,1), opacity 0.4s;
+        overflow: hidden; min-width: 290px;
+        bottom: 28px; left: 28px;
+    }
+    #notif-toast.show { transform: translateY(0); opacity: 1; }
+    
+    .notif-header { 
+        display: flex; justify-content: space-between; align-items: center; 
+        padding: 14px 16px 10px;
+        gap: 10px;
+    }
+    .notif-title-text { font-weight: 800; color: white; font-size: 14px; }
+    
+    .btn-close {
+        background: rgba(255,255,255,0.07); 
+        color: var(--text-muted); 
+        border: none;
+        border-radius: 6px; width: 26px; height: 26px; 
+        display: flex; align-items: center; justify-content: center; 
+        cursor: pointer; font-weight: bold; font-family: 'Exo 2'; 
+        transition: all 0.2s; flex-shrink: 0; font-size: 13px;
+    }
+    .btn-close:hover { background: rgba(255,102,170,0.2); color: var(--osu-pink); }
+
+    /* The action button inside toast — matches menu-item style */
+    #notif-action {
+        display: block;
+        position: relative;
+        margin: 0 8px 8px;
+        color: var(--text-muted); 
+        text-decoration: none; 
+        padding: 11px 14px;
+        border-radius: 8px; 
+        font-size: 14px; font-weight: 600;
+        transition: background 0.2s, color 0.2s;
+        overflow: hidden;
+    }
+    #notif-action::before {
+        content: ''; position: absolute; left: 0; top: 50%; 
+        transform: translateY(-50%) scaleY(0);
+        width: 3px; height: 60%; background: var(--osu-pink); 
+        border-radius: 0 3px 3px 0;
+        transition: transform 0.25s cubic-bezier(0.2,0.8,0.2,1);
+    }
+    #notif-action:hover {
+        background: rgba(255,102,170,0.12); color: white;
+    }
+    #notif-action:hover::before { transform: translateY(-50%) scaleY(1); }
+    #notif-action.notif-page-btn {
+        background: rgba(255,102,170,0.1);
+        color: var(--osu-pink);
+        font-weight: 800;
+        border: 1px solid rgba(255,102,170,0.2);
+    }
+    #notif-action.notif-page-btn:hover {
+        background: rgba(255,102,170,0.2);
+    }
+    #notif-action.notif-page-btn::before { display: none; }
+    #notif-action .notif-sub { 
+        display: block; font-size: 11px; color: #55556a; margin-top: 3px; 
+        transition: color 0.2s;
+    }
+    #notif-action:hover .notif-sub { color: rgba(255,102,170,0.7); }
+    
+    .notif-progress { position: absolute; bottom: 0; left: 0; height: 3px; background: var(--osu-pink); width: 100%; border-radius: 0 0 0 14px; }
+    @keyframes shrinkBar { from { width: 100%; } to { width: 0%; } }
+
+    /* ─── RESPONSIVE ─── */
+
+    /* iPad (≤ 1100px) */
+    @media (max-width: 1100px) {
+        .main-layout { flex-wrap: wrap; }
+        .left-panel, .placeholder-panel { display: none !important; }
+        .right-panel {
+            position: static;
+            width: 100%;
+            height: 200px;
+            order: 10;
+            flex-direction: row;
         }
-    </style>
+        .ad-inner { flex-direction: row; margin: 10px; }
+        .center-panel { width: 100%; }
+        /* iPad: 4-col inline stats */
+        .inline-stat-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    /* Mobile (≤ 680px) */
+    @media (max-width: 680px) {
+        header { padding: 0 16px; }
+        .logo-text { font-size: 15px; }
+        .controls-inner { flex-direction: column; align-items: stretch; gap: 10px; }
+        .controls-divider { display: none; }
+        .controls-search-wrap { min-width: 0; }
+        .date-picker-wrap, .sort-wrap { justify-content: space-between; }
+        .date-picker, .styled-select { flex: 1; }
+        .main-layout { gap: 12px; }
+        
+        .card-main { padding: 10px 12px; }
+        .rank-col { width: 38px; }
+        .rank-num { font-size: 15px; }
+        .rank-num.top1 { font-size: 18px; }
+        .avatar-wrap { width: 44px; height: 44px; }
+        .avatar-small { width: 44px; height: 44px; border-radius: 10px; }
+        .avatar-flag { width: 15px; }
+        .avatar-col { margin: 0 10px 0 2px; }
+        .user-name { font-size: 14px; }
+        .stat-value { font-size: 17px; }
+        
+        /* Mobile: 2-col inline stats */
+        .inline-stat-grid { grid-template-columns: repeat(2, 1fr); }
+        
+        /* Mobile toast top-center */
+        #notif-toast { 
+            bottom: auto; top: 72px; 
+            left: 50%; transform: translate(-50%, -150%); 
+            min-width: 280px; width: 90%; max-width: 380px;
+        }
+        #notif-toast.show { transform: translate(-50%, 0); }
+    }
+</style>
+```
+
 </head>
 <body>
 
@@ -228,11 +601,11 @@
     <div class="logo-box">
         <a href="index.html">
             <img src="https://i.imgur.com/Zgd9kDC.jpg" alt="osu! Iraq">
-            <span class="logo-text">| ‎ Top 500 Leaderboard (IRAQ)</span>
+            <span class="logo-text">osu! Iraq <span>Today</span></span>
         </a>
     </div>
     <div class="dropdown">
-        <button class="dropbtn" id="menuBtn">Menu ▼</button>
+        <button class="dropbtn" id="menuBtn">Menu ▾</button>
         <div class="dropdown-content" id="myDropdown">
             <a href="Test.html" class="menu-item">Scores<span class="menu-desc">See what happened today?</span></a>
             <a href="rankings.html" class="menu-item active">Rankings<span class="menu-desc">See player leaderboards</span></a>
@@ -244,424 +617,443 @@
     </div>
 </header>
 
+<!-- ─── CONTROLS BAR ─── -->
+
 <div class="controls-container">
-    <div class="controls-group">
-        <input type="text" id="searchInput" class="search-input" placeholder="Search by Player Name...">
+    <div class="controls-inner">
+        <!-- Search -->
+        <div class="controls-search-wrap">
+            <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
+            </svg>
+            <input type="text" id="searchInput" class="search-input" placeholder="Search player...">
+        </div>
+
+```
+    <div class="controls-divider"></div>
+
+    <!-- Date -->
+    <div class="date-picker-wrap">
+        <label for="datePicker">📅 Date</label>
         <input type="date" id="datePicker" class="date-picker" title="View past leaderboards">
     </div>
-    <select id="sortSelect" class="styled-select">
-        <option value="pp">Rank by PP (Default)</option>
-        <option value="play_count">Play Count</option>
-        <option value="play_time">Play Time</option>
-        <option value="accuracy">Global Accuracy</option>
-        <option value="ss_count">Total SS Count</option>
-        <option value="s_count">Total S Count</option>
-        <option value="medals">Medal Count</option>
-        <option value="total_score">Total Score</option>
-    </select>
+
+    <div class="controls-divider"></div>
+
+    <!-- Sort -->
+    <div class="sort-wrap">
+        <label for="sortSelect">Sort by</label>
+        <select id="sortSelect" class="styled-select">
+            <option value="pp">PP (Default)</option>
+            <option value="play_count">Play Count</option>
+            <option value="play_time">Play Time</option>
+            <option value="accuracy">Accuracy</option>
+            <option value="ss_count">SS Count</option>
+            <option value="s_count">S Count</option>
+            <option value="medals">Medals</option>
+            <option value="total_score">Total Score</option>
+        </select>
+    </div>
 </div>
+```
+
+</div>
+
+<!-- ─── MAIN LAYOUT ─── -->
 
 <div class="main-layout">
-    <aside class="placeholder-panel" id="placeholderPanel">
-        Select a player card to view detailed stats here.
-    </aside>
-    <aside class="left-panel" id="playerDetailsPanel">
-        </aside>
 
-    <main class="center-panel">
-        <div class="pagination" id="topPagination" style="display: none;">
-            <button class="page-btn" onclick="changePage(-1)">◀ Prev</button>
-            <span class="page-info pageInfoText">Page 1 / 1</span>
-            <button class="page-btn" onclick="changePage(1)">Next ▶</button>
-        </div>
+```
+<!-- Left sidebar -->
+<aside class="placeholder-panel" id="placeholderPanel">
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+    <p>Click on any player card to view their detailed stats here.</p>
+</aside>
+<aside class="left-panel" id="playerDetailsPanel"></aside>
 
-        <div id="leaderboardGrid">
-            <div class="loader">FETCHING PLAYER DATA...</div>
-        </div>
+<!-- Center leaderboard -->
+<main class="center-panel">
+    <div class="pagination" id="topPagination" style="display:none;">
+        <button class="page-btn" onclick="changePage(-1)">◀ Prev</button>
+        <span class="page-info pageInfoText">Page 1 / 1</span>
+        <button class="page-btn" onclick="changePage(1)">Next ▶</button>
+    </div>
 
-        <div class="pagination" id="bottomPagination" style="display: none;">
-            <button class="page-btn" onclick="changePage(-1)">◀ Prev</button>
-            <span class="page-info pageInfoText">Page 1 / 1</span>
-            <button class="page-btn" onclick="changePage(1)">Next ▶</button>
-        </div>
-    </main>
+    <div id="leaderboardGrid">
+        <div class="loader">FETCHING PLAYER DATA</div>
+    </div>
 
-    <aside class="right-panel">
-        <span>YOUR AD<br>HERE</span>
-        <p style="font-size: 10px; color: #555; margin-top: 10px;">Support the Community</p>
-    </aside>
+    <div class="pagination" id="bottomPagination" style="display:none;">
+        <button class="page-btn" onclick="changePage(-1)">◀ Prev</button>
+        <span class="page-info pageInfoText">Page 1 / 1</span>
+        <button class="page-btn" onclick="changePage(1)">Next ▶</button>
+    </div>
+</main>
+
+<!-- Right ad panel -->
+<aside class="right-panel">
+    <div class="ad-inner">
+        <div class="ad-label">Your Ad Here</div>
+        <div class="ad-sub">Support the Community</div>
+    </div>
+</aside>
+```
+
 </div>
 
-<footer id="mainFooter" style="background-color: #1a1a1a; color: #ffffff; padding: 15px 10px 30px 10px; text-align: center; border-top: 4px solid #ff66aa; margin-top: 20px;">
-    <div style="max-width: 1000px; margin: 0 auto;">
-        <h3 style="color: #ff66aa; margin-bottom: 5px; margin-top: 5px;">Osu! Iraq Today</h3>
-        <p style="margin: 5px 0; font-size: 0.9em; color: #eee;">Built with ❤️ for the Iraqi Community</p>
+<footer id="mainFooter" style="background: var(--dark-deeper); color:#fff; padding: 20px 16px 32px; text-align:center; border-top: 1px solid rgba(255,102,170,0.2); margin-top: 10px;">
+    <div style="max-width:800px; margin:0 auto;">
+        <div style="color:var(--osu-pink); font-weight:900; font-size:18px; margin-bottom:6px;">osu! Iraq Today</div>
+        <p style="margin:0; font-size:13px; color:#666;">Built with ❤️ for the Iraqi osu! Community</p>
     </div>
 </footer>
 
+<!-- ─── NOTIFICATION TOAST ─── -->
+
 <div id="notif-toast">
     <div class="notif-header">
-        <span id="notif-title">Keep Exploring!</span>
+        <span class="notif-title-text" id="notif-title">Keep Exploring!</span>
         <button class="btn-close" onclick="closeNotif()">✕</button>
     </div>
-    <a href="#" id="notif-action" onclick="handleNotifAction(event)" style="background: var(--dark-base);">
-        </a>
+    <a href="#" id="notif-action" onclick="handleNotifAction(event)"></a>
     <div class="notif-progress" id="notif-bar"></div>
 </div>
 
 <audio id="notifSound" src="https://assets.ppy.sh/audio/notification.mp3" preload="auto"></audio>
 
 <script>
-// --- STATE ---
+// ─── STATE ───
 let allData = [];
 let previousDataMap = new Map(); 
 let filteredData = [];
 let currentPage = 1;
 const itemsPerPage = 50;
 let notifTimeout;
+let selectedCard = null;
 
-// Init DOM elements
-const grid = document.getElementById('leaderboardGrid');
-const searchInput = document.getElementById('searchInput');
-const sortSelect = document.getElementById('sortSelect');
-const datePicker = document.getElementById('datePicker');
-const playerPanel = document.getElementById('playerDetailsPanel');
-const placeholderPanel = document.getElementById('placeholderPanel');
+// DOM
+const grid         = document.getElementById('leaderboardGrid');
+const searchInput  = document.getElementById('searchInput');
+const sortSelect   = document.getElementById('sortSelect');
+const datePicker   = document.getElementById('datePicker');
+const playerPanel  = document.getElementById('playerDetailsPanel');
+const placeholder  = document.getElementById('placeholderPanel');
 
-// --- MENU LOGIC ---
-const menuBtn = document.getElementById('menuBtn');
+// ─── MENU ───
+const menuBtn  = document.getElementById('menuBtn');
 const dropdown = document.getElementById('myDropdown');
 menuBtn.onclick = (e) => { dropdown.classList.toggle("show"); e.stopPropagation(); };
-window.onclick = (e) => { if (!e.target.matches('.dropbtn')) dropdown.classList.remove('show'); };
+window.onclick  = (e) => { if (!e.target.matches('.dropbtn')) dropdown.classList.remove('show'); };
 
-// Date helper to strictly format local YYYY-MM-DD
-function getLocalYMD(dateObj) {
-    const y = dateObj.getFullYear();
-    const m = String(dateObj.getMonth() + 1).padStart(2, '0');
-    const d = String(dateObj.getDate()).padStart(2, '0');
-    return `${y}-${m}-${d}`;
+// ─── DATE HELPERS ───
+function getLocalYMD(d) {
+    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 }
-
-// Set default date to YESTERDAY locally
-const dToday = new Date();
 const dYesterday = new Date();
 dYesterday.setDate(dYesterday.getDate() - 1);
-
-const todayStr = getLocalYMD(dToday);
+const todayStr     = getLocalYMD(new Date());
 const yesterdayStr = getLocalYMD(dYesterday);
-
-datePicker.max = todayStr;
+datePicker.max   = todayStr;
 datePicker.value = yesterdayStr;
 
-// Formatter
-const fmtNum = (n) => Number(n).toLocaleString();
-const fmtTime = (s) => (s / 3600).toFixed(0) + 'h';
+// Formatters
+const fmtNum  = n => Number(n).toLocaleString();
+const fmtTime = s => Math.floor(s / 3600) + 'h';
 
-// --- DATA FETCHING (Current & Previous Date) ---
+// ─── FETCH ───
 async function fetchRankingsForDate(dateStr) {
-    grid.innerHTML = '<div class="loader">FETCHING DATA...</div>';
-    
+    grid.innerHTML = '<div class="loader">FETCHING DATA</div>';
+    closeSidebar();
     try {
-        // String splitting avoids JS Date timezone conversion bugs entirely
         const [y, m, day] = dateStr.split('-');
-        
-        // Calculate previous day safely
-        const prevD = new Date(y, m - 1, day);
+        const prevD = new Date(+y, +m-1, +day);
         prevD.setDate(prevD.getDate() - 1);
-        const py = prevD.getFullYear();
-        const pm = String(prevD.getMonth() + 1).padStart(2, '0');
-        const pday = String(prevD.getDate()).padStart(2, '0');
+        const py   = prevD.getFullYear();
+        const pm   = String(prevD.getMonth()+1).padStart(2,'0');
+        const pday = String(prevD.getDate()).padStart(2,'0');
 
-        // Note: Using standard backticks below for correct URL generation!
         const currentPath = `data/leaderboards/${y}/${m}/${day}.json?t=${Date.now()}`;
-        const prevPath = `data/leaderboards/${py}/${pm}/${pday}.json?t=${Date.now()}`;
+        const prevPath    = `data/leaderboards/${py}/${pm}/${pday}.json?t=${Date.now()}`;
 
         const currentRes = await fetch(currentPath).catch(() => null);
-        if (!currentRes || !currentRes.ok) {
-            throw new Error(`No data found for ${dateStr}`);
-        }
+        if (!currentRes || !currentRes.ok) throw new Error(`No data found for ${dateStr}`);
         allData = await currentRes.json();
-        
-        allData.sort((a, b) => b.pp - a.pp);
-        allData.forEach((p, i) => p.current_iraq_rank = i + 1);
+        allData.sort((a,b) => b.pp - a.pp);
+        allData.forEach((p,i) => p.current_iraq_rank = i+1);
 
         previousDataMap.clear();
         const prevRes = await fetch(prevPath).catch(() => null);
         if (prevRes && prevRes.ok) {
-            const prevDataArr = await prevRes.json();
-            prevDataArr.sort((a, b) => b.pp - a.pp);
-            prevDataArr.forEach((p, i) => {
-                previousDataMap.set(p.id, i + 1); 
-            });
+            const prev = await prevRes.json();
+            prev.sort((a,b) => b.pp - a.pp);
+            prev.forEach((p,i) => previousDataMap.set(p.id, i+1));
         }
-
         applyFiltersAndRender();
-
-    } catch (e) {
+    } catch(e) {
         grid.innerHTML = `<div class="loader" style="color:var(--accent-red)">${e.message}</div>`;
-        allData = [];
-        updatePaginationUI(0);
+        allData = []; updatePaginationUI(0);
     }
 }
 
-// --- FILTER & RENDER LOGIC ---
+function closeSidebar() {
+    placeholder.style.display = '';
+    playerPanel.classList.remove('active');
+    if (selectedCard) { selectedCard.classList.remove('selected'); selectedCard = null; }
+}
+
+// ─── FILTER & RENDER ───
 function applyFiltersAndRender() {
     const sortBy = sortSelect.value;
-    const searchTerm = searchInput.value.toLowerCase().trim();
-
-    filteredData = allData.filter(player => {
-        if (!searchTerm) return true;
-        return player.user.toLowerCase().includes(searchTerm);
-    });
-
-    filteredData.sort((a, b) => (b[sortBy] || 0) - (a[sortBy] || 0));
-
-    currentPage = 1; 
+    const term   = searchInput.value.toLowerCase().trim();
+    filteredData = allData.filter(p => !term || p.user.toLowerCase().includes(term));
+    filteredData.sort((a,b) => (b[sortBy]||0) - (a[sortBy]||0));
+    currentPage = 1;
     renderPage();
 }
 
-function changePage(direction) {
-    const totalPages = Math.ceil(filteredData.length / itemsPerPage);
-    currentPage += direction;
-    if (currentPage < 1) currentPage = 1;
-    if (currentPage > totalPages) currentPage = totalPages;
+function changePage(dir) {
+    const total = Math.ceil(filteredData.length / itemsPerPage);
+    currentPage = Math.max(1, Math.min(total, currentPage + dir));
     renderPage();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-function updatePaginationUI(totalPages) {
+function updatePaginationUI(total) {
     const topPag = document.getElementById('topPagination');
     const botPag = document.getElementById('bottomPagination');
-    
-    if (totalPages > 1) {
-        topPag.style.display = 'flex'; botPag.style.display = 'flex';
-        
-        document.querySelectorAll('.pageInfoText').forEach(el => el.innerText = `Page ${currentPage} / ${totalPages}`);
-        
-        const prevDisabled = currentPage === 1;
-        const nextDisabled = currentPage === totalPages;
-        
-        topPag.children[0].disabled = prevDisabled; topPag.children[2].disabled = nextDisabled;
-        botPag.children[0].disabled = prevDisabled; botPag.children[2].disabled = nextDisabled;
+    if (total > 1) {
+        topPag.style.display = botPag.style.display = 'flex';
+        document.querySelectorAll('.pageInfoText').forEach(el => el.innerText = `Page ${currentPage} / ${total}`);
+        const atFirst = currentPage === 1, atLast = currentPage === total;
+        topPag.children[0].disabled = botPag.children[0].disabled = atFirst;
+        topPag.children[2].disabled = botPag.children[2].disabled = atLast;
     } else {
-        topPag.style.display = 'none'; botPag.style.display = 'none';
+        topPag.style.display = botPag.style.display = 'none';
     }
 }
 
 function renderPage() {
     grid.innerHTML = '';
-    const totalPages = Math.ceil(filteredData.length / itemsPerPage);
-    updatePaginationUI(totalPages);
+    const total = Math.ceil(filteredData.length / itemsPerPage);
+    updatePaginationUI(total);
+    if (!filteredData.length) { grid.innerHTML = '<div class="loader">NO PLAYERS FOUND</div>'; return; }
 
-    if (filteredData.length === 0) {
-        grid.innerHTML = `<div class="loader">NO PLAYERS FOUND</div>`;
-        return;
-    }
-
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const paginatedItems = filteredData.slice(startIndex, startIndex + itemsPerPage);
+    const start  = (currentPage-1) * itemsPerPage;
+    const items  = filteredData.slice(start, start + itemsPerPage);
     const sortBy = sortSelect.value;
 
-    paginatedItems.forEach((player, loopIndex) => {
-        const displayRank = startIndex + loopIndex + 1; 
-        
+    items.forEach((player, idx) => {
+        const displayRank = start + idx + 1;
+
+        // Rank change badge
         let changeHtml = '';
         if (sortBy === 'pp') {
-            const oldRank = previousDataMap.get(player.id);
-            if (!oldRank) {
-                changeHtml = `<div class="daily-change new">NEW</div>`;
-            } else {
-                const diff = oldRank - player.current_iraq_rank;
-                if (diff > 0) changeHtml = `<div class="daily-change up">▲ ${diff}</div>`;
-                else if (diff < 0) changeHtml = `<div class="daily-change down">▼ ${Math.abs(diff)}</div>`;
-                else changeHtml = `<div class="daily-change" style="color:#777">-</div>`;
+            const old = previousDataMap.get(player.id);
+            if (!old) changeHtml = `<span class="daily-change new">NEW</span>`;
+            else {
+                const diff = old - player.current_iraq_rank;
+                if (diff > 0) changeHtml = `<span class="daily-change up">▲${diff}</span>`;
+                else if (diff < 0) changeHtml = `<span class="daily-change down">▼${Math.abs(diff)}</span>`;
+                else changeHtml = `<span class="daily-change same">—</span>`;
             }
         }
 
-        let primaryStatHtml = '';
-        if (sortBy === 'pp') primaryStatHtml = `${fmtNum(Math.round(player.pp))} <span style="font-size:14px; color:var(--text-muted)">pp</span>`;
-        else if (sortBy === 'play_count') primaryStatHtml = `${fmtNum(player.play_count)} <span style="font-size:14px; color:var(--text-muted)">Plays</span>`;
-        else if (sortBy === 'play_time') primaryStatHtml = `${fmtTime(player.play_time)} <span style="font-size:14px; color:var(--text-muted)">Played</span>`;
-        else if (sortBy === 'accuracy') primaryStatHtml = `${(player.accuracy).toFixed(2)}% <span style="font-size:14px; color:var(--text-muted)">Acc</span>`;
-        else if (sortBy === 'ss_count') primaryStatHtml = `${fmtNum(player.ss_count)} <span style="color:#f0f; font-size:14px;">SS</span>`;
-        else if (sortBy === 's_count') primaryStatHtml = `${fmtNum(player.s_count)} <span style="color:var(--accent-gold); font-size:14px;">S</span>`;
-        else if (sortBy === 'medals') primaryStatHtml = `${player.medals} <span style="font-size:14px; color:var(--text-muted)">Medals</span>`;
-        else if (sortBy === 'total_score') primaryStatHtml = `${(player.total_score / 1000000000).toFixed(2)}B <span style="font-size:14px; color:var(--text-muted)">Score</span>`;
+        // Primary stat
+        let statMain = '', statUnit = '', statSub = '';
+        if (sortBy === 'pp') {
+            statMain = fmtNum(Math.round(player.pp)); statUnit = 'pp';
+            statSub  = `Acc ${(player.accuracy||0).toFixed(2)}%`;
+        } else if (sortBy === 'play_count') {
+            statMain = fmtNum(player.play_count); statUnit = 'plays';
+        } else if (sortBy === 'play_time') {
+            statMain = fmtTime(player.play_time); statUnit = '';
+        } else if (sortBy === 'accuracy') {
+            statMain = (player.accuracy||0).toFixed(2); statUnit = '%';
+        } else if (sortBy === 'ss_count') {
+            statMain = fmtNum(player.ss_count); statUnit = 'SS';
+        } else if (sortBy === 's_count') {
+            statMain = fmtNum(player.s_count); statUnit = 'S';
+        } else if (sortBy === 'medals') {
+            statMain = player.medals; statUnit = '🏅';
+        } else if (sortBy === 'total_score') {
+            statMain = (player.total_score/1e9).toFixed(2); statUnit = 'B';
+        }
 
+        // Rank class
+        const rankClass = displayRank===1 ? 'top1' : displayRank===2 ? 'top2' : displayRank===3 ? 'top3' : '';
+
+        // Top play
         let topPlayHtml = '';
         if (player.top_play) {
             const tp = player.top_play;
-            let mapsetId = tp.cover.match(/beatmaps\/(\d+)/)?.[1] || '';
-            let mapLink = mapsetId ? `https://osu.ppy.sh/beatmapsets/${mapsetId}` : `https://osu.ppy.sh/users/${player.id}`;
-            
+            const mapsetId = tp.cover.match(/beatmaps\/(\d+)/)?.[1] || '';
+            const mapLink  = mapsetId ? `https://osu.ppy.sh/beatmapsets/${mapsetId}` : `https://osu.ppy.sh/users/${player.id}`;
             topPlayHtml = `
-                <a href="${mapLink}" target="_blank" onclick="event.stopPropagation()" class="top-play-banner" style="background-image: url('${tp.cover}');">
+                <a href="${mapLink}" target="_blank" onclick="event.stopPropagation()" class="top-play-banner" style="background-image:url('${tp.cover}')">
                     <div class="tp-content">
-                        <div class="tp-title"><span class="tp-acc">${tp.acc.toFixed(2)}%</span> ${tp.title} [${tp.diff}] <strong>${tp.mods}</strong></div>
-                        <div class="tp-stats"><span>${tp.stars.toFixed(2)}⭐</span> <span>${Math.round(tp.pp)} PP</span></div>
+                        <div class="tp-left">
+                            <span class="tp-icon">▶ TOP PLAY</span>
+                            <span class="tp-title">${tp.title} <span class="tp-diff">[${tp.diff}]</span> <span class="tp-mods">${tp.mods}</span></span>
+                        </div>
+                        <div class="tp-right">
+                            <span class="tp-stars">${tp.stars.toFixed(1)}★</span>
+                            <span class="tp-acc">${tp.acc.toFixed(2)}%</span>
+                            <span class="tp-pp">${Math.round(tp.pp)}pp</span>
+                        </div>
                     </div>
-                </a>
-            `;
+                </a>`;
         }
 
         const card = document.createElement('div');
         card.className = 'player-card';
         card.onclick = () => showPlayerDetails(player, card);
-        
         card.innerHTML = `
-            <div class="player-main">
-                <div class="player-identity">
-                    <div class="rank-badge">#${displayRank}</div>
-                    <img src="${player.avatar}" class="avatar-small" loading="lazy">
-                    <div class="user-details">
-                        <span class="user-name"><img src="https://osu.ppy.sh/images/flags/IQ.png" class="flag"> ${player.user}</span>
-                        <div style="font-size: 11px; color: var(--text-muted); font-weight: 600;">Global #${fmtNum(player.rank || 0)}</div>
+            <div class="card-main">
+                <div class="rank-col">
+                    <div class="rank-num ${rankClass}">#${displayRank}</div>
+                    ${changeHtml}
+                </div>
+                <div class="avatar-col">
+                    <div class="avatar-wrap">
+                        <img src="${player.avatar}" class="avatar-small" loading="lazy">
+                        <img src="https://osu.ppy.sh/images/flags/IQ.png" class="avatar-flag">
                     </div>
                 </div>
-                <div class="stat-block">
-                    <div class="stat-value">${changeHtml} ${primaryStatHtml}</div>
+                <div class="info-col">
+                    <div class="user-name">${player.user}</div>
+                    <div class="user-sub">Global #${fmtNum(player.rank||0)}</div>
+                </div>
+                <div class="stat-col">
+                    <div class="stat-value">
+                        <span>${statMain}</span>
+                        <span class="stat-unit">${statUnit}</span>
+                    </div>
+                    ${statSub ? `<div class="stat-sub">${statSub}</div>` : ''}
                 </div>
             </div>
-            ${topPlayHtml}
-        `;
+            ${topPlayHtml}`;
         grid.appendChild(card);
     });
 }
 
-// --- SIDEBAR PLAYER DETAILS ---
-function showPlayerDetails(player, cardElement) {
-    if (window.innerWidth <= 850) {
-        // --- MOBILE BEHAVIOR: Inline Expansion ---
-        
-        // If clicking a card that is already open, just close it and stop
-        const existingDetails = cardElement.querySelector('.inline-details');
-        if (existingDetails) {
-            existingDetails.remove();
-            return;
-        }
+// ─── SIDEBAR / INLINE DETAILS ───
+function showPlayerDetails(player, cardEl) {
+    const isMobile = window.innerWidth <= 1100;
 
-        // Remove any other open inline details first
+    if (isMobile) {
+        // Toggle inline panel
+        const existing = cardEl.querySelector('.inline-details');
         document.querySelectorAll('.inline-details').forEach(el => el.remove());
+        document.querySelectorAll('.player-card').forEach(c => c.classList.remove('selected'));
+        if (existing) return;
 
-        // Create the inline panel
-        const inlineDetails = document.createElement('div');
-        inlineDetails.className = 'inline-details';
-        
-        // Build the HTML. Reusing your existing CSS classes so it looks perfect!
-        inlineDetails.innerHTML = `
-            <div class="panel-stat-grid" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #3e3e4a;">
-                <div class="panel-stat"><span>Total PP</span><strong>${fmtNum(Math.round(player.pp))}</strong></div>
-                <div class="panel-stat"><span>Accuracy</span><strong>${player.accuracy.toFixed(2)}%</strong></div>
-                <div class="panel-stat"><span>Play Count</span><strong>${fmtNum(player.play_count)}</strong></div>
-                <div class="panel-stat"><span>Play Time</span><strong>${fmtTime(player.play_time)}</strong></div>
-                <div class="panel-stat"><span>SS Count</span><strong style="color:#f0f">${player.ss_count}</strong></div>
-                <div class="panel-stat"><span>S Count</span><strong style="color:var(--accent-gold)">${player.s_count}</strong></div>
-                <div class="panel-stat"><span>Total Hits</span><strong>${fmtNum(player.total_hits || 0)}</strong></div>
-                <div class="panel-stat"><span>Medals</span><strong>${player.medals}</strong></div>
+        cardEl.classList.add('selected');
+        const div = document.createElement('div');
+        div.className = 'inline-details';
+        div.innerHTML = `
+            <div class="inline-stat-grid">
+                <div class="inline-stat"><span>PP</span><strong>${fmtNum(Math.round(player.pp))}</strong></div>
+                <div class="inline-stat"><span>Accuracy</span><strong>${(player.accuracy||0).toFixed(2)}%</strong></div>
+                <div class="inline-stat"><span>Play Count</span><strong>${fmtNum(player.play_count)}</strong></div>
+                <div class="inline-stat"><span>Play Time</span><strong>${fmtTime(player.play_time)}</strong></div>
+                <div class="inline-stat"><span>SS</span><strong style="color:#f0f">${fmtNum(player.ss_count||0)}</strong></div>
+                <div class="inline-stat"><span>S</span><strong style="color:var(--accent-gold)">${fmtNum(player.s_count||0)}</strong></div>
+                <div class="inline-stat"><span>Hits</span><strong>${fmtNum(player.total_hits||0)}</strong></div>
+                <div class="inline-stat"><span>Medals</span><strong>${player.medals||0}</strong></div>
             </div>
-            <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" class="btn-visit-profile" style="margin-top: 15px;">Visit osu! Profile</a>
-        `;
-
-        // Inject it straight into the bottom of the clicked card
-        cardElement.appendChild(inlineDetails);
-
+            <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" class="btn-visit-profile" style="margin-top:12px;">
+                Visit osu! Profile ↗
+            </a>`;
+        cardEl.appendChild(div);
     } else {
-        // --- DESKTOP BEHAVIOR: Sidebar ---
-        placeholderPanel.style.display = 'none';
+        // Desktop sidebar
+        if (selectedCard) selectedCard.classList.remove('selected');
+        selectedCard = cardEl;
+        cardEl.classList.add('selected');
+        placeholder.style.display = 'none';
         playerPanel.classList.add('active');
-        
+
+        const coverUrl = player.top_play?.cover || '';
         playerPanel.innerHTML = `
-            <img src="${player.avatar}" class="panel-avatar">
-            <h2 class="panel-name">${player.user}</h2>
-            <div class="panel-rank">Iraq #${player.current_iraq_rank} | Global #${fmtNum(player.rank || 0)}</div>
-            
-            <div class="panel-stat-grid">
-                <div class="panel-stat"><span>Total PP</span><strong>${fmtNum(Math.round(player.pp))}</strong></div>
-                <div class="panel-stat"><span>Accuracy</span><strong>${player.accuracy.toFixed(2)}%</strong></div>
-                <div class="panel-stat"><span>Play Count</span><strong>${fmtNum(player.play_count)}</strong></div>
-                <div class="panel-stat"><span>Play Time</span><strong>${fmtTime(player.play_time)}</strong></div>
-                <div class="panel-stat"><span>SS Count</span><strong style="color:#f0f">${player.ss_count}</strong></div>
-                <div class="panel-stat"><span>S Count</span><strong style="color:var(--accent-gold)">${player.s_count}</strong></div>
-                <div class="panel-stat"><span>Total Hits</span><strong>${fmtNum(player.total_hits || 0)}</strong></div>
-                <div class="panel-stat"><span>Medals</span><strong>${player.medals}</strong></div>
+            <div class="panel-cover">
+                ${coverUrl ? `<div class="panel-cover-bg" style="background-image:url('${coverUrl}')"></div>` : ''}
             </div>
-            
-            <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" class="btn-visit-profile">Visit osu! Profile</a>
-        `;
+            <div class="panel-body">
+                <div class="panel-avatar-wrap">
+                    <img src="${player.avatar}" class="panel-avatar">
+                    <div class="panel-rank-badge">Iraq #${player.current_iraq_rank}</div>
+                </div>
+                <div class="panel-name">${player.user}</div>
+                <div class="panel-global">Global #${fmtNum(player.rank||0)}</div>
+                <div class="panel-stat-grid">
+                    <div class="panel-stat"><span>Total PP</span><strong>${fmtNum(Math.round(player.pp))}</strong></div>
+                    <div class="panel-stat"><span>Accuracy</span><strong>${(player.accuracy||0).toFixed(2)}%</strong></div>
+                    <div class="panel-stat"><span>Play Count</span><strong>${fmtNum(player.play_count)}</strong></div>
+                    <div class="panel-stat"><span>Play Time</span><strong>${fmtTime(player.play_time)}</strong></div>
+                    <div class="panel-stat"><span>SS</span><strong style="color:#f0f">${fmtNum(player.ss_count||0)}</strong></div>
+                    <div class="panel-stat"><span>S</span><strong style="color:var(--accent-gold)">${fmtNum(player.s_count||0)}</strong></div>
+                    <div class="panel-stat"><span>Total Hits</span><strong>${fmtNum(player.total_hits||0)}</strong></div>
+                    <div class="panel-stat"><span>Medals</span><strong>${player.medals||0}</strong></div>
+                </div>
+                <a href="https://osu.ppy.sh/users/${player.id}" target="_blank" class="btn-visit-profile">
+                    Visit osu! Profile ↗
+                </a>
+            </div>`;
     }
 }
-    
-// --- NOTIFICATION LOGIC ---
+
+// ─── NOTIFICATION ───
 function showNotification() {
     if (document.body.scrollHeight <= window.innerHeight + 100) return;
+    const total    = Math.ceil(filteredData.length / itemsPerPage);
+    const isLast   = currentPage >= total;
+    const action   = document.getElementById('notif-action');
+    const titleEl  = document.getElementById('notif-title');
 
-    const totalPages = Math.ceil(filteredData.length / itemsPerPage);
-    const isLastPage = currentPage >= totalPages;
-
-    const notifAction = document.getElementById('notif-action');
-
-    if (!isLastPage) {
-        document.getElementById('notif-title').innerText = "Keep Exploring!";
-        notifAction.className = 'page-btn';
-        notifAction.style.width = '100%';
-        notifAction.style.boxSizing = 'border-box';
-        notifAction.innerHTML = `Next Page ▶`;
+    if (!isLast) {
+        titleEl.innerText = 'Keep Exploring!';
+        action.className  = 'notif-page-btn';
+        action.innerHTML  = `Next Page ▶`;
     } else {
-        document.getElementById('notif-title').innerText = "End of List!";
-        notifAction.className = 'menu-item active';
-        notifAction.style.width = 'auto';
-        notifAction.innerHTML = `
-            <span id="notif-main-text">Watch Videos</span>
-            <span class="menu-desc" id="notif-sub-text">Check out community highlights</span>
-        `;
+        titleEl.innerText = 'End of Rankings!';
+        action.className  = '';
+        action.innerHTML  = `Watch Videos<span class="notif-sub">Check out community highlights</span>`;
     }
 
-    const notifBar = document.getElementById('notif-bar');
-    notifBar.style.animation = 'none';
-    notifBar.offsetHeight; 
-    notifBar.style.animation = 'shrinkBar 10s linear forwards';
+    const bar = document.getElementById('notif-bar');
+    bar.style.animation = 'none'; bar.offsetHeight;
+    bar.style.animation = 'shrinkBar 10s linear forwards';
 
-    const toast = document.getElementById('notif-toast');
-    toast.classList.add('show');
-    
-    document.getElementById('notifSound').volume = 0.4;
-    document.getElementById('notifSound').play().catch(() => {});
-
+    document.getElementById('notif-toast').classList.add('show');
+    const snd = document.getElementById('notifSound');
+    snd.volume = 0.35; snd.play().catch(() => {});
     clearTimeout(notifTimeout);
     notifTimeout = setTimeout(closeNotif, 10000);
 }
 
-function closeNotif() {
-    document.getElementById('notif-toast').classList.remove('show');
-}
+function closeNotif() { document.getElementById('notif-toast').classList.remove('show'); }
 
 function handleNotifAction(e) {
     e.preventDefault();
-    const totalPages = Math.ceil(filteredData.length / itemsPerPage);
-    if (currentPage < totalPages) {
-        changePage(1);
-    } else {
-        window.location.href = "videos.html";
-    }
+    const total = Math.ceil(filteredData.length / itemsPerPage);
+    if (currentPage < total) changePage(1);
+    else window.location.href = 'videos.html';
     closeNotif();
 }
 
-// Observer for footer (Triggers Notification)
-const footerObserver = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting && filteredData.length > 0) {
-        showNotification();
-    }
-}, { threshold: 0.1 });
-footerObserver.observe(document.getElementById('mainFooter'));
+// Footer intersection observer
+new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting && filteredData.length > 0) showNotification();
+}, { threshold: 0.1 }).observe(document.getElementById('mainFooter'));
 
-// --- EVENT LISTENERS ---
+// ─── EVENTS ───
 sortSelect.addEventListener('change', applyFiltersAndRender);
 searchInput.addEventListener('input', applyFiltersAndRender);
-datePicker.addEventListener('change', (e) => fetchRankingsForDate(e.target.value));
+datePicker.addEventListener('change', e => fetchRankingsForDate(e.target.value));
 
-// Init with yesterday's date
+// Init
 fetchRankingsForDate(yesterdayStr);
-
 </script>
+
 </body>
 </html>

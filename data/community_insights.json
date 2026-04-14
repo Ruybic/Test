@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 46,
-    "longest": 46,
-    "last_updated": "2026-04-12"
+    "current": 47,
+    "longest": 47,
+    "last_updated": "2026-04-13"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -13928,6 +13928,312 @@
         "title": "So Am I (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2496558/covers/card.jpg?1775073996",
         "unique_players": 16
+      }
+    },
+    "2026-04-13": {
+      "total_scores": 346,
+      "peak_hour_baghdad": 19,
+      "top_grinder": {
+        "user": "Kaiju13",
+        "user_id": 26916963,
+        "count": 40,
+        "scores": [
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5010399503,
+            "rank": "A",
+            "accuracy": 0.9742063492063492,
+            "pp": 156.814,
+            "mods": [],
+            "combo": 135,
+            "created_at": "2026-04-12T23:09:18Z",
+            "beatmapset": {
+              "id": 2488678,
+              "title": "Cats (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2488678/covers/card.jpg?1773866179",
+              "stars": 5.9031
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5010395202,
+            "rank": "A",
+            "accuracy": 0.9803921568627451,
+            "pp": 109.345,
+            "mods": [],
+            "combo": 251,
+            "created_at": "2026-04-12T22:54:09Z",
+            "beatmapset": {
+              "id": 326920,
+              "title": "BLUE DRAGON",
+              "cover": "https://assets.ppy.sh/beatmaps/326920/covers/card.jpg?1650644794",
+              "stars": 5.01993
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5010394251,
+            "rank": "A",
+            "accuracy": 0.9468354430379747,
+            "pp": 101.69,
+            "mods": [],
+            "combo": 322,
+            "created_at": "2026-04-12T22:50:49Z",
+            "beatmapset": {
+              "id": 439104,
+              "title": "Kisetsu wa Tsugitsugi Shindeiku -Tokyo Ghoul Root A Edit-",
+              "cover": "https://assets.ppy.sh/beatmaps/439104/covers/card.jpg?1622102099",
+              "stars": 5.03596
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5010393348,
+            "rank": "B",
+            "accuracy": 0.8632734530938124,
+            "pp": 37.0481,
+            "mods": [
+              "EZ",
+              "HD",
+              "FL"
+            ],
+            "combo": 36,
+            "created_at": "2026-04-12T22:47:40Z",
+            "beatmapset": {
+              "id": 757146,
+              "title": "C-TYPE",
+              "cover": "https://assets.ppy.sh/beatmaps/757146/covers/card.jpg?1650662795",
+              "stars": 4.68196
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5010392770,
+            "rank": "B",
+            "accuracy": 0.8344262295081967,
+            "pp": 20.6564,
+            "mods": [
+              "EZ"
+            ],
+            "combo": 199,
+            "created_at": "2026-04-12T22:45:41Z",
+            "beatmapset": {
+              "id": 2225625,
+              "title": "Domino (Whippa Hardstyle Remix) (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2225625/covers/card.jpg?1730579910",
+              "stars": 5.037
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5010390656,
+            "rank": "A",
+            "accuracy": 0.9615097159940209,
+            "pp": 82.3459,
+            "mods": [
+              "EZ"
+            ],
+            "combo": 269,
+            "created_at": "2026-04-12T22:38:39Z",
+            "beatmapset": {
+              "id": 2317157,
+              "title": "Blue Youth",
+              "cover": "https://assets.ppy.sh/beatmaps/2317157/covers/card.jpg?1739548468",
+              "stars": 5.84502
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5010387773,
+            "rank": "A",
+            "accuracy": 0.9637681159420289,
+            "pp": 123.912,
+            "mods": [
+              "HD",
+              "HR"
+            ],
+            "combo": 566,
+            "created_at": "2026-04-12T22:29:11Z",
+            "beatmapset": {
+              "id": 1115477,
+              "title": "Colors Power ni Omakasero!",
+              "cover": "https://assets.ppy.sh/beatmaps/1115477/covers/card.jpg?1650693288",
+              "stars": 4.87429
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5010383517,
+            "rank": "C",
+            "accuracy": 0.8467381590705988,
+            "pp": 59.4297,
+            "mods": [],
+            "combo": 232,
+            "created_at": "2026-04-12T22:15:47Z",
+            "beatmapset": {
+              "id": 2121129,
+              "title": "Rin (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2121129/covers/card.jpg?1774500099",
+              "stars": 5.54511
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5010379989,
+            "rank": "A",
+            "accuracy": 0.9417862838915471,
+            "pp": 57.3386,
+            "mods": [
+              "EZ"
+            ],
+            "combo": 271,
+            "created_at": "2026-04-12T22:05:02Z",
+            "beatmapset": {
+              "id": 2317157,
+              "title": "Blue Youth",
+              "cover": "https://assets.ppy.sh/beatmaps/2317157/covers/card.jpg?1739548468",
+              "stars": 5.36177
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5010378342,
+            "rank": "A",
+            "accuracy": 0.9547764227642277,
+            "pp": 104.391,
+            "mods": [],
+            "combo": 244,
+            "created_at": "2026-04-12T21:59:55Z",
+            "beatmapset": {
+              "id": 477640,
+              "title": "Paradisus-Paradoxum",
+              "cover": "https://assets.ppy.sh/beatmaps/477640/covers/card.jpg?1650641367",
+              "stars": 5.37921
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5010377419,
+            "rank": "S",
+            "accuracy": 0.9726695949243533,
+            "pp": 104.786,
+            "mods": [],
+            "combo": 1057,
+            "created_at": "2026-04-12T21:57:12Z",
+            "beatmapset": {
+              "id": 2366773,
+              "title": "LOVETOXIN",
+              "cover": "https://assets.ppy.sh/beatmaps/2366773/covers/card.jpg?1762619673",
+              "stars": 4.65251
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 6521851072,
+            "rank": "A",
+            "accuracy": 0.9712257100149477,
+            "pp": 106.581,
+            "mods": [
+              "EZ"
+            ],
+            "combo": 440,
+            "created_at": "2026-04-12T21:52:11Z",
+            "beatmapset": {
+              "id": 2317157,
+              "title": "Blue Youth",
+              "cover": "https://assets.ppy.sh/beatmaps/2317157/covers/card.jpg?1739548468",
+              "stars": 5.84502
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 6521841108,
+            "rank": "A",
+            "accuracy": 0.9741144414168937,
+            "pp": 97.5711,
+            "mods": [],
+            "combo": 492,
+            "created_at": "2026-04-12T21:49:36Z",
+            "beatmapset": {
+              "id": 462386,
+              "title": "From Under Cover (Caught Up In A Love Song)",
+              "cover": "https://assets.ppy.sh/beatmaps/462386/covers/card.jpg?1650643367",
+              "stars": 4.96259
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5010361002,
+            "rank": "A",
+            "accuracy": 0.9715869715869716,
+            "pp": 131.705,
+            "mods": [
+              "EZ"
+            ],
+            "combo": 431,
+            "created_at": "2026-04-12T21:10:58Z",
+            "beatmapset": {
+              "id": 2317157,
+              "title": "Blue Youth",
+              "cover": "https://assets.ppy.sh/beatmaps/2317157/covers/card.jpg?1739548468",
+              "stars": 6.60929
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5010353882,
+            "rank": "A",
+            "accuracy": 0.9237668161434978,
+            "pp": 263.331,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 158,
+            "created_at": "2026-04-12T20:52:21Z",
+            "beatmapset": {
+              "id": 1049899,
+              "title": "Say Goodbye (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1049899/covers/card.jpg?1724193986",
+              "stars": 5.6434
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "bbydoll (nightcore & cut ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2374386/covers/card.jpg?1749993995",
+        "unique_players": 6
       }
     }
   }

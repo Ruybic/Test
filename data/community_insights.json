@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 47,
-    "longest": 47,
-    "last_updated": "2026-04-13"
+    "current": 48,
+    "longest": 48,
+    "last_updated": "2026-04-14"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -14234,6 +14234,292 @@
         "title": "bbydoll (nightcore & cut ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2374386/covers/card.jpg?1749993995",
         "unique_players": 6
+      }
+    },
+    "2026-04-14": {
+      "total_scores": 463,
+      "peak_hour_baghdad": 2,
+      "top_grinder": {
+        "user": "manicide",
+        "user_id": 39330365,
+        "count": 53,
+        "scores": [
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5010863084,
+            "rank": "B",
+            "accuracy": 0.9032258064516129,
+            "pp": 19.5201,
+            "mods": [],
+            "combo": 64,
+            "created_at": "2026-04-14T00:00:14Z",
+            "beatmapset": {
+              "id": 2334590,
+              "title": "Feliz Pascoa pra todos voces apesar de ninguem ter me mandado chocolates",
+              "cover": "https://assets.ppy.sh/beatmaps/2334590/covers/card.jpg?1772749843",
+              "stars": 3.61292
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5010859777,
+            "rank": "A",
+            "accuracy": 0.9288990825688074,
+            "pp": 10.0086,
+            "mods": [],
+            "combo": 228,
+            "created_at": "2026-04-13T23:47:53Z",
+            "beatmapset": {
+              "id": 718040,
+              "title": "Ame to Kusari",
+              "cover": "https://assets.ppy.sh/beatmaps/718040/covers/card.jpg?1650661402",
+              "stars": 2.90011
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5010859104,
+            "rank": "S",
+            "accuracy": 0.9715447154471545,
+            "pp": 6.4837,
+            "mods": [],
+            "combo": 361,
+            "created_at": "2026-04-13T23:45:20Z",
+            "beatmapset": {
+              "id": 718040,
+              "title": "Ame to Kusari",
+              "cover": "https://assets.ppy.sh/beatmaps/718040/covers/card.jpg?1650661402",
+              "stars": 1.97608
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5010858456,
+            "rank": "A",
+            "accuracy": 0.9382716049382716,
+            "pp": 25.1098,
+            "mods": [],
+            "combo": 87,
+            "created_at": "2026-04-13T23:42:53Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 3.60878
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5010708106,
+            "rank": "A",
+            "accuracy": 0.9573934837092731,
+            "pp": 19.4498,
+            "mods": [],
+            "combo": 161,
+            "created_at": "2026-04-13T17:07:23Z",
+            "beatmapset": {
+              "id": 2515511,
+              "title": "WONDERFUL WONDER (TV Size & Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2515511/covers/card.jpg?1774252089",
+              "stars": 3.12147
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5010613965,
+            "rank": "B",
+            "accuracy": 0.8626436781609196,
+            "pp": null,
+            "mods": [],
+            "combo": 63,
+            "created_at": "2026-04-13T13:39:25Z",
+            "beatmapset": {
+              "id": 968216,
+              "title": "rezoons' Jump Training",
+              "cover": "https://assets.ppy.sh/beatmaps/968216/covers/card.jpg?1732734373",
+              "stars": 4.06718
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5010612471,
+            "rank": "B",
+            "accuracy": 0.9072978303747534,
+            "pp": 37.7578,
+            "mods": [],
+            "combo": 72,
+            "created_at": "2026-04-13T13:35:49Z",
+            "beatmapset": {
+              "id": 798007,
+              "title": "Despacito ft. R3 Music Box",
+              "cover": "https://assets.ppy.sh/beatmaps/798007/covers/card.jpg?1650665377",
+              "stars": 4.18145
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5010612015,
+            "rank": "B",
+            "accuracy": 0.8912280701754386,
+            "pp": 26.0022,
+            "mods": [],
+            "combo": 70,
+            "created_at": "2026-04-13T13:34:43Z",
+            "beatmapset": {
+              "id": 971957,
+              "title": "V (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/971957/covers/card.jpg?1650681037",
+              "stars": 4.40425
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5010607987,
+            "rank": "C",
+            "accuracy": 0.7737127371273713,
+            "pp": 26.3506,
+            "mods": [],
+            "combo": 49,
+            "created_at": "2026-04-13T13:25:15Z",
+            "beatmapset": {
+              "id": 842412,
+              "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+              "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+              "stars": 4.40277
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5010607587,
+            "rank": "C",
+            "accuracy": 0.7955974842767296,
+            "pp": 28.1477,
+            "mods": [],
+            "combo": 69,
+            "created_at": "2026-04-13T13:24:20Z",
+            "beatmapset": {
+              "id": 842412,
+              "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+              "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+              "stars": 4.07899
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5010607252,
+            "rank": "B",
+            "accuracy": 0.8930817610062893,
+            "pp": 27.0536,
+            "mods": [],
+            "combo": 102,
+            "created_at": "2026-04-13T13:23:37Z",
+            "beatmapset": {
+              "id": 842412,
+              "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+              "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+              "stars": 3.98683
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5010605931,
+            "rank": "B",
+            "accuracy": 0.8888888888888888,
+            "pp": 29.4358,
+            "mods": [],
+            "combo": 76,
+            "created_at": "2026-04-13T13:20:32Z",
+            "beatmapset": {
+              "id": 2499570,
+              "title": "Still Into You (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499570/covers/card.jpg?1771093258",
+              "stars": 4.37362
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5010597040,
+            "rank": "S",
+            "accuracy": 0.9811320754716981,
+            "pp": 34.5055,
+            "mods": [],
+            "combo": 88,
+            "created_at": "2026-04-13T12:58:24Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 3.41587
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5010595287,
+            "rank": "B",
+            "accuracy": 0.9094368340943684,
+            "pp": 38.7815,
+            "mods": [],
+            "combo": 165,
+            "created_at": "2026-04-13T12:53:52Z",
+            "beatmapset": {
+              "id": 2382142,
+              "title": "Domino (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2382142/covers/card.jpg?1758314031",
+              "stars": 4.14238
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5010593455,
+            "rank": "S",
+            "accuracy": 0.949238578680203,
+            "pp": 30.0029,
+            "mods": [],
+            "combo": 259,
+            "created_at": "2026-04-13T12:49:04Z",
+            "beatmapset": {
+              "id": 303113,
+              "title": "MIRAI (TV size ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/303113/covers/card.jpg?1650629219",
+              "stars": 3.47704
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "PADORU / PADORU",
+        "cover": "https://assets.ppy.sh/beatmaps/1061287/covers/card.jpg?1650688170",
+        "unique_players": 11
       }
     }
   }

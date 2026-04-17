@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 49,
-    "longest": 49,
-    "last_updated": "2026-04-15"
+    "current": 50,
+    "longest": 50,
+    "last_updated": "2026-04-16"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -14806,6 +14806,292 @@
         "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
         "unique_players": 8
+      }
+    },
+    "2026-04-16": {
+      "total_scores": 500,
+      "peak_hour_baghdad": 21,
+      "top_grinder": {
+        "user": "rona13",
+        "user_id": 39264239,
+        "count": 43,
+        "scores": [
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5011708434,
+            "rank": "B",
+            "accuracy": 0.8797814207650273,
+            "pp": 44.812,
+            "mods": [],
+            "combo": 58,
+            "created_at": "2026-04-15T20:44:09Z",
+            "beatmapset": {
+              "id": 2414617,
+              "title": "starly (slowed down & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2414617/covers/card.jpg?1755447546",
+              "stars": 5.03357
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5011705130,
+            "rank": "B",
+            "accuracy": 0.8707865168539326,
+            "pp": 16.5663,
+            "mods": [],
+            "combo": 217,
+            "created_at": "2026-04-15T20:34:59Z",
+            "beatmapset": {
+              "id": 1045600,
+              "title": "SANTA SAN",
+              "cover": "https://assets.ppy.sh/beatmaps/1045600/covers/card.jpg?1645784561",
+              "stars": 4.58066
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5011701250,
+            "rank": "C",
+            "accuracy": 0.7983739837398374,
+            "pp": 28.8315,
+            "mods": [],
+            "combo": 42,
+            "created_at": "2026-04-15T20:24:34Z",
+            "beatmapset": {
+              "id": 2281428,
+              "title": "Poison (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2281428/covers/card.jpg?1734634407",
+              "stars": 4.5543
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5011700373,
+            "rank": "B",
+            "accuracy": 0.8734177215189873,
+            "pp": 42.256,
+            "mods": [],
+            "combo": 87,
+            "created_at": "2026-04-15T20:22:27Z",
+            "beatmapset": {
+              "id": 2496558,
+              "title": "So Am I (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2496558/covers/card.jpg?1775073996",
+              "stars": 4.67635
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5011699620,
+            "rank": "B",
+            "accuracy": 0.9035639412997903,
+            "pp": 39.0032,
+            "mods": [],
+            "combo": 149,
+            "created_at": "2026-04-15T20:20:29Z",
+            "beatmapset": {
+              "id": 2496558,
+              "title": "So Am I (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2496558/covers/card.jpg?1775073996",
+              "stars": 4.13669
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5011690268,
+            "rank": "C",
+            "accuracy": 0.8112391930835735,
+            "pp": 25.0281,
+            "mods": [],
+            "combo": 45,
+            "created_at": "2026-04-15T19:58:08Z",
+            "beatmapset": {
+              "id": 2395248,
+              "title": "Die Young",
+              "cover": "https://assets.ppy.sh/beatmaps/2395248/covers/card.jpg?1753062745",
+              "stars": 5.35793
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5011689231,
+            "rank": "B",
+            "accuracy": 0.9075757575757576,
+            "pp": 27.9896,
+            "mods": [],
+            "combo": 162,
+            "created_at": "2026-04-15T19:55:42Z",
+            "beatmapset": {
+              "id": 2233819,
+              "title": "Die Young (Nightcore Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2233819/covers/card.jpg?1744492998",
+              "stars": 4.54038
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5011688036,
+            "rank": "B",
+            "accuracy": 0.9043887147335423,
+            "pp": 38.7372,
+            "mods": [],
+            "combo": 172,
+            "created_at": "2026-04-15T19:52:56Z",
+            "beatmapset": {
+              "id": 2395248,
+              "title": "Die Young",
+              "cover": "https://assets.ppy.sh/beatmaps/2395248/covers/card.jpg?1753062745",
+              "stars": 4.58541
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5011686854,
+            "rank": "B",
+            "accuracy": 0.9166666666666666,
+            "pp": 29.5866,
+            "mods": [],
+            "combo": 113,
+            "created_at": "2026-04-15T19:50:05Z",
+            "beatmapset": {
+              "id": 1174505,
+              "title": "Angel With A Shotgun (Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1174505/covers/card.jpg?1650696851",
+              "stars": 3.85268
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5011686134,
+            "rank": "C",
+            "accuracy": 0.8396464646464646,
+            "pp": 15.754,
+            "mods": [],
+            "combo": 72,
+            "created_at": "2026-04-15T19:48:14Z",
+            "beatmapset": {
+              "id": 2285243,
+              "title": "Time to Say Goodbye (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2285243/covers/card.jpg?1736632238",
+              "stars": 3.72056
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5011684055,
+            "rank": "C",
+            "accuracy": 0.8379204892966361,
+            "pp": 46.545,
+            "mods": [],
+            "combo": 131,
+            "created_at": "2026-04-15T19:43:02Z",
+            "beatmapset": {
+              "id": 842412,
+              "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+              "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+              "stars": 4.52579
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5011683532,
+            "rank": "C",
+            "accuracy": 0.8053097345132744,
+            "pp": 56.5127,
+            "mods": [],
+            "combo": 118,
+            "created_at": "2026-04-15T19:41:47Z",
+            "beatmapset": {
+              "id": 842412,
+              "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+              "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+              "stars": 4.75176
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5011683220,
+            "rank": "B",
+            "accuracy": 0.9037800687285223,
+            "pp": 40.3965,
+            "mods": [],
+            "combo": 45,
+            "created_at": "2026-04-15T19:41:00Z",
+            "beatmapset": {
+              "id": 859783,
+              "title": "Harumachi Clover (Swing Arrangement)",
+              "cover": "https://assets.ppy.sh/beatmaps/859783/covers/card.jpg?1650679901",
+              "stars": 4.44479
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5011682081,
+            "rank": "B",
+            "accuracy": 0.9238505747126436,
+            "pp": 62.9826,
+            "mods": [],
+            "combo": 157,
+            "created_at": "2026-04-15T19:38:13Z",
+            "beatmapset": {
+              "id": 2288193,
+              "title": "Backstabber (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2288193/covers/card.jpg?1755044874",
+              "stars": 4.9086
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5011623971,
+            "rank": "A",
+            "accuracy": 0.9637681159420289,
+            "pp": 82.8323,
+            "mods": [],
+            "combo": 142,
+            "created_at": "2026-04-15T17:24:50Z",
+            "beatmapset": {
+              "id": 1004468,
+              "title": "Guinea Pig Bridge",
+              "cover": "https://assets.ppy.sh/beatmaps/1004468/covers/card.jpg?1645781181",
+              "stars": 4.62464
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "PADORU / PADORU",
+        "cover": "https://assets.ppy.sh/beatmaps/1061287/covers/card.jpg?1650688170",
+        "unique_players": 16
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 50,
-    "longest": 50,
-    "last_updated": "2026-04-16"
+    "current": 51,
+    "longest": 51,
+    "last_updated": "2026-04-17"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -15091,6 +15091,296 @@
       "most_played_map": {
         "title": "PADORU / PADORU",
         "cover": "https://assets.ppy.sh/beatmaps/1061287/covers/card.jpg?1650688170",
+        "unique_players": 16
+      }
+    },
+    "2026-04-17": {
+      "total_scores": 452,
+      "peak_hour_baghdad": 16,
+      "top_grinder": {
+        "user": "rona13",
+        "user_id": 39264239,
+        "count": 57,
+        "scores": [
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5012101995,
+            "rank": "D",
+            "accuracy": 0.2727272727272727,
+            "pp": 0.0912213,
+            "mods": [
+              "NF"
+            ],
+            "combo": 198,
+            "created_at": "2026-04-16T18:21:52Z",
+            "beatmapset": {
+              "id": 292301,
+              "title": "Blue Zenith",
+              "cover": "https://assets.ppy.sh/beatmaps/292301/covers/card.jpg?1650630372",
+              "stars": 2.13168
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5012096701,
+            "rank": "S",
+            "accuracy": 0.989159891598916,
+            "pp": 106.318,
+            "mods": [],
+            "combo": 154,
+            "created_at": "2026-04-16T18:10:21Z",
+            "beatmapset": {
+              "id": 842412,
+              "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+              "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+              "stars": 4.40277
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5012096299,
+            "rank": "A",
+            "accuracy": 0.943089430894309,
+            "pp": 66.269,
+            "mods": [],
+            "combo": 93,
+            "created_at": "2026-04-16T18:09:26Z",
+            "beatmapset": {
+              "id": 842412,
+              "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+              "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+              "stars": 4.40277
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5012095958,
+            "rank": "A",
+            "accuracy": 0.9322493224932249,
+            "pp": 63.9214,
+            "mods": [],
+            "combo": 101,
+            "created_at": "2026-04-16T18:08:43Z",
+            "beatmapset": {
+              "id": 842412,
+              "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+              "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+              "stars": 4.40277
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5012095620,
+            "rank": "B",
+            "accuracy": 0.8915989159891599,
+            "pp": 52.0405,
+            "mods": [],
+            "combo": 71,
+            "created_at": "2026-04-16T18:07:59Z",
+            "beatmapset": {
+              "id": 842412,
+              "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+              "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+              "stars": 4.40277
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5012094707,
+            "rank": "A",
+            "accuracy": 0.8848238482384824,
+            "pp": 54.2759,
+            "mods": [],
+            "combo": 87,
+            "created_at": "2026-04-16T18:05:53Z",
+            "beatmapset": {
+              "id": 842412,
+              "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+              "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+              "stars": 4.40277
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5012090191,
+            "rank": "S",
+            "accuracy": 0.9943977591036415,
+            "pp": 33.0148,
+            "mods": [],
+            "combo": 166,
+            "created_at": "2026-04-16T17:55:40Z",
+            "beatmapset": {
+              "id": 503216,
+              "title": "Yoru no Kodomo tachi",
+              "cover": "https://assets.ppy.sh/beatmaps/503216/covers/card.jpg?1650643061",
+              "stars": 2.99972
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5012070335,
+            "rank": "B",
+            "accuracy": 0.8611111111111112,
+            "pp": 53.3593,
+            "mods": [
+              "HD"
+            ],
+            "combo": 91,
+            "created_at": "2026-04-16T17:11:19Z",
+            "beatmapset": {
+              "id": 1004468,
+              "title": "Guinea Pig Bridge",
+              "cover": "https://assets.ppy.sh/beatmaps/1004468/covers/card.jpg?1645781181",
+              "stars": 4.62464
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5012066542,
+            "rank": "S",
+            "accuracy": 0.961352657004831,
+            "pp": 81.2999,
+            "mods": [],
+            "combo": 182,
+            "created_at": "2026-04-16T17:02:55Z",
+            "beatmapset": {
+              "id": 1004468,
+              "title": "Guinea Pig Bridge",
+              "cover": "https://assets.ppy.sh/beatmaps/1004468/covers/card.jpg?1645781181",
+              "stars": 4.62464
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5012065290,
+            "rank": "S",
+            "accuracy": 0.9408212560386473,
+            "pp": 81.2485,
+            "mods": [],
+            "combo": 205,
+            "created_at": "2026-04-16T17:00:11Z",
+            "beatmapset": {
+              "id": 1004468,
+              "title": "Guinea Pig Bridge",
+              "cover": "https://assets.ppy.sh/beatmaps/1004468/covers/card.jpg?1645781181",
+              "stars": 4.62464
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5012064869,
+            "rank": "S",
+            "accuracy": 0.9468599033816425,
+            "pp": 83.5229,
+            "mods": [],
+            "combo": 205,
+            "created_at": "2026-04-16T16:59:15Z",
+            "beatmapset": {
+              "id": 1004468,
+              "title": "Guinea Pig Bridge",
+              "cover": "https://assets.ppy.sh/beatmaps/1004468/covers/card.jpg?1645781181",
+              "stars": 4.62464
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5012064002,
+            "rank": "A",
+            "accuracy": 0.9323671497584541,
+            "pp": 69.2688,
+            "mods": [],
+            "combo": 133,
+            "created_at": "2026-04-16T16:57:20Z",
+            "beatmapset": {
+              "id": 1004468,
+              "title": "Guinea Pig Bridge",
+              "cover": "https://assets.ppy.sh/beatmaps/1004468/covers/card.jpg?1645781181",
+              "stars": 4.62464
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5012062388,
+            "rank": "B",
+            "accuracy": 0.8958916900093371,
+            "pp": 34.3267,
+            "mods": [],
+            "combo": 123,
+            "created_at": "2026-04-16T16:53:43Z",
+            "beatmapset": {
+              "id": 966339,
+              "title": "Ai no Sukima",
+              "cover": "https://assets.ppy.sh/beatmaps/966339/covers/card.jpg?1650679952",
+              "stars": 4.76776
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5012061407,
+            "rank": "B",
+            "accuracy": 0.8946360153256705,
+            "pp": 63.6822,
+            "mods": [],
+            "combo": 154,
+            "created_at": "2026-04-16T16:51:31Z",
+            "beatmapset": {
+              "id": 2294177,
+              "title": "Take a Hint feat. Victoria Justice & Elizabeth Gillies (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2294177/covers/card.jpg?1736370924",
+              "stars": 4.76754
+            }
+          },
+          {
+            "user": "rona13",
+            "user_id": 39264239,
+            "country": "IQ",
+            "score_id": 5012059728,
+            "rank": "A",
+            "accuracy": 0.9578544061302682,
+            "pp": 78.3021,
+            "mods": [],
+            "combo": 147,
+            "created_at": "2026-04-16T16:47:52Z",
+            "beatmapset": {
+              "id": 2294177,
+              "title": "Take a Hint feat. Victoria Justice & Elizabeth Gillies (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2294177/covers/card.jpg?1736370924",
+              "stars": 4.76754
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "PADORU / PADORU",
+        "cover": "https://assets.ppy.sh/beatmaps/1073074/covers/card.jpg?1650689325",
         "unique_players": 16
       }
     }

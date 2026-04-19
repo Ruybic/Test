@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 51,
-    "longest": 51,
-    "last_updated": "2026-04-17"
+    "current": 52,
+    "longest": 52,
+    "last_updated": "2026-04-18"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -15382,6 +15382,294 @@
         "title": "PADORU / PADORU",
         "cover": "https://assets.ppy.sh/beatmaps/1073074/covers/card.jpg?1650689325",
         "unique_players": 16
+      }
+    },
+    "2026-04-18": {
+      "total_scores": 688,
+      "peak_hour_baghdad": 21,
+      "top_grinder": {
+        "user": "NstR",
+        "user_id": 27935485,
+        "count": 100,
+        "scores": [
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6546987214,
+            "rank": "C",
+            "accuracy": 0.8333333333333334,
+            "pp": 4.57971,
+            "mods": [],
+            "combo": 100,
+            "created_at": "2026-04-17T19:05:53Z",
+            "beatmapset": {
+              "id": 664462,
+              "title": "Umapyoi Densetsu",
+              "cover": "https://assets.ppy.sh/beatmaps/664462/covers/card.jpg?1622124366",
+              "stars": 2.23122
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6546978934,
+            "rank": "B",
+            "accuracy": 0.9201388888888888,
+            "pp": 8.90775,
+            "mods": [],
+            "combo": 81,
+            "created_at": "2026-04-17T19:04:19Z",
+            "beatmapset": {
+              "id": 2515136,
+              "title": "Helios Rap Remix (JerseyClub mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2515136/covers/card.jpg?1773512727",
+              "stars": 2.36033
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6546974253,
+            "rank": "C",
+            "accuracy": 0.8194444444444444,
+            "pp": 5.52304,
+            "mods": [],
+            "combo": 49,
+            "created_at": "2026-04-17T19:03:25Z",
+            "beatmapset": {
+              "id": 2515136,
+              "title": "Helios Rap Remix (JerseyClub mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2515136/covers/card.jpg?1773512727",
+              "stars": 2.36033
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6546967908,
+            "rank": "C",
+            "accuracy": 0.7951388888888888,
+            "pp": 5.53778,
+            "mods": [],
+            "combo": 67,
+            "created_at": "2026-04-17T19:02:13Z",
+            "beatmapset": {
+              "id": 2515136,
+              "title": "Helios Rap Remix (JerseyClub mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2515136/covers/card.jpg?1773512727",
+              "stars": 2.36033
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6546921201,
+            "rank": "C",
+            "accuracy": 0.7430555555555556,
+            "pp": 4.94636,
+            "mods": [],
+            "combo": 57,
+            "created_at": "2026-04-17T18:53:20Z",
+            "beatmapset": {
+              "id": 2515136,
+              "title": "Helios Rap Remix (JerseyClub mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2515136/covers/card.jpg?1773512727",
+              "stars": 2.36033
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6546915701,
+            "rank": "C",
+            "accuracy": 0.7534722222222222,
+            "pp": 4.68118,
+            "mods": [],
+            "combo": 99,
+            "created_at": "2026-04-17T18:52:18Z",
+            "beatmapset": {
+              "id": 2515136,
+              "title": "Helios Rap Remix (JerseyClub mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2515136/covers/card.jpg?1773512727",
+              "stars": 2.36033
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6546909826,
+            "rank": "C",
+            "accuracy": 0.8315972222222222,
+            "pp": 6.65312,
+            "mods": [],
+            "combo": 145,
+            "created_at": "2026-04-17T18:51:11Z",
+            "beatmapset": {
+              "id": 2515136,
+              "title": "Helios Rap Remix (JerseyClub mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2515136/covers/card.jpg?1773512727",
+              "stars": 2.36033
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6546903402,
+            "rank": "A",
+            "accuracy": 0.9791666666666666,
+            "pp": null,
+            "mods": [
+              "RX"
+            ],
+            "combo": 69,
+            "created_at": "2026-04-17T18:50:00Z",
+            "beatmapset": {
+              "id": 2515136,
+              "title": "Helios Rap Remix (JerseyClub mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2515136/covers/card.jpg?1773512727",
+              "stars": 2.36033
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6546897539,
+            "rank": "C",
+            "accuracy": 0.7899305555555556,
+            "pp": 5.81281,
+            "mods": [],
+            "combo": 44,
+            "created_at": "2026-04-17T18:48:55Z",
+            "beatmapset": {
+              "id": 2515136,
+              "title": "Helios Rap Remix (JerseyClub mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2515136/covers/card.jpg?1773512727",
+              "stars": 2.36033
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6546892186,
+            "rank": "C",
+            "accuracy": 0.7465277777777778,
+            "pp": 6.09007,
+            "mods": [],
+            "combo": 90,
+            "created_at": "2026-04-17T18:47:56Z",
+            "beatmapset": {
+              "id": 2515136,
+              "title": "Helios Rap Remix (JerseyClub mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2515136/covers/card.jpg?1773512727",
+              "stars": 2.36033
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6546885347,
+            "rank": "C",
+            "accuracy": 0.7642543859649122,
+            "pp": null,
+            "mods": [],
+            "combo": 73,
+            "created_at": "2026-04-17T18:46:39Z",
+            "beatmapset": {
+              "id": 2354367,
+              "title": "MONTAGEM TOMADA (Slowed)",
+              "cover": "https://assets.ppy.sh/beatmaps/2354367/covers/card.jpg?1749781829",
+              "stars": 2.43237
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6546877407,
+            "rank": "C",
+            "accuracy": 0.8256578947368421,
+            "pp": null,
+            "mods": [],
+            "combo": 58,
+            "created_at": "2026-04-17T18:45:08Z",
+            "beatmapset": {
+              "id": 2354367,
+              "title": "MONTAGEM TOMADA (Slowed)",
+              "cover": "https://assets.ppy.sh/beatmaps/2354367/covers/card.jpg?1749781829",
+              "stars": 2.43237
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6546857304,
+            "rank": "C",
+            "accuracy": 0.8157894736842105,
+            "pp": null,
+            "mods": [],
+            "combo": 112,
+            "created_at": "2026-04-17T18:41:20Z",
+            "beatmapset": {
+              "id": 2354367,
+              "title": "MONTAGEM TOMADA (Slowed)",
+              "cover": "https://assets.ppy.sh/beatmaps/2354367/covers/card.jpg?1749781829",
+              "stars": 2.43237
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6546844381,
+            "rank": "B",
+            "accuracy": 0.8552631578947368,
+            "pp": null,
+            "mods": [],
+            "combo": 99,
+            "created_at": "2026-04-17T18:38:54Z",
+            "beatmapset": {
+              "id": 2354367,
+              "title": "MONTAGEM TOMADA (Slowed)",
+              "cover": "https://assets.ppy.sh/beatmaps/2354367/covers/card.jpg?1749781829",
+              "stars": 2.43237
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6546836453,
+            "rank": "B",
+            "accuracy": 0.8552631578947368,
+            "pp": null,
+            "mods": [],
+            "combo": 83,
+            "created_at": "2026-04-17T18:37:23Z",
+            "beatmapset": {
+              "id": 2354367,
+              "title": "MONTAGEM TOMADA (Slowed)",
+              "cover": "https://assets.ppy.sh/beatmaps/2354367/covers/card.jpg?1749781829",
+              "stars": 2.43237
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
+        "unique_players": 19
       }
     }
   }

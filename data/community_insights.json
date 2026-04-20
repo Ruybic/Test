@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 52,
-    "longest": 52,
-    "last_updated": "2026-04-18"
+    "current": 53,
+    "longest": 53,
+    "last_updated": "2026-04-19"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -15670,6 +15670,304 @@
         "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
         "unique_players": 19
+      }
+    },
+    "2026-04-19": {
+      "total_scores": 685,
+      "peak_hour_baghdad": 16,
+      "top_grinder": {
+        "user": "NstR",
+        "user_id": 27935485,
+        "count": 83,
+        "scores": [
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6552903970,
+            "rank": "B",
+            "accuracy": 0.8666666666666667,
+            "pp": 8.40696,
+            "mods": [],
+            "combo": 384,
+            "created_at": "2026-04-18T18:34:44Z",
+            "beatmapset": {
+              "id": 2235601,
+              "title": "Temptation (feat. Rebecca) (Nightcore Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2235601/covers/card.jpg?1749116184",
+              "stars": 2.39032
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6552881886,
+            "rank": "C",
+            "accuracy": 0.8263888888888888,
+            "pp": null,
+            "mods": [],
+            "combo": 65,
+            "created_at": "2026-04-18T18:30:47Z",
+            "beatmapset": {
+              "id": 303303,
+              "title": "Ja Odna",
+              "cover": "https://assets.ppy.sh/beatmaps/303303/covers/card.jpg?0",
+              "stars": 2.07651
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6552876727,
+            "rank": "A",
+            "accuracy": 0.9652777777777778,
+            "pp": null,
+            "mods": [],
+            "combo": 47,
+            "created_at": "2026-04-18T18:29:52Z",
+            "beatmapset": {
+              "id": 303303,
+              "title": "Ja Odna",
+              "cover": "https://assets.ppy.sh/beatmaps/303303/covers/card.jpg?0",
+              "stars": 2.07651
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6552871124,
+            "rank": "B",
+            "accuracy": 0.8888888888888888,
+            "pp": null,
+            "mods": [],
+            "combo": 64,
+            "created_at": "2026-04-18T18:28:52Z",
+            "beatmapset": {
+              "id": 303303,
+              "title": "Ja Odna",
+              "cover": "https://assets.ppy.sh/beatmaps/303303/covers/card.jpg?0",
+              "stars": 2.07651
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6552864693,
+            "rank": "S",
+            "accuracy": 0.9861111111111112,
+            "pp": null,
+            "mods": [],
+            "combo": 71,
+            "created_at": "2026-04-18T18:27:44Z",
+            "beatmapset": {
+              "id": 303303,
+              "title": "Ja Odna",
+              "cover": "https://assets.ppy.sh/beatmaps/303303/covers/card.jpg?0",
+              "stars": 2.07651
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6552859217,
+            "rank": "B",
+            "accuracy": 0.9201388888888888,
+            "pp": null,
+            "mods": [],
+            "combo": 68,
+            "created_at": "2026-04-18T18:26:45Z",
+            "beatmapset": {
+              "id": 303303,
+              "title": "Ja Odna",
+              "cover": "https://assets.ppy.sh/beatmaps/303303/covers/card.jpg?0",
+              "stars": 2.07651
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6552851616,
+            "rank": "A",
+            "accuracy": 0.8993055555555556,
+            "pp": null,
+            "mods": [],
+            "combo": 71,
+            "created_at": "2026-04-18T18:25:25Z",
+            "beatmapset": {
+              "id": 303303,
+              "title": "Ja Odna",
+              "cover": "https://assets.ppy.sh/beatmaps/303303/covers/card.jpg?0",
+              "stars": 2.07651
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6552846264,
+            "rank": "B",
+            "accuracy": 0.9097222222222222,
+            "pp": null,
+            "mods": [],
+            "combo": 46,
+            "created_at": "2026-04-18T18:24:27Z",
+            "beatmapset": {
+              "id": 303303,
+              "title": "Ja Odna",
+              "cover": "https://assets.ppy.sh/beatmaps/303303/covers/card.jpg?0",
+              "stars": 2.07651
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6552840974,
+            "rank": "B",
+            "accuracy": 0.8368055555555556,
+            "pp": null,
+            "mods": [],
+            "combo": 41,
+            "created_at": "2026-04-18T18:23:29Z",
+            "beatmapset": {
+              "id": 303303,
+              "title": "Ja Odna",
+              "cover": "https://assets.ppy.sh/beatmaps/303303/covers/card.jpg?0",
+              "stars": 2.07651
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6551528531,
+            "rank": "C",
+            "accuracy": 0.7124413145539906,
+            "pp": 3.28696,
+            "mods": [
+              "HD"
+            ],
+            "combo": 68,
+            "created_at": "2026-04-18T14:32:58Z",
+            "beatmapset": {
+              "id": 419409,
+              "title": "Black + White (TV EDIT)",
+              "cover": "https://assets.ppy.sh/beatmaps/419409/covers/card.jpg?1650637431",
+              "stars": 2.46031
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6551507487,
+            "rank": "C",
+            "accuracy": 0.803030303030303,
+            "pp": 5.59354,
+            "mods": [
+              "HD"
+            ],
+            "combo": 75,
+            "created_at": "2026-04-18T14:29:18Z",
+            "beatmapset": {
+              "id": 1620540,
+              "title": "Say Goodbye (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1620540/covers/card.jpg?1638136478",
+              "stars": 2.47996
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6551494350,
+            "rank": "C",
+            "accuracy": 0.7176308539944903,
+            "pp": 4.03381,
+            "mods": [
+              "HD"
+            ],
+            "combo": 48,
+            "created_at": "2026-04-18T14:26:59Z",
+            "beatmapset": {
+              "id": 1620540,
+              "title": "Say Goodbye (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1620540/covers/card.jpg?1638136478",
+              "stars": 2.47996
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6551468286,
+            "rank": "D",
+            "accuracy": 0.5909090909090909,
+            "pp": null,
+            "mods": [
+              "HD"
+            ],
+            "combo": 14,
+            "created_at": "2026-04-18T14:22:25Z",
+            "beatmapset": {
+              "id": 1932420,
+              "title": "y2mate.com - THIS IS 4K ANIME EDIT TANJIRO KAMADO",
+              "cover": "https://assets.ppy.sh/beatmaps/1932420/covers/card.jpg?1677567649",
+              "stars": 2.29837
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6551466106,
+            "rank": "C",
+            "accuracy": 0.7727272727272727,
+            "pp": null,
+            "mods": [
+              "HD"
+            ],
+            "combo": 14,
+            "created_at": "2026-04-18T14:22:02Z",
+            "beatmapset": {
+              "id": 1932420,
+              "title": "y2mate.com - THIS IS 4K ANIME EDIT TANJIRO KAMADO",
+              "cover": "https://assets.ppy.sh/beatmaps/1932420/covers/card.jpg?1677567649",
+              "stars": 2.29837
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6551461546,
+            "rank": "C",
+            "accuracy": 0.803030303030303,
+            "pp": null,
+            "mods": [
+              "HD"
+            ],
+            "combo": 12,
+            "created_at": "2026-04-18T14:21:13Z",
+            "beatmapset": {
+              "id": 1932420,
+              "title": "y2mate.com - THIS IS 4K ANIME EDIT TANJIRO KAMADO",
+              "cover": "https://assets.ppy.sh/beatmaps/1932420/covers/card.jpg?1677567649",
+              "stars": 2.29837
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "So Am I (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2496558/covers/card.jpg?1775073996",
+        "unique_players": 41
       }
     }
   }

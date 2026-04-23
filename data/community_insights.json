@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 55,
-    "longest": 55,
-    "last_updated": "2026-04-21"
+    "current": 56,
+    "longest": 56,
+    "last_updated": "2026-04-22"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -16549,6 +16549,292 @@
         "title": "I Don't Know (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
         "unique_players": 7
+      }
+    },
+    "2026-04-22": {
+      "total_scores": 304,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "L e n",
+        "user_id": 10286650,
+        "count": 48,
+        "scores": [
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 6568653665,
+            "rank": "A",
+            "accuracy": 0.9820261437908496,
+            "pp": 187.077,
+            "mods": [],
+            "combo": 235,
+            "created_at": "2026-04-21T15:57:12Z",
+            "beatmapset": {
+              "id": 632505,
+              "title": "Airborne Robots",
+              "cover": "https://assets.ppy.sh/beatmaps/632505/covers/card.jpg?1650658613",
+              "stars": 6.32794
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 6568640590,
+            "rank": "A",
+            "accuracy": 0.9660297239915074,
+            "pp": 184.878,
+            "mods": [],
+            "combo": 148,
+            "created_at": "2026-04-21T15:54:44Z",
+            "beatmapset": {
+              "id": 1092468,
+              "title": "Ai no Sukima (Rock Cover)",
+              "cover": "https://assets.ppy.sh/beatmaps/1092468/covers/card.jpg?1650690332",
+              "stars": 6.69291
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 6568628295,
+            "rank": "A",
+            "accuracy": 0.9587404994571118,
+            "pp": 134.441,
+            "mods": [],
+            "combo": 429,
+            "created_at": "2026-04-21T15:52:24Z",
+            "beatmapset": {
+              "id": 2397955,
+              "title": "Galaxy in Toybox (DC Update Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2397955/covers/card.jpg?1760623323",
+              "stars": 6.06393
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 6568601821,
+            "rank": "A",
+            "accuracy": 0.9610969387755102,
+            "pp": 230.181,
+            "mods": [],
+            "combo": 652,
+            "created_at": "2026-04-21T15:47:22Z",
+            "beatmapset": {
+              "id": 359168,
+              "title": "Calamity Fortune",
+              "cover": "https://assets.ppy.sh/beatmaps/359168/covers/card.jpg?1631509574",
+              "stars": 6.24925
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 6568585323,
+            "rank": "A",
+            "accuracy": 0.9673202614379085,
+            "pp": 206.498,
+            "mods": [],
+            "combo": 438,
+            "created_at": "2026-04-21T15:44:17Z",
+            "beatmapset": {
+              "id": 1209029,
+              "title": "Cross Over",
+              "cover": "https://assets.ppy.sh/beatmaps/1209029/covers/card.jpg?1650698802",
+              "stars": 6.40587
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 6568566360,
+            "rank": "A",
+            "accuracy": 0.9521152952115295,
+            "pp": 190.272,
+            "mods": [],
+            "combo": 239,
+            "created_at": "2026-04-21T15:40:41Z",
+            "beatmapset": {
+              "id": 922249,
+              "title": "Cross Over",
+              "cover": "https://assets.ppy.sh/beatmaps/922249/covers/card.jpg?1650675045",
+              "stars": 6.60863
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 6568548576,
+            "rank": "A",
+            "accuracy": 0.9494660564454614,
+            "pp": 120.164,
+            "mods": [],
+            "combo": 275,
+            "created_at": "2026-04-21T15:37:20Z",
+            "beatmapset": {
+              "id": 2047990,
+              "title": "Unknown Amnasia",
+              "cover": "https://assets.ppy.sh/beatmaps/2047990/covers/card.jpg?1746759203",
+              "stars": 6.17921
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 6568499010,
+            "rank": "B",
+            "accuracy": 0.9056737588652483,
+            "pp": 60.1954,
+            "mods": [],
+            "combo": 275,
+            "created_at": "2026-04-21T15:28:06Z",
+            "beatmapset": {
+              "id": 1100484,
+              "title": "Akayake no Majo",
+              "cover": "https://assets.ppy.sh/beatmaps/1100484/covers/card.jpg?1650691244",
+              "stars": 6.56346
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 6568471289,
+            "rank": "B",
+            "accuracy": 0.8784722222222222,
+            "pp": 114.596,
+            "mods": [],
+            "combo": 227,
+            "created_at": "2026-04-21T15:22:57Z",
+            "beatmapset": {
+              "id": 2040305,
+              "title": "Finder keepers (Short Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2040305/covers/card.jpg?1728946178",
+              "stars": 6.11373
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 6568456034,
+            "rank": "A",
+            "accuracy": 0.9903846153846154,
+            "pp": 297.083,
+            "mods": [],
+            "combo": 605,
+            "created_at": "2026-04-21T15:20:08Z",
+            "beatmapset": {
+              "id": 88180,
+              "title": "cheatreal",
+              "cover": "https://assets.ppy.sh/beatmaps/88180/covers/card.jpg?1650626574",
+              "stars": 6.41341
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 6568426551,
+            "rank": "B",
+            "accuracy": 0.881854043392505,
+            "pp": 103.049,
+            "mods": [],
+            "combo": 184,
+            "created_at": "2026-04-21T15:14:41Z",
+            "beatmapset": {
+              "id": 2325809,
+              "title": "Journey to the Rabbit Moon Base",
+              "cover": "https://assets.ppy.sh/beatmaps/2325809/covers/card.jpg?1745179482",
+              "stars": 6.83288
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 6568409580,
+            "rank": "A",
+            "accuracy": 0.9547979797979798,
+            "pp": 153.502,
+            "mods": [],
+            "combo": 545,
+            "created_at": "2026-04-21T15:11:27Z",
+            "beatmapset": {
+              "id": 331025,
+              "title": "Fastest Crash",
+              "cover": "https://assets.ppy.sh/beatmaps/331025/covers/card.jpg?1650630895",
+              "stars": 6.5159
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 6568383831,
+            "rank": "B",
+            "accuracy": 0.8699186991869918,
+            "pp": 51.7712,
+            "mods": [],
+            "combo": 104,
+            "created_at": "2026-04-21T15:06:35Z",
+            "beatmapset": {
+              "id": 2288181,
+              "title": "NaRKiSSuS",
+              "cover": "https://assets.ppy.sh/beatmaps/2288181/covers/card.jpg?1753387425",
+              "stars": 6.77757
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 6568347722,
+            "rank": "B",
+            "accuracy": 0.8633603238866396,
+            "pp": 88.1855,
+            "mods": [],
+            "combo": 235,
+            "created_at": "2026-04-21T14:59:42Z",
+            "beatmapset": {
+              "id": 2484664,
+              "title": "Jika -ST.-",
+              "cover": "https://assets.ppy.sh/beatmaps/2484664/covers/card.jpg?1770597260",
+              "stars": 7.03507
+            }
+          },
+          {
+            "user": "L e n",
+            "user_id": 10286650,
+            "country": "IQ",
+            "score_id": 6568329477,
+            "rank": "A",
+            "accuracy": 0.9817265280403277,
+            "pp": 216.404,
+            "mods": [],
+            "combo": 315,
+            "created_at": "2026-04-21T14:56:19Z",
+            "beatmapset": {
+              "id": 1673436,
+              "title": "dorchadas",
+              "cover": "https://assets.ppy.sh/beatmaps/1673436/covers/card.jpg?1650594909",
+              "stars": 6.14757
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "v polnoy temnote",
+        "cover": "https://assets.ppy.sh/beatmaps/2474015/covers/card.jpg?1775897907",
+        "unique_players": 6
       }
     }
   }

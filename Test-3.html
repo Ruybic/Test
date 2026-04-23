@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>osu! Iraq Today | Scores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://i.imgur.com/Zgd9kDC.jpg">
+    <style>
+        :root {
+            --osu-pink: #ff66aa;
+            --osu-pink-dark: #cc4488;
+            --dark-base: #1a1a20;
+            --dark-deeper: #13131a;
+            --panel-bg: #272730;
+            --panel-border: rgba(255,255,255,0.07);
+            --text-main: #ffffff;
+            --text-muted: #8888a0;
+            --accent-gold: #ffd700;
+            --accent-green: #66ffbb;
+            --accent-red: #ff4466;
+            --accent-blue: #44aaff;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+
+        /* ─── TRIANGLE CANVAS ─── */
+        #tri-canvas {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 0;
+        }
+
+        body {
+            background-color: var(--dark-base);
+            color: var(--text-main);
+            font-family: 'Exo 2', sans-serif;
+            margin: 0; padding: 0;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        header, .controls-bar, .feed-container, footer, #progress-container, #notif-toast {
+            position: relative; z-index: 1;
+        }
+
+        /* ─── HEADER ─── */
+        header {
+            background: rgba(15,15,20,0.9);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 0 24px;
+            display: flex; align-items: center; justify-content: space-between;
+            border-bottom: 1px solid rgba(255,102,170,0.15);
+            position: sticky; top: 0; z-index: 1000;
+            height: 60px;
+        }
+        .logo-box a { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-box img { height: 34px; border-radius: 8px; display: block; }
+        .logo-text { color: #fff; font-weight: 800; font-size: 18px; white-space: nowrap; }
+        .logo-text span { color: var(--osu-pink); }
+        .logo-box a:hover .logo-text { color: var(--osu-pink); transition: color 0.2s; }
+
+        /* ─── DROPDOWN ─── */
+        .dropdown { position: relative; display: flex; align-items: center; }
+        .dropbtn {
+            background: rgba(255,255,255,0.06);
+            color: white; border: 1px solid rgba(255,255,255,0.1);
+            padding: 8px 18px; border-radius: 8px; cursor: pointer;
+            font-family: 'Exo 2'; font-weight: 700; font-size: 14px;
+            transition: all 0.2s ease;
+        }
+        .dropbtn:hover { background: rgba(255,102,170,0.15); border-color: var(--osu-pink); color: var(--osu-pink); }
+        .dropdown-content {
+            visibility: hidden; opacity: 0; transform: translateY(8px) scale(0.97);
+            transition: opacity 0.2s ease, transform 0.25s cubic-bezier(0.2,0.8,0.2,1), visibility 0.2s;
+            position: absolute; right: 0; top: calc(100% + 12px); min-width: 270px; z-index: 2000;
+            background: rgba(20,20,28,0.97); backdrop-filter: blur(20px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,102,170,0.1);
+            border-radius: 14px; padding: 8px;
+        }
+        .dropdown-content.show { visibility: visible; opacity: 1; transform: translateY(0) scale(1); }
+        .menu-item {
+            position: relative; color: var(--text-muted); padding: 11px 14px; text-decoration: none;
+            display: block; font-size: 14px; border-radius: 8px; transition: all 0.2s ease; margin-bottom: 2px;
+            overflow: hidden;
+        }
+        .menu-item:last-child { margin-bottom: 0; }
+        .menu-item .menu-desc { display: block; font-size: 11px; color: #55556a; margin-top: 3px; transition: color 0.2s; }
+        .menu-item:hover { background: rgba(255,102,170,0.12); color: white; }
+        .menu-item.active { background: rgba(255,102,170,0.15); color: white; font-weight: 700; }
+        .menu-item::before {
+            content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%) scaleY(0);
+            width: 3px; height: 60%; background: var(--osu-pink); border-radius: 0 3px 3px 0;
+            transition: transform 0.25s cubic-bezier(0.2,0.8,0.2,1);
+        }
+        .menu-item.active::before, .menu-item:hover::before { transform: translateY(-50%) scaleY(1); }
+        .menu-item:hover .menu-desc, .menu-item.active .menu-desc { color: rgba(255,102,170,0.7); }
+
+        /* ─── CONTROLS BAR ─── */
+        .controls-bar {
+            max-width: 1440px; margin: 24px auto 16px; padding: 0 20px;
+            display: flex; justify-content: space-between; align-items: center; gap: 12px;
+        }
+        .section-label {
+            color: var(--osu-pink); font-weight: 800; font-size: 11px;
+            letter-spacing: 2.5px; text-transform: uppercase; margin: 0;
+        }
+        .date-btn {
+            background: transparent; border: 1.5px solid rgba(255,102,170,0.4);
+            color: var(--osu-pink); padding: 8px 18px; border-radius: 8px;
+            font-size: 13px; font-weight: 700; font-family: 'Exo 2';
+            cursor: pointer; display: flex; align-items: center; gap: 8px; transition: 0.2s;
+        }
+        .date-btn:hover { background: rgba(255,102,170,0.15); border-color: var(--osu-pink); }
+
+        /* ─── CALENDAR POPUP ─── */
+        .calendar-popup {
+            display: none; position: absolute; top: 130px; right: 20px; z-index: 999;
+            background: #22222c; border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px; width: 300px; padding: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+        }
+        .calendar-popup.open { display: block; }
+        .cal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+        .cal-month { font-weight: 800; color: white; }
+        .cal-nav { cursor: pointer; color: var(--text-muted); padding: 6px 10px; border-radius: 6px; transition: 0.2s; }
+        .cal-nav:hover { color: var(--osu-pink); background: rgba(255,102,170,0.1); }
+        .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center; }
+        .cal-day-label { font-size: 10px; color: var(--text-muted); padding-bottom: 6px; font-weight: 700; letter-spacing: 0.5px; }
+        .cal-day { padding: 8px 4px; font-size: 12px; cursor: pointer; border-radius: 6px; color: #ccc; font-weight: 600; transition: 0.15s; }
+        .cal-day:hover { background: rgba(255,102,170,0.15); color: white; }
+        .cal-day.active { background: var(--osu-pink); color: white; font-weight: 800; }
+        .cal-day.empty { pointer-events: none; }
+
+        /* ─── FEED CONTAINER ─── */
+        .feed-container { max-width: 1440px; margin: 0 auto; padding: 0 20px 40px; }
+
+        /* ─── SCORE GRID ─── */
+        .score-grid {
+            display: grid;
+            gap: 14px;
+            grid-template-columns: 1fr;
+        }
+        @media (min-width: 600px)  { .score-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (min-width: 900px)  { .score-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media (min-width: 1200px) { .score-grid { grid-template-columns: repeat(4, 1fr); } }
+        @media (min-width: 1500px) { .score-grid { grid-template-columns: repeat(5, 1fr); } }
+
+        .status-msg {
+            grid-column: 1 / -1; text-align: center; padding: 60px 20px;
+            color: var(--text-muted); font-weight: 700; font-size: 14px; letter-spacing: 1px;
+        }
+
+        /* ─── SCORE CARD ─── */
+        .score-card {
+            background: var(--panel-bg);
+            border-radius: 14px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--panel-border);
+            text-decoration: none;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.25s cubic-bezier(0.175,0.885,0.32,1.275), border-color 0.2s, box-shadow 0.2s;
+            animation: cardFadeIn 0.4s ease backwards;
+        }
+        .score-card:hover {
+            transform: translateY(-7px);
+            border-color: rgba(255,102,170,0.5);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+        }
+        .score-card:active { transform: translateY(-3px) scale(0.98); }
+
+        /* DAILY BEST gold aura */
+        .score-card.top-play {
+            border: 2px solid rgba(255,215,0,0.6);
+            box-shadow: 0 0 18px rgba(255,215,0,0.2);
+        }
+        .score-card.top-play:hover {
+            box-shadow: 0 14px 36px rgba(255,215,0,0.35);
+            border-color: var(--accent-gold);
+        }
+
+        @keyframes cardFadeIn {
+            from { opacity: 0; transform: translateY(18px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ─── MAP HEADER (cover image area) ─── */
+        .map-header-wrap {
+            position: relative; flex-shrink: 0; height: 110px; overflow: hidden;
+            border-radius: 0; /* card handles border-radius via overflow:hidden */
+        }
+        .map-header {
+            width: 100%; height: 110px;
+            background-size: cover; background-position: center;
+            display: block;
+        }
+        /* Dark gradient overlay */
+        .map-header::after {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.75) 100%);
+            pointer-events: none;
+        }
+
+        /* PP badge — top-left, positioned on wrapper */
+        .pp-badge {
+            position: absolute; top: 0; left: 0; z-index: 5;
+            background: var(--osu-pink);
+            color: white; padding: 5px 11px;
+            border-radius: 0 0 10px 0;
+            font-weight: 900; font-size: 14px; line-height: 1;
+        }
+        .score-card.top-play .pp-badge { background: var(--accent-gold); color: #111; }
+
+        /* Star rating — bottom-left */
+        .stars-badge {
+            position: absolute; bottom: 8px; left: 10px; z-index: 6;
+            font-size: 11px; font-weight: 800; color: var(--accent-gold);
+            display: flex; align-items: center; gap: 3px;
+            text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+            pointer-events: none;
+        }
+
+        /* Rank grade — top-right */
+        .rank-grade {
+            position: absolute; top: 0; right: 0; z-index: 5;
+            background: rgba(15,15,22,0.92);
+            font-weight: 900; font-size: 22px; line-height: 1;
+            padding: 4px 14px;
+            border-radius: 0 0 0 12px;
+            border-left: 3px solid var(--osu-pink);
+        }
+        .score-card.top-play .rank-grade { border-left-color: var(--accent-gold); }
+
+        /* Rank colors */
+        .rank-SS, .rank-SSH { color: #f8f8ff; text-shadow: 0 0 10px rgba(255,255,255,0.8); }
+        .rank-S,  .rank-SH  { color: #ffcc22; text-shadow: 0 0 8px rgba(255,180,0,0.6); }
+        .rank-A { color: #88ee00; }
+        .rank-B { color: #33bbff; }
+        .rank-C { color: #ff88ff; }
+        .rank-D { color: var(--accent-red); }
+
+        /* DAILY BEST badge — bottom-right of image */
+        .top-play-badge {
+            position: absolute; bottom: 8px; right: 10px; z-index: 10;
+            background: var(--accent-gold); color: #111;
+            font-weight: 900; font-size: 10px; letter-spacing: 0.8px;
+            padding: 3px 8px; border-radius: 6px;
+            pointer-events: none;
+        }
+
+        /* ─── CARD BODY ─── */
+        .card-body {
+            padding: 12px 14px 14px;
+            background: var(--panel-bg);
+            flex-grow: 1;
+            display: flex; flex-direction: column; gap: 0;
+            position: relative;
+        }
+
+        /* Floating avatar — overlaps map/body border */
+        .user-link {
+            position: absolute; top: -24px; right: 12px; z-index: 10;
+        }
+        .user-avatar {
+            width: 48px; height: 48px; border-radius: 11px;
+            border: 3px solid var(--panel-bg);
+            background: #333; display: block;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .user-avatar:hover { transform: scale(1.1); border-color: var(--osu-pink); }
+        .score-card.top-play .user-avatar { border-color: var(--accent-gold); }
+
+        /* Player name row */
+        .player-row {
+            display: flex; align-items: center; gap: 6px;
+            margin-bottom: 3px; margin-top: 2px;
+        }
+        .flag { width: 16px; height: auto; border-radius: 2px; flex-shrink: 0; }
+        .player-name {
+            font-weight: 800; color: white; font-size: 15px;
+            text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+            transition: color 0.15s;
+        }
+        .player-name:hover { color: var(--osu-pink); }
+
+        /* Map title */
+        .map-title {
+            font-size: 12px; color: var(--text-muted);
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+            text-decoration: none; display: block;
+            transition: color 0.15s; line-height: 1.3;
+            max-width: calc(100% - 20px); /* leave room so it doesn't overlap avatar */
+        }
+        .map-title:hover { color: white; }
+
+        /* Stats row */
+        .score-stats {
+            margin-top: 10px; padding-top: 10px;
+            border-top: 1px solid rgba(255,255,255,0.07);
+            display: flex; justify-content: space-between; align-items: center;
+            flex-wrap: wrap; gap: 4px;
+        }
+        .stat-left  { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+        .stat-right { display: flex; align-items: center; gap: 6px; }
+
+        .acc-val  { color: var(--accent-green); font-size: 12px; font-weight: 800; }
+        .combo-val { color: var(--accent-blue); font-size: 12px; font-weight: 700; }
+        .time-ago { color: #55556a; font-size: 11px; font-weight: 600; }
+
+        /* Mod pills */
+        .mods-row { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 6px; }
+        .mod-pill {
+            background: rgba(255,204,34,0.12);
+            border: 1px solid rgba(255,204,34,0.2);
+            color: var(--accent-gold);
+            font-size: 10px; font-weight: 800;
+            padding: 2px 7px; border-radius: 5px;
+            letter-spacing: 0.3px;
+        }
+        .mod-pill.nm { background: rgba(100,100,120,0.15); border-color: rgba(255,255,255,0.08); color: var(--text-muted); }
+
+        /* ─── AD CARD ─── */
+        .ad-card {
+            background: #1a1a24;
+            border-radius: 14px; overflow: hidden;
+            display: flex; flex-direction: column;
+            border: 1px solid var(--panel-border);
+            position: relative; text-decoration: none;
+            transition: 0.25s; cursor: pointer; height: 100%;
+            animation: cardFadeIn 0.4s ease backwards;
+        }
+        .ad-card:hover { border-color: #666; box-shadow: 0 10px 24px rgba(0,0,0,0.4); transform: translateY(-6px); }
+        .ad-card img { width: 100%; height: 100%; object-fit: cover; display: block; flex-grow: 1; }
+        .ad-label {
+            position: absolute; top: 8px; right: 8px;
+            background: rgba(0,0,0,0.7); color: #aaa;
+            font-size: 9px; font-weight: 700; padding: 2px 6px; border-radius: 4px; z-index: 10;
+        }
+
+        /* ─── SCROLL PROGRESS ─── */
+        #progress-container {
+            position: fixed; bottom: 28px; right: 28px;
+            width: 56px; height: 56px; cursor: pointer;
+            display: none; align-items: center; justify-content: center;
+            z-index: 2000; transition: transform 0.2s ease, opacity 0.3s;
+        }
+        #progress-container:hover { transform: scale(1.1); }
+        .progress-svg { transform: rotate(-90deg); }
+        .progress-background { fill: rgba(22,22,30,0.95); stroke: rgba(255,255,255,0.1); stroke-width: 4; }
+        #progress-bar {
+            fill: none; stroke: var(--osu-pink); stroke-width: 4;
+            stroke-linecap: round; stroke-dasharray: 163.3; stroke-dashoffset: 163.3;
+            transition: stroke-dashoffset 0.1s linear;
+        }
+        .arrow-up { position: absolute; color: white; font-size: 16px; pointer-events: none; }
+
+        /* ─── FOOTER ─── */
+        footer {
+            background: var(--dark-deeper); color: #fff;
+            padding: 20px 16px 32px; text-align: center;
+            border-top: 1px solid rgba(255,102,170,0.2); margin-top: 10px;
+        }
+        footer h3 { color: var(--osu-pink); margin: 0 0 6px; font-size: 18px; }
+        footer p  { margin: 0; font-size: 13px; color: #666; }
+        footer a  { color: var(--osu-pink); text-decoration: none; font-weight: 700; }
+        footer a:hover { text-decoration: underline; }
+        footer hr { border: 0; border-top: 1px solid #2a2a35; margin: 14px 0; }
+        .footer-links { margin: 10px 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .footer-meta { font-size: 12px; color: #555; line-height: 1.7; }
+        .footer-meta span { color: var(--osu-pink); font-family: monospace; }
+    </style>
+</head>
+<body>
+
+<canvas id="tri-canvas"></canvas>
+
+<audio id="hoverSound" src="pop.mp3" preload="auto"></audio>
+
+<header>
+    <div class="logo-box">
+        <a href="index.html">
+            <img src="https://i.imgur.com/Zgd9kDC.jpg" alt="osu! Iraq Today">
+            <span class="logo-text">osu! Iraq <span>Today</span></span>
+        </a>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn" id="menuBtn">Menu ▾</button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="Test.html" class="menu-item active">Scores<span class="menu-desc">See what happened today?</span></a>
+            <a href="rankings.html" class="menu-item">Rankings<span class="menu-desc">See player leaderboards</span></a>
+            <a href="videos.html" class="menu-item">Videos<span class="menu-desc">Watch gameplay and highlights</span></a>
+            <a href="mapping.html" class="menu-item">Mapping<span class="menu-desc">Explore beatmap creations</span></a>
+            <a href="archive.html" class="menu-item">Archive<span class="menu-desc">Explore community History</span></a>
+            <a href="socials.html" class="menu-item">Socials<span class="menu-desc">Connect with the community</span></a>
+        </div>
+    </div>
+</header>
+
+<div class="controls-bar">
+    <span class="section-label" id="currentDateLabel">LATEST SCORES</span>
+    <button class="date-btn" id="calendarBtn">📅 SELECT DATE</button>
+</div>
+
+<div class="calendar-popup" id="calendarPopup">
+    <div class="cal-header">
+        <span class="cal-nav" onclick="changeMonth(-1)">&#9664;</span>
+        <span class="cal-month" id="calMonthYear"></span>
+        <span class="cal-nav" onclick="changeMonth(1)">&#9654;</span>
+    </div>
+    <div class="cal-grid" id="calGrid"></div>
+</div>
+
+<div class="feed-container">
+    <div class="score-grid" id="scoreGrid">
+        <div class="status-msg">Select a date to view archived scores...</div>
+    </div>
+</div>
+
+<div id="progress-container" onclick="scrollToTop()">
+    <svg class="progress-svg" width="56" height="56" viewBox="0 0 60 60">
+        <circle class="progress-background" cx="30" cy="30" r="26"></circle>
+        <circle id="progress-bar" cx="30" cy="30" r="26"></circle>
+    </svg>
+    <div class="arrow-up">▲</div>
+</div>
+
+<footer>
+    <div style="max-width:900px; margin:0 auto;">
+        <h3>osu! Iraq Today</h3>
+        <p>Built with ❤️ for the Iraqi osu! Community</p>
+        <hr>
+        <div class="footer-links">
+            <a href="https://github.com/Ruybic/Test">GitHub</a>
+            <a href="#discord">Discord</a>
+            <a href="OIT_Document.html">Documentation</a>
+        </div>
+        <hr>
+        <p class="footer-meta">
+            A <strong>non-commercial</strong> osu! community project | Data via <strong>osu! API v2</strong><br>
+            © 2026 Ruybic • Commit: <span id="footer-commit">7472e02</span><br>
+            Last Update: <span id="footer-time">2026-02-27 04:00 UTC</span>
+        </p>
+    </div>
+</footer>
+
+<script>
+// ─── UTILITIES ───
+function timeAgo(dateString) {
+    const date = new Date(dateString);
+    const now   = new Date();
+    const secs  = Math.floor((now - date) / 1000);
+    const hrs   = Math.floor(secs / 3600);
+    if (hrs > 48) return date.toLocaleDateString();
+    if (hrs >= 1)  return hrs + 'h ago';
+    const mins = Math.floor(secs / 60);
+    if (mins >= 1) return mins + 'm ago';
+    return 'Just now';
+}
+
+function fmtAcc(a) {
+    return (a * 100).toFixed(2) + '%';
+}
+
+function fmtStars(s) {
+    return parseFloat(s).toFixed(2) + '★';
+}
+
+// Country code → flag image URL (osu! CDN)
+function flagUrl(cc) {
+    if (!cc) return '';
+    return `https://osu.ppy.sh/images/flags/${cc.toUpperCase()}.png`;
+}
+
+// ─── MENU LOGIC ───
+const menuBtn  = document.getElementById('menuBtn');
+const dropdown = document.getElementById('myDropdown');
+menuBtn.onclick = (e) => { dropdown.classList.toggle('show'); e.stopPropagation(); };
+window.onclick  = (e) => { if (!e.target.matches('.dropbtn')) dropdown.classList.remove('show'); };
+
+// ─── CALENDAR ───
+let calYear, calMonth;
+const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+function initCalendar() {
+    const now = new Date();
+    calYear  = now.getFullYear();
+    calMonth = now.getMonth();
+    renderCalendar();
+}
+
+function changeMonth(dir) {
+    calMonth += dir;
+    if (calMonth > 11) { calMonth = 0; calYear++; }
+    if (calMonth <  0) { calMonth = 11; calYear--; }
+    renderCalendar();
+}
+
+function renderCalendar() {
+    document.getElementById('calMonthYear').textContent = `${months[calMonth]} ${calYear}`;
+    const grid = document.getElementById('calGrid');
+    grid.innerHTML = '';
+    ['Su','Mo','Tu','We','Th','Fr','Sa'].forEach(d => {
+        const el = document.createElement('div');
+        el.className = 'cal-day-label'; el.textContent = d;
+        grid.appendChild(el);
+    });
+    const firstDay = new Date(calYear, calMonth, 1).getDay();
+    const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+    for (let i = 0; i < firstDay; i++) {
+        const el = document.createElement('div'); el.className = 'cal-day empty';
+        grid.appendChild(el);
+    }
+    for (let d = 1; d <= daysInMonth; d++) {
+        const el = document.createElement('div');
+        el.className = 'cal-day'; el.textContent = d;
+        const y = calYear, m = String(calMonth + 1).padStart(2,'0'), dd = String(d).padStart(2,'0');
+        el.onclick = () => { selectDate(`${y}-${m}-${dd}`); };
+        grid.appendChild(el);
+    }
+}
+
+document.getElementById('calendarBtn').onclick = (e) => {
+    document.getElementById('calendarPopup').classList.toggle('open');
+    e.stopPropagation();
+};
+window.addEventListener('click', () => document.getElementById('calendarPopup').classList.remove('open'));
+document.getElementById('calendarPopup').addEventListener('click', e => e.stopPropagation());
+
+function selectDate(dateStr) {
+    document.getElementById('calendarPopup').classList.remove('open');
+    document.querySelectorAll('.cal-day').forEach(el => el.classList.remove('active'));
+    const day = parseInt(dateStr.split('-')[2]);
+    document.querySelectorAll('.cal-day:not(.empty)').forEach(el => {
+        if (parseInt(el.textContent) === day) el.classList.add('active');
+    });
+    const [y, m, d] = dateStr.split('-');
+    const label = new Date(+y, +m-1, +d).toLocaleDateString('en-US', { weekday:'long', year:'numeric', month:'long', day:'numeric' });
+    document.getElementById('currentDateLabel').textContent = label.toUpperCase();
+    fetchAndRender(`data/${y}/${m}/${d}.json`);
+}
+
+// ─── MAIN RENDERER ───
+async function fetchAndRender(path) {
+    const grid = document.getElementById('scoreGrid');
+    grid.innerHTML = '<div class="status-msg">Loading scores...</div>';
+
+    try {
+        const res = await fetch(path + '?t=' + Date.now());
+        if (!res.ok) throw new Error('No data found for this date.');
+        const data = await res.json();
+
+        if (!data.scores || data.scores.length === 0) {
+            grid.innerHTML = '<div class="status-msg">No scores recorded for this day.</div>';
+            return;
+        }
+
+        // Find highest-PP score for "DAILY BEST" crown
+        let topScoreId = null, maxPp = -1;
+        data.scores.forEach(s => { if (s.pp > maxPp) { maxPp = s.pp; topScoreId = s.score_id; } });
+
+        grid.innerHTML = '';
+
+        data.scores.forEach((score, index) => {
+            const isTop = score.score_id === topScoreId;
+
+            // ── Build mod pills ──
+            const mods = score.mods || [];
+            let modsHtml = '';
+            if (mods.length === 0) {
+                modsHtml = `<span class="mod-pill nm">NM</span>`;
+            } else {
+                modsHtml = mods.map(m => `<span class="mod-pill">${m}</span>`).join('');
+            }
+
+            // ── Stars ──
+            const stars = score.beatmapset?.stars ?? score.beatmapset?.difficulty_rating ?? null;
+            const starsHtml = stars !== null
+                ? `<div class="stars-badge">${fmtStars(stars)}</div>`
+                : '';
+
+            // ── Flag ──
+            const flag = score.country
+                ? `<img src="${flagUrl(score.country)}" class="flag" alt="${score.country}">`
+                : '';
+
+            // ── Time ago ──
+            const when = score.created_at ? timeAgo(score.created_at) : '';
+
+            // ── Combo ──
+            const comboHtml = score.combo !== undefined
+                ? `<span class="combo-val">${score.combo}x</span>`
+                : '';
+
+            const card = document.createElement('div');
+            card.className = isTop ? 'score-card top-play' : 'score-card';
+            card.style.animationDelay = Math.min(index * 0.045, 1.0) + 's';
+
+            card.onclick = (e) => {
+                if (!e.target.closest('a')) {
+                    window.open(`https://osu.ppy.sh/scores/osu/${score.score_id}`, '_blank');
+                }
+            };
+
+            card.innerHTML = `
+                <!-- Cover image wrapper -->
+                <div class="map-header-wrap" style="position:relative; flex-shrink:0;">
+                    <a href="https://osu.ppy.sh/beatmapsets/${score.beatmapset.id}" target="_blank"
+                       onclick="event.stopPropagation()"
+                       class="map-header" style="background-image:url('${score.beatmapset.cover}')"></a>
+                    <div class="pp-badge">${Math.round(score.pp)}pp</div>
+                    <div class="rank-grade rank-${score.rank}">${score.rank}</div>
+                    ${starsHtml}
+                    ${isTop ? `<div class="top-play-badge">DAILY BEST</div>` : ''}
+                </div>
+
+                <!-- Card body -->
+                <div class="card-body">
+                    <!-- Floating avatar -->
+                    <a href="https://osu.ppy.sh/users/${score.user_id}" target="_blank"
+                       onclick="event.stopPropagation()" class="user-link">
+                        <img src="https://a.ppy.sh/${score.user_id}" class="user-avatar"
+                             alt="${score.user}" onerror="this.src='https://osu.ppy.sh/images/layout/avatar-guest.png'">
+                    </a>
+
+                    <!-- Player name + flag -->
+                    <div class="player-row">
+                        ${flag}
+                        <a href="https://osu.ppy.sh/users/${score.user_id}" target="_blank"
+                           onclick="event.stopPropagation()" class="player-name">${score.user}</a>
+                    </div>
+
+                    <!-- Map title -->
+                    <a href="https://osu.ppy.sh/beatmapsets/${score.beatmapset.id}" target="_blank"
+                       onclick="event.stopPropagation()" class="map-title"
+                       title="${score.beatmapset.title}">${score.beatmapset.title}</a>
+
+                    <!-- Mods row -->
+                    <div class="mods-row">${modsHtml}</div>
+
+                    <!-- Stats row -->
+                    <div class="score-stats">
+                        <div class="stat-left">
+                            <span class="acc-val">${fmtAcc(score.accuracy)}</span>
+                            ${comboHtml}
+                        </div>
+                        <div class="stat-right">
+                            <span class="time-ago">${when}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            grid.appendChild(card);
+        });
+
+    } catch(e) {
+        grid.innerHTML = `<div class="status-msg" style="color:var(--accent-red)">${e.message}</div>`;
+    }
+}
+
+// ─── SCROLL PROGRESS ───
+const progressEl = document.getElementById('progress-container');
+const progressBar = document.getElementById('progress-bar');
+const circumference = 163.3;
+
+window.addEventListener('scroll', () => {
+    const scrollTop  = document.documentElement.scrollTop;
+    const scrollMax  = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const pct = scrollMax > 0 ? scrollTop / scrollMax : 0;
+    progressBar.style.strokeDashoffset = circumference * (1 - pct);
+    progressEl.style.display = scrollTop > 200 ? 'flex' : 'none';
+    progressEl.style.opacity = scrollTop > 200 ? '1' : '0';
+});
+
+function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+
+// ─── FLOATING TRIANGLES BACKGROUND ───
+(function() {
+    const canvas = document.getElementById('tri-canvas');
+    const ctx    = canvas.getContext('2d');
+    let W, H;
+    function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+    resize();
+    window.addEventListener('resize', resize);
+
+    function mkTri() {
+        const size    = 18 + Math.random() * 48;
+        const x       = Math.random() * W;
+        const startY  = H + size + Math.random() * 200;
+        const speed   = 0.25 + Math.random() * 0.45;
+        const rotSpeed= (Math.random() - 0.5) * 0.006;
+        const angle   = Math.random() * Math.PI * 2;
+        const hue     = Math.random() < 0.6 ? 330 + Math.random() * 20 : 270 + Math.random() * 30;
+        const alpha   = 0.04 + Math.random() * 0.10;
+        return { x, y: startY, size, speed, rotSpeed, angle, hue, alpha };
+    }
+
+    const COUNT = 22;
+    const tris = [];
+    for (let i = 0; i < COUNT; i++) {
+        const t = mkTri(); t.y = Math.random() * (H + 400) - 200;
+        tris.push(t);
+    }
+
+    function drawTri(t, opacity) {
+        ctx.save();
+        ctx.translate(t.x, t.y); ctx.rotate(t.angle);
+        ctx.beginPath();
+        const s = t.size;
+        ctx.moveTo(0, -s * 0.6);
+        ctx.lineTo(s * 0.52, s * 0.38);
+        ctx.lineTo(-s * 0.52, s * 0.38);
+        ctx.closePath();
+        ctx.strokeStyle = `hsla(${t.hue},80%,70%,${opacity})`;
+        ctx.lineWidth = 1.2; ctx.stroke();
+        ctx.fillStyle = `hsla(${t.hue},70%,60%,${opacity*0.18})`; ctx.fill();
+        ctx.restore();
+    }
+
+    function animate() {
+        ctx.clearRect(0, 0, W, H);
+        const fadeZone = H * 0.18;
+        for (let i = 0; i < tris.length; i++) {
+            const t = tris[i];
+            t.y -= t.speed; t.angle += t.rotSpeed;
+            let op = t.alpha;
+            const fromBottom = (H + 60) - t.y;
+            if (fromBottom < 120) op *= fromBottom / 120;
+            if (t.y < fadeZone)   op *= t.y / fadeZone;
+            if (op > 0.002) drawTri(t, op);
+            if (t.y < -t.size * 2) tris[i] = mkTri();
+        }
+        requestAnimationFrame(animate);
+    }
+    animate();
+})();
+
+// ─── INIT ───
+initCalendar();
+
+// Auto-load today's scores
+(function() {
+    const now = new Date();
+    const y = now.getFullYear();
+    const m = String(now.getMonth()+1).padStart(2,'0');
+    const d = String(now.getDate()).padStart(2,'0');
+    const dateStr = `${y}-${m}-${d}`;
+    const label = now.toLocaleDateString('en-US', { weekday:'long', year:'numeric', month:'long', day:'numeric' });
+    document.getElementById('currentDateLabel').textContent = label.toUpperCase();
+    fetchAndRender(`data/${y}/${m}/${d}.json`);
+})();
+</script>
+</body>
+</html>

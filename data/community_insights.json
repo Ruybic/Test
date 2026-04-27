@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 59,
-    "longest": 59,
-    "last_updated": "2026-04-25"
+    "current": 60,
+    "longest": 60,
+    "last_updated": "2026-04-26"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -17707,6 +17707,296 @@
         "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
         "unique_players": 14
+      }
+    },
+    "2026-04-26": {
+      "total_scores": 335,
+      "peak_hour_baghdad": 12,
+      "top_grinder": {
+        "user": "NstR",
+        "user_id": 27935485,
+        "count": 53,
+        "scores": [
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6593331361,
+            "rank": "B",
+            "accuracy": 0.8557422969187675,
+            "pp": 6.03318,
+            "mods": [
+              "HR"
+            ],
+            "combo": 170,
+            "created_at": "2026-04-26T02:38:31Z",
+            "beatmapset": {
+              "id": 2398563,
+              "title": "Shin Kasamatsu Ondo (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2398563/covers/card.jpg?1753085681",
+              "stars": 2.07375
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6593326027,
+            "rank": "B",
+            "accuracy": 0.8557422969187675,
+            "pp": 4.80577,
+            "mods": [],
+            "combo": 165,
+            "created_at": "2026-04-26T02:36:52Z",
+            "beatmapset": {
+              "id": 2398563,
+              "title": "Shin Kasamatsu Ondo (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2398563/covers/card.jpg?1753085681",
+              "stars": 2.07375
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6593315512,
+            "rank": "A",
+            "accuracy": 0.9307359307359307,
+            "pp": 9.84161,
+            "mods": [
+              "HR"
+            ],
+            "combo": 243,
+            "created_at": "2026-04-26T02:33:31Z",
+            "beatmapset": {
+              "id": 299224,
+              "title": "the light",
+              "cover": "https://assets.ppy.sh/beatmaps/299224/covers/card.jpg?1622084535",
+              "stars": 2.19621
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6593308881,
+            "rank": "A",
+            "accuracy": 0.9329004329004329,
+            "pp": 7.12547,
+            "mods": [],
+            "combo": 136,
+            "created_at": "2026-04-26T02:31:23Z",
+            "beatmapset": {
+              "id": 299224,
+              "title": "the light",
+              "cover": "https://assets.ppy.sh/beatmaps/299224/covers/card.jpg?1622084535",
+              "stars": 2.19621
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6593271244,
+            "rank": "A",
+            "accuracy": 0.9453551912568307,
+            "pp": 12.8776,
+            "mods": [],
+            "combo": 413,
+            "created_at": "2026-04-26T02:19:07Z",
+            "beatmapset": {
+              "id": 396077,
+              "title": "Faded",
+              "cover": "https://assets.ppy.sh/beatmaps/396077/covers/card.jpg?1650645908",
+              "stars": 2.45811
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6593259705,
+            "rank": "B",
+            "accuracy": 0.9075043630017452,
+            "pp": null,
+            "mods": [],
+            "combo": 277,
+            "created_at": "2026-04-26T02:15:25Z",
+            "beatmapset": {
+              "id": 2180675,
+              "title": "Heart 111",
+              "cover": "https://assets.ppy.sh/beatmaps/2180675/covers/card.jpg?1761258627",
+              "stars": 2.08243
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6593252182,
+            "rank": "B",
+            "accuracy": 0.8485838779956427,
+            "pp": 6.64537,
+            "mods": [],
+            "combo": 226,
+            "created_at": "2026-04-26T02:13:01Z",
+            "beatmapset": {
+              "id": 2414617,
+              "title": "starly (slowed down & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2414617/covers/card.jpg?1755447546",
+              "stars": 2.33564
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6593206812,
+            "rank": "C",
+            "accuracy": 0.8187250996015937,
+            "pp": 10.303,
+            "mods": [],
+            "combo": 192,
+            "created_at": "2026-04-26T01:58:33Z",
+            "beatmapset": {
+              "id": 998378,
+              "title": "Oui! Ai Kotoba",
+              "cover": "https://assets.ppy.sh/beatmaps/998378/covers/card.jpg?1622165264",
+              "stars": 3.03886
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6593190216,
+            "rank": "C",
+            "accuracy": 0.7628205128205128,
+            "pp": 5.90431,
+            "mods": [],
+            "combo": 85,
+            "created_at": "2026-04-26T01:53:19Z",
+            "beatmapset": {
+              "id": 1154158,
+              "title": "Amefuri",
+              "cover": "https://assets.ppy.sh/beatmaps/1154158/covers/card.jpg?1622187199",
+              "stars": 2.17999
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6593187512,
+            "rank": "C",
+            "accuracy": 0.7147435897435898,
+            "pp": 4.003,
+            "mods": [],
+            "combo": 28,
+            "created_at": "2026-04-26T01:52:27Z",
+            "beatmapset": {
+              "id": 1154158,
+              "title": "Amefuri",
+              "cover": "https://assets.ppy.sh/beatmaps/1154158/covers/card.jpg?1622187199",
+              "stars": 2.17999
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6593181727,
+            "rank": "C",
+            "accuracy": 0.7857142857142857,
+            "pp": null,
+            "mods": [],
+            "combo": 122,
+            "created_at": "2026-04-26T01:50:39Z",
+            "beatmapset": {
+              "id": 324472,
+              "title": "Banira To Misato BIG CITY NIGHTS",
+              "cover": "https://assets.ppy.sh/beatmaps/324472/covers/card.jpg?0",
+              "stars": 2.92744
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6593153878,
+            "rank": "C",
+            "accuracy": 0.7462797619047619,
+            "pp": 13.8228,
+            "mods": [],
+            "combo": 156,
+            "created_at": "2026-04-26T01:41:54Z",
+            "beatmapset": {
+              "id": 2414617,
+              "title": "starly (slowed down & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2414617/covers/card.jpg?1755447546",
+              "stars": 3.34046
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6593145504,
+            "rank": "B",
+            "accuracy": 0.9140271493212669,
+            "pp": null,
+            "mods": [],
+            "combo": 236,
+            "created_at": "2026-04-26T01:39:15Z",
+            "beatmapset": {
+              "id": 2180675,
+              "title": "Heart 111",
+              "cover": "https://assets.ppy.sh/beatmaps/2180675/covers/card.jpg?1761258627",
+              "stars": 2.9892
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6593138094,
+            "rank": "C",
+            "accuracy": 0.7494692144373672,
+            "pp": 7.92637,
+            "mods": [],
+            "combo": 180,
+            "created_at": "2026-04-26T01:36:53Z",
+            "beatmapset": {
+              "id": 396077,
+              "title": "Faded",
+              "cover": "https://assets.ppy.sh/beatmaps/396077/covers/card.jpg?1650645908",
+              "stars": 2.89137
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6593122143,
+            "rank": "B",
+            "accuracy": 0.8686868686868687,
+            "pp": null,
+            "mods": [],
+            "combo": 284,
+            "created_at": "2026-04-26T01:31:53Z",
+            "beatmapset": {
+              "id": 1904057,
+              "title": "Simp With Me",
+              "cover": "https://assets.ppy.sh/beatmaps/1904057/covers/card.jpg?1693661429",
+              "stars": 2.54386
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+        "unique_players": 7
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 60,
-    "longest": 60,
-    "last_updated": "2026-04-26"
+    "current": 61,
+    "longest": 61,
+    "last_updated": "2026-04-27"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -17997,6 +17997,292 @@
         "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
         "unique_players": 7
+      }
+    },
+    "2026-04-27": {
+      "total_scores": 535,
+      "peak_hour_baghdad": 17,
+      "top_grinder": {
+        "user": "manicide",
+        "user_id": 39330365,
+        "count": 65,
+        "scores": [
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6595275924,
+            "rank": "B",
+            "accuracy": 0.9220985691573926,
+            "pp": 43.5208,
+            "mods": [],
+            "combo": 193,
+            "created_at": "2026-04-26T11:51:13Z",
+            "beatmapset": {
+              "id": 352570,
+              "title": "Night of Knights",
+              "cover": "https://assets.ppy.sh/beatmaps/352570/covers/card.jpg?1650634611",
+              "stars": 4.62322
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6595248995,
+            "rank": "B",
+            "accuracy": 0.8939393939393939,
+            "pp": 33.3546,
+            "mods": [],
+            "combo": 72,
+            "created_at": "2026-04-26T11:45:21Z",
+            "beatmapset": {
+              "id": 325112,
+              "title": "Yoru no Kodomo tachi",
+              "cover": "https://assets.ppy.sh/beatmaps/325112/covers/card.jpg?1650631180",
+              "stars": 3.78848
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6595236016,
+            "rank": "A",
+            "accuracy": 0.9278538812785389,
+            "pp": 54.7919,
+            "mods": [],
+            "combo": 281,
+            "created_at": "2026-04-26T11:42:32Z",
+            "beatmapset": {
+              "id": 887102,
+              "title": "Feuer frei!",
+              "cover": "https://assets.ppy.sh/beatmaps/887102/covers/card.jpg?1650672353",
+              "stars": 4.43425
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6595204424,
+            "rank": "B",
+            "accuracy": 0.8665501165501166,
+            "pp": 36.7822,
+            "mods": [],
+            "combo": 123,
+            "created_at": "2026-04-26T11:35:38Z",
+            "beatmapset": {
+              "id": 2363446,
+              "title": "NAME (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2363446/covers/card.jpg?1772638671",
+              "stars": 4.60942
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6595187349,
+            "rank": "C",
+            "accuracy": 0.7339901477832512,
+            "pp": 36.2378,
+            "mods": [],
+            "combo": 153,
+            "created_at": "2026-04-26T11:31:51Z",
+            "beatmapset": {
+              "id": 1782890,
+              "title": "La Di Da (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1782890/covers/card.jpg?1655062320",
+              "stars": 4.82809
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6595178877,
+            "rank": "A",
+            "accuracy": 0.9295343137254902,
+            "pp": 21.496,
+            "mods": [],
+            "combo": 474,
+            "created_at": "2026-04-26T11:29:59Z",
+            "beatmapset": {
+              "id": 190700,
+              "title": "Kuraki Sekai no Doukoku (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/190700/covers/card.jpg?1759713802",
+              "stars": 3.60029
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6594937928,
+            "rank": "B",
+            "accuracy": 0.8594429939077458,
+            "pp": 39.31,
+            "mods": [],
+            "combo": 258,
+            "created_at": "2026-04-26T10:34:54Z",
+            "beatmapset": {
+              "id": 190700,
+              "title": "Kuraki Sekai no Doukoku (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/190700/covers/card.jpg?1759713802",
+              "stars": 4.50974
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6594903880,
+            "rank": "A",
+            "accuracy": 0.9524774774774775,
+            "pp": 37.3699,
+            "mods": [],
+            "combo": 312,
+            "created_at": "2026-04-26T10:26:56Z",
+            "beatmapset": {
+              "id": 2378750,
+              "title": "Summertime Record",
+              "cover": "https://assets.ppy.sh/beatmaps/2378750/covers/card.jpg?1773682758",
+              "stars": 3.70887
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6594880386,
+            "rank": "A",
+            "accuracy": 0.96,
+            "pp": 30.8013,
+            "mods": [],
+            "combo": 143,
+            "created_at": "2026-04-26T10:21:19Z",
+            "beatmapset": {
+              "id": 2275012,
+              "title": "Sukitte 100-kai Itte (feat. Hatsune Miku)",
+              "cover": "https://assets.ppy.sh/beatmaps/2275012/covers/card.jpg?1741560382",
+              "stars": 3.30238
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6594860424,
+            "rank": "A",
+            "accuracy": 0.8919956140350878,
+            "pp": 38.3576,
+            "mods": [],
+            "combo": 465,
+            "created_at": "2026-04-26T10:16:35Z",
+            "beatmapset": {
+              "id": 1490776,
+              "title": "CHOIR JAIL (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1490776/covers/card.jpg?1634761221",
+              "stars": 3.88237
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6594852985,
+            "rank": "C",
+            "accuracy": 0.8498817966903073,
+            "pp": 38.9726,
+            "mods": [],
+            "combo": 234,
+            "created_at": "2026-04-26T10:14:52Z",
+            "beatmapset": {
+              "id": 2341780,
+              "title": "Green Greens",
+              "cover": "https://assets.ppy.sh/beatmaps/2341780/covers/card.jpg?1751506308",
+              "stars": 4.39942
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6594839592,
+            "rank": "C",
+            "accuracy": 0.7463884430176565,
+            "pp": 28.1727,
+            "mods": [],
+            "combo": 211,
+            "created_at": "2026-04-26T10:11:39Z",
+            "beatmapset": {
+              "id": 476871,
+              "title": "Sadistic.Music Factory",
+              "cover": "https://assets.ppy.sh/beatmaps/476871/covers/card.jpg?1622105740",
+              "stars": 4.77927
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6594822975,
+            "rank": "B",
+            "accuracy": 0.9187878787878788,
+            "pp": 51.4568,
+            "mods": [],
+            "combo": 171,
+            "created_at": "2026-04-26T10:07:39Z",
+            "beatmapset": {
+              "id": 2225625,
+              "title": "Domino (Whippa Hardstyle Remix) (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2225625/covers/card.jpg?1730579910",
+              "stars": 4.36933
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6594814772,
+            "rank": "C",
+            "accuracy": 0.7596618357487923,
+            "pp": 33.1421,
+            "mods": [],
+            "combo": 130,
+            "created_at": "2026-04-26T10:05:40Z",
+            "beatmapset": {
+              "id": 2225625,
+              "title": "Domino (Whippa Hardstyle Remix) (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2225625/covers/card.jpg?1730579910",
+              "stars": 4.8414
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6594802770,
+            "rank": "A",
+            "accuracy": 0.948051948051948,
+            "pp": 84.9938,
+            "mods": [],
+            "combo": 186,
+            "created_at": "2026-04-26T10:02:49Z",
+            "beatmapset": {
+              "id": 2382142,
+              "title": "Domino (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2382142/covers/card.jpg?1758314031",
+              "stars": 4.55203
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "how to create the weeknd's \"blinding lights\"",
+        "cover": "https://assets.ppy.sh/beatmaps/1207609/covers/card.jpg?1645786654",
+        "unique_players": 15
       }
     }
   }

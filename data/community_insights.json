@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 62,
-    "longest": 62,
-    "last_updated": "2026-04-28"
+    "current": 63,
+    "longest": 63,
+    "last_updated": "2026-04-29"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -18569,6 +18569,294 @@
         "title": "Zen Zen Zense",
         "cover": "https://assets.ppy.sh/beatmaps/503141/covers/card.jpg?1650642836",
         "unique_players": 11
+      }
+    },
+    "2026-04-29": {
+      "total_scores": 454,
+      "peak_hour_baghdad": 17,
+      "top_grinder": {
+        "user": "ALASTORX",
+        "user_id": 39546476,
+        "count": 47,
+        "scores": [
+          {
+            "user": "ALASTORX",
+            "user_id": 39546476,
+            "country": "IQ",
+            "score_id": 5017545432,
+            "rank": "C",
+            "accuracy": 0.7766884531590414,
+            "pp": 37.5311,
+            "mods": [],
+            "combo": 98,
+            "created_at": "2026-04-28T18:32:17Z",
+            "beatmapset": {
+              "id": 527431,
+              "title": "Gravity Falls Theme Song",
+              "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+              "stars": 4.43427
+            }
+          },
+          {
+            "user": "ALASTORX",
+            "user_id": 39546476,
+            "country": "IQ",
+            "score_id": 5017538404,
+            "rank": "D",
+            "accuracy": 0.34285714285714286,
+            "pp": 2.20576,
+            "mods": [
+              "NF"
+            ],
+            "combo": 14,
+            "created_at": "2026-04-28T18:16:46Z",
+            "beatmapset": {
+              "id": 399061,
+              "title": "In my room",
+              "cover": "https://assets.ppy.sh/beatmaps/399061/covers/card.jpg?1650635903",
+              "stars": 4.19015
+            }
+          },
+          {
+            "user": "ALASTORX",
+            "user_id": 39546476,
+            "country": "IQ",
+            "score_id": 5017537739,
+            "rank": "C",
+            "accuracy": 0.794047619047619,
+            "pp": 24.503,
+            "mods": [],
+            "combo": 71,
+            "created_at": "2026-04-28T18:15:09Z",
+            "beatmapset": {
+              "id": 399061,
+              "title": "In my room",
+              "cover": "https://assets.ppy.sh/beatmaps/399061/covers/card.jpg?1650635903",
+              "stars": 4.19015
+            }
+          },
+          {
+            "user": "ALASTORX",
+            "user_id": 39546476,
+            "country": "IQ",
+            "score_id": 5017535690,
+            "rank": "B",
+            "accuracy": 0.8583333333333333,
+            "pp": 25.3612,
+            "mods": [],
+            "combo": 63,
+            "created_at": "2026-04-28T18:10:24Z",
+            "beatmapset": {
+              "id": 399061,
+              "title": "In my room",
+              "cover": "https://assets.ppy.sh/beatmaps/399061/covers/card.jpg?1650635903",
+              "stars": 4.19015
+            }
+          },
+          {
+            "user": "ALASTORX",
+            "user_id": 39546476,
+            "country": "IQ",
+            "score_id": 5017534417,
+            "rank": "C",
+            "accuracy": 0.8476190476190476,
+            "pp": 33.5669,
+            "mods": [],
+            "combo": 99,
+            "created_at": "2026-04-28T18:07:18Z",
+            "beatmapset": {
+              "id": 399061,
+              "title": "In my room",
+              "cover": "https://assets.ppy.sh/beatmaps/399061/covers/card.jpg?1650635903",
+              "stars": 4.19015
+            }
+          },
+          {
+            "user": "ALASTORX",
+            "user_id": 39546476,
+            "country": "IQ",
+            "score_id": 5017534070,
+            "rank": "B",
+            "accuracy": 0.8773809523809524,
+            "pp": 29.5788,
+            "mods": [],
+            "combo": 73,
+            "created_at": "2026-04-28T18:06:27Z",
+            "beatmapset": {
+              "id": 399061,
+              "title": "In my room",
+              "cover": "https://assets.ppy.sh/beatmaps/399061/covers/card.jpg?1650635903",
+              "stars": 4.19015
+            }
+          },
+          {
+            "user": "ALASTORX",
+            "user_id": 39546476,
+            "country": "IQ",
+            "score_id": 5017533450,
+            "rank": "B",
+            "accuracy": 0.8738095238095238,
+            "pp": 29.323,
+            "mods": [],
+            "combo": 82,
+            "created_at": "2026-04-28T18:05:00Z",
+            "beatmapset": {
+              "id": 399061,
+              "title": "In my room",
+              "cover": "https://assets.ppy.sh/beatmaps/399061/covers/card.jpg?1650635903",
+              "stars": 4.19015
+            }
+          },
+          {
+            "user": "ALASTORX",
+            "user_id": 39546476,
+            "country": "IQ",
+            "score_id": 5017533158,
+            "rank": "C",
+            "accuracy": 0.8404761904761905,
+            "pp": 31.2733,
+            "mods": [],
+            "combo": 66,
+            "created_at": "2026-04-28T18:04:13Z",
+            "beatmapset": {
+              "id": 399061,
+              "title": "In my room",
+              "cover": "https://assets.ppy.sh/beatmaps/399061/covers/card.jpg?1650635903",
+              "stars": 4.19015
+            }
+          },
+          {
+            "user": "ALASTORX",
+            "user_id": 39546476,
+            "country": "IQ",
+            "score_id": 5017532592,
+            "rank": "C",
+            "accuracy": 0.8387799564270153,
+            "pp": 32.7615,
+            "mods": [],
+            "combo": 50,
+            "created_at": "2026-04-28T18:02:59Z",
+            "beatmapset": {
+              "id": 527431,
+              "title": "Gravity Falls Theme Song",
+              "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+              "stars": 4.43427
+            }
+          },
+          {
+            "user": "ALASTORX",
+            "user_id": 39546476,
+            "country": "IQ",
+            "score_id": 5017531667,
+            "rank": "C",
+            "accuracy": 0.7886710239651417,
+            "pp": 30.7187,
+            "mods": [],
+            "combo": 66,
+            "created_at": "2026-04-28T18:00:55Z",
+            "beatmapset": {
+              "id": 527431,
+              "title": "Gravity Falls Theme Song",
+              "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+              "stars": 4.43427
+            }
+          },
+          {
+            "user": "ALASTORX",
+            "user_id": 39546476,
+            "country": "IQ",
+            "score_id": 5017530952,
+            "rank": "C",
+            "accuracy": 0.8115468409586056,
+            "pp": 27.5999,
+            "mods": [],
+            "combo": 46,
+            "created_at": "2026-04-28T17:59:22Z",
+            "beatmapset": {
+              "id": 527431,
+              "title": "Gravity Falls Theme Song",
+              "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+              "stars": 4.43427
+            }
+          },
+          {
+            "user": "ALASTORX",
+            "user_id": 39546476,
+            "country": "IQ",
+            "score_id": 5017529916,
+            "rank": "B",
+            "accuracy": 0.8765903307888041,
+            "pp": 34.656,
+            "mods": [],
+            "combo": 116,
+            "created_at": "2026-04-28T17:56:58Z",
+            "beatmapset": {
+              "id": 1004468,
+              "title": "Guinea Pig Bridge",
+              "cover": "https://assets.ppy.sh/beatmaps/1004468/covers/card.jpg?1645781181",
+              "stars": 4.1468
+            }
+          },
+          {
+            "user": "ALASTORX",
+            "user_id": 39546476,
+            "country": "IQ",
+            "score_id": 5017529327,
+            "rank": "B",
+            "accuracy": 0.8785529715762274,
+            "pp": 37.3844,
+            "mods": [],
+            "combo": 68,
+            "created_at": "2026-04-28T17:55:34Z",
+            "beatmapset": {
+              "id": 1207609,
+              "title": "how to create the weeknd's \"blinding lights\"",
+              "cover": "https://assets.ppy.sh/beatmaps/1207609/covers/card.jpg?1645786654",
+              "stars": 4.60768
+            }
+          },
+          {
+            "user": "ALASTORX",
+            "user_id": 39546476,
+            "country": "IQ",
+            "score_id": 5017462678,
+            "rank": "S",
+            "accuracy": 0.9878787878787879,
+            "pp": 8.68673,
+            "mods": [],
+            "combo": 120,
+            "created_at": "2026-04-28T15:21:34Z",
+            "beatmapset": {
+              "id": 497769,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/497769/covers/card.jpg?1645785838",
+              "stars": 2.08338
+            }
+          },
+          {
+            "user": "ALASTORX",
+            "user_id": 39546476,
+            "country": "IQ",
+            "score_id": 5017459479,
+            "rank": "C",
+            "accuracy": 0.8103864734299517,
+            "pp": 25.984,
+            "mods": [],
+            "combo": 53,
+            "created_at": "2026-04-28T15:14:16Z",
+            "beatmapset": {
+              "id": 1004468,
+              "title": "Guinea Pig Bridge",
+              "cover": "https://assets.ppy.sh/beatmaps/1004468/covers/card.jpg?1645781181",
+              "stars": 4.62464
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "PADORU / PADORU",
+        "cover": "https://assets.ppy.sh/beatmaps/1073074/covers/card.jpg?1650689325",
+        "unique_players": 20
       }
     }
   }

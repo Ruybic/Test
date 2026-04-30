@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>osu! Iraq Today | Archive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://i.imgur.com/Zgd9kDC.jpg">
+    <style>
+        :root {
+            --osu-pink: #ff66aa;
+            --osu-pink-dark: #cc4488;
+            --dark-base: #1a1a20;
+            --dark-deeper: #13131a;
+            --panel-bg: #272730;
+            --panel-border: rgba(255,255,255,0.07);
+            --text-main: #ffffff;
+            --text-muted: #8888a0;
+            --accent-gold: #ffd700;
+            --accent-green: #66ffbb;
+            --accent-red: #ff4466;
+            --accent-blue: #44aaff;
+            --warning-yellow: #f5c400;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+
+        #tri-canvas {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 0;
+        }
+
+        body {
+            background-color: var(--dark-base);
+            color: var(--text-main);
+            font-family: 'Exo 2', sans-serif;
+            margin: 0; padding: 0;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        header, .page-wrap, footer, #progress-container {
+            position: relative; z-index: 1;
+        }
+
+        /* ─── HEADER ─── */
+        header {
+            background: rgba(15,15,20,0.9);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            padding: 0 24px;
+            display: flex; align-items: center; justify-content: space-between;
+            border-bottom: 1px solid rgba(255,102,170,0.15);
+            position: sticky; top: 0; z-index: 1000; height: 60px;
+        }
+        .logo-box a { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-box img { height: 34px; border-radius: 8px; display: block; }
+        .logo-text { color: #fff; font-weight: 800; font-size: 18px; white-space: nowrap; }
+        .logo-text span { color: var(--osu-pink); }
+        .logo-box a:hover .logo-text { color: var(--osu-pink); transition: color 0.2s; }
+
+        /* ─── DROPDOWN ─── */
+        .dropdown { position: relative; display: flex; align-items: center; }
+        .dropbtn {
+            background: rgba(255,255,255,0.06); color: white;
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 8px 18px; border-radius: 8px; cursor: pointer;
+            font-family: 'Exo 2'; font-weight: 700; font-size: 14px; transition: all 0.2s;
+        }
+        .dropbtn:hover { background: rgba(255,102,170,0.15); border-color: var(--osu-pink); color: var(--osu-pink); }
+        .dropdown-content {
+            visibility: hidden; opacity: 0; transform: translateY(8px) scale(0.97);
+            transition: opacity 0.2s ease, transform 0.25s cubic-bezier(0.2,0.8,0.2,1), visibility 0.2s;
+            position: absolute; right: 0; top: calc(100% + 12px); min-width: 270px; z-index: 3000;
+            background: rgba(20,20,28,0.97); backdrop-filter: blur(20px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,102,170,0.1);
+            border-radius: 14px; padding: 8px;
+        }
+        .dropdown-content.show { visibility: visible; opacity: 1; transform: translateY(0) scale(1); }
+        .nav-item {
+            position: relative; color: var(--text-muted); padding: 11px 14px;
+            text-decoration: none; display: block; font-size: 14px;
+            border-radius: 8px; transition: all 0.2s; margin-bottom: 2px; overflow: hidden;
+        }
+        .nav-item:last-child { margin-bottom: 0; }
+        .nav-item .menu-desc { display: block; font-size: 11px; color: #55556a; margin-top: 3px; transition: color 0.2s; }
+        .nav-item:hover { background: rgba(255,102,170,0.12); color: white; }
+        .nav-item.active { background: rgba(255,102,170,0.15); color: white; font-weight: 700; }
+        .nav-item::before {
+            content: ''; position: absolute; left: 0; top: 50%;
+            transform: translateY(-50%) scaleY(0);
+            width: 3px; height: 60%; background: var(--osu-pink);
+            border-radius: 0 3px 3px 0;
+            transition: transform 0.25s cubic-bezier(0.2,0.8,0.2,1);
+        }
+        .nav-item.active::before, .nav-item:hover::before { transform: translateY(-50%) scaleY(1); }
+        .nav-item:hover .menu-desc, .nav-item.active .menu-desc { color: rgba(255,102,170,0.7); }
+
+        /* ─── PAGE WRAP ─── */
+        .page-wrap {
+            max-width: 1440px; margin: 0 auto; padding: 24px 20px 40px;
+        }
+
+        /* ─── WARNING BANNER ─── */
+        .warning-banner {
+            border-radius: 14px;
+            overflow: hidden;
+            margin-bottom: 24px;
+            border: 1px solid rgba(245,196,0,0.3);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+
+        /* Hazard stripe top bar */
+        .hazard-stripe {
+            height: 10px;
+            background: repeating-linear-gradient(
+                45deg,
+                var(--warning-yellow) 0px,
+                var(--warning-yellow) 14px,
+                #1a1208 14px,
+                #1a1208 28px
+            );
+        }
+
+        .warning-body {
+            background: linear-gradient(135deg, rgba(245,196,0,0.07) 0%, rgba(26,26,32,0.95) 100%);
+            padding: 20px 24px 22px;
+            display: flex; align-items: flex-start; gap: 18px;
+        }
+
+        /* Warning icon */
+        .warning-icon-wrap {
+            flex-shrink: 0;
+            width: 46px; height: 46px;
+            background: rgba(245,196,0,0.12);
+            border: 1.5px solid rgba(245,196,0,0.3);
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 22px;
+        }
+
+        .warning-text { flex: 1; min-width: 0; }
+        .warning-text h3 {
+            margin: 0 0 5px;
+            font-size: 14px; font-weight: 900;
+            color: var(--warning-yellow);
+            text-transform: uppercase; letter-spacing: 1px;
+        }
+        .warning-text p {
+            margin: 0;
+            font-size: 13px; color: #aaa; line-height: 1.6; font-weight: 600;
+        }
+        .warning-text p strong { color: #ccc; }
+
+        .warning-actions {
+            display: flex; gap: 10px; align-items: center; flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .btn-learn {
+            background: transparent;
+            color: var(--text-muted);
+            border: 1.5px solid rgba(255,255,255,0.12);
+            padding: 8px 16px; border-radius: 8px;
+            font-family: 'Exo 2'; font-weight: 700; font-size: 13px;
+            cursor: pointer; text-decoration: none;
+            transition: all 0.2s; white-space: nowrap;
+            display: inline-flex; align-items: center; gap: 6px;
+        }
+        .btn-learn:hover { border-color: rgba(255,255,255,0.3); color: white; }
+
+        .btn-submit {
+            background: var(--warning-yellow);
+            color: #111;
+            border: none;
+            padding: 8px 18px; border-radius: 8px;
+            font-family: 'Exo 2'; font-weight: 900; font-size: 13px;
+            cursor: pointer; text-decoration: none;
+            transition: all 0.2s; white-space: nowrap;
+            display: inline-flex; align-items: center; gap: 7px;
+            box-shadow: 0 4px 16px rgba(245,196,0,0.2);
+        }
+        .btn-submit:hover {
+            background: #ffd020;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(245,196,0,0.35);
+        }
+
+        /* ─── ARCHIVE LAYOUT ─── */
+        .archive-layout {
+            display: flex; align-items: flex-start; gap: 20px;
+        }
+
+        /* ─── SIDEBAR ─── */
+        .sidebar {
+            width: 240px; flex-shrink: 0;
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 14px;
+            padding: 10px 0;
+            position: sticky; top: 78px;
+        }
+
+        .sidebar-section-label {
+            font-size: 10px; font-weight: 800;
+            color: var(--text-muted); letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 10px 16px 6px;
+        }
+
+        .side-item {
+            padding: 10px 16px;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 13px; font-weight: 700;
+            display: flex; justify-content: space-between; align-items: center;
+            transition: all 0.2s;
+            user-select: none;
+            border-radius: 8px;
+            margin: 1px 6px;
+            position: relative;
+        }
+        .side-item:hover { background: rgba(255,102,170,0.1); color: white; }
+        .side-item.active {
+            background: rgba(255,102,170,0.15);
+            color: var(--osu-pink);
+        }
+        .side-item::before {
+            content: ''; position: absolute; left: 0; top: 50%;
+            transform: translateY(-50%) scaleY(0);
+            width: 3px; height: 55%; background: var(--osu-pink);
+            border-radius: 0 3px 3px 0;
+            transition: transform 0.2s cubic-bezier(0.2,0.8,0.2,1);
+        }
+        .side-item.active::before { transform: translateY(-50%) scaleY(1); }
+
+        .side-item-left { display: flex; align-items: center; gap: 10px; }
+        .side-icon { font-size: 15px; width: 20px; text-align: center; }
+        .side-chevron { font-size: 10px; color: #555; transition: transform 0.25s cubic-bezier(0.2,0.8,0.2,1); }
+        .side-item.open .side-chevron { transform: rotate(90deg); color: var(--osu-pink); }
+
+        /* Submenu */
+        .sub-menu {
+            max-height: 0; overflow: hidden;
+            transition: max-height 0.35s cubic-bezier(0.2,0.8,0.2,1);
+        }
+        .sub-menu.open { max-height: 350px; }
+
+        .sub-item {
+            padding: 8px 16px 8px 46px;
+            color: #666; font-size: 12px; font-weight: 700;
+            cursor: pointer; transition: color 0.15s;
+            display: flex; align-items: center; gap: 6px;
+            margin: 0 6px; border-radius: 6px;
+        }
+        .sub-item::before { content: '›'; color: #444; font-size: 14px; }
+        .sub-item:hover { color: white; background: rgba(255,255,255,0.05); }
+        .sub-item.active { color: var(--osu-pink); font-weight: 800; }
+
+        .sidebar-divider {
+            height: 1px; background: var(--panel-border);
+            margin: 8px 12px;
+        }
+
+        /* ─── MAIN CONTENT ─── */
+        .main-content { flex: 1; min-width: 0; }
+
+        /* Toolbar */
+        .toolbar {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 18px; gap: 12px; flex-wrap: wrap;
+        }
+        .breadcrumbs {
+            font-size: 13px; color: var(--text-muted); font-weight: 700;
+            display: flex; align-items: center; gap: 6px;
+        }
+        .breadcrumbs .crumb { cursor: pointer; transition: color 0.15s; }
+        .breadcrumbs .crumb:hover { color: white; }
+        .breadcrumbs .crumb-sep { color: #3a3a4a; }
+        .breadcrumbs .crumb-active { color: var(--osu-pink); pointer-events: none; }
+
+        .toolbar-right { display: flex; align-items: center; gap: 10px; }
+        .result-count {
+            font-size: 12px; font-weight: 700; color: var(--text-muted);
+            background: var(--panel-bg); border: 1px solid var(--panel-border);
+            padding: 6px 12px; border-radius: 7px; white-space: nowrap;
+        }
+        .result-count span { color: var(--osu-pink); font-weight: 900; }
+
+        .search-wrap { position: relative; }
+        .search-wrap svg {
+            position: absolute; left: 11px; top: 50%; transform: translateY(-50%);
+            color: var(--text-muted); pointer-events: none;
+        }
+        .search-input {
+            background: var(--panel-bg); color: white;
+            border: 1px solid var(--panel-border);
+            padding: 8px 12px 8px 34px; border-radius: 8px;
+            font-family: 'Exo 2'; font-weight: 600; font-size: 13px;
+            outline: none; transition: border-color 0.2s; width: 210px;
+        }
+        .search-input:focus { border-color: var(--osu-pink); }
+        .search-input::placeholder { color: var(--text-muted); }
+
+        /* ─── FILE GRID ─── */
+        .file-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 14px;
+        }
+
+        .no-results {
+            grid-column: 1 / -1; text-align: center;
+            padding: 60px 20px; color: var(--text-muted);
+            font-size: 15px; font-weight: 700;
+        }
+
+        /* ─── ITEM CARD ─── */
+        .item-card {
+            background: var(--panel-bg);
+            border-radius: 14px; overflow: hidden;
+            display: flex; flex-direction: column;
+            border: 1px solid var(--panel-border);
+            position: relative; cursor: pointer;
+            transition: transform 0.22s cubic-bezier(0.175,0.885,0.32,1.275), border-color 0.2s, box-shadow 0.2s;
+            animation: cardFadeIn 0.35s ease backwards;
+            text-decoration: none;
+        }
+        .item-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(255,102,170,0.45);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.45);
+        }
+        .item-card:active { transform: translateY(-2px) scale(0.98); }
+
+        @keyframes cardFadeIn {
+            from { opacity: 0; transform: translateY(16px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Preview area */
+        .file-preview {
+            width: 100%; height: 150px;
+            background-size: cover; background-position: center;
+            position: relative; flex-shrink: 0;
+            background-color: #111;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .file-preview::after {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.05) 40%, rgba(10,10,18,0.85) 100%);
+        }
+        .preview-emoji {
+            font-size: 44px; position: relative; z-index: 2;
+            opacity: 0.5; pointer-events: none;
+        }
+
+        /* Type badge — top-left */
+        .file-type-badge {
+            position: absolute; top: 0; left: 0; z-index: 5;
+            background: var(--osu-pink); color: white;
+            padding: 4px 11px; border-radius: 0 0 10px 0;
+            font-weight: 900; font-size: 11px;
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .type-image { background: var(--accent-blue); }
+        .type-video { background: var(--osu-pink); }
+        .type-audio { background: #aa66ff; }
+        .type-text  { background: var(--accent-green); color: #111; }
+
+        /* Card body */
+        .card-body {
+            padding: 12px 14px 14px;
+            flex-grow: 1; display: flex; flex-direction: column; gap: 4px;
+        }
+        .card-title {
+            font-weight: 800; color: white; font-size: 14px; line-height: 1.3;
+            transition: color 0.15s;
+        }
+        .item-card:hover .card-title { color: var(--osu-pink); }
+
+        .card-desc {
+            font-size: 12px; color: var(--text-muted); line-height: 1.5;
+            flex-grow: 1;
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card-footer {
+            display: flex; justify-content: space-between; align-items: center;
+            padding-top: 10px; margin-top: 6px;
+            border-top: 1px solid rgba(255,255,255,0.07);
+            flex-wrap: wrap; gap: 6px;
+        }
+        .tag-row { display: flex; flex-wrap: wrap; gap: 4px; }
+        .tag {
+            background: rgba(255,102,170,0.1);
+            border: 1px solid rgba(255,102,170,0.15);
+            color: var(--osu-pink);
+            padding: 2px 7px; border-radius: 5px;
+            font-size: 10px; font-weight: 700;
+        }
+        .time-ago { color: #55556a; font-size: 11px; font-weight: 600; flex-shrink: 0; }
+
+        /* ─── EXPANDED VIDEO CARD ─── */
+        .item-card.expanded-video {
+            grid-column: 1 / -1;
+            flex-direction: row;
+            height: 380px;
+            cursor: default;
+            transform: none !important;
+            border-color: rgba(255,102,170,0.4);
+            box-shadow: 0 16px 48px rgba(0,0,0,0.6);
+        }
+        .video-container { width: 65%; height: 100%; background: #000; position: relative; flex-shrink: 0; }
+        .video-container iframe { width: 100%; height: 100%; border: none; }
+        .expanded-info {
+            flex: 1; padding: 22px; display: flex; flex-direction: column; gap: 10px;
+            border-left: 1px solid var(--panel-border); position: relative; overflow-y: auto;
+        }
+        .close-btn {
+            position: absolute; top: 14px; right: 14px;
+            background: rgba(255,255,255,0.07); color: white; border: none;
+            width: 28px; height: 28px; border-radius: 50%;
+            cursor: pointer; font-weight: 800; font-size: 13px;
+            display: flex; align-items: center; justify-content: center;
+            transition: all 0.2s;
+        }
+        .close-btn:hover { background: var(--osu-pink); transform: rotate(90deg); }
+        .expanded-title { font-size: 18px; font-weight: 900; color: white; padding-right: 30px; }
+        .expanded-desc { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+        .expanded-meta { margin-top: auto; display: flex; justify-content: space-between; align-items: center; }
+        .archive-id { color: var(--osu-pink); font-size: 12px; font-weight: 800; letter-spacing: 0.5px; }
+
+        /* ─── SCROLL PROGRESS ─── */
+        #progress-container {
+            position: fixed; bottom: 28px; right: 28px;
+            width: 56px; height: 56px; cursor: pointer;
+            display: none; align-items: center; justify-content: center;
+            z-index: 2000; transition: transform 0.2s, opacity 0.3s;
+        }
+        #progress-container:hover { transform: scale(1.1); }
+        .progress-svg { transform: rotate(-90deg); }
+        .progress-background { fill: rgba(22,22,30,0.95); stroke: rgba(255,255,255,0.1); stroke-width: 4; }
+        #progress-bar {
+            fill: none; stroke: var(--osu-pink); stroke-width: 4;
+            stroke-linecap: round; stroke-dasharray: 163.3; stroke-dashoffset: 163.3;
+            transition: stroke-dashoffset 0.1s linear;
+        }
+        .arrow-up { position: absolute; color: white; font-size: 16px; pointer-events: none; }
+
+        /* ─── FOOTER ─── */
+        footer {
+            background: var(--dark-deeper); color: #fff;
+            padding: 20px 16px 32px; text-align: center;
+            border-top: 1px solid rgba(255,102,170,0.2); margin-top: 10px;
+            position: relative; z-index: 1;
+        }
+        footer h3 { color: var(--osu-pink); margin: 0 0 6px; font-size: 18px; }
+        footer p  { margin: 0; font-size: 13px; color: #666; }
+        footer a  { color: var(--osu-pink); text-decoration: none; font-weight: 700; }
+        footer a:hover { text-decoration: underline; }
+        footer hr { border: 0; border-top: 1px solid #2a2a35; margin: 14px 0; }
+        .footer-links { margin: 10px 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .footer-meta { font-size: 12px; color: #555; line-height: 1.7; }
+        .footer-meta span { color: var(--osu-pink); font-family: monospace; }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 1024px) {
+            .archive-layout { flex-direction: column; }
+            .sidebar { width: 100%; position: static; }
+            .item-card.expanded-video { flex-direction: column; height: auto; }
+            .video-container { width: 100%; height: 260px; border-bottom: 1px solid var(--panel-border); }
+            .expanded-info { border-left: none; }
+        }
+        @media (max-width: 600px) {
+            .warning-body { flex-direction: column; gap: 14px; }
+            .warning-actions { flex-direction: row; width: 100%; }
+            .btn-learn, .btn-submit { flex: 1; justify-content: center; }
+            .toolbar { flex-direction: column; align-items: stretch; }
+            .search-input { width: 100%; }
+            .file-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="tri-canvas"></canvas>
+<audio id="hoverSound" src="pop.mp3" preload="auto"></audio>
+
+<header>
+    <div class="logo-box">
+        <a href="index.html">
+            <img src="https://i.imgur.com/Zgd9kDC.jpg" alt="osu! Iraq Today">
+            <span class="logo-text">osu! Iraq <span>Today</span></span>
+        </a>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn" id="menuBtn">Menu ▾</button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="Test.html"    class="nav-item">Scores<span class="menu-desc">See what happened today?</span></a>
+            <a href="rankings.html" class="nav-item">Rankings<span class="menu-desc">See player leaderboards</span></a>
+            <a href="videos.html"  class="nav-item">Videos<span class="menu-desc">Watch gameplay and highlights</span></a>
+            <a href="mapping.html" class="nav-item">Mapping<span class="menu-desc">Explore beatmap creations</span></a>
+            <a href="archive.html" class="nav-item active">Archive<span class="menu-desc">Explore community History</span></a>
+            <a href="socials.html" class="nav-item">Socials<span class="menu-desc">Connect with the community</span></a>
+        </div>
+    </div>
+</header>
+
+<div class="page-wrap">
+
+    <!-- ─── WARNING BANNER ─── -->
+    <div class="warning-banner">
+        <div class="hazard-stripe"></div>
+        <div class="warning-body">
+            <div class="warning-icon-wrap">⚠️</div>
+            <div class="warning-text">
+                <h3>User-Submitted Content</h3>
+                <p>
+                    All content in this archive is <strong>submitted by community members</strong> and does not necessarily represent the views of osu! Iraq Today.
+                    By submitting content, you confirm that you have the <strong>right and permission</strong> to share it.
+                    If you are the subject of any content and wish it removed, it will be <strong>taken down promptly</strong> upon request — no questions asked.
+                </p>
+            </div>
+            <div class="warning-actions">
+                <a href="OIT_Document.html" class="btn-learn">
+                    <svg width="13" height="13" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg>
+                    Learn More
+                </a>
+                <a href="submission.html" class="btn-submit">
+                    ＋ Submit Content
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ─── ARCHIVE LAYOUT ─── -->
+    <div class="archive-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section-label">Browse</div>
+
+            <div class="side-item active" onclick="loadCategory('all', event)">
+                <div class="side-item-left"><span class="side-icon">🗂️</span> All Files</div>
+            </div>
+
+            <div class="sidebar-divider"></div>
+
+            <div class="side-item" onclick="toggleMenu('imagesMenu', event)">
+                <div class="side-item-left"><span class="side-icon">🖼️</span> Images</div>
+                <span class="side-chevron">▶</span>
+            </div>
+            <div class="sub-menu" id="imagesMenu">
+                <div class="sub-item" onclick="loadSubCategory('images','ingame',event)">In-Game Screenshots</div>
+                <div class="sub-item" onclick="loadSubCategory('images','leaderboard',event)">Leaderboard Snaps</div>
+                <div class="sub-item" onclick="loadSubCategory('images','profile',event)">Player Profiles</div>
+                <div class="sub-item" onclick="loadSubCategory('images','memes',event)">Community Memes</div>
+                <div class="sub-item" onclick="loadSubCategory('images','history',event)">Historical Moments</div>
+            </div>
+
+            <div class="side-item" onclick="loadCategory('videos', event)">
+                <div class="side-item-left"><span class="side-icon">🎥</span> Videos</div>
+            </div>
+
+            <div class="side-item" onclick="loadCategory('voice', event)">
+                <div class="side-item-left"><span class="side-icon">🎙️</span> Voice Notes</div>
+            </div>
+
+            <div class="side-item" onclick="loadCategory('text', event)">
+                <div class="side-item-left"><span class="side-icon">📝</span> Text & Docs</div>
+            </div>
+        </aside>
+
+        <!-- Main content -->
+        <main class="main-content">
+            <div class="toolbar">
+                <div class="breadcrumbs" id="breadcrumbTrail"></div>
+                <div class="toolbar-right">
+                    <div class="result-count" id="resultCount"><span>0</span> items</div>
+                    <div class="search-wrap">
+                        <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
+                        </svg>
+                        <input type="text" id="searchInput" class="search-input"
+                               placeholder="Search files, #tags..." oninput="handleSearch()">
+                    </div>
+                </div>
+            </div>
+
+            <div class="file-grid" id="fileGrid"></div>
+        </main>
+    </div>
+</div>
+
+<div id="progress-container" onclick="scrollToTop()">
+    <svg class="progress-svg" width="56" height="56" viewBox="0 0 60 60">
+        <circle class="progress-background" cx="30" cy="30" r="26"></circle>
+        <circle id="progress-bar" cx="30" cy="30" r="26"></circle>
+    </svg>
+    <div class="arrow-up">▲</div>
+</div>
+
+<footer>
+    <div style="max-width:900px; margin:0 auto;">
+        <h3>osu! Iraq Today</h3>
+        <p>Built with ❤️ for the Iraqi osu! Community</p>
+        <hr>
+        <div class="footer-links">
+            <a href="https://github.com/Ruybic/Test">GitHub</a>
+            <a href="#discord">Discord</a>
+            <a href="OIT_Document.html">Documentation</a>
+        </div>
+        <hr>
+        <p class="footer-meta">
+            A <strong>non-commercial</strong> osu! community project | Data via <strong>osu! API v2</strong><br>
+            © 2026 Ruybic • Commit: <span id="footer-commit">7472e02</span><br>
+            Last Update: <span id="footer-time">2026-02-27 04:00 UTC</span>
+        </p>
+    </div>
+</footer>
+
+<script>
+// ─── MENU ───
+const menuBtn  = document.getElementById('menuBtn');
+const dropdown = document.getElementById('myDropdown');
+menuBtn.onclick = (e) => { dropdown.classList.toggle('show'); e.stopPropagation(); };
+window.onclick  = (e) => { if (!e.target.matches('.dropbtn')) dropdown.classList.remove('show'); };
+
+// ─── UTILITIES ───
+function timeAgo(ds) {
+    const d = new Date(ds), now = new Date();
+    const s = Math.floor((now - d) / 1000);
+    const h = Math.floor(s / 3600);
+    if (h > 48) return d.toLocaleDateString('en-US', { year:'numeric', month:'short', day:'numeric' });
+    if (h >= 1)  return h + 'h ago';
+    const m = Math.floor(s / 60);
+    return m >= 1 ? m + 'm ago' : 'Just now';
+}
+
+// ─── MOCK DATABASE (replace with Supabase fetch later) ───
+const database = [
+    { id:1, type:'images', sub:'profile',    title:'OIT Official Mascot',             desc:'High-res image of the channel mascot and sticker designs.',               tags:['mascot','art','sticker'],        date:'2026-03-20', img:'https://i.imgur.com/1YJfjH6.png' },
+    { id:2, type:'images', sub:'ingame',     title:'First 500pp in Iraq',             desc:'Historical screenshot of the first 500pp play by a top Iraqi player.',    tags:['milestone','500pp','gameplay'],   date:'2026-02-15', img:'https://assets.ppy.sh/beatmaps/1181822/covers/cover.jpg' },
+    { id:3, type:'images', sub:'ingame',     title:'Tournament Grand Finals Lobby',   desc:'Screenshot during the IQ Osu Cup tiebreaker match.',                      tags:['tournament','lobby','multi'],     date:'2025-11-10', img:'https://assets.ppy.sh/beatmaps/1181822/covers/cover.jpg' },
+    { id:4, type:'videos', sub:'none',       title:'OIT GitHub Actions Demo',         desc:'Screen recording of how the daily fetch script runs over Termux.',         tags:['dev','github','python'],          date:'2026-01-05', img:'https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg', videoUrl:'https://www.youtube.com/embed/dQw4w9WgXcQ' },
+    { id:5, type:'text',   sub:'none',       title:'Channel Moderation Logs 2025',    desc:'Archived text logs of all major channel milestones from 224 to 330 subs.', tags:['logs','history','telegram'],      date:'2026-03-10', img:'' },
+    { id:6, type:'voice',  sub:'none',       title:'Community Podcast #1',            desc:'Interview with top 10 Iraqi players discussing improvement strategies.',   tags:['podcast','interview'],            date:'2026-02-28', img:'' },
+    { id:7, type:'videos', sub:'none',       title:'Extremely Weeb Teaser',           desc:'Teaser trailer for the new mobile-optimized hosting platform.',            tags:['anime','trailer','dev'],          date:'2026-03-22', img:'https://assets.ppy.sh/beatmaps/1181822/covers/cover.jpg', videoUrl:'https://www.youtube.com/embed/dQw4w9WgXcQ' },
+    { id:8, type:'images', sub:'history',   title:'2019 Iraq Rank #1 Profile',        desc:'Screenshot of the first ever ranked player from Iraq on osu!',            tags:['history','rank1','legacy'],       date:'2019-06-01', img:'https://assets.ppy.sh/beatmaps/1181822/covers/cover.jpg' },
+    { id:9, type:'images', sub:'memes',     title:'Disconnecting at #1',              desc:'Classic community meme — getting kicked mid-tourney.',                     tags:['meme','dc','tourney'],            date:'2025-08-14', img:'' },
+];
+
+// ─── STATE ───
+let currentCategory  = 'all';
+let currentSub       = null;
+let searchTerm       = '';
+let expandedVideoId  = null;
+
+// ─── RENDER ───
+function updateBreadcrumbs() {
+    const bc = document.getElementById('breadcrumbTrail');
+    let html = `<span class="crumb" onclick="loadCategory('all',event)">All Files</span>`;
+    if (currentCategory !== 'all') {
+        const name = currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1);
+        if (currentSub) {
+            html += `<span class="crumb-sep">›</span>
+                     <span class="crumb" onclick="loadCategory('${currentCategory}',event)">${name}</span>
+                     <span class="crumb-sep">›</span>
+                     <span class="crumb-active">${currentSub.toUpperCase()}</span>`;
+        } else {
+            html += `<span class="crumb-sep">›</span><span class="crumb-active">${name}</span>`;
+        }
+    }
+    bc.innerHTML = html;
+}
+
+function renderFiles() {
+    const grid = document.getElementById('fileGrid');
+    grid.innerHTML = '';
+
+    let filtered = database.filter(item => {
+        let matchCat = true;
+        if (currentCategory !== 'all') {
+            matchCat = currentSub
+                ? (item.type === currentCategory && item.sub === currentSub)
+                : (item.type === currentCategory);
+        }
+        let matchSearch = true;
+        if (searchTerm) {
+            const q = searchTerm.toLowerCase();
+            matchSearch = item.title.toLowerCase().includes(q)
+                       || item.desc.toLowerCase().includes(q)
+                       || item.tags.some(t => t.toLowerCase().includes(q));
+        }
+        return matchCat && matchSearch;
+    });
+
+    document.getElementById('resultCount').innerHTML = `<span>${filtered.length}</span> items`;
+
+    if (!filtered.length) {
+        grid.innerHTML = `<div class="no-results">No entries found in this section.</div>`;
+        return;
+    }
+
+    filtered.forEach((file, i) => {
+        const card = document.createElement('div');
+
+        // ── Expanded video ──
+        if (file.id === expandedVideoId) {
+            card.className = 'item-card expanded-video';
+            const tagsHtml = file.tags.map(t => `<span class="tag">#${t}</span>`).join('');
+            card.innerHTML = `
+                <div class="video-container">
+                    <iframe src="${file.videoUrl}?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="expanded-info">
+                    <button class="close-btn" onclick="closeVideo(event)">✕</button>
+                    <div class="expanded-title">${file.title}</div>
+                    <div class="tag-row">${tagsHtml}</div>
+                    <div class="expanded-desc">${file.desc}</div>
+                    <div class="expanded-meta">
+                        <span class="archive-id">ARCHIVE #${file.id}</span>
+                        <span class="time-ago">${timeAgo(file.date)}</span>
+                    </div>
+                </div>`;
+
+        } else {
+            // ── Normal card ──
+            card.className = 'item-card';
+            card.style.animationDelay = Math.min(i * 0.04, 0.8) + 's';
+
+            if (file.type === 'videos') card.onclick = () => expandVideo(file.id);
+
+            // Type info
+            const typeMap = {
+                images: { label: '🖼️ IMAGE', cls: 'type-image', emoji: '🖼️' },
+                videos: { label: '▶ VIDEO',  cls: 'type-video', emoji: '▶' },
+                voice:  { label: '🎙️ AUDIO', cls: 'type-audio', emoji: '🔊' },
+                text:   { label: '📝 TEXT',  cls: 'type-text',  emoji: '📝' },
+            };
+            const t = typeMap[file.type] || typeMap.text;
+
+            const previewStyle = file.img
+                ? `background-image: url('${file.img}')`
+                : `background: #16161e`;
+            const previewEmoji = file.img ? '' : `<div class="preview-emoji">${t.emoji}</div>`;
+
+            const tagsHtml = file.tags.map(t => `<span class="tag">#${t}</span>`).join('');
+
+            card.innerHTML = `
+                <div class="file-preview" style="${previewStyle}">
+                    ${previewEmoji}
+                    <div class="file-type-badge ${t.cls}">${t.label}</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">${file.title}</div>
+                    <div class="card-desc">${file.desc}</div>
+                    <div class="card-footer">
+                        <div class="tag-row">${tagsHtml}</div>
+                        <div class="time-ago">${timeAgo(file.date)}</div>
+                    </div>
+                </div>`;
+        }
+
+        grid.appendChild(card);
+    });
+}
+
+// ─── NAVIGATION ───
+function updateSidebarActive(el) {
+    document.querySelectorAll('.side-item, .sub-item').forEach(e => e.classList.remove('active'));
+    if (el) {
+        el.classList.add('active');
+        const parentSub = el.closest('.sub-menu');
+        if (parentSub) parentSub.previousElementSibling.classList.add('active');
+    }
+}
+
+function loadCategory(cat, e) {
+    currentCategory  = cat;
+    currentSub       = null;
+    expandedVideoId  = null;
+    if (e) updateSidebarActive(e.currentTarget);
+    updateBreadcrumbs(); renderFiles();
+}
+
+function loadSubCategory(cat, sub, e) {
+    currentCategory  = cat;
+    currentSub       = sub;
+    expandedVideoId  = null;
+    e.stopPropagation();
+    updateSidebarActive(e.currentTarget);
+    updateBreadcrumbs(); renderFiles();
+}
+
+function toggleMenu(menuId, e) {
+    const menu   = document.getElementById(menuId);
+    const parent = menu.previousElementSibling;
+    const isOpen = menu.classList.contains('open');
+
+    // Close all
+    document.querySelectorAll('.sub-menu').forEach(m => m.classList.remove('open'));
+    document.querySelectorAll('.side-item').forEach(m => m.classList.remove('open'));
+
+    if (!isOpen) { menu.classList.add('open'); parent.classList.add('open'); }
+
+    loadCategory('images', e);
+}
+
+// ─── VIDEO EXPANSION ───
+function expandVideo(id) {
+    expandedVideoId = id;
+    renderFiles();
+    setTimeout(() => {
+        const g = document.getElementById('fileGrid');
+        window.scrollTo({ top: g.getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth' });
+    }, 50);
+}
+function closeVideo(e) {
+    e.stopPropagation();
+    expandedVideoId = null;
+    renderFiles();
+}
+
+function handleSearch() {
+    searchTerm = document.getElementById('searchInput').value;
+    expandedVideoId = null;
+    renderFiles();
+}
+
+// ─── SCROLL PROGRESS ───
+const progressEl  = document.getElementById('progress-container');
+const progressBar = document.getElementById('progress-bar');
+window.addEventListener('scroll', () => {
+    const top = document.documentElement.scrollTop;
+    const max = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    progressBar.style.strokeDashoffset = 163.3 * (1 - Math.min(top / max, 1));
+    progressEl.style.display = top > 150 ? 'flex' : 'none';
+    progressEl.style.opacity = top > 150 ? '1' : '0';
+});
+function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+
+// ─── FLOATING TRIANGLES ───
+(function() {
+    const canvas = document.getElementById('tri-canvas');
+    const ctx    = canvas.getContext('2d');
+    let W, H;
+    function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+    resize(); window.addEventListener('resize', resize);
+
+    function mkTri() {
+        return {
+            x: Math.random() * W, y: H + 60 + Math.random() * 200,
+            size: 18 + Math.random() * 48,
+            speed: 0.25 + Math.random() * 0.45,
+            rotSpeed: (Math.random() - 0.5) * 0.006,
+            angle: Math.random() * Math.PI * 2,
+            hue: Math.random() < 0.6 ? 330 + Math.random() * 20 : 270 + Math.random() * 30,
+            alpha: 0.04 + Math.random() * 0.10
+        };
+    }
+
+    const tris = Array.from({ length: 22 }, () => {
+        const t = mkTri(); t.y = Math.random() * (window.innerHeight + 400) - 200; return t;
+    });
+
+    (function animate() {
+        ctx.clearRect(0, 0, W, H);
+        const fz = H * 0.18;
+        tris.forEach((t, i) => {
+            t.y -= t.speed; t.angle += t.rotSpeed;
+            let op = t.alpha;
+            const risen = (H + 60) - t.y;
+            if (risen < 120) op *= risen / 120;
+            if (t.y < fz)   op *= t.y / fz;
+            if (op > 0.002) {
+                ctx.save(); ctx.translate(t.x, t.y); ctx.rotate(t.angle);
+                const s = t.size;
+                ctx.beginPath();
+                ctx.moveTo(0, -s*0.6); ctx.lineTo(s*0.52, s*0.38); ctx.lineTo(-s*0.52, s*0.38);
+                ctx.closePath();
+                ctx.strokeStyle = `hsla(${t.hue},80%,70%,${op})`; ctx.lineWidth = 1.2; ctx.stroke();
+                ctx.fillStyle   = `hsla(${t.hue},70%,60%,${op*0.18})`; ctx.fill();
+                ctx.restore();
+            }
+            if (t.y < -t.size * 2) tris[i] = mkTri();
+        });
+        requestAnimationFrame(animate);
+    })();
+})();
+
+// ─── INIT ───
+updateBreadcrumbs();
+renderFiles();
+</script>
+</body>
+</html>

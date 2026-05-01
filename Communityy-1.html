@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>osu! Iraq Today | Community Pulse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://i.imgur.com/Zgd9kDC.jpg">
+    <!-- Chart.js for the line graphs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+    <style>
+        :root {
+            --osu-pink: #ff66aa;
+            --osu-pink-dark: #cc4488;
+            --dark-base: #1a1a20;
+            --dark-deeper: #13131a;
+            --panel-bg: #272730;
+            --panel-border: rgba(255,255,255,0.07);
+            --text-main: #ffffff;
+            --text-muted: #8888a0;
+            --accent-gold: #ffd700;
+            --accent-green: #66ffbb;
+            --accent-red: #ff4466;
+            --accent-blue: #44aaff;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+
+        #tri-canvas {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 0;
+        }
+
+        body {
+            background-color: var(--dark-base);
+            color: var(--text-main);
+            font-family: 'Exo 2', sans-serif;
+            margin: 0; padding: 0; scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        header, .controls-bar, .dashboard-container, footer {
+            position: relative; z-index: 1;
+        }
+
+        /* ─── HEADER ─── */
+        header {
+            background: rgba(15,15,20,0.9);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            padding: 0 24px; display: flex; align-items: center; justify-content: space-between;
+            border-bottom: 1px solid rgba(255,102,170,0.15);
+            position: sticky; top: 0; z-index: 1000; height: 60px;
+        }
+        .logo-box a { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-box img { height: 34px; border-radius: 8px; display: block; }
+        .logo-text { color: #fff; font-weight: 800; font-size: 18px; white-space: nowrap; }
+        .logo-text span { color: var(--osu-pink); }
+        .logo-box a:hover .logo-text { color: var(--osu-pink); transition: color 0.2s; }
+
+        /* ─── DROPDOWN ─── */
+        .dropdown { position: relative; display: flex; align-items: center; }
+        .dropbtn {
+            background: rgba(255,255,255,0.06); color: white;
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 8px 18px; border-radius: 8px; cursor: pointer;
+            font-family: 'Exo 2'; font-weight: 700; font-size: 14px; transition: all 0.2s;
+        }
+        .dropbtn:hover { background: rgba(255,102,170,0.15); border-color: var(--osu-pink); color: var(--osu-pink); }
+        .dropdown-content {
+            visibility: hidden; opacity: 0; transform: translateY(8px) scale(0.97);
+            transition: opacity 0.2s ease, transform 0.25s cubic-bezier(0.2,0.8,0.2,1), visibility 0.2s;
+            position: absolute; right: 0; top: calc(100% + 12px); min-width: 270px; z-index: 2000;
+            background: rgba(20,20,28,0.97); backdrop-filter: blur(20px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,102,170,0.1);
+            border-radius: 14px; padding: 8px;
+        }
+        .dropdown-content.show { visibility: visible; opacity: 1; transform: translateY(0) scale(1); }
+        .menu-item {
+            position: relative; color: var(--text-muted); padding: 11px 14px;
+            text-decoration: none; display: block; font-size: 14px;
+            border-radius: 8px; transition: all 0.2s; margin-bottom: 2px; overflow: hidden;
+        }
+        .menu-item:last-child { margin-bottom: 0; }
+        .menu-item .menu-desc { display: block; font-size: 11px; color: #55556a; margin-top: 3px; transition: color 0.2s; }
+        .menu-item:hover { background: rgba(255,102,170,0.12); color: white; }
+        .menu-item.active { background: rgba(255,102,170,0.15); color: white; font-weight: 700; }
+        .menu-item::before {
+            content: ''; position: absolute; left: 0; top: 50%;
+            transform: translateY(-50%) scaleY(0);
+            width: 3px; height: 60%; background: var(--osu-pink);
+            border-radius: 0 3px 3px 0;
+            transition: transform 0.25s cubic-bezier(0.2,0.8,0.2,1);
+        }
+        .menu-item.active::before, .menu-item:hover::before { transform: translateY(-50%) scaleY(1); }
+        .menu-item:hover .menu-desc, .menu-item.active .menu-desc { color: rgba(255,102,170,0.7); }
+
+        /* ─── CONTROLS BAR ─── */
+        .controls-bar {
+            max-width: 1200px; margin: 24px auto 0; padding: 0 20px;
+            display: flex; justify-content: space-between; align-items: center;
+            position: relative; gap: 12px;
+        }
+        .section-label {
+            color: var(--osu-pink); font-weight: 800; font-size: 11px;
+            letter-spacing: 2.5px; text-transform: uppercase; margin: 0;
+        }
+        .date-btn {
+            background: transparent; border: 1.5px solid rgba(255,102,170,0.4);
+            color: var(--osu-pink); padding: 8px 18px; border-radius: 8px;
+            font-size: 13px; font-weight: 700; font-family: 'Exo 2';
+            cursor: pointer; display: flex; align-items: center; gap: 8px; transition: 0.2s;
+        }
+        .date-btn:hover { background: rgba(255,102,170,0.15); border-color: var(--osu-pink); }
+
+        /* ─── CALENDAR ─── */
+        .calendar-popup {
+            display: none; position: absolute; top: 50px; right: 20px; z-index: 999;
+            background: #22222c; border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px; width: 300px; padding: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+        }
+        .calendar-popup.open { display: block; }
+        .cal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+        .cal-month { font-weight: 800; color: white; }
+        .cal-nav { cursor: pointer; color: var(--text-muted); padding: 6px 10px; border-radius: 6px; transition: 0.2s; }
+        .cal-nav:hover { color: var(--osu-pink); background: rgba(255,102,170,0.1); }
+        .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center; }
+        .cal-day-label { font-size: 10px; color: var(--text-muted); padding-bottom: 6px; font-weight: 700; }
+        .cal-day { padding: 7px 4px; font-size: 12px; cursor: pointer; border-radius: 6px; color: #ccc; font-weight: 600; transition: 0.15s; }
+        .cal-day:hover { background: rgba(255,102,170,0.15); color: white; }
+        .cal-day.active { background: rgba(255,102,170,0.2); border: 1px solid var(--osu-pink); color: white; font-weight: 800; }
+        .cal-day.selected { background: var(--osu-pink); color: white; font-weight: 800; }
+        .cal-day.empty, .cal-day.no-data { pointer-events: none; opacity: 0.25; }
+
+        /* ─── DASHBOARD ─── */
+        .dashboard-container {
+            max-width: 1200px; margin: 20px auto 40px; padding: 0 20px;
+        }
+
+        .pulse-header {
+            display: flex; align-items: baseline; gap: 12px; margin-bottom: 28px; flex-wrap: wrap;
+        }
+        .pulse-title {
+            font-size: 26px; font-weight: 900; color: white; margin: 0; line-height: 1;
+        }
+        .pulse-date {
+            font-size: 13px; color: var(--text-muted); font-weight: 700;
+        }
+        .pulse-date strong { color: var(--osu-pink); }
+
+        /* ─── STAT ROW (top KPI tiles) ─── */
+        .stat-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+        .stat-tile {
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 14px;
+            padding: 18px 20px;
+            display: flex; flex-direction: column; gap: 6px;
+            position: relative; overflow: hidden;
+            transition: border-color 0.2s;
+        }
+        .stat-tile:hover { border-color: rgba(255,102,170,0.3); }
+        .stat-tile-label {
+            font-size: 10px; font-weight: 800; color: var(--text-muted);
+            text-transform: uppercase; letter-spacing: 1.2px;
+        }
+        .stat-tile-value {
+            font-size: 32px; font-weight: 900; line-height: 1;
+            color: white;
+        }
+        .stat-tile-value.pink  { color: var(--osu-pink); }
+        .stat-tile-value.gold  { color: var(--accent-gold); }
+        .stat-tile-value.green { color: var(--accent-green); }
+        .stat-tile-value.blue  { color: var(--accent-blue); }
+        .stat-tile-sub {
+            font-size: 11px; color: var(--text-muted); font-weight: 600; margin-top: 2px;
+        }
+        /* Tiny glow accent bar at bottom of tile */
+        .stat-tile::after {
+            content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+            height: 2px; background: var(--osu-pink); opacity: 0.25;
+            border-radius: 0 0 14px 14px;
+        }
+        .stat-tile.gold-tile::after  { background: var(--accent-gold); }
+        .stat-tile.green-tile::after { background: var(--accent-green); }
+        .stat-tile.blue-tile::after  { background: var(--accent-blue); }
+
+        /* ─── INSIGHT GRID ─── */
+        .insights-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        .insight-card {
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 14px;
+            padding: 20px 22px;
+            display: flex; flex-direction: column; gap: 14px;
+            transition: border-color 0.2s;
+        }
+        .insight-card:hover { border-color: rgba(255,102,170,0.25); }
+        .insight-card.full-width { grid-column: 1 / -1; }
+
+        .card-label {
+            font-size: 10px; font-weight: 800; color: var(--text-muted);
+            text-transform: uppercase; letter-spacing: 1.5px;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .card-label-dot {
+            width: 6px; height: 6px; border-radius: 50%;
+            background: var(--osu-pink); flex-shrink: 0;
+        }
+        .card-label-dot.gold  { background: var(--accent-gold); }
+        .card-label-dot.green { background: var(--accent-green); }
+        .card-label-dot.blue  { background: var(--accent-blue); }
+
+        /* ─── CHART AREA ─── */
+        .chart-wrap {
+            position: relative; width: 100%; height: 180px;
+        }
+        .chart-wrap canvas { width: 100% !important; height: 100% !important; }
+
+        /* ─── STREAK CARD ─── */
+        .streak-nums {
+            display: flex; gap: 24px; align-items: flex-end;
+        }
+        .streak-big {
+            font-size: 52px; font-weight: 900; color: var(--osu-pink); line-height: 1;
+        }
+        .streak-side { display: flex; flex-direction: column; gap: 4px; padding-bottom: 8px; }
+        .streak-side-val { font-size: 18px; font-weight: 800; color: white; }
+        .streak-side-lbl { font-size: 10px; color: var(--text-muted); font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; }
+
+        /* Progress bar */
+        .prog-track { width: 100%; height: 6px; background: rgba(255,255,255,0.07); border-radius: 3px; overflow: hidden; }
+        .prog-fill   { height: 100%; border-radius: 3px; transition: width 1s ease-out; background: var(--osu-pink); box-shadow: 0 0 8px rgba(255,102,170,0.5); }
+        .prog-label  { font-size: 11px; color: var(--text-muted); font-weight: 700; text-align: right; margin-top: 6px; }
+
+        /* ─── PEAK HOUR ─── */
+        .peak-time {
+            font-size: 48px; font-weight: 900; color: white; line-height: 1;
+            letter-spacing: -1px;
+        }
+        .peak-badge {
+            display: inline-flex; align-items: center; gap: 6px;
+            background: rgba(102,255,187,0.1);
+            border: 1px solid rgba(102,255,187,0.2);
+            color: var(--accent-green);
+            font-size: 12px; font-weight: 800;
+            padding: 5px 12px; border-radius: 8px;
+        }
+
+        /* ─── MAP BATTLEGROUND ─── */
+        .map-preview {
+            position: relative; border-radius: 10px; height: 110px;
+            background-size: cover; background-position: center;
+            overflow: hidden;
+            background-color: #111;
+            display: flex; flex-direction: column; justify-content: flex-end;
+        }
+        .map-preview::after {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.2) 100%);
+        }
+        .map-preview-text { position: relative; z-index: 2; padding: 10px 12px; }
+        .map-preview-title {
+            font-size: 14px; font-weight: 800; color: white;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+        .map-preview-sub {
+            font-size: 11px; font-weight: 700; color: var(--accent-gold); margin-top: 2px;
+        }
+
+        /* ─── TOP GRINDER ─── */
+        .grinder-row {
+            display: flex; align-items: center; gap: 14px;
+        }
+        .grinder-avatar {
+            width: 56px; height: 56px; border-radius: 12px;
+            border: 2px solid var(--accent-gold);
+            box-shadow: 0 0 14px rgba(255,215,0,0.25);
+            flex-shrink: 0;
+        }
+        .grinder-name { font-size: 20px; font-weight: 900; color: white; }
+        .grinder-sub  { font-size: 12px; color: var(--accent-gold); font-weight: 700; margin-top: 2px; }
+
+        .toggle-btn {
+            background: rgba(255,255,255,0.05); color: var(--text-muted);
+            border: 1px solid var(--panel-border);
+            padding: 8px 14px; border-radius: 8px; cursor: pointer;
+            font-family: 'Exo 2'; font-weight: 700; font-size: 12px;
+            transition: all 0.2s; text-align: left; width: 100%;
+        }
+        .toggle-btn:hover { background: rgba(255,102,170,0.1); border-color: var(--osu-pink); color: white; }
+
+        .grinder-scores-list {
+            max-height: 0; overflow: hidden;
+            transition: max-height 0.35s cubic-bezier(0.2,0.8,0.2,1);
+        }
+        .grinder-scores-list.open { max-height: 450px; overflow-y: auto; }
+        .grinder-scores-list::-webkit-scrollbar { width: 4px; }
+        .grinder-scores-list::-webkit-scrollbar-thumb { background: #3a3a4a; border-radius: 4px; }
+
+        .mini-card {
+            display: flex; align-items: center; gap: 10px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--panel-border);
+            margin-bottom: 6px; padding: 8px 12px;
+            border-radius: 8px; text-decoration: none;
+            transition: all 0.18s;
+        }
+        .mini-card:last-child { margin-bottom: 0; }
+        .mini-card:hover { border-color: rgba(255,102,170,0.4); transform: translateX(4px); background: rgba(255,102,170,0.05); }
+
+        .mini-cover {
+            width: 38px; height: 38px; border-radius: 6px;
+            object-fit: cover; flex-shrink: 0;
+            background: #111;
+        }
+        .mini-rank { font-weight: 900; font-size: 15px; width: 22px; text-align: center; flex-shrink: 0; }
+        .mini-details { flex: 1; min-width: 0; }
+        .mini-title { color: white; font-size: 11px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
+        .mini-meta  { color: var(--text-muted); font-size: 10px; font-weight: 600; display: flex; gap: 8px; margin-top: 2px; }
+        .mini-pp    { color: var(--osu-pink); font-weight: 800; }
+        .mini-acc   { color: var(--accent-green); }
+        .mini-combo { color: var(--accent-blue); }
+
+        /* Rank colors */
+        .r-SS, .r-SSH { color: #f8f8ff; text-shadow: 0 0 6px rgba(255,255,255,0.7); }
+        .r-S,  .r-SH  { color: #ffcc22; }
+        .r-A { color: #88ee00; }
+        .r-B { color: #33bbff; }
+        .r-C { color: #ff88ff; }
+        .r-D { color: var(--accent-red); }
+
+        /* ─── SCROLL PROGRESS ─── */
+        #progress-container {
+            position: fixed; bottom: 28px; right: 28px;
+            width: 56px; height: 56px; cursor: pointer;
+            display: none; align-items: center; justify-content: center;
+            z-index: 2000; transition: transform 0.2s, opacity 0.3s;
+        }
+        #progress-container:hover { transform: scale(1.1); }
+        .progress-svg { transform: rotate(-90deg); }
+        .progress-background { fill: rgba(22,22,30,0.95); stroke: rgba(255,255,255,0.1); stroke-width: 4; }
+        #progress-bar {
+            fill: none; stroke: var(--osu-pink); stroke-width: 4;
+            stroke-linecap: round; stroke-dasharray: 163.3; stroke-dashoffset: 163.3;
+            transition: stroke-dashoffset 0.1s linear;
+        }
+        .arrow-up { position: absolute; color: white; font-size: 16px; pointer-events: none; }
+
+        /* ─── FOOTER ─── */
+        footer {
+            background: var(--dark-deeper); color: #fff;
+            padding: 20px 16px 32px; text-align: center;
+            border-top: 1px solid rgba(255,102,170,0.2); margin-top: 10px;
+            position: relative; z-index: 1;
+        }
+        footer h3 { color: var(--osu-pink); margin: 0 0 6px; font-size: 18px; }
+        footer p  { margin: 0; font-size: 13px; color: #666; }
+        footer a  { color: var(--osu-pink); text-decoration: none; font-weight: 700; }
+        footer a:hover { text-decoration: underline; }
+        footer hr { border: 0; border-top: 1px solid #2a2a35; margin: 14px 0; }
+        .footer-links { margin: 10px 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .footer-meta { font-size: 12px; color: #555; line-height: 1.7; }
+        .footer-meta span { color: var(--osu-pink); font-family: monospace; }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 900px) {
+            .stat-row { grid-template-columns: repeat(2, 1fr); }
+            .insights-grid { grid-template-columns: 1fr; }
+            .insight-card.full-width { grid-column: auto; }
+        }
+        @media (max-width: 520px) {
+            .stat-row { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+            .stat-tile-value { font-size: 24px; }
+            .streak-big { font-size: 38px; }
+            .peak-time { font-size: 36px; }
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="tri-canvas"></canvas>
+
+<header>
+    <div class="logo-box">
+        <a href="index.html">
+            <img src="https://i.imgur.com/Zgd9kDC.jpg" alt="osu! Iraq Today">
+            <span class="logo-text">osu! Iraq <span>Today</span></span>
+        </a>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn" id="menuBtn">Menu ▾</button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="Test.html"       class="menu-item">Scores<span class="menu-desc">See what happened today?</span></a>
+            <a href="rankings.html"   class="menu-item">Rankings<span class="menu-desc">See player leaderboards</span></a>
+            <a href="videos.html"     class="menu-item">Videos<span class="menu-desc">Watch gameplay and highlights</span></a>
+            <a href="mapping.html"    class="menu-item">Mapping<span class="menu-desc">Explore beatmap creations</span></a>
+            <a href="archive.html"    class="menu-item">Archive<span class="menu-desc">Explore community History</span></a>
+            <a href="socials.html"    class="menu-item">Socials<span class="menu-desc">Connect with the community</span></a>
+            <a href="Communityy.html" class="menu-item active">Community<span class="menu-desc">Daily pulse & insights</span></a>
+        </div>
+    </div>
+</header>
+
+<!-- Controls -->
+<div class="controls-bar">
+    <span class="section-label" id="currentDateLabel">COMMUNITY PULSE</span>
+    <button class="date-btn" id="calendarBtn">📅 SELECT DATE</button>
+    <div class="calendar-popup" id="calendarPopup">
+        <div class="cal-header">
+            <span class="cal-nav" onclick="changeMonth(-1)">&#9664;</span>
+            <span class="cal-month" id="calMonthYear"></span>
+            <span class="cal-nav" onclick="changeMonth(1)">&#9654;</span>
+        </div>
+        <div class="cal-grid" id="calGrid"></div>
+    </div>
+</div>
+
+<!-- Dashboard -->
+<div class="dashboard-container">
+
+    <div class="pulse-header">
+        <h1 class="pulse-title">Community Daily Pulse</h1>
+        <span class="pulse-date" id="pulse-date">Loading insights...</span>
+    </div>
+
+    <!-- ── KPI TILES ── -->
+    <div class="stat-row">
+        <div class="stat-tile">
+            <div class="stat-tile-label">🔥 Streak</div>
+            <div class="stat-tile-value pink" id="kpi-streak">—</div>
+            <div class="stat-tile-sub">Longest: <span id="kpi-longest">—</span> days</div>
+        </div>
+        <div class="stat-tile gold-tile">
+            <div class="stat-tile-label">📊 Scores Today</div>
+            <div class="stat-tile-value gold" id="kpi-scores">—</div>
+            <div class="stat-tile-sub">Daily goal: 50+</div>
+        </div>
+        <div class="stat-tile green-tile">
+            <div class="stat-tile-label">⏰ Peak Hour</div>
+            <div class="stat-tile-value green" id="kpi-peak">—</div>
+            <div class="stat-tile-sub">Baghdad Time (AST)</div>
+        </div>
+        <div class="stat-tile blue-tile">
+            <div class="stat-tile-label">👑 Top Grinder</div>
+            <div class="stat-tile-value blue" id="kpi-grinder" style="font-size:20px; padding-top:6px;">—</div>
+            <div class="stat-tile-sub" id="kpi-grinder-sub">— submissions</div>
+        </div>
+    </div>
+
+    <!-- ── MAIN INSIGHT CARDS ── -->
+    <div class="insights-grid">
+
+        <!-- Scores trend chart -->
+        <div class="insight-card full-width">
+            <div class="card-label">
+                <div class="card-label-dot gold"></div>
+                Scores Activity — Last 30 Days
+            </div>
+            <div class="chart-wrap">
+                <canvas id="chartScores"></canvas>
+            </div>
+        </div>
+
+        <!-- Streak + Progress -->
+        <div class="insight-card">
+            <div class="card-label">
+                <div class="card-label-dot"></div>
+                Daily Activity Streak
+            </div>
+            <div class="streak-nums">
+                <div class="streak-big" id="s-current">0</div>
+                <div class="streak-side">
+                    <div class="streak-side-val" id="s-longest">0</div>
+                    <div class="streak-side-lbl">Longest</div>
+                </div>
+            </div>
+            <div>
+                <div class="prog-track"><div class="prog-fill" id="s-bar" style="width:0%"></div></div>
+                <div class="prog-label" id="s-label">0 / 50 Scores</div>
+            </div>
+        </div>
+
+        <!-- Peak Hour -->
+        <div class="insight-card">
+            <div class="card-label">
+                <div class="card-label-dot green"></div>
+                Peak Active Hour
+            </div>
+            <div class="peak-time" id="p-time">--:--</div>
+            <div class="peak-badge" id="p-badge">🔥 Peak window</div>
+            <div class="chart-wrap" style="height:120px;">
+                <canvas id="chartPeak"></canvas>
+            </div>
+        </div>
+
+        <!-- Today's Battleground -->
+        <div class="insight-card">
+            <div class="card-label">
+                <div class="card-label-dot blue"></div>
+                Today's Battleground
+            </div>
+            <p style="font-size:12px; color:var(--text-muted); margin:0;">Map with the most unique Iraqi players today.</p>
+            <div class="map-preview" id="m-bg">
+                <div class="map-preview-text">
+                    <div class="map-preview-title" id="m-title">Loading...</div>
+                    <div class="map-preview-sub"   id="m-players">—</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Peak Hour Trend -->
+        <div class="insight-card">
+            <div class="card-label">
+                <div class="card-label-dot blue"></div>
+                Peak Hour Trend — Last 30 Days
+            </div>
+            <div class="chart-wrap">
+                <canvas id="chartPeakTrend"></canvas>
+            </div>
+        </div>
+
+        <!-- Top Grinder -->
+        <div class="insight-card full-width">
+            <div class="card-label">
+                <div class="card-label-dot gold"></div>
+                👑 Grinder of the Day
+            </div>
+            <div id="grinder-content" style="display:none; display:flex; flex-direction:column; gap:14px;">
+                <div class="grinder-row">
+                    <img src="" class="grinder-avatar" id="g-avatar" alt="avatar"
+                         onerror="this.src='https://osu.ppy.sh/images/layout/avatar-guest.png'">
+                    <div>
+                        <div class="grinder-name" id="g-name">—</div>
+                        <div class="grinder-sub"  id="g-count">0 submissions</div>
+                    </div>
+                </div>
+                <button class="toggle-btn" id="toggleBtn" onclick="toggleScores()">
+                    Show Top Scores ▾
+                </button>
+                <div class="grinder-scores-list" id="g-scores-list"></div>
+            </div>
+            <div id="grinder-empty" style="color:var(--text-muted); font-size:14px; font-weight:600;">
+                No scores recorded for this date.
+            </div>
+        </div>
+
+    </div><!-- /insights-grid -->
+</div><!-- /dashboard-container -->
+
+<div id="progress-container" onclick="scrollToTop()">
+    <svg class="progress-svg" width="56" height="56" viewBox="0 0 60 60">
+        <circle class="progress-background" cx="30" cy="30" r="26"></circle>
+        <circle id="progress-bar" cx="30" cy="30" r="26"></circle>
+    </svg>
+    <div class="arrow-up">▲</div>
+</div>
+
+<footer>
+    <div style="max-width:900px; margin:0 auto;">
+        <h3>osu! Iraq Today</h3>
+        <p>Built with ❤️ for the Iraqi osu! Community</p>
+        <hr>
+        <div class="footer-links">
+            <a href="https://github.com/Ruybic/Test">GitHub</a>
+            <a href="#discord">Discord</a>
+            <a href="OIT_Document.html">Documentation</a>
+        </div>
+        <hr>
+        <p class="footer-meta">
+            A <strong>non-commercial</strong> osu! community project | Data via <strong>osu! API v2</strong><br>
+            © 2026 Ruybic • Commit: <span>7472e02</span>
+        </p>
+    </div>
+</footer>
+
+<script>
+// ─── GLOBALS ───
+let globalInsights = { daily_stats: {}, community_streak: { current: 0, longest: 0 } };
+let currentCalDate = new Date();
+let chartScores, chartPeak, chartPeakTrend;
+
+// ─── MENU ───
+const menuBtn  = document.getElementById('menuBtn');
+const dropdown = document.getElementById('myDropdown');
+menuBtn.onclick = (e) => { dropdown.classList.toggle('show'); e.stopPropagation(); };
+window.onclick = (e) => {
+    if (!e.target.matches('.dropbtn')) dropdown.classList.remove('show');
+    if (!e.target.closest('#calendarPopup') && !e.target.closest('#calendarBtn')) {
+        document.getElementById('calendarPopup').classList.remove('open');
+    }
+};
+document.getElementById('calendarBtn').onclick = (e) => {
+    e.stopPropagation();
+    document.getElementById('calendarPopup').classList.toggle('open');
+    renderCalendar(currentCalDate);
+};
+
+// ─── UTILITIES ───
+function formatAMPM(h) {
+    if (h === undefined || h === null || isNaN(h)) return '--:--';
+    const suf = h >= 12 ? 'PM' : 'AM';
+    return `${h % 12 || 12}:00 ${suf}`;
+}
+
+// ─── CHART DEFAULTS ───
+const CHART_DEFAULTS = {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: {
+        backgroundColor: 'rgba(20,20,28,0.95)',
+        titleColor: '#fff', bodyColor: '#aaa',
+        titleFont: { family: 'Exo 2', weight: '800', size: 12 },
+        bodyFont: { family: 'Exo 2', size: 11 },
+        borderColor: 'rgba(255,102,170,0.3)', borderWidth: 1,
+        padding: 10, cornerRadius: 8,
+    }},
+    scales: {
+        x: {
+            grid: { color: 'rgba(255,255,255,0.04)', drawBorder: false },
+            ticks: { color: '#8888a0', font: { family: 'Exo 2', size: 10, weight: '700' }, maxRotation: 0 }
+        },
+        y: {
+            grid: { color: 'rgba(255,255,255,0.04)', drawBorder: false },
+            ticks: { color: '#8888a0', font: { family: 'Exo 2', size: 10, weight: '700' } },
+            beginAtZero: true
+        }
+    }
+};
+
+function makeGradient(ctx, color) {
+    const g = ctx.createLinearGradient(0, 0, 0, 180);
+    g.addColorStop(0, color.replace('1)', '0.35)'));
+    g.addColorStop(1, color.replace('1)', '0.0)'));
+    return g;
+}
+
+// ─── BUILD CHARTS ───
+function buildCharts(sortedDates) {
+    const last30 = sortedDates.slice(-30);
+    const labels = last30.map(d => d.slice(5)); // MM-DD
+
+    // Scores trend
+    const scoresData = last30.map(d => globalInsights.daily_stats[d]?.total_scores || 0);
+    if (chartScores) chartScores.destroy();
+    const ctxS = document.getElementById('chartScores').getContext('2d');
+    chartScores = new Chart(ctxS, {
+        type: 'line',
+        data: {
+            labels,
+            datasets: [{
+                data: scoresData,
+                borderColor: '#ffd700',
+                borderWidth: 2,
+                pointBackgroundColor: '#ffd700',
+                pointRadius: 3,
+                pointHoverRadius: 6,
+                tension: 0.4,
+                fill: true,
+                backgroundColor: makeGradient(ctxS, 'rgba(255,215,0,1)')
+            }]
+        },
+        options: { ...CHART_DEFAULTS,
+            plugins: { ...CHART_DEFAULTS.plugins,
+                tooltip: { ...CHART_DEFAULTS.plugins.tooltip,
+                    callbacks: { label: ctx => ` ${ctx.parsed.y} scores` }
+                }
+            }
+        }
+    });
+
+    // Peak hour trend
+    const peakData = last30.map(d => globalInsights.daily_stats[d]?.peak_hour_baghdad ?? null);
+    if (chartPeakTrend) chartPeakTrend.destroy();
+    const ctxP = document.getElementById('chartPeakTrend').getContext('2d');
+    chartPeakTrend = new Chart(ctxP, {
+        type: 'line',
+        data: {
+            labels,
+            datasets: [{
+                data: peakData,
+                borderColor: '#44aaff',
+                borderWidth: 2,
+                pointBackgroundColor: '#44aaff',
+                pointRadius: 3,
+                pointHoverRadius: 6,
+                tension: 0.4,
+                fill: true,
+                backgroundColor: makeGradient(ctxP, 'rgba(68,170,255,1)'),
+                spanGaps: true
+            }]
+        },
+        options: { ...CHART_DEFAULTS,
+            scales: { ...CHART_DEFAULTS.scales,
+                y: { ...CHART_DEFAULTS.scales.y, min: 0, max: 23,
+                     ticks: { ...CHART_DEFAULTS.scales.y.ticks,
+                         callback: v => `${v % 12 || 12}${v >= 12 ? 'PM' : 'AM'}`,
+                         stepSize: 6
+                     }
+                }
+            },
+            plugins: { ...CHART_DEFAULTS.plugins,
+                tooltip: { ...CHART_DEFAULTS.plugins.tooltip,
+                    callbacks: { label: ctx => ` ${formatAMPM(ctx.parsed.y)}` }
+                }
+            }
+        }
+    });
+}
+
+// ─── DAY-SPECIFIC MINI CHART (hourly-ish gauge) ───
+function buildDayPeakChart(peakHour) {
+    if (chartPeak) chartPeak.destroy();
+    if (peakHour === null || peakHour === undefined) return;
+
+    // Create a 24-point dataset that peaks at the peak hour using a bell-shaped curve
+    const hours = Array.from({ length: 24 }, (_, i) => i);
+    const vals  = hours.map(h => {
+        const dist = Math.min(Math.abs(h - peakHour), 24 - Math.abs(h - peakHour));
+        return Math.max(0, Math.round(100 * Math.exp(-0.5 * (dist / 3) ** 2)));
+    });
+
+    const ctxD = document.getElementById('chartPeak').getContext('2d');
+    chartPeak = new Chart(ctxD, {
+        type: 'line',
+        data: {
+            labels: hours.map(h => h % 6 === 0 ? `${h}:00` : ''),
+            datasets: [{
+                data: vals,
+                borderColor: '#66ffbb',
+                borderWidth: 2,
+                pointRadius: 0,
+                tension: 0.5,
+                fill: true,
+                backgroundColor: makeGradient(ctxD, 'rgba(102,255,187,1)')
+            }]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { display: false }, tooltip: { enabled: false } },
+            scales: {
+                x: { grid: { display: false }, ticks: { color: '#8888a0', font: { family: 'Exo 2', size: 9 } } },
+                y: { display: false, beginAtZero: true }
+            }
+        }
+    });
+}
+
+// ─── RENDER UI ───
+function renderUI(stats, streak, dateKey) {
+    const total = stats.total_scores || 0;
+    const peak  = stats.peak_hour_baghdad;
+
+    // KPI tiles
+    document.getElementById('kpi-streak').innerText  = streak.current ?? '—';
+    document.getElementById('kpi-longest').innerText = streak.longest ?? '—';
+    document.getElementById('kpi-scores').innerText  = total;
+    document.getElementById('kpi-peak').innerText    = formatAMPM(peak);
+
+    // Streak card
+    document.getElementById('s-current').innerText = streak.current ?? 0;
+    document.getElementById('s-longest').innerText = streak.longest ?? 0;
+    const pct = Math.min(100, (total / 50) * 100);
+    setTimeout(() => {
+        const bar = document.getElementById('s-bar');
+        bar.style.width = pct + '%';
+        bar.style.background = pct >= 100 ? 'var(--accent-gold)' : 'var(--osu-pink)';
+    }, 100);
+    document.getElementById('s-label').innerText = `${total} / 50 Scores recorded`;
+
+    // Peak hour
+    document.getElementById('p-time').innerText  = formatAMPM(peak);
+    document.getElementById('p-badge').innerHTML = `🔥 Peak activity window`;
+    buildDayPeakChart(peak);
+
+    // Map battleground
+    if (stats.most_played_map) {
+        document.getElementById('m-bg').style.backgroundImage = `url('${stats.most_played_map.cover}')`;
+        document.getElementById('m-title').innerText   = stats.most_played_map.title;
+        document.getElementById('m-players').innerText = `👥 ${stats.most_played_map.unique_players} unique players`;
+    } else {
+        document.getElementById('m-bg').style.backgroundImage = 'none';
+        document.getElementById('m-title').innerText   = 'No maps recorded';
+        document.getElementById('m-players').innerText = '—';
+    }
+
+    // Top grinder
+    const gc = document.getElementById('grinder-content');
+    const ge = document.getElementById('grinder-empty');
+    const g  = stats.top_grinder;
+
+    if (g && g.scores && g.scores.length > 0) {
+        ge.style.display = 'none';
+        gc.style.display = 'flex';
+
+        document.getElementById('g-avatar').src = `https://a.ppy.sh/${g.user_id}`;
+        document.getElementById('g-name').innerText  = g.user;
+        document.getElementById('g-count').innerText = `${g.count} submissions`;
+
+        // KPI tile
+        document.getElementById('kpi-grinder').innerText     = g.user;
+        document.getElementById('kpi-grinder-sub').innerText = `${g.count} submissions`;
+
+        const list = document.getElementById('g-scores-list');
+        list.innerHTML = '';
+        // Sort by PP descending
+        [...g.scores].sort((a, b) => (b.pp || 0) - (a.pp || 0)).forEach(score => {
+            const bs     = score.beatmapset || {};
+            const cover  = bs.cover || '';
+            const title  = bs.title || 'Unknown Map';
+            const pp     = score.pp  ? Math.round(score.pp) + 'pp' : '—';
+            const acc    = score.accuracy ? (score.accuracy * 100).toFixed(2) + '%' : '—';
+            const combo  = score.combo !== undefined ? score.combo + 'x' : '';
+            const mods   = (score.mods || []).length ? score.mods.join('') : 'NM';
+            const sid    = score.score_id || score.id || '';
+
+            list.innerHTML += `
+                <a href="https://osu.ppy.sh/scores/osu/${sid}" target="_blank" class="mini-card">
+                    ${cover ? `<img src="${cover}" class="mini-cover" alt="">` : ''}
+                    <div class="mini-rank r-${score.rank}">${score.rank}</div>
+                    <div class="mini-details">
+                        <span class="mini-title">${title}</span>
+                        <span class="mini-meta">
+                            <span class="mini-pp">${pp}</span>
+                            <span class="mini-acc">${acc}</span>
+                            ${combo ? `<span class="mini-combo">${combo}</span>` : ''}
+                            <span style="color:#55556a">${mods}</span>
+                        </span>
+                    </div>
+                </a>`;
+        });
+    } else {
+        gc.style.display = 'none';
+        ge.style.display = 'block';
+    }
+}
+
+function clearUI() {
+    ['kpi-streak','kpi-scores','kpi-peak','s-current','s-longest'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.innerText = '—';
+    });
+    document.getElementById('s-bar').style.width = '0%';
+    document.getElementById('s-label').innerText = '0 / 50 Scores';
+    document.getElementById('p-time').innerText  = '--:--';
+    document.getElementById('m-bg').style.backgroundImage = 'none';
+    document.getElementById('m-title').innerText   = 'No data';
+    document.getElementById('m-players').innerText = '—';
+    document.getElementById('grinder-content').style.display = 'none';
+    document.getElementById('grinder-empty').style.display   = 'block';
+    if (chartPeak) chartPeak.destroy();
+}
+
+// ─── CALENDAR ───
+const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+function renderCalendar(date) {
+    const m = date.getMonth(), y = date.getFullYear();
+    document.getElementById('calMonthYear').innerText = `${MONTHS[m]} ${y}`;
+    const first = new Date(y, m, 1).getDay();
+    const days  = new Date(y, m + 1, 0).getDate();
+    const grid  = document.getElementById('calGrid');
+    grid.innerHTML = ['Su','Mo','Tu','We','Th','Fr','Sa'].map(d => `<div class="cal-day-label">${d}</div>`).join('');
+    for (let i = 0; i < first; i++) grid.innerHTML += `<div class="cal-day empty"></div>`;
+    for (let d = 1; d <= days; d++) {
+        const key = `${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+        const has = !!globalInsights.daily_stats[key];
+        grid.innerHTML += `<div class="cal-day${has ? ' active' : ' no-data'}" onclick="selectDay(${y},${m+1},${d})">${d}</div>`;
+    }
+}
+
+function changeMonth(delta) {
+    currentCalDate.setMonth(currentCalDate.getMonth() + delta);
+    renderCalendar(currentCalDate);
+}
+
+function selectDay(year, month, day) {
+    const key = `${year}-${String(month).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+    document.getElementById('calendarPopup').classList.remove('open');
+    const label = new Date(year, month-1, day).toLocaleDateString('en-US', { weekday:'long', year:'numeric', month:'long', day:'numeric' });
+    document.getElementById('currentDateLabel').innerText = label.toUpperCase();
+    document.getElementById('pulse-date').innerHTML = `📊 Insights for: <strong>${key}</strong>`;
+
+    const stats = globalInsights.daily_stats[key];
+    if (stats) renderUI(stats, globalInsights.community_streak, key);
+    else {
+        document.getElementById('pulse-date').innerHTML = `<span style="color:var(--accent-red)">⚠️ No data for ${key}</span>`;
+        clearUI();
+    }
+}
+
+function toggleScores() {
+    const list = document.getElementById('g-scores-list');
+    const btn  = document.getElementById('toggleBtn');
+    list.classList.toggle('open');
+    btn.innerText = list.classList.contains('open') ? 'Hide Scores ▴' : 'Show Top Scores ▾';
+}
+
+// ─── SCROLL PROGRESS ───
+const progressEl  = document.getElementById('progress-container');
+const progressBar = document.getElementById('progress-bar');
+window.addEventListener('scroll', () => {
+    const top = document.documentElement.scrollTop;
+    const max = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    progressBar.style.strokeDashoffset = 163.3 * (1 - Math.min(top/max, 1));
+    progressEl.style.display = top > 150 ? 'flex' : 'none';
+    progressEl.style.opacity = top > 150 ? '1'   : '0';
+});
+function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+
+// ─── FLOATING TRIANGLES ───
+(function() {
+    const canvas = document.getElementById('tri-canvas');
+    const ctx    = canvas.getContext('2d');
+    let W, H;
+    function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+    resize(); window.addEventListener('resize', resize);
+    function mkTri() {
+        return { x: Math.random()*W, y: H+60+Math.random()*200,
+                 size: 18+Math.random()*48, speed: 0.25+Math.random()*0.45,
+                 rotSpeed: (Math.random()-0.5)*0.006, angle: Math.random()*Math.PI*2,
+                 hue: Math.random()<0.6 ? 330+Math.random()*20 : 270+Math.random()*30,
+                 alpha: 0.04+Math.random()*0.10 };
+    }
+    const tris = Array.from({length:22}, () => { const t=mkTri(); t.y=Math.random()*(H+400)-200; return t; });
+    (function animate() {
+        ctx.clearRect(0,0,W,H);
+        const fz = H*0.18;
+        tris.forEach((t,i) => {
+            t.y-=t.speed; t.angle+=t.rotSpeed;
+            let op=t.alpha;
+            const risen=(H+60)-t.y;
+            if(risen<120) op*=risen/120;
+            if(t.y<fz) op*=t.y/fz;
+            if(op>0.002){
+                ctx.save(); ctx.translate(t.x,t.y); ctx.rotate(t.angle);
+                const s=t.size;
+                ctx.beginPath(); ctx.moveTo(0,-s*.6); ctx.lineTo(s*.52,s*.38); ctx.lineTo(-s*.52,s*.38); ctx.closePath();
+                ctx.strokeStyle=`hsla(${t.hue},80%,70%,${op})`; ctx.lineWidth=1.2; ctx.stroke();
+                ctx.fillStyle=`hsla(${t.hue},70%,60%,${op*.18})`; ctx.fill();
+                ctx.restore();
+            }
+            if(t.y<-t.size*2) tris[i]=mkTri();
+        });
+        requestAnimationFrame(animate);
+    })();
+})();
+
+// ─── INIT ───
+async function init() {
+    try {
+        // Correct path: data/community_insights.json
+        const res = await fetch('data/community_insights.json?t=' + Date.now());
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        globalInsights = await res.json();
+
+        const dates = Object.keys(globalInsights.daily_stats).sort();
+        if (!dates.length) throw new Error('No daily data found');
+
+        // Build global charts using all available dates
+        buildCharts(dates);
+
+        // Auto-select the latest available date
+        const latest = dates[dates.length - 1];
+        const [y, m, d] = latest.split('-').map(Number);
+        currentCalDate = new Date(y, m - 1, 1);
+        renderCalendar(currentCalDate);
+        selectDay(y, m, d);
+
+    } catch(err) {
+        console.error(err);
+        document.getElementById('pulse-date').innerHTML =
+            `<span style="color:var(--accent-red)">⚠️ Could not load community data: ${err.message}</span>`;
+    }
+}
+
+init();
+</script>
+</body>
+</html>

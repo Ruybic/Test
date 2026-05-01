@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 63,
-    "longest": 63,
-    "last_updated": "2026-04-29"
+    "current": 64,
+    "longest": 64,
+    "last_updated": "2026-04-30"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -18857,6 +18857,300 @@
         "title": "PADORU / PADORU",
         "cover": "https://assets.ppy.sh/beatmaps/1073074/covers/card.jpg?1650689325",
         "unique_players": 20
+      }
+    },
+    "2026-04-30": {
+      "total_scores": 290,
+      "peak_hour_baghdad": 17,
+      "top_grinder": {
+        "user": "NstR",
+        "user_id": 27935485,
+        "count": 32,
+        "scores": [
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6609946286,
+            "rank": "B",
+            "accuracy": 0.8576388888888888,
+            "pp": 9.57608,
+            "mods": [
+              "HR"
+            ],
+            "combo": 159,
+            "created_at": "2026-04-29T04:57:07Z",
+            "beatmapset": {
+              "id": 2515136,
+              "title": "Helios Rap Remix (JerseyClub mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2515136/covers/card.jpg?1773512727",
+              "stars": 2.36033
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6609935743,
+            "rank": "C",
+            "accuracy": 0.8119777158774373,
+            "pp": 9.04401,
+            "mods": [
+              "HR"
+            ],
+            "combo": 473,
+            "created_at": "2026-04-29T04:52:56Z",
+            "beatmapset": {
+              "id": 1454027,
+              "title": "Hashire Uma Musume",
+              "cover": "https://assets.ppy.sh/beatmaps/1454027/covers/card.jpg?1650709485",
+              "stars": 2.41331
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6609923337,
+            "rank": "A",
+            "accuracy": 0.8980263157894737,
+            "pp": null,
+            "mods": [],
+            "combo": 225,
+            "created_at": "2026-04-29T04:48:01Z",
+            "beatmapset": {
+              "id": 2354367,
+              "title": "MONTAGEM TOMADA (Slowed)",
+              "cover": "https://assets.ppy.sh/beatmaps/2354367/covers/card.jpg?1749781829",
+              "stars": 2.43237
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6609918376,
+            "rank": "C",
+            "accuracy": 0.8162230671736375,
+            "pp": 6.39887,
+            "mods": [],
+            "combo": 161,
+            "created_at": "2026-04-29T04:46:01Z",
+            "beatmapset": {
+              "id": 2024081,
+              "title": "Ouchi ni Kaeritai",
+              "cover": "https://assets.ppy.sh/beatmaps/2024081/covers/card.jpg?1722518006",
+              "stars": 3.0117
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6609908455,
+            "rank": "C",
+            "accuracy": 0.8245192307692307,
+            "pp": 11.6079,
+            "mods": [],
+            "combo": 169,
+            "created_at": "2026-04-29T04:41:59Z",
+            "beatmapset": {
+              "id": 550035,
+              "title": "TOMORROW",
+              "cover": "https://assets.ppy.sh/beatmaps/550035/covers/card.jpg?1650646494",
+              "stars": 2.91531
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6609903512,
+            "rank": "A",
+            "accuracy": 0.9376344086021505,
+            "pp": 9.90461,
+            "mods": [],
+            "combo": 296,
+            "created_at": "2026-04-29T04:40:02Z",
+            "beatmapset": {
+              "id": 550035,
+              "title": "TOMORROW",
+              "cover": "https://assets.ppy.sh/beatmaps/550035/covers/card.jpg?1650646494",
+              "stars": 2.35391
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6609897573,
+            "rank": "B",
+            "accuracy": 0.8993055555555556,
+            "pp": 9.80335,
+            "mods": [],
+            "combo": 301,
+            "created_at": "2026-04-29T04:37:41Z",
+            "beatmapset": {
+              "id": 402887,
+              "title": "fantastic dreamer",
+              "cover": "https://assets.ppy.sh/beatmaps/402887/covers/card.jpg?1650636318",
+              "stars": 2.6338
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6609892397,
+            "rank": "C",
+            "accuracy": 0.8383233532934131,
+            "pp": null,
+            "mods": [],
+            "combo": 243,
+            "created_at": "2026-04-29T04:35:36Z",
+            "beatmapset": {
+              "id": 2333043,
+              "title": "Montagem Ladrao (Slowed) Ft Mxzi",
+              "cover": "https://assets.ppy.sh/beatmaps/2333043/covers/card.jpg?1745022686",
+              "stars": 2.60894
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6609883151,
+            "rank": "C",
+            "accuracy": 0.7983333333333333,
+            "pp": 5.90703,
+            "mods": [],
+            "combo": 153,
+            "created_at": "2026-04-29T04:31:56Z",
+            "beatmapset": {
+              "id": 12060,
+              "title": "Going Under",
+              "cover": "https://assets.ppy.sh/beatmaps/12060/covers/card.jpg?1622031164",
+              "stars": 2.59058
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6609871887,
+            "rank": "S",
+            "accuracy": 0.9535768645357686,
+            "pp": 10.8485,
+            "mods": [],
+            "combo": 477,
+            "created_at": "2026-04-29T04:27:29Z",
+            "beatmapset": {
+              "id": 666700,
+              "title": "Bubblegum Bitch",
+              "cover": "https://assets.ppy.sh/beatmaps/666700/covers/card.jpg?1650653739",
+              "stars": 2.26894
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6609862613,
+            "rank": "D",
+            "accuracy": 0.6,
+            "pp": null,
+            "mods": [],
+            "combo": 57,
+            "created_at": "2026-04-29T04:23:47Z",
+            "beatmapset": {
+              "id": 1566947,
+              "title": "I WANNA BE YOUR SLAVE",
+              "cover": "https://assets.ppy.sh/beatmaps/1566947/covers/card.jpg?1633021241",
+              "stars": 2.31556
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6609849908,
+            "rank": "B",
+            "accuracy": 0.8832442067736186,
+            "pp": 8.96393,
+            "mods": [],
+            "combo": 186,
+            "created_at": "2026-04-29T04:18:44Z",
+            "beatmapset": {
+              "id": 2120394,
+              "title": "Yume no Ito (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2120394/covers/card.jpg?1714492723",
+              "stars": 2.55187
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6609841890,
+            "rank": "C",
+            "accuracy": 0.8486997635933806,
+            "pp": 5.48533,
+            "mods": [
+              "HR"
+            ],
+            "combo": 143,
+            "created_at": "2026-04-29T04:15:33Z",
+            "beatmapset": {
+              "id": 925628,
+              "title": "Love Dramatic feat. Ihara Rikka (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/925628/covers/card.jpg?1622156082",
+              "stars": 2.1289
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6609835452,
+            "rank": "A",
+            "accuracy": 0.8970588235294118,
+            "pp": 11.5835,
+            "mods": [
+              "HR"
+            ],
+            "combo": 247,
+            "created_at": "2026-04-29T04:12:59Z",
+            "beatmapset": {
+              "id": 222671,
+              "title": "Liar Mask anime size",
+              "cover": "https://assets.ppy.sh/beatmaps/222671/covers/card.jpg?1645786539",
+              "stars": 2.41043
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6609831227,
+            "rank": "S",
+            "accuracy": 0.9350490196078431,
+            "pp": 10.7365,
+            "mods": [],
+            "combo": 243,
+            "created_at": "2026-04-29T04:11:16Z",
+            "beatmapset": {
+              "id": 222671,
+              "title": "Liar Mask anime size",
+              "cover": "https://assets.ppy.sh/beatmaps/222671/covers/card.jpg?1645786539",
+              "stars": 2.41043
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
+        "unique_players": 10
       }
     }
   }

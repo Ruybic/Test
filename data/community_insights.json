@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 64,
-    "longest": 64,
-    "last_updated": "2026-04-30"
+    "current": 65,
+    "longest": 65,
+    "last_updated": "2026-05-01"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -19151,6 +19151,319 @@
         "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
         "unique_players": 10
+      }
+    },
+    "2026-05-01": {
+      "total_scores": 316,
+      "peak_hour_baghdad": 22,
+      "top_grinder": {
+        "user": "- Usf -",
+        "user_id": 10697971,
+        "count": 37,
+        "scores": [
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6618447513,
+            "rank": "B",
+            "accuracy": 0.8851540616246498,
+            "pp": 123.423,
+            "mods": [],
+            "combo": 117,
+            "created_at": "2026-04-30T19:15:26Z",
+            "beatmapset": {
+              "id": 2374386,
+              "title": "bbydoll (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2374386/covers/card.jpg?1749993995",
+              "stars": 6.19563
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6618426642,
+            "rank": "B",
+            "accuracy": 0.8478535353535354,
+            "pp": 101.195,
+            "mods": [],
+            "combo": 171,
+            "created_at": "2026-04-30T19:11:22Z",
+            "beatmapset": {
+              "id": 2472271,
+              "title": "Christmas Slop",
+              "cover": "https://assets.ppy.sh/beatmaps/2472271/covers/card.jpg?1765043571",
+              "stars": 6.75349
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6618394702,
+            "rank": "S",
+            "accuracy": 0.944153577661431,
+            "pp": 222.071,
+            "mods": [
+              "DT"
+            ],
+            "combo": 260,
+            "created_at": "2026-04-30T19:05:09Z",
+            "beatmapset": {
+              "id": 2295884,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
+              "stars": 4.34891
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6617972133,
+            "rank": "S",
+            "accuracy": 0.9411458333333333,
+            "pp": 202.524,
+            "mods": [
+              "DT"
+            ],
+            "combo": 480,
+            "created_at": "2026-04-30T17:42:49Z",
+            "beatmapset": {
+              "id": 1575739,
+              "title": "Stay",
+              "cover": "https://assets.ppy.sh/beatmaps/1575739/covers/card.jpg?1645781587",
+              "stars": 4.13442
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6617937031,
+            "rank": "B",
+            "accuracy": 0.8988505747126436,
+            "pp": 111.855,
+            "mods": [
+              "DT"
+            ],
+            "combo": 212,
+            "created_at": "2026-04-30T17:35:59Z",
+            "beatmapset": {
+              "id": 968171,
+              "title": "Mizuoto to Curtain",
+              "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
+              "stars": 4.09013
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6617932941,
+            "rank": "A",
+            "accuracy": 0.9080459770114943,
+            "pp": 138.317,
+            "mods": [
+              "DT"
+            ],
+            "combo": 241,
+            "created_at": "2026-04-30T17:35:11Z",
+            "beatmapset": {
+              "id": 968171,
+              "title": "Mizuoto to Curtain",
+              "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
+              "stars": 4.09013
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6617883440,
+            "rank": "B",
+            "accuracy": 0.8939393939393939,
+            "pp": 131.725,
+            "mods": [
+              "DT"
+            ],
+            "combo": 123,
+            "created_at": "2026-04-30T17:25:33Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 4.19758
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6617877093,
+            "rank": "C",
+            "accuracy": 0.8333333333333334,
+            "pp": 94.1874,
+            "mods": [
+              "DT"
+            ],
+            "combo": 60,
+            "created_at": "2026-04-30T17:24:18Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 4.32687
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6617845011,
+            "rank": "A",
+            "accuracy": 0.9428571428571428,
+            "pp": 155.892,
+            "mods": [
+              "DT"
+            ],
+            "combo": 107,
+            "created_at": "2026-04-30T17:18:04Z",
+            "beatmapset": {
+              "id": 873811,
+              "title": "quaver",
+              "cover": "https://assets.ppy.sh/beatmaps/873811/covers/card.jpg?1650672502",
+              "stars": 4.3896
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6617802108,
+            "rank": "B",
+            "accuracy": 0.9014869888475836,
+            "pp": 127.507,
+            "mods": [
+              "DT"
+            ],
+            "combo": 318,
+            "created_at": "2026-04-30T17:09:37Z",
+            "beatmapset": {
+              "id": 2495437,
+              "title": "Best Day Of My Life (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495437/covers/card.jpg?1771550749",
+              "stars": 4.40967
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6617782763,
+            "rank": "B",
+            "accuracy": 0.9284467713787086,
+            "pp": 190.461,
+            "mods": [
+              "DT"
+            ],
+            "combo": 191,
+            "created_at": "2026-04-30T17:05:45Z",
+            "beatmapset": {
+              "id": 2295884,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
+              "stars": 4.34891
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6617776170,
+            "rank": "B",
+            "accuracy": 0.9075043630017452,
+            "pp": 154.326,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 163,
+            "created_at": "2026-04-30T17:04:27Z",
+            "beatmapset": {
+              "id": 2295884,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
+              "stars": 4.34891
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6617763520,
+            "rank": "B",
+            "accuracy": 0.8888888888888888,
+            "pp": 194.755,
+            "mods": [
+              "DT"
+            ],
+            "combo": 203,
+            "created_at": "2026-04-30T17:01:57Z",
+            "beatmapset": {
+              "id": 2295884,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
+              "stars": 4.70769
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6617680251,
+            "rank": "B",
+            "accuracy": 0.8949579831932774,
+            "pp": 140.09,
+            "mods": [
+              "DT"
+            ],
+            "combo": 101,
+            "created_at": "2026-04-30T16:45:34Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 4.2882
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6617649812,
+            "rank": "A",
+            "accuracy": 0.9417562724014337,
+            "pp": 188.877,
+            "mods": [
+              "DT"
+            ],
+            "combo": 229,
+            "created_at": "2026-04-30T16:39:40Z",
+            "beatmapset": {
+              "id": 1280506,
+              "title": "WONDERFUL WONDER (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1280506/covers/card.jpg?1645786525",
+              "stars": 4.38578
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "I Don't Know (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+        "unique_players": 8
       }
     }
   }

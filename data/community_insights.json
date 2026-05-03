@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 65,
-    "longest": 65,
-    "last_updated": "2026-05-01"
+    "current": 66,
+    "longest": 66,
+    "last_updated": "2026-05-02"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -19464,6 +19464,337 @@
         "title": "I Don't Know (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
         "unique_players": 8
+      }
+    },
+    "2026-05-02": {
+      "total_scores": 448,
+      "peak_hour_baghdad": 15,
+      "top_grinder": {
+        "user": "Kaiju13",
+        "user_id": 26916963,
+        "count": 67,
+        "scores": [
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5018975816,
+            "rank": "A",
+            "accuracy": 0.956140350877193,
+            "pp": 300.859,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 208,
+            "created_at": "2026-05-01T22:45:20Z",
+            "beatmapset": {
+              "id": 2515511,
+              "title": "WONDERFUL WONDER (TV Size & Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2515511/covers/card.jpg?1774252089",
+              "stars": 5.19817
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5018974563,
+            "rank": "B",
+            "accuracy": 0.8884408602150538,
+            "pp": 177.991,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 208,
+            "created_at": "2026-05-01T22:41:19Z",
+            "beatmapset": {
+              "id": 2310271,
+              "title": "Kani*Do-Luck! (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2310271/covers/card.jpg?1749328197",
+              "stars": 5.67643
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5018973255,
+            "rank": "B",
+            "accuracy": 0.8820798514391829,
+            "pp": 152.353,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 121,
+            "created_at": "2026-05-01T22:37:05Z",
+            "beatmapset": {
+              "id": 1053509,
+              "title": "HIKARI (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1053509/covers/card.jpg?1650686981",
+              "stars": 5.68539
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5018972158,
+            "rank": "A",
+            "accuracy": 0.9477911646586346,
+            "pp": 239.565,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 133,
+            "created_at": "2026-05-01T22:33:31Z",
+            "beatmapset": {
+              "id": 1053509,
+              "title": "HIKARI (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1053509/covers/card.jpg?1650686981",
+              "stars": 5.26202
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5018971112,
+            "rank": "A",
+            "accuracy": 0.9637426900584796,
+            "pp": 315.458,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 210,
+            "created_at": "2026-05-01T22:30:22Z",
+            "beatmapset": {
+              "id": 2499448,
+              "title": "Kiss Me When I'm Dead (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499448/covers/card.jpg?1776894558",
+              "stars": 5.66219
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5018970322,
+            "rank": "A",
+            "accuracy": 0.964975845410628,
+            "pp": 267.127,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 217,
+            "created_at": "2026-05-01T22:28:01Z",
+            "beatmapset": {
+              "id": 2499448,
+              "title": "Kiss Me When I'm Dead (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499448/covers/card.jpg?1776894558",
+              "stars": 5.34613
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5018969320,
+            "rank": "A",
+            "accuracy": 0.967391304347826,
+            "pp": 269.778,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 162,
+            "created_at": "2026-05-01T22:25:08Z",
+            "beatmapset": {
+              "id": 2499448,
+              "title": "Kiss Me When I'm Dead (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499448/covers/card.jpg?1776894558",
+              "stars": 5.34613
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5018967548,
+            "rank": "A",
+            "accuracy": 0.9672514619883041,
+            "pp": 335.819,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 226,
+            "created_at": "2026-05-01T22:20:03Z",
+            "beatmapset": {
+              "id": 2499448,
+              "title": "Kiss Me When I'm Dead (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499448/covers/card.jpg?1776894558",
+              "stars": 5.66219
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5018967028,
+            "rank": "A",
+            "accuracy": 0.9345029239766082,
+            "pp": 234.897,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 257,
+            "created_at": "2026-05-01T22:18:28Z",
+            "beatmapset": {
+              "id": 2499448,
+              "title": "Kiss Me When I'm Dead (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499448/covers/card.jpg?1776894558",
+              "stars": 5.66219
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5018962752,
+            "rank": "A",
+            "accuracy": 0.9798339264531435,
+            "pp": 406.072,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 435,
+            "created_at": "2026-05-01T22:05:56Z",
+            "beatmapset": {
+              "id": 2495437,
+              "title": "Best Day Of My Life (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495437/covers/card.jpg?1771550749",
+              "stars": 5.30371
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5018962093,
+            "rank": "A",
+            "accuracy": 0.9762752075919335,
+            "pp": 324.682,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 281,
+            "created_at": "2026-05-01T22:04:01Z",
+            "beatmapset": {
+              "id": 2495437,
+              "title": "Best Day Of My Life (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495437/covers/card.jpg?1771550749",
+              "stars": 5.30371
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5018958804,
+            "rank": "A",
+            "accuracy": 0.9314194577352473,
+            "pp": 190.982,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 190,
+            "created_at": "2026-05-01T21:54:46Z",
+            "beatmapset": {
+              "id": 2317157,
+              "title": "Blue Youth",
+              "cover": "https://assets.ppy.sh/beatmaps/2317157/covers/card.jpg?1739548468",
+              "stars": 5.36177
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5018957198,
+            "rank": "A",
+            "accuracy": 0.9506726457399103,
+            "pp": 271.197,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 152,
+            "created_at": "2026-05-01T21:50:23Z",
+            "beatmapset": {
+              "id": 1049899,
+              "title": "Say Goodbye (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1049899/covers/card.jpg?1724193986",
+              "stars": 5.6434
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5018956294,
+            "rank": "A",
+            "accuracy": 0.9655172413793104,
+            "pp": 340.137,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 297,
+            "created_at": "2026-05-01T21:47:56Z",
+            "beatmapset": {
+              "id": 1049899,
+              "title": "Say Goodbye (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1049899/covers/card.jpg?1724193986",
+              "stars": 5.24003
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "score_id": 5018955844,
+            "rank": "A",
+            "accuracy": 0.9525862068965517,
+            "pp": 305.312,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 293,
+            "created_at": "2026-05-01T21:46:42Z",
+            "beatmapset": {
+              "id": 1049899,
+              "title": "Say Goodbye (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1049899/covers/card.jpg?1724193986",
+              "stars": 5.24003
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+        "unique_players": 23
       }
     }
   }

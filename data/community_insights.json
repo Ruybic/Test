@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 66,
-    "longest": 66,
-    "last_updated": "2026-05-02"
+    "current": 67,
+    "longest": 67,
+    "last_updated": "2026-05-03"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -19795,6 +19795,320 @@
         "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
         "unique_players": 23
+      }
+    },
+    "2026-05-03": {
+      "total_scores": 412,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "Kosmiku",
+        "user_id": 15209351,
+        "count": 74,
+        "scores": [
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6630685845,
+            "rank": "B",
+            "accuracy": 0.8902582159624414,
+            "pp": null,
+            "mods": [],
+            "combo": 307,
+            "created_at": "2026-05-02T20:37:18Z",
+            "beatmapset": {
+              "id": 1711618,
+              "title": "showdown",
+              "cover": "https://assets.ppy.sh/beatmaps/1711618/covers/card.jpg?1738000974",
+              "stars": 3.96046
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6630650351,
+            "rank": "C",
+            "accuracy": 0.8024425287356322,
+            "pp": 91.4286,
+            "mods": [
+              "DT"
+            ],
+            "combo": 131,
+            "created_at": "2026-05-02T20:29:55Z",
+            "beatmapset": {
+              "id": 1123162,
+              "title": "Sore wa Chiisana Hikari no Youna (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1123162/covers/card.jpg?1650692615",
+              "stars": 4.08587
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6630644312,
+            "rank": "B",
+            "accuracy": 0.9148148148148149,
+            "pp": 109.419,
+            "mods": [
+              "DT"
+            ],
+            "combo": 292,
+            "created_at": "2026-05-02T20:28:42Z",
+            "beatmapset": {
+              "id": 1123162,
+              "title": "Sore wa Chiisana Hikari no Youna (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1123162/covers/card.jpg?1650692615",
+              "stars": 3.61443
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6630638335,
+            "rank": "B",
+            "accuracy": 0.8888888888888888,
+            "pp": 93.6841,
+            "mods": [
+              "DT"
+            ],
+            "combo": 129,
+            "created_at": "2026-05-02T20:27:28Z",
+            "beatmapset": {
+              "id": 1123162,
+              "title": "Sore wa Chiisana Hikari no Youna (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1123162/covers/card.jpg?1650692615",
+              "stars": 3.61443
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6630632069,
+            "rank": "B",
+            "accuracy": 0.8785185185185185,
+            "pp": 78.3512,
+            "mods": [
+              "DT"
+            ],
+            "combo": 195,
+            "created_at": "2026-05-02T20:26:12Z",
+            "beatmapset": {
+              "id": 1123162,
+              "title": "Sore wa Chiisana Hikari no Youna (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1123162/covers/card.jpg?1650692615",
+              "stars": 3.61443
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6630603283,
+            "rank": "S",
+            "accuracy": 0.958656330749354,
+            "pp": 89.1015,
+            "mods": [
+              "DT"
+            ],
+            "combo": 191,
+            "created_at": "2026-05-02T20:20:19Z",
+            "beatmapset": {
+              "id": 485903,
+              "title": "Yalta",
+              "cover": "https://assets.ppy.sh/beatmaps/485903/covers/card.jpg?1650642612",
+              "stars": 3.21953
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6630598828,
+            "rank": "A",
+            "accuracy": 0.9280510018214936,
+            "pp": 79.4015,
+            "mods": [
+              "DT"
+            ],
+            "combo": 255,
+            "created_at": "2026-05-02T20:19:25Z",
+            "beatmapset": {
+              "id": 627629,
+              "title": "MUZYKA NE MUZYKANTA (feat. Snailkick)",
+              "cover": "https://assets.ppy.sh/beatmaps/627629/covers/card.jpg?1622120596",
+              "stars": 3.25097
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6630586058,
+            "rank": "C",
+            "accuracy": 0.8143939393939394,
+            "pp": 89.2,
+            "mods": [
+              "DT"
+            ],
+            "combo": 168,
+            "created_at": "2026-05-02T20:16:49Z",
+            "beatmapset": {
+              "id": 2295884,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
+              "stars": 4.08394
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6630579683,
+            "rank": "S",
+            "accuracy": 0.9438596491228071,
+            "pp": 117.101,
+            "mods": [
+              "DT"
+            ],
+            "combo": 121,
+            "created_at": "2026-05-02T20:15:32Z",
+            "beatmapset": {
+              "id": 705423,
+              "title": "Miniministop Hitoyasumi no Uta[Mokuyoubi]Gakusei no Uta",
+              "cover": "https://assets.ppy.sh/beatmaps/705423/covers/card.jpg?1645788448",
+              "stars": 3.61722
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6630575927,
+            "rank": "A",
+            "accuracy": 0.9543859649122807,
+            "pp": 112.4,
+            "mods": [
+              "DT"
+            ],
+            "combo": 83,
+            "created_at": "2026-05-02T20:14:47Z",
+            "beatmapset": {
+              "id": 705423,
+              "title": "Miniministop Hitoyasumi no Uta[Mokuyoubi]Gakusei no Uta",
+              "cover": "https://assets.ppy.sh/beatmaps/705423/covers/card.jpg?1645788448",
+              "stars": 3.61722
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6630573677,
+            "rank": "A",
+            "accuracy": 0.9508771929824561,
+            "pp": 104.419,
+            "mods": [
+              "DT"
+            ],
+            "combo": 74,
+            "created_at": "2026-05-02T20:14:20Z",
+            "beatmapset": {
+              "id": 705423,
+              "title": "Miniministop Hitoyasumi no Uta[Mokuyoubi]Gakusei no Uta",
+              "cover": "https://assets.ppy.sh/beatmaps/705423/covers/card.jpg?1645788448",
+              "stars": 3.61722
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6630569767,
+            "rank": "A",
+            "accuracy": 0.8929824561403509,
+            "pp": 107.73,
+            "mods": [
+              "DT"
+            ],
+            "combo": 121,
+            "created_at": "2026-05-02T20:13:33Z",
+            "beatmapset": {
+              "id": 705423,
+              "title": "Miniministop Hitoyasumi no Uta[Mokuyoubi]Gakusei no Uta",
+              "cover": "https://assets.ppy.sh/beatmaps/705423/covers/card.jpg?1645788448",
+              "stars": 3.72618
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6630567512,
+            "rank": "C",
+            "accuracy": 0.8,
+            "pp": 73.0878,
+            "mods": [
+              "DT"
+            ],
+            "combo": 84,
+            "created_at": "2026-05-02T20:13:07Z",
+            "beatmapset": {
+              "id": 705423,
+              "title": "Miniministop Hitoyasumi no Uta[Mokuyoubi]Gakusei no Uta",
+              "cover": "https://assets.ppy.sh/beatmaps/705423/covers/card.jpg?1645788448",
+              "stars": 3.72618
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6630564721,
+            "rank": "A",
+            "accuracy": 0.9259259259259259,
+            "pp": 126.076,
+            "mods": [
+              "DT"
+            ],
+            "combo": 121,
+            "created_at": "2026-05-02T20:12:33Z",
+            "beatmapset": {
+              "id": 705423,
+              "title": "Miniministop Hitoyasumi no Uta[Mokuyoubi]Gakusei no Uta",
+              "cover": "https://assets.ppy.sh/beatmaps/705423/covers/card.jpg?1645788448",
+              "stars": 3.75525
+            }
+          },
+          {
+            "user": "Kosmiku",
+            "user_id": 15209351,
+            "country": "IQ",
+            "score_id": 6630560390,
+            "rank": "A",
+            "accuracy": 0.8898305084745762,
+            "pp": 108.747,
+            "mods": [
+              "DT"
+            ],
+            "combo": 345,
+            "created_at": "2026-05-02T20:11:42Z",
+            "beatmapset": {
+              "id": 251391,
+              "title": "Passcode 4854 -TV edit-",
+              "cover": "https://assets.ppy.sh/beatmaps/251391/covers/card.jpg?1650627372",
+              "stars": 3.69847
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "So Am I (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2496558/covers/card.jpg?1775073996",
+        "unique_players": 22
       }
     }
   }

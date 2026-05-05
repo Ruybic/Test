@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 67,
-    "longest": 67,
-    "last_updated": "2026-05-03"
+    "current": 68,
+    "longest": 68,
+    "last_updated": "2026-05-04"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -20109,6 +20109,329 @@
         "title": "So Am I (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2496558/covers/card.jpg?1775073996",
         "unique_players": 22
+      }
+    },
+    "2026-05-04": {
+      "total_scores": 438,
+      "peak_hour_baghdad": 18,
+      "top_grinder": {
+        "user": "I AM A GHOUL",
+        "user_id": 24991953,
+        "count": 100,
+        "scores": [
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5019775345,
+            "rank": "A",
+            "accuracy": 0.9753694581280788,
+            "pp": 245.442,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 218,
+            "created_at": "2026-05-03T16:37:15Z",
+            "beatmapset": {
+              "id": 2478741,
+              "title": "Lucky (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2478741/covers/card.jpg?1776123108",
+              "stars": 4.74449
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5019774495,
+            "rank": "B",
+            "accuracy": 0.8630952380952381,
+            "pp": 294.043,
+            "mods": [
+              "DT"
+            ],
+            "combo": 66,
+            "created_at": "2026-05-03T16:35:22Z",
+            "beatmapset": {
+              "id": 2279697,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/2279697/covers/card.jpg?1733354216",
+              "stars": 5.71986
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5019772182,
+            "rank": "A",
+            "accuracy": 0.9868913857677902,
+            "pp": 383.75,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 187,
+            "created_at": "2026-05-03T16:30:25Z",
+            "beatmapset": {
+              "id": 2446228,
+              "title": "bad times (sped up & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2446228/covers/card.jpg?1768233080",
+              "stars": 5.06236
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5019771497,
+            "rank": "A",
+            "accuracy": 0.9532908704883227,
+            "pp": 296.934,
+            "mods": [
+              "DT"
+            ],
+            "combo": 182,
+            "created_at": "2026-05-03T16:28:55Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.42072
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5019771211,
+            "rank": "A",
+            "accuracy": 0.9426751592356688,
+            "pp": 304.292,
+            "mods": [
+              "DT"
+            ],
+            "combo": 175,
+            "created_at": "2026-05-03T16:28:19Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.42072
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5019770778,
+            "rank": "A",
+            "accuracy": 0.9617834394904459,
+            "pp": 335.682,
+            "mods": [
+              "DT"
+            ],
+            "combo": 135,
+            "created_at": "2026-05-03T16:27:20Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.42072
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5019770268,
+            "rank": "A",
+            "accuracy": 0.9596602972399151,
+            "pp": 318.65,
+            "mods": [
+              "DT"
+            ],
+            "combo": 170,
+            "created_at": "2026-05-03T16:26:12Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.42072
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5019769856,
+            "rank": "A",
+            "accuracy": 0.9554140127388535,
+            "pp": 317.14,
+            "mods": [
+              "DT"
+            ],
+            "combo": 190,
+            "created_at": "2026-05-03T16:25:13Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.42072
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5019769555,
+            "rank": "A",
+            "accuracy": 0.9426751592356688,
+            "pp": 304.109,
+            "mods": [
+              "DT"
+            ],
+            "combo": 174,
+            "created_at": "2026-05-03T16:24:34Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.42072
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5019769210,
+            "rank": "B",
+            "accuracy": 0.9171974522292994,
+            "pp": 248.901,
+            "mods": [
+              "DT"
+            ],
+            "combo": 138,
+            "created_at": "2026-05-03T16:23:50Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.42072
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5019768941,
+            "rank": "B",
+            "accuracy": 0.9065817409766455,
+            "pp": 193.978,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 172,
+            "created_at": "2026-05-03T16:23:15Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.42072
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5019767089,
+            "rank": "A",
+            "accuracy": 0.9841269841269841,
+            "pp": 419.169,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 229,
+            "created_at": "2026-05-03T16:19:18Z",
+            "beatmapset": {
+              "id": 2506168,
+              "title": "Die A Million Times (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506168/covers/card.jpg?1773702471",
+              "stars": 5.22618
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5019766360,
+            "rank": "A",
+            "accuracy": 0.9812409812409812,
+            "pp": 362.829,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 218,
+            "created_at": "2026-05-03T16:17:38Z",
+            "beatmapset": {
+              "id": 2506168,
+              "title": "Die A Million Times (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506168/covers/card.jpg?1773702471",
+              "stars": 5.22618
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5019765755,
+            "rank": "A",
+            "accuracy": 0.9783549783549783,
+            "pp": 400.212,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 178,
+            "created_at": "2026-05-03T16:16:21Z",
+            "beatmapset": {
+              "id": 2506168,
+              "title": "Die A Million Times (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506168/covers/card.jpg?1773702471",
+              "stars": 5.22618
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5019765242,
+            "rank": "A",
+            "accuracy": 0.9682539682539683,
+            "pp": 308.646,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 218,
+            "created_at": "2026-05-03T16:15:13Z",
+            "beatmapset": {
+              "id": 2506168,
+              "title": "Die A Million Times (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506168/covers/card.jpg?1773702471",
+              "stars": 5.22618
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+        "unique_players": 33
       }
     }
   }

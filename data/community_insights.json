@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 68,
-    "longest": 68,
-    "last_updated": "2026-05-04"
+    "current": 69,
+    "longest": 69,
+    "last_updated": "2026-05-06"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -20432,6 +20432,292 @@
         "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
         "unique_players": 33
+      }
+    },
+    "2026-05-06": {
+      "total_scores": 412,
+      "peak_hour_baghdad": 1,
+      "top_grinder": {
+        "user": "skiler1",
+        "user_id": 31252345,
+        "count": 49,
+        "scores": [
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5020829148,
+            "rank": "B",
+            "accuracy": 0.9061384725196289,
+            "pp": 43.2558,
+            "mods": [],
+            "combo": 170,
+            "created_at": "2026-05-06T02:42:14Z",
+            "beatmapset": {
+              "id": 2544222,
+              "title": "HoYoHoYo ni Shite Ageru",
+              "cover": "https://assets.ppy.sh/beatmaps/2544222/covers/card.jpg?1777238876",
+              "stars": 4.70392
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5020828226,
+            "rank": "B",
+            "accuracy": 0.896962706651288,
+            "pp": 21.3466,
+            "mods": [],
+            "combo": 219,
+            "created_at": "2026-05-06T02:37:49Z",
+            "beatmapset": {
+              "id": 2476195,
+              "title": "Anniversary",
+              "cover": "https://assets.ppy.sh/beatmaps/2476195/covers/card.jpg?1777259493",
+              "stars": 4.11882
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5020826948,
+            "rank": "B",
+            "accuracy": 0.8990066225165563,
+            "pp": 42.4813,
+            "mods": [],
+            "combo": 285,
+            "created_at": "2026-05-06T02:31:39Z",
+            "beatmapset": {
+              "id": 1912968,
+              "title": "Asayake no Starmine (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1912968/covers/card.jpg?1776860020",
+              "stars": 4.18068
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5020826230,
+            "rank": "A",
+            "accuracy": 0.9688796680497925,
+            "pp": 78.3673,
+            "mods": [],
+            "combo": 663,
+            "created_at": "2026-05-06T02:28:20Z",
+            "beatmapset": {
+              "id": 2461085,
+              "title": "SPARK IGNITION",
+              "cover": "https://assets.ppy.sh/beatmaps/2461085/covers/card.jpg?1777329447",
+              "stars": 4.69606
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5020825091,
+            "rank": "A",
+            "accuracy": 0.9492354740061162,
+            "pp": 46.7348,
+            "mods": [],
+            "combo": 208,
+            "created_at": "2026-05-06T02:22:51Z",
+            "beatmapset": {
+              "id": 2220326,
+              "title": "Blue Amber",
+              "cover": "https://assets.ppy.sh/beatmaps/2220326/covers/card.jpg?1777392141",
+              "stars": 4.86181
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5020823957,
+            "rank": "B",
+            "accuracy": 0.9168195718654434,
+            "pp": 30.6616,
+            "mods": [],
+            "combo": 201,
+            "created_at": "2026-05-06T02:17:31Z",
+            "beatmapset": {
+              "id": 2220326,
+              "title": "Blue Amber",
+              "cover": "https://assets.ppy.sh/beatmaps/2220326/covers/card.jpg?1777392141",
+              "stars": 4.86181
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5020809557,
+            "rank": "C",
+            "accuracy": 0.8162071846282373,
+            "pp": 36.4157,
+            "mods": [],
+            "combo": 118,
+            "created_at": "2026-05-06T01:10:35Z",
+            "beatmapset": {
+              "id": 345450,
+              "title": "Techno Kitty",
+              "cover": "https://assets.ppy.sh/beatmaps/345450/covers/card.jpg?1631509391",
+              "stars": 5.07245
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5020808932,
+            "rank": "C",
+            "accuracy": 0.847985347985348,
+            "pp": 44.7009,
+            "mods": [],
+            "combo": 155,
+            "created_at": "2026-05-06T01:07:45Z",
+            "beatmapset": {
+              "id": 873811,
+              "title": "quaver",
+              "cover": "https://assets.ppy.sh/beatmaps/873811/covers/card.jpg?1650672502",
+              "stars": 4.75645
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5020807902,
+            "rank": "B",
+            "accuracy": 0.926923076923077,
+            "pp": 40.7811,
+            "mods": [],
+            "combo": 235,
+            "created_at": "2026-05-06T01:03:14Z",
+            "beatmapset": {
+              "id": 320118,
+              "title": "No title",
+              "cover": "https://assets.ppy.sh/beatmaps/320118/covers/card.jpg?1650632079",
+              "stars": 4.38006
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5020807504,
+            "rank": "B",
+            "accuracy": 0.8945916114790287,
+            "pp": 37.2988,
+            "mods": [],
+            "combo": 103,
+            "created_at": "2026-05-06T01:01:36Z",
+            "beatmapset": {
+              "id": 320118,
+              "title": "No title",
+              "cover": "https://assets.ppy.sh/beatmaps/320118/covers/card.jpg?1650632079",
+              "stars": 4.71671
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5020784474,
+            "rank": "B",
+            "accuracy": 0.9035087719298246,
+            "pp": 33.6069,
+            "mods": [],
+            "combo": 326,
+            "created_at": "2026-05-05T23:26:28Z",
+            "beatmapset": {
+              "id": 2305858,
+              "title": "+Danshi",
+              "cover": "https://assets.ppy.sh/beatmaps/2305858/covers/card.jpg?1773697856",
+              "stars": 4.58397
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5020782625,
+            "rank": "B",
+            "accuracy": 0.9051851851851852,
+            "pp": 85.3992,
+            "mods": [],
+            "combo": 236,
+            "created_at": "2026-05-05T23:19:05Z",
+            "beatmapset": {
+              "id": 2471999,
+              "title": "hate the way you love me (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2471999/covers/card.jpg?1775922243",
+              "stars": 5.15062
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5020782006,
+            "rank": "B",
+            "accuracy": 0.897489539748954,
+            "pp": 49.7697,
+            "mods": [],
+            "combo": 166,
+            "created_at": "2026-05-05T23:16:47Z",
+            "beatmapset": {
+              "id": 952409,
+              "title": "Ai no Sukima",
+              "cover": "https://assets.ppy.sh/beatmaps/952409/covers/card.jpg?1645787548",
+              "stars": 5.0774
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5020781538,
+            "rank": "B",
+            "accuracy": 0.88375,
+            "pp": 28.9362,
+            "mods": [],
+            "combo": 104,
+            "created_at": "2026-05-05T23:14:56Z",
+            "beatmapset": {
+              "id": 513590,
+              "title": "Zen Zen Zense (movie ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/513590/covers/card.jpg?1650644032",
+              "stars": 4.89726
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5020780331,
+            "rank": "B",
+            "accuracy": 0.8718808193668529,
+            "pp": 28.6888,
+            "mods": [],
+            "combo": 656,
+            "created_at": "2026-05-05T23:10:15Z",
+            "beatmapset": {
+              "id": 1344501,
+              "title": "Lilith",
+              "cover": "https://assets.ppy.sh/beatmaps/1344501/covers/card.jpg?1650709363",
+              "stars": 3.92614
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "How to Be a Heartbreaker (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2463569/covers/card.jpg?1777733995",
+        "unique_players": 11
       }
     }
   }

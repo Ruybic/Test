@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrade — Design Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <style>
+/* =====================================================
+   UPGRADE DESIGN STUDIO — style.css
+   ===================================================== */
+
+:root {
+    --upg-purple-deep:  #12002e;
+    --upg-purple-dark:  #1e0050;
+    --upg-purple-mid:   #3d0099;
+    --upg-purple-vivid: #6600cc;
+    --upg-purple-light: #9933ff;
+    --upg-purple-glow:  #bf7aff;
+    --upg-purple-pale:  #e0c2ff;
+    --upg-white:        #ffffff;
+    --upg-off-white:    #f0e8ff;
+    --upg-muted:        rgba(180, 140, 240, 0.6);
+    --upg-border:       rgba(140, 80, 255, 0.18);
+    --upg-panel:        rgba(30, 0, 70, 0.55);
+
+    --upg-font-display: 'Syne', sans-serif;
+    --upg-font-body:    'DM Sans', sans-serif;
+
+    --upg-ease:   cubic-bezier(0.16, 1, 0.3, 1);
+    --upg-ease2:  cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ─── RESET ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+    background-color: var(--upg-purple-deep);
+    color: var(--upg-white);
+    font-family: var(--upg-font-body);
+    overflow-x: hidden;
+    cursor: none;
+}
+a { text-decoration: none; color: inherit; }
+img { display: block; max-width: 100%; }
+input, textarea, select, button { font-family: inherit; }
+
+/* ─── NOISE OVERLAY ─── */
+.upg-noise {
+    position: fixed; inset: 0; pointer-events: none; z-index: 9999;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 200px;
+}
+
+/* ─── CUSTOM CURSOR ─── */
+.upg-cursor {
+    width: 10px; height: 10px;
+    background: var(--upg-purple-glow);
+    border-radius: 50%;
+    position: fixed; top: 0; left: 0;
+    pointer-events: none; z-index: 10000;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s var(--upg-ease), height 0.2s var(--upg-ease), background 0.2s;
+    mix-blend-mode: screen;
+}
+.upg-cursor.hover {
+    width: 40px; height: 40px;
+    background: rgba(153, 51, 255, 0.3);
+    border: 1px solid var(--upg-purple-glow);
+}
+.upg-cursor-trail {
+    width: 36px; height: 36px;
+    border: 1.5px solid rgba(153, 51, 255, 0.4);
+    border-radius: 50%;
+    position: fixed; top: 0; left: 0;
+    pointer-events: none; z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: left 0.12s var(--upg-ease), top 0.12s var(--upg-ease);
+}
+
+/* ─── NAV ─── */
+.upg-nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    z-index: 1000; height: 68px;
+    display: flex; align-items: center;
+    padding: 0 40px;
+    background: transparent;
+    transition: background 0.4s, backdrop-filter 0.4s, border-bottom 0.4s;
+}
+.upg-nav.scrolled {
+    background: rgba(10, 0, 28, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--upg-border);
+}
+
+.upg-logo {
+    display: flex; align-items: center; gap: 10px;
+    font-family: var(--upg-font-display);
+    font-weight: 800; font-size: 20px;
+    letter-spacing: -0.3px;
+}
+.upg-logo-mark {
+    width: 28px; height: 28px;
+    filter: drop-shadow(0 0 8px rgba(153, 51, 255, 0.6));
+}
+.upg-logo-mark svg { width: 100%; height: 100%; }
+
+.upg-nav-links {
+    display: flex; align-items: center; gap: 36px;
+    list-style: none; margin: 0 auto;
+}
+.upg-nav-links a {
+    font-size: 14px; font-weight: 500; color: var(--upg-muted);
+    transition: color 0.2s; letter-spacing: 0.2px;
+    position: relative;
+}
+.upg-nav-links a::after {
+    content: ''; position: absolute; bottom: -3px; left: 0; right: 0;
+    height: 1px; background: var(--upg-purple-glow);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.3s var(--upg-ease);
+}
+.upg-nav-links a:hover { color: var(--upg-white); }
+.upg-nav-links a:hover::after { transform: scaleX(1); }
+
+.upg-nav-cta {
+    font-size: 13px; font-weight: 700;
+    padding: 10px 22px; border-radius: 100px;
+    background: var(--upg-purple-vivid);
+    border: 1px solid rgba(180, 120, 255, 0.3);
+    box-shadow: 0 0 20px rgba(102, 0, 204, 0.4);
+    transition: all 0.25s var(--upg-ease);
+    white-space: nowrap;
+}
+.upg-nav-cta:hover {
+    background: var(--upg-purple-light);
+    box-shadow: 0 0 32px rgba(153, 51, 255, 0.6);
+    transform: translateY(-1px);
+}
+
+.upg-burger {
+    display: none; background: none; border: none;
+    cursor: none; flex-direction: column; gap: 6px; padding: 4px;
+}
+.upg-burger span {
+    display: block; width: 24px; height: 2px;
+    background: var(--upg-white); border-radius: 2px;
+    transition: all 0.3s var(--upg-ease);
+}
+.upg-burger.open span:first-child { transform: translateY(8px) rotate(45deg); }
+.upg-burger.open span:last-child  { transform: translateY(-8px) rotate(-45deg); }
+
+/* Mobile menu */
+.upg-mobile-menu {
+    position: fixed; inset: 0; z-index: 900;
+    background: rgba(10, 0, 28, 0.97);
+    backdrop-filter: blur(24px);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 32px;
+    transform: translateY(-100%);
+    transition: transform 0.5s var(--upg-ease);
+}
+.upg-mobile-menu.open { transform: translateY(0); }
+.upg-mm-link {
+    font-family: var(--upg-font-display);
+    font-size: 48px; font-weight: 900;
+    color: var(--upg-muted); transition: color 0.2s;
+}
+.upg-mm-link:hover { color: var(--upg-purple-glow); }
+
+/* ─── BUTTONS ─── */
+.upg-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 14px; font-weight: 700; letter-spacing: 0.2px;
+    padding: 14px 28px; border-radius: 100px;
+    transition: all 0.25s var(--upg-ease); cursor: none;
+    white-space: nowrap;
+}
+.upg-btn svg { width: 16px; height: 16px; transition: transform 0.25s var(--upg-ease); }
+.upg-btn:hover svg { transform: translateX(4px); }
+
+.upg-btn-primary {
+    background: var(--upg-purple-vivid);
+    border: 1px solid rgba(180, 120, 255, 0.3);
+    box-shadow: 0 0 24px rgba(102, 0, 204, 0.45), inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.upg-btn-primary:hover {
+    background: var(--upg-purple-light);
+    box-shadow: 0 0 40px rgba(153, 51, 255, 0.7), inset 0 1px 0 rgba(255,255,255,0.15);
+    transform: translateY(-2px);
+}
+.upg-btn-ghost {
+    background: transparent;
+    border: 1px solid var(--upg-border);
+    color: var(--upg-muted);
+}
+.upg-btn-ghost:hover {
+    border-color: var(--upg-purple-glow);
+    color: var(--upg-white);
+    background: rgba(100, 0, 180, 0.12);
+}
+
+/* ─── HERO ─── */
+.upg-hero {
+    min-height: 100vh;
+    display: flex; align-items: center;
+    padding: 140px 40px 100px;
+    position: relative; overflow: hidden;
+}
+
+.upg-hero-orb {
+    position: absolute; border-radius: 50%;
+    filter: blur(80px); pointer-events: none;
+}
+.upg-orb-1 {
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(102,0,204,0.45) 0%, transparent 70%);
+    top: -100px; right: -100px;
+    animation: upg-drift 12s ease-in-out infinite alternate;
+}
+.upg-orb-2 {
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(60,0,150,0.35) 0%, transparent 70%);
+    bottom: -50px; left: 20%;
+    animation: upg-drift 16s ease-in-out infinite alternate-reverse;
+}
+.upg-orb-3 {
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(180,80,255,0.3) 0%, transparent 70%);
+    top: 40%; left: -50px;
+    animation: upg-drift 8s ease-in-out infinite alternate;
+}
+
+@keyframes upg-drift {
+    from { transform: translate(0, 0) scale(1); }
+    to   { transform: translate(30px, 20px) scale(1.08); }
+}
+
+.upg-hero-inner {
+    max-width: 1100px; margin: 0 auto; width: 100%;
+    position: relative; z-index: 2;
+}
+
+.upg-hero-tag {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 12px; font-weight: 500; letter-spacing: 1.5px;
+    text-transform: uppercase; color: var(--upg-muted);
+    background: rgba(80, 0, 180, 0.2);
+    border: 1px solid var(--upg-border);
+    padding: 8px 16px; border-radius: 100px;
+    margin-bottom: 36px;
+    opacity: 0; animation: upg-fadeUp 0.8s var(--upg-ease) 0.1s forwards;
+}
+
+.upg-pulse-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--upg-purple-glow);
+    box-shadow: 0 0 8px var(--upg-purple-glow);
+    animation: upg-pulse 2s ease-in-out infinite;
+}
+@keyframes upg-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%       { opacity: 0.5; transform: scale(1.4); }
+}
+
+.upg-hero-title {
+    font-family: var(--upg-font-display);
+    font-size: clamp(56px, 8vw, 110px);
+    font-weight: 900; line-height: 0.95;
+    letter-spacing: -3px;
+    display: flex; flex-direction: column; gap: 6px;
+    margin-bottom: 32px;
+}
+.upg-line {
+    display: block;
+    opacity: 0; transform: translateY(40px);
+    animation: upg-fadeUp 0.9s var(--upg-ease) forwards;
+}
+.upg-line:nth-child(1) { animation-delay: 0.25s; }
+.upg-line:nth-child(2) { animation-delay: 0.38s; }
+.upg-line:nth-child(3) { animation-delay: 0.51s; }
+
+.upg-line-accent {
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgba(180, 100, 255, 0.5);
+    text-stroke: 1.5px rgba(180, 100, 255, 0.5);
+}
+
+.upg-hero-sub {
+    font-size: 17px; font-weight: 300; line-height: 1.7;
+    color: var(--upg-muted); max-width: 500px; margin-bottom: 44px;
+    opacity: 0; animation: upg-fadeUp 0.8s var(--upg-ease) 0.65s forwards;
+}
+
+.upg-hero-actions {
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+    opacity: 0; animation: upg-fadeUp 0.8s var(--upg-ease) 0.78s forwards;
+}
+
+.upg-hero-scroll {
+    position: absolute; bottom: 40px; left: 50%;
+    transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 10px;
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--upg-muted);
+    opacity: 0; animation: upg-fadeUp 0.8s var(--upg-ease) 1.1s forwards;
+}
+.upg-scroll-line {
+    width: 1px; height: 50px;
+    background: linear-gradient(to bottom, var(--upg-purple-glow), transparent);
+    animation: upg-scrollPulse 2s ease-in-out infinite;
+}
+@keyframes upg-scrollPulse {
+    0%, 100% { opacity: 0.5; transform: scaleY(1); }
+    50%       { opacity: 1;   transform: scaleY(1.2); }
+}
+
+/* Floating badge */
+.upg-floating-badge {
+    position: absolute; right: 80px; top: 50%; transform: translateY(-50%);
+    width: 130px; height: 130px; border-radius: 50%;
+    background: var(--upg-panel);
+    border: 1px solid var(--upg-border);
+    backdrop-filter: blur(16px);
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 0 40px rgba(100, 0, 200, 0.25);
+    animation: upg-floatBadge 4s ease-in-out infinite;
+    opacity: 0; animation: upg-fadeUp 0.8s var(--upg-ease) 1s forwards, upg-floatBadge 4s ease-in-out 1.8s infinite;
+}
+.upg-fb-inner { text-align: center; }
+.upg-fb-num { font-family: var(--upg-font-display); font-size: 36px; font-weight: 900; color: var(--upg-purple-glow); line-height: 1; }
+.upg-fb-txt { font-size: 11px; color: var(--upg-muted); margin-top: 4px; line-height: 1.4; }
+
+@keyframes upg-floatBadge {
+    0%, 100% { transform: translateY(-50%) translateY(0); }
+    50%       { transform: translateY(-50%) translateY(-12px); }
+}
+
+@keyframes upg-fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── MARQUEE ─── */
+.upg-marquee-wrap {
+    border-top: 1px solid var(--upg-border);
+    border-bottom: 1px solid var(--upg-border);
+    background: rgba(30, 0, 70, 0.3);
+    overflow: hidden; padding: 16px 0;
+}
+.upg-marquee { overflow: hidden; }
+.upg-marquee-track {
+    display: flex; gap: 32px; width: max-content;
+    animation: upg-marqueeScroll 28s linear infinite;
+}
+.upg-marquee-track span {
+    font-family: var(--upg-font-display);
+    font-size: 13px; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; color: var(--upg-muted); white-space: nowrap;
+}
+.upg-dot { color: var(--upg-purple-vivid) !important; }
+
+@keyframes upg-marqueeScroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+/* ─── SECTION SHARED ─── */
+.upg-section-label {
+    font-size: 10px; font-weight: 700; letter-spacing: 2.5px;
+    text-transform: uppercase; color: var(--upg-purple-glow);
+    margin-bottom: 16px;
+    display: flex; align-items: center; gap: 10px;
+}
+.upg-section-label::before {
+    content: ''; display: block; width: 20px; height: 1px;
+    background: var(--upg-purple-glow);
+}
+.upg-section-title {
+    font-family: var(--upg-font-display);
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 900; line-height: 1.05;
+    letter-spacing: -1.5px;
+}
+.upg-section-title em {
+    font-style: normal;
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--upg-purple-glow);
+    text-stroke: 1.5px var(--upg-purple-glow);
+}
+.upg-section-header { text-align: center; margin-bottom: 64px; }
+.upg-section-header .upg-section-label { justify-content: center; }
+.upg-section-header--left { text-align: left; }
+.upg-section-header--left .upg-section-label { justify-content: flex-start; }
+
+/* ─── WORK GRID ─── */
+.upg-work {
+    padding: 120px 40px;
+    max-width: 1200px; margin: 0 auto;
+}
+
+.upg-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+}
+
+.upg-card {
+    grid-column: span 4;
+    background: var(--upg-panel);
+    border: 1px solid var(--upg-border);
+    border-radius: 20px; overflow: hidden;
+    display: flex; flex-direction: column;
+    transition: border-color 0.35s var(--upg-ease), transform 0.35s var(--upg-ease);
+    position: relative;
+}
+.upg-card:hover { border-color: rgba(140, 80, 255, 0.55); transform: translateY(-6px); }
+
+.upg-card--large { grid-column: span 8; }
+.upg-card--wide  { grid-column: span 8; }
+
+/* Card image placeholder area */
+.upg-card-img {
+    position: relative; overflow: hidden;
+    height: 240px; flex-shrink: 0;
+    background: linear-gradient(135deg,
+        hsl(var(--hue, 270), 80%, 10%) 0%,
+        hsl(var(--hue, 270), 60%, 18%) 100%
+    );
+}
+.upg-card--large .upg-card-img { height: 300px; }
+.upg-card--wide  .upg-card-img { height: 220px; }
+
+/* Glow effect on hover */
+.upg-card-glow {
+    position: absolute; inset: 0;
+    background: radial-gradient(circle at 50% 50%,
+        rgba(153, 51, 255, 0.0) 0%,
+        rgba(153, 51, 255, 0.0) 100%
+    );
+    transition: background 0.5s var(--upg-ease);
+    pointer-events: none; z-index: 3;
+}
+.upg-card:hover .upg-card-glow {
+    background: radial-gradient(circle at 50% 50%,
+        rgba(200, 120, 255, 0.25) 0%,
+        rgba(153, 51, 255, 0.0) 70%
+    );
+}
+
+/* Random glow animation */
+@keyframes upg-randomGlow {
+    0%, 100% { opacity: 0; }
+    50%       { opacity: 1; }
+}
+
+/* Placeholder content inside cards */
+.upg-card-placeholder {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 16px;
+    z-index: 2;
+}
+.upg-ph-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+    text-transform: uppercase; color: rgba(180, 130, 255, 0.5);
+    position: absolute; bottom: 16px; left: 20px;
+}
+.upg-ph-shapes { position: relative; width: 80px; height: 80px; }
+
+/* PH 1: circle + bars */
+.upg-ph-circle {
+    width: 60px; height: 60px; border-radius: 50%;
+    border: 2px solid rgba(153, 51, 255, 0.4);
+    background: rgba(100, 0, 200, 0.15);
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    animation: upg-spin 20s linear infinite;
+}
+.upg-ph-bar {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    height: 4px; background: rgba(153, 51, 255, 0.3); border-radius: 2px;
+    animation: upg-barPulse 3s ease-in-out infinite;
+}
+.upg-ph-bar--short { bottom: -10px; right: 30%; animation-delay: 0.5s; }
+
+/* PH 2: squares */
+.upg-ph-square {
+    width: 50px; height: 50px; border: 2px solid rgba(153, 51, 255, 0.35);
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(15deg);
+    background: rgba(80, 0, 160, 0.2);
+    animation: upg-spin 15s linear infinite reverse;
+}
+.upg-ph-square--sm {
+    width: 30px; height: 30px;
+    animation-duration: 10s;
+    border-color: rgba(200, 130, 255, 0.3);
+}
+
+/* PH 3: ring + dots */
+.upg-ph-ring {
+    width: 64px; height: 64px; border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: rgba(153, 51, 255, 0.5);
+    border-right-color: rgba(153, 51, 255, 0.25);
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    animation: upg-spin 6s linear infinite;
+}
+.upg-ph-dot-grid {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 24px; height: 24px;
+    background-image: radial-gradient(circle, rgba(153,51,255,0.5) 1.5px, transparent 1.5px);
+    background-size: 8px 8px;
+}
+
+/* PH 4: waves */
+.upg-ph-wave {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 80px; height: 80px; border-radius: 50%;
+    border: 1.5px solid rgba(153, 51, 255, 0.3);
+    animation: upg-waveExpand 3s ease-out infinite;
+}
+.upg-ph-wave--2 { animation-delay: 1.5s; }
+
+/* PH 5: lines */
+.upg-ph-lines {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 70px; display: flex; flex-direction: column; gap: 6px;
+}
+.upg-ph-lines::before,
+.upg-ph-lines::after {
+    content: '';
+    display: block; height: 2px; border-radius: 1px;
+    background: rgba(153, 51, 255, 0.35);
+    animation: upg-barPulse 3s ease-in-out infinite alternate;
+}
+.upg-ph-lines::before { width: 100%; }
+.upg-ph-lines::after  { width: 65%; animation-delay: 0.6s; }
+
+@keyframes upg-spin { to { transform: translate(-50%, -50%) rotate(360deg); } }
+@keyframes upg-barPulse {
+    0%, 100% { opacity: 0.3; transform: scaleX(1); }
+    50%       { opacity: 0.7; transform: scaleX(1.05); }
+}
+@keyframes upg-waveExpand {
+    0%   { transform: translate(-50%,-50%) scale(0.4); opacity: 0.8; }
+    100% { transform: translate(-50%,-50%) scale(1.4); opacity: 0; }
+}
+
+/* Card body */
+.upg-card-body { padding: 24px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.upg-card-meta { display: flex; gap: 8px; flex-wrap: wrap; }
+.upg-tag {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase;
+    padding: 5px 12px; border-radius: 100px;
+    background: rgba(100, 0, 200, 0.2);
+    border: 1px solid rgba(120, 50, 220, 0.25);
+    color: var(--upg-purple-glow);
+}
+.upg-card-title {
+    font-family: var(--upg-font-display);
+    font-size: 22px; font-weight: 800; letter-spacing: -0.5px;
+    line-height: 1.15; color: var(--upg-white);
+}
+.upg-card-desc {
+    font-size: 13.5px; font-weight: 300; line-height: 1.65;
+    color: var(--upg-muted); flex: 1;
+}
+.upg-card-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 700;
+    color: var(--upg-purple-glow);
+    margin-top: 8px; transition: gap 0.2s var(--upg-ease);
+}
+.upg-card-link svg { width: 14px; height: 14px; }
+.upg-card-link:hover { gap: 14px; }
+
+/* Random glow trigger */
+.upg-card[data-glow].glow-active .upg-card-glow {
+    background: radial-gradient(circle at 50% 30%,
+        rgba(200, 100, 255, 0.35) 0%,
+        rgba(153, 51, 255, 0.0) 60%
+    );
+    animation: upg-randomGlow 1.5s ease-in-out;
+}
+
+/* ─── SERVICES ─── */
+.upg-services {
+    padding: 120px 40px;
+    background: linear-gradient(180deg, transparent 0%, rgba(30, 0, 80, 0.3) 50%, transparent 100%);
+    border-top: 1px solid var(--upg-border);
+    border-bottom: 1px solid var(--upg-border);
+}
+.upg-services-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 320px 1fr; gap: 80px; align-items: start;
+}
+.upg-services-list { display: flex; flex-direction: column; }
+
+.upg-svc-item {
+    display: flex; align-items: flex-start; gap: 24px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--upg-border);
+    cursor: none; transition: background 0.3s;
+    position: relative;
+}
+.upg-svc-item:first-child { border-top: 1px solid var(--upg-border); }
+.upg-svc-item::before {
+    content: ''; position: absolute; inset: 0;
+    background: rgba(80, 0, 180, 0.08);
+    opacity: 0; transition: opacity 0.3s;
+    border-radius: 8px;
+}
+.upg-svc-item:hover::before { opacity: 1; }
+.upg-svc-item:hover .upg-svc-num { color: var(--upg-purple-glow); }
+.upg-svc-item:hover .upg-svc-arrow { opacity: 1; transform: translate(0, -2px); }
+
+.upg-svc-num {
+    font-family: var(--upg-font-display);
+    font-size: 11px; font-weight: 800; letter-spacing: 1px;
+    color: rgba(120, 60, 200, 0.4);
+    padding-top: 4px; transition: color 0.3s; min-width: 24px;
+}
+.upg-svc-body { flex: 1; }
+.upg-svc-body h3 {
+    font-family: var(--upg-font-display);
+    font-size: 20px; font-weight: 800; margin-bottom: 6px;
+    letter-spacing: -0.3px;
+}
+.upg-svc-body p {
+    font-size: 13.5px; font-weight: 300; line-height: 1.65; color: var(--upg-muted);
+}
+.upg-svc-arrow {
+    font-size: 18px; color: var(--upg-purple-glow);
+    opacity: 0; transition: opacity 0.3s, transform 0.3s var(--upg-ease);
+    padding-top: 4px; transform: translate(-6px, 4px);
+}
+
+/* ─── ABOUT ─── */
+.upg-about {
+    padding: 120px 40px;
+    max-width: 1100px; margin: 0 auto;
+}
+.upg-about-inner {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+}
+
+.upg-about-card {
+    background: var(--upg-panel);
+    border: 1px solid var(--upg-border);
+    border-radius: 24px; padding: 48px;
+    position: relative; overflow: hidden;
+}
+.upg-about-orb {
+    position: absolute; top: -60px; right: -60px;
+    width: 200px; height: 200px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(102,0,204,0.5), transparent 70%);
+    filter: blur(40px); pointer-events: none;
+}
+.upg-stat-stack { display: flex; flex-direction: column; gap: 36px; position: relative; z-index: 1; }
+.upg-stat-num {
+    font-family: var(--upg-font-display);
+    font-size: 56px; font-weight: 900; line-height: 1;
+    color: var(--upg-white);
+}
+.upg-stat-num span { color: var(--upg-purple-glow); }
+.upg-stat-lbl {
+    font-size: 13px; font-weight: 500; color: var(--upg-muted); margin-top: 4px;
+}
+
+.upg-about-text { display: flex; flex-direction: column; gap: 20px; }
+.upg-about-body {
+    font-size: 15.5px; font-weight: 300; line-height: 1.75; color: var(--upg-muted);
+}
+
+/* ─── CONTACT ─── */
+.upg-contact {
+    padding: 120px 40px;
+    background: linear-gradient(180deg, transparent, rgba(30, 0, 80, 0.25));
+    border-top: 1px solid var(--upg-border);
+    position: relative; overflow: hidden;
+}
+.upg-contact-orb {
+    position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+    width: 700px; height: 400px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(80,0,180,0.3), transparent 70%);
+    filter: blur(80px); pointer-events: none;
+}
+.upg-contact-inner {
+    max-width: 680px; margin: 0 auto; position: relative; z-index: 1;
+}
+.upg-contact-title {
+    font-family: var(--upg-font-display);
+    font-size: clamp(42px, 6vw, 80px);
+    font-weight: 900; letter-spacing: -2px; line-height: 1;
+    margin: 16px 0 20px;
+}
+.upg-contact-title em {
+    font-style: normal;
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--upg-purple-glow);
+    text-stroke: 1.5px var(--upg-purple-glow);
+}
+.upg-contact-sub {
+    font-size: 15px; font-weight: 300; color: var(--upg-muted); margin-bottom: 48px; line-height: 1.6;
+}
+
+.upg-form { display: flex; flex-direction: column; gap: 20px; }
+.upg-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.upg-field { display: flex; flex-direction: column; gap: 8px; }
+.upg-field label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; color: var(--upg-muted);
+}
+.upg-field input,
+.upg-field textarea,
+.upg-field select {
+    background: var(--upg-panel);
+    border: 1px solid var(--upg-border);
+    border-radius: 12px; padding: 14px 18px;
+    color: var(--upg-white); font-size: 14.5px; font-weight: 400;
+    outline: none; transition: border-color 0.25s, box-shadow 0.25s;
+    resize: none;
+    appearance: none; -webkit-appearance: none;
+}
+.upg-field input::placeholder,
+.upg-field textarea::placeholder { color: rgba(140, 100, 200, 0.35); }
+.upg-field input:focus,
+.upg-field textarea:focus,
+.upg-field select:focus {
+    border-color: rgba(140, 80, 255, 0.5);
+    box-shadow: 0 0 0 3px rgba(100, 0, 200, 0.12), 0 0 20px rgba(100, 0, 200, 0.1);
+}
+.upg-select-wrap { position: relative; }
+.upg-select-wrap::after {
+    content: '▾'; position: absolute; right: 16px; top: 50%; transform: translateY(-50%);
+    color: var(--upg-muted); pointer-events: none; font-size: 12px;
+}
+.upg-field select option { background: #1a0044; }
+
+.upg-btn-submit { width: 100%; justify-content: center; border: none; cursor: none; }
+.upg-btn-submit.sent {
+    background: rgba(60, 200, 120, 0.2);
+    border: 1px solid rgba(60, 200, 120, 0.4);
+    color: #80ffb0;
+}
+
+/* ─── FOOTER ─── */
+.upg-footer {
+    background: rgba(10, 0, 28, 0.9);
+    border-top: 1px solid var(--upg-border);
+    padding: 60px 40px 30px;
+}
+.upg-footer-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: flex-start;
+    flex-wrap: wrap; gap: 40px; margin-bottom: 48px;
+}
+.upg-footer-brand p {
+    font-size: 14px; font-weight: 300; color: var(--upg-muted); line-height: 1.6; margin-top: 16px;
+}
+.upg-footer-links { display: flex; gap: 60px; }
+.upg-footer-col { display: flex; flex-direction: column; gap: 12px; }
+.upg-footer-col-title {
+    font-size: 10px; font-weight: 800; letter-spacing: 1.5px;
+    text-transform: uppercase; color: var(--upg-purple-glow); margin-bottom: 4px;
+}
+.upg-footer-col a {
+    font-size: 14px; font-weight: 400; color: var(--upg-muted);
+    transition: color 0.2s;
+}
+.upg-footer-col a:hover { color: var(--upg-white); }
+
+.upg-footer-bottom {
+    max-width: 1100px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+    font-size: 12px; color: rgba(100, 60, 160, 0.5);
+    padding-top: 24px; border-top: 1px solid var(--upg-border);
+}
+
+/* ─── SCROLL REVEAL ─── */
+.upg-reveal {
+    opacity: 0; transform: translateY(32px);
+    transition: opacity 0.8s var(--upg-ease), transform 0.8s var(--upg-ease);
+}
+.upg-reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 1024px) {
+    .upg-services-inner { grid-template-columns: 1fr; gap: 48px; }
+    .upg-about-inner    { grid-template-columns: 1fr; }
+    .upg-card--large    { grid-column: span 12; }
+    .upg-card--wide     { grid-column: span 12; }
+    .upg-card           { grid-column: span 6; }
+    .upg-floating-badge { display: none; }
+}
+@media (max-width: 768px) {
+    .upg-nav-links, .upg-nav-cta { display: none; }
+    .upg-burger { display: flex; }
+    .upg-hero { padding: 120px 24px 80px; }
+    .upg-work, .upg-services, .upg-about, .upg-contact { padding: 80px 24px; }
+    .upg-card, .upg-card--large, .upg-card--wide { grid-column: span 12; }
+    .upg-form-row { grid-template-columns: 1fr; }
+    .upg-footer-inner { flex-direction: column; }
+    .upg-nav { padding: 0 24px; }
+    .upg-footer { padding: 48px 24px 24px; }
+    .upg-hero-title { letter-spacing: -2px; }
+    .upg-cursor, .upg-cursor-trail { display: none; }
+    body { cursor: auto; }
+    a, button { cursor: pointer; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- Noise overlay -->
+<div class="upg-noise"></div>
+
+<!-- Cursor -->
+<div class="upg-cursor" id="upgCursor"></div>
+<div class="upg-cursor-trail" id="upgCursorTrail"></div>
+
+<!-- NAV -->
+<nav class="upg-nav" id="upgNav">
+    <a href="#" class="upg-logo">
+        <div class="upg-logo-mark">
+            <svg viewBox="0 0 32 32" fill="none">
+                <path d="M16 4 L28 28 L4 28 Z" fill="white" opacity="0.9"/>
+                <path d="M16 4 L28 28 L4 28 Z" stroke="rgba(180,100,255,0.8)" stroke-width="1.5" fill="none"/>
+            </svg>
+        </div>
+        <span>Upgrade</span>
+    </a>
+    <ul class="upg-nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="upg-nav-cta">Start a project</a>
+    <button class="upg-burger" id="upgBurger" aria-label="Menu">
+        <span></span><span></span>
+    </button>
+</nav>
+
+<!-- Mobile menu -->
+<div class="upg-mobile-menu" id="upgMobile">
+    <a href="#work" class="upg-mm-link">Work</a>
+    <a href="#about" class="upg-mm-link">About</a>
+    <a href="#services" class="upg-mm-link">Services</a>
+    <a href="#contact" class="upg-mm-link">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="upg-hero" id="upgHero">
+    <div class="upg-hero-orb upg-orb-1"></div>
+    <div class="upg-hero-orb upg-orb-2"></div>
+    <div class="upg-hero-orb upg-orb-3"></div>
+
+    <div class="upg-hero-inner">
+        <div class="upg-hero-tag">
+            <span class="upg-pulse-dot"></span>
+            Design Studio · Est. 2024
+        </div>
+        <h1 class="upg-hero-title">
+            <span class="upg-line" data-delay="0">We design</span>
+            <span class="upg-line upg-line-accent" data-delay="120">things that</span>
+            <span class="upg-line" data-delay="240">matter.</span>
+        </h1>
+        <p class="upg-hero-sub">
+            Brand identities, digital experiences, and visual systems<br>
+            built to leave a lasting impression.
+        </p>
+        <div class="upg-hero-actions">
+            <a href="#work" class="upg-btn upg-btn-primary">
+                <span>See our work</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+            <a href="#contact" class="upg-btn upg-btn-ghost">Get in touch</a>
+        </div>
+    </div>
+
+    <div class="upg-hero-scroll">
+        <span>Scroll</span>
+        <div class="upg-scroll-line"></div>
+    </div>
+
+    <!-- Floating badge -->
+    <div class="upg-floating-badge">
+        <div class="upg-fb-inner">
+            <div class="upg-fb-num">40+</div>
+            <div class="upg-fb-txt">Projects<br>Delivered</div>
+        </div>
+    </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="upg-marquee-wrap">
+    <div class="upg-marquee">
+        <div class="upg-marquee-track">
+            <span>Branding</span><span class="upg-dot">◆</span>
+            <span>Web Design</span><span class="upg-dot">◆</span>
+            <span>UI/UX</span><span class="upg-dot">◆</span>
+            <span>Motion</span><span class="upg-dot">◆</span>
+            <span>Identity</span><span class="upg-dot">◆</span>
+            <span>Digital</span><span class="upg-dot">◆</span>
+            <span>Packaging</span><span class="upg-dot">◆</span>
+            <span>Strategy</span><span class="upg-dot">◆</span>
+            <span>Branding</span><span class="upg-dot">◆</span>
+            <span>Web Design</span><span class="upg-dot">◆</span>
+            <span>UI/UX</span><span class="upg-dot">◆</span>
+            <span>Motion</span><span class="upg-dot">◆</span>
+            <span>Identity</span><span class="upg-dot">◆</span>
+            <span>Digital</span><span class="upg-dot">◆</span>
+            <span>Packaging</span><span class="upg-dot">◆</span>
+            <span>Strategy</span><span class="upg-dot">◆</span>
+        </div>
+    </div>
+</div>
+
+<!-- WORK -->
+<section class="upg-work" id="work">
+    <div class="upg-section-header">
+        <div class="upg-section-label">Selected Work</div>
+        <h2 class="upg-section-title">Projects that<br><em>define us</em></h2>
+    </div>
+
+    <div class="upg-grid">
+
+        <article class="upg-card upg-card--large" data-glow>
+            <div class="upg-card-img" style="--hue: 270;">
+                <div class="upg-card-placeholder upg-ph-1">
+                    <div class="upg-ph-shapes">
+                        <div class="upg-ph-circle"></div>
+                        <div class="upg-ph-bar"></div>
+                        <div class="upg-ph-bar upg-ph-bar--short"></div>
+                    </div>
+                    <span class="upg-ph-label">Brand Identity</span>
+                </div>
+                <div class="upg-card-glow"></div>
+            </div>
+            <div class="upg-card-body">
+                <div class="upg-card-meta">
+                    <span class="upg-tag">Branding</span>
+                    <span class="upg-tag">Identity</span>
+                </div>
+                <h3 class="upg-card-title">Nexus Brand System</h3>
+                <p class="upg-card-desc">Full visual identity for a fintech startup — logo, typeface selection, color system, and brand guidelines.</p>
+                <a href="#" class="upg-card-link">
+                    View project
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </article>
+
+        <article class="upg-card" data-glow>
+            <div class="upg-card-img" style="--hue: 290;">
+                <div class="upg-card-placeholder upg-ph-2">
+                    <div class="upg-ph-shapes">
+                        <div class="upg-ph-square"></div>
+                        <div class="upg-ph-square upg-ph-square--sm"></div>
+                    </div>
+                    <span class="upg-ph-label">UI Design</span>
+                </div>
+                <div class="upg-card-glow"></div>
+            </div>
+            <div class="upg-card-body">
+                <div class="upg-card-meta">
+                    <span class="upg-tag">UI/UX</span>
+                    <span class="upg-tag">Web</span>
+                </div>
+                <h3 class="upg-card-title">Aether Dashboard</h3>
+                <p class="upg-card-desc">SaaS analytics dashboard with a dark, premium feel and smooth data visualizations.</p>
+                <a href="#" class="upg-card-link">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+        </article>
+
+        <article class="upg-card" data-glow>
+            <div class="upg-card-img" style="--hue: 310;">
+                <div class="upg-card-placeholder upg-ph-3">
+                    <div class="upg-ph-shapes">
+                        <div class="upg-ph-ring"></div>
+                        <div class="upg-ph-dot-grid"></div>
+                    </div>
+                    <span class="upg-ph-label">Packaging</span>
+                </div>
+                <div class="upg-card-glow"></div>
+            </div>
+            <div class="upg-card-body">
+                <div class="upg-card-meta">
+                    <span class="upg-tag">Packaging</span>
+                    <span class="upg-tag">Print</span>
+                </div>
+                <h3 class="upg-card-title">Solara Cosmetics</h3>
+                <p class="upg-card-desc">Luxury packaging and campaign design for an emerging beauty brand entering premium retail.</p>
+                <a href="#" class="upg-card-link">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+        </article>
+
+        <article class="upg-card upg-card--wide" data-glow>
+            <div class="upg-card-img" style="--hue: 255;">
+                <div class="upg-card-placeholder upg-ph-4">
+                    <div class="upg-ph-shapes">
+                        <div class="upg-ph-wave"></div>
+                        <div class="upg-ph-wave upg-ph-wave--2"></div>
+                    </div>
+                    <span class="upg-ph-label">Motion Design</span>
+                </div>
+                <div class="upg-card-glow"></div>
+            </div>
+            <div class="upg-card-body">
+                <div class="upg-card-meta">
+                    <span class="upg-tag">Motion</span>
+                    <span class="upg-tag">Animation</span>
+                </div>
+                <h3 class="upg-card-title">Orbit Motion System</h3>
+                <p class="upg-card-desc">Complete motion language for a tech company — intro sequences, UI micro-animations, and looping brand visuals.</p>
+                <a href="#" class="upg-card-link">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+        </article>
+
+        <article class="upg-card" data-glow>
+            <div class="upg-card-img" style="--hue: 280;">
+                <div class="upg-card-placeholder upg-ph-5">
+                    <div class="upg-ph-shapes">
+                        <div class="upg-ph-lines"></div>
+                    </div>
+                    <span class="upg-ph-label">Web Design</span>
+                </div>
+                <div class="upg-card-glow"></div>
+            </div>
+            <div class="upg-card-body">
+                <div class="upg-card-meta">
+                    <span class="upg-tag">Web</span>
+                    <span class="upg-tag">Strategy</span>
+                </div>
+                <h3 class="upg-card-title">Veld Studios Site</h3>
+                <p class="upg-card-desc">Editorial-style website for a creative studio with immersive scroll storytelling and bespoke type layout.</p>
+                <a href="#" class="upg-card-link">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="upg-services" id="services">
+    <div class="upg-services-inner">
+        <div class="upg-section-header upg-section-header--left">
+            <div class="upg-section-label">What we do</div>
+            <h2 class="upg-section-title">Our<br><em>expertise</em></h2>
+        </div>
+
+        <div class="upg-services-list">
+            <div class="upg-svc-item">
+                <div class="upg-svc-num">01</div>
+                <div class="upg-svc-body">
+                    <h3>Brand Identity</h3>
+                    <p>Logo systems, visual languages, and comprehensive brand guidelines that give your company a distinct, lasting presence.</p>
+                </div>
+                <div class="upg-svc-arrow">↗</div>
+            </div>
+            <div class="upg-svc-item">
+                <div class="upg-svc-num">02</div>
+                <div class="upg-svc-body">
+                    <h3>Web & UI Design</h3>
+                    <p>Digital experiences that are as beautiful as they are functional — from landing pages to full product interfaces.</p>
+                </div>
+                <div class="upg-svc-arrow">↗</div>
+            </div>
+            <div class="upg-svc-item">
+                <div class="upg-svc-num">03</div>
+                <div class="upg-svc-body">
+                    <h3>Motion & Animation</h3>
+                    <p>Kinetic brand expressions, UI animations, and storytelling sequences that bring your brand to life.</p>
+                </div>
+                <div class="upg-svc-arrow">↗</div>
+            </div>
+            <div class="upg-svc-item">
+                <div class="upg-svc-num">04</div>
+                <div class="upg-svc-body">
+                    <h3>Packaging & Print</h3>
+                    <p>Tactile design that commands attention on shelf and leaves an impression long after the unboxing.</p>
+                </div>
+                <div class="upg-svc-arrow">↗</div>
+            </div>
+            <div class="upg-svc-item">
+                <div class="upg-svc-num">05</div>
+                <div class="upg-svc-body">
+                    <h3>Creative Strategy</h3>
+                    <p>Research-driven positioning, messaging frameworks, and creative direction that align design with business goals.</p>
+                </div>
+                <div class="upg-svc-arrow">↗</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="upg-about" id="about">
+    <div class="upg-about-inner">
+        <div class="upg-about-visual">
+            <div class="upg-about-card">
+                <div class="upg-about-orb"></div>
+                <div class="upg-stat-stack">
+                    <div class="upg-stat">
+                        <div class="upg-stat-num">40<span>+</span></div>
+                        <div class="upg-stat-lbl">Projects delivered</div>
+                    </div>
+                    <div class="upg-stat">
+                        <div class="upg-stat-num">12<span>+</span></div>
+                        <div class="upg-stat-lbl">Industries served</div>
+                    </div>
+                    <div class="upg-stat">
+                        <div class="upg-stat-num">98<span>%</span></div>
+                        <div class="upg-stat-lbl">Client satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upg-about-text">
+            <div class="upg-section-label">About us</div>
+            <h2 class="upg-section-title">Design is<br><em>our obsession</em></h2>
+            <p class="upg-about-body">Upgrade is an independent design studio built on the belief that great design is a competitive advantage. We partner with ambitious brands — from bold startups to established companies — to craft visual identities and digital experiences that are impossible to ignore.</p>
+            <p class="upg-about-body">Every project begins with deep listening and ends with something that truly reflects who you are — refined, purposeful, and built to last.</p>
+            <a href="#contact" class="upg-btn upg-btn-primary">Work with us</a>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="upg-contact" id="contact">
+    <div class="upg-contact-orb"></div>
+    <div class="upg-contact-inner">
+        <div class="upg-section-label">Get in touch</div>
+        <h2 class="upg-contact-title">Ready to<br><em>Upgrade?</em></h2>
+        <p class="upg-contact-sub">Tell us about your project. We'll get back to you within 24 hours.</p>
+        <form class="upg-form" id="upgForm">
+            <div class="upg-form-row">
+                <div class="upg-field">
+                    <label>Your name</label>
+                    <input type="text" placeholder="Alex Johnson" required>
+                </div>
+                <div class="upg-field">
+                    <label>Email address</label>
+                    <input type="email" placeholder="alex@company.com" required>
+                </div>
+            </div>
+            <div class="upg-field">
+                <label>What are you looking for?</label>
+                <div class="upg-select-wrap">
+                    <select>
+                        <option value="">Select a service...</option>
+                        <option>Brand Identity</option>
+                        <option>Web & UI Design</option>
+                        <option>Motion & Animation</option>
+                        <option>Packaging & Print</option>
+                        <option>Creative Strategy</option>
+                        <option>Something else</option>
+                    </select>
+                </div>
+            </div>
+            <div class="upg-field">
+                <label>Tell us about the project</label>
+                <textarea placeholder="What are you building? Who's it for? What's the timeline?" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="upg-btn upg-btn-primary upg-btn-submit">
+                <span>Send message</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="upg-footer">
+    <div class="upg-footer-inner">
+        <div class="upg-footer-brand">
+            <a href="#" class="upg-logo">
+                <div class="upg-logo-mark">
+                    <svg viewBox="0 0 32 32" fill="none">
+                        <path d="M16 4 L28 28 L4 28 Z" fill="white" opacity="0.9"/>
+                        <path d="M16 4 L28 28 L4 28 Z" stroke="rgba(180,100,255,0.8)" stroke-width="1.5" fill="none"/>
+                    </svg>
+                </div>
+                <span>Upgrade</span>
+            </a>
+            <p>Designing things that matter,<br>one project at a time.</p>
+        </div>
+        <div class="upg-footer-links">
+            <div class="upg-footer-col">
+                <div class="upg-footer-col-title">Studio</div>
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+            </div>
+            <div class="upg-footer-col">
+                <div class="upg-footer-col-title">Connect</div>
+                <a href="#">Behance</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+    <div class="upg-footer-bottom">
+        <span>© 2025 Upgrade Design Studio. All rights reserved.</span>
+        <span>Made with obsession ◆</span>
+    </div>
+</footer>
+
+<script>
+/* =====================================================
+   UPGRADE DESIGN STUDIO — main.js
+   ===================================================== */
+
+(function () {
+    'use strict';
+
+    /* ── Custom Cursor ── */
+    const cursor      = document.getElementById('upgCursor');
+    const cursorTrail = document.getElementById('upgCursorTrail');
+    let mx = 0, my = 0, tx = 0, ty = 0;
+
+    document.addEventListener('mousemove', e => {
+        mx = e.clientX; my = e.clientY;
+        if (cursor) { cursor.style.left = mx + 'px'; cursor.style.top = my + 'px'; }
+    });
+
+    // Smooth trail
+    function animTrail() {
+        tx += (mx - tx) * 0.12;
+        ty += (my - ty) * 0.12;
+        if (cursorTrail) {
+            cursorTrail.style.left = tx + 'px';
+            cursorTrail.style.top  = ty + 'px';
+        }
+        requestAnimationFrame(animTrail);
+    }
+    animTrail();
+
+    // Hover state for interactive elements
+    const interactives = document.querySelectorAll('a, button, .upg-card, .upg-svc-item, input, textarea, select');
+    interactives.forEach(el => {
+        el.addEventListener('mouseenter', () => cursor && cursor.classList.add('hover'));
+        el.addEventListener('mouseleave', () => cursor && cursor.classList.remove('hover'));
+    });
+
+    /* ── Sticky Nav ── */
+    const nav = document.getElementById('upgNav');
+    window.addEventListener('scroll', () => {
+        if (nav) nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    /* ── Mobile Menu ── */
+    const burger     = document.getElementById('upgBurger');
+    const mobileMenu = document.getElementById('upgMobile');
+
+    if (burger && mobileMenu) {
+        burger.addEventListener('click', () => {
+            const open = mobileMenu.classList.toggle('open');
+            burger.classList.toggle('open', open);
+            document.body.style.overflow = open ? 'hidden' : '';
+        });
+
+        // Close on link click
+        mobileMenu.querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                burger.classList.remove('open');
+                document.body.style.overflow = '';
+            });
+        });
+    }
+
+    /* ── Scroll Reveal ── */
+    const revealEls = document.querySelectorAll(
+        '.upg-card, .upg-svc-item, .upg-stat, .upg-about-card, .upg-section-header, .upg-contact-inner > *'
+    );
+    revealEls.forEach((el, i) => {
+        el.classList.add('upg-reveal');
+        el.style.transitionDelay = (i % 4) * 0.08 + 's';
+    });
+
+    const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    /* ── Random Card Glow ── */
+    const glowCards = document.querySelectorAll('[data-glow]');
+
+    function triggerRandomGlow() {
+        if (!glowCards.length) return;
+        const card = glowCards[Math.floor(Math.random() * glowCards.length)];
+        card.classList.add('glow-active');
+        setTimeout(() => card.classList.remove('glow-active'), 1600);
+        // Next trigger between 2–5 seconds
+        setTimeout(triggerRandomGlow, 2000 + Math.random() * 3000);
+    }
+
+    // Start after a short delay
+    setTimeout(triggerRandomGlow, 1500);
+
+    /* ── Parallax orbs on hero ── */
+    const orbs = document.querySelectorAll('.upg-hero-orb');
+    document.addEventListener('mousemove', e => {
+        const cx = (e.clientX / window.innerWidth  - 0.5) * 2;
+        const cy = (e.clientY / window.innerHeight - 0.5) * 2;
+        orbs.forEach((orb, i) => {
+            const depth = (i + 1) * 12;
+            orb.style.transform = `translate(${cx * depth}px, ${cy * depth}px)`;
+        });
+    }, { passive: true });
+
+    /* ── Form ── */
+    const form = document.getElementById('upgForm');
+    if (form) {
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            const btn = form.querySelector('.upg-btn-submit');
+            btn.classList.add('sent');
+            btn.querySelector('span').textContent = 'Message sent ✓';
+            // Reset after 4s
+            setTimeout(() => {
+                btn.classList.remove('sent');
+                btn.querySelector('span').textContent = 'Send message';
+                form.reset();
+            }, 4000);
+        });
+    }
+
+    /* ── Smooth scroll for anchor links ── */
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', e => {
+            const target = document.querySelector(link.getAttribute('href'));
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    /* ── Animated number counters (stat section) ── */
+    const statNums = document.querySelectorAll('.upg-stat-num');
+    const statObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            const el = entry.target;
+            const text = el.textContent.trim();
+            const numMatch = text.match(/\d+/);
+            if (!numMatch) return;
+            const target = parseInt(numMatch[0]);
+            const suffix = el.querySelector('span') ? el.querySelector('span').textContent : '';
+            let current = 0;
+            const step = Math.ceil(target / 40);
+            const span = el.querySelector('span');
+
+            const interval = setInterval(() => {
+                current = Math.min(current + step, target);
+                el.childNodes[0].textContent = current;
+                if (span) el.appendChild(span);
+                if (current >= target) clearInterval(interval);
+            }, 30);
+
+            statObserver.unobserve(el);
+        });
+    }, { threshold: 0.5 });
+
+    statNums.forEach(el => statObserver.observe(el));
+
+})();
+
+</script>
+</body>
+</html>

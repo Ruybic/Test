@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 70,
-    "longest": 70,
-    "last_updated": "2026-05-07"
+    "current": 71,
+    "longest": 71,
+    "last_updated": "2026-05-08"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -21004,6 +21004,296 @@
         "title": "How to Be a Heartbreaker (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2463569/covers/card.jpg?1777733995",
         "unique_players": 32
+      }
+    },
+    "2026-05-08": {
+      "total_scores": 468,
+      "peak_hour_baghdad": 21,
+      "top_grinder": {
+        "user": "manicide",
+        "user_id": 39330365,
+        "count": 60,
+        "scores": [
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6658596718,
+            "rank": "C",
+            "accuracy": 0.8209876543209876,
+            "pp": 42.523,
+            "mods": [
+              "HD"
+            ],
+            "combo": 144,
+            "created_at": "2026-05-08T01:05:53Z",
+            "beatmapset": {
+              "id": 968171,
+              "title": "Mizuoto to Curtain",
+              "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
+              "stars": 4.56498
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6658591792,
+            "rank": "C",
+            "accuracy": 0.7239583333333334,
+            "pp": 41.7877,
+            "mods": [],
+            "combo": 98,
+            "created_at": "2026-05-08T01:04:16Z",
+            "beatmapset": {
+              "id": 968171,
+              "title": "Mizuoto to Curtain",
+              "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
+              "stars": 5.60785
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6658588363,
+            "rank": "B",
+            "accuracy": 0.8713991769547325,
+            "pp": 41.4237,
+            "mods": [],
+            "combo": 117,
+            "created_at": "2026-05-08T01:03:08Z",
+            "beatmapset": {
+              "id": 968171,
+              "title": "Mizuoto to Curtain",
+              "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
+              "stars": 4.56498
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6658581945,
+            "rank": "C",
+            "accuracy": 0.8360655737704918,
+            "pp": 49.0199,
+            "mods": [],
+            "combo": 63,
+            "created_at": "2026-05-08T01:01:00Z",
+            "beatmapset": {
+              "id": 1061287,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/1061287/covers/card.jpg?1650688170",
+              "stars": 4.99431
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6658579563,
+            "rank": "A",
+            "accuracy": 0.9242424242424242,
+            "pp": 55.5559,
+            "mods": [],
+            "combo": 41,
+            "created_at": "2026-05-08T01:00:13Z",
+            "beatmapset": {
+              "id": 1061287,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/1061287/covers/card.jpg?1650688170",
+              "stars": 4.45384
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6658577442,
+            "rank": "B",
+            "accuracy": 0.8409090909090909,
+            "pp": 48.4974,
+            "mods": [],
+            "combo": 58,
+            "created_at": "2026-05-08T00:59:30Z",
+            "beatmapset": {
+              "id": 1061287,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/1061287/covers/card.jpg?1650688170",
+              "stars": 4.97003
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6658570166,
+            "rank": "B",
+            "accuracy": 0.9172113289760349,
+            "pp": 53.6175,
+            "mods": [],
+            "combo": 90,
+            "created_at": "2026-05-08T00:57:07Z",
+            "beatmapset": {
+              "id": 527431,
+              "title": "Gravity Falls Theme Song",
+              "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+              "stars": 4.43427
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6658552489,
+            "rank": "B",
+            "accuracy": 0.8978102189781022,
+            "pp": 45.9976,
+            "mods": [],
+            "combo": 135,
+            "created_at": "2026-05-08T00:51:16Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 4.37903
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6658548395,
+            "rank": "B",
+            "accuracy": 0.8910256410256411,
+            "pp": 50.0883,
+            "mods": [],
+            "combo": 114,
+            "created_at": "2026-05-08T00:49:55Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 4.85223
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6658543596,
+            "rank": "A",
+            "accuracy": 0.933641975308642,
+            "pp": 54.2263,
+            "mods": [],
+            "combo": 85,
+            "created_at": "2026-05-08T00:48:20Z",
+            "beatmapset": {
+              "id": 2506168,
+              "title": "Die A Million Times (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506168/covers/card.jpg?1773702471",
+              "stars": 4.49663
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6658538317,
+            "rank": "C",
+            "accuracy": 0.7360308285163777,
+            "pp": 43.5897,
+            "mods": [],
+            "combo": 95,
+            "created_at": "2026-05-08T00:46:36Z",
+            "beatmapset": {
+              "id": 2487912,
+              "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+              "stars": 5.31255
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6658533904,
+            "rank": "C",
+            "accuracy": 0.8416206261510129,
+            "pp": 49.0705,
+            "mods": [],
+            "combo": 141,
+            "created_at": "2026-05-08T00:45:07Z",
+            "beatmapset": {
+              "id": 2487912,
+              "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+              "stars": 4.81324
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6658516283,
+            "rank": "B",
+            "accuracy": 0.8905852417302799,
+            "pp": 51.788,
+            "mods": [],
+            "combo": 44,
+            "created_at": "2026-05-08T00:39:27Z",
+            "beatmapset": {
+              "id": 2495896,
+              "title": "Marlboro Nights",
+              "cover": "https://assets.ppy.sh/beatmaps/2495896/covers/card.jpg?1771999531",
+              "stars": 4.63413
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6658512515,
+            "rank": "A",
+            "accuracy": 0.924812030075188,
+            "pp": 48.8012,
+            "mods": [],
+            "combo": 72,
+            "created_at": "2026-05-08T00:38:14Z",
+            "beatmapset": {
+              "id": 2495896,
+              "title": "Marlboro Nights",
+              "cover": "https://assets.ppy.sh/beatmaps/2495896/covers/card.jpg?1771999531",
+              "stars": 4.32072
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 6658505094,
+            "rank": "C",
+            "accuracy": 0.7650017343045439,
+            "pp": 18.6302,
+            "mods": [
+              "NF"
+            ],
+            "combo": 175,
+            "created_at": "2026-05-08T00:35:48Z",
+            "beatmapset": {
+              "id": 613083,
+              "title": "Koi no Hime Hime Pettanko",
+              "cover": "https://assets.ppy.sh/beatmaps/613083/covers/card.jpg?1650651613",
+              "stars": 5.57345
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Inferno (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/999645/covers/card.jpg?1650682203",
+        "unique_players": 15
       }
     }
   }

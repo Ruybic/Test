@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 71,
-    "longest": 71,
-    "last_updated": "2026-05-08"
+    "current": 72,
+    "longest": 72,
+    "last_updated": "2026-05-09"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -21294,6 +21294,292 @@
         "title": "Inferno (TV Size)",
         "cover": "https://assets.ppy.sh/beatmaps/999645/covers/card.jpg?1650682203",
         "unique_players": 15
+      }
+    },
+    "2026-05-09": {
+      "total_scores": 454,
+      "peak_hour_baghdad": 8,
+      "top_grinder": {
+        "user": "NstR",
+        "user_id": 27935485,
+        "count": 55,
+        "scores": [
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6664128389,
+            "rank": "B",
+            "accuracy": 0.9061913696060038,
+            "pp": 15.3533,
+            "mods": [],
+            "combo": 350,
+            "created_at": "2026-05-08T23:49:25Z",
+            "beatmapset": {
+              "id": 2468630,
+              "title": "Wakuwaku Tabemono Land",
+              "cover": "https://assets.ppy.sh/beatmaps/2468630/covers/card.jpg?1765528318",
+              "stars": 2.85898
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6664114730,
+            "rank": "C",
+            "accuracy": 0.7202486678507993,
+            "pp": 4.97019,
+            "mods": [],
+            "combo": 121,
+            "created_at": "2026-05-08T23:45:33Z",
+            "beatmapset": {
+              "id": 1817884,
+              "title": "Dance In The Game",
+              "cover": "https://assets.ppy.sh/beatmaps/1817884/covers/card.jpg?1670683090",
+              "stars": 3.40319
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6664098294,
+            "rank": "B",
+            "accuracy": 0.901323706377858,
+            "pp": 7.46515,
+            "mods": [],
+            "combo": 210,
+            "created_at": "2026-05-08T23:41:00Z",
+            "beatmapset": {
+              "id": 48356,
+              "title": "Dreadnought",
+              "cover": "https://assets.ppy.sh/beatmaps/48356/covers/card.jpg?1650611580",
+              "stars": 2.41308
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6664085419,
+            "rank": "B",
+            "accuracy": 0.8715277777777778,
+            "pp": 7.3899,
+            "mods": [],
+            "combo": 231,
+            "created_at": "2026-05-08T23:37:24Z",
+            "beatmapset": {
+              "id": 681410,
+              "title": "Maritime Police",
+              "cover": "https://assets.ppy.sh/beatmaps/681410/covers/card.jpg?1650655181",
+              "stars": 2.36597
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6664070153,
+            "rank": "C",
+            "accuracy": 0.8456439393939394,
+            "pp": 8.39487,
+            "mods": [],
+            "combo": 199,
+            "created_at": "2026-05-08T23:33:15Z",
+            "beatmapset": {
+              "id": 2468654,
+              "title": "Peach Pit and Cyanide",
+              "cover": "https://assets.ppy.sh/beatmaps/2468654/covers/card.jpg?1765890290",
+              "stars": 2.61418
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6664056854,
+            "rank": "A",
+            "accuracy": 0.912568306010929,
+            "pp": null,
+            "mods": [],
+            "combo": 464,
+            "created_at": "2026-05-08T23:29:39Z",
+            "beatmapset": {
+              "id": 1630061,
+              "title": "Bassdrop Freaks (YUC'e Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/1630061/covers/card.jpg?1647158487",
+              "stars": 2.68995
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6664044667,
+            "rank": "B",
+            "accuracy": 0.8563218390804598,
+            "pp": 4.42404,
+            "mods": [],
+            "combo": 267,
+            "created_at": "2026-05-08T23:26:23Z",
+            "beatmapset": {
+              "id": 2471980,
+              "title": "The Ruby of Twilight",
+              "cover": "https://assets.ppy.sh/beatmaps/2471980/covers/card.jpg?1766415744",
+              "stars": 2.25925
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6664018643,
+            "rank": "C",
+            "accuracy": 0.8003194888178914,
+            "pp": 9.71194,
+            "mods": [],
+            "combo": 382,
+            "created_at": "2026-05-08T23:19:24Z",
+            "beatmapset": {
+              "id": 2401973,
+              "title": "Tendou Musou no Homura",
+              "cover": "https://assets.ppy.sh/beatmaps/2401973/covers/card.jpg?1761523212",
+              "stars": 2.98241
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6664007260,
+            "rank": "A",
+            "accuracy": 0.9067278287461774,
+            "pp": 6.80656,
+            "mods": [],
+            "combo": 365,
+            "created_at": "2026-05-08T23:16:23Z",
+            "beatmapset": {
+              "id": 1470956,
+              "title": "Daraku no Sono",
+              "cover": "https://assets.ppy.sh/beatmaps/1470956/covers/card.jpg?1661345154",
+              "stars": 2.25595
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6663997151,
+            "rank": "C",
+            "accuracy": 0.8378552971576227,
+            "pp": 6.71695,
+            "mods": [],
+            "combo": 162,
+            "created_at": "2026-05-08T23:13:41Z",
+            "beatmapset": {
+              "id": 2468647,
+              "title": "Skywired Beatscape",
+              "cover": "https://assets.ppy.sh/beatmaps/2468647/covers/card.jpg?1764635019",
+              "stars": 2.60193
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6663986891,
+            "rank": "B",
+            "accuracy": 0.9134751773049645,
+            "pp": 11.7887,
+            "mods": [],
+            "combo": 203,
+            "created_at": "2026-05-08T23:10:59Z",
+            "beatmapset": {
+              "id": 1941899,
+              "title": "Gokuaku no Hana",
+              "cover": "https://assets.ppy.sh/beatmaps/1941899/covers/card.jpg?1683983577",
+              "stars": 2.58893
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6663976262,
+            "rank": "C",
+            "accuracy": 0.8391304347826087,
+            "pp": null,
+            "mods": [],
+            "combo": 118,
+            "created_at": "2026-05-08T23:08:09Z",
+            "beatmapset": {
+              "id": 1761166,
+              "title": "Ya Odna (Radio Edit) (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1761166/covers/card.jpg?1699016472",
+              "stars": 2.99119
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6663972792,
+            "rank": "B",
+            "accuracy": 0.8516666666666667,
+            "pp": null,
+            "mods": [],
+            "combo": 165,
+            "created_at": "2026-05-08T23:07:14Z",
+            "beatmapset": {
+              "id": 1761166,
+              "title": "Ya Odna (Radio Edit) (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1761166/covers/card.jpg?1699016472",
+              "stars": 2.9271
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6663966939,
+            "rank": "C",
+            "accuracy": 0.7264150943396226,
+            "pp": 18.2589,
+            "mods": [],
+            "combo": 136,
+            "created_at": "2026-05-08T23:05:44Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 3.41587
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6663963822,
+            "rank": "A",
+            "accuracy": 0.9461805555555556,
+            "pp": 10.039,
+            "mods": [],
+            "combo": 93,
+            "created_at": "2026-05-08T23:04:57Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 2.37249
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Miniministop Hitoyasumi no Uta[Mokuyoubi]Gakusei no Uta",
+        "cover": "https://assets.ppy.sh/beatmaps/705423/covers/card.jpg?1645788448",
+        "unique_players": 9
       }
     }
   }

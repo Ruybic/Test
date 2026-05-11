@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>ToastTrack</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════
+   TOASTTRACK — CSS VARIABLES
+═══════════════════════════════════════════ */
+:root {
+  --orange:       #FF6B2B;
+  --orange2:      #FF8C55;
+  --orange-dim:   rgba(255,107,43,0.15);
+  --orange-glow:  rgba(255,107,43,0.30);
+
+  --bg:           #0f0f0f;
+  --bg2:          #1a1a1a;
+  --bg3:          #222222;
+  --surface:      #2a2a2a;
+  --surface2:     #333333;
+
+  --border:       rgba(255,255,255,0.08);
+  --border2:      rgba(255,255,255,0.14);
+
+  --text:         #f0f0f0;
+  --text2:        #999999;
+  --text3:        #555555;
+
+  --green:        #2ecc71;
+  --yellow:       #f1c40f;
+  --red:          #e74c3c;
+  --blue:         #3498db;
+  --purple:       #9b59b6;
+  --skip:         #4a4a4a;
+
+  --r:            16px;
+  --r-sm:         10px;
+  --r-lg:         24px;
+
+  --font:         'Nunito', sans-serif;
+  --font-display: 'Bebas Neue', sans-serif;
+
+  --nav-h:        68px;
+  --transition:   0.25s cubic-bezier(0.4,0,0.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ═══════════════════════════════════════════
+   SPLASH SCREEN
+═══════════════════════════════════════════ */
+#splash {
+  position: fixed; inset: 0;
+  background: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 9999;
+  animation: splashFade 0.6s ease 4.2s forwards;
+}
+@keyframes splashFade { to { opacity: 0; pointer-events: none; visibility: hidden; } }
+
+.splash-inner { text-align: center; position: relative; }
+
+/* TT logo animation */
+.tt-anim {
+  font-family: var(--font-display);
+  font-size: clamp(72px, 18vw, 140px);
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+}
+
+.tt-t1, .tt-t2 {
+  color: var(--orange);
+  display: inline-block;
+  animation: ttBounce 0.5s cubic-bezier(0.34,1.56,0.64,1) forwards;
+  opacity: 0;
+}
+.tt-t1 { animation-delay: 0.1s; }
+.tt-t2 { animation-delay: 0.2s; }
+
+@keyframes ttBounce {
+  from { opacity:0; transform: scale(0.3) rotate(-15deg); }
+  to   { opacity:1; transform: scale(1) rotate(0deg); }
+}
+
+/* Full name reveal */
+.splash-fullname {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 9vw, 72px);
+  letter-spacing: 4px;
+  margin-top: 8px;
+  overflow: hidden;
+  height: 0;
+  animation: nameReveal 0.5s ease 0.7s forwards;
+}
+@keyframes nameReveal { to { height: 1.2em; } }
+
+.splash-fullname .sp-t { color: var(--orange); }
+.splash-fullname .sp-rest { color: var(--text); }
+
+.splash-sub {
+  font-size: 14px; font-weight: 600;
+  color: var(--text3); letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 12px;
+  opacity: 0;
+  animation: fadeIn 0.4s ease 1.4s forwards;
+}
+@keyframes fadeIn { to { opacity: 1; } }
+
+.splash-dots {
+  display: flex; gap: 8px; justify-content: center;
+  margin-top: 32px;
+  opacity: 0;
+  animation: fadeIn 0.4s ease 1.8s forwards;
+}
+.splash-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--text3);
+  animation: dotPulse 1.2s ease-in-out infinite;
+}
+.splash-dot:nth-child(1) { animation-delay: 0s; }
+.splash-dot:nth-child(2) { animation-delay: 0.2s; }
+.splash-dot:nth-child(3) { animation-delay: 0.4s; }
+@keyframes dotPulse {
+  0%,100% { background: var(--text3); transform: scale(1); }
+  50%      { background: var(--orange); transform: scale(1.4); }
+}
+
+/* ═══════════════════════════════════════════
+   SETUP SCREEN
+═══════════════════════════════════════════ */
+#setup {
+  position: fixed; inset: 0;
+  background: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 8000;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+#setup.visible { opacity: 1; pointer-events: all; }
+
+.setup-box {
+  width: 100%; max-width: 420px;
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: var(--r-lg);
+  padding: 40px 32px;
+  text-align: center;
+  animation: setupIn 0.5s cubic-bezier(0.34,1.2,0.64,1) forwards;
+}
+@keyframes setupIn { from { transform: translateY(40px) scale(0.95); } to { transform: translateY(0) scale(1); } }
+
+.setup-emoji { font-size: 56px; margin-bottom: 16px; display: block; }
+.setup-title { font-family: var(--font-display); font-size: 38px; color: var(--orange); letter-spacing: 2px; margin-bottom: 8px; }
+.setup-sub   { font-size: 14px; color: var(--text2); margin-bottom: 32px; line-height: 1.6; }
+
+.setup-input {
+  width: 100%; background: var(--bg3);
+  border: 2px solid var(--border2); border-radius: var(--r);
+  padding: 14px 18px; color: var(--text);
+  font-family: var(--font); font-size: 18px; font-weight: 700;
+  outline: none; text-align: center;
+  transition: border-color var(--transition);
+  margin-bottom: 20px;
+}
+.setup-input:focus { border-color: var(--orange); }
+.setup-input::placeholder { color: var(--text3); font-weight: 600; }
+
+.setup-btn {
+  width: 100%; padding: 14px;
+  background: var(--orange); color: #fff;
+  border: none; border-radius: var(--r);
+  font-family: var(--font); font-size: 16px; font-weight: 800;
+  cursor: pointer; transition: all var(--transition);
+  letter-spacing: 0.5px;
+}
+.setup-btn:hover { background: var(--orange2); transform: translateY(-1px); box-shadow: 0 6px 20px var(--orange-glow); }
+.setup-btn:active { transform: scale(0.98); }
+
+/* ═══════════════════════════════════════════
+   MAIN APP
+═══════════════════════════════════════════ */
+#app {
+  display: none;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  max-width: 720px;
+  margin: 0 auto;
+  padding-bottom: var(--nav-h);
+}
+#app.visible { display: flex; }
+
+/* ═══════════════════════════════════════════
+   TOP BAR
+═══════════════════════════════════════════ */
+.topbar {
+  padding: 20px 20px 0;
+  display: flex; align-items: center; justify-content: space-between;
+  position: sticky; top: 0; z-index: 100;
+  background: linear-gradient(to bottom, var(--bg) 70%, transparent);
+}
+.topbar-logo {
+  font-family: var(--font-display);
+  font-size: 26px; letter-spacing: 1px;
+}
+.topbar-logo .tl-t { color: var(--orange); }
+.topbar-logo .tl-rest { color: var(--text); }
+
+.topbar-right { display: flex; align-items: center; gap: 12px; }
+.topbar-user {
+  font-size: 13px; font-weight: 700; color: var(--text2);
+}
+.topbar-user span { color: var(--orange); }
+
+.add-btn {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: var(--orange); border: none;
+  color: #fff; font-size: 22px; font-weight: 700;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: all var(--transition);
+  box-shadow: 0 4px 14px var(--orange-glow);
+}
+.add-btn:hover { transform: scale(1.1) rotate(90deg); }
+.add-btn:active { transform: scale(0.95); }
+
+/* ═══════════════════════════════════════════
+   PAGES
+═══════════════════════════════════════════ */
+.page { display: none; flex-direction: column; gap: 20px; padding: 16px 20px 24px; animation: pageIn 0.3s ease; }
+.page.active { display: flex; }
+@keyframes pageIn { from { opacity:0; transform: translateY(10px); } to { opacity:1; transform: translateY(0); } }
+
+/* ═══════════════════════════════════════════
+   DATE HEADER (Today strip)
+═══════════════════════════════════════════ */
+.date-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 18px;
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--r); gap: 10px;
+}
+.date-header-left {}
+.dh-today { font-size: 11px; font-weight: 800; color: var(--orange); letter-spacing: 1.5px; text-transform: uppercase; }
+.dh-date  { font-size: 18px; font-weight: 900; color: var(--text); }
+.dh-streak-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.streak-pill {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: var(--orange-dim); border: 1px solid rgba(255,107,43,0.3);
+  border-radius: 20px; padding: 5px 11px;
+  font-size: 12px; font-weight: 800; color: var(--orange);
+}
+
+/* ═══════════════════════════════════════════
+   HABIT CARD
+═══════════════════════════════════════════ */
+.habit-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--r-lg); overflow: hidden;
+  transition: border-color var(--transition);
+  animation: cardIn 0.35s cubic-bezier(0.34,1.2,0.64,1) both;
+}
+@keyframes cardIn { from { opacity:0; transform: scale(0.95) translateY(12px); } to { opacity:1; transform: scale(1) translateY(0); } }
+.habit-card:hover { border-color: var(--border2); }
+
+.habit-card-top {
+  padding: 16px 18px 12px;
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 10px;
+}
+.habit-info { flex: 1; min-width: 0; }
+.habit-name { font-size: 17px; font-weight: 900; color: var(--text); margin-bottom: 3px; }
+.habit-meta { font-size: 12px; font-weight: 700; color: var(--text3); display: flex; gap: 8px; flex-wrap: wrap; }
+.habit-type-badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  background: var(--bg3); border-radius: 6px;
+  padding: 2px 8px; font-size: 11px; font-weight: 700; color: var(--text2);
+}
+
+.habit-card-actions { display: flex; gap: 6px; }
+.hca-btn {
+  width: 32px; height: 32px; border-radius: var(--r-sm);
+  background: var(--bg3); border: 1px solid var(--border);
+  color: var(--text2); font-size: 14px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.15s;
+}
+.hca-btn:hover { background: var(--surface); color: var(--text); }
+.hca-btn.danger:hover { background: rgba(231,76,60,0.15); color: var(--red); border-color: rgba(231,76,60,0.3); }
+
+/* ── Today log row ── */
+.habit-today-row {
+  padding: 10px 18px 14px;
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+}
+
+/* YES/NO buttons */
+.log-yn-btn {
+  flex: 1; min-width: 80px; padding: 10px 14px;
+  border-radius: var(--r-sm); border: 2px solid var(--border2);
+  background: var(--bg3); color: var(--text2);
+  font-family: var(--font); font-size: 13px; font-weight: 800;
+  cursor: pointer; transition: all 0.18s;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+}
+.log-yn-btn.done  { background: rgba(46,204,113,0.15); border-color: var(--green); color: var(--green); }
+.log-yn-btn.skip  { background: rgba(74,74,74,0.4); border-color: var(--skip); color: var(--text2); }
+.log-yn-btn.fail  { background: rgba(231,76,60,0.12); border-color: var(--red); color: var(--red); }
+.log-yn-btn:hover { transform: translateY(-1px); }
+
+/* Hours input row */
+.log-hours-row {
+  display: flex; align-items: center; gap: 8px; flex: 1;
+}
+.log-hours-input {
+  width: 70px; background: var(--bg3); border: 2px solid var(--border2);
+  border-radius: var(--r-sm); padding: 9px 10px;
+  color: var(--text); font-family: var(--font); font-size: 15px; font-weight: 800;
+  text-align: center; outline: none;
+  transition: border-color var(--transition);
+}
+.log-hours-input:focus { border-color: var(--orange); }
+.log-hours-unit { font-size: 12px; font-weight: 700; color: var(--text3); }
+
+.log-save-btn {
+  padding: 9px 18px; border-radius: var(--r-sm);
+  background: var(--orange); border: none;
+  color: #fff; font-family: var(--font); font-size: 13px; font-weight: 800;
+  cursor: pointer; transition: all var(--transition); white-space: nowrap;
+}
+.log-save-btn:hover { background: var(--orange2); }
+
+.log-skip-btn {
+  padding: 9px 12px; border-radius: var(--r-sm);
+  background: var(--bg3); border: 2px solid var(--border2);
+  color: var(--text2); font-family: var(--font); font-size: 12px; font-weight: 700;
+  cursor: pointer; transition: all var(--transition);
+}
+.log-skip-btn:hover { border-color: var(--text3); color: var(--text); }
+
+/* ── Heat grid ── */
+.habit-heat { padding: 0 18px 18px; }
+.heat-label { font-size: 10px; font-weight: 800; color: var(--text3); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+.heat-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(18px, 1fr));
+  gap: 3px;
+}
+.heat-cell {
+  aspect-ratio: 1; border-radius: 4px;
+  background: var(--bg3); cursor: pointer;
+  transition: all 0.15s; position: relative;
+  border: 1px solid var(--border);
+}
+.heat-cell:hover { transform: scale(1.3); z-index: 10; }
+.heat-cell.done   { background: var(--green); border-color: var(--green); }
+.heat-cell.yellow { background: var(--yellow); border-color: var(--yellow); }
+.heat-cell.red    { background: var(--red); border-color: var(--red); }
+.heat-cell.skip   { background: var(--skip); border-color: var(--skip); }
+.heat-cell.fail   { background: var(--red); border-color: var(--red); position: relative; }
+.heat-cell.fail::after { content:'×'; position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:900; color:#fff; }
+.heat-cell.today  { box-shadow: 0 0 0 2px var(--orange); }
+.heat-cell.future { opacity: 0.3; pointer-events: none; }
+
+/* Tooltip */
+.heat-cell[data-tip]:hover::before {
+  content: attr(data-tip);
+  position: absolute; bottom: calc(100% + 6px); left: 50%;
+  transform: translateX(-50%);
+  background: var(--surface2); color: var(--text);
+  font-size: 10px; font-weight: 700;
+  padding: 4px 7px; border-radius: 6px;
+  white-space: nowrap; z-index: 20;
+  pointer-events: none;
+}
+
+/* ── Streak line ── */
+.habit-streak-bar {
+  padding: 0 18px 14px;
+  display: flex; align-items: center; gap: 10px;
+}
+.streak-label { font-size: 11px; font-weight: 800; color: var(--text3); min-width: 52px; }
+.streak-track { flex: 1; height: 6px; background: var(--bg3); border-radius: 3px; overflow: hidden; }
+.streak-fill  { height: 100%; background: linear-gradient(90deg, var(--orange), var(--orange2)); border-radius: 3px; transition: width 0.6s cubic-bezier(0.4,0,0.2,1); }
+.streak-val   { font-size: 12px; font-weight: 800; color: var(--orange); min-width: 36px; text-align: right; }
+
+/* ── Graph (hours) ── */
+.habit-graph { padding: 0 18px 18px; }
+.graph-canvas { width: 100%; height: 100px; }
+
+/* ═══════════════════════════════════════════
+   STATS PAGE
+═══════════════════════════════════════════ */
+.stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.stat-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 16px;
+  display: flex; flex-direction: column; gap: 4px;
+}
+.stat-val { font-size: 28px; font-weight: 900; color: var(--orange); }
+.stat-lbl { font-size: 11px; font-weight: 700; color: var(--text3); text-transform: uppercase; letter-spacing: 0.8px; }
+
+/* ═══════════════════════════════════════════
+   SETTINGS PAGE
+═══════════════════════════════════════════ */
+.settings-section { display: flex; flex-direction: column; gap: 8px; }
+.settings-label { font-size: 11px; font-weight: 800; color: var(--text3); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.settings-row {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 16px 18px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.sr-label { font-size: 14px; font-weight: 700; color: var(--text); }
+.sr-val   { font-size: 13px; font-weight: 700; color: var(--text2); }
+.sr-btn {
+  background: var(--bg3); border: 1px solid var(--border2);
+  border-radius: var(--r-sm); padding: 7px 14px;
+  color: var(--text2); font-family: var(--font); font-size: 13px; font-weight: 700;
+  cursor: pointer; transition: all 0.15s;
+}
+.sr-btn:hover { color: var(--text); border-color: var(--border2); }
+.sr-btn.danger:hover { background: rgba(231,76,60,0.1); color: var(--red); border-color: rgba(231,76,60,0.3); }
+
+/* ═══════════════════════════════════════════
+   BOTTOM NAVIGATION
+═══════════════════════════════════════════ */
+.bottom-nav {
+  position: fixed; bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 100%; max-width: 720px;
+  height: var(--nav-h);
+  background: rgba(15,15,15,0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-around;
+  padding: 0 16px;
+  padding-bottom: env(safe-area-inset-bottom, 0);
+  z-index: 500;
+}
+.nav-item {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  cursor: pointer; padding: 8px 20px; border-radius: var(--r);
+  transition: all var(--transition); user-select: none;
+  position: relative;
+}
+.nav-item:hover { background: var(--bg3); }
+.nav-item.active .nav-icon { color: var(--orange); }
+.nav-item.active .nav-label { color: var(--orange); }
+.nav-icon  { font-size: 22px; color: var(--text3); transition: color var(--transition); }
+.nav-label { font-size: 10px; font-weight: 800; color: var(--text3); letter-spacing: 0.5px; transition: color var(--transition); }
+.nav-item.active .nav-icon { transform: translateY(-2px); }
+
+.nav-dot {
+  position: absolute; top: 6px; right: 14px;
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--orange);
+  animation: navDot 2s ease-in-out infinite;
+}
+@keyframes navDot { 0%,100% { transform: scale(1); } 50% { transform: scale(1.4); } }
+
+/* ═══════════════════════════════════════════
+   MODAL (Add / Edit Habit)
+═══════════════════════════════════════════ */
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: flex; align-items: flex-end; justify-content: center;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.modal-overlay.open { opacity: 1; pointer-events: all; }
+
+.modal-sheet {
+  width: 100%; max-width: 720px;
+  background: var(--bg2);
+  border-radius: 24px 24px 0 0;
+  border: 1px solid var(--border2);
+  padding: 20px 24px 40px;
+  transform: translateY(100%);
+  transition: transform 0.35s cubic-bezier(0.34,1.1,0.64,1);
+  max-height: 90vh; overflow-y: auto;
+}
+.modal-overlay.open .modal-sheet { transform: translateY(0); }
+
+.modal-handle {
+  width: 36px; height: 4px; border-radius: 2px;
+  background: var(--border2); margin: 0 auto 20px;
+}
+.modal-title { font-size: 20px; font-weight: 900; color: var(--text); margin-bottom: 20px; }
+
+.form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.form-label { font-size: 11px; font-weight: 800; color: var(--text3); text-transform: uppercase; letter-spacing: 0.8px; }
+.form-input {
+  background: var(--bg3); border: 2px solid var(--border2);
+  border-radius: var(--r-sm); padding: 12px 14px;
+  color: var(--text); font-family: var(--font); font-size: 15px; font-weight: 700;
+  outline: none; transition: border-color var(--transition); width: 100%;
+}
+.form-input:focus { border-color: var(--orange); }
+.form-input::placeholder { color: var(--text3); font-weight: 600; }
+
+.type-pills { display: flex; gap: 8px; }
+.type-pill {
+  flex: 1; padding: 10px; border-radius: var(--r-sm);
+  border: 2px solid var(--border2); background: var(--bg3);
+  color: var(--text2); font-family: var(--font); font-size: 13px; font-weight: 800;
+  cursor: pointer; text-align: center; transition: all 0.15s;
+}
+.type-pill.selected { border-color: var(--orange); background: var(--orange-dim); color: var(--orange); }
+
+.form-row { display: flex; gap: 10px; }
+.form-row .form-group { flex: 1; }
+
+.color-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+.color-pill {
+  width: 32px; height: 32px; border-radius: 50%;
+  cursor: pointer; border: 3px solid transparent;
+  transition: all 0.15s; flex-shrink: 0;
+}
+.color-pill.selected { border-color: var(--text); transform: scale(1.2); }
+
+.modal-actions { display: flex; gap: 10px; margin-top: 24px; }
+.modal-save-btn {
+  flex: 1; padding: 14px; background: var(--orange);
+  border: none; border-radius: var(--r);
+  color: #fff; font-family: var(--font); font-size: 15px; font-weight: 800;
+  cursor: pointer; transition: all var(--transition);
+}
+.modal-save-btn:hover { background: var(--orange2); }
+.modal-cancel-btn {
+  padding: 14px 20px; background: var(--bg3);
+  border: 2px solid var(--border2); border-radius: var(--r);
+  color: var(--text2); font-family: var(--font); font-size: 15px; font-weight: 800;
+  cursor: pointer; transition: all var(--transition);
+}
+.modal-cancel-btn:hover { color: var(--text); }
+
+/* ═══════════════════════════════════════════
+   TOAST / QUOTE POPUP
+═══════════════════════════════════════════ */
+.quote-toast {
+  position: fixed; bottom: calc(var(--nav-h) + 14px); left: 50%;
+  transform: translateX(-50%) translateY(120px);
+  width: calc(100% - 40px); max-width: 500px;
+  background: var(--bg2); border: 1px solid var(--border2);
+  border-radius: var(--r-lg); padding: 20px;
+  z-index: 1500;
+  transition: transform 0.4s cubic-bezier(0.34,1.1,0.64,1);
+  box-shadow: 0 -4px 40px rgba(0,0,0,0.5);
+}
+.quote-toast.show { transform: translateX(-50%) translateY(0); }
+.qt-label { font-size: 10px; font-weight: 800; color: var(--orange); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px; }
+.qt-text  { font-size: 14px; font-weight: 700; color: var(--text); line-height: 1.6; margin-bottom: 10px; font-style: italic; }
+.qt-praise { font-size: 15px; font-weight: 900; color: var(--orange); margin-bottom: 14px; }
+.qt-close {
+  background: var(--bg3); border: 1px solid var(--border2);
+  border-radius: var(--r-sm); padding: 8px 18px;
+  color: var(--text2); font-family: var(--font); font-size: 13px; font-weight: 700;
+  cursor: pointer; float: right;
+}
+.qt-close:hover { color: var(--text); }
+
+/* ═══════════════════════════════════════════
+   EMPTY STATE
+═══════════════════════════════════════════ */
+.empty-state {
+  text-align: center; padding: 40px 20px;
+  background: var(--bg2); border: 1px dashed var(--border2);
+  border-radius: var(--r-lg);
+}
+.empty-icon { font-size: 48px; margin-bottom: 12px; }
+.empty-title { font-size: 18px; font-weight: 900; color: var(--text); margin-bottom: 6px; }
+.empty-sub   { font-size: 13px; font-weight: 600; color: var(--text2); line-height: 1.6; margin-bottom: 20px; }
+.empty-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--orange); color: #fff; border: none;
+  border-radius: var(--r); padding: 12px 24px;
+  font-family: var(--font); font-size: 14px; font-weight: 800;
+  cursor: pointer; transition: all var(--transition);
+}
+.empty-btn:hover { background: var(--orange2); }
+
+/* ── section title ── */
+.section-title { font-size: 15px; font-weight: 900; color: var(--text); letter-spacing: -0.3px; }
+.section-sub   { font-size: 12px; font-weight: 600; color: var(--text3); }
+
+/* ── scrollbar ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════ */
+@media (min-width: 600px) {
+  .heat-grid { grid-template-columns: repeat(auto-fill, minmax(22px, 1fr)); }
+}
+@media (max-width: 380px) {
+  .modal-sheet { padding: 16px 16px 36px; }
+  .habit-card-top { gap: 6px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ SPLASH ═══ -->
+<div id="splash">
+  <div class="splash-inner">
+    <div class="tt-anim">
+      <span class="tt-t1">T</span><span class="tt-t2">T</span>
+    </div>
+    <div class="splash-fullname">
+      <span class="sp-t">T</span><span class="sp-rest">oast</span><span class="sp-t">T</span><span class="sp-rest">rack</span>
+    </div>
+    <div class="splash-sub">Your daily habit engine</div>
+    <div class="splash-dots">
+      <div class="splash-dot"></div>
+      <div class="splash-dot"></div>
+      <div class="splash-dot"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SETUP ═══ -->
+<div id="setup">
+  <div class="setup-box">
+    <span class="setup-emoji">🔥</span>
+    <div class="setup-title">TOASTTRACK</div>
+    <div class="setup-sub">Let's get started. What should we call you?<br>Your name will personalize your experience.</div>
+    <input class="setup-input" id="setupNameInput" type="text" placeholder="Your name…" maxlength="24" autocomplete="off">
+    <button class="setup-btn" id="setupDoneBtn">Let's go 🚀</button>
+  </div>
+</div>
+
+<!-- ═══ MAIN APP ═══ -->
+<div id="app">
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="topbar-logo"><span class="tl-t">T</span><span class="tl-rest">oast</span><span class="tl-t">T</span><span class="tl-rest">rack</span></div>
+    <div class="topbar-right">
+      <div class="topbar-user">Hey, <span id="userName">—</span> 👋</div>
+      <button class="add-btn" id="openAddModal" title="Add Habit">+</button>
+    </div>
+  </div>
+
+  <!-- HABITS PAGE -->
+  <div class="page active" id="page-habits">
+    <div class="date-header" id="dateHeader"></div>
+    <div id="habitsContainer"></div>
+  </div>
+
+  <!-- STATS PAGE -->
+  <div class="page" id="page-stats">
+    <div class="section-title">Statistics</div>
+    <div class="stats-grid" id="statsGrid"></div>
+    <div id="statsDetail"></div>
+  </div>
+
+  <!-- SETTINGS PAGE -->
+  <div class="page" id="page-settings">
+    <div class="section-title">Settings</div>
+    <div class="settings-section" id="settingsContent"></div>
+  </div>
+
+  <!-- Bottom Nav -->
+  <nav class="bottom-nav">
+    <div class="nav-item active" data-page="habits">
+      <div class="nav-icon">📋</div>
+      <div class="nav-label">Today</div>
+    </div>
+    <div class="nav-item" data-page="stats">
+      <div class="nav-icon">📊</div>
+      <div class="nav-label">Stats</div>
+    </div>
+    <div class="nav-item" data-page="settings">
+      <div class="nav-icon">⚙️</div>
+      <div class="nav-label">Settings</div>
+    </div>
+  </nav>
+
+</div>
+
+<!-- ═══ ADD/EDIT MODAL ═══ -->
+<div class="modal-overlay" id="habitModal">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-title" id="modalTitle">Add Habit</div>
+
+    <div class="form-group">
+      <div class="form-label">Habit Name</div>
+      <input class="form-input" id="mName" type="text" placeholder="e.g. Study, Exercise, Read…" maxlength="40">
+    </div>
+
+    <div class="form-group">
+      <div class="form-label">Type</div>
+      <div class="type-pills">
+        <div class="type-pill selected" data-type="yesno">✅ Yes / No</div>
+        <div class="type-pill" data-type="hours">⏱ Hours</div>
+      </div>
+    </div>
+
+    <div class="form-group" id="mTargetGroup" style="display:none">
+      <div class="form-label">Daily Target (hours)</div>
+      <input class="form-input" id="mTarget" type="number" placeholder="e.g. 10" min="0.5" max="24" step="0.5">
+    </div>
+
+    <div class="form-group">
+      <div class="form-label">Color</div>
+      <div class="color-pills" id="colorPills"></div>
+    </div>
+
+    <div class="form-group">
+      <div class="form-label">Icon (emoji)</div>
+      <input class="form-input" id="mIcon" type="text" placeholder="📚" maxlength="4">
+    </div>
+
+    <div class="form-group">
+      <div class="form-label">Start Date</div>
+      <input class="form-input" id="mStartDate" type="date">
+    </div>
+
+    <div class="modal-actions">
+      <button class="modal-cancel-btn" id="modalCancelBtn">Cancel</button>
+      <button class="modal-save-btn" id="modalSaveBtn">Save Habit</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ QUOTE TOAST ═══ -->
+<div class="quote-toast" id="quoteToast">
+  <div class="qt-label" id="qtLabel">🔥 Shuzo says</div>
+  <div class="qt-text" id="qtText"></div>
+  <div class="qt-praise" id="qtPraise"></div>
+  <button class="qt-close" id="qtClose">Got it! 💪</button>
+</div>
+
+<!-- ═══ JAVASCRIPT ═══ -->
+<script>
+/* ═══════════════════════════════════════════
+   CONSTANTS
+═══════════════════════════════════════════ */
+const STORAGE_KEY = 'toasttrack_v2';
+
+const COLORS = ['#FF6B2B','#2ecc71','#3498db','#e74c3c','#9b59b6','#f1c40f','#1abc9c','#e67e22','#e91e63','#00bcd4'];
+
+const SHUZO_QUOTES = [
+  "Reach! Reach with everything you have!",
+  "Don't stop! Even if you feel like you're going to die!",
+  "Once you've decided on your path, never look back!",
+  "A person who never gives up is truly beautiful!",
+  "Scream your feelings — let the whole world hear your passion!",
+  "Your effort today is tomorrow's strength. Never stop moving!",
+  "No matter what happens, the spirit to keep going is what makes you human!",
+  "Pain means you're growing. Tears mean you're alive. Keep going!",
+  "The moment you stop, you lose. The moment you keep going, you win!",
+  "Believe in the you who believes in you. Go beyond your limits!",
+  "Every day you show up is a victory. Remember that.",
+  "Passion and persistence will always defeat talent alone!",
+];
+
+const PRAISE = [
+  (name) => `INCREDIBLE, ${name.toUpperCase()}! 🔥 That's what legends are made of!`,
+  (name) => `${name}, you are ON FIRE! 💪 Keep that momentum going!`,
+  (name) => `Look at you, ${name}! Unstoppable. Absolute beast mode! 🚀`,
+  (name) => `${name} DELIVERED. No excuses, just results. RESPECT! ⚡`,
+  (name) => `That's the spirit, ${name}! The future version of you is proud! 🌟`,
+  (name) => `${name}! Another one checked off. You're building something real! 🏆`,
+];
+
+const MOTIVATIONAL_QUOTES = [
+  "Start before you're ready.",
+  "Small steps every day.",
+  "Progress, not perfection.",
+  "Your only limit is you.",
+  "Show up. Every. Single. Day.",
+];
+
+/* ═══════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════ */
+let STATE = {
+  userName: '',
+  habits: [],
+  logs: {},   // { habitId: { 'YYYY-MM-DD': { type:'done'|'skip'|'fail'|'hours', value?, interrupted? } } }
+};
+
+let editingHabitId = null;
+let selectedType = 'yesno';
+let selectedColor = COLORS[0];
+
+/* ═══════════════════════════════════════════
+   STORAGE
+═══════════════════════════════════════════ */
+function save() { localStorage.setItem(STORAGE_KEY, JSON.stringify(STATE)); }
+function load() {
+  const raw = localStorage.getItem(STORAGE_KEY);
+  if (raw) { try { STATE = { ...STATE, ...JSON.parse(raw) }; } catch(e) {} }
+}
+
+/* ═══════════════════════════════════════════
+   DATE HELPERS
+═══════════════════════════════════════════ */
+function todayStr() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+function dateToStr(d) {
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+function strToDate(s) { const [y,m,d] = s.split('-').map(Number); return new Date(y, m-1, d); }
+function formatDateLong(s) {
+  const opts = { weekday:'long', year:'numeric', month:'long', day:'numeric' };
+  return strToDate(s).toLocaleDateString(undefined, opts);
+}
+function formatDateShort(s) {
+  const opts = { month:'short', day:'numeric' };
+  return strToDate(s).toLocaleDateString(undefined, opts);
+}
+
+// Generate array of date strings from start to today
+function getDatesFrom(startStr) {
+  const today = strToDate(todayStr());
+  const start = strToDate(startStr);
+  const dates = [];
+  let cur = new Date(start);
+  while (cur <= today) { dates.push(dateToStr(cur)); cur.setDate(cur.getDate()+1); }
+  return dates;
+}
+
+// Extend dates to include ~30 days future for visual context (greyed out)
+function getDatesRange(startStr, futureDays = 14) {
+  const today = strToDate(todayStr());
+  const start = strToDate(startStr);
+  const dates = [];
+  let cur = new Date(start);
+  const end = new Date(today); end.setDate(end.getDate() + futureDays);
+  while (cur <= end) { dates.push(dateToStr(cur)); cur.setDate(cur.getDate()+1); }
+  return dates;
+}
+
+/* ═══════════════════════════════════════════
+   STREAK CALCULATOR
+═══════════════════════════════════════════ */
+function calcStreak(habitId) {
+  const habit = STATE.habits.find(h => h.id === habitId);
+  if (!habit) return { current: 0, best: 0 };
+  const logs = STATE.logs[habitId] || {};
+  const dates = getDatesFrom(habit.startDate);
+  const today = todayStr();
+
+  let current = 0, best = 0, temp = 0;
+
+  for (let i = 0; i < dates.length; i++) {
+    const d = dates[i];
+    if (d > today) break;
+    const log = logs[d];
+    if (!log) {
+      // No log for past day = broken (unless it's today and no log yet)
+      if (d < today) { best = Math.max(best, temp); temp = 0; }
+    } else if (log.type === 'skip') {
+      // skip doesn't break streak, just pass through
+    } else if (log.type === 'fail') {
+      best = Math.max(best, temp); temp = 0;
+    } else if (log.type === 'done' || log.type === 'hours') {
+      const isDone = habit.type === 'hours'
+        ? (parseFloat(log.value) >= parseFloat(habit.target))
+        : true;
+      if (isDone) { temp++; }
+      else { best = Math.max(best, temp); temp = 0; }
+    }
+  }
+  best = Math.max(best, temp);
+  current = temp;
+  return { current, best };
+}
+
+/* ═══════════════════════════════════════════
+   CELL COLOR FOR HEAT GRID
+═══════════════════════════════════════════ */
+function getCellClass(habitId, dateStr) {
+  const habit = STATE.habits.find(h => h.id === habitId);
+  const log = (STATE.logs[habitId] || {})[dateStr];
+  const today = todayStr();
+  if (!log) return dateStr > today ? 'future' : '';
+  if (log.type === 'skip') return 'skip';
+  if (log.type === 'fail') return 'fail';
+  if (habit.type === 'yesno') return log.type === 'done' ? 'done' : '';
+  // hours
+  const val = parseFloat(log.value) || 0;
+  const target = parseFloat(habit.target) || 1;
+  if (val >= target) return 'done';
+  if (val >= target * 0.5) return 'yellow';
+  return 'red';
+}
+
+function getCellTip(habitId, dateStr) {
+  const habit = STATE.habits.find(h => h.id === habitId);
+  const log = (STATE.logs[habitId] || {})[dateStr];
+  const label = formatDateShort(dateStr);
+  if (!log) return `${label}: No log`;
+  if (log.type === 'skip') return `${label}: Skipped`;
+  if (log.type === 'fail') return `${label}: ✗ Interrupted`;
+  if (habit.type === 'yesno') return `${label}: ✓ Done`;
+  return `${label}: ${log.value}h / ${habit.target}h`;
+}
+
+/* ═══════════════════════════════════════════
+   RENDER DATE HEADER
+═══════════════════════════════════════════ */
+function renderDateHeader() {
+  const el = document.getElementById('dateHeader');
+  const today = todayStr();
+  // total streaks across all habits
+  const totalStreak = STATE.habits.reduce((acc, h) => acc + calcStreak(h.id).current, 0);
+  el.innerHTML = `
+    <div class="date-header-left">
+      <div class="dh-today">Today</div>
+      <div class="dh-date">${formatDateLong(today)}</div>
+    </div>
+    <div class="dh-streak-row">
+      <div class="streak-pill">🔥 ${totalStreak} streak${totalStreak !== 1 ? 's' : ''}</div>
+    </div>`;
+}
+
+/* ═══════════════════════════════════════════
+   RENDER GRAPH (SVG line chart for hours)
+═══════════════════════════════════════════ */
+function renderGraph(habitId) {
+  const habit = STATE.habits.find(h => h.id === habitId);
+  if (!habit || habit.type !== 'hours') return '';
+  const logs = STATE.logs[habitId] || {};
+  const dates = getDatesFrom(habit.startDate).slice(-30); // last 30 days
+  const target = parseFloat(habit.target) || 1;
+
+  const W = 600, H = 100;
+  const pad = { t:10, b:20, l:10, r:10 };
+  const gW = W - pad.l - pad.r;
+  const gH = H - pad.t - pad.b;
+
+  const vals = dates.map(d => {
+    const log = logs[d];
+    if (!log || log.type === 'skip' || log.type === 'fail') return null;
+    if (log.type === 'hours') return parseFloat(log.value) || 0;
+    return null;
+  });
+
+  // ceiling: target * 1.3 so going over still shows progress nicely
+  const maxVal = target * 1.3;
+
+  const points = [];
+  vals.forEach((v, i) => {
+    if (v === null) return;
+    const x = pad.l + (i / Math.max(dates.length-1, 1)) * gW;
+    // cap at 100% on chart = target; over target = bonus shown above midline
+    const pct = Math.min(v / maxVal, 1);
+    const y = pad.t + gH - pct * gH;
+    points.push({ x, y, v, d: dates[i] });
+  });
+
+  if (points.length === 0) return '';
+
+  const targetY = pad.t + gH - (target/maxVal) * gH;
+  const polyline = points.map(p => `${p.x},${p.y}`).join(' ');
+
+  // fill path
+  const fillPath = points.length > 0
+    ? `M${points[0].x},${pad.t+gH} L${points.map(p=>`${p.x},${p.y}`).join(' L')} L${points[points.length-1].x},${pad.t+gH} Z`
+    : '';
+
+  const color = habit.color || COLORS[0];
+
+  return `
+    <div class="habit-graph">
+      <div class="heat-label">Last ${dates.length} Days — Target: ${target}h</div>
+      <svg viewBox="0 0 ${W} ${H}" class="graph-canvas" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="gfill${habitId}" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="${color}" stop-opacity="0.35"/>
+            <stop offset="100%" stop-color="${color}" stop-opacity="0.02"/>
+          </linearGradient>
+        </defs>
+        <!-- target line -->
+        <line x1="${pad.l}" y1="${targetY}" x2="${W-pad.r}" y2="${targetY}"
+          stroke="${color}" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.5"/>
+        <text x="${W-pad.r-2}" y="${targetY-4}" fill="${color}" font-size="9" text-anchor="end" opacity="0.7">target</text>
+        <!-- fill -->
+        ${fillPath ? `<path d="${fillPath}" fill="url(#gfill${habitId})"/>` : ''}
+        <!-- line -->
+        <polyline points="${polyline}" fill="none" stroke="${color}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- dots -->
+        ${points.map(p => `<circle cx="${p.x}" cy="${p.y}" r="3.5" fill="${color}"/>`).join('')}
+        <!-- bottom labels -->
+        ${[0, Math.floor(dates.length/2), dates.length-1].map(i => {
+          if (!dates[i]) return '';
+          const x = pad.l + (i / Math.max(dates.length-1,1)) * gW;
+          return `<text x="${x}" y="${H-4}" fill="#555" font-size="8" text-anchor="middle">${formatDateShort(dates[i])}</text>`;
+        }).join('')}
+      </svg>
+    </div>`;
+}
+
+/* ═══════════════════════════════════════════
+   RENDER HABIT CARD
+═══════════════════════════════════════════ */
+function renderHabitCard(habit) {
+  const today = todayStr();
+  const logs = STATE.logs[habit.id] || {};
+  const todayLog = logs[today];
+  const streak = calcStreak(habit.id);
+  const dates = getDatesRange(habit.startDate, 10);
+  const color = habit.color || COLORS[0];
+
+  // heat grid html
+  const heatCells = dates.map(d => {
+    const cls = getCellClass(habit.id, d);
+    const isToday = d === today;
+    const isFuture = d > today;
+    return `<div class="heat-cell ${cls}${isToday?' today':''}${isFuture?' future':''}"
+      data-tip="${getCellTip(habit.id, d)}"
+      data-date="${d}" data-hid="${habit.id}"
+      onclick="onCellClick('${habit.id}','${d}')"></div>`;
+  }).join('');
+
+  // today action row
+  let actionRow = '';
+  if (habit.type === 'yesno') {
+    const isDone = todayLog?.type === 'done';
+    const isSkip = todayLog?.type === 'skip';
+    const isFail = todayLog?.type === 'fail';
+    actionRow = `
+      <div class="habit-today-row">
+        <button class="log-yn-btn ${isDone?'done':''}" onclick="logYesNo('${habit.id}','done')">✓ Done</button>
+        <button class="log-yn-btn ${isSkip?'skip':''}" onclick="logYesNo('${habit.id}','skip')">↷ Skip</button>
+        <button class="log-yn-btn ${isFail?'fail':''}" onclick="logYesNo('${habit.id}','fail')">✗ Interrupted</button>
+      </div>`;
+  } else {
+    const curVal = todayLog?.type === 'hours' ? todayLog.value : '';
+    const isSkip = todayLog?.type === 'skip';
+    const isFail = todayLog?.type === 'fail';
+    actionRow = `
+      <div class="habit-today-row">
+        <div class="log-hours-row">
+          <input class="log-hours-input" type="number" id="hi_${habit.id}"
+            value="${curVal}" placeholder="0" min="0" max="24" step="0.5"
+            ${isSkip||isFail?'disabled':''}>
+          <span class="log-hours-unit">/ ${habit.target}h</span>
+        </div>
+        <button class="log-save-btn" onclick="logHours('${habit.id}')" ${isSkip||isFail?'disabled':''}>Log</button>
+        <button class="log-skip-btn ${isSkip?'on':''}" onclick="logYesNo('${habit.id}','skip')">↷ Skip</button>
+        <button class="log-skip-btn ${isFail?'on':''}" style="${isFail?'color:var(--red);border-color:var(--red)':''}" onclick="logYesNo('${habit.id}','fail')">✗</button>
+      </div>`;
+  }
+
+  // streak bar — max 30 for display
+  const maxStreak = 30;
+  const streakPct = Math.min((streak.current / maxStreak) * 100, 100);
+
+  const graphHtml = renderGraph(habit.id);
+
+  return `
+    <div class="habit-card" id="hcard_${habit.id}" style="border-left:3px solid ${color}">
+      <div class="habit-card-top">
+        <div class="habit-info">
+          <div class="habit-name">${habit.icon || '📌'} ${habit.name}</div>
+          <div class="habit-meta">
+            <span class="habit-type-badge">${habit.type==='hours'?`⏱ ${habit.target}h target`:'✅ Yes/No'}</span>
+            <span>🔥 ${streak.current} day streak</span>
+            <span style="color:var(--text3)">Best: ${streak.best}</span>
+          </div>
+        </div>
+        <div class="habit-card-actions">
+          <button class="hca-btn" onclick="openEditHabit('${habit.id}')" title="Edit">✏️</button>
+          <button class="hca-btn danger" onclick="deleteHabit('${habit.id}')" title="Delete">🗑</button>
+        </div>
+      </div>
+      ${actionRow}
+      <div class="habit-heat">
+        <div class="heat-label">Activity Grid</div>
+        <div class="heat-grid">${heatCells}</div>
+      </div>
+      ${graphHtml}
+      <div class="habit-streak-bar">
+        <div class="streak-label">🔥 Streak</div>
+        <div class="streak-track"><div class="streak-fill" style="width:${streakPct}%;background:linear-gradient(90deg,${color},${color}aa)"></div></div>
+        <div class="streak-val">${streak.current}d</div>
+      </div>
+    </div>`;
+}
+
+/* ═══════════════════════════════════════════
+   RENDER ALL HABITS
+═══════════════════════════════════════════ */
+function renderHabits() {
+  renderDateHeader();
+  const container = document.getElementById('habitsContainer');
+  if (STATE.habits.length === 0) {
+    container.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon">🌱</div>
+        <div class="empty-title">No habits yet</div>
+        <div class="empty-sub">Start building your best self.<br>Add your first habit and start today!</div>
+        <button class="empty-btn" onclick="document.getElementById('openAddModal').click()">+ Add First Habit</button>
+      </div>`;
+    return;
+  }
+  container.innerHTML = STATE.habits.map(h => renderHabitCard(h)).join('');
+}
+
+/* ═══════════════════════════════════════════
+   LOG ACTIONS
+═══════════════════════════════════════════ */
+function logYesNo(habitId, type) {
+  const today = todayStr();
+  if (!STATE.logs[habitId]) STATE.logs[habitId] = {};
+  const existing = STATE.logs[habitId][today];
+  // toggle off if same
+  if (existing && existing.type === type) {
+    delete STATE.logs[habitId][today];
+    save(); renderHabits(); return;
+  }
+  STATE.logs[habitId][today] = { type };
+  save();
+  if (type === 'done') showQuoteToast(habitId);
+  else renderHabits();
+}
+
+function logHours(habitId) {
+  const today = todayStr();
+  const input = document.getElementById(`hi_${habitId}`);
+  const val = parseFloat(input?.value);
+  if (isNaN(val) || val < 0) return;
+  if (!STATE.logs[habitId]) STATE.logs[habitId] = {};
+  STATE.logs[habitId][today] = { type: 'hours', value: val };
+  save();
+  const habit = STATE.habits.find(h => h.id === habitId);
+  const target = parseFloat(habit?.target) || 1;
+  if (val >= target * 0.8) showQuoteToast(habitId);
+  else renderHabits();
+}
+
+function onCellClick(habitId, dateStr) {
+  // Clicking a past cell opens a mini log editor via prompt-like flow
+  const today = todayStr();
+  if (dateStr > today) return;
+  const habit = STATE.habits.find(h => h.id === habitId);
+  if (!habit) return;
+
+  const logs = STATE.logs[habitId] || {};
+  const current = logs[dateStr];
+
+  // For simplicity: cycle through states on click for past dates
+  const cycleYN = ['', 'done', 'skip', 'fail'];
+  const cycleH  = ['', 'done_prompt', 'skip', 'fail'];
+
+  if (habit.type === 'yesno') {
+    const cur = current?.type || '';
+    const next = cycleYN[(cycleYN.indexOf(cur)+1) % cycleYN.length];
+    if (!STATE.logs[habitId]) STATE.logs[habitId] = {};
+    if (!next) { delete STATE.logs[habitId][dateStr]; }
+    else { STATE.logs[habitId][dateStr] = { type: next }; }
+    save(); renderHabits();
+  } else {
+    // hours: prompt for value
+    const val = prompt(`Log hours for ${formatDateShort(dateStr)} (leave blank to clear, type "skip" or "fail"):`, current?.value || '');
+    if (val === null) return;
+    if (!STATE.logs[habitId]) STATE.logs[habitId] = {};
+    const v = val.trim().toLowerCase();
+    if (v === '' ) { delete STATE.logs[habitId][dateStr]; }
+    else if (v === 'skip') { STATE.logs[habitId][dateStr] = { type:'skip' }; }
+    else if (v === 'fail') { STATE.logs[habitId][dateStr] = { type:'fail' }; }
+    else {
+      const num = parseFloat(v);
+      if (!isNaN(num)) STATE.logs[habitId][dateStr] = { type:'hours', value: num };
+    }
+    save(); renderHabits();
+  }
+}
+
+/* ═══════════════════════════════════════════
+   QUOTE TOAST
+═══════════════════════════════════════════ */
+function showQuoteToast(habitId) {
+  const name = STATE.userName || 'Champion';
+  const quote = SHUZO_QUOTES[Math.floor(Math.random() * SHUZO_QUOTES.length)];
+  const praise = PRAISE[Math.floor(Math.random() * PRAISE.length)](name);
+
+  document.getElementById('qtText').textContent = `"${quote}"`;
+  document.getElementById('qtPraise').textContent = praise;
+
+  const toast = document.getElementById('quoteToast');
+  toast.classList.add('show');
+  renderHabits();
+}
+
+document.getElementById('qtClose').addEventListener('click', () => {
+  document.getElementById('quoteToast').classList.remove('show');
+});
+
+/* ═══════════════════════════════════════════
+   HABIT CRUD
+═══════════════════════════════════════════ */
+function openAddModal() {
+  editingHabitId = null;
+  document.getElementById('modalTitle').textContent = 'New Habit';
+  document.getElementById('mName').value = '';
+  document.getElementById('mTarget').value = '';
+  document.getElementById('mIcon').value = '';
+  document.getElementById('mStartDate').value = todayStr();
+  selectedType = 'yesno';
+  selectedColor = COLORS[0];
+  updateTypePills();
+  updateColorPills();
+  updateTargetVisibility();
+  openModal();
+}
+
+function openEditHabit(id) {
+  editingHabitId = id;
+  const habit = STATE.habits.find(h => h.id === id);
+  if (!habit) return;
+  document.getElementById('modalTitle').textContent = 'Edit Habit';
+  document.getElementById('mName').value = habit.name;
+  document.getElementById('mTarget').value = habit.target || '';
+  document.getElementById('mIcon').value = habit.icon || '';
+  document.getElementById('mStartDate').value = habit.startDate;
+  selectedType = habit.type;
+  selectedColor = habit.color || COLORS[0];
+  updateTypePills();
+  updateColorPills();
+  updateTargetVisibility();
+  openModal();
+}
+
+function deleteHabit(id) {
+  if (!confirm('Delete this habit? All logs will be lost.')) return;
+  STATE.habits = STATE.habits.filter(h => h.id !== id);
+  delete STATE.logs[id];
+  save(); renderHabits(); renderStats(); renderSettings();
+}
+
+function saveHabit() {
+  const name = document.getElementById('mName').value.trim();
+  if (!name) { document.getElementById('mName').focus(); return; }
+  const target = parseFloat(document.getElementById('mTarget').value) || 0;
+  const icon = document.getElementById('mIcon').value.trim() || '📌';
+  const startDate = document.getElementById('mStartDate').value || todayStr();
+
+  if (editingHabitId) {
+    const idx = STATE.habits.findIndex(h => h.id === editingHabitId);
+    if (idx >= 0) {
+      STATE.habits[idx] = { ...STATE.habits[idx], name, type: selectedType, target, icon, color: selectedColor, startDate };
+    }
+  } else {
+    STATE.habits.push({
+      id: 'h' + Date.now(),
+      name, type: selectedType, target, icon,
+      color: selectedColor, startDate,
+      createdAt: todayStr()
+    });
+  }
+  save(); closeModal(); renderHabits(); renderStats(); renderSettings();
+}
+
+/* ═══════════════════════════════════════════
+   MODAL HELPERS
+═══════════════════════════════════════════ */
+function openModal() { document.getElementById('habitModal').classList.add('open'); }
+function closeModal() { document.getElementById('habitModal').classList.remove('open'); }
+
+function updateTypePills() {
+  document.querySelectorAll('.type-pill').forEach(p => {
+    p.classList.toggle('selected', p.dataset.type === selectedType);
+  });
+  updateTargetVisibility();
+}
+
+function updateTargetVisibility() {
+  document.getElementById('mTargetGroup').style.display = selectedType === 'hours' ? '' : 'none';
+}
+
+function updateColorPills() {
+  document.querySelectorAll('.color-pill').forEach(p => {
+    p.classList.toggle('selected', p.dataset.color === selectedColor);
+  });
+}
+
+// Build color pills
+function buildColorPills() {
+  const container = document.getElementById('colorPills');
+  container.innerHTML = COLORS.map(c =>
+    `<div class="color-pill ${c===selectedColor?'selected':''}" data-color="${c}" style="background:${c}"
+      onclick="selectedColor='${c}';updateColorPills()"></div>`
+  ).join('');
+}
+
+// Type pill click
+document.querySelectorAll('.type-pill').forEach(p => {
+  p.addEventListener('click', () => { selectedType = p.dataset.type; updateTypePills(); });
+});
+
+document.getElementById('openAddModal').addEventListener('click', openAddModal);
+document.getElementById('modalSaveBtn').addEventListener('click', saveHabit);
+document.getElementById('modalCancelBtn').addEventListener('click', closeModal);
+document.getElementById('habitModal').addEventListener('click', e => { if (e.target === document.getElementById('habitModal')) closeModal(); });
+
+/* ═══════════════════════════════════════════
+   STATS PAGE
+═══════════════════════════════════════════ */
+function renderStats() {
+  const today = todayStr();
+  let totalDone = 0, totalSkip = 0, totalFail = 0, longestStreak = 0;
+
+  STATE.habits.forEach(h => {
+    const logs = STATE.logs[h.id] || {};
+    Object.values(logs).forEach(log => {
+      if (log.type === 'done' || log.type === 'hours') totalDone++;
+      else if (log.type === 'skip') totalSkip++;
+      else if (log.type === 'fail') totalFail++;
+    });
+    const s = calcStreak(h.id);
+    longestStreak = Math.max(longestStreak, s.best);
+  });
+
+  const todayDone = STATE.habits.filter(h => {
+    const log = (STATE.logs[h.id]||{})[today];
+    return log && (log.type === 'done' || log.type === 'hours');
+  }).length;
+
+  document.getElementById('statsGrid').innerHTML = `
+    <div class="stat-card"><div class="stat-val">${todayDone}</div><div class="stat-lbl">Done Today</div></div>
+    <div class="stat-card"><div class="stat-val">${STATE.habits.length}</div><div class="stat-lbl">Total Habits</div></div>
+    <div class="stat-card"><div class="stat-val">${totalDone}</div><div class="stat-lbl">All-Time Completions</div></div>
+    <div class="stat-card"><div class="stat-val">${longestStreak}d</div><div class="stat-lbl">Longest Streak</div></div>
+    <div class="stat-card"><div class="stat-val">${totalSkip}</div><div class="stat-lbl">Days Skipped</div></div>
+    <div class="stat-card"><div class="stat-val">${totalFail}</div><div class="stat-lbl">Interrupted</div></div>`;
+
+  // Per-habit breakdown
+  const detail = STATE.habits.map(h => {
+    const s = calcStreak(h.id);
+    const logs = STATE.logs[h.id] || {};
+    const done = Object.values(logs).filter(l => l.type === 'done' || l.type === 'hours').length;
+    const color = h.color || COLORS[0];
+    return `
+      <div class="settings-row" style="border-left:3px solid ${color}">
+        <div>
+          <div class="sr-label">${h.icon||'📌'} ${h.name}</div>
+          <div class="sr-val">🔥 ${s.current} streak · Best ${s.best} · ${done} done</div>
+        </div>
+      </div>`;
+  }).join('');
+
+  document.getElementById('statsDetail').innerHTML = `
+    <div class="section-title" style="margin-top:4px">Per Habit</div>
+    <div class="settings-section">${detail || '<div class="empty-state" style="padding:24px"><div class="empty-sub">No habits yet.</div></div>'}</div>`;
+}
+
+/* ═══════════════════════════════════════════
+   SETTINGS PAGE
+═══════════════════════════════════════════ */
+function renderSettings() {
+  const name = STATE.userName || 'Unknown';
+  const habitList = STATE.habits.map(h => `
+    <div class="settings-row" style="border-left:3px solid ${h.color||COLORS[0]}">
+      <div>
+        <div class="sr-label">${h.icon||'📌'} ${h.name}</div>
+        <div class="sr-val">${h.type==='hours'?`${h.target}h target`:'Yes/No'} · since ${formatDateShort(h.startDate)}</div>
+      </div>
+      <div style="display:flex;gap:6px">
+        <button class="sr-btn" onclick="openEditHabit('${h.id}')">Edit</button>
+        <button class="sr-btn danger" onclick="deleteHabit('${h.id}')">Delete</button>
+      </div>
+    </div>`).join('');
+
+  document.getElementById('settingsContent').innerHTML = `
+    <div class="settings-label">Account</div>
+    <div class="settings-row">
+      <div class="sr-label">Name</div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <span class="sr-val">${name}</span>
+        <button class="sr-btn" onclick="changeName()">Change</button>
+      </div>
+    </div>
+
+    <div class="settings-label" style="margin-top:8px">Manage Habits</div>
+    ${habitList || '<div class="settings-row"><div class="sr-val">No habits yet</div></div>'}
+
+    <div class="settings-label" style="margin-top:8px">Data</div>
+    <div class="settings-row">
+      <div class="sr-label">Export Data</div>
+      <button class="sr-btn" onclick="exportData()">Export JSON</button>
+    </div>
+    <div class="settings-row">
+      <div class="sr-label">Reset Everything</div>
+      <button class="sr-btn danger" onclick="resetAll()">Reset</button>
+    </div>`;
+}
+
+function changeName() {
+  const n = prompt('Enter your name:', STATE.userName);
+  if (n && n.trim()) {
+    STATE.userName = n.trim();
+    save();
+    document.getElementById('userName').textContent = STATE.userName;
+    renderSettings();
+  }
+}
+
+function exportData() {
+  const blob = new Blob([JSON.stringify(STATE, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'toasttrack_backup.json';
+  a.click();
+}
+
+function resetAll() {
+  if (!confirm('Reset ALL data? This cannot be undone!')) return;
+  if (!confirm('Are you absolutely sure?')) return;
+  localStorage.removeItem(STORAGE_KEY);
+  location.reload();
+}
+
+/* ═══════════════════════════════════════════
+   NAVIGATION
+═══════════════════════════════════════════ */
+document.querySelectorAll('.nav-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const page = item.dataset.page;
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+    item.classList.add('active');
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById(`page-${page}`).classList.add('active');
+    if (page === 'stats') renderStats();
+    if (page === 'settings') renderSettings();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
+
+/* ═══════════════════════════════════════════
+   SETUP FLOW
+═══════════════════════════════════════════ */
+function showSetup() {
+  document.getElementById('setup').classList.add('visible');
+}
+
+function completeSetup() {
+  const name = document.getElementById('setupNameInput').value.trim();
+  if (!name) { document.getElementById('setupNameInput').focus(); return; }
+  STATE.userName = name;
+  save();
+  document.getElementById('setup').style.opacity = '0';
+  document.getElementById('setup').style.pointerEvents = 'none';
+  setTimeout(() => {
+    document.getElementById('setup').style.display = 'none';
+    launchApp();
+  }, 400);
+}
+
+document.getElementById('setupDoneBtn').addEventListener('click', completeSetup);
+document.getElementById('setupNameInput').addEventListener('keydown', e => { if (e.key === 'Enter') completeSetup(); });
+
+/* ═══════════════════════════════════════════
+   LAUNCH APP
+═══════════════════════════════════════════ */
+function launchApp() {
+  document.getElementById('app').classList.add('visible');
+  document.getElementById('userName').textContent = STATE.userName;
+  buildColorPills();
+  renderHabits();
+}
+
+/* ═══════════════════════════════════════════
+   INIT
+═══════════════════════════════════════════ */
+load();
+
+// After splash ends (4.2s + 0.6s fade), decide setup or app
+setTimeout(() => {
+  if (!STATE.userName) {
+    showSetup();
+  } else {
+    document.getElementById('setup').style.display = 'none';
+    launchApp();
+  }
+}, 4800);
+
+// Make openEditHabit, etc. global
+window.openEditHabit = openEditHabit;
+window.deleteHabit = deleteHabit;
+window.logYesNo = logYesNo;
+window.logHours = logHours;
+window.onCellClick = onCellClick;
+window.selectedColor = selectedColor;
+window.updateColorPills = updateColorPills;
+</script>
+</body>
+</html>

@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 73,
-    "longest": 73,
-    "last_updated": "2026-05-10"
+    "current": 74,
+    "longest": 74,
+    "last_updated": "2026-05-11"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -21910,6 +21910,292 @@
       "most_played_map": {
         "title": "GRIM (NIGHTCORE & CUT VER.)",
         "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+        "unique_players": 12
+      }
+    },
+    "2026-05-11": {
+      "total_scores": 455,
+      "peak_hour_baghdad": 21,
+      "top_grinder": {
+        "user": "skiler1",
+        "user_id": 31252345,
+        "count": 48,
+        "scores": [
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5023114558,
+            "rank": "B",
+            "accuracy": 0.8832964601769911,
+            "pp": 17.049,
+            "mods": [],
+            "combo": 257,
+            "created_at": "2026-05-11T03:19:11Z",
+            "beatmapset": {
+              "id": 1218852,
+              "title": "Yoru ni Kakeru",
+              "cover": "https://assets.ppy.sh/beatmaps/1218852/covers/card.jpg?1645786453",
+              "stars": 4.60627
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5023113433,
+            "rank": "A",
+            "accuracy": 0.9420498084291188,
+            "pp": 41.3486,
+            "mods": [],
+            "combo": 295,
+            "created_at": "2026-05-11T03:13:39Z",
+            "beatmapset": {
+              "id": 534788,
+              "title": "Chiisana Koi no Uta",
+              "cover": "https://assets.ppy.sh/beatmaps/534788/covers/card.jpg?1650646193",
+              "stars": 4.60724
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5023112271,
+            "rank": "A",
+            "accuracy": 0.94971072541166,
+            "pp": 37.888,
+            "mods": [],
+            "combo": 317,
+            "created_at": "2026-05-11T03:07:44Z",
+            "beatmapset": {
+              "id": 284931,
+              "title": "Flicker",
+              "cover": "https://assets.ppy.sh/beatmaps/284931/covers/card.jpg?1716873326",
+              "stars": 4.66372
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5023108174,
+            "rank": "A",
+            "accuracy": 0.9367088607594937,
+            "pp": 63.3862,
+            "mods": [],
+            "combo": 173,
+            "created_at": "2026-05-11T02:46:44Z",
+            "beatmapset": {
+              "id": 2487912,
+              "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+              "stars": 4.53268
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5023107661,
+            "rank": "A",
+            "accuracy": 0.9357072205736894,
+            "pp": 41.235,
+            "mods": [],
+            "combo": 164,
+            "created_at": "2026-05-11T02:44:06Z",
+            "beatmapset": {
+              "id": 651692,
+              "title": "Tell Me What You Want",
+              "cover": "https://assets.ppy.sh/beatmaps/651692/covers/card.jpg?1650652587",
+              "stars": 4.27769
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5023107173,
+            "rank": "A",
+            "accuracy": 0.9309428950863213,
+            "pp": 39.3344,
+            "mods": [],
+            "combo": 119,
+            "created_at": "2026-05-11T02:41:32Z",
+            "beatmapset": {
+              "id": 1764228,
+              "title": "Ai no Sukima (Arrange Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1764228/covers/card.jpg?1775709518",
+              "stars": 4.18897
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5023106803,
+            "rank": "B",
+            "accuracy": 0.8987455197132617,
+            "pp": 35.2419,
+            "mods": [],
+            "combo": 140,
+            "created_at": "2026-05-11T02:39:39Z",
+            "beatmapset": {
+              "id": 773043,
+              "title": "Stellar",
+              "cover": "https://assets.ppy.sh/beatmaps/773043/covers/card.jpg?1650663792",
+              "stars": 4.6071
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5023104477,
+            "rank": "A",
+            "accuracy": 0.9287656334964655,
+            "pp": 24.0707,
+            "mods": [],
+            "combo": 141,
+            "created_at": "2026-05-11T02:28:18Z",
+            "beatmapset": {
+              "id": 785731,
+              "title": "Catchit (Radio Edit)",
+              "cover": "https://assets.ppy.sh/beatmaps/785731/covers/card.jpg?1650664120",
+              "stars": 4.67995
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5023101187,
+            "rank": "B",
+            "accuracy": 0.9020376175548589,
+            "pp": 39.6326,
+            "mods": [],
+            "combo": 210,
+            "created_at": "2026-05-11T02:11:26Z",
+            "beatmapset": {
+              "id": 779173,
+              "title": "Superpower",
+              "cover": "https://assets.ppy.sh/beatmaps/779173/covers/card.jpg?1645785720",
+              "stars": 4.76748
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5022844912,
+            "rank": "A",
+            "accuracy": 0.9394831534183841,
+            "pp": 48.7988,
+            "mods": [],
+            "combo": 325,
+            "created_at": "2026-05-10T14:10:05Z",
+            "beatmapset": {
+              "id": 1189927,
+              "title": "Jet Rocket",
+              "cover": "https://assets.ppy.sh/beatmaps/1189927/covers/card.jpg?1650697367",
+              "stars": 4.79524
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5022840944,
+            "rank": "A",
+            "accuracy": 0.954248366013072,
+            "pp": 89.1315,
+            "mods": [],
+            "combo": 434,
+            "created_at": "2026-05-10T14:01:17Z",
+            "beatmapset": {
+              "id": 578755,
+              "title": "Grayed Out -Antifront-",
+              "cover": "https://assets.ppy.sh/beatmaps/578755/covers/card.jpg?1650654099",
+              "stars": 4.9834
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5022837863,
+            "rank": "B",
+            "accuracy": 0.925947187141217,
+            "pp": 53.6097,
+            "mods": [],
+            "combo": 679,
+            "created_at": "2026-05-10T13:54:09Z",
+            "beatmapset": {
+              "id": 43107,
+              "title": "Manima ni",
+              "cover": "https://assets.ppy.sh/beatmaps/43107/covers/card.jpg?1622052806",
+              "stars": 5.04042
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5022834284,
+            "rank": "B",
+            "accuracy": 0.9227848101265823,
+            "pp": 59.089,
+            "mods": [],
+            "combo": 209,
+            "created_at": "2026-05-10T13:46:09Z",
+            "beatmapset": {
+              "id": 439104,
+              "title": "Kisetsu wa Tsugitsugi Shindeiku -Tokyo Ghoul Root A Edit-",
+              "cover": "https://assets.ppy.sh/beatmaps/439104/covers/card.jpg?1622102099",
+              "stars": 5.03596
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5022831903,
+            "rank": "B",
+            "accuracy": 0.8601092896174863,
+            "pp": 47.9074,
+            "mods": [],
+            "combo": 308,
+            "created_at": "2026-05-10T13:40:29Z",
+            "beatmapset": {
+              "id": 2254806,
+              "title": "Dicks Are For My Friends",
+              "cover": "https://assets.ppy.sh/beatmaps/2254806/covers/card.jpg?1751734479",
+              "stars": 4.76944
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5022766689,
+            "rank": "B",
+            "accuracy": 0.890400604686319,
+            "pp": 41.6728,
+            "mods": [],
+            "combo": 165,
+            "created_at": "2026-05-10T10:50:45Z",
+            "beatmapset": {
+              "id": 513590,
+              "title": "Zen Zen Zense (movie ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/513590/covers/card.jpg?1650644032",
+              "stars": 5.08603
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "El Sonidito x Athletic Theme (DitzyFlama Mashup)",
+        "cover": "https://assets.ppy.sh/beatmaps/2253247/covers/card.jpg?1737229904",
         "unique_players": 12
       }
     }

@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 74,
-    "longest": 74,
-    "last_updated": "2026-05-11"
+    "current": 75,
+    "longest": 75,
+    "last_updated": "2026-05-12"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -22197,6 +22197,329 @@
         "title": "El Sonidito x Athletic Theme (DitzyFlama Mashup)",
         "cover": "https://assets.ppy.sh/beatmaps/2253247/covers/card.jpg?1737229904",
         "unique_players": 12
+      }
+    },
+    "2026-05-12": {
+      "total_scores": 439,
+      "peak_hour_baghdad": 19,
+      "top_grinder": {
+        "user": "I AM A GHOUL",
+        "user_id": 24991953,
+        "count": 84,
+        "scores": [
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5023358572,
+            "rank": "A",
+            "accuracy": 0.9584493964716806,
+            "pp": 129.023,
+            "mods": [],
+            "combo": 302,
+            "created_at": "2026-05-11T17:23:10Z",
+            "beatmapset": {
+              "id": 359173,
+              "title": "Speed of Link",
+              "cover": "https://assets.ppy.sh/beatmaps/359173/covers/card.jpg?1631509404",
+              "stars": 6.54784
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5023357693,
+            "rank": "A",
+            "accuracy": 0.9452181987000928,
+            "pp": 105.231,
+            "mods": [],
+            "combo": 452,
+            "created_at": "2026-05-11T17:20:56Z",
+            "beatmapset": {
+              "id": 359173,
+              "title": "Speed of Link",
+              "cover": "https://assets.ppy.sh/beatmaps/359173/covers/card.jpg?1631509404",
+              "stars": 6.54784
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5023355867,
+            "rank": "A",
+            "accuracy": 0.9365079365079365,
+            "pp": 272.3,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 140,
+            "created_at": "2026-05-11T17:16:44Z",
+            "beatmapset": {
+              "id": 2282704,
+              "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+              "stars": 5.25799
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5023355471,
+            "rank": "B",
+            "accuracy": 0.9206349206349206,
+            "pp": 259.271,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 156,
+            "created_at": "2026-05-11T17:15:47Z",
+            "beatmapset": {
+              "id": 2282704,
+              "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+              "stars": 5.25799
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5023354905,
+            "rank": "A",
+            "accuracy": 0.961038961038961,
+            "pp": 290.254,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 121,
+            "created_at": "2026-05-11T17:14:27Z",
+            "beatmapset": {
+              "id": 2282704,
+              "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+              "stars": 5.25799
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5023354428,
+            "rank": "A",
+            "accuracy": 0.9494949494949495,
+            "pp": 303.974,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 144,
+            "created_at": "2026-05-11T17:13:16Z",
+            "beatmapset": {
+              "id": 2282704,
+              "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+              "stars": 5.25799
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5023354065,
+            "rank": "A",
+            "accuracy": 0.9292929292929293,
+            "pp": 250.357,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 110,
+            "created_at": "2026-05-11T17:12:25Z",
+            "beatmapset": {
+              "id": 2282704,
+              "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+              "stars": 5.25799
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5023352884,
+            "rank": "A",
+            "accuracy": 0.9281609195402298,
+            "pp": 257.139,
+            "mods": [
+              "DT"
+            ],
+            "combo": 264,
+            "created_at": "2026-05-11T17:09:43Z",
+            "beatmapset": {
+              "id": 1049899,
+              "title": "Say Goodbye (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1049899/covers/card.jpg?1724193986",
+              "stars": 5.24003
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5023352249,
+            "rank": "A",
+            "accuracy": 0.9195402298850575,
+            "pp": 175.415,
+            "mods": [
+              "DT"
+            ],
+            "combo": 156,
+            "created_at": "2026-05-11T17:08:13Z",
+            "beatmapset": {
+              "id": 1049899,
+              "title": "Say Goodbye (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1049899/covers/card.jpg?1724193986",
+              "stars": 5.24003
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5023351803,
+            "rank": "B",
+            "accuracy": 0.9001436781609196,
+            "pp": 167.714,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 198,
+            "created_at": "2026-05-11T17:07:12Z",
+            "beatmapset": {
+              "id": 1049899,
+              "title": "Say Goodbye (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1049899/covers/card.jpg?1724193986",
+              "stars": 5.24003
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5023351165,
+            "rank": "B",
+            "accuracy": 0.9224137931034483,
+            "pp": 219.864,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 157,
+            "created_at": "2026-05-11T17:05:41Z",
+            "beatmapset": {
+              "id": 1049899,
+              "title": "Say Goodbye (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1049899/covers/card.jpg?1724193986",
+              "stars": 5.24003
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5023349396,
+            "rank": "B",
+            "accuracy": 0.9152298850574713,
+            "pp": 204.618,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 140,
+            "created_at": "2026-05-11T17:01:35Z",
+            "beatmapset": {
+              "id": 1049899,
+              "title": "Say Goodbye (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1049899/covers/card.jpg?1724193986",
+              "stars": 5.24003
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5023348874,
+            "rank": "B",
+            "accuracy": 0.9062918340026773,
+            "pp": 219.749,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 119,
+            "created_at": "2026-05-11T17:00:19Z",
+            "beatmapset": {
+              "id": 1255746,
+              "title": "Simarik",
+              "cover": "https://assets.ppy.sh/beatmaps/1255746/covers/card.jpg?1622197442",
+              "stars": 5.25403
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5023348475,
+            "rank": "B",
+            "accuracy": 0.9036144578313253,
+            "pp": 196.632,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 67,
+            "created_at": "2026-05-11T16:59:14Z",
+            "beatmapset": {
+              "id": 1255746,
+              "title": "Simarik",
+              "cover": "https://assets.ppy.sh/beatmaps/1255746/covers/card.jpg?1622197442",
+              "stars": 5.25403
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5023347539,
+            "rank": "A",
+            "accuracy": 0.9629629629629629,
+            "pp": 336.469,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 199,
+            "created_at": "2026-05-11T16:57:00Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 5.2615
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Last Friday Night (T.G.I.F.) (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2494398/covers/card.jpg?1777897504",
+        "unique_players": 33
       }
     }
   }

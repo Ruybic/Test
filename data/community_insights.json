@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 78,
-    "longest": 78,
-    "last_updated": "2026-05-15"
+    "current": 79,
+    "longest": 79,
+    "last_updated": "2026-05-16"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -23425,6 +23425,292 @@
       "most_played_map": {
         "title": "Thick of HiT (S8-10 Opening Mashup)",
         "cover": "https://assets.ppy.sh/beatmaps/2506744/covers/card.jpg?1777821017",
+        "unique_players": 17
+      }
+    },
+    "2026-05-16": {
+      "total_scores": 710,
+      "peak_hour_baghdad": 18,
+      "top_grinder": {
+        "user": "skiler1",
+        "user_id": 31252345,
+        "count": 84,
+        "scores": [
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5025203823,
+            "rank": "B",
+            "accuracy": 0.8608695652173913,
+            "pp": 42.6386,
+            "mods": [],
+            "combo": 94,
+            "created_at": "2026-05-15T22:20:59Z",
+            "beatmapset": {
+              "id": 70589,
+              "title": "Yubi Bouenkyou~Anime Ban~",
+              "cover": "https://assets.ppy.sh/beatmaps/70589/covers/card.jpg?1622060999",
+              "stars": 4.9716
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5025203180,
+            "rank": "A",
+            "accuracy": 0.928654970760234,
+            "pp": 39.121,
+            "mods": [],
+            "combo": 128,
+            "created_at": "2026-05-15T22:18:57Z",
+            "beatmapset": {
+              "id": 829296,
+              "title": "Inochi ni Kirawarete Iru.",
+              "cover": "https://assets.ppy.sh/beatmaps/829296/covers/card.jpg?1650671856",
+              "stars": 4.85569
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5025202387,
+            "rank": "S",
+            "accuracy": 0.9715277777777778,
+            "pp": 37.4933,
+            "mods": [],
+            "combo": 420,
+            "created_at": "2026-05-15T22:16:26Z",
+            "beatmapset": {
+              "id": 829296,
+              "title": "Inochi ni Kirawarete Iru.",
+              "cover": "https://assets.ppy.sh/beatmaps/829296/covers/card.jpg?1650671856",
+              "stars": 3.46879
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5025201422,
+            "rank": "A",
+            "accuracy": 0.931314623338257,
+            "pp": 30.6416,
+            "mods": [],
+            "combo": 512,
+            "created_at": "2026-05-15T22:13:33Z",
+            "beatmapset": {
+              "id": 295225,
+              "title": "Plus Danshi ver Reol",
+              "cover": "https://assets.ppy.sh/beatmaps/295225/covers/card.jpg?1622083957",
+              "stars": 3.93165
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5025199613,
+            "rank": "S",
+            "accuracy": 0.9869281045751634,
+            "pp": 53.6256,
+            "mods": [],
+            "combo": 475,
+            "created_at": "2026-05-15T22:08:12Z",
+            "beatmapset": {
+              "id": 1888684,
+              "title": "I am you",
+              "cover": "https://assets.ppy.sh/beatmaps/1888684/covers/card.jpg?1714312852",
+              "stars": 3.62722
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5025196932,
+            "rank": "A",
+            "accuracy": 0.9726134585289515,
+            "pp": 32.3882,
+            "mods": [],
+            "combo": 296,
+            "created_at": "2026-05-15T22:00:26Z",
+            "beatmapset": {
+              "id": 2464479,
+              "title": "Maniac (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2464479/covers/card.jpg?1764663200",
+              "stars": 3.40105
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5025196036,
+            "rank": "A",
+            "accuracy": 0.9576771653543307,
+            "pp": 26.0705,
+            "mods": [],
+            "combo": 299,
+            "created_at": "2026-05-15T21:57:40Z",
+            "beatmapset": {
+              "id": 87209,
+              "title": "little my star",
+              "cover": "https://assets.ppy.sh/beatmaps/87209/covers/card.jpg?1742320846",
+              "stars": 3.65474
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5025194516,
+            "rank": "A",
+            "accuracy": 0.9704641350210971,
+            "pp": 41.0141,
+            "mods": [],
+            "combo": 228,
+            "created_at": "2026-05-15T21:53:18Z",
+            "beatmapset": {
+              "id": 1690826,
+              "title": "Hanairo Biyori",
+              "cover": "https://assets.ppy.sh/beatmaps/1690826/covers/card.jpg?1689726027",
+              "stars": 4.01184
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5025169272,
+            "rank": "A",
+            "accuracy": 0.9552715654952076,
+            "pp": 69.7642,
+            "mods": [],
+            "combo": 338,
+            "created_at": "2026-05-15T20:44:18Z",
+            "beatmapset": {
+              "id": 164930,
+              "title": "black bullet",
+              "cover": "https://assets.ppy.sh/beatmaps/164930/covers/card.jpg?1650621630",
+              "stars": 4.62489
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5025167685,
+            "rank": "B",
+            "accuracy": 0.910453216374269,
+            "pp": 33.2353,
+            "mods": [],
+            "combo": 192,
+            "created_at": "2026-05-15T20:40:16Z",
+            "beatmapset": {
+              "id": 2238342,
+              "title": "Knight Rider",
+              "cover": "https://assets.ppy.sh/beatmaps/2238342/covers/card.jpg?1729189761",
+              "stars": 4.82912
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5025163644,
+            "rank": "A",
+            "accuracy": 0.9322033898305084,
+            "pp": 45.3154,
+            "mods": [],
+            "combo": 125,
+            "created_at": "2026-05-15T20:30:18Z",
+            "beatmapset": {
+              "id": 557733,
+              "title": "Harumachi Clover",
+              "cover": "https://assets.ppy.sh/beatmaps/557733/covers/card.jpg?1650646480",
+              "stars": 4.01514
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5025163327,
+            "rank": "B",
+            "accuracy": 0.9180790960451978,
+            "pp": 44.0694,
+            "mods": [],
+            "combo": 108,
+            "created_at": "2026-05-15T20:29:30Z",
+            "beatmapset": {
+              "id": 557733,
+              "title": "Harumachi Clover",
+              "cover": "https://assets.ppy.sh/beatmaps/557733/covers/card.jpg?1650646480",
+              "stars": 4.01514
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5025151354,
+            "rank": "B",
+            "accuracy": 0.8700564971751412,
+            "pp": 35.709,
+            "mods": [],
+            "combo": 57,
+            "created_at": "2026-05-15T20:00:47Z",
+            "beatmapset": {
+              "id": 557733,
+              "title": "Harumachi Clover",
+              "cover": "https://assets.ppy.sh/beatmaps/557733/covers/card.jpg?1650646480",
+              "stars": 4.01514
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5025150788,
+            "rank": "B",
+            "accuracy": 0.8793103448275862,
+            "pp": 34.2461,
+            "mods": [],
+            "combo": 52,
+            "created_at": "2026-05-15T19:59:28Z",
+            "beatmapset": {
+              "id": 809023,
+              "title": "Picotto! Papitto!! GARUPA*PICO!!! (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/809023/covers/card.jpg?1650666242",
+              "stars": 4.44031
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5025150420,
+            "rank": "A",
+            "accuracy": 0.9493333333333334,
+            "pp": 83.2516,
+            "mods": [],
+            "combo": 181,
+            "created_at": "2026-05-15T19:58:31Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 4.77743
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "PADORU / PADORU",
+        "cover": "https://assets.ppy.sh/beatmaps/2279697/covers/card.jpg?1733354216",
         "unique_players": 17
       }
     }

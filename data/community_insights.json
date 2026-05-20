@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 81,
-    "longest": 81,
-    "last_updated": "2026-05-18"
+    "current": 82,
+    "longest": 82,
+    "last_updated": "2026-05-19"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -24290,6 +24290,292 @@
         "title": "Say Goodbye (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/1049899/covers/card.jpg?1724193986",
         "unique_players": 14
+      }
+    },
+    "2026-05-19": {
+      "total_scores": 614,
+      "peak_hour_baghdad": 15,
+      "top_grinder": {
+        "user": "brianmoser1123",
+        "user_id": 39498643,
+        "count": 66,
+        "scores": [
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 6721317821,
+            "rank": "B",
+            "accuracy": 0.8666666666666667,
+            "pp": 36.984,
+            "mods": [],
+            "combo": 136,
+            "created_at": "2026-05-19T01:37:30Z",
+            "beatmapset": {
+              "id": 754219,
+              "title": "MAYDAY (Nightcore Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/754219/covers/card.jpg?1650661061",
+              "stars": 4.18792
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 6721312037,
+            "rank": "C",
+            "accuracy": 0.8154761904761905,
+            "pp": 28.6392,
+            "mods": [],
+            "combo": 87,
+            "created_at": "2026-05-19T01:35:28Z",
+            "beatmapset": {
+              "id": 754219,
+              "title": "MAYDAY (Nightcore Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/754219/covers/card.jpg?1650661061",
+              "stars": 4.18792
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 6721304073,
+            "rank": "C",
+            "accuracy": 0.7986748216106014,
+            "pp": 13.3916,
+            "mods": [],
+            "combo": 209,
+            "created_at": "2026-05-19T01:32:42Z",
+            "beatmapset": {
+              "id": 2514004,
+              "title": "Looping the Rooms feat. Hatsune Miku",
+              "cover": "https://assets.ppy.sh/beatmaps/2514004/covers/card.jpg?1772054800",
+              "stars": 3.45811
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 6721295578,
+            "rank": "C",
+            "accuracy": 0.7436472346786248,
+            "pp": 22.088,
+            "mods": [],
+            "combo": 109,
+            "created_at": "2026-05-19T01:29:48Z",
+            "beatmapset": {
+              "id": 1429419,
+              "title": "Konnanimo",
+              "cover": "https://assets.ppy.sh/beatmaps/1429419/covers/card.jpg?1622820546",
+              "stars": 4.81797
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 6721262145,
+            "rank": "C",
+            "accuracy": 0.7575757575757576,
+            "pp": 9.86213,
+            "mods": [],
+            "combo": 183,
+            "created_at": "2026-05-19T01:18:14Z",
+            "beatmapset": {
+              "id": 2224818,
+              "title": "Classical Dragon",
+              "cover": "https://assets.ppy.sh/beatmaps/2224818/covers/card.jpg?1733064685",
+              "stars": 3.45486
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 6721253597,
+            "rank": "D",
+            "accuracy": 0.6165780141843972,
+            "pp": 11.9148,
+            "mods": [],
+            "combo": 90,
+            "created_at": "2026-05-19T01:15:18Z",
+            "beatmapset": {
+              "id": 791798,
+              "title": "Behind the Walls",
+              "cover": "https://assets.ppy.sh/beatmaps/791798/covers/card.jpg?1650664759",
+              "stars": 4.37465
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 6721246654,
+            "rank": "D",
+            "accuracy": 0.6569148936170213,
+            "pp": 13.5102,
+            "mods": [],
+            "combo": 84,
+            "created_at": "2026-05-19T01:12:54Z",
+            "beatmapset": {
+              "id": 791798,
+              "title": "Behind the Walls",
+              "cover": "https://assets.ppy.sh/beatmaps/791798/covers/card.jpg?1650664759",
+              "stars": 4.37465
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 6721234415,
+            "rank": "D",
+            "accuracy": 0.6432943795214245,
+            "pp": 3.07657,
+            "mods": [],
+            "combo": 83,
+            "created_at": "2026-05-19T01:08:48Z",
+            "beatmapset": {
+              "id": 1724615,
+              "title": "Beethoven Virus",
+              "cover": "https://assets.ppy.sh/beatmaps/1724615/covers/card.jpg?1651263683",
+              "stars": 3.51916
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 6721217157,
+            "rank": "C",
+            "accuracy": 0.7751091703056768,
+            "pp": 17.4112,
+            "mods": [],
+            "combo": 232,
+            "created_at": "2026-05-19T01:02:52Z",
+            "beatmapset": {
+              "id": 758101,
+              "title": "asphyxia (TV edit)",
+              "cover": "https://assets.ppy.sh/beatmaps/758101/covers/card.jpg?1650661558",
+              "stars": 3.35927
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 6721212467,
+            "rank": "C",
+            "accuracy": 0.7365356622998545,
+            "pp": 19.0841,
+            "mods": [],
+            "combo": 275,
+            "created_at": "2026-05-19T01:01:15Z",
+            "beatmapset": {
+              "id": 758101,
+              "title": "asphyxia (TV edit)",
+              "cover": "https://assets.ppy.sh/beatmaps/758101/covers/card.jpg?1650661558",
+              "stars": 3.35927
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 6721205892,
+            "rank": "C",
+            "accuracy": 0.8388064971751412,
+            "pp": null,
+            "mods": [],
+            "combo": 363,
+            "created_at": "2026-05-19T00:59:01Z",
+            "beatmapset": {
+              "id": 1237505,
+              "title": "Galaxy Collapse",
+              "cover": "https://assets.ppy.sh/beatmaps/1237505/covers/card.jpg?1777132469",
+              "stars": 3.72734
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 6721187606,
+            "rank": "D",
+            "accuracy": 0.6791111111111111,
+            "pp": 8.48417,
+            "mods": [],
+            "combo": 158,
+            "created_at": "2026-05-19T00:52:48Z",
+            "beatmapset": {
+              "id": 2079819,
+              "title": "From The Start",
+              "cover": "https://assets.ppy.sh/beatmaps/2079819/covers/card.jpg?1707451117",
+              "stars": 3.27517
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 6721179134,
+            "rank": "D",
+            "accuracy": 0.6578546562228025,
+            "pp": 9.30241,
+            "mods": [],
+            "combo": 94,
+            "created_at": "2026-05-19T00:49:52Z",
+            "beatmapset": {
+              "id": 1533028,
+              "title": "Flamewall",
+              "cover": "https://assets.ppy.sh/beatmaps/1533028/covers/card.jpg?1645788428",
+              "stars": 5.43221
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 6721158347,
+            "rank": "C",
+            "accuracy": 0.8140218303946264,
+            "pp": 31.6474,
+            "mods": [],
+            "combo": 226,
+            "created_at": "2026-05-19T00:42:47Z",
+            "beatmapset": {
+              "id": 666700,
+              "title": "Bubblegum Bitch",
+              "cover": "https://assets.ppy.sh/beatmaps/666700/covers/card.jpg?1650653739",
+              "stars": 4.00228
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 6721151122,
+            "rank": "C",
+            "accuracy": 0.8014273719563392,
+            "pp": 24.8964,
+            "mods": [],
+            "combo": 228,
+            "created_at": "2026-05-19T00:40:19Z",
+            "beatmapset": {
+              "id": 666700,
+              "title": "Bubblegum Bitch",
+              "cover": "https://assets.ppy.sh/beatmaps/666700/covers/card.jpg?1650653739",
+              "stars": 4.00228
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Cookie-Butter-Choco-Cookie",
+        "cover": "https://assets.ppy.sh/beatmaps/542081/covers/card.jpg?1650647147",
+        "unique_players": 11
       }
     }
   }

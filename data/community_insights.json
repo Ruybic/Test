@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 82,
-    "longest": 82,
-    "last_updated": "2026-05-19"
+    "current": 83,
+    "longest": 83,
+    "last_updated": "2026-05-20"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -24576,6 +24576,314 @@
         "title": "Cookie-Butter-Choco-Cookie",
         "cover": "https://assets.ppy.sh/beatmaps/542081/covers/card.jpg?1650647147",
         "unique_players": 11
+      }
+    },
+    "2026-05-20": {
+      "total_scores": 481,
+      "peak_hour_baghdad": 13,
+      "top_grinder": {
+        "user": "RAWI03",
+        "user_id": 38341733,
+        "count": 44,
+        "scores": [
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6725869942,
+            "rank": "B",
+            "accuracy": 0.9193548387096774,
+            "pp": 146.997,
+            "mods": [
+              "DT"
+            ],
+            "combo": 154,
+            "created_at": "2026-05-19T21:27:15Z",
+            "beatmapset": {
+              "id": 1280506,
+              "title": "WONDERFUL WONDER (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1280506/covers/card.jpg?1645786525",
+              "stars": 4.38578
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6725866505,
+            "rank": "B",
+            "accuracy": 0.9027113237639554,
+            "pp": 133.078,
+            "mods": [
+              "DT"
+            ],
+            "combo": 178,
+            "created_at": "2026-05-19T21:26:23Z",
+            "beatmapset": {
+              "id": 2445174,
+              "title": "Sunshine (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+              "stars": 4.31124
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6725862604,
+            "rank": "B",
+            "accuracy": 0.9166666666666666,
+            "pp": 158.803,
+            "mods": [
+              "DT"
+            ],
+            "combo": 65,
+            "created_at": "2026-05-19T21:25:26Z",
+            "beatmapset": {
+              "id": 727392,
+              "title": "Hitorigoto -Instrumental-",
+              "cover": "https://assets.ppy.sh/beatmaps/727392/covers/card.jpg?1650658741",
+              "stars": 4.36321
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6725859406,
+            "rank": "A",
+            "accuracy": 0.9648648648648649,
+            "pp": 194.479,
+            "mods": [
+              "DT"
+            ],
+            "combo": 104,
+            "created_at": "2026-05-19T21:24:39Z",
+            "beatmapset": {
+              "id": 2379887,
+              "title": "This Little Girl (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2379887/covers/card.jpg?1749535372",
+              "stars": 4.29073
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6725851294,
+            "rank": "A",
+            "accuracy": 0.971875,
+            "pp": 207.131,
+            "mods": [
+              "DT"
+            ],
+            "combo": 212,
+            "created_at": "2026-05-19T21:22:39Z",
+            "beatmapset": {
+              "id": 1575739,
+              "title": "Stay",
+              "cover": "https://assets.ppy.sh/beatmaps/1575739/covers/card.jpg?1645781587",
+              "stars": 4.13442
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6725842447,
+            "rank": "A",
+            "accuracy": 0.9652014652014652,
+            "pp": 133.035,
+            "mods": [
+              "DT"
+            ],
+            "combo": 235,
+            "created_at": "2026-05-19T21:20:30Z",
+            "beatmapset": {
+              "id": 819112,
+              "title": "You Suck At Love (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/819112/covers/card.jpg?1650668141",
+              "stars": 3.72883
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6725838064,
+            "rank": "A",
+            "accuracy": 0.9530744336569579,
+            "pp": 166.792,
+            "mods": [
+              "DT"
+            ],
+            "combo": 220,
+            "created_at": "2026-05-19T21:19:27Z",
+            "beatmapset": {
+              "id": 2363063,
+              "title": "Blame Brett (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2363063/covers/card.jpg?1753576499",
+              "stars": 4.2779
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6725831667,
+            "rank": "A",
+            "accuracy": 0.9849726775956285,
+            "pp": 204.404,
+            "mods": [
+              "DT"
+            ],
+            "combo": 146,
+            "created_at": "2026-05-19T21:17:55Z",
+            "beatmapset": {
+              "id": 754219,
+              "title": "MAYDAY (Nightcore Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/754219/covers/card.jpg?1650661061",
+              "stars": 4.04896
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6725817815,
+            "rank": "B",
+            "accuracy": 0.8787878787878788,
+            "pp": 101.33,
+            "mods": [
+              "DT"
+            ],
+            "combo": 112,
+            "created_at": "2026-05-19T21:14:38Z",
+            "beatmapset": {
+              "id": 983911,
+              "title": "Bass Slut (Original Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/983911/covers/card.jpg?1650683411",
+              "stars": 4.2536
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6725811294,
+            "rank": "A",
+            "accuracy": 0.9359726295210166,
+            "pp": 142.046,
+            "mods": [
+              "DT"
+            ],
+            "combo": 175,
+            "created_at": "2026-05-19T21:13:05Z",
+            "beatmapset": {
+              "id": 1244123,
+              "title": "Natsukoi Hanabi (Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1244123/covers/card.jpg?1650700413",
+              "stars": 4.20564
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6725797943,
+            "rank": "B",
+            "accuracy": 0.8651315789473685,
+            "pp": 73.9302,
+            "mods": [],
+            "combo": 143,
+            "created_at": "2026-05-19T21:09:53Z",
+            "beatmapset": {
+              "id": 914242,
+              "title": "Walk This Way!",
+              "cover": "https://assets.ppy.sh/beatmaps/914242/covers/card.jpg?1650674832",
+              "stars": 6.29043
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6725778651,
+            "rank": "C",
+            "accuracy": 0.8258778258778259,
+            "pp": 62.7817,
+            "mods": [],
+            "combo": 101,
+            "created_at": "2026-05-19T21:05:18Z",
+            "beatmapset": {
+              "id": 2287284,
+              "title": "Nevermind (feat. Justin Magnaye) (Nightcore Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2287284/covers/card.jpg?1743773716",
+              "stars": 7.27293
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6725746110,
+            "rank": "B",
+            "accuracy": 0.9031811894882434,
+            "pp": 143.396,
+            "mods": [],
+            "combo": 114,
+            "created_at": "2026-05-19T20:57:47Z",
+            "beatmapset": {
+              "id": 2374386,
+              "title": "bbydoll (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2374386/covers/card.jpg?1749993995",
+              "stars": 7.06327
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6725731172,
+            "rank": "D",
+            "accuracy": 0.6136950904392765,
+            "pp": 81.1812,
+            "mods": [
+              "DT"
+            ],
+            "combo": 62,
+            "created_at": "2026-05-19T20:54:25Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 4.61061
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "score_id": 6725726448,
+            "rank": "B",
+            "accuracy": 0.8744228993536473,
+            "pp": 72.3494,
+            "mods": [],
+            "combo": 180,
+            "created_at": "2026-05-19T20:53:22Z",
+            "beatmapset": {
+              "id": 1053509,
+              "title": "HIKARI (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1053509/covers/card.jpg?1650686981",
+              "stars": 6.06338
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "made for you (nightcore & cut ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2530233/covers/card.jpg?1777760143",
+        "unique_players": 15
       }
     }
   }

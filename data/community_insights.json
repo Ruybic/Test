@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 83,
-    "longest": 83,
-    "last_updated": "2026-05-20"
+    "current": 84,
+    "longest": 84,
+    "last_updated": "2026-05-21"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -24884,6 +24884,332 @@
         "title": "made for you (nightcore & cut ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2530233/covers/card.jpg?1777760143",
         "unique_players": 15
+      }
+    },
+    "2026-05-21": {
+      "total_scores": 629,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "- Usf -",
+        "user_id": 10697971,
+        "count": 37,
+        "scores": [
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6731634356,
+            "rank": "A",
+            "accuracy": 0.9408866995073891,
+            "pp": 237.273,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 223,
+            "created_at": "2026-05-20T23:23:24Z",
+            "beatmapset": {
+              "id": 2478741,
+              "title": "Lucky (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2478741/covers/card.jpg?1776123108",
+              "stars": 4.74449
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6731628083,
+            "rank": "B",
+            "accuracy": 0.9195402298850575,
+            "pp": 191.314,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 67,
+            "created_at": "2026-05-20T23:21:27Z",
+            "beatmapset": {
+              "id": 2478741,
+              "title": "Lucky (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2478741/covers/card.jpg?1776123108",
+              "stars": 4.74449
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6731609622,
+            "rank": "B",
+            "accuracy": 0.8932676518883416,
+            "pp": 152.213,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 139,
+            "created_at": "2026-05-20T23:15:40Z",
+            "beatmapset": {
+              "id": 2478741,
+              "title": "Lucky (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2478741/covers/card.jpg?1776123108",
+              "stars": 4.74449
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6731569622,
+            "rank": "C",
+            "accuracy": 0.7591036414565826,
+            "pp": 104.896,
+            "mods": [
+              "DT"
+            ],
+            "combo": 84,
+            "created_at": "2026-05-20T23:03:19Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 4.2882
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6731546278,
+            "rank": "B",
+            "accuracy": 0.8959349593495934,
+            "pp": 128.636,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 124,
+            "created_at": "2026-05-20T22:56:16Z",
+            "beatmapset": {
+              "id": 1011341,
+              "title": "TEEN TITANS THEME (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1011341/covers/card.jpg?1622166940",
+              "stars": 4.43182
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6731536526,
+            "rank": "B",
+            "accuracy": 0.8601626016260162,
+            "pp": 108.605,
+            "mods": [
+              "DT"
+            ],
+            "combo": 86,
+            "created_at": "2026-05-20T22:53:20Z",
+            "beatmapset": {
+              "id": 1011341,
+              "title": "TEEN TITANS THEME (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1011341/covers/card.jpg?1622166940",
+              "stars": 4.43182
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6731493370,
+            "rank": "A",
+            "accuracy": 0.9297994269340975,
+            "pp": 111.37,
+            "mods": [
+              "DT"
+            ],
+            "combo": 340,
+            "created_at": "2026-05-20T22:40:43Z",
+            "beatmapset": {
+              "id": 437797,
+              "title": "Soukai Rock",
+              "cover": "https://assets.ppy.sh/beatmaps/437797/covers/card.jpg?1650640838",
+              "stars": 3.97308
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6731467929,
+            "rank": "C",
+            "accuracy": 0.7207207207207207,
+            "pp": 98.9609,
+            "mods": [
+              "DT"
+            ],
+            "combo": 107,
+            "created_at": "2026-05-20T22:33:24Z",
+            "beatmapset": {
+              "id": 2374386,
+              "title": "bbydoll (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2374386/covers/card.jpg?1749993995",
+              "stars": 4.60098
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6731462420,
+            "rank": "C",
+            "accuracy": 0.7744310575635877,
+            "pp": 84.6665,
+            "mods": [
+              "DT"
+            ],
+            "combo": 96,
+            "created_at": "2026-05-20T22:31:50Z",
+            "beatmapset": {
+              "id": 819112,
+              "title": "You Suck At Love (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/819112/covers/card.jpg?1650668141",
+              "stars": 4.53934
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6731439783,
+            "rank": "C",
+            "accuracy": 0.7090301003344481,
+            "pp": 58.7821,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 64,
+            "created_at": "2026-05-20T22:25:17Z",
+            "beatmapset": {
+              "id": 2299895,
+              "title": "R U 4 Me? (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2299895/covers/card.jpg?1736121656",
+              "stars": 5.00492
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6731425566,
+            "rank": "D",
+            "accuracy": 0.6854166666666667,
+            "pp": 64.4968,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 63,
+            "created_at": "2026-05-20T22:21:11Z",
+            "beatmapset": {
+              "id": 873811,
+              "title": "quaver",
+              "cover": "https://assets.ppy.sh/beatmaps/873811/covers/card.jpg?1650672502",
+              "stars": 4.72186
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6731404229,
+            "rank": "A",
+            "accuracy": 0.9578313253012049,
+            "pp": 240.178,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 101,
+            "created_at": "2026-05-20T22:15:06Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 4.70286
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6731395971,
+            "rank": "A",
+            "accuracy": 0.9595959595959596,
+            "pp": 255.154,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 231,
+            "created_at": "2026-05-20T22:12:47Z",
+            "beatmapset": {
+              "id": 2382142,
+              "title": "Domino (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2382142/covers/card.jpg?1758314031",
+              "stars": 4.55203
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6731387279,
+            "rank": "B",
+            "accuracy": 0.9146586345381527,
+            "pp": 191.876,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 85,
+            "created_at": "2026-05-20T22:10:18Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 4.70286
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6731384427,
+            "rank": "C",
+            "accuracy": 0.7891566265060241,
+            "pp": 79.9382,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 38,
+            "created_at": "2026-05-20T22:09:31Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 4.70286
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Lucky (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2478741/covers/card.jpg?1776123108",
+        "unique_players": 14
       }
     }
   }

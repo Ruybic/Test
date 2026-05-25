@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 86,
-    "longest": 86,
-    "last_updated": "2026-05-23"
+    "current": 87,
+    "longest": 87,
+    "last_updated": "2026-05-24"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -25860,6 +25860,302 @@
         "title": "I Don't Know (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
         "unique_players": 12
+      }
+    },
+    "2026-05-24": {
+      "total_scores": 467,
+      "peak_hour_baghdad": 22,
+      "top_grinder": {
+        "user": "NstR",
+        "user_id": 27935485,
+        "count": 43,
+        "scores": [
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6748344558,
+            "rank": "S",
+            "accuracy": 0.9869281045751634,
+            "pp": null,
+            "mods": [
+              "HR"
+            ],
+            "combo": 576,
+            "created_at": "2026-05-23T20:25:23Z",
+            "beatmapset": {
+              "id": 446774,
+              "title": "Say Goodbye",
+              "cover": "https://assets.ppy.sh/beatmaps/446774/covers/card.jpg?1622102851",
+              "stars": 2.5042
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6748323389,
+            "rank": "A",
+            "accuracy": 0.9411764705882353,
+            "pp": null,
+            "mods": [
+              "DT"
+            ],
+            "combo": 265,
+            "created_at": "2026-05-23T20:21:21Z",
+            "beatmapset": {
+              "id": 446774,
+              "title": "Say Goodbye",
+              "cover": "https://assets.ppy.sh/beatmaps/446774/covers/card.jpg?1622102851",
+              "stars": 2.5042
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6748305855,
+            "rank": "S",
+            "accuracy": 0.9438997821350763,
+            "pp": null,
+            "mods": [],
+            "combo": 571,
+            "created_at": "2026-05-23T20:18:03Z",
+            "beatmapset": {
+              "id": 446774,
+              "title": "Say Goodbye",
+              "cover": "https://assets.ppy.sh/beatmaps/446774/covers/card.jpg?1622102851",
+              "stars": 2.5042
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6748276115,
+            "rank": "A",
+            "accuracy": 0.9388888888888889,
+            "pp": null,
+            "mods": [
+              "HR"
+            ],
+            "combo": 221,
+            "created_at": "2026-05-23T20:12:29Z",
+            "beatmapset": {
+              "id": 320118,
+              "title": "No title",
+              "cover": "https://assets.ppy.sh/beatmaps/320118/covers/card.jpg?1650632079",
+              "stars": 2.48392
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6748267834,
+            "rank": "C",
+            "accuracy": 0.8544444444444445,
+            "pp": 9.42774,
+            "mods": [
+              "HR"
+            ],
+            "combo": 222,
+            "created_at": "2026-05-23T20:10:55Z",
+            "beatmapset": {
+              "id": 320118,
+              "title": "No title",
+              "cover": "https://assets.ppy.sh/beatmaps/320118/covers/card.jpg?1650632079",
+              "stars": 2.48392
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6748259772,
+            "rank": "C",
+            "accuracy": 0.8111111111111111,
+            "pp": 6.62755,
+            "mods": [],
+            "combo": 244,
+            "created_at": "2026-05-23T20:09:25Z",
+            "beatmapset": {
+              "id": 320118,
+              "title": "No title",
+              "cover": "https://assets.ppy.sh/beatmaps/320118/covers/card.jpg?1650632079",
+              "stars": 2.48392
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6748227020,
+            "rank": "C",
+            "accuracy": 0.8041237113402062,
+            "pp": 17.1166,
+            "mods": [],
+            "combo": 71,
+            "created_at": "2026-05-23T20:03:20Z",
+            "beatmapset": {
+              "id": 842412,
+              "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+              "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+              "stars": 3.25361
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6748217829,
+            "rank": "S",
+            "accuracy": 0.9757575757575757,
+            "pp": 17.3653,
+            "mods": [
+              "HR"
+            ],
+            "combo": 93,
+            "created_at": "2026-05-23T20:01:37Z",
+            "beatmapset": {
+              "id": 842412,
+              "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+              "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+              "stars": 2.29824
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6748212138,
+            "rank": "C",
+            "accuracy": 0.7958015267175572,
+            "pp": 14.1347,
+            "mods": [],
+            "combo": 116,
+            "created_at": "2026-05-23T20:00:34Z",
+            "beatmapset": {
+              "id": 402887,
+              "title": "fantastic dreamer",
+              "cover": "https://assets.ppy.sh/beatmaps/402887/covers/card.jpg?1650636318",
+              "stars": 3.57352
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6748195646,
+            "rank": "B",
+            "accuracy": 0.9244791666666666,
+            "pp": 11.9208,
+            "mods": [],
+            "combo": 329,
+            "created_at": "2026-05-23T19:57:29Z",
+            "beatmapset": {
+              "id": 402887,
+              "title": "fantastic dreamer",
+              "cover": "https://assets.ppy.sh/beatmaps/402887/covers/card.jpg?1650636318",
+              "stars": 2.6338
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6748178140,
+            "rank": "C",
+            "accuracy": 0.7798053527980535,
+            "pp": 12.4831,
+            "mods": [],
+            "combo": 139,
+            "created_at": "2026-05-23T19:54:15Z",
+            "beatmapset": {
+              "id": 1863768,
+              "title": "INDUSTRY BABY x WE ARE JAPANESE GOBLIN",
+              "cover": "https://assets.ppy.sh/beatmaps/1863768/covers/card.jpg?1675921885",
+              "stars": 3.50306
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6748165266,
+            "rank": "C",
+            "accuracy": 0.7785234899328859,
+            "pp": 18.1225,
+            "mods": [],
+            "combo": 171,
+            "created_at": "2026-05-23T19:51:52Z",
+            "beatmapset": {
+              "id": 2280338,
+              "title": "Courtesy Call (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2280338/covers/card.jpg?1732384778",
+              "stars": 3.63383
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6748153909,
+            "rank": "C",
+            "accuracy": 0.8401920438957476,
+            "pp": null,
+            "mods": [],
+            "combo": 109,
+            "created_at": "2026-05-23T19:49:46Z",
+            "beatmapset": {
+              "id": 663159,
+              "title": "The Phoenix",
+              "cover": "https://assets.ppy.sh/beatmaps/663159/covers/card.jpg?1772644434",
+              "stars": 3.78941
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6748131858,
+            "rank": "C",
+            "accuracy": 0.8049072411729503,
+            "pp": null,
+            "mods": [],
+            "combo": 129,
+            "created_at": "2026-05-23T19:45:43Z",
+            "beatmapset": {
+              "id": 663159,
+              "title": "The Phoenix",
+              "cover": "https://assets.ppy.sh/beatmaps/663159/covers/card.jpg?1772644434",
+              "stars": 3.94307
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6748109420,
+            "rank": "C",
+            "accuracy": 0.8410852713178295,
+            "pp": 19.7951,
+            "mods": [],
+            "combo": 137,
+            "created_at": "2026-05-23T19:41:35Z",
+            "beatmapset": {
+              "id": 419409,
+              "title": "Black + White (TV EDIT)",
+              "cover": "https://assets.ppy.sh/beatmaps/419409/covers/card.jpg?1650637431",
+              "stars": 3.61917
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Angel With A Shotgun (Sped Up Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/1174505/covers/card.jpg?1650696851",
+        "unique_players": 9
       }
     }
   }

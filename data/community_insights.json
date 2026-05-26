@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 87,
-    "longest": 87,
-    "last_updated": "2026-05-24"
+    "current": 88,
+    "longest": 88,
+    "last_updated": "2026-05-25"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -26156,6 +26156,337 @@
         "title": "Angel With A Shotgun (Sped Up Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/1174505/covers/card.jpg?1650696851",
         "unique_players": 9
+      }
+    },
+    "2026-05-25": {
+      "total_scores": 563,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "Biscuits0",
+        "user_id": 23843313,
+        "count": 73,
+        "scores": [
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5029054787,
+            "rank": "B",
+            "accuracy": 0.9043348281016442,
+            "pp": 211.403,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 73,
+            "created_at": "2026-05-24T17:50:16Z",
+            "beatmapset": {
+              "id": 2281428,
+              "title": "Poison (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2281428/covers/card.jpg?1734634407",
+              "stars": 5.37125
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5029054195,
+            "rank": "B",
+            "accuracy": 0.8922222222222222,
+            "pp": 162.81,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 117,
+            "created_at": "2026-05-24T17:48:54Z",
+            "beatmapset": {
+              "id": 962088,
+              "title": "Marshmary",
+              "cover": "https://assets.ppy.sh/beatmaps/962088/covers/card.jpg?1645788534",
+              "stars": 5.21208
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5029053610,
+            "rank": "B",
+            "accuracy": 0.8877551020408163,
+            "pp": 143.667,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 128,
+            "created_at": "2026-05-24T17:47:34Z",
+            "beatmapset": {
+              "id": 1331950,
+              "title": "ne uchi (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1331950/covers/card.jpg?1645786816",
+              "stars": 5.25679
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5029053158,
+            "rank": "A",
+            "accuracy": 0.9292929292929293,
+            "pp": 240.264,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 162,
+            "created_at": "2026-05-24T17:46:33Z",
+            "beatmapset": {
+              "id": 2506168,
+              "title": "Die A Million Times (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506168/covers/card.jpg?1773702471",
+              "stars": 5.22618
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5029052813,
+            "rank": "A",
+            "accuracy": 0.9292929292929293,
+            "pp": 241.206,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 176,
+            "created_at": "2026-05-24T17:45:41Z",
+            "beatmapset": {
+              "id": 2506168,
+              "title": "Die A Million Times (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506168/covers/card.jpg?1773702471",
+              "stars": 5.22618
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5029051869,
+            "rank": "B",
+            "accuracy": 0.9019019019019019,
+            "pp": 177.298,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 220,
+            "created_at": "2026-05-24T17:43:32Z",
+            "beatmapset": {
+              "id": 1669877,
+              "title": "Sansan Days (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1669877/covers/card.jpg?1645787345",
+              "stars": 5.16322
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5029051272,
+            "rank": "B",
+            "accuracy": 0.8944773175542406,
+            "pp": 151.676,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 65,
+            "created_at": "2026-05-24T17:42:10Z",
+            "beatmapset": {
+              "id": 770300,
+              "title": "Monochrome Butterfly",
+              "cover": "https://assets.ppy.sh/beatmaps/770300/covers/card.jpg?1650662945",
+              "stars": 5.06055
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5029050690,
+            "rank": "B",
+            "accuracy": 0.8863636363636364,
+            "pp": 190.391,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 75,
+            "created_at": "2026-05-24T17:40:44Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.2789
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5029050233,
+            "rank": "A",
+            "accuracy": 0.9423558897243107,
+            "pp": 240.881,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 125,
+            "created_at": "2026-05-24T17:39:38Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.12376
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5029049887,
+            "rank": "A",
+            "accuracy": 0.9623655913978495,
+            "pp": 267.412,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 139,
+            "created_at": "2026-05-24T17:38:47Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.05092
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5029049664,
+            "rank": "A",
+            "accuracy": 0.9381720430107527,
+            "pp": 230.426,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 139,
+            "created_at": "2026-05-24T17:38:18Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.05092
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5029048164,
+            "rank": "A",
+            "accuracy": 0.9754901960784313,
+            "pp": 390.813,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 187,
+            "created_at": "2026-05-24T17:34:40Z",
+            "beatmapset": {
+              "id": 2463569,
+              "title": "How to Be a Heartbreaker (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2463569/covers/card.jpg?1777733995",
+              "stars": 5.22464
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5029047640,
+            "rank": "A",
+            "accuracy": 0.9754901960784313,
+            "pp": 338.818,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 131,
+            "created_at": "2026-05-24T17:33:25Z",
+            "beatmapset": {
+              "id": 2463569,
+              "title": "How to Be a Heartbreaker (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2463569/covers/card.jpg?1777733995",
+              "stars": 5.22464
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5029047181,
+            "rank": "A",
+            "accuracy": 0.946078431372549,
+            "pp": 235.382,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 107,
+            "created_at": "2026-05-24T17:32:19Z",
+            "beatmapset": {
+              "id": 2463569,
+              "title": "How to Be a Heartbreaker (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2463569/covers/card.jpg?1777733995",
+              "stars": 5.22464
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5029046727,
+            "rank": "B",
+            "accuracy": 0.9139784946236559,
+            "pp": 193.38,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 115,
+            "created_at": "2026-05-24T17:31:15Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.26419
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+        "unique_players": 15
       }
     }
   }

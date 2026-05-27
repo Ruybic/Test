@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 88,
-    "longest": 88,
-    "last_updated": "2026-05-25"
+    "current": 89,
+    "longest": 89,
+    "last_updated": "2026-05-26"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -26487,6 +26487,302 @@
         "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
         "unique_players": 15
+      }
+    },
+    "2026-05-26": {
+      "total_scores": 637,
+      "peak_hour_baghdad": 19,
+      "top_grinder": {
+        "user": "NstR",
+        "user_id": 27935485,
+        "count": 49,
+        "scores": [
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6761089719,
+            "rank": "B",
+            "accuracy": 0.8522222222222222,
+            "pp": 10.0018,
+            "mods": [
+              "HR"
+            ],
+            "combo": 338,
+            "created_at": "2026-05-25T23:01:27Z",
+            "beatmapset": {
+              "id": 320118,
+              "title": "No title",
+              "cover": "https://assets.ppy.sh/beatmaps/320118/covers/card.jpg?1650632079",
+              "stars": 2.48392
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6761084076,
+            "rank": "D",
+            "accuracy": 0.6769911504424779,
+            "pp": 11.7333,
+            "mods": [],
+            "combo": 115,
+            "created_at": "2026-05-25T22:59:52Z",
+            "beatmapset": {
+              "id": 320118,
+              "title": "No title",
+              "cover": "https://assets.ppy.sh/beatmaps/320118/covers/card.jpg?1650632079",
+              "stars": 3.67081
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6761055328,
+            "rank": "C",
+            "accuracy": 0.7893518518518519,
+            "pp": 14.5584,
+            "mods": [],
+            "combo": 132,
+            "created_at": "2026-05-25T22:51:45Z",
+            "beatmapset": {
+              "id": 1590001,
+              "title": "Akeboshi (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1590001/covers/card.jpg?1636557149",
+              "stars": 3.41752
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6761042682,
+            "rank": "C",
+            "accuracy": 0.7777777777777778,
+            "pp": null,
+            "mods": [],
+            "combo": 37,
+            "created_at": "2026-05-25T22:48:14Z",
+            "beatmapset": {
+              "id": 2395047,
+              "title": "pride - slowed down",
+              "cover": "https://assets.ppy.sh/beatmaps/2395047/covers/card.jpg?1754550034",
+              "stars": 2.95955
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6761022585,
+            "rank": "C",
+            "accuracy": 0.815028901734104,
+            "pp": 20.6871,
+            "mods": [
+              "HR"
+            ],
+            "combo": 209,
+            "created_at": "2026-05-25T22:42:39Z",
+            "beatmapset": {
+              "id": 666700,
+              "title": "Bubblegum Bitch",
+              "cover": "https://assets.ppy.sh/beatmaps/666700/covers/card.jpg?1650653739",
+              "stars": 3.2448
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6761003011,
+            "rank": "A",
+            "accuracy": 0.9495114006514658,
+            "pp": 20.9218,
+            "mods": [
+              "HR"
+            ],
+            "combo": 377,
+            "created_at": "2026-05-25T22:37:13Z",
+            "beatmapset": {
+              "id": 1464036,
+              "title": "Yuugure One Room",
+              "cover": "https://assets.ppy.sh/beatmaps/1464036/covers/card.jpg?1624839440",
+              "stars": 2.81557
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6760980360,
+            "rank": "C",
+            "accuracy": 0.8267195767195767,
+            "pp": 11.3061,
+            "mods": [],
+            "combo": 132,
+            "created_at": "2026-05-25T22:31:06Z",
+            "beatmapset": {
+              "id": 1834058,
+              "title": "Minimum",
+              "cover": "https://assets.ppy.sh/beatmaps/1834058/covers/card.jpg?1674426444",
+              "stars": 3.5608
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6760970430,
+            "rank": "D",
+            "accuracy": 0.6821192052980133,
+            "pp": 8.2848,
+            "mods": [],
+            "combo": 103,
+            "created_at": "2026-05-25T22:28:24Z",
+            "beatmapset": {
+              "id": 2069869,
+              "title": "GODS feat. NewJeans",
+              "cover": "https://assets.ppy.sh/beatmaps/2069869/covers/card.jpg?1701572671",
+              "stars": 3.60864
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6760956754,
+            "rank": "C",
+            "accuracy": 0.8461538461538461,
+            "pp": 10.9055,
+            "mods": [],
+            "combo": 170,
+            "created_at": "2026-05-25T22:24:44Z",
+            "beatmapset": {
+              "id": 2069869,
+              "title": "GODS feat. NewJeans",
+              "cover": "https://assets.ppy.sh/beatmaps/2069869/covers/card.jpg?1701572671",
+              "stars": 3.18
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6760928524,
+            "rank": "S",
+            "accuracy": 0.9399092970521542,
+            "pp": 14.8476,
+            "mods": [
+              "HR"
+            ],
+            "combo": 233,
+            "created_at": "2026-05-25T22:17:18Z",
+            "beatmapset": {
+              "id": 2306930,
+              "title": "This Will Be the Day (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2306930/covers/card.jpg?1739387380",
+              "stars": 2.48848
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6760920896,
+            "rank": "S",
+            "accuracy": 0.935374149659864,
+            "pp": 14.264,
+            "mods": [
+              "HR"
+            ],
+            "combo": 233,
+            "created_at": "2026-05-25T22:15:19Z",
+            "beatmapset": {
+              "id": 2306930,
+              "title": "This Will Be the Day (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2306930/covers/card.jpg?1739387380",
+              "stars": 2.48848
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6760914615,
+            "rank": "C",
+            "accuracy": 0.8420289855072464,
+            "pp": null,
+            "mods": [],
+            "combo": 157,
+            "created_at": "2026-05-25T22:13:40Z",
+            "beatmapset": {
+              "id": 651399,
+              "title": "Alien Alien (Nhato Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/651399/covers/card.jpg?1645788541",
+              "stars": 3.89536
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6760878620,
+            "rank": "B",
+            "accuracy": 0.8676046176046176,
+            "pp": null,
+            "mods": [],
+            "combo": 225,
+            "created_at": "2026-05-25T22:04:24Z",
+            "beatmapset": {
+              "id": 651399,
+              "title": "Alien Alien (Nhato Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/651399/covers/card.jpg?1645788541",
+              "stars": 3.84659
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6760866236,
+            "rank": "B",
+            "accuracy": 0.86002886002886,
+            "pp": null,
+            "mods": [],
+            "combo": 226,
+            "created_at": "2026-05-25T22:01:17Z",
+            "beatmapset": {
+              "id": 651399,
+              "title": "Alien Alien (Nhato Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/651399/covers/card.jpg?1645788541",
+              "stars": 3.84659
+            }
+          },
+          {
+            "user": "NstR",
+            "user_id": 27935485,
+            "country": "IQ",
+            "score_id": 6760850593,
+            "rank": "C",
+            "accuracy": 0.7346743295019157,
+            "pp": 10.623,
+            "mods": [],
+            "combo": 246,
+            "created_at": "2026-05-25T21:57:26Z",
+            "beatmapset": {
+              "id": 1080224,
+              "title": "Anoyo-iki no Bus ni Notte Saraba.",
+              "cover": "https://assets.ppy.sh/beatmaps/1080224/covers/card.jpg?1650689369",
+              "stars": 3.93753
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "feeling good (nightcore & cut ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2506803/covers/card.jpg?1779504518",
+        "unique_players": 23
       }
     }
   }

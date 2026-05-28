@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 89,
-    "longest": 89,
-    "last_updated": "2026-05-26"
+    "current": 90,
+    "longest": 90,
+    "last_updated": "2026-05-27"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -26783,6 +26783,329 @@
         "title": "feeling good (nightcore & cut ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2506803/covers/card.jpg?1779504518",
         "unique_players": 23
+      }
+    },
+    "2026-05-27": {
+      "total_scores": 589,
+      "peak_hour_baghdad": 1,
+      "top_grinder": {
+        "user": "- Usf -",
+        "user_id": 10697971,
+        "count": 59,
+        "scores": [
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6766720076,
+            "rank": "B",
+            "accuracy": 0.8860759493670886,
+            "pp": 130.319,
+            "mods": [
+              "DT"
+            ],
+            "combo": 62,
+            "created_at": "2026-05-26T23:09:51Z",
+            "beatmapset": {
+              "id": 2496558,
+              "title": "So Am I (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2496558/covers/card.jpg?1775073996",
+              "stars": 4.67635
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6766716933,
+            "rank": "B",
+            "accuracy": 0.9071729957805907,
+            "pp": 150.049,
+            "mods": [
+              "DT"
+            ],
+            "combo": 136,
+            "created_at": "2026-05-26T23:08:56Z",
+            "beatmapset": {
+              "id": 2487912,
+              "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+              "stars": 4.53268
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6766713189,
+            "rank": "B",
+            "accuracy": 0.8945147679324894,
+            "pp": 133.777,
+            "mods": [
+              "DT"
+            ],
+            "combo": 65,
+            "created_at": "2026-05-26T23:07:52Z",
+            "beatmapset": {
+              "id": 2496558,
+              "title": "So Am I (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2496558/covers/card.jpg?1775073996",
+              "stars": 4.67635
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6766707231,
+            "rank": "A",
+            "accuracy": 0.9346846846846847,
+            "pp": 149.13,
+            "mods": [
+              "DT"
+            ],
+            "combo": 115,
+            "created_at": "2026-05-26T23:06:11Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 4.32687
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6766703634,
+            "rank": "A",
+            "accuracy": 0.9436936936936937,
+            "pp": 179.836,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 125,
+            "created_at": "2026-05-26T23:05:07Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 4.32687
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6766697401,
+            "rank": "C",
+            "accuracy": 0.7181818181818181,
+            "pp": 97.4163,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 57,
+            "created_at": "2026-05-26T23:03:17Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 5.20377
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6766694059,
+            "rank": "C",
+            "accuracy": 0.8036175710594315,
+            "pp": 89.4342,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 41,
+            "created_at": "2026-05-26T23:02:20Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 4.61061
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6766690146,
+            "rank": "A",
+            "accuracy": 0.9586206896551724,
+            "pp": 178.369,
+            "mods": [
+              "DT"
+            ],
+            "combo": 335,
+            "created_at": "2026-05-26T23:01:12Z",
+            "beatmapset": {
+              "id": 557856,
+              "title": "Kimi no Hana (TV size)",
+              "cover": "https://assets.ppy.sh/beatmaps/557856/covers/card.jpg?1650646731",
+              "stars": 4.0081
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6766684555,
+            "rank": "B",
+            "accuracy": 0.9090909090909091,
+            "pp": 136.982,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 136,
+            "created_at": "2026-05-26T22:59:35Z",
+            "beatmapset": {
+              "id": 983911,
+              "title": "Bass Slut (Original Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/983911/covers/card.jpg?1650683411",
+              "stars": 4.2536
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6766636500,
+            "rank": "B",
+            "accuracy": 0.8906926406926406,
+            "pp": 62.3774,
+            "mods": [
+              "DT"
+            ],
+            "combo": 237,
+            "created_at": "2026-05-26T22:45:52Z",
+            "beatmapset": {
+              "id": 595899,
+              "title": "oddloop",
+              "cover": "https://assets.ppy.sh/beatmaps/595899/covers/card.jpg?1622117491",
+              "stars": 4.6298
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6766625085,
+            "rank": "B",
+            "accuracy": 0.8738738738738738,
+            "pp": 106.923,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 123,
+            "created_at": "2026-05-26T22:42:41Z",
+            "beatmapset": {
+              "id": 2120431,
+              "title": "How to Be a Heartbreaker (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2120431/covers/card.jpg?1718304121",
+              "stars": 4.22169
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6766619776,
+            "rank": "C",
+            "accuracy": 0.7195767195767195,
+            "pp": 112.925,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 51,
+            "created_at": "2026-05-26T22:41:11Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 5.25928
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6766613567,
+            "rank": "B",
+            "accuracy": 0.8667649950835792,
+            "pp": 119.096,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 114,
+            "created_at": "2026-05-26T22:39:26Z",
+            "beatmapset": {
+              "id": 983911,
+              "title": "Bass Slut (Original Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/983911/covers/card.jpg?1650683411",
+              "stars": 5.00701
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6766604551,
+            "rank": "C",
+            "accuracy": 0.7979094076655052,
+            "pp": 72.296,
+            "mods": [
+              "DT"
+            ],
+            "combo": 137,
+            "created_at": "2026-05-26T22:36:52Z",
+            "beatmapset": {
+              "id": 1324491,
+              "title": "Gotoubun no Katachi (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1324491/covers/card.jpg?1650705663",
+              "stars": 4.35953
+            }
+          },
+          {
+            "user": "- Usf -",
+            "user_id": 10697971,
+            "country": "IQ",
+            "score_id": 6766595060,
+            "rank": "B",
+            "accuracy": 0.8942731277533039,
+            "pp": 156.112,
+            "mods": [
+              "DT"
+            ],
+            "combo": 174,
+            "created_at": "2026-05-26T22:34:15Z",
+            "beatmapset": {
+              "id": 2120431,
+              "title": "How to Be a Heartbreaker (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2120431/covers/card.jpg?1718304121",
+              "stars": 4.53944
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "feeling good (nightcore & cut ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2506803/covers/card.jpg?1779504518",
+        "unique_players": 20
       }
     }
   }

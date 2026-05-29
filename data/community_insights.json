@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 90,
-    "longest": 90,
-    "last_updated": "2026-05-27"
+    "current": 91,
+    "longest": 91,
+    "last_updated": "2026-05-28"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -27106,6 +27106,294 @@
         "title": "feeling good (nightcore & cut ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2506803/covers/card.jpg?1779504518",
         "unique_players": 20
+      }
+    },
+    "2026-05-28": {
+      "total_scores": 404,
+      "peak_hour_baghdad": 15,
+      "top_grinder": {
+        "user": "skiler1",
+        "user_id": 31252345,
+        "count": 54,
+        "scores": [
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030534780,
+            "rank": "A",
+            "accuracy": 0.9567642956764296,
+            "pp": 78.4864,
+            "mods": [],
+            "combo": 119,
+            "created_at": "2026-05-28T03:09:21Z",
+            "beatmapset": {
+              "id": 952409,
+              "title": "Ai no Sukima",
+              "cover": "https://assets.ppy.sh/beatmaps/952409/covers/card.jpg?1645787548",
+              "stars": 5.0774
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030534453,
+            "rank": "A",
+            "accuracy": 0.9386331938633193,
+            "pp": 75.7963,
+            "mods": [],
+            "combo": 183,
+            "created_at": "2026-05-28T03:07:50Z",
+            "beatmapset": {
+              "id": 952409,
+              "title": "Ai no Sukima",
+              "cover": "https://assets.ppy.sh/beatmaps/952409/covers/card.jpg?1645787548",
+              "stars": 5.0774
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030534026,
+            "rank": "A",
+            "accuracy": 0.9056047197640118,
+            "pp": 102.5,
+            "mods": [],
+            "combo": 145,
+            "created_at": "2026-05-28T03:05:42Z",
+            "beatmapset": {
+              "id": 859783,
+              "title": "Harumachi Clover (Swing Arrangement)",
+              "cover": "https://assets.ppy.sh/beatmaps/859783/covers/card.jpg?1650679901",
+              "stars": 5.0374
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030532611,
+            "rank": "A",
+            "accuracy": 0.9695181907571289,
+            "pp": 105.04,
+            "mods": [],
+            "combo": 219,
+            "created_at": "2026-05-28T02:59:03Z",
+            "beatmapset": {
+              "id": 983911,
+              "title": "Bass Slut (Original Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/983911/covers/card.jpg?1650683411",
+              "stars": 5.00701
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030516895,
+            "rank": "B",
+            "accuracy": 0.8993055555555556,
+            "pp": 48.2209,
+            "mods": [],
+            "combo": 201,
+            "created_at": "2026-05-28T01:47:35Z",
+            "beatmapset": {
+              "id": 921889,
+              "title": "Chikatto Chika Chika (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/921889/covers/card.jpg?1650675795",
+              "stars": 4.61172
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030515147,
+            "rank": "A",
+            "accuracy": 0.9828178694158075,
+            "pp": 83.5482,
+            "mods": [],
+            "combo": 283,
+            "created_at": "2026-05-28T01:39:56Z",
+            "beatmapset": {
+              "id": 362718,
+              "title": "I'M A BELIEVER",
+              "cover": "https://assets.ppy.sh/beatmaps/362718/covers/card.jpg?1650633357",
+              "stars": 4.5769
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030514497,
+            "rank": "B",
+            "accuracy": 0.9062342885872298,
+            "pp": 31.3349,
+            "mods": [],
+            "combo": 203,
+            "created_at": "2026-05-28T01:37:05Z",
+            "beatmapset": {
+              "id": 1289203,
+              "title": "Let Mom Sleep",
+              "cover": "https://assets.ppy.sh/beatmaps/1289203/covers/card.jpg?1760383410",
+              "stars": 4.50009
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030513581,
+            "rank": "B",
+            "accuracy": 0.8848484848484849,
+            "pp": 26.9821,
+            "mods": [],
+            "combo": 107,
+            "created_at": "2026-05-28T01:32:58Z",
+            "beatmapset": {
+              "id": 1620540,
+              "title": "Say Goodbye (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1620540/covers/card.jpg?1638136478",
+              "stars": 4.49925
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030512257,
+            "rank": "A",
+            "accuracy": 0.9254079254079254,
+            "pp": 29.2014,
+            "mods": [
+              "HR"
+            ],
+            "combo": 220,
+            "created_at": "2026-05-28T01:27:04Z",
+            "beatmapset": {
+              "id": 2340453,
+              "title": "U make my heart beat fast! (feat. Hatsune Miku)",
+              "cover": "https://assets.ppy.sh/beatmaps/2340453/covers/card.jpg?1750708208",
+              "stars": 3.0699
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030509970,
+            "rank": "B",
+            "accuracy": 0.9092827004219409,
+            "pp": 76.7142,
+            "mods": [],
+            "combo": 170,
+            "created_at": "2026-05-28T01:16:56Z",
+            "beatmapset": {
+              "id": 2506803,
+              "title": "feeling good (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506803/covers/card.jpg?1779504518",
+              "stars": 5.05441
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030507153,
+            "rank": "B",
+            "accuracy": 0.8636363636363636,
+            "pp": 49.0458,
+            "mods": [],
+            "combo": 81,
+            "created_at": "2026-05-28T01:04:41Z",
+            "beatmapset": {
+              "id": 652412,
+              "title": "Harumachi Clover",
+              "cover": "https://assets.ppy.sh/beatmaps/652412/covers/card.jpg?1650653199",
+              "stars": 4.6316
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030506855,
+            "rank": "A",
+            "accuracy": 0.9554831704668838,
+            "pp": 84.3577,
+            "mods": [],
+            "combo": 382,
+            "created_at": "2026-05-28T01:03:14Z",
+            "beatmapset": {
+              "id": 596704,
+              "title": "Hitorigoto -TV MIX-",
+              "cover": "https://assets.ppy.sh/beatmaps/596704/covers/card.jpg?1650648964",
+              "stars": 4.63644
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030506222,
+            "rank": "A",
+            "accuracy": 0.9326818675352877,
+            "pp": 59.4236,
+            "mods": [],
+            "combo": 212,
+            "created_at": "2026-05-28T01:00:19Z",
+            "beatmapset": {
+              "id": 596704,
+              "title": "Hitorigoto -TV MIX-",
+              "cover": "https://assets.ppy.sh/beatmaps/596704/covers/card.jpg?1650648964",
+              "stars": 4.63644
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030505182,
+            "rank": "A",
+            "accuracy": 0.9614035087719298,
+            "pp": 80.4384,
+            "mods": [],
+            "combo": 436,
+            "created_at": "2026-05-28T00:55:28Z",
+            "beatmapset": {
+              "id": 653534,
+              "title": "ILY",
+              "cover": "https://assets.ppy.sh/beatmaps/653534/covers/card.jpg?1650652798",
+              "stars": 4.6695
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030193238,
+            "rank": "B",
+            "accuracy": 0.858948087431694,
+            "pp": 40.6306,
+            "mods": [],
+            "combo": 347,
+            "created_at": "2026-05-27T10:02:07Z",
+            "beatmapset": {
+              "id": 546384,
+              "title": "Brain Power",
+              "cover": "https://assets.ppy.sh/beatmaps/546384/covers/card.jpg?1650647453",
+              "stars": 5.15659
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Looping the Rooms feat. Hatsune Miku",
+        "cover": "https://assets.ppy.sh/beatmaps/2514004/covers/card.jpg?1772054800",
+        "unique_players": 7
       }
     }
   }

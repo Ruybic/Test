@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 91,
-    "longest": 91,
-    "last_updated": "2026-05-28"
+    "current": 92,
+    "longest": 92,
+    "last_updated": "2026-05-29"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -27394,6 +27394,292 @@
         "title": "Looping the Rooms feat. Hatsune Miku",
         "cover": "https://assets.ppy.sh/beatmaps/2514004/covers/card.jpg?1772054800",
         "unique_players": 7
+      }
+    },
+    "2026-05-29": {
+      "total_scores": 520,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "skiler1",
+        "user_id": 31252345,
+        "count": 77,
+        "scores": [
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030739299,
+            "rank": "B",
+            "accuracy": 0.8715932914046122,
+            "pp": 42.5596,
+            "mods": [],
+            "combo": 83,
+            "created_at": "2026-05-28T15:33:16Z",
+            "beatmapset": {
+              "id": 2116046,
+              "title": "\"Boku wa...\" (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2116046/covers/card.jpg?1711879803",
+              "stars": 5.20604
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030737957,
+            "rank": "A",
+            "accuracy": 0.9371158392434988,
+            "pp": 52.3291,
+            "mods": [],
+            "combo": 191,
+            "created_at": "2026-05-28T15:30:03Z",
+            "beatmapset": {
+              "id": 1690826,
+              "title": "Hanairo Biyori",
+              "cover": "https://assets.ppy.sh/beatmaps/1690826/covers/card.jpg?1689726027",
+              "stars": 5.16694
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030735371,
+            "rank": "A",
+            "accuracy": 0.9469957902793724,
+            "pp": 61.1563,
+            "mods": [],
+            "combo": 205,
+            "created_at": "2026-05-28T15:23:57Z",
+            "beatmapset": {
+              "id": 43107,
+              "title": "Manima ni",
+              "cover": "https://assets.ppy.sh/beatmaps/43107/covers/card.jpg?1622052806",
+              "stars": 5.04042
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030733031,
+            "rank": "C",
+            "accuracy": 0.840877914951989,
+            "pp": 61.2924,
+            "mods": [],
+            "combo": 151,
+            "created_at": "2026-05-28T15:18:25Z",
+            "beatmapset": {
+              "id": 2501291,
+              "title": "Dirty Little Secret (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2501291/covers/card.jpg?1778805566",
+              "stars": 5.07315
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030732009,
+            "rank": "B",
+            "accuracy": 0.9225908372827805,
+            "pp": 63.7297,
+            "mods": [],
+            "combo": 170,
+            "created_at": "2026-05-28T15:15:59Z",
+            "beatmapset": {
+              "id": 773043,
+              "title": "Stellar",
+              "cover": "https://assets.ppy.sh/beatmaps/773043/covers/card.jpg?1650663792",
+              "stars": 5.19374
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030730656,
+            "rank": "B",
+            "accuracy": 0.8928205128205128,
+            "pp": 46.6914,
+            "mods": [],
+            "combo": 171,
+            "created_at": "2026-05-28T15:12:57Z",
+            "beatmapset": {
+              "id": 721459,
+              "title": "Snake Eyes (feat. CoMa) (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/721459/covers/card.jpg?1779033798",
+              "stars": 5.07255
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030729235,
+            "rank": "A",
+            "accuracy": 0.9484375,
+            "pp": 75.8676,
+            "mods": [],
+            "combo": 364,
+            "created_at": "2026-05-28T15:09:37Z",
+            "beatmapset": {
+              "id": 661919,
+              "title": "SHIORI -TV size mix-",
+              "cover": "https://assets.ppy.sh/beatmaps/661919/covers/card.jpg?1650653913",
+              "stars": 4.81863
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030728064,
+            "rank": "A",
+            "accuracy": 0.9293712316968131,
+            "pp": 40.8783,
+            "mods": [],
+            "combo": 191,
+            "created_at": "2026-05-28T15:06:51Z",
+            "beatmapset": {
+              "id": 1435022,
+              "title": "dopamine",
+              "cover": "https://assets.ppy.sh/beatmaps/1435022/covers/card.jpg?1627776197",
+              "stars": 4.72725
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030723708,
+            "rank": "B",
+            "accuracy": 0.9009715994020927,
+            "pp": 51.518,
+            "mods": [],
+            "combo": 325,
+            "created_at": "2026-05-28T14:56:31Z",
+            "beatmapset": {
+              "id": 38872,
+              "title": "Russian Snowy Dance",
+              "cover": "https://assets.ppy.sh/beatmaps/38872/covers/card.jpg?1622050669",
+              "stars": 4.77102
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030722483,
+            "rank": "B",
+            "accuracy": 0.9034090909090909,
+            "pp": null,
+            "mods": [],
+            "combo": 186,
+            "created_at": "2026-05-28T14:53:48Z",
+            "beatmapset": {
+              "id": 1453937,
+              "title": "Malo Tebya",
+              "cover": "https://assets.ppy.sh/beatmaps/1453937/covers/card.jpg?1733157751",
+              "stars": 4.7928
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030720675,
+            "rank": "B",
+            "accuracy": 0.9226190476190477,
+            "pp": 70.2853,
+            "mods": [],
+            "combo": 333,
+            "created_at": "2026-05-28T14:49:31Z",
+            "beatmapset": {
+              "id": 384535,
+              "title": "Stray",
+              "cover": "https://assets.ppy.sh/beatmaps/384535/covers/card.jpg?1650635565",
+              "stars": 4.89849
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030719636,
+            "rank": "B",
+            "accuracy": 0.9252408477842003,
+            "pp": 43.2229,
+            "mods": [],
+            "combo": 480,
+            "created_at": "2026-05-28T14:47:10Z",
+            "beatmapset": {
+              "id": 721804,
+              "title": "Teo",
+              "cover": "https://assets.ppy.sh/beatmaps/721804/covers/card.jpg?1650659527",
+              "stars": 4.91263
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030717646,
+            "rank": "C",
+            "accuracy": 0.7060085836909872,
+            "pp": 14.4396,
+            "mods": [],
+            "combo": 79,
+            "created_at": "2026-05-28T14:42:34Z",
+            "beatmapset": {
+              "id": 20789,
+              "title": "Rainbow Tylenol",
+              "cover": "https://assets.ppy.sh/beatmaps/20789/covers/card.jpg?1650606295",
+              "stars": 4.50536
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030716137,
+            "rank": "A",
+            "accuracy": 0.9570552147239264,
+            "pp": 75.2344,
+            "mods": [],
+            "combo": 209,
+            "created_at": "2026-05-28T14:39:03Z",
+            "beatmapset": {
+              "id": 2436971,
+              "title": "Science (feat. Kasane Teto SV) (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2436971/covers/card.jpg?1759336488",
+              "stars": 4.78459
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5030714822,
+            "rank": "B",
+            "accuracy": 0.8939575830332133,
+            "pp": 31.1812,
+            "mods": [],
+            "combo": 388,
+            "created_at": "2026-05-28T14:35:54Z",
+            "beatmapset": {
+              "id": 2465750,
+              "title": "Fighting My Way",
+              "cover": "https://assets.ppy.sh/beatmaps/2465750/covers/card.jpg?1767355204",
+              "stars": 4.62819
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+        "unique_players": 15
       }
     }
   }

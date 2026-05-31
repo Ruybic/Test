@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 92,
-    "longest": 92,
-    "last_updated": "2026-05-29"
+    "current": 93,
+    "longest": 93,
+    "last_updated": "2026-05-30"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -27680,6 +27680,324 @@
         "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
         "unique_players": 15
+      }
+    },
+    "2026-05-30": {
+      "total_scores": 537,
+      "peak_hour_baghdad": 18,
+      "top_grinder": {
+        "user": "FaZe Kawan",
+        "user_id": 12813974,
+        "count": 67,
+        "scores": [
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5031315550,
+            "rank": "B",
+            "accuracy": 0.9012748756218906,
+            "pp": 93.1303,
+            "mods": [
+              "HD"
+            ],
+            "combo": 997,
+            "created_at": "2026-05-29T21:29:43Z",
+            "beatmapset": {
+              "id": 2119494,
+              "title": "Light Stops Dripping Through The Stars (Sewerslvt Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2119494/covers/card.jpg?1750861781",
+              "stars": 4.97852
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5031313006,
+            "rank": "C",
+            "accuracy": 0.8428571428571429,
+            "pp": 23.924,
+            "mods": [
+              "HD"
+            ],
+            "combo": 241,
+            "created_at": "2026-05-29T21:22:29Z",
+            "beatmapset": {
+              "id": 913536,
+              "title": "TOKIO FUNKA",
+              "cover": "https://assets.ppy.sh/beatmaps/913536/covers/card.jpg?1622154661",
+              "stars": 5.46534
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5031307424,
+            "rank": "A",
+            "accuracy": 0.9356969064998262,
+            "pp": 70.037,
+            "mods": [
+              "HD"
+            ],
+            "combo": 384,
+            "created_at": "2026-05-29T21:07:08Z",
+            "beatmapset": {
+              "id": 58951,
+              "title": "Yoru Naku Usagi wa Yume o Miru",
+              "cover": "https://assets.ppy.sh/beatmaps/58951/covers/card.jpg?1650616586",
+              "stars": 5.45238
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5031275203,
+            "rank": "A",
+            "accuracy": 0.9632936507936508,
+            "pp": 84.8275,
+            "mods": [
+              "HD"
+            ],
+            "combo": 466,
+            "created_at": "2026-05-29T19:41:00Z",
+            "beatmapset": {
+              "id": 999126,
+              "title": "Inferno (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/999126/covers/card.jpg?1650686577",
+              "stars": 4.55429
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5031273088,
+            "rank": "A",
+            "accuracy": 0.955794504181601,
+            "pp": 76.8744,
+            "mods": [
+              "HD"
+            ],
+            "combo": 322,
+            "created_at": "2026-05-29T19:35:54Z",
+            "beatmapset": {
+              "id": 1171789,
+              "title": "Imagination (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1171789/covers/card.jpg?1622188996",
+              "stars": 4.44529
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5031271761,
+            "rank": "A",
+            "accuracy": 0.9661016949152542,
+            "pp": 98.0166,
+            "mods": [
+              "HD"
+            ],
+            "combo": 528,
+            "created_at": "2026-05-29T19:32:37Z",
+            "beatmapset": {
+              "id": 950289,
+              "title": "JUSTadICE (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/950289/covers/card.jpg?1650680553",
+              "stars": 4.69731
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5031269916,
+            "rank": "SH",
+            "accuracy": 0.9478827361563518,
+            "pp": 80.7446,
+            "mods": [
+              "HD"
+            ],
+            "combo": 416,
+            "created_at": "2026-05-29T19:28:16Z",
+            "beatmapset": {
+              "id": 1328534,
+              "title": "Blue Bird (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1328534/covers/card.jpg?1622203710",
+              "stars": 4.44886
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5031267010,
+            "rank": "B",
+            "accuracy": 0.8806306306306306,
+            "pp": 87.303,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 265,
+            "created_at": "2026-05-29T19:21:05Z",
+            "beatmapset": {
+              "id": 474376,
+              "title": "Sore wa Chiisana Hikari no Youna",
+              "cover": "https://assets.ppy.sh/beatmaps/474376/covers/card.jpg?1650642830",
+              "stars": 3.7825
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5031266503,
+            "rank": "B",
+            "accuracy": 0.8981481481481481,
+            "pp": 58.0399,
+            "mods": [
+              "HD"
+            ],
+            "combo": 332,
+            "created_at": "2026-05-29T19:19:52Z",
+            "beatmapset": {
+              "id": 474376,
+              "title": "Sore wa Chiisana Hikari no Youna",
+              "cover": "https://assets.ppy.sh/beatmaps/474376/covers/card.jpg?1650642830",
+              "stars": 4.16838
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5031265646,
+            "rank": "B",
+            "accuracy": 0.9029850746268657,
+            "pp": 80.269,
+            "mods": [
+              "HD"
+            ],
+            "combo": 287,
+            "created_at": "2026-05-29T19:17:40Z",
+            "beatmapset": {
+              "id": 1297671,
+              "title": "Everlasting Shine (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1297671/covers/card.jpg?1778874688",
+              "stars": 4.87602
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5031264634,
+            "rank": "A",
+            "accuracy": 0.9468390804597702,
+            "pp": 62.3456,
+            "mods": [
+              "HD"
+            ],
+            "combo": 239,
+            "created_at": "2026-05-29T19:15:06Z",
+            "beatmapset": {
+              "id": 1123162,
+              "title": "Sore wa Chiisana Hikari no Youna (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1123162/covers/card.jpg?1650692615",
+              "stars": 4.08587
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5031264018,
+            "rank": "SH",
+            "accuracy": 0.9863247863247864,
+            "pp": 95.2731,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 329,
+            "created_at": "2026-05-29T19:13:26Z",
+            "beatmapset": {
+              "id": 1123162,
+              "title": "Sore wa Chiisana Hikari no Youna (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1123162/covers/card.jpg?1650692615",
+              "stars": 3.05853
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5031256980,
+            "rank": "SH",
+            "accuracy": 0.9851616322204557,
+            "pp": 124.967,
+            "mods": [
+              "HD"
+            ],
+            "combo": 1039,
+            "created_at": "2026-05-29T18:55:42Z",
+            "beatmapset": {
+              "id": 352570,
+              "title": "Night of Knights",
+              "cover": "https://assets.ppy.sh/beatmaps/352570/covers/card.jpg?1650634611",
+              "stars": 4.62322
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5031253502,
+            "rank": "A",
+            "accuracy": 0.9447852760736196,
+            "pp": 109.72,
+            "mods": [
+              "HD"
+            ],
+            "combo": 384,
+            "created_at": "2026-05-29T18:47:07Z",
+            "beatmapset": {
+              "id": 744772,
+              "title": "Last Goodbye",
+              "cover": "https://assets.ppy.sh/beatmaps/744772/covers/card.jpg?1650676934",
+              "stars": 5.13361
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5031251006,
+            "rank": "SH",
+            "accuracy": 0.95625,
+            "pp": 116.414,
+            "mods": [
+              "HD"
+            ],
+            "combo": 468,
+            "created_at": "2026-05-29T18:41:01Z",
+            "beatmapset": {
+              "id": 999645,
+              "title": "Inferno (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/999645/covers/card.jpg?1650682203",
+              "stars": 4.92756
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Granat",
+        "cover": "https://assets.ppy.sh/beatmaps/497769/covers/card.jpg?1645785838",
+        "unique_players": 14
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 93,
-    "longest": 93,
-    "last_updated": "2026-05-30"
+    "current": 94,
+    "longest": 94,
+    "last_updated": "2026-05-31"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -27998,6 +27998,292 @@
         "title": "Granat",
         "cover": "https://assets.ppy.sh/beatmaps/497769/covers/card.jpg?1645785838",
         "unique_players": 14
+      }
+    },
+    "2026-05-31": {
+      "total_scores": 432,
+      "peak_hour_baghdad": 23,
+      "top_grinder": {
+        "user": "skiler1",
+        "user_id": 31252345,
+        "count": 45,
+        "scores": [
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6791244488,
+            "rank": "A",
+            "accuracy": 0.9410720624778133,
+            "pp": 58.7379,
+            "mods": [],
+            "combo": 214,
+            "created_at": "2026-05-31T03:40:11Z",
+            "beatmapset": {
+              "id": 941246,
+              "title": "Pink Lemonade",
+              "cover": "https://assets.ppy.sh/beatmaps/941246/covers/card.jpg?1645781645",
+              "stars": 5.09786
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6791221609,
+            "rank": "C",
+            "accuracy": 0.8301220295439948,
+            "pp": 36.577,
+            "mods": [],
+            "combo": 160,
+            "created_at": "2026-05-31T03:33:05Z",
+            "beatmapset": {
+              "id": 41860,
+              "title": "Chinese Snowy Dance",
+              "cover": "https://assets.ppy.sh/beatmaps/41860/covers/card.jpg?1622052126",
+              "stars": 4.89719
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6791176122,
+            "rank": "C",
+            "accuracy": 0.8365446371226718,
+            "pp": 40.1576,
+            "mods": [],
+            "combo": 206,
+            "created_at": "2026-05-31T03:18:50Z",
+            "beatmapset": {
+              "id": 41860,
+              "title": "Chinese Snowy Dance",
+              "cover": "https://assets.ppy.sh/beatmaps/41860/covers/card.jpg?1622052126",
+              "stars": 4.89719
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6791168911,
+            "rank": "C",
+            "accuracy": 0.8548812664907651,
+            "pp": 53.0717,
+            "mods": [],
+            "combo": 366,
+            "created_at": "2026-05-31T03:16:35Z",
+            "beatmapset": {
+              "id": 323044,
+              "title": "Aitakatta Sora",
+              "cover": "https://assets.ppy.sh/beatmaps/323044/covers/card.jpg?1622087455",
+              "stars": 5.09631
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6791149840,
+            "rank": "C",
+            "accuracy": 0.8352389328642627,
+            "pp": 51.3804,
+            "mods": [],
+            "combo": 456,
+            "created_at": "2026-05-31T03:10:36Z",
+            "beatmapset": {
+              "id": 323044,
+              "title": "Aitakatta Sora",
+              "cover": "https://assets.ppy.sh/beatmaps/323044/covers/card.jpg?1622087455",
+              "stars": 5.09631
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6791129608,
+            "rank": "B",
+            "accuracy": 0.8614457831325302,
+            "pp": 39.1809,
+            "mods": [],
+            "combo": 125,
+            "created_at": "2026-05-31T03:04:22Z",
+            "beatmapset": {
+              "id": 191241,
+              "title": "SEN NO TSUBASA",
+              "cover": "https://assets.ppy.sh/beatmaps/191241/covers/card.jpg?1650623774",
+              "stars": 4.84786
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6791124437,
+            "rank": "C",
+            "accuracy": 0.8457831325301205,
+            "pp": 35.738,
+            "mods": [],
+            "combo": 159,
+            "created_at": "2026-05-31T03:02:45Z",
+            "beatmapset": {
+              "id": 191241,
+              "title": "SEN NO TSUBASA",
+              "cover": "https://assets.ppy.sh/beatmaps/191241/covers/card.jpg?1650623774",
+              "stars": 4.84786
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6791112731,
+            "rank": "C",
+            "accuracy": 0.8336139169472503,
+            "pp": 36.3073,
+            "mods": [],
+            "combo": 137,
+            "created_at": "2026-05-31T02:59:07Z",
+            "beatmapset": {
+              "id": 106212,
+              "title": "MEPHISTO",
+              "cover": "https://assets.ppy.sh/beatmaps/106212/covers/card.jpg?1650618073",
+              "stars": 5.14341
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6791086086,
+            "rank": "A",
+            "accuracy": 0.9385416666666667,
+            "pp": 75.8986,
+            "mods": [],
+            "combo": 248,
+            "created_at": "2026-05-31T02:50:54Z",
+            "beatmapset": {
+              "id": 661919,
+              "title": "SHIORI -TV size mix-",
+              "cover": "https://assets.ppy.sh/beatmaps/661919/covers/card.jpg?1650653913",
+              "stars": 4.81863
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6791077593,
+            "rank": "A",
+            "accuracy": 0.9489583333333333,
+            "pp": 81.0222,
+            "mods": [],
+            "combo": 216,
+            "created_at": "2026-05-31T02:48:10Z",
+            "beatmapset": {
+              "id": 661919,
+              "title": "SHIORI -TV size mix-",
+              "cover": "https://assets.ppy.sh/beatmaps/661919/covers/card.jpg?1650653913",
+              "stars": 4.81863
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6791065940,
+            "rank": "A",
+            "accuracy": 0.9416666666666667,
+            "pp": 74.0259,
+            "mods": [],
+            "combo": 241,
+            "created_at": "2026-05-31T02:44:31Z",
+            "beatmapset": {
+              "id": 661919,
+              "title": "SHIORI -TV size mix-",
+              "cover": "https://assets.ppy.sh/beatmaps/661919/covers/card.jpg?1650653913",
+              "stars": 4.81863
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6791060639,
+            "rank": "B",
+            "accuracy": 0.8989583333333333,
+            "pp": 48.83,
+            "mods": [],
+            "combo": 198,
+            "created_at": "2026-05-31T02:42:51Z",
+            "beatmapset": {
+              "id": 661919,
+              "title": "SHIORI -TV size mix-",
+              "cover": "https://assets.ppy.sh/beatmaps/661919/covers/card.jpg?1650653913",
+              "stars": 4.81863
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6788880832,
+            "rank": "C",
+            "accuracy": 0.7979331574318381,
+            "pp": 29.4351,
+            "mods": [],
+            "combo": 186,
+            "created_at": "2026-05-30T18:11:20Z",
+            "beatmapset": {
+              "id": 2507412,
+              "title": "entremets (feat. Aitsuki Nakuru)",
+              "cover": "https://assets.ppy.sh/beatmaps/2507412/covers/card.jpg?1779268579",
+              "stars": 4.97189
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6788856213,
+            "rank": "C",
+            "accuracy": 0.785567539804828,
+            "pp": null,
+            "mods": [],
+            "combo": 322,
+            "created_at": "2026-05-30T18:06:43Z",
+            "beatmapset": {
+              "id": 1343420,
+              "title": "Popular",
+              "cover": "https://assets.ppy.sh/beatmaps/1343420/covers/card.jpg?1666669623",
+              "stars": 4.47023
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6788837895,
+            "rank": "C",
+            "accuracy": 0.8035439137134053,
+            "pp": null,
+            "mods": [],
+            "combo": 211,
+            "created_at": "2026-05-30T18:03:15Z",
+            "beatmapset": {
+              "id": 1343420,
+              "title": "Popular",
+              "cover": "https://assets.ppy.sh/beatmaps/1343420/covers/card.jpg?1666669623",
+              "stars": 4.47023
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Chikatto Chika Chika",
+        "cover": "https://assets.ppy.sh/beatmaps/962996/covers/card.jpg?1650679276",
+        "unique_players": 15
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 94,
-    "longest": 94,
-    "last_updated": "2026-05-31"
+    "current": 95,
+    "longest": 95,
+    "last_updated": "2026-06-01"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -28284,6 +28284,292 @@
         "title": "Chikatto Chika Chika",
         "cover": "https://assets.ppy.sh/beatmaps/962996/covers/card.jpg?1650679276",
         "unique_players": 15
+      }
+    },
+    "2026-06-01": {
+      "total_scores": 409,
+      "peak_hour_baghdad": 22,
+      "top_grinder": {
+        "user": "skiler1",
+        "user_id": 31252345,
+        "count": 54,
+        "scores": [
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6795923597,
+            "rank": "B",
+            "accuracy": 0.8655367231638418,
+            "pp": 30.1605,
+            "mods": [],
+            "combo": 105,
+            "created_at": "2026-05-31T20:58:37Z",
+            "beatmapset": {
+              "id": 426693,
+              "title": "Re:Re:",
+              "cover": "https://assets.ppy.sh/beatmaps/426693/covers/card.jpg?1645780854",
+              "stars": 4.37066
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6795897796,
+            "rank": "C",
+            "accuracy": 0.8280141843971631,
+            "pp": 78.75,
+            "mods": [],
+            "combo": 119,
+            "created_at": "2026-05-31T20:53:01Z",
+            "beatmapset": {
+              "id": 765778,
+              "title": "Make a Move (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/765778/covers/card.jpg?1650663123",
+              "stars": 5.66964
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6795890239,
+            "rank": "B",
+            "accuracy": 0.8507462686567164,
+            "pp": 65.5616,
+            "mods": [],
+            "combo": 63,
+            "created_at": "2026-05-31T20:51:24Z",
+            "beatmapset": {
+              "id": 489383,
+              "title": "press start",
+              "cover": "https://assets.ppy.sh/beatmaps/489383/covers/card.jpg?1650641900",
+              "stars": 5.41175
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6795863161,
+            "rank": "C",
+            "accuracy": 0.8315942028985507,
+            "pp": 43.2761,
+            "mods": [],
+            "combo": 234,
+            "created_at": "2026-05-31T20:45:45Z",
+            "beatmapset": {
+              "id": 2195891,
+              "title": "Hot N Cold (Whippa Hardstyle Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2195891/covers/card.jpg?1725924663",
+              "stars": 5.16329
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6795848312,
+            "rank": "B",
+            "accuracy": 0.8992907801418439,
+            "pp": 68.1467,
+            "mods": [],
+            "combo": 234,
+            "created_at": "2026-05-31T20:42:43Z",
+            "beatmapset": {
+              "id": 720066,
+              "title": "Dear You (DJ Genericname DnB Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/720066/covers/card.jpg?1645777690",
+              "stars": 5.18109
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6795810974,
+            "rank": "C",
+            "accuracy": 0.8442444080741953,
+            "pp": 28.2607,
+            "mods": [],
+            "combo": 311,
+            "created_at": "2026-05-31T20:35:03Z",
+            "beatmapset": {
+              "id": 101123,
+              "title": "Tsuki -Yue-",
+              "cover": "https://assets.ppy.sh/beatmaps/101123/covers/card.jpg?1650617395",
+              "stars": 4.3483
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6795693756,
+            "rank": "B",
+            "accuracy": 0.8605633802816901,
+            "pp": 11.4742,
+            "mods": [],
+            "combo": 204,
+            "created_at": "2026-05-31T20:11:19Z",
+            "beatmapset": {
+              "id": 101123,
+              "title": "Tsuki -Yue-",
+              "cover": "https://assets.ppy.sh/beatmaps/101123/covers/card.jpg?1650617395",
+              "stars": 3.18737
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6795664246,
+            "rank": "C",
+            "accuracy": 0.7825024437927663,
+            "pp": null,
+            "mods": [],
+            "combo": 204,
+            "created_at": "2026-05-31T20:05:29Z",
+            "beatmapset": {
+              "id": 1919102,
+              "title": "FINGER CONTROL MEGAPACK #2",
+              "cover": "https://assets.ppy.sh/beatmaps/1919102/covers/card.jpg?1742052619",
+              "stars": 4.95602
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6795640818,
+            "rank": "C",
+            "accuracy": 0.7811447811447811,
+            "pp": 25.3262,
+            "mods": [],
+            "combo": 79,
+            "created_at": "2026-05-31T20:00:56Z",
+            "beatmapset": {
+              "id": 106212,
+              "title": "MEPHISTO",
+              "cover": "https://assets.ppy.sh/beatmaps/106212/covers/card.jpg?1650618073",
+              "stars": 5.14341
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6795609405,
+            "rank": "C",
+            "accuracy": 0.8274714828897338,
+            "pp": 33.3059,
+            "mods": [],
+            "combo": 341,
+            "created_at": "2026-05-31T19:54:59Z",
+            "beatmapset": {
+              "id": 172688,
+              "title": "CHOIR JAIL",
+              "cover": "https://assets.ppy.sh/beatmaps/172688/covers/card.jpg?1650622507",
+              "stars": 5.50253
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6795586590,
+            "rank": "A",
+            "accuracy": 0.9387096774193548,
+            "pp": 79.4655,
+            "mods": [],
+            "combo": 296,
+            "created_at": "2026-05-31T19:50:40Z",
+            "beatmapset": {
+              "id": 61447,
+              "title": "INNOCENCE (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/61447/covers/card.jpg?1650613969",
+              "stars": 4.96072
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6795567027,
+            "rank": "C",
+            "accuracy": 0.7329171002428027,
+            "pp": 14.5872,
+            "mods": [],
+            "combo": 97,
+            "created_at": "2026-05-31T19:46:58Z",
+            "beatmapset": {
+              "id": 158023,
+              "title": "Everything will freeze",
+              "cover": "https://assets.ppy.sh/beatmaps/158023/covers/card.jpg?1645787427",
+              "stars": 5.85635
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6795524374,
+            "rank": "B",
+            "accuracy": 0.9292929292929293,
+            "pp": 47.3287,
+            "mods": [],
+            "combo": 284,
+            "created_at": "2026-05-31T19:38:54Z",
+            "beatmapset": {
+              "id": 1663566,
+              "title": "UNDERWATER POOL (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1663566/covers/card.jpg?1645784271",
+              "stars": 3.90081
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6795513590,
+            "rank": "A",
+            "accuracy": 0.957286432160804,
+            "pp": 37.892,
+            "mods": [],
+            "combo": 346,
+            "created_at": "2026-05-31T19:36:53Z",
+            "beatmapset": {
+              "id": 1820504,
+              "title": "Noxious",
+              "cover": "https://assets.ppy.sh/beatmaps/1820504/covers/card.jpg?1705149181",
+              "stars": 3.51808
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6795503061,
+            "rank": "A",
+            "accuracy": 0.951310861423221,
+            "pp": 6.86986,
+            "mods": [],
+            "combo": 425,
+            "created_at": "2026-05-31T19:34:55Z",
+            "beatmapset": {
+              "id": 630407,
+              "title": "Help",
+              "cover": "https://assets.ppy.sh/beatmaps/630407/covers/card.jpg?1650654881",
+              "stars": 2.0441
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Chikatto Chika Chika (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/921889/covers/card.jpg?1650675795",
+        "unique_players": 5
       }
     }
   }

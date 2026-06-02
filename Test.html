@@ -100,37 +100,60 @@
         .controls-bar {
             max-width: 1440px; margin: 24px auto 16px; padding: 0 20px;
             display: flex; justify-content: space-between; align-items: center; gap: 12px;
+            position: relative;
         }
         .section-label {
             color: var(--osu-pink); font-weight: 800; font-size: 11px;
             letter-spacing: 2.5px; text-transform: uppercase; margin: 0;
         }
+        /* Plain pink text button — no border box */
         .date-btn {
-            background: transparent; border: 1.5px solid rgba(255,102,170,0.4);
-            color: var(--osu-pink); padding: 8px 18px; border-radius: 8px;
-            font-size: 13px; font-weight: 700; font-family: 'Exo 2';
-            cursor: pointer; display: flex; align-items: center; gap: 8px; transition: 0.2s;
+            background: transparent; border: none;
+            color: var(--osu-pink);
+            padding: 6px 4px;
+            font-size: 13px; font-weight: 800; font-family: 'Exo 2';
+            cursor: pointer; display: flex; align-items: center; gap: 7px;
+            transition: opacity 0.2s; letter-spacing: 0.3px;
         }
-        .date-btn:hover { background: rgba(255,102,170,0.15); border-color: var(--osu-pink); }
+        .date-btn:hover { opacity: 0.7; }
 
         /* ─── CALENDAR POPUP ─── */
         .calendar-popup {
-            display: none; position: absolute; top: 130px; right: 20px; z-index: 999;
-            background: #22222c; border: 1px solid rgba(255,255,255,0.1);
+            display: none; position: absolute; top: 44px; right: 0; z-index: 999;
+            background: #25252e; border: 1px solid rgba(255,255,255,0.08);
             border-radius: 12px; width: 300px; padding: 16px;
             box-shadow: 0 20px 60px rgba(0,0,0,0.7);
         }
         .calendar-popup.open { display: block; }
         .cal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
-        .cal-month { font-weight: 800; color: white; }
-        .cal-nav { cursor: pointer; color: var(--text-muted); padding: 6px 10px; border-radius: 6px; transition: 0.2s; }
+        .cal-month { font-weight: 800; color: white; font-size: 15px; }
+        .cal-nav {
+            cursor: pointer; color: var(--text-muted);
+            padding: 5px 10px; border-radius: 6px; transition: 0.2s; font-size: 13px;
+        }
         .cal-nav:hover { color: var(--osu-pink); background: rgba(255,102,170,0.1); }
         .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center; }
-        .cal-day-label { font-size: 10px; color: var(--text-muted); padding-bottom: 6px; font-weight: 700; letter-spacing: 0.5px; }
-        .cal-day { padding: 8px 4px; font-size: 12px; cursor: pointer; border-radius: 6px; color: #ccc; font-weight: 600; transition: 0.15s; }
-        .cal-day:hover { background: rgba(255,102,170,0.15); color: white; }
-        .cal-day.active { background: var(--osu-pink); color: white; font-weight: 800; }
-        .cal-day.empty { pointer-events: none; }
+        .cal-day-label { font-size: 10px; color: var(--text-muted); padding-bottom: 6px; font-weight: 700; }
+        /* All days show as normal numbers */
+        .cal-day {
+            padding: 8px 4px; font-size: 12px; border-radius: 6px;
+            color: #888; font-weight: 600;
+            pointer-events: none;
+        }
+        /* Days WITH data — white text, clickable, pink fill on hover */
+        .cal-day.has-data {
+            color: #eee; font-weight: 700; cursor: pointer;
+            pointer-events: auto;
+            transition: background 0.15s;
+        }
+        .cal-day.has-data:hover { background: rgba(255,102,170,0.2); color: white; }
+        /* Selected day — solid pink fill like original */
+        .cal-day.selected {
+            background: var(--osu-pink) !important;
+            color: white !important;
+            font-weight: 800 !important;
+        }
+        .cal-day.empty { pointer-events: none; color: transparent; }
 
         /* ─── FEED CONTAINER ─── */
         .feed-container { max-width: 1440px; margin: 0 auto; padding: 0 20px 40px; }
@@ -242,14 +265,37 @@
         .rank-C { color: #ff88ff; }
         .rank-D { color: var(--accent-red); }
 
-        /* DAILY BEST badge — bottom-right of image */
+        /* DAILY BEST badge — bottom-LEFT of image (not covered by avatar) */
         .top-play-badge {
-            position: absolute; bottom: 8px; right: 10px; z-index: 10;
+            position: absolute; bottom: 8px; left: 10px; z-index: 10;
             background: var(--accent-gold); color: #111;
             font-weight: 900; font-size: 10px; letter-spacing: 0.8px;
             padding: 3px 8px; border-radius: 6px;
             pointer-events: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.6);
         }
+
+        /* Mystery gift — for unrevealed top-play cards */
+        .mystery-cover {
+            position: absolute; inset: 0; z-index: 8;
+            background: linear-gradient(135deg, #1a1a28 0%, #2a1a3a 50%, #1a1a28 100%);
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            gap: 6px; cursor: pointer; transition: opacity 0.4s;
+        }
+        .mystery-cover .gift-icon {
+            font-size: 36px; 
+            animation: giftGlow 2s ease-in-out infinite;
+            filter: drop-shadow(0 0 12px rgba(255,215,0,0.6));
+        }
+        .mystery-cover .gift-label {
+            font-size: 10px; font-weight: 800; color: rgba(255,215,0,0.7);
+            letter-spacing: 1.5px; text-transform: uppercase;
+        }
+        @keyframes giftGlow {
+            0%, 100% { filter: drop-shadow(0 0 8px rgba(255,215,0,0.4)); transform: scale(1); }
+            50%       { filter: drop-shadow(0 0 18px rgba(255,215,0,0.9)); transform: scale(1.06); }
+        }
+        .mystery-cover.revealed { opacity: 0; pointer-events: none; }
 
         /* ─── CARD BODY ─── */
         .card-body {
@@ -306,21 +352,45 @@
         .stat-left  { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
         .stat-right { display: flex; align-items: center; gap: 6px; }
 
-        .acc-val  { color: var(--accent-green); font-size: 12px; font-weight: 800; }
-        .combo-val { color: var(--accent-blue); font-size: 12px; font-weight: 700; }
-        .time-ago { color: #55556a; font-size: 11px; font-weight: 600; }
-
-        /* Mod pills */
-        .mods-row { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 6px; }
-        .mod-pill {
-            background: rgba(255,204,34,0.12);
-            border: 1px solid rgba(255,204,34,0.2);
-            color: var(--accent-gold);
-            font-size: 10px; font-weight: 800;
-            padding: 2px 7px; border-radius: 5px;
-            letter-spacing: 0.3px;
+        .acc-val  { color: var(--accent-green); font-size: 13px; font-weight: 800; }
+        .time-ago { 
+            color: #55556a; font-size: 11px; font-weight: 600; 
+            cursor: default; position: relative;
         }
-        .mod-pill.nm { background: rgba(100,100,120,0.15); border-color: rgba(255,255,255,0.08); color: var(--text-muted); }
+        .time-ago .tooltip-time {
+            display: none;
+            position: absolute; bottom: calc(100% + 6px); right: 0;
+            background: rgba(20,20,28,0.98);
+            border: 1px solid rgba(255,102,170,0.2);
+            color: white; font-size: 11px; font-weight: 700;
+            padding: 5px 10px; border-radius: 7px;
+            white-space: nowrap;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+            pointer-events: none; z-index: 20;
+        }
+        .time-ago:hover .tooltip-time { display: block; }
+
+        /* Mod pills — osu-style colored per mod */
+        .mods-row { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 6px; min-height: 20px; }
+        .mod-pill {
+            font-size: 10px; font-weight: 900;
+            padding: 2px 7px; border-radius: 5px;
+            letter-spacing: 0.4px; display: inline-block;
+        }
+        /* HD */ .mod-HD { background: #3a5fa0; color: #aaccff; border: 1px solid rgba(100,160,255,0.3); }
+        /* DT */ .mod-DT { background: #5533aa; color: #cc99ff; border: 1px solid rgba(150,80,255,0.3); }
+        /* HR */ .mod-HR { background: #8b1a1a; color: #ff9999; border: 1px solid rgba(255,80,80,0.3); }
+        /* FL */ .mod-FL { background: #1a1a1a; color: #888; border: 1px solid rgba(150,150,150,0.2); }
+        /* EZ */ .mod-EZ { background: #1a5a1a; color: #88ee88; border: 1px solid rgba(80,200,80,0.3); }
+        /* NC */ .mod-NC { background: #5533aa; color: #cc99ff; border: 1px solid rgba(150,80,255,0.3); }
+        /* HT */ .mod-HT { background: #2a4a6a; color: #88aacc; border: 1px solid rgba(80,140,200,0.3); }
+        /* NF */ .mod-NF { background: #2a2a2a; color: #888; border: 1px solid rgba(150,150,150,0.2); }
+        /* SO */ .mod-SO { background: #5a3a1a; color: #ddaa66; border: 1px solid rgba(200,150,50,0.3); }
+        /* SD */ .mod-SD { background: #5a1a1a; color: #ffaaaa; border: 1px solid rgba(200,80,80,0.3); }
+        /* PF */ .mod-PF { background: #5a1a1a; color: #ffaaaa; border: 1px solid rgba(200,80,80,0.3); }
+        /* RX */ .mod-RX { background: #1a5a5a; color: #88eedd; border: 1px solid rgba(80,200,180,0.3); }
+        /* AP */ .mod-AP { background: #1a5a5a; color: #88eedd; border: 1px solid rgba(80,200,180,0.3); }
+        /* default/unknown */ .mod-default { background: rgba(80,80,100,0.2); color: var(--text-muted); border: 1px solid rgba(255,255,255,0.08); }
 
         /* ─── AD CARD ─── */
         .ad-card {
@@ -358,6 +428,9 @@
         .arrow-up { position: absolute; color: white; font-size: 16px; pointer-events: none; }
 
         /* ─── FOOTER ─── */
+        html, body { min-height: 100vh; }
+        body { display: flex; flex-direction: column; }
+        .feed-container { flex: 1; }
         footer {
             background: var(--dark-deeper); color: #fff;
             padding: 20px 16px 32px; text-align: center;
@@ -429,18 +502,17 @@
 
 <footer>
     <div style="max-width:900px; margin:0 auto;">
-        <h3>osu! Iraq Today</h3>
+        <h3>Osu! Iraq Today</h3>
         <p>Built with ❤️ for the Iraqi osu! Community</p>
         <hr>
         <div class="footer-links">
-            <a href="https://github.com/Ruybic/Test">GitHub</a>
+            <a href="#donate">Donate</a>
             <a href="#discord">Discord</a>
             <a href="OIT_Document.html">Documentation</a>
         </div>
         <hr>
         <p class="footer-meta">
             A <strong>non-commercial</strong> osu! community project | Data via <strong>osu! API v2</strong><br>
-            © 2026 Ruybic • Commit: <span id="footer-commit">7472e02</span><br>
             Last Update: <span id="footer-time">2026-02-27 04:00 UTC</span>
         </p>
     </div>
@@ -498,6 +570,9 @@ function changeMonth(dir) {
     renderCalendar();
 }
 
+// ─── AVAILABLE DATES (populated after first successful fetch) ───
+const availableDates = new Set();
+
 function renderCalendar() {
     document.getElementById('calMonthYear').textContent = `${months[calMonth]} ${calYear}`;
     const grid = document.getElementById('calGrid');
@@ -515,9 +590,12 @@ function renderCalendar() {
     }
     for (let d = 1; d <= daysInMonth; d++) {
         const el = document.createElement('div');
-        el.className = 'cal-day'; el.textContent = d;
         const y = calYear, m = String(calMonth + 1).padStart(2,'0'), dd = String(d).padStart(2,'0');
-        el.onclick = () => { selectDate(`${y}-${m}-${dd}`); };
+        const key = `${y}-${m}-${dd}`;
+        const hasData = availableDates.has(key);
+        el.className = 'cal-day' + (hasData ? ' has-data' : '');
+        el.textContent = d;
+        if (hasData) el.onclick = () => { selectDate(key); };
         grid.appendChild(el);
     }
 }
@@ -531,15 +609,32 @@ document.getElementById('calendarPopup').addEventListener('click', e => e.stopPr
 
 function selectDate(dateStr) {
     document.getElementById('calendarPopup').classList.remove('open');
-    document.querySelectorAll('.cal-day').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.cal-day').forEach(el => el.classList.remove('selected'));
     const day = parseInt(dateStr.split('-')[2]);
-    document.querySelectorAll('.cal-day:not(.empty)').forEach(el => {
-        if (parseInt(el.textContent) === day) el.classList.add('active');
+    document.querySelectorAll('.cal-day.has-data').forEach(el => {
+        if (parseInt(el.textContent) === day) el.classList.add('selected');
     });
     const [y, m, d] = dateStr.split('-');
     const label = new Date(+y, +m-1, +d).toLocaleDateString('en-US', { weekday:'long', year:'numeric', month:'long', day:'numeric' });
     document.getElementById('currentDateLabel').textContent = label.toUpperCase();
     fetchAndRender(`data/${y}/${m}/${d}.json`);
+}
+
+// ─── REVEALED CARDS (localStorage persistence) ───
+const REVEALED_KEY = 'oit_revealed_top_plays';
+function getRevealed() {
+    try { return JSON.parse(localStorage.getItem(REVEALED_KEY) || '[]'); } catch { return []; }
+}
+function markRevealed(scoreId) {
+    const r = getRevealed();
+    if (!r.includes(scoreId)) { r.push(scoreId); localStorage.setItem(REVEALED_KEY, JSON.stringify(r)); }
+}
+
+// ─── MOD PILL BUILDER ───
+function buildModPill(mod) {
+    const known = ['HD','DT','HR','FL','EZ','NC','HT','NF','SO','SD','PF','RX','AP'];
+    const cls = known.includes(mod) ? `mod-${mod}` : 'mod-default';
+    return `<span class="mod-pill ${cls}">${mod}</span>`;
 }
 
 // ─── MAIN RENDERER ───
@@ -557,101 +652,86 @@ async function fetchAndRender(path) {
             return;
         }
 
-        // Find highest-PP score for "DAILY BEST" crown
         let topScoreId = null, maxPp = -1;
         data.scores.forEach(s => { if (s.pp > maxPp) { maxPp = s.pp; topScoreId = s.score_id; } });
 
+        const revealed = getRevealed();
         grid.innerHTML = '';
 
         data.scores.forEach((score, index) => {
             const isTop = score.score_id === topScoreId;
+            const isRevealed = revealed.includes(String(score.score_id));
 
-            // ── Build mod pills ──
+            // ── Mods — no NM pill ──
             const mods = score.mods || [];
-            let modsHtml = '';
-            if (mods.length === 0) {
-                modsHtml = `<span class="mod-pill nm">NM</span>`;
-            } else {
-                modsHtml = mods.map(m => `<span class="mod-pill">${m}</span>`).join('');
-            }
+            const modsHtml = mods.length > 0 ? mods.map(buildModPill).join('') : '';
 
             // ── Stars ──
             const stars = score.beatmapset?.stars ?? score.beatmapset?.difficulty_rating ?? null;
-            const starsHtml = stars !== null
-                ? `<div class="stars-badge">${fmtStars(stars)}</div>`
-                : '';
+            const starsHtml = stars !== null ? `<div class="stars-badge">${fmtStars(stars)}</div>` : '';
 
             // ── Flag ──
             const flag = score.country
-                ? `<img src="${flagUrl(score.country)}" class="flag" alt="${score.country}">`
-                : '';
+                ? `<img src="${flagUrl(score.country)}" class="flag" alt="${score.country}">` : '';
 
-            // ── Time ago ──
+            // ── Time: relative + hover tooltip with real datetime ──
             const when = score.created_at ? timeAgo(score.created_at) : '';
+            const fullTime = score.created_at
+                ? new Date(score.created_at).toLocaleString('en-US', {
+                    year:'numeric', month:'short', day:'numeric',
+                    hour:'2-digit', minute:'2-digit', second:'2-digit', timeZoneName:'short'
+                  }) : '';
+            const timeHtml = when
+                ? `<span class="time-ago">${when}<span class="tooltip-time">${fullTime}</span></span>` : '';
 
-            // ── Combo ──
-            const comboHtml = score.combo !== undefined
-                ? `<span class="combo-val">${score.combo}x</span>`
-                : '';
+            // ── Mystery gift overlay for unrevealed daily best ──
+            const mysteryHtml = isTop && !isRevealed
+                ? `<div class="mystery-cover" id="mystery-${score.score_id}" onclick="revealCard('${score.score_id}', event)">
+                       <div class="gift-icon">🎁</div>
+                       <div class="gift-label">Tap to reveal</div>
+                   </div>` : '';
 
             const card = document.createElement('div');
             card.className = isTop ? 'score-card top-play' : 'score-card';
             card.style.animationDelay = Math.min(index * 0.045, 1.0) + 's';
-
             card.onclick = (e) => {
-                if (!e.target.closest('a')) {
+                if (!e.target.closest('a') && !e.target.closest('.mystery-cover')) {
                     window.open(`https://osu.ppy.sh/scores/osu/${score.score_id}`, '_blank');
                 }
             };
 
             card.innerHTML = `
-                <!-- Cover image wrapper -->
-                <div class="map-header-wrap" style="position:relative; flex-shrink:0;">
+                <div class="map-header-wrap" style="position:relative; flex-shrink:0; height:110px; overflow:hidden;">
                     <a href="https://osu.ppy.sh/beatmapsets/${score.beatmapset.id}" target="_blank"
                        onclick="event.stopPropagation()"
-                       class="map-header" style="background-image:url('${score.beatmapset.cover}')"></a>
+                       class="map-header" style="background-image:url('${score.beatmapset.cover}'); width:100%; height:110px; background-size:cover; background-position:center; display:block;"></a>
                     <div class="pp-badge">${Math.round(score.pp)}pp</div>
                     <div class="rank-grade rank-${score.rank}">${score.rank}</div>
                     ${starsHtml}
                     ${isTop ? `<div class="top-play-badge">DAILY BEST</div>` : ''}
+                    ${mysteryHtml}
                 </div>
 
-                <!-- Card body -->
                 <div class="card-body">
-                    <!-- Floating avatar -->
                     <a href="https://osu.ppy.sh/users/${score.user_id}" target="_blank"
                        onclick="event.stopPropagation()" class="user-link">
                         <img src="https://a.ppy.sh/${score.user_id}" class="user-avatar"
                              alt="${score.user}" onerror="this.src='https://osu.ppy.sh/images/layout/avatar-guest.png'">
                     </a>
-
-                    <!-- Player name + flag -->
                     <div class="player-row">
                         ${flag}
                         <a href="https://osu.ppy.sh/users/${score.user_id}" target="_blank"
                            onclick="event.stopPropagation()" class="player-name">${score.user}</a>
                     </div>
-
-                    <!-- Map title -->
                     <a href="https://osu.ppy.sh/beatmapsets/${score.beatmapset.id}" target="_blank"
                        onclick="event.stopPropagation()" class="map-title"
                        title="${score.beatmapset.title}">${score.beatmapset.title}</a>
-
-                    <!-- Mods row -->
-                    <div class="mods-row">${modsHtml}</div>
-
-                    <!-- Stats row -->
+                    ${modsHtml ? `<div class="mods-row">${modsHtml}</div>` : '<div class="mods-row"></div>'}
                     <div class="score-stats">
-                        <div class="stat-left">
-                            <span class="acc-val">${fmtAcc(score.accuracy)}</span>
-                            ${comboHtml}
-                        </div>
-                        <div class="stat-right">
-                            <span class="time-ago">${when}</span>
-                        </div>
+                        <span class="acc-val">${fmtAcc(score.accuracy)}</span>
+                        <div class="stat-right">${timeHtml}</div>
                     </div>
-                </div>
-            `;
+                </div>`;
 
             grid.appendChild(card);
         });
@@ -659,6 +739,13 @@ async function fetchAndRender(path) {
     } catch(e) {
         grid.innerHTML = `<div class="status-msg" style="color:var(--accent-red)">${e.message}</div>`;
     }
+}
+
+function revealCard(scoreId, e) {
+    e.stopPropagation();
+    markRevealed(String(scoreId));
+    const el = document.getElementById('mystery-' + scoreId);
+    if (el) { el.classList.add('revealed'); setTimeout(() => el.remove(), 400); }
 }
 
 // ─── SCROLL PROGRESS ───
@@ -741,15 +828,30 @@ function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
 // ─── INIT ───
 initCalendar();
 
-// Auto-load today's scores
-(function() {
+// Pre-fetch data/index.json to know which dates have scores (for calendar coloring)
+// Falls back to empty set gracefully if index doesn't exist yet
+(async function init() {
+    try {
+        const idxRes = await fetch('data/index.json?t=' + Date.now());
+        if (idxRes.ok) {
+            const idx = await idxRes.json();
+            const dates = idx.dates || idx.available_dates || Object.keys(idx);
+            dates.forEach(d => availableDates.add(d));
+            renderCalendar(); // re-render now that we have data info
+        }
+    } catch(e) { /* no index — calendar stays all-dimmed, still works */ }
+
+    // Auto-load today's scores
     const now = new Date();
     const y = now.getFullYear();
     const m = String(now.getMonth()+1).padStart(2,'0');
     const d = String(now.getDate()).padStart(2,'0');
-    const dateStr = `${y}-${m}-${d}`;
     const label = now.toLocaleDateString('en-US', { weekday:'long', year:'numeric', month:'long', day:'numeric' });
     document.getElementById('currentDateLabel').textContent = label.toUpperCase();
+    // Mark today as available and select it in calendar
+    const todayKey = `${y}-${m}-${d}`;
+    availableDates.add(todayKey);
+    renderCalendar();
     fetchAndRender(`data/${y}/${m}/${d}.json`);
 })();
 </script>

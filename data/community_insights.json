@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 95,
-    "longest": 95,
-    "last_updated": "2026-06-01"
+    "current": 96,
+    "longest": 96,
+    "last_updated": "2026-06-02"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -28570,6 +28570,294 @@
         "title": "Chikatto Chika Chika (TV Size)",
         "cover": "https://assets.ppy.sh/beatmaps/921889/covers/card.jpg?1650675795",
         "unique_players": 5
+      }
+    },
+    "2026-06-02": {
+      "total_scores": 471,
+      "peak_hour_baghdad": 23,
+      "top_grinder": {
+        "user": "i9be",
+        "user_id": 35359675,
+        "count": 97,
+        "scores": [
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6807419737,
+            "rank": "B",
+            "accuracy": 0.8409378960709759,
+            "pp": 8.89331,
+            "mods": [],
+            "combo": 447,
+            "created_at": "2026-06-02T22:30:25Z",
+            "beatmapset": {
+              "id": 2416813,
+              "title": "our own constellation",
+              "cover": "https://assets.ppy.sh/beatmaps/2416813/covers/card.jpg?1768845000",
+              "stars": 2.39972
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6807404718,
+            "rank": "B",
+            "accuracy": 0.9050131926121372,
+            "pp": 21.2654,
+            "mods": [],
+            "combo": 224,
+            "created_at": "2026-06-02T22:26:17Z",
+            "beatmapset": {
+              "id": 1051126,
+              "title": "Shape of the Sun",
+              "cover": "https://assets.ppy.sh/beatmaps/1051126/covers/card.jpg?1650687887",
+              "stars": 3.36088
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6807390735,
+            "rank": "C",
+            "accuracy": 0.8341269841269842,
+            "pp": 6.56221,
+            "mods": [],
+            "combo": 263,
+            "created_at": "2026-06-02T22:22:30Z",
+            "beatmapset": {
+              "id": 1313559,
+              "title": "Fluctuation",
+              "cover": "https://assets.ppy.sh/beatmaps/1313559/covers/card.jpg?1650704383",
+              "stars": 2.53345
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6807380619,
+            "rank": "C",
+            "accuracy": 0.7756911841418883,
+            "pp": 9.42845,
+            "mods": [],
+            "combo": 139,
+            "created_at": "2026-06-02T22:19:45Z",
+            "beatmapset": {
+              "id": 716630,
+              "title": "MTC (Radio Edit)",
+              "cover": "https://assets.ppy.sh/beatmaps/716630/covers/card.jpg?1650658231",
+              "stars": 3.77932
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6807362156,
+            "rank": "C",
+            "accuracy": 0.8465909090909091,
+            "pp": 3.50281,
+            "mods": [],
+            "combo": 192,
+            "created_at": "2026-06-02T22:14:43Z",
+            "beatmapset": {
+              "id": 2215787,
+              "title": "02:15",
+              "cover": "https://assets.ppy.sh/beatmaps/2215787/covers/card.jpg?1725220980",
+              "stars": 2.13551
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6807347646,
+            "rank": "B",
+            "accuracy": 0.8263473053892215,
+            "pp": 17.5331,
+            "mods": [],
+            "combo": 281,
+            "created_at": "2026-06-02T22:10:47Z",
+            "beatmapset": {
+              "id": 2240082,
+              "title": "Worlds (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2240082/covers/card.jpg?1726145746",
+              "stars": 3.1619
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6807340128,
+            "rank": "B",
+            "accuracy": 0.8880718954248366,
+            "pp": 8.12148,
+            "mods": [],
+            "combo": 328,
+            "created_at": "2026-06-02T22:08:46Z",
+            "beatmapset": {
+              "id": 1945323,
+              "title": "Nhelv",
+              "cover": "https://assets.ppy.sh/beatmaps/1945323/covers/card.jpg?1745325270",
+              "stars": 2.37701
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6807327493,
+            "rank": "C",
+            "accuracy": 0.8119918699186992,
+            "pp": 12.654,
+            "mods": [],
+            "combo": 371,
+            "created_at": "2026-06-02T22:05:20Z",
+            "beatmapset": {
+              "id": 703957,
+              "title": "Immortal Flame (feat. Anna Yvette)",
+              "cover": "https://assets.ppy.sh/beatmaps/703957/covers/card.jpg?1650658558",
+              "stars": 3.17274
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6807297146,
+            "rank": "C",
+            "accuracy": 0.8025435073627845,
+            "pp": 26.0977,
+            "mods": [],
+            "combo": 360,
+            "created_at": "2026-06-02T21:57:17Z",
+            "beatmapset": {
+              "id": 1192586,
+              "title": "Jelly",
+              "cover": "https://assets.ppy.sh/beatmaps/1192586/covers/card.jpg?1631514883",
+              "stars": 3.89225
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6807283859,
+            "rank": "A",
+            "accuracy": 0.9117063492063492,
+            "pp": 10.7088,
+            "mods": [],
+            "combo": 270,
+            "created_at": "2026-06-02T21:53:49Z",
+            "beatmapset": {
+              "id": 90854,
+              "title": "Colorful precious life (Short Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/90854/covers/card.jpg?1634117149",
+              "stars": 2.45075
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6807264245,
+            "rank": "A",
+            "accuracy": 0.9686971235194586,
+            "pp": null,
+            "mods": [
+              "RX"
+            ],
+            "combo": 356,
+            "created_at": "2026-06-02T21:48:54Z",
+            "beatmapset": {
+              "id": 361740,
+              "title": "Get Jinxed",
+              "cover": "https://assets.ppy.sh/beatmaps/361740/covers/card.jpg?1645788409",
+              "stars": 4.32905
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6807239178,
+            "rank": "D",
+            "accuracy": 0.6540284360189573,
+            "pp": 15.0391,
+            "mods": [],
+            "combo": 63,
+            "created_at": "2026-06-02T21:42:40Z",
+            "beatmapset": {
+              "id": 1082270,
+              "title": "Ievan Polkka x Fubuki (Hamburgaga Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/1082270/covers/card.jpg?1650689558",
+              "stars": 4.24947
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6807221992,
+            "rank": "D",
+            "accuracy": 0.6580594679186228,
+            "pp": 16.1017,
+            "mods": [],
+            "combo": 153,
+            "created_at": "2026-06-02T21:38:24Z",
+            "beatmapset": {
+              "id": 1044785,
+              "title": "Army Of The Night",
+              "cover": "https://assets.ppy.sh/beatmaps/1044785/covers/card.jpg?1650688773",
+              "stars": 4.91654
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6807201319,
+            "rank": "A",
+            "accuracy": 0.963276836158192,
+            "pp": null,
+            "mods": [],
+            "combo": 61,
+            "created_at": "2026-06-02T21:33:19Z",
+            "beatmapset": {
+              "id": 1424804,
+              "title": "kurxxed emeraldz",
+              "cover": "https://assets.ppy.sh/beatmaps/1424804/covers/card.jpg?1626721286",
+              "stars": 3.26986
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6807197904,
+            "rank": "A",
+            "accuracy": 0.943502824858757,
+            "pp": null,
+            "mods": [],
+            "combo": 80,
+            "created_at": "2026-06-02T21:32:30Z",
+            "beatmapset": {
+              "id": 1424804,
+              "title": "kurxxed emeraldz",
+              "cover": "https://assets.ppy.sh/beatmaps/1424804/covers/card.jpg?1626721286",
+              "stars": 3.26986
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Forest / Nature Area",
+        "cover": "https://assets.ppy.sh/beatmaps/2557824/covers/card.jpg?1780242353",
+        "unique_players": 31
       }
     }
   }

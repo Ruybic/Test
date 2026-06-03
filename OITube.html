@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>osu! Iraq Today | Watch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://i.imgur.com/Zgd9kDC.jpg">
+    <style>
+        :root {
+            --osu-pink: #ff66aa;
+            --osu-pink-dark: #cc4488;
+            --dark-base: #1a1a20;
+            --dark-deeper: #13131a;
+            --panel-bg: #272730;
+            --panel-border: rgba(255,255,255,0.07);
+            --text-main: #ffffff;
+            --text-muted: #8888a0;
+            --accent-gold: #ffd700;
+            --accent-green: #66ffbb;
+            --accent-red: #ff4466;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+
+        /* ─── TRIANGLE CANVAS ─── */
+        #tri-canvas {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 0;
+        }
+
+        body {
+            background-color: var(--dark-base);
+            color: var(--text-main);
+            font-family: 'Exo 2', sans-serif;
+            margin: 0; padding: 0;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        header, .watch-container, footer, #progress-container {
+            position: relative; z-index: 1;
+        }
+
+        /* ─── HEADER ─── */
+        header {
+            background: rgba(15,15,20,0.9);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 0 24px;
+            display: flex; align-items: center; justify-content: space-between;
+            border-bottom: 1px solid rgba(255,102,170,0.15);
+            position: sticky; top: 0; z-index: 1000;
+            height: 60px;
+        }
+        .logo-box a { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-box img { height: 34px; border-radius: 8px; display: block; }
+        .logo-text { color: #fff; font-weight: 800; font-size: 18px; white-space: nowrap; }
+        .logo-text span { color: var(--osu-pink); }
+        .logo-box a:hover .logo-text { color: var(--osu-pink); transition: color 0.2s; }
+
+        /* ─── DROPDOWN ─── */
+        .dropdown { position: relative; display: flex; align-items: center; }
+        .dropbtn {
+            background: rgba(255,255,255,0.06);
+            color: white; border: 1px solid rgba(255,255,255,0.1);
+            padding: 8px 18px; border-radius: 8px; cursor: pointer;
+            font-family: 'Exo 2'; font-weight: 700; font-size: 14px;
+            transition: all 0.2s ease;
+        }
+        .dropbtn:hover { background: rgba(255,102,170,0.15); border-color: var(--osu-pink); color: var(--osu-pink); }
+        .dropdown-content {
+            visibility: hidden; opacity: 0; transform: translateY(8px) scale(0.97);
+            transition: opacity 0.2s ease, transform 0.25s cubic-bezier(0.2,0.8,0.2,1), visibility 0.2s;
+            position: absolute; right: 0; top: calc(100% + 12px); min-width: 270px; z-index: 2000;
+            background: rgba(20,20,28,0.97); backdrop-filter: blur(20px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,102,170,0.1);
+            border-radius: 14px; padding: 8px;
+        }
+        .dropdown-content.show { visibility: visible; opacity: 1; transform: translateY(0) scale(1); }
+        .menu-item {
+            position: relative; color: var(--text-muted); padding: 11px 14px; text-decoration: none;
+            display: block; font-size: 14px; border-radius: 8px; transition: all 0.2s ease; margin-bottom: 2px;
+            overflow: hidden;
+        }
+        .menu-item:hover { background: rgba(255,102,170,0.12); color: white; }
+        .menu-item.active { background: rgba(255,102,170,0.15); color: white; font-weight: 700; }
+        .menu-item .menu-desc { display: block; font-size: 11px; color: #55556a; margin-top: 3px; transition: color 0.2s; }
+        
+        /* ─── YOUTUBE WATCH LAYOUT ─── */
+        .watch-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 24px;
+            display: grid;
+            grid-template-columns: 1fr 400px; /* Main Video area vs Sidebar */
+            gap: 24px;
+            align-items: start;
+        }
+
+        /* ─── MAIN PLAYER SECTION ─── */
+        .primary-content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .player-wrapper {
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            background: #000;
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid var(--panel-border);
+        }
+        
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: none;
+        }
+
+        /* Video Info & Actions */
+        .main-info {
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 16px;
+            padding: 20px;
+        }
+
+        .main-title {
+            font-size: 20px;
+            font-weight: 800;
+            color: #fff;
+            margin: 0 0 12px 0;
+            line-height: 1.3;
+        }
+
+        .main-meta-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .main-channel-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .channel-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--osu-pink), var(--accent-gold));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 18px;
+            color: #111;
+        }
+
+        .channel-details h4 {
+            margin: 0;
+            font-size: 15px;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .channel-details p {
+            margin: 2px 0 0 0;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* Action Buttons (Likes, Share, etc.) */
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .action-btn {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid var(--panel-border);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-family: 'Exo 2', sans-serif;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .action-btn:hover {
+            background: rgba(255,102,170,0.15);
+            border-color: var(--osu-pink);
+            color: var(--osu-pink);
+        }
+
+        .action-btn svg { width: 18px; height: 18px; fill: currentColor; }
+
+        /* Description Box */
+        .main-description {
+            margin-top: 16px;
+            background: rgba(0,0,0,0.2);
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 13px;
+            color: #d0d0e0;
+            line-height: 1.6;
+        }
+
+        .main-description .publish-date {
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        /* Comments Section */
+        .comments-section {
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 16px;
+            padding: 20px;
+        }
+
+        .comments-header {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .comment-input-area {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .comment-input-area img {
+            width: 40px; height: 40px; border-radius: 50%;
+            background: #444;
+        }
+
+        .comment-input-wrapper {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .comment-input-wrapper input {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid var(--text-muted);
+            color: white;
+            padding: 8px 0;
+            font-family: 'Exo 2';
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .comment-input-wrapper input:focus {
+            border-bottom-color: var(--osu-pink);
+        }
+
+        /* Fake comments list */
+        .dummy-comment {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .dummy-comment .avatar {
+            width: 40px; height: 40px; border-radius: 50%; background: #333;
+        }
+        .dummy-comment .content h5 { margin: 0 0 4px 0; font-size: 13px; color: #fff; }
+        .dummy-comment .content h5 span { color: var(--text-muted); font-size: 11px; margin-left: 6px; font-weight: 400; }
+        .dummy-comment .content p { margin: 0; font-size: 13px; color: #ccc; }
+
+        /* ─── SIDEBAR / PLAYLIST SECTION ─── */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* Controls inside sidebar */
+        .sidebar-controls {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            background: var(--panel-bg);
+            padding: 16px;
+            border-radius: 12px;
+            border: 1px solid var(--panel-border);
+        }
+
+        /* Search Box */
+        .search-wrap { position: relative; width: 100%; }
+        .search-wrap svg {
+            position: absolute; left: 11px; top: 50%; transform: translateY(-50%);
+            color: var(--text-muted); pointer-events: none;
+        }
+        .search-input {
+            width: 100%;
+            background: rgba(0,0,0,0.3);
+            color: white;
+            border: 1px solid var(--panel-border);
+            padding: 10px 12px 10px 34px;
+            border-radius: 8px;
+            font-family: 'Exo 2'; font-weight: 600; font-size: 13px;
+            outline: none; transition: border-color 0.2s;
+        }
+        .search-input:focus { border-color: var(--osu-pink); }
+        
+        .filters-row {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            padding-bottom: 4px;
+        }
+        .filters-row::-webkit-scrollbar { height: 4px; }
+        .filters-row::-webkit-scrollbar-thumb { background: rgba(255,102,170,0.5); border-radius: 4px; }
+
+        .filter-btn {
+            background: rgba(0,0,0,0.3); color: var(--text-muted);
+            border: 1px solid var(--panel-border);
+            padding: 6px 14px; border-radius: 20px;
+            cursor: pointer; font-family: 'Exo 2'; font-size: 12px; font-weight: 700;
+            transition: all 0.2s; white-space: nowrap;
+        }
+        .filter-btn:hover { border-color: var(--osu-pink); color: white; }
+        .filter-btn.active {
+            background: rgba(255,102,170,0.15);
+            border-color: var(--osu-pink);
+            color: var(--osu-pink);
+        }
+
+        /* Sidebar Video List */
+        .sidebar-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .side-video-card {
+            display: flex;
+            gap: 12px;
+            cursor: pointer;
+            border-radius: 8px;
+            padding: 6px;
+            transition: background 0.2s;
+        }
+
+        .side-video-card:hover {
+            background: rgba(255,255,255,0.05);
+        }
+        
+        .side-video-card.playing {
+            background: rgba(255,102,170,0.1);
+            border-right: 3px solid var(--osu-pink);
+        }
+
+        .side-thumb {
+            width: 160px;
+            min-width: 160px;
+            height: 90px;
+            background: #111;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .side-thumb img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform 0.2s;
+        }
+        
+        .side-video-card:hover .side-thumb img { transform: scale(1.05); }
+
+        .side-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            overflow: hidden;
+        }
+
+        .side-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.4;
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin-bottom: 4px;
+        }
+
+        .side-channel { font-size: 12px; color: var(--osu-pink); font-weight: 600; margin-bottom: 2px;}
+        .side-date { font-size: 11px; color: var(--text-muted); }
+
+        .archived-badge {
+            position: absolute; bottom: 4px; right: 4px;
+            background: rgba(255,102,170,0.9);
+            color: #fff;
+            font-size: 9px; font-weight: 800;
+            padding: 2px 4px; border-radius: 4px;
+        }
+
+        /* ─── SCROLL PROGRESS & FOOTER ─── */
+        /* (Kept mostly identical) */
+        #progress-container {
+            position: fixed; bottom: 28px; right: 28px;
+            width: 56px; height: 56px; cursor: pointer;
+            display: none; align-items: center; justify-content: center;
+            z-index: 2000; transition: transform 0.2s ease, opacity 0.3s;
+        }
+        #progress-container:hover { transform: scale(1.1); }
+        .progress-svg { transform: rotate(-90deg); }
+        .progress-background { fill: rgba(22,22,30,0.95); stroke: rgba(255,255,255,0.1); stroke-width: 4; }
+        #progress-bar {
+            fill: none; stroke: var(--osu-pink); stroke-width: 4;
+            stroke-linecap: round; stroke-dasharray: 163.3; stroke-dashoffset: 163.3;
+            transition: stroke-dashoffset 0.1s linear;
+        }
+        .arrow-up { position: absolute; color: white; font-size: 16px; pointer-events: none; }
+
+        footer {
+            background: var(--dark-deeper); color: #fff;
+            padding: 20px 16px 32px; text-align: center;
+            border-top: 1px solid rgba(255,102,170,0.2); margin-top: 40px;
+        }
+        footer h3 { color: var(--osu-pink); margin: 0 0 6px; font-size: 18px; }
+        footer p  { margin: 0; font-size: 13px; color: #666; }
+        footer a  { color: var(--osu-pink); text-decoration: none; font-weight: 700; }
+        footer a:hover { text-decoration: underline; }
+        footer hr { border: 0; border-top: 1px solid #2a2a35; margin: 14px 0; }
+        .footer-links { margin: 10px 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .footer-meta { font-size: 12px; color: #555; line-height: 1.7; }
+        .footer-meta span { color: var(--osu-pink); font-family: monospace; }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 1024px) {
+            .watch-container { grid-template-columns: 1fr; }
+            .sidebar { margin-top: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="tri-canvas"></canvas>
+
+<header>
+    <div class="logo-box">
+        <a href="index.html">
+            <img src="https://i.imgur.com/Zgd9kDC.jpg" alt="osu! Iraq Today">
+            <span class="logo-text">osu! Iraq <span>Today</span></span>
+        </a>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn" id="menuBtn">Menu ▾</button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="Test.html" class="menu-item">Scores<span class="menu-desc">See what happened today?</span></a>
+            <a href="rankings.html" class="menu-item">Rankings<span class="menu-desc">See player leaderboards</span></a>
+            <a href="videos.html" class="menu-item active">Videos<span class="menu-desc">Watch gameplay and highlights</span></a>
+            <a href="mapping.html" class="menu-item">Mapping<span class="menu-desc">Explore beatmap creations</span></a>
+            <a href="archive.html" class="menu-item">Archive<span class="menu-desc">Explore community History</span></a>
+            <a href="socials.html" class="menu-item">Socials<span class="menu-desc">Connect with the community</span></a>
+        </div>
+    </div>
+</header>
+
+<div class="watch-container">
+    <div class="primary-content">
+        <div class="player-wrapper" id="mainPlayerContainer">
+            </div>
+
+        <div class="main-info">
+            <h1 class="main-title" id="mainVideoTitle">Loading Video...</h1>
+            
+            <div class="main-meta-row">
+                <div class="main-channel-info">
+                    <div class="channel-avatar" id="mainChannelAvatar">?</div>
+                    <div class="channel-details">
+                        <h4 id="mainChannelName">osu! Iraq</h4>
+                        <p>Supabase integration coming soon</p>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="action-btn">
+                        <svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"/></svg>
+                        Like
+                    </button>
+                    <button class="action-btn">
+                        <svg viewBox="0 0 24 24"><path d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"/></svg>
+                        Share
+                    </button>
+                    <button class="action-btn">
+                        <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"/></svg>
+                        Save
+                    </button>
+                </div>
+            </div>
+
+            <div class="main-description">
+                <span class="publish-date" id="mainVideoDate">Published Date</span>
+                <p>Welcome to osu! Iraq Today videos. Click around the playlist on the right to discover more community highlights, scores, and archives.</p>
+            </div>
+        </div>
+
+        <div class="comments-section">
+            <div class="comments-header">
+                <span>0 Comments</span>
+                <span style="font-size: 12px; color: var(--osu-pink); font-weight: normal;">Powered by Supabase (Coming Soon)</span>
+            </div>
+            
+            <div class="comment-input-area">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--osu-pink); display: flex; align-items: center; justify-content: center; font-weight: bold; color: #111;">U</div>
+                <div class="comment-input-wrapper">
+                    <input type="text" placeholder="Add a public comment..." disabled>
+                </div>
+            </div>
+
+            <div id="commentsList">
+                <div class="dummy-comment">
+                    <div class="avatar"></div>
+                    <div class="content">
+                        <h5>System <span>Just now</span></h5>
+                        <p>Comments and interactions will be enabled in a future update once Supabase is connected!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-controls">
+            <div class="search-wrap">
+                <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
+                </svg>
+                <input type="text" id="searchInput" class="search-input" placeholder="Search playlist...">
+            </div>
+            <div class="filters-row" id="filterContainer">
+                </div>
+        </div>
+
+        <div class="sidebar-list" id="sidebarVideoGrid">
+            <div style="text-align:center; padding: 40px; color: var(--text-muted);">Loading playlist...</div>
+        </div>
+    </div>
+</div>
+
+<div id="progress-container" onclick="scrollToTop()">
+    <svg class="progress-svg" width="56" height="56" viewBox="0 0 60 60">
+        <circle class="progress-background" cx="30" cy="30" r="26"></circle>
+        <circle id="progress-bar" cx="30" cy="30" r="26"></circle>
+    </svg>
+    <div class="arrow-up">▲</div>
+</div>
+
+<footer>
+    <div style="max-width:900px; margin:0 auto;">
+        <h3>osu! Iraq Today</h3>
+        <p>Built with ❤️ for the Iraqi osu! Community</p>
+        <hr>
+        <div class="footer-links">
+            <a href="https://github.com/Ruybic/Test">GitHub</a>
+            <a href="#discord">Discord</a>
+            <a href="OIT_Document.html">Documentation</a>
+        </div>
+        <hr>
+        <p class="footer-meta">
+            A <strong>non-commercial</strong> osu! community project | Data via <strong>osu! API v2</strong><br>
+            © 2026 Ruybic • Commit: <span id="footer-commit">7472e02</span><br>
+            Last Update: <span id="footer-time">2026-02-27 04:00 UTC</span>
+        </p>
+    </div>
+</footer>
+
+<script>
+// ─── MENU ───
+const menuBtn  = document.getElementById('menuBtn');
+const dropdown = document.getElementById('myDropdown');
+menuBtn.onclick = (e) => { dropdown.classList.toggle('show'); e.stopPropagation(); };
+window.onclick  = (e) => { if (!e.target.matches('.dropbtn')) dropdown.classList.remove('show'); };
+
+// ─── STATE ───
+let ALL_VIDEOS = [];
+let activeChannel = 'All';
+let searchTerm = '';
+let currentlyPlayingId = null;
+
+// ─── INIT ───
+async function init() {
+    const grid = document.getElementById('sidebarVideoGrid');
+    try {
+        // LOCAL path — matches your actual repo structure
+        const res = await fetch('data/video_database.json?t=' + Date.now());
+        if (!res.ok) throw new Error(`Could not load video database (HTTP ${res.status})`);
+        const data = await res.json();
+
+        // Filter and sort
+        ALL_VIDEOS = data
+            .filter(v => v.status && v.status.toLowerCase() === 'yes')
+            .sort((a, b) => (a.sort_index ?? 999) - (b.sort_index ?? 999));
+
+        setupFilters();
+        renderSidebarVideos();
+
+        // Auto-load the first video into the main player
+        if (ALL_VIDEOS.length > 0) {
+            loadMainVideo(ALL_VIDEOS[0], false); // false = don't autoplay on initial page load
+        }
+
+    } catch(err) {
+        console.error(err);
+        grid.innerHTML = `<div style="text-align:center; padding: 20px; color:var(--accent-red)">
+            ⚠️ <strong>Load Error</strong><br>${err.message}
+        </div>`;
+    }
+}
+
+// ─── MAIN PLAYER LOGIC ───
+function loadMainVideo(video, autoplay = true) {
+    currentlyPlayingId = video.id;
+    
+    // Update Iframe
+    const playerContainer = document.getElementById('mainPlayerContainer');
+    const autoParam = autoplay ? '?autoplay=1' : '?autoplay=0';
+    playerContainer.innerHTML = `<iframe src="https://www.youtube.com/embed/${video.id}${autoParam}"
+        allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+
+    // Update Meta
+    document.getElementById('mainVideoTitle').textContent = video.title || 'Untitled';
+    document.getElementById('mainChannelName').textContent = video.channel || 'Unknown Channel';
+    
+    // Avatar Initial
+    const channelInitial = (video.channel && video.channel.length > 0) ? video.channel.charAt(0).toUpperCase() : '?';
+    document.getElementById('mainChannelAvatar').textContent = channelInitial;
+
+    // Date
+    const isArchived = !video.published || video.published === '2000-01-01';
+    document.getElementById('mainVideoDate').textContent = isArchived ? 'Archive Retrieval' : `Published: ${video.published}`;
+
+    // Re-render sidebar to update the "playing" highlight status
+    renderSidebarVideos();
+    
+    // Smooth scroll to top of player on mobile
+    if(window.innerWidth <= 1024) {
+        document.querySelector('.watch-container').scrollIntoView({behavior: 'smooth'});
+    }
+}
+
+// ─── FILTERS ───
+function setupFilters() {
+    const container = document.getElementById('filterContainer');
+    const channels = ['All', ...new Set(ALL_VIDEOS.map(v => v.channel).filter(Boolean))];
+    container.innerHTML = '';
+    channels.forEach(ch => {
+        const btn = document.createElement('button');
+        btn.className = 'filter-btn' + (ch === 'All' ? ' active' : '');
+        btn.textContent = ch;
+        btn.onclick = () => {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeChannel = ch;
+            renderSidebarVideos();
+        };
+        container.appendChild(btn);
+    });
+}
+
+// ─── RENDER SIDEBAR ───
+function renderSidebarVideos() {
+    const grid = document.getElementById('sidebarVideoGrid');
+
+    // Filter Logic
+    let list = activeChannel === 'All'
+        ? [...ALL_VIDEOS]
+        : ALL_VIDEOS.filter(v => v.channel === activeChannel);
+
+    if (searchTerm) {
+        const q = searchTerm.toLowerCase();
+        list = list.filter(v =>
+            (v.title || '').toLowerCase().includes(q) ||
+            (v.channel || '').toLowerCase().includes(q)
+        );
+    }
+
+    if (!list.length) {
+        grid.innerHTML = '<div style="text-align:center; padding:20px; color:var(--text-muted);">No videos found.</div>';
+        return;
+    }
+
+    grid.innerHTML = '';
+
+    list.forEach((video) => {
+        const isArchived = !video.published || video.published === '2000-01-01';
+        const displayDate = isArchived ? 'Archived' : video.published;
+        const isPlaying = currentlyPlayingId === video.id;
+
+        const card = document.createElement('div');
+        card.className = 'side-video-card' + (isPlaying ? ' playing' : '');
+        
+        card.onclick = () => loadMainVideo(video, true);
+
+        card.innerHTML = `
+            <div class="side-thumb">
+                <img src="https://img.youtube.com/vi/${video.id}/mqdefault.jpg" alt="${video.title || ''}" onerror="this.src='https://img.youtube.com/vi/${video.id}/default.jpg'">
+                ${isArchived ? `<div class="archived-badge">ARCHIVED</div>` : ''}
+            </div>
+            <div class="side-info">
+                <div class="side-title" title="${video.title || ''}">${video.title || 'Untitled'}</div>
+                <div class="side-channel">${video.channel || ''}</div>
+                <div class="side-date">${displayDate}</div>
+            </div>
+        `;
+
+        grid.appendChild(card);
+    });
+}
+
+// ─── SEARCH EVENT ───
+document.getElementById('searchInput').addEventListener('input', e => {
+    searchTerm = e.target.value.trim();
+    renderSidebarVideos();
+});
+
+// ─── SCROLL PROGRESS ───
+const progressEl  = document.getElementById('progress-container');
+const progressBar = document.getElementById('progress-bar');
+const circumference = 163.3;
+
+window.addEventListener('scroll', () => {
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollMax = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const pct = scrollMax > 0 ? scrollTop / scrollMax : 0;
+    progressBar.style.strokeDashoffset = circumference * (1 - pct);
+    const show = scrollTop > 150;
+    progressEl.style.display = show ? 'flex' : 'none';
+    progressEl.style.opacity = show ? '1' : '0';
+});
+
+function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+
+// ─── FLOATING TRIANGLES (Unchanged) ───
+(function() {
+    const canvas = document.getElementById('tri-canvas');
+    const ctx    = canvas.getContext('2d');
+    let W, H;
+    function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+    resize(); window.addEventListener('resize', resize);
+
+    function mkTri() {
+        const size     = 18 + Math.random() * 48;
+        const x        = Math.random() * W;
+        const startY   = H + size + Math.random() * 200;
+        const speed    = 0.25 + Math.random() * 0.45;
+        const rotSpeed = (Math.random() - 0.5) * 0.006;
+        const angle    = Math.random() * Math.PI * 2;
+        const hue      = Math.random() < 0.6 ? 330 + Math.random() * 20 : 270 + Math.random() * 30;
+        const alpha    = 0.04 + Math.random() * 0.10;
+        return { x, y: startY, size, speed, rotSpeed, angle, hue, alpha };
+    }
+
+    const tris = [];
+    for (let i = 0; i < 22; i++) {
+        const t = mkTri(); t.y = Math.random() * (H + 400) - 200;
+        tris.push(t);
+    }
+
+    function drawTri(t, op) {
+        ctx.save();
+        ctx.translate(t.x, t.y); ctx.rotate(t.angle);
+        ctx.beginPath();
+        const s = t.size;
+        ctx.moveTo(0, -s * 0.6);
+        ctx.lineTo(s * 0.52, s * 0.38);
+        ctx.lineTo(-s * 0.52, s * 0.38);
+        ctx.closePath();
+        ctx.strokeStyle = `hsla(${t.hue},80%,70%,${op})`; ctx.lineWidth = 1.2; ctx.stroke();
+        ctx.fillStyle   = `hsla(${t.hue},70%,60%,${op * 0.18})`; ctx.fill();
+        ctx.restore();
+    }
+
+    function animate() {
+        ctx.clearRect(0, 0, W, H);
+        const fadeZone = H * 0.18;
+        for (let i = 0; i < tris.length; i++) {
+            const t = tris[i];
+            t.y -= t.speed; t.angle += t.rotSpeed;
+            let op = t.alpha;
+            const fromBottom = (H + 60) - t.y;
+            if (fromBottom < 120) op *= fromBottom / 120;
+            if (t.y < fadeZone)   op *= t.y / fadeZone;
+            if (op > 0.002) drawTri(t, op);
+            if (t.y < -t.size * 2) tris[i] = mkTri();
+        }
+        requestAnimationFrame(animate);
+    }
+    animate();
+})();
+
+// ─── RUN ───
+init();
+</script>
+</body>
+</html>

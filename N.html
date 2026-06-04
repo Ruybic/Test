@@ -451,29 +451,42 @@
         .footer-meta span { color: var(--osu-pink); font-family: monospace; }
 
         /* ─── NEW: MASCOT STYLING ─── */
-        .site-mascot {
-            position: fixed;
-            bottom: 0;
-            left: 32px;
-            width: 140px; /* Adjust size based on design specifications */
-            height: auto;
-            z-index: 999;
-            pointer-events: none; /* Prevents blocking clicks/highlights behind it */
-            animation: mascotFloat 4s ease-in-out infinite;
-            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
-        }
+/* ─── RESPONSIVE MASCOT STYLING ─── */
+.site-mascot {
+    position: fixed;
+    bottom: 0;
+    left: 20px;
+    width: 130px; 
+    z-index: 999;
+    pointer-events: none; /* Allows clicking elements behind the mascot */
+    animation: mascotFloat 4s ease-in-out infinite;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.6));
+    transition: all 0.3s ease;
+}
 
-        @keyframes mascotFloat {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-12px) rotate(1deg); }
-        }
+@keyframes mascotFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(1.5deg); }
+}
 
-        /* ─── RESPONSIVE ─── */
-        @media (max-width: 1340px) {
-            /* Hide fixed mascot on mid-to-small screens to avoid text overlaps */
-            .site-mascot { display: none; } 
-        }
+/* Tablet Optimization (Matches your current landscape view) */
+@media (max-width: 1340px) {
+    .site-mascot {
+        width: 85px;       /* Shrinks down smoothly so it fits the narrow margin */
+        left: 10px;        /* Tucks closer to the edge */
+        opacity: 0.4;      /* Blends beautifully with the background triangles so text stays readable */
+    }
+    .site-mascot:hover {
+        opacity: 1;        /* Lights up cleanly if hovered */
+    }
+}
 
+/* Mobile Safety Guardrail */
+@media (max-width: 1024px) {
+    .site-mascot { 
+        display: none;     /* Hides cleanly once layout stacks into one column */
+    }
+}
         @media (max-width: 1024px) {
             .watch-container { grid-template-columns: 1fr; }
             .sidebar { margin-top: 20px; }

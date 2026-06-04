@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRT MONITOR SIMULATOR</title>
+    <style>
+        /* 1. THE GLASS SCREEN AND CRT CURVATURE */
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #050000;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* This container uses a subtle radial gradient to squeeze the corners */
+        .crt-screen {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: #0a0202;
+            padding: 40px;
+            box-sizing: border-box;
+            
+            /* The secret sauce: A heavy inner shadow that replicates the curved bezel of a tube TV */
+            box-shadow: inset 0 0 140px rgba(0, 0, 0, 1),
+                        inset 0 0 40px rgba(0, 255, 51, 0.15);
+            
+            /* A slight pulse to simulate screen phosphors warming up */
+            animation: text-flicker 0.15s infinite;
+        }
+
+        /* 2. THE MOVING SCANLINES OVERLAY */
+        .crt-screen::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.4) 50%), 
+                        linear-gradient(90deg, rgba(255, 0, 0, 0.05), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.05));
+            z-index: 10;
+            background-size: 100% 5px, 6px 100%; /* The size of the TV pixel grid */
+            pointer-events: none;
+        }
+
+        /* 3. THE ROLLING LINE (The beam traveling up the screen) */
+        .crt-screen::after {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(
+                to bottom,
+                rgba(255,255,255,0) 0%,
+                rgba(0, 255, 51, 0.04) 10%,
+                rgba(0, 255, 51, 0.1) 50%,
+                rgba(0, 255, 51, 0.04) 90%,
+                rgba(255,255,255,0) 100%
+            );
+            z-index: 11;
+            height: 30vh; /* Thickness of the rolling beam */
+            pointer-events: none;
+            animation: roll-up 6s infinite linear;
+        }
+
+        /* 4. THE INTERIOR CONTENT (Green Matrix Theme) */
+        .terminal-content {
+            color: #00ff33;
+            text-shadow: 0 0 8px rgba(0, 255, 51, 0.8), 0 0 2px rgba(0, 255, 51, 1);
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+        }
+
+        .glitch-text {
+            font-weight: bold;
+            font-size: 2rem;
+            color: #fff;
+            text-shadow: -3px 0 #ff0033, 3px 0 #00ff33;
+            margin-bottom: 20px;
+        }
+
+        /* 5. EFFECT ANIMATIONS */
+        @keyframes roll-up {
+            0% {
+                transform: translateY(100vh); /* Start off-screen at bottom */
+            }
+            100% {
+                transform: translateY(-30vh); /* Travel all the way past the top */
+            }
+        }
+
+        @keyframes text-flicker {
+            0% { opacity: 0.99; }
+            50% { opacity: 1; }
+            100% { opacity: 0.98; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="crt-screen">
+        <div class="terminal-content">
+            <div class="glitch-text">TERMINAL_ONLINE</div>
+            <p>> LOADING OS ENVIRONMENT...</p>
+            <p>> CONNECTING TO LOCALHOST...</p>
+            <p>> INTEGRITY CHECK: <span style="color: #ff0033;">COMPROMISED</span></p>
+            <p>> SCANNING DISPLAY REFRESH RATE...</p>
+            <br>
+            <p>> Notice how the dark vignette around the edges pushes the text inward? That mimics the curved glass of an old Cathode-Ray Tube monitor. The faint bar traveling up the screen simulates the analog vertical hold frequency.</p>
+        </div>
+    </div>
+
+</body>
+</html>

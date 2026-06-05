@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 97,
-    "longest": 97,
-    "last_updated": "2026-06-03"
+    "current": 98,
+    "longest": 98,
+    "last_updated": "2026-06-04"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -29144,6 +29144,297 @@
         "title": "Forest / Nature Area",
         "cover": "https://assets.ppy.sh/beatmaps/2557824/covers/card.jpg?1780242353",
         "unique_players": 27
+      }
+    },
+    "2026-06-04": {
+      "total_scores": 528,
+      "peak_hour_baghdad": 22,
+      "top_grinder": {
+        "user": "i9be",
+        "user_id": 35359675,
+        "count": 100,
+        "scores": [
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6813114001,
+            "rank": "B",
+            "accuracy": 0.8697530864197531,
+            "pp": 9.7585,
+            "mods": [],
+            "combo": 317,
+            "created_at": "2026-06-03T22:23:31Z",
+            "beatmapset": {
+              "id": 713926,
+              "title": "Doki-Doki",
+              "cover": "https://assets.ppy.sh/beatmaps/713926/covers/card.jpg?1650663546",
+              "stars": 2.61207
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6813103491,
+            "rank": "C",
+            "accuracy": 0.8137755102040817,
+            "pp": 7.46873,
+            "mods": [],
+            "combo": 225,
+            "created_at": "2026-06-03T22:20:53Z",
+            "beatmapset": {
+              "id": 227234,
+              "title": "Evanescent",
+              "cover": "https://assets.ppy.sh/beatmaps/227234/covers/card.jpg?1727887474",
+              "stars": 2.45352
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6813092320,
+            "rank": "A",
+            "accuracy": 0.900523560209424,
+            "pp": 7.70434,
+            "mods": [],
+            "combo": 372,
+            "created_at": "2026-06-03T22:18:04Z",
+            "beatmapset": {
+              "id": 371128,
+              "title": "Cold Green Eyes ft. Roos Denayer",
+              "cover": "https://assets.ppy.sh/beatmaps/371128/covers/card.jpg?1650634565",
+              "stars": 2.24011
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6813080897,
+            "rank": "B",
+            "accuracy": 0.9070258848388801,
+            "pp": 25.2147,
+            "mods": [],
+            "combo": 322,
+            "created_at": "2026-06-03T22:15:11Z",
+            "beatmapset": {
+              "id": 941085,
+              "title": "Our Story",
+              "cover": "https://assets.ppy.sh/beatmaps/941085/covers/card.jpg?1631511654",
+              "stars": 3.68471
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6813060188,
+            "rank": "S",
+            "accuracy": 0.9621212121212122,
+            "pp": 16.8314,
+            "mods": [],
+            "combo": 474,
+            "created_at": "2026-06-03T22:09:57Z",
+            "beatmapset": {
+              "id": 2127958,
+              "title": "Nevermind",
+              "cover": "https://assets.ppy.sh/beatmaps/2127958/covers/card.jpg?1741800283",
+              "stars": 2.54481
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6813038104,
+            "rank": "B",
+            "accuracy": 0.8674698795180723,
+            "pp": 20.856,
+            "mods": [],
+            "combo": 177,
+            "created_at": "2026-06-03T22:04:31Z",
+            "beatmapset": {
+              "id": 361740,
+              "title": "Get Jinxed",
+              "cover": "https://assets.ppy.sh/beatmaps/361740/covers/card.jpg?1645788409",
+              "stars": 3.43677
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6813027569,
+            "rank": "C",
+            "accuracy": 0.7655622489959839,
+            "pp": 10.2853,
+            "mods": [
+              "HD"
+            ],
+            "combo": 86,
+            "created_at": "2026-06-03T22:02:02Z",
+            "beatmapset": {
+              "id": 361740,
+              "title": "Get Jinxed",
+              "cover": "https://assets.ppy.sh/beatmaps/361740/covers/card.jpg?1645788409",
+              "stars": 3.43677
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6813006538,
+            "rank": "A",
+            "accuracy": 0.873253493013972,
+            "pp": 7.819,
+            "mods": [
+              "HR",
+              "DT"
+            ],
+            "combo": 448,
+            "created_at": "2026-06-03T21:56:58Z",
+            "beatmapset": {
+              "id": 221860,
+              "title": "Can You Feel My Heart",
+              "cover": "https://assets.ppy.sh/beatmaps/221860/covers/card.jpg?1650628573",
+              "stars": 1.68939
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6812994045,
+            "rank": "C",
+            "accuracy": 0.7480314960629921,
+            "pp": 18.5945,
+            "mods": [],
+            "combo": 73,
+            "created_at": "2026-06-03T21:54:01Z",
+            "beatmapset": {
+              "id": 527431,
+              "title": "Gravity Falls Theme Song",
+              "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+              "stars": 3.8861
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6812987656,
+            "rank": "C",
+            "accuracy": 0.7952069716775599,
+            "pp": 28.0436,
+            "mods": [],
+            "combo": 51,
+            "created_at": "2026-06-03T21:52:33Z",
+            "beatmapset": {
+              "id": 527431,
+              "title": "Gravity Falls Theme Song",
+              "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+              "stars": 4.43427
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6812964890,
+            "rank": "C",
+            "accuracy": 0.7913385826771654,
+            "pp": 21.2528,
+            "mods": [],
+            "combo": 81,
+            "created_at": "2026-06-03T21:47:15Z",
+            "beatmapset": {
+              "id": 527431,
+              "title": "Gravity Falls Theme Song",
+              "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+              "stars": 3.8861
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6812961229,
+            "rank": "C",
+            "accuracy": 0.7939632545931758,
+            "pp": 21.1626,
+            "mods": [],
+            "combo": 106,
+            "created_at": "2026-06-03T21:46:24Z",
+            "beatmapset": {
+              "id": 527431,
+              "title": "Gravity Falls Theme Song",
+              "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+              "stars": 3.8861
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6812957597,
+            "rank": "C",
+            "accuracy": 0.7650918635170604,
+            "pp": 22.0037,
+            "mods": [],
+            "combo": 48,
+            "created_at": "2026-06-03T21:45:33Z",
+            "beatmapset": {
+              "id": 527431,
+              "title": "Gravity Falls Theme Song",
+              "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+              "stars": 3.8861
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6812950887,
+            "rank": "S",
+            "accuracy": 0.945906432748538,
+            "pp": 31.855,
+            "mods": [],
+            "combo": 190,
+            "created_at": "2026-06-03T21:44:01Z",
+            "beatmapset": {
+              "id": 527431,
+              "title": "Gravity Falls Theme Song",
+              "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+              "stars": 3.28078
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6812947267,
+            "rank": "A",
+            "accuracy": 0.9444444444444444,
+            "pp": 28.6332,
+            "mods": [],
+            "combo": 145,
+            "created_at": "2026-06-03T21:43:11Z",
+            "beatmapset": {
+              "id": 527431,
+              "title": "Gravity Falls Theme Song",
+              "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+              "stars": 3.28078
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Gravity Falls Theme Song",
+        "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+        "unique_players": 56
       }
     }
   }

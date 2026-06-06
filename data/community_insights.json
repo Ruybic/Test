@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 98,
-    "longest": 98,
-    "last_updated": "2026-06-04"
+    "current": 99,
+    "longest": 99,
+    "last_updated": "2026-06-05"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -29435,6 +29435,298 @@
         "title": "Gravity Falls Theme Song",
         "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
         "unique_players": 56
+      }
+    },
+    "2026-06-05": {
+      "total_scores": 589,
+      "peak_hour_baghdad": 2,
+      "top_grinder": {
+        "user": "i9be",
+        "user_id": 35359675,
+        "count": 67,
+        "scores": [
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6818796686,
+            "rank": "C",
+            "accuracy": 0.7778993435448578,
+            "pp": 10.9188,
+            "mods": [],
+            "combo": 188,
+            "created_at": "2026-06-04T21:48:22Z",
+            "beatmapset": {
+              "id": 29157,
+              "title": "The Unforgiving",
+              "cover": "https://assets.ppy.sh/beatmaps/29157/covers/card.jpg?1650613247",
+              "stars": 3.37329
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6818638583,
+            "rank": "X",
+            "accuracy": 1,
+            "pp": 44.0908,
+            "mods": [],
+            "combo": 72,
+            "created_at": "2026-06-04T21:13:56Z",
+            "beatmapset": {
+              "id": 29157,
+              "title": "The Unforgiving",
+              "cover": "https://assets.ppy.sh/beatmaps/29157/covers/card.jpg?1650613247",
+              "stars": 2.87861
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6818634861,
+            "rank": "C",
+            "accuracy": 0.7956989247311828,
+            "pp": 10.5231,
+            "mods": [],
+            "combo": 23,
+            "created_at": "2026-06-04T21:13:10Z",
+            "beatmapset": {
+              "id": 29157,
+              "title": "The Unforgiving",
+              "cover": "https://assets.ppy.sh/beatmaps/29157/covers/card.jpg?1650613247",
+              "stars": 2.87861
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6818629581,
+            "rank": "S",
+            "accuracy": 0.967741935483871,
+            "pp": 29.3193,
+            "mods": [],
+            "combo": 72,
+            "created_at": "2026-06-04T21:12:03Z",
+            "beatmapset": {
+              "id": 29157,
+              "title": "The Unforgiving",
+              "cover": "https://assets.ppy.sh/beatmaps/29157/covers/card.jpg?1650613247",
+              "stars": 2.87861
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6818626289,
+            "rank": "A",
+            "accuracy": 0.9139784946236559,
+            "pp": 19.6884,
+            "mods": [],
+            "combo": 72,
+            "created_at": "2026-06-04T21:11:21Z",
+            "beatmapset": {
+              "id": 29157,
+              "title": "The Unforgiving",
+              "cover": "https://assets.ppy.sh/beatmaps/29157/covers/card.jpg?1650613247",
+              "stars": 2.87861
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6818623494,
+            "rank": "A",
+            "accuracy": 0.8709677419354839,
+            "pp": 16.8537,
+            "mods": [],
+            "combo": 72,
+            "created_at": "2026-06-04T21:10:44Z",
+            "beatmapset": {
+              "id": 29157,
+              "title": "The Unforgiving",
+              "cover": "https://assets.ppy.sh/beatmaps/29157/covers/card.jpg?1650613247",
+              "stars": 2.87861
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6818620340,
+            "rank": "A",
+            "accuracy": 0.9139784946236559,
+            "pp": 19.6884,
+            "mods": [],
+            "combo": 72,
+            "created_at": "2026-06-04T21:10:04Z",
+            "beatmapset": {
+              "id": 29157,
+              "title": "The Unforgiving",
+              "cover": "https://assets.ppy.sh/beatmaps/29157/covers/card.jpg?1650613247",
+              "stars": 2.87861
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6818614924,
+            "rank": "B",
+            "accuracy": 0.8575268817204301,
+            "pp": 16.2949,
+            "mods": [],
+            "combo": 72,
+            "created_at": "2026-06-04T21:08:58Z",
+            "beatmapset": {
+              "id": 29157,
+              "title": "The Unforgiving",
+              "cover": "https://assets.ppy.sh/beatmaps/29157/covers/card.jpg?1650613247",
+              "stars": 2.87861
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6818611918,
+            "rank": "B",
+            "accuracy": 0.8387096774193549,
+            "pp": 15.6476,
+            "mods": [],
+            "combo": 72,
+            "created_at": "2026-06-04T21:08:20Z",
+            "beatmapset": {
+              "id": 29157,
+              "title": "The Unforgiving",
+              "cover": "https://assets.ppy.sh/beatmaps/29157/covers/card.jpg?1650613247",
+              "stars": 2.87861
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6818608881,
+            "rank": "C",
+            "accuracy": 0.8467741935483871,
+            "pp": 13.1846,
+            "mods": [],
+            "combo": 52,
+            "created_at": "2026-06-04T21:07:41Z",
+            "beatmapset": {
+              "id": 29157,
+              "title": "The Unforgiving",
+              "cover": "https://assets.ppy.sh/beatmaps/29157/covers/card.jpg?1650613247",
+              "stars": 2.87861
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6818605857,
+            "rank": "D",
+            "accuracy": 0.6048387096774194,
+            "pp": 11.1435,
+            "mods": [],
+            "combo": 72,
+            "created_at": "2026-06-04T21:07:03Z",
+            "beatmapset": {
+              "id": 29157,
+              "title": "The Unforgiving",
+              "cover": "https://assets.ppy.sh/beatmaps/29157/covers/card.jpg?1650613247",
+              "stars": 2.87861
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6818602569,
+            "rank": "C",
+            "accuracy": 0.7404314544189283,
+            "pp": 11.9701,
+            "mods": [],
+            "combo": 118,
+            "created_at": "2026-06-04T21:06:20Z",
+            "beatmapset": {
+              "id": 29157,
+              "title": "The Unforgiving",
+              "cover": "https://assets.ppy.sh/beatmaps/29157/covers/card.jpg?1650613247",
+              "stars": 3.96631
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6817734881,
+            "rank": "B",
+            "accuracy": 0.8282828282828283,
+            "pp": 6.56359,
+            "mods": [],
+            "combo": 142,
+            "created_at": "2026-06-04T18:23:46Z",
+            "beatmapset": {
+              "id": 81653,
+              "title": "The Super Mario Bros. Super Show!",
+              "cover": "https://assets.ppy.sh/beatmaps/81653/covers/card.jpg?1650615905",
+              "stars": 2.17667
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6817724604,
+            "rank": "C",
+            "accuracy": 0.7192982456140351,
+            "pp": 11.5951,
+            "mods": [
+              "HR",
+              "DT"
+            ],
+            "combo": 37,
+            "created_at": "2026-06-04T18:21:56Z",
+            "beatmapset": {
+              "id": 8393,
+              "title": "Marisa Spark",
+              "cover": "https://assets.ppy.sh/beatmaps/8393/covers/card.jpg?1622026585",
+              "stars": 2.21289
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6817722510,
+            "rank": "C",
+            "accuracy": 0.7631578947368421,
+            "pp": 9.86248,
+            "mods": [
+              "HR",
+              "DT"
+            ],
+            "combo": 20,
+            "created_at": "2026-06-04T18:21:33Z",
+            "beatmapset": {
+              "id": 8393,
+              "title": "Marisa Spark",
+              "cover": "https://assets.ppy.sh/beatmaps/8393/covers/card.jpg?1622026585",
+              "stars": 2.21289
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "I Don't Know (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+        "unique_players": 19
       }
     }
   }

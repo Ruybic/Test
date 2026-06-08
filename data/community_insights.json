@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 100,
-    "longest": 100,
-    "last_updated": "2026-06-06"
+    "current": 101,
+    "longest": 101,
+    "last_updated": "2026-06-07"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -30017,6 +30017,294 @@
         "title": "Amazing Horse",
         "cover": "https://assets.ppy.sh/beatmaps/54631/covers/card.jpg?1645779212",
         "unique_players": 25
+      }
+    },
+    "2026-06-07": {
+      "total_scores": 433,
+      "peak_hour_baghdad": 22,
+      "top_grinder": {
+        "user": "skiler1",
+        "user_id": 31252345,
+        "count": 80,
+        "scores": [
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6832042238,
+            "rank": "B",
+            "accuracy": 0.9015151515151515,
+            "pp": 73.2231,
+            "mods": [],
+            "combo": 50,
+            "created_at": "2026-06-07T00:22:35Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.2789
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6832039714,
+            "rank": "A",
+            "accuracy": 0.9141414141414141,
+            "pp": 72.8115,
+            "mods": [],
+            "combo": 38,
+            "created_at": "2026-06-07T00:21:53Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.2789
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6832035767,
+            "rank": "A",
+            "accuracy": 0.9217171717171717,
+            "pp": 93.8797,
+            "mods": [],
+            "combo": 110,
+            "created_at": "2026-06-07T00:20:48Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.2789
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6832032330,
+            "rank": "C",
+            "accuracy": 0.8048780487804879,
+            "pp": 43.7735,
+            "mods": [],
+            "combo": 82,
+            "created_at": "2026-06-07T00:19:51Z",
+            "beatmapset": {
+              "id": 1028594,
+              "title": "Natsuzora Yell (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1028594/covers/card.jpg?1650684669",
+              "stars": 4.97824
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6831998010,
+            "rank": "A",
+            "accuracy": 0.9211111111111111,
+            "pp": 94.6086,
+            "mods": [
+              "HD"
+            ],
+            "combo": 248,
+            "created_at": "2026-06-07T00:10:32Z",
+            "beatmapset": {
+              "id": 2464474,
+              "title": "Cherry Pop (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2464474/covers/card.jpg?1763827557",
+              "stars": 5.62383
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6831991440,
+            "rank": "A",
+            "accuracy": 0.9522222222222222,
+            "pp": 115.593,
+            "mods": [],
+            "combo": 200,
+            "created_at": "2026-06-07T00:08:43Z",
+            "beatmapset": {
+              "id": 2464474,
+              "title": "Cherry Pop (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2464474/covers/card.jpg?1763827557",
+              "stars": 5.62383
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6831982062,
+            "rank": "A",
+            "accuracy": 0.9345238095238095,
+            "pp": 94.4945,
+            "mods": [],
+            "combo": 238,
+            "created_at": "2026-06-07T00:06:11Z",
+            "beatmapset": {
+              "id": 2464474,
+              "title": "Cherry Pop (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2464474/covers/card.jpg?1763827557",
+              "stars": 5.30029
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6831973899,
+            "rank": "A",
+            "accuracy": 0.9642857142857143,
+            "pp": 126.96,
+            "mods": [],
+            "combo": 260,
+            "created_at": "2026-06-07T00:03:59Z",
+            "beatmapset": {
+              "id": 2464474,
+              "title": "Cherry Pop (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2464474/covers/card.jpg?1763827557",
+              "stars": 5.30029
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6831968002,
+            "rank": "A",
+            "accuracy": 0.9523809523809523,
+            "pp": 100.81,
+            "mods": [],
+            "combo": 107,
+            "created_at": "2026-06-07T00:02:24Z",
+            "beatmapset": {
+              "id": 2464474,
+              "title": "Cherry Pop (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2464474/covers/card.jpg?1763827557",
+              "stars": 5.30029
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6831957808,
+            "rank": "B",
+            "accuracy": 0.8686131386861314,
+            "pp": 53.1099,
+            "mods": [],
+            "combo": 33,
+            "created_at": "2026-06-06T23:59:42Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.18535
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6831955280,
+            "rank": "B",
+            "accuracy": 0.8978102189781022,
+            "pp": 66.2859,
+            "mods": [],
+            "combo": 45,
+            "created_at": "2026-06-06T23:59:01Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.18535
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6831952273,
+            "rank": "A",
+            "accuracy": 0.9391727493917275,
+            "pp": 87.8445,
+            "mods": [],
+            "combo": 66,
+            "created_at": "2026-06-06T23:58:14Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.18535
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6831949484,
+            "rank": "B",
+            "accuracy": 0.8929440389294404,
+            "pp": 60.7832,
+            "mods": [],
+            "combo": 59,
+            "created_at": "2026-06-06T23:57:29Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.18535
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6831946524,
+            "rank": "A",
+            "accuracy": 0.9065656565656566,
+            "pp": 68.7635,
+            "mods": [],
+            "combo": 50,
+            "created_at": "2026-06-06T23:56:42Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.2789
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6831938265,
+            "rank": "C",
+            "accuracy": 0.8308080808080808,
+            "pp": 62.7143,
+            "mods": [],
+            "combo": 52,
+            "created_at": "2026-06-06T23:54:30Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.2789
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Cherry Pop (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2464474/covers/card.jpg?1763827557",
+        "unique_players": 19
       }
     }
   }

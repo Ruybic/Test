@@ -462,12 +462,12 @@
             padding: 8px 18px; border-radius: 8px; cursor: pointer; 
             font-family: 'Exo 2'; font-weight: 700; font-size: 13px;
             transition: all 0.2s; display: inline-flex; align-items: center; gap: 6px;
-        }
-        .page-btn:hover:not(:disabled) { 
-            background: rgba(255,102,170,0.15); 
-            border-color: var(--osu-pink);
-            transform: translateY(-1px);
-        }
+    
+.page-btn:hover:not(:disabled) { 
+    filter: brightness(1.15);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 102, 170, 0.3);
+}
         .page-btn:disabled { opacity: 0.25; cursor: not-allowed; }
         .page-info { 
             font-weight: 700; font-size: 13px; color: white; 

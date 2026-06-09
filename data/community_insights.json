@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 101,
-    "longest": 101,
-    "last_updated": "2026-06-07"
+    "current": 102,
+    "longest": 102,
+    "last_updated": "2026-06-08"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -30305,6 +30305,300 @@
         "title": "Cherry Pop (Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2464474/covers/card.jpg?1763827557",
         "unique_players": 19
+      }
+    },
+    "2026-06-08": {
+      "total_scores": 500,
+      "peak_hour_baghdad": 1,
+      "top_grinder": {
+        "user": "i9be",
+        "user_id": 35359675,
+        "count": 84,
+        "scores": [
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6838683620,
+            "rank": "C",
+            "accuracy": 0.8,
+            "pp": 14.7222,
+            "mods": [],
+            "combo": 233,
+            "created_at": "2026-06-08T01:48:01Z",
+            "beatmapset": {
+              "id": 2538196,
+              "title": "Yowamushi Vampire",
+              "cover": "https://assets.ppy.sh/beatmaps/2538196/covers/card.jpg?1779592438",
+              "stars": 3.59768
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6838672518,
+            "rank": "C",
+            "accuracy": 0.8156424581005587,
+            "pp": 10.2726,
+            "mods": [],
+            "combo": 140,
+            "created_at": "2026-06-08T01:44:26Z",
+            "beatmapset": {
+              "id": 2539885,
+              "title": "HARDSTYLE DRILL 2009 NOKIA ANGELZ 1.6 MUSDASAT MUJMADA",
+              "cover": "https://assets.ppy.sh/beatmaps/2539885/covers/card.jpg?1779990207",
+              "stars": 3.02971
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6838668253,
+            "rank": "C",
+            "accuracy": 0.7467411545623837,
+            "pp": 5.81928,
+            "mods": [],
+            "combo": 115,
+            "created_at": "2026-06-08T01:43:05Z",
+            "beatmapset": {
+              "id": 2539885,
+              "title": "HARDSTYLE DRILL 2009 NOKIA ANGELZ 1.6 MUSDASAT MUJMADA",
+              "cover": "https://assets.ppy.sh/beatmaps/2539885/covers/card.jpg?1779990207",
+              "stars": 3.02971
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6838659625,
+            "rank": "C",
+            "accuracy": 0.7350427350427351,
+            "pp": 20.1441,
+            "mods": [],
+            "combo": 174,
+            "created_at": "2026-06-08T01:40:19Z",
+            "beatmapset": {
+              "id": 2513884,
+              "title": "overture",
+              "cover": "https://assets.ppy.sh/beatmaps/2513884/covers/card.jpg?1780611228",
+              "stars": 3.44535
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6838649065,
+            "rank": "C",
+            "accuracy": 0.8366013071895425,
+            "pp": 16.9431,
+            "mods": [],
+            "combo": 129,
+            "created_at": "2026-06-08T01:36:53Z",
+            "beatmapset": {
+              "id": 2537229,
+              "title": "Wagamama Dormir (feat. Suzushiro) (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2537229/covers/card.jpg?1780046091",
+              "stars": 3.72036
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6838642636,
+            "rank": "C",
+            "accuracy": 0.8431372549019608,
+            "pp": 24.3762,
+            "mods": [],
+            "combo": 235,
+            "created_at": "2026-06-08T01:34:51Z",
+            "beatmapset": {
+              "id": 2537229,
+              "title": "Wagamama Dormir (feat. Suzushiro) (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2537229/covers/card.jpg?1780046091",
+              "stars": 3.72036
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6838632291,
+            "rank": "C",
+            "accuracy": 0.7660130718954249,
+            "pp": 12.8241,
+            "mods": [],
+            "combo": 202,
+            "created_at": "2026-06-08T01:31:31Z",
+            "beatmapset": {
+              "id": 215681,
+              "title": "Grow Up (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/215681/covers/card.jpg?1780168725",
+              "stars": 3.51544
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6838622580,
+            "rank": "C",
+            "accuracy": 0.7355242566510172,
+            "pp": 14.5862,
+            "mods": [],
+            "combo": 142,
+            "created_at": "2026-06-08T01:28:22Z",
+            "beatmapset": {
+              "id": 2538334,
+              "title": "Gift of Magi (Game Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2538334/covers/card.jpg?1780171256",
+              "stars": 3.40562
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6838343854,
+            "rank": "B",
+            "accuracy": 0.8269230769230769,
+            "pp": 3.66211,
+            "mods": [
+              "HR",
+              "NC",
+              "FL"
+            ],
+            "combo": 84,
+            "created_at": "2026-06-08T00:01:21Z",
+            "beatmapset": {
+              "id": 2556198,
+              "title": "Six Seven",
+              "cover": "https://assets.ppy.sh/beatmaps/2556198/covers/card.jpg?1780609844",
+              "stars": 1.33464
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6838338222,
+            "rank": "B",
+            "accuracy": 0.8012820512820513,
+            "pp": 3.40219,
+            "mods": [
+              "HR",
+              "DT",
+              "FL"
+            ],
+            "combo": 83,
+            "created_at": "2026-06-07T23:59:40Z",
+            "beatmapset": {
+              "id": 2556198,
+              "title": "Six Seven",
+              "cover": "https://assets.ppy.sh/beatmaps/2556198/covers/card.jpg?1780609844",
+              "stars": 1.33464
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6838314140,
+            "rank": "S",
+            "accuracy": 0.965625,
+            "pp": 44.5608,
+            "mods": [],
+            "combo": 225,
+            "created_at": "2026-06-07T23:52:39Z",
+            "beatmapset": {
+              "id": 2556198,
+              "title": "Six Seven",
+              "cover": "https://assets.ppy.sh/beatmaps/2556198/covers/card.jpg?1780609844",
+              "stars": 3.37014
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6838307678,
+            "rank": "S",
+            "accuracy": 0.940625,
+            "pp": 36.7819,
+            "mods": [],
+            "combo": 225,
+            "created_at": "2026-06-07T23:50:47Z",
+            "beatmapset": {
+              "id": 2556198,
+              "title": "Six Seven",
+              "cover": "https://assets.ppy.sh/beatmaps/2556198/covers/card.jpg?1780609844",
+              "stars": 3.37014
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6838302841,
+            "rank": "B",
+            "accuracy": 0.9020833333333333,
+            "pp": 24.4893,
+            "mods": [],
+            "combo": 129,
+            "created_at": "2026-06-07T23:49:24Z",
+            "beatmapset": {
+              "id": 2556198,
+              "title": "Six Seven",
+              "cover": "https://assets.ppy.sh/beatmaps/2556198/covers/card.jpg?1780609844",
+              "stars": 3.37014
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6838290235,
+            "rank": "A",
+            "accuracy": 0.9198717948717948,
+            "pp": 25.9159,
+            "mods": [],
+            "combo": 433,
+            "created_at": "2026-06-07T23:45:44Z",
+            "beatmapset": {
+              "id": 2543717,
+              "title": "Submarine Youth (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2543717/covers/card.jpg?1780209055",
+              "stars": 3.21584
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6838284759,
+            "rank": "B",
+            "accuracy": 0.9185897435897435,
+            "pp": 20.386,
+            "mods": [],
+            "combo": 251,
+            "created_at": "2026-06-07T23:44:07Z",
+            "beatmapset": {
+              "id": 2543717,
+              "title": "Submarine Youth (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2543717/covers/card.jpg?1780209055",
+              "stars": 3.21584
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "The Super Mario Bros. Super Show!",
+        "cover": "https://assets.ppy.sh/beatmaps/81653/covers/card.jpg?1650615905",
+        "unique_players": 59
       }
     }
   }

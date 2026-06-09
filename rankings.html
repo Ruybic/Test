@@ -449,9 +449,16 @@
             display: flex; justify-content: center; align-items: center; 
             gap: 8px; padding: 12px 0;
         }
-        .page-btn {
-            background: transparent; color: var(--osu-pink); 
+.page-btn {
+            /* Changed from 'transparent' to 'var(--osu-pink)' */
+            background: var(--osu-pink); 
+            
+            /* Changed from 'var(--osu-pink)' to 'white' */
+            color: white; 
+            
+            /* The border can remain as is, or you can make it transparent */
             border: 1.5px solid rgba(255,102,170,0.4); 
+            
             padding: 8px 18px; border-radius: 8px; cursor: pointer; 
             font-family: 'Exo 2'; font-weight: 700; font-size: 13px;
             transition: all 0.2s; display: inline-flex; align-items: center; gap: 6px;

@@ -551,14 +551,22 @@
             background: rgba(255,102,170,0.12); color: white;
         }
         #notif-action:hover::before { transform: translateY(-50%) scaleY(1); }
-        #notif-action.notif-page-btn {
-            background: rgba(255,102,170,0.1);
-            color: var(--osu-pink);
+       #notif-action.notif-page-btn {
+            background: var(--osu-pink);
+            color: white;
+            border: 1.5px solid var(--osu-pink);
             font-weight: 800;
-            border: 1px solid rgba(255,102,170,0.2);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(255, 102, 170, 0.2);
+            transition: all 0.2s ease;
         }
         #notif-action.notif-page-btn:hover {
-            background: rgba(255,102,170,0.2);
+            filter: brightness(1.1);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(255, 102, 170, 0.35);
         }
         #notif-action.notif-page-btn::before { display: none; }
         #notif-action .notif-sub { 

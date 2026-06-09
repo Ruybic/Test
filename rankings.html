@@ -444,37 +444,52 @@
         }
         .ad-sub { color: #2a2a40; font-size: 11px; font-weight: 600; }
 
-        /* ─── PAGINATION ─── */
-        .pagination { 
-            display: flex; justify-content: center; align-items: center; 
-            gap: 8px; padding: 12px 0;
-        }
-.page-btn {
-            /* Changed from 'transparent' to 'var(--osu-pink)' */
-            background: var(--osu-pink); 
-            
-            /* Changed from 'var(--osu-pink)' to 'white' */
-            color: white; 
-            
-            /* The border can remain as is, or you can make it transparent */
-            border: 1.5px solid rgba(255,102,170,0.4); 
-            
-            padding: 8px 18px; border-radius: 8px; cursor: pointer; 
-            font-family: 'Exo 2'; font-weight: 700; font-size: 13px;
-            transition: all 0.2s; display: inline-flex; align-items: center; gap: 6px;
-    
-.page-btn:hover:not(:disabled) { 
-    background: var(--osu-pink-dark);
-    border-color: var(--osu-pink-dark);
-    transform: translateY(-1px);
+/* ─── PAGINATION ─── */
+.pagination { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 8px; 
+    padding: 12px 0;
 }
-        .page-btn:disabled { opacity: 0.25; cursor: not-allowed; }
-        .page-info { 
-            font-weight: 700; font-size: 13px; color: white; 
-            background: var(--dark-base); 
-            padding: 8px 16px; border-radius: 8px; 
-            border: 1px solid rgba(255,255,255,0.07);
-        }
+
+.page-btn {
+    background: var(--osu-pink); 
+    color: white; 
+    border: 1.5px solid var(--osu-pink); 
+    padding: 8px 18px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-family: 'Exo 2'; 
+    font-weight: 700; 
+    font-size: 13px;
+    transition: all 0.2s ease; 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 6px;
+    text-decoration: none; /* Fixes blue link text if used as <a> */
+}
+
+.page-btn:hover:not(:disabled) { 
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 102, 170, 0.3);
+}
+
+.page-btn:disabled { 
+    opacity: 0.25; 
+    cursor: not-allowed; 
+}
+
+.page-info { 
+    font-weight: 700; 
+    font-size: 13px; 
+    color: white; 
+    background: var(--dark-base); 
+    padding: 8px 16px; 
+    border-radius: 8px; 
+    border: 1px solid rgba(255,255,255,0.07);
+}
 
         /* ─── NOTIFICATION TOAST ─── */
         #notif-toast {

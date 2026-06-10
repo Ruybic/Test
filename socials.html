@@ -192,6 +192,14 @@
         .mini-title { font-size:12px; color:#ddd; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
         .mini-pp { font-size:11px; color:var(--osu-pink); font-weight:700; }
 
+        .mini-cover { width:36px; height:36px; border-radius:5px; object-fit:cover; flex-shrink:0; }
+        .mini-rank-badge { display:inline-flex; align-items:center; justify-content:center; font-size:10px; font-weight:800; width:18px; height:18px; border-radius:4px; background:#444; color:white; vertical-align:middle; }
+        .mini-rank-badge.r-S, .mini-rank-badge.r-SH { background:#ffd700; color:#000; }
+        .mini-rank-badge.r-A { background:#44cc44; color:#000; }
+        .mini-rank-badge.r-B { background:#4499ff; color:#fff; }
+        .mini-rank-badge.r-C { background:#ff9944; color:#fff; }
+        .mini-rank-badge.r-D { background:#ff4444; color:#fff; }
+
         footer { background-color: #1a1a1a; color: #ffffff; padding: 15px 10px 30px 10px; text-align: center; border-top: 4px solid #ff66aa; margin-top: auto; }
     </style>
 </head>
@@ -484,12 +492,13 @@ function renderUI(stats, streak) {
         scoreList.innerHTML = ''; 
         g.scores.sort((a, b) => (b.pp || 0) - (a.pp || 0)).slice(0, 5).forEach(score => {
             const title = score.beatmapset ? score.beatmapset.title : 'Unknown Map';
+            const cover = score.beatmapset ? (score.beatmapset.covers?.list || score.beatmapset.covers?.card || '') : '';
             scoreList.innerHTML += `
                 <a href="https://osu.ppy.sh/scores/osu/${score.id || score.score_id}" target="_blank" class="mini-card">
-                    <div class="mini-rank r-${score.rank}">${score.rank}</div>
+                    ${cover ? `<img src="${cover}" class="mini-cover" alt="">` : `<div class="mini-rank r-${score.rank}">${score.rank}</div>`}
                     <div class="mini-details">
                         <span class="mini-title">${title}</span>
-                        <span class="mini-pp">${score.pp ? Math.round(score.pp) + 'pp' : 'No PP'}</span>
+                        <span class="mini-pp">${score.pp ? Math.round(score.pp) + 'pp' : 'No PP'} &nbsp;<span class="mini-rank-badge r-${score.rank}">${score.rank}</span></span>
                     </div>
                 </a>
             `;
@@ -497,6 +506,22 @@ function renderUI(stats, streak) {
     } else {
         grinderContent.style.display = 'none';
         grinderEmpty.style.display = 'block';
+    }
+
+    // --- ACTIVITY CHART ---
+    const chartEl = document.getElementById('activity-chart');
+    chartEl.innerHTML = '';
+    const hourlyData = stats.hourly_activity || stats.scores_by_hour || {};
+    const maxVal = Math.max(...Object.values(hourlyData), 1);
+    for (let h = 0; h < 24; h++) {
+        const count = hourlyData[h] || hourlyData[String(h)] || 0;
+        const pct = Math.round((count / maxVal) * 100);
+        const timeLabel = formatAMPM(h);
+        chartEl.innerHTML += `
+            <div class="chart-bar-container">
+                <div class="chart-tooltip">${timeLabel}: ${count}</div>
+                <div class="chart-bar" style="height:${pct}%"></div>
+            </div>`;
     }
 }
 

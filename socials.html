@@ -179,6 +179,19 @@
         .cal-day.no-data { color: #444; cursor: default; }
         .cal-day.empty { background: transparent; cursor: default; }
 
+        /* --- MINI SCORE CARDS --- */
+        .mini-card { display:flex; align-items:center; gap:8px; padding:6px 8px; border-radius:7px; background:#25252e; text-decoration:none; transition:0.15s; border:1px solid transparent; }
+        .mini-card:hover { background:#3e3e4a; border-color:var(--osu-pink); }
+        .mini-rank { font-size:11px; font-weight:800; width:22px; height:22px; border-radius:5px; display:flex; align-items:center; justify-content:center; flex-shrink:0; background:#444; color:white; }
+        .r-S, .r-SH { background:#ffd700; color:#000; }
+        .r-A { background:#44cc44; color:#000; }
+        .r-B { background:#4499ff; color:#fff; }
+        .r-C { background:#ff9944; color:#fff; }
+        .r-D { background:#ff4444; color:#fff; }
+        .mini-details { display:flex; flex-direction:column; overflow:hidden; }
+        .mini-title { font-size:12px; color:#ddd; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+        .mini-pp { font-size:11px; color:var(--osu-pink); font-weight:700; }
+
         footer { background-color: #1a1a1a; color: #ffffff; padding: 15px 10px 30px 10px; text-align: center; border-top: 4px solid #ff66aa; margin-top: auto; }
     </style>
 </head>
@@ -280,7 +293,7 @@
             <div id="grinder-content">
                 <a href="#" target="_blank" id="g-link" class="link-wrapper">
                     <div class="grinder-profile">
-                        <img src="" class="grinder-avatar" id="g-avatar" alt="Avatar" style="display: none;">
+                        <img src="" class="grinder-avatar" id="g-avatar" alt="Avatar">
                         <div class="grinder-info">
                             <h3 id="g-name">Loading...</h3>
                             <p class="stats" id="g-count">-- submissions</p>
@@ -288,7 +301,7 @@
                         </div>
                     </div>
                 </a>
-                <div id="g-scores-list" style="margin-top:10px;"></div>
+                <div id="g-scores-list" style="margin-top:10px; max-height:160px; overflow-y:auto; display:flex; flex-direction:column; gap:4px;"></div>
             </div>
             <div id="grinder-empty" style="display:none; color:var(--text-muted); font-size:13px;">No data available.</div>
         </div>
@@ -469,7 +482,7 @@ function renderUI(stats, streak) {
 
         const scoreList = document.getElementById('g-scores-list');
         scoreList.innerHTML = ''; 
-        g.scores.sort((a, b) => (b.pp || 0) - (a.pp || 0)).forEach(score => {
+        g.scores.sort((a, b) => (b.pp || 0) - (a.pp || 0)).slice(0, 5).forEach(score => {
             const title = score.beatmapset ? score.beatmapset.title : 'Unknown Map';
             scoreList.innerHTML += `
                 <a href="https://osu.ppy.sh/scores/osu/${score.id || score.score_id}" target="_blank" class="mini-card">

@@ -1,0 +1,54 @@
+name: Iraqi Mapper Scan
+
+on:
+  schedule:
+    # Runs every Sunday at 00:00 UTC
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+    # Allows manual runs from the Actions tab
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history so rebase always has a base to work from
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24' # Updated to Node 24 to remove deprecation warnings
+
+      - name: Install Dependencies
+        run: npm install node-fetch
+
+      - name: Create Data Directory
+        run: mkdir -p data/mapping
+
+      - name: Run Mapper Scanner
+        env:
+          OSU_CLIENT_ID: ${{ secrets.OSU_CLIENT_ID }}
+          OSU_CLIENT_SECRET: ${{ secrets.OSU_CLIENT_SECRET }}
+        run: node mapping.js
+        timeout-minutes: 120
+
+      - name: Commit and Push Data
+        run: |
+          git config --global user.name "OIT Bot"
+          git config --global user.email "bot@osuiraq.today"
+          
+          # We add the whole directory to be safe, or specify the exact filename from the script
+          git add data/mapping/*.json
+          
+          # Check if there are changes, if so, commit and push
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "📊 Update Iraqi Mapper Database [skip ci]"
+            git pull --rebase origin main  # Absorb any concurrent pushes before pushing
+            git push
+          else
+            echo "No changes detected in the mapping database."
+          fi
+          

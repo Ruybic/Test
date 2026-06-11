@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 103,
-    "longest": 103,
-    "last_updated": "2026-06-09"
+    "current": 104,
+    "longest": 104,
+    "last_updated": "2026-06-10"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -30891,6 +30891,292 @@
         "title": "Maniac (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2464479/covers/card.jpg?1764663200",
         "unique_players": 31
+      }
+    },
+    "2026-06-10": {
+      "total_scores": 469,
+      "peak_hour_baghdad": 16,
+      "top_grinder": {
+        "user": "i9be",
+        "user_id": 35359675,
+        "count": 67,
+        "scores": [
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6846945925,
+            "rank": "C",
+            "accuracy": 0.7821067821067821,
+            "pp": 27.6105,
+            "mods": [],
+            "combo": 162,
+            "created_at": "2026-06-09T13:35:42Z",
+            "beatmapset": {
+              "id": 2525321,
+              "title": "Orchestra Boom",
+              "cover": "https://assets.ppy.sh/beatmaps/2525321/covers/card.jpg?1779136334",
+              "stars": 3.87504
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6846925211,
+            "rank": "C",
+            "accuracy": 0.801980198019802,
+            "pp": 12.237,
+            "mods": [],
+            "combo": 66,
+            "created_at": "2026-06-09T13:31:52Z",
+            "beatmapset": {
+              "id": 2518611,
+              "title": "bunni bunni ad, but it's bossa nova",
+              "cover": "https://assets.ppy.sh/beatmaps/2518611/covers/card.jpg?1774590431",
+              "stars": 3.01826
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6846921388,
+            "rank": "D",
+            "accuracy": 0.4950980392156863,
+            "pp": 14.9959,
+            "mods": [],
+            "combo": 58,
+            "created_at": "2026-06-09T13:31:10Z",
+            "beatmapset": {
+              "id": 2518611,
+              "title": "bunni bunni ad, but it's bossa nova",
+              "cover": "https://assets.ppy.sh/beatmaps/2518611/covers/card.jpg?1774590431",
+              "stars": 4.03872
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6846913374,
+            "rank": "D",
+            "accuracy": 0.6753875968992248,
+            "pp": 11.7196,
+            "mods": [],
+            "combo": 62,
+            "created_at": "2026-06-09T13:29:40Z",
+            "beatmapset": {
+              "id": 2254005,
+              "title": "Haruhi of The Sprite Tribe",
+              "cover": "https://assets.ppy.sh/beatmaps/2254005/covers/card.jpg?1738365476",
+              "stars": 3.5539
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6846793159,
+            "rank": "C",
+            "accuracy": 0.7782331511839709,
+            "pp": 22.178,
+            "mods": [],
+            "combo": 167,
+            "created_at": "2026-06-09T13:07:01Z",
+            "beatmapset": {
+              "id": 2453960,
+              "title": "Gin no Ishi",
+              "cover": "https://assets.ppy.sh/beatmaps/2453960/covers/card.jpg?1780337002",
+              "stars": 4.05078
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6846770679,
+            "rank": "C",
+            "accuracy": 0.792191435768262,
+            "pp": 19.6665,
+            "mods": [],
+            "combo": 238,
+            "created_at": "2026-06-09T13:02:39Z",
+            "beatmapset": {
+              "id": 2357503,
+              "title": "Kawaru Mirai",
+              "cover": "https://assets.ppy.sh/beatmaps/2357503/covers/card.jpg?1778750763",
+              "stars": 4.33167
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6846740063,
+            "rank": "C",
+            "accuracy": 0.7977430555555556,
+            "pp": 27.2951,
+            "mods": [],
+            "combo": 167,
+            "created_at": "2026-06-09T12:56:39Z",
+            "beatmapset": {
+              "id": 2501291,
+              "title": "Dirty Little Secret (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2501291/covers/card.jpg?1778805566",
+              "stars": 4.44788
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6846732888,
+            "rank": "C",
+            "accuracy": 0.8385416666666666,
+            "pp": 29.8634,
+            "mods": [],
+            "combo": 197,
+            "created_at": "2026-06-09T12:55:15Z",
+            "beatmapset": {
+              "id": 2501291,
+              "title": "Dirty Little Secret (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2501291/covers/card.jpg?1778805566",
+              "stars": 4.44788
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6846663222,
+            "rank": "C",
+            "accuracy": 0.8287795992714025,
+            "pp": 20.3627,
+            "mods": [],
+            "combo": 235,
+            "created_at": "2026-06-09T12:41:36Z",
+            "beatmapset": {
+              "id": 2453960,
+              "title": "Gin no Ishi",
+              "cover": "https://assets.ppy.sh/beatmaps/2453960/covers/card.jpg?1780337002",
+              "stars": 4.05078
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6846652603,
+            "rank": "C",
+            "accuracy": 0.8101092896174863,
+            "pp": 21.7849,
+            "mods": [],
+            "combo": 168,
+            "created_at": "2026-06-09T12:39:30Z",
+            "beatmapset": {
+              "id": 2453960,
+              "title": "Gin no Ishi",
+              "cover": "https://assets.ppy.sh/beatmaps/2453960/covers/card.jpg?1780337002",
+              "stars": 4.05078
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6846477957,
+            "rank": "A",
+            "accuracy": 0.9708333333333333,
+            "pp": 41.7965,
+            "mods": [],
+            "combo": 111,
+            "created_at": "2026-06-09T12:02:59Z",
+            "beatmapset": {
+              "id": 2556198,
+              "title": "Six Seven",
+              "cover": "https://assets.ppy.sh/beatmaps/2556198/covers/card.jpg?1780609844",
+              "stars": 3.37014
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6846465638,
+            "rank": "C",
+            "accuracy": 0.8453389830508474,
+            "pp": 18.0337,
+            "mods": [],
+            "combo": 155,
+            "created_at": "2026-06-09T12:00:18Z",
+            "beatmapset": {
+              "id": 2507916,
+              "title": "Turn Heartbeats Into Tempo",
+              "cover": "https://assets.ppy.sh/beatmaps/2507916/covers/card.jpg?1779079787",
+              "stars": 3.84118
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6846443583,
+            "rank": "B",
+            "accuracy": 0.8785594639865997,
+            "pp": 13.3642,
+            "mods": [],
+            "combo": 244,
+            "created_at": "2026-06-09T11:55:26Z",
+            "beatmapset": {
+              "id": 1046074,
+              "title": "Mitsubachi",
+              "cover": "https://assets.ppy.sh/beatmaps/1046074/covers/card.jpg?1779151337",
+              "stars": 3.16698
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6846417528,
+            "rank": "B",
+            "accuracy": 0.9138795986622074,
+            "pp": 33.6297,
+            "mods": [],
+            "combo": 502,
+            "created_at": "2026-06-09T11:49:39Z",
+            "beatmapset": {
+              "id": 577932,
+              "title": "Uso no Hibana",
+              "cover": "https://assets.ppy.sh/beatmaps/577932/covers/card.jpg?1772815846",
+              "stars": 3.77037
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6846398069,
+            "rank": "C",
+            "accuracy": 0.829954954954955,
+            "pp": 27.3132,
+            "mods": [],
+            "combo": 307,
+            "created_at": "2026-06-09T11:45:19Z",
+            "beatmapset": {
+              "id": 2488311,
+              "title": "D Gang",
+              "cover": "https://assets.ppy.sh/beatmaps/2488311/covers/card.jpg?1779283754",
+              "stars": 3.93382
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Determinate (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+        "unique_players": 15
       }
     }
   }

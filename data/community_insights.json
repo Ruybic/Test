@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 107,
-    "longest": 107,
-    "last_updated": "2026-06-13"
+    "current": 108,
+    "longest": 108,
+    "last_updated": "2026-06-14"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -32037,6 +32037,292 @@
         "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
         "unique_players": 13
+      }
+    },
+    "2026-06-14": {
+      "total_scores": 566,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "i9be",
+        "user_id": 35359675,
+        "count": 52,
+        "scores": [
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6874170646,
+            "rank": "C",
+            "accuracy": 0.7949897750511248,
+            "pp": 24.1313,
+            "mods": [],
+            "combo": 137,
+            "created_at": "2026-06-13T20:27:16Z",
+            "beatmapset": {
+              "id": 371128,
+              "title": "Cold Green Eyes ft. Roos Denayer",
+              "cover": "https://assets.ppy.sh/beatmaps/371128/covers/card.jpg?1650634565",
+              "stars": 4.21318
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6874158912,
+            "rank": "C",
+            "accuracy": 0.8261390887290168,
+            "pp": 22.0042,
+            "mods": [],
+            "combo": 87,
+            "created_at": "2026-06-13T20:25:08Z",
+            "beatmapset": {
+              "id": 325112,
+              "title": "Yoru no Kodomo tachi",
+              "cover": "https://assets.ppy.sh/beatmaps/325112/covers/card.jpg?1650631180",
+              "stars": 3.30967
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6874149631,
+            "rank": "B",
+            "accuracy": 0.9111570247933884,
+            "pp": 28.6815,
+            "mods": [],
+            "combo": 370,
+            "created_at": "2026-06-13T20:23:27Z",
+            "beatmapset": {
+              "id": 29157,
+              "title": "The Unforgiving",
+              "cover": "https://assets.ppy.sh/beatmaps/29157/covers/card.jpg?1650613247",
+              "stars": 3.64282
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6874125432,
+            "rank": "A",
+            "accuracy": 0.9572916666666667,
+            "pp": 36.6077,
+            "mods": [],
+            "combo": 112,
+            "created_at": "2026-06-13T20:19:04Z",
+            "beatmapset": {
+              "id": 2556198,
+              "title": "Six Seven",
+              "cover": "https://assets.ppy.sh/beatmaps/2556198/covers/card.jpg?1780609844",
+              "stars": 3.37014
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6874081279,
+            "rank": "B",
+            "accuracy": 0.9216467463479415,
+            "pp": null,
+            "mods": [],
+            "combo": 275,
+            "created_at": "2026-06-13T20:11:12Z",
+            "beatmapset": {
+              "id": 1243359,
+              "title": "perfect ft. oaf1 & dreamcache",
+              "cover": "https://assets.ppy.sh/beatmaps/1243359/covers/card.jpg?1632124822",
+              "stars": 3.60718
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6874024561,
+            "rank": "B",
+            "accuracy": 0.8710407239819005,
+            "pp": 20.4582,
+            "mods": [],
+            "combo": 304,
+            "created_at": "2026-06-13T20:01:11Z",
+            "beatmapset": {
+              "id": 1112375,
+              "title": "Callback",
+              "cover": "https://assets.ppy.sh/beatmaps/1112375/covers/card.jpg?1650691798",
+              "stars": 3.4982
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6873993326,
+            "rank": "B",
+            "accuracy": 0.8874643874643875,
+            "pp": 26.0419,
+            "mods": [],
+            "combo": 370,
+            "created_at": "2026-06-13T19:55:40Z",
+            "beatmapset": {
+              "id": 700968,
+              "title": "Introduction - ENTRANS OF DA JUNGLE",
+              "cover": "https://assets.ppy.sh/beatmaps/700968/covers/card.jpg?1650656617",
+              "stars": 3.97118
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6873969046,
+            "rank": "A",
+            "accuracy": 0.9410987849973587,
+            "pp": 37.9927,
+            "mods": [],
+            "combo": 846,
+            "created_at": "2026-06-13T19:51:22Z",
+            "beatmapset": {
+              "id": 941085,
+              "title": "Our Story",
+              "cover": "https://assets.ppy.sh/beatmaps/941085/covers/card.jpg?1631511654",
+              "stars": 3.68471
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6873933733,
+            "rank": "S",
+            "accuracy": 0.9380196523053665,
+            "pp": 25.6154,
+            "mods": [],
+            "combo": 772,
+            "created_at": "2026-06-13T19:45:08Z",
+            "beatmapset": {
+              "id": 1330252,
+              "title": "BAERUNA",
+              "cover": "https://assets.ppy.sh/beatmaps/1330252/covers/card.jpg?1631516390",
+              "stars": 3.08487
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6873906226,
+            "rank": "B",
+            "accuracy": 0.928698752228164,
+            "pp": 24.4897,
+            "mods": [],
+            "combo": 340,
+            "created_at": "2026-06-13T19:40:18Z",
+            "beatmapset": {
+              "id": 2449083,
+              "title": "Skeleton Key",
+              "cover": "https://assets.ppy.sh/beatmaps/2449083/covers/card.jpg?1775858465",
+              "stars": 3.2885
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6873885993,
+            "rank": "C",
+            "accuracy": 0.8227194492254734,
+            "pp": 23.3035,
+            "mods": [],
+            "combo": 258,
+            "created_at": "2026-06-13T19:36:44Z",
+            "beatmapset": {
+              "id": 357539,
+              "title": "We Won't Be Alone (feat. Laura Brehm)",
+              "cover": "https://assets.ppy.sh/beatmaps/357539/covers/card.jpg?1650647912",
+              "stars": 4.76101
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6873865870,
+            "rank": "B",
+            "accuracy": 0.9112602535421327,
+            "pp": 22.0276,
+            "mods": [],
+            "combo": 272,
+            "created_at": "2026-06-13T19:33:11Z",
+            "beatmapset": {
+              "id": 357539,
+              "title": "We Won't Be Alone (feat. Laura Brehm)",
+              "cover": "https://assets.ppy.sh/beatmaps/357539/covers/card.jpg?1650647912",
+              "stars": 3.44746
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6873836108,
+            "rank": "B",
+            "accuracy": 0.8814262023217247,
+            "pp": 24.8772,
+            "mods": [],
+            "combo": 487,
+            "created_at": "2026-06-13T19:27:59Z",
+            "beatmapset": {
+              "id": 2165268,
+              "title": "Igaku",
+              "cover": "https://assets.ppy.sh/beatmaps/2165268/covers/card.jpg?1724271493",
+              "stars": 3.81619
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6873815348,
+            "rank": "B",
+            "accuracy": 0.885899814471243,
+            "pp": 24.1643,
+            "mods": [],
+            "combo": 350,
+            "created_at": "2026-06-13T19:24:27Z",
+            "beatmapset": {
+              "id": 812792,
+              "title": "Midorigo Queen Bee",
+              "cover": "https://assets.ppy.sh/beatmaps/812792/covers/card.jpg?1650669758",
+              "stars": 3.76142
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6873788769,
+            "rank": "C",
+            "accuracy": 0.8477078477078477,
+            "pp": 22.4036,
+            "mods": [],
+            "combo": 183,
+            "created_at": "2026-06-13T19:19:51Z",
+            "beatmapset": {
+              "id": 1943000,
+              "title": "Bubblegum Bitch (Nightcore Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/1943000/covers/card.jpg?1739821565",
+              "stars": 3.94628
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
+        "unique_players": 18
       }
     }
   }

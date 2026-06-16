@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 108,
-    "longest": 108,
-    "last_updated": "2026-06-14"
+    "current": 109,
+    "longest": 109,
+    "last_updated": "2026-06-15"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -32323,6 +32323,292 @@
         "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
         "unique_players": 18
+      }
+    },
+    "2026-06-15": {
+      "total_scores": 628,
+      "peak_hour_baghdad": 14,
+      "top_grinder": {
+        "user": "skiler1",
+        "user_id": 31252345,
+        "count": 54,
+        "scores": [
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038344878,
+            "rank": "A",
+            "accuracy": 0.9874476987447699,
+            "pp": 85.4554,
+            "mods": [],
+            "combo": 255,
+            "created_at": "2026-06-14T22:55:10Z",
+            "beatmapset": {
+              "id": 959603,
+              "title": "Chikatto Chika Chika",
+              "cover": "https://assets.ppy.sh/beatmaps/959603/covers/card.jpg?1650692574",
+              "stars": 4.58803
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038343167,
+            "rank": "A",
+            "accuracy": 0.928374655647383,
+            "pp": 61.4823,
+            "mods": [],
+            "combo": 198,
+            "created_at": "2026-06-14T22:49:41Z",
+            "beatmapset": {
+              "id": 236837,
+              "title": "You Gotta Love Me!",
+              "cover": "https://assets.ppy.sh/beatmaps/236837/covers/card.jpg?1650626137",
+              "stars": 4.96113
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038340133,
+            "rank": "C",
+            "accuracy": 0.7703336090432865,
+            "pp": 18.0358,
+            "mods": [],
+            "combo": 310,
+            "created_at": "2026-06-14T22:39:45Z",
+            "beatmapset": {
+              "id": 1390922,
+              "title": "Lionheart",
+              "cover": "https://assets.ppy.sh/beatmaps/1390922/covers/card.jpg?1653231574",
+              "stars": 5.42308
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038338168,
+            "rank": "A",
+            "accuracy": 0.9650317892824705,
+            "pp": 68.1573,
+            "mods": [],
+            "combo": 260,
+            "created_at": "2026-06-14T22:33:10Z",
+            "beatmapset": {
+              "id": 462386,
+              "title": "From Under Cover (Caught Up In A Love Song)",
+              "cover": "https://assets.ppy.sh/beatmaps/462386/covers/card.jpg?1650643367",
+              "stars": 4.96259
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038336795,
+            "rank": "B",
+            "accuracy": 0.9157617637380717,
+            "pp": null,
+            "mods": [],
+            "combo": 247,
+            "created_at": "2026-06-14T22:28:30Z",
+            "beatmapset": {
+              "id": 291155,
+              "title": "Call me it. (500 Tortures)",
+              "cover": "https://assets.ppy.sh/beatmaps/291155/covers/card.jpg?1645787721",
+              "stars": 5.56328
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038333207,
+            "rank": "B",
+            "accuracy": 0.8869281045751634,
+            "pp": 35.5854,
+            "mods": [],
+            "combo": 114,
+            "created_at": "2026-06-14T22:16:54Z",
+            "beatmapset": {
+              "id": 269969,
+              "title": "JoJo Sono Chi no Kioku~end of THE WORLD~",
+              "cover": "https://assets.ppy.sh/beatmaps/269969/covers/card.jpg?1622082019",
+              "stars": 4.88014
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038291829,
+            "rank": "C",
+            "accuracy": 0.8347826086956521,
+            "pp": 29.0376,
+            "mods": [],
+            "combo": 106,
+            "created_at": "2026-06-14T20:20:38Z",
+            "beatmapset": {
+              "id": 2370956,
+              "title": "Chocooo",
+              "cover": "https://assets.ppy.sh/beatmaps/2370956/covers/card.jpg?1752619826",
+              "stars": 5.10401
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038288116,
+            "rank": "A",
+            "accuracy": 0.9503129890453834,
+            "pp": 74.6296,
+            "mods": [],
+            "combo": 113,
+            "created_at": "2026-06-14T20:11:33Z",
+            "beatmapset": {
+              "id": 790979,
+              "title": "Tomodachi no Uta",
+              "cover": "https://assets.ppy.sh/beatmaps/790979/covers/card.jpg?1622141077",
+              "stars": 5.12198
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038287308,
+            "rank": "A",
+            "accuracy": 0.917057902973396,
+            "pp": 43.1216,
+            "mods": [],
+            "combo": 94,
+            "created_at": "2026-06-14T20:09:31Z",
+            "beatmapset": {
+              "id": 790979,
+              "title": "Tomodachi no Uta",
+              "cover": "https://assets.ppy.sh/beatmaps/790979/covers/card.jpg?1622141077",
+              "stars": 5.12198
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038285856,
+            "rank": "A",
+            "accuracy": 0.9586513994910941,
+            "pp": 60.3507,
+            "mods": [],
+            "combo": 143,
+            "created_at": "2026-06-14T20:05:57Z",
+            "beatmapset": {
+              "id": 1464897,
+              "title": "FORWARD!",
+              "cover": "https://assets.ppy.sh/beatmaps/1464897/covers/card.jpg?1645785900",
+              "stars": 4.61128
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038284593,
+            "rank": "S",
+            "accuracy": 0.9770114942528736,
+            "pp": 78.1881,
+            "mods": [],
+            "combo": 228,
+            "created_at": "2026-06-14T20:02:51Z",
+            "beatmapset": {
+              "id": 2506803,
+              "title": "feeling good (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506803/covers/card.jpg?1779504518",
+              "stars": 4.47379
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038284255,
+            "rank": "A",
+            "accuracy": 0.967816091954023,
+            "pp": 66.3715,
+            "mods": [],
+            "combo": 170,
+            "created_at": "2026-06-14T20:01:57Z",
+            "beatmapset": {
+              "id": 2506803,
+              "title": "feeling good (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506803/covers/card.jpg?1779504518",
+              "stars": 4.47379
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038270440,
+            "rank": "A",
+            "accuracy": 0.9299435028248587,
+            "pp": 47.9184,
+            "mods": [],
+            "combo": 241,
+            "created_at": "2026-06-14T19:29:41Z",
+            "beatmapset": {
+              "id": 2543343,
+              "title": "losing my mind",
+              "cover": "https://assets.ppy.sh/beatmaps/2543343/covers/card.jpg?1778002473",
+              "stars": 4.53104
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038269872,
+            "rank": "B",
+            "accuracy": 0.9062146892655367,
+            "pp": 48.9891,
+            "mods": [],
+            "combo": 190,
+            "created_at": "2026-06-14T19:28:20Z",
+            "beatmapset": {
+              "id": 2543343,
+              "title": "losing my mind",
+              "cover": "https://assets.ppy.sh/beatmaps/2543343/covers/card.jpg?1778002473",
+              "stars": 4.53104
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038269113,
+            "rank": "A",
+            "accuracy": 0.9282945736434108,
+            "pp": 38.4892,
+            "mods": [],
+            "combo": 101,
+            "created_at": "2026-06-14T19:26:31Z",
+            "beatmapset": {
+              "id": 984684,
+              "title": "Take a Hint feat. Victoria Justice & Elizabeth Gillies (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/984684/covers/card.jpg?1650681093",
+              "stars": 4.24749
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Guitar to Kodoku to Aoi Hoshi",
+        "cover": "https://assets.ppy.sh/beatmaps/1880007/covers/card.jpg?1670740849",
+        "unique_players": 11
       }
     }
   }

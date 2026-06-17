@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 109,
-    "longest": 109,
-    "last_updated": "2026-06-15"
+    "current": 110,
+    "longest": 110,
+    "last_updated": "2026-06-16"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -32609,6 +32609,296 @@
         "title": "Guitar to Kodoku to Aoi Hoshi",
         "cover": "https://assets.ppy.sh/beatmaps/1880007/covers/card.jpg?1670740849",
         "unique_players": 11
+      }
+    },
+    "2026-06-16": {
+      "total_scores": 492,
+      "peak_hour_baghdad": 23,
+      "top_grinder": {
+        "user": "skiler1",
+        "user_id": 31252345,
+        "count": 49,
+        "scores": [
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038840843,
+            "rank": "B",
+            "accuracy": 0.9189686924493554,
+            "pp": 83.277,
+            "mods": [],
+            "combo": 140,
+            "created_at": "2026-06-16T02:42:09Z",
+            "beatmapset": {
+              "id": 2530233,
+              "title": "made for you (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2530233/covers/card.jpg?1777760143",
+              "stars": 5.52266
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038838890,
+            "rank": "B",
+            "accuracy": 0.8836477987421384,
+            "pp": 89.1911,
+            "mods": [
+              "DT"
+            ],
+            "combo": 84,
+            "created_at": "2026-06-16T02:33:07Z",
+            "beatmapset": {
+              "id": 485903,
+              "title": "Yalta",
+              "cover": "https://assets.ppy.sh/beatmaps/485903/covers/card.jpg?1650642612",
+              "stars": 3.95721
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038783948,
+            "rank": "A",
+            "accuracy": 0.9408284023668639,
+            "pp": 67.5879,
+            "mods": [],
+            "combo": 113,
+            "created_at": "2026-06-15T22:51:52Z",
+            "beatmapset": {
+              "id": 971957,
+              "title": "V (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/971957/covers/card.jpg?1650681037",
+              "stars": 5.28877
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038783164,
+            "rank": "A",
+            "accuracy": 0.9636015325670498,
+            "pp": 96.2235,
+            "mods": [],
+            "combo": 142,
+            "created_at": "2026-06-15T22:49:17Z",
+            "beatmapset": {
+              "id": 765778,
+              "title": "Make a Move (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/765778/covers/card.jpg?1650663123",
+              "stars": 5.15611
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038782689,
+            "rank": "A",
+            "accuracy": 0.9300184162062615,
+            "pp": 94.5286,
+            "mods": [],
+            "combo": 173,
+            "created_at": "2026-06-15T22:47:48Z",
+            "beatmapset": {
+              "id": 765778,
+              "title": "Make a Move (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/765778/covers/card.jpg?1650663123",
+              "stars": 5.14908
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038782451,
+            "rank": "A",
+            "accuracy": 0.9530386740331491,
+            "pp": 95.0468,
+            "mods": [],
+            "combo": 132,
+            "created_at": "2026-06-15T22:47:00Z",
+            "beatmapset": {
+              "id": 765778,
+              "title": "Make a Move (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/765778/covers/card.jpg?1650663123",
+              "stars": 5.14908
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038781981,
+            "rank": "S",
+            "accuracy": 0.9668508287292817,
+            "pp": 112.349,
+            "mods": [],
+            "combo": 248,
+            "created_at": "2026-06-15T22:45:30Z",
+            "beatmapset": {
+              "id": 765778,
+              "title": "Make a Move (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/765778/covers/card.jpg?1650663123",
+              "stars": 4.90861
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038781726,
+            "rank": "A",
+            "accuracy": 0.9502762430939227,
+            "pp": 71.8805,
+            "mods": [],
+            "combo": 150,
+            "created_at": "2026-06-15T22:44:42Z",
+            "beatmapset": {
+              "id": 765778,
+              "title": "Make a Move (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/765778/covers/card.jpg?1650663123",
+              "stars": 4.90861
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038781383,
+            "rank": "B",
+            "accuracy": 0.9188888888888889,
+            "pp": 80.4182,
+            "mods": [],
+            "combo": 136,
+            "created_at": "2026-06-15T22:43:29Z",
+            "beatmapset": {
+              "id": 917345,
+              "title": "POP/STARS",
+              "cover": "https://assets.ppy.sh/beatmaps/917345/covers/card.jpg?1650674742",
+              "stars": 5.29704
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038780455,
+            "rank": "B",
+            "accuracy": 0.9178082191780822,
+            "pp": 77.2684,
+            "mods": [],
+            "combo": 171,
+            "created_at": "2026-06-15T22:40:25Z",
+            "beatmapset": {
+              "id": 2495437,
+              "title": "Best Day Of My Life (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495437/covers/card.jpg?1771550749",
+              "stars": 5.59736
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038779986,
+            "rank": "B",
+            "accuracy": 0.9018264840182648,
+            "pp": 74.2035,
+            "mods": [],
+            "combo": 164,
+            "created_at": "2026-06-15T22:38:42Z",
+            "beatmapset": {
+              "id": 2495437,
+              "title": "Best Day Of My Life (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495437/covers/card.jpg?1771550749",
+              "stars": 5.59736
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038779556,
+            "rank": "A",
+            "accuracy": 0.9418742586002372,
+            "pp": 103.766,
+            "mods": [
+              "HD"
+            ],
+            "combo": 258,
+            "created_at": "2026-06-15T22:37:15Z",
+            "beatmapset": {
+              "id": 2495437,
+              "title": "Best Day Of My Life (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495437/covers/card.jpg?1771550749",
+              "stars": 5.30371
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038749923,
+            "rank": "A",
+            "accuracy": 0.943952802359882,
+            "pp": 97.7008,
+            "mods": [],
+            "combo": 114,
+            "created_at": "2026-06-15T21:10:09Z",
+            "beatmapset": {
+              "id": 859783,
+              "title": "Harumachi Clover (Swing Arrangement)",
+              "cover": "https://assets.ppy.sh/beatmaps/859783/covers/card.jpg?1650679901",
+              "stars": 5.0374
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038749647,
+            "rank": "A",
+            "accuracy": 0.9321533923303835,
+            "pp": 98.0044,
+            "mods": [],
+            "combo": 134,
+            "created_at": "2026-06-15T21:09:24Z",
+            "beatmapset": {
+              "id": 859783,
+              "title": "Harumachi Clover (Swing Arrangement)",
+              "cover": "https://assets.ppy.sh/beatmaps/859783/covers/card.jpg?1650679901",
+              "stars": 5.0374
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 5038749338,
+            "rank": "A",
+            "accuracy": 0.8938053097345132,
+            "pp": 88.5837,
+            "mods": [],
+            "combo": 140,
+            "created_at": "2026-06-15T21:08:33Z",
+            "beatmapset": {
+              "id": 859783,
+              "title": "Harumachi Clover (Swing Arrangement)",
+              "cover": "https://assets.ppy.sh/beatmaps/859783/covers/card.jpg?1650679901",
+              "stars": 5.0374
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Hardtekk Jump Training",
+        "cover": "https://assets.ppy.sh/beatmaps/2140158/covers/card.jpg?1762099276",
+        "unique_players": 14
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 110,
-    "longest": 110,
-    "last_updated": "2026-06-16"
+    "current": 111,
+    "longest": 111,
+    "last_updated": "2026-06-17"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -32898,6 +32898,320 @@
       "most_played_map": {
         "title": "Hardtekk Jump Training",
         "cover": "https://assets.ppy.sh/beatmaps/2140158/covers/card.jpg?1762099276",
+        "unique_players": 14
+      }
+    },
+    "2026-06-17": {
+      "total_scores": 541,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "im_j_chiling",
+        "user_id": 29220958,
+        "count": 46,
+        "scores": [
+          {
+            "user": "im_j_chiling",
+            "user_id": 29220958,
+            "country": "IQ",
+            "score_id": 5039233525,
+            "rank": "A",
+            "accuracy": 0.8694158075601375,
+            "pp": 21.7621,
+            "mods": [
+              "HD"
+            ],
+            "combo": 94,
+            "created_at": "2026-06-16T22:10:19Z",
+            "beatmapset": {
+              "id": 842412,
+              "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+              "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+              "stars": 3.25361
+            }
+          },
+          {
+            "user": "im_j_chiling",
+            "user_id": 29220958,
+            "country": "IQ",
+            "score_id": 5039233276,
+            "rank": "B",
+            "accuracy": 0.8780068728522337,
+            "pp": 21.4962,
+            "mods": [
+              "HD"
+            ],
+            "combo": 117,
+            "created_at": "2026-06-16T22:09:35Z",
+            "beatmapset": {
+              "id": 842412,
+              "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+              "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+              "stars": 3.25361
+            }
+          },
+          {
+            "user": "im_j_chiling",
+            "user_id": 29220958,
+            "country": "IQ",
+            "score_id": 5039232157,
+            "rank": "B",
+            "accuracy": 0.8350515463917526,
+            "pp": 29.5632,
+            "mods": [
+              "HD"
+            ],
+            "combo": 111,
+            "created_at": "2026-06-16T22:06:17Z",
+            "beatmapset": {
+              "id": 652412,
+              "title": "Harumachi Clover",
+              "cover": "https://assets.ppy.sh/beatmaps/652412/covers/card.jpg?1650653199",
+              "stars": 3.79879
+            }
+          },
+          {
+            "user": "im_j_chiling",
+            "user_id": 29220958,
+            "country": "IQ",
+            "score_id": 5039231623,
+            "rank": "A",
+            "accuracy": 0.96875,
+            "pp": 28.999,
+            "mods": [],
+            "combo": 139,
+            "created_at": "2026-06-16T22:04:41Z",
+            "beatmapset": {
+              "id": 503141,
+              "title": "Zen Zen Zense",
+              "cover": "https://assets.ppy.sh/beatmaps/503141/covers/card.jpg?1650642836",
+              "stars": 3.39911
+            }
+          },
+          {
+            "user": "im_j_chiling",
+            "user_id": 29220958,
+            "country": "IQ",
+            "score_id": 5039230928,
+            "rank": "A",
+            "accuracy": 0.8745874587458746,
+            "pp": 30.3433,
+            "mods": [
+              "HD",
+              "HR"
+            ],
+            "combo": 143,
+            "created_at": "2026-06-16T22:02:39Z",
+            "beatmapset": {
+              "id": 1601642,
+              "title": "Harumachi Clover (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1601642/covers/card.jpg?1669132196",
+              "stars": 3.32866
+            }
+          },
+          {
+            "user": "im_j_chiling",
+            "user_id": 29220958,
+            "country": "IQ",
+            "score_id": 5039230144,
+            "rank": "A",
+            "accuracy": 0.8729372937293729,
+            "pp": 25.4192,
+            "mods": [
+              "HD",
+              "HR"
+            ],
+            "combo": 89,
+            "created_at": "2026-06-16T22:00:25Z",
+            "beatmapset": {
+              "id": 1601642,
+              "title": "Harumachi Clover (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1601642/covers/card.jpg?1669132196",
+              "stars": 3.32866
+            }
+          },
+          {
+            "user": "im_j_chiling",
+            "user_id": 29220958,
+            "country": "IQ",
+            "score_id": 5039229967,
+            "rank": "B",
+            "accuracy": 0.806930693069307,
+            "pp": 21.9506,
+            "mods": [
+              "HD",
+              "HR"
+            ],
+            "combo": 139,
+            "created_at": "2026-06-16T21:59:52Z",
+            "beatmapset": {
+              "id": 1601642,
+              "title": "Harumachi Clover (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1601642/covers/card.jpg?1669132196",
+              "stars": 3.32866
+            }
+          },
+          {
+            "user": "im_j_chiling",
+            "user_id": 29220958,
+            "country": "IQ",
+            "score_id": 5039229532,
+            "rank": "C",
+            "accuracy": 0.7953795379537953,
+            "pp": 20.2041,
+            "mods": [
+              "HD",
+              "HR"
+            ],
+            "combo": 89,
+            "created_at": "2026-06-16T21:58:33Z",
+            "beatmapset": {
+              "id": 1601642,
+              "title": "Harumachi Clover (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1601642/covers/card.jpg?1669132196",
+              "stars": 3.32866
+            }
+          },
+          {
+            "user": "im_j_chiling",
+            "user_id": 29220958,
+            "country": "IQ",
+            "score_id": 5039228871,
+            "rank": "A",
+            "accuracy": 0.9609297725024728,
+            "pp": 22.7014,
+            "mods": [],
+            "combo": 332,
+            "created_at": "2026-06-16T21:56:35Z",
+            "beatmapset": {
+              "id": 1667560,
+              "title": "FREEDOM DiVE",
+              "cover": "https://assets.ppy.sh/beatmaps/1667560/covers/card.jpg?1660338722",
+              "stars": 3.51021
+            }
+          },
+          {
+            "user": "im_j_chiling",
+            "user_id": 29220958,
+            "country": "IQ",
+            "score_id": 5039227988,
+            "rank": "A",
+            "accuracy": 0.966864490603363,
+            "pp": 25.9684,
+            "mods": [],
+            "combo": 244,
+            "created_at": "2026-06-16T21:54:02Z",
+            "beatmapset": {
+              "id": 1667560,
+              "title": "FREEDOM DiVE",
+              "cover": "https://assets.ppy.sh/beatmaps/1667560/covers/card.jpg?1660338722",
+              "stars": 3.51021
+            }
+          },
+          {
+            "user": "im_j_chiling",
+            "user_id": 29220958,
+            "country": "IQ",
+            "score_id": 5039225495,
+            "rank": "A",
+            "accuracy": 0.9271168274383709,
+            "pp": 19.3649,
+            "mods": [
+              "HD"
+            ],
+            "combo": 206,
+            "created_at": "2026-06-16T21:47:11Z",
+            "beatmapset": {
+              "id": 2375904,
+              "title": "break/apart",
+              "cover": "https://assets.ppy.sh/beatmaps/2375904/covers/card.jpg?1767833381",
+              "stars": 3.35064
+            }
+          },
+          {
+            "user": "im_j_chiling",
+            "user_id": 29220958,
+            "country": "IQ",
+            "score_id": 5039223957,
+            "rank": "A",
+            "accuracy": 0.9571275455519829,
+            "pp": 19.9707,
+            "mods": [
+              "HD"
+            ],
+            "combo": 138,
+            "created_at": "2026-06-16T21:42:46Z",
+            "beatmapset": {
+              "id": 2375904,
+              "title": "break/apart",
+              "cover": "https://assets.ppy.sh/beatmaps/2375904/covers/card.jpg?1767833381",
+              "stars": 3.35064
+            }
+          },
+          {
+            "user": "im_j_chiling",
+            "user_id": 29220958,
+            "country": "IQ",
+            "score_id": 5039218419,
+            "rank": "B",
+            "accuracy": 0.9071428571428571,
+            "pp": 21.7163,
+            "mods": [
+              "HD"
+            ],
+            "combo": 123,
+            "created_at": "2026-06-16T21:26:37Z",
+            "beatmapset": {
+              "id": 2282704,
+              "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+              "stars": 3.69304
+            }
+          },
+          {
+            "user": "im_j_chiling",
+            "user_id": 29220958,
+            "country": "IQ",
+            "score_id": 5039218069,
+            "rank": "A",
+            "accuracy": 0.9571428571428572,
+            "pp": 35.4825,
+            "mods": [
+              "HD"
+            ],
+            "combo": 102,
+            "created_at": "2026-06-16T21:25:30Z",
+            "beatmapset": {
+              "id": 2282704,
+              "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+              "stars": 3.69304
+            }
+          },
+          {
+            "user": "im_j_chiling",
+            "user_id": 29220958,
+            "country": "IQ",
+            "score_id": 5039217040,
+            "rank": "B",
+            "accuracy": 0.9079365079365079,
+            "pp": 21.5207,
+            "mods": [
+              "HD"
+            ],
+            "combo": 120,
+            "created_at": "2026-06-16T21:22:25Z",
+            "beatmapset": {
+              "id": 2282704,
+              "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+              "stars": 3.69304
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Yumemigokochi",
+        "cover": "https://assets.ppy.sh/beatmaps/2531548/covers/card.jpg?1780908246",
         "unique_players": 14
       }
     }

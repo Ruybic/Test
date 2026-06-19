@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 111,
-    "longest": 111,
-    "last_updated": "2026-06-17"
+    "current": 112,
+    "longest": 112,
+    "last_updated": "2026-06-18"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -33213,6 +33213,327 @@
         "title": "Yumemigokochi",
         "cover": "https://assets.ppy.sh/beatmaps/2531548/covers/card.jpg?1780908246",
         "unique_players": 14
+      }
+    },
+    "2026-06-18": {
+      "total_scores": 514,
+      "peak_hour_baghdad": 19,
+      "top_grinder": {
+        "user": "ZEROTOW",
+        "user_id": 15655633,
+        "count": 68,
+        "scores": [
+          {
+            "user": "ZEROTOW",
+            "user_id": 15655633,
+            "country": "IQ",
+            "score_id": 5039755181,
+            "rank": "SH",
+            "accuracy": 0.9707602339181286,
+            "pp": 44.9316,
+            "mods": [
+              "HD",
+              "HR"
+            ],
+            "combo": 190,
+            "created_at": "2026-06-18T02:59:48Z",
+            "beatmapset": {
+              "id": 527431,
+              "title": "Gravity Falls Theme Song",
+              "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+              "stars": 3.28078
+            }
+          },
+          {
+            "user": "ZEROTOW",
+            "user_id": 15655633,
+            "country": "IQ",
+            "score_id": 5039754942,
+            "rank": "SH",
+            "accuracy": 0.9840510366826156,
+            "pp": 50.1625,
+            "mods": [
+              "HD",
+              "HR"
+            ],
+            "combo": 327,
+            "created_at": "2026-06-18T02:58:42Z",
+            "beatmapset": {
+              "id": 2323038,
+              "title": "What The Hell (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2323038/covers/card.jpg?1740092483",
+              "stars": 2.95291
+            }
+          },
+          {
+            "user": "ZEROTOW",
+            "user_id": 15655633,
+            "country": "IQ",
+            "score_id": 5039754300,
+            "rank": "B",
+            "accuracy": 0.8785046728971962,
+            "pp": null,
+            "mods": [
+              "HD",
+              "HR"
+            ],
+            "combo": 237,
+            "created_at": "2026-06-18T02:55:56Z",
+            "beatmapset": {
+              "id": 613207,
+              "title": "Chiisana Koi no Uta (Synth Rock Cover)",
+              "cover": "https://assets.ppy.sh/beatmaps/613207/covers/card.jpg?1650651609",
+              "stars": 4.23138
+            }
+          },
+          {
+            "user": "ZEROTOW",
+            "user_id": 15655633,
+            "country": "IQ",
+            "score_id": 5039753377,
+            "rank": "B",
+            "accuracy": 0.8841991341991342,
+            "pp": 18.4608,
+            "mods": [
+              "HD",
+              "HR"
+            ],
+            "combo": 168,
+            "created_at": "2026-06-18T02:52:00Z",
+            "beatmapset": {
+              "id": 958558,
+              "title": "Eu estou aqui (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/958558/covers/card.jpg?1622160380",
+              "stars": 3.27697
+            }
+          },
+          {
+            "user": "ZEROTOW",
+            "user_id": 15655633,
+            "country": "IQ",
+            "score_id": 5039752284,
+            "rank": "A",
+            "accuracy": 0.9696969696969697,
+            "pp": 52.2502,
+            "mods": [
+              "HD",
+              "HR"
+            ],
+            "combo": 165,
+            "created_at": "2026-06-18T02:47:19Z",
+            "beatmapset": {
+              "id": 2366289,
+              "title": "River Flows in You (wiwit Arrangement)",
+              "cover": "https://assets.ppy.sh/beatmaps/2366289/covers/card.jpg?1749640283",
+              "stars": 3.60918
+            }
+          },
+          {
+            "user": "ZEROTOW",
+            "user_id": 15655633,
+            "country": "IQ",
+            "score_id": 5039751605,
+            "rank": "B",
+            "accuracy": 0.8771676300578035,
+            "pp": 23.2235,
+            "mods": [
+              "HD",
+              "HR"
+            ],
+            "combo": 427,
+            "created_at": "2026-06-18T02:44:22Z",
+            "beatmapset": {
+              "id": 99401,
+              "title": "River Flows In You (A Love Note)",
+              "cover": "https://assets.ppy.sh/beatmaps/99401/covers/card.jpg?1622065332",
+              "stars": 3.27785
+            }
+          },
+          {
+            "user": "ZEROTOW",
+            "user_id": 15655633,
+            "country": "IQ",
+            "score_id": 5039750847,
+            "rank": "B",
+            "accuracy": 0.9234234234234234,
+            "pp": 23.3167,
+            "mods": [
+              "HD",
+              "HR"
+            ],
+            "combo": 305,
+            "created_at": "2026-06-18T02:41:01Z",
+            "beatmapset": {
+              "id": 51749,
+              "title": "happy*lucky (Short Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/51749/covers/card.jpg?1650612170",
+              "stars": 3.03353
+            }
+          },
+          {
+            "user": "ZEROTOW",
+            "user_id": 15655633,
+            "country": "IQ",
+            "score_id": 5039503204,
+            "rank": "B",
+            "accuracy": 0.8856345885634589,
+            "pp": 30.0471,
+            "mods": [
+              "HR"
+            ],
+            "combo": 75,
+            "created_at": "2026-06-17T14:57:23Z",
+            "beatmapset": {
+              "id": 2323038,
+              "title": "What The Hell (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2323038/covers/card.jpg?1740092483",
+              "stars": 3.89073
+            }
+          },
+          {
+            "user": "ZEROTOW",
+            "user_id": 15655633,
+            "country": "IQ",
+            "score_id": 5039502133,
+            "rank": "S",
+            "accuracy": 0.960252935862692,
+            "pp": 52.8109,
+            "mods": [
+              "HR"
+            ],
+            "combo": 626,
+            "created_at": "2026-06-17T14:55:02Z",
+            "beatmapset": {
+              "id": 964675,
+              "title": "bad guy",
+              "cover": "https://assets.ppy.sh/beatmaps/964675/covers/card.jpg?1650679991",
+              "stars": 3.40919
+            }
+          },
+          {
+            "user": "ZEROTOW",
+            "user_id": 15655633,
+            "country": "IQ",
+            "score_id": 5039498941,
+            "rank": "A",
+            "accuracy": 0.9083333333333333,
+            "pp": 19.1431,
+            "mods": [
+              "HR"
+            ],
+            "combo": 492,
+            "created_at": "2026-06-17T14:47:45Z",
+            "beatmapset": {
+              "id": 1011319,
+              "title": "idontwannabeyouanymore",
+              "cover": "https://assets.ppy.sh/beatmaps/1011319/covers/card.jpg?1622166926",
+              "stars": 2.99741
+            }
+          },
+          {
+            "user": "ZEROTOW",
+            "user_id": 15655633,
+            "country": "IQ",
+            "score_id": 5039497610,
+            "rank": "S",
+            "accuracy": 0.9570082449941107,
+            "pp": 26.9776,
+            "mods": [
+              "HR"
+            ],
+            "combo": 374,
+            "created_at": "2026-06-17T14:44:49Z",
+            "beatmapset": {
+              "id": 979703,
+              "title": "you should see me in a crown",
+              "cover": "https://assets.ppy.sh/beatmaps/979703/covers/card.jpg?1650681043",
+              "stars": 3.06719
+            }
+          },
+          {
+            "user": "ZEROTOW",
+            "user_id": 15655633,
+            "country": "IQ",
+            "score_id": 5039493822,
+            "rank": "A",
+            "accuracy": 0.9612403100775194,
+            "pp": 35.2304,
+            "mods": [
+              "HR"
+            ],
+            "combo": 160,
+            "created_at": "2026-06-17T14:36:08Z",
+            "beatmapset": {
+              "id": 596704,
+              "title": "Hitorigoto -TV MIX-",
+              "cover": "https://assets.ppy.sh/beatmaps/596704/covers/card.jpg?1650648964",
+              "stars": 3.50447
+            }
+          },
+          {
+            "user": "ZEROTOW",
+            "user_id": 15655633,
+            "country": "IQ",
+            "score_id": 5039492037,
+            "rank": "B",
+            "accuracy": 0.9291417165668663,
+            "pp": 31.0569,
+            "mods": [
+              "HR"
+            ],
+            "combo": 344,
+            "created_at": "2026-06-17T14:32:01Z",
+            "beatmapset": {
+              "id": 234935,
+              "title": "Merry Christmas",
+              "cover": "https://assets.ppy.sh/beatmaps/234935/covers/card.jpg?1622079666",
+              "stars": 3.36799
+            }
+          },
+          {
+            "user": "ZEROTOW",
+            "user_id": 15655633,
+            "country": "IQ",
+            "score_id": 5039491023,
+            "rank": "A",
+            "accuracy": 0.9330759330759331,
+            "pp": 19.0344,
+            "mods": [
+              "HR"
+            ],
+            "combo": 234,
+            "created_at": "2026-06-17T14:29:40Z",
+            "beatmapset": {
+              "id": 1440767,
+              "title": "SAVE (Encore)",
+              "cover": "https://assets.ppy.sh/beatmaps/1440767/covers/card.jpg?1650709123",
+              "stars": 3.25929
+            }
+          },
+          {
+            "user": "ZEROTOW",
+            "user_id": 15655633,
+            "country": "IQ",
+            "score_id": 5039489034,
+            "rank": "B",
+            "accuracy": 0.8710217755443886,
+            "pp": 49.3911,
+            "mods": [],
+            "combo": 71,
+            "created_at": "2026-06-17T14:25:09Z",
+            "beatmapset": {
+              "id": 1280506,
+              "title": "WONDERFUL WONDER (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1280506/covers/card.jpg?1645786525",
+              "stars": 4.99611
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "WONDERFUL WONDER (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1280506/covers/card.jpg?1645786525",
+        "unique_players": 11
       }
     }
   }

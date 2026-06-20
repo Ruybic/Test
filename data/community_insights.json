@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 112,
-    "longest": 112,
-    "last_updated": "2026-06-18"
+    "current": 113,
+    "longest": 113,
+    "last_updated": "2026-06-19"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -33534,6 +33534,292 @@
         "title": "WONDERFUL WONDER (TV Size)",
         "cover": "https://assets.ppy.sh/beatmaps/1280506/covers/card.jpg?1645786525",
         "unique_players": 11
+      }
+    },
+    "2026-06-19": {
+      "total_scores": 556,
+      "peak_hour_baghdad": 17,
+      "top_grinder": {
+        "user": "i9be",
+        "user_id": 35359675,
+        "count": 98,
+        "scores": [
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6906921334,
+            "rank": "C",
+            "accuracy": 0.7841691248770895,
+            "pp": 20.1745,
+            "mods": [],
+            "combo": 238,
+            "created_at": "2026-06-18T22:35:23Z",
+            "beatmapset": {
+              "id": 2288605,
+              "title": "Crystalia",
+              "cover": "https://assets.ppy.sh/beatmaps/2288605/covers/card.jpg?1762919950",
+              "stars": 3.64723
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6906907144,
+            "rank": "S",
+            "accuracy": 0.9466292134831461,
+            "pp": 41.1077,
+            "mods": [],
+            "combo": 300,
+            "created_at": "2026-06-18T22:32:13Z",
+            "beatmapset": {
+              "id": 2295424,
+              "title": "Johnny Test Theme (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2295424/covers/card.jpg?1744672306",
+              "stars": 3.54906
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6906852274,
+            "rank": "A",
+            "accuracy": 0.9308755760368663,
+            "pp": 37.7341,
+            "mods": [],
+            "combo": 548,
+            "created_at": "2026-06-18T22:20:08Z",
+            "beatmapset": {
+              "id": 2416816,
+              "title": "Witches",
+              "cover": "https://assets.ppy.sh/beatmaps/2416816/covers/card.jpg?1758339234",
+              "stars": 3.73768
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6906836134,
+            "rank": "C",
+            "accuracy": 0.7409420289855072,
+            "pp": 27.9006,
+            "mods": [],
+            "combo": 268,
+            "created_at": "2026-06-18T22:16:38Z",
+            "beatmapset": {
+              "id": 2398052,
+              "title": "Golden",
+              "cover": "https://assets.ppy.sh/beatmaps/2398052/covers/card.jpg?1753850095",
+              "stars": 4.50859
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6906809159,
+            "rank": "B",
+            "accuracy": 0.8942652329749103,
+            "pp": 56.5152,
+            "mods": [],
+            "combo": 179,
+            "created_at": "2026-06-18T22:10:55Z",
+            "beatmapset": {
+              "id": 1280506,
+              "title": "WONDERFUL WONDER (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1280506/covers/card.jpg?1645786525",
+              "stars": 4.38578
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6906786993,
+            "rank": "C",
+            "accuracy": 0.8036458333333333,
+            "pp": 23.2447,
+            "mods": [],
+            "combo": 200,
+            "created_at": "2026-06-18T22:06:15Z",
+            "beatmapset": {
+              "id": 1092468,
+              "title": "Ai no Sukima (Rock Cover)",
+              "cover": "https://assets.ppy.sh/beatmaps/1092468/covers/card.jpg?1650690332",
+              "stars": 4.09329
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6906772766,
+            "rank": "A",
+            "accuracy": 0.9309116809116809,
+            "pp": 38.7265,
+            "mods": [],
+            "combo": 528,
+            "created_at": "2026-06-18T22:03:17Z",
+            "beatmapset": {
+              "id": 2280806,
+              "title": "Two Faced",
+              "cover": "https://assets.ppy.sh/beatmaps/2280806/covers/card.jpg?1732314825",
+              "stars": 3.70947
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6906756385,
+            "rank": "B",
+            "accuracy": 0.8864468864468864,
+            "pp": 25.9013,
+            "mods": [],
+            "combo": 204,
+            "created_at": "2026-06-18T21:59:52Z",
+            "beatmapset": {
+              "id": 819112,
+              "title": "You Suck At Love (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/819112/covers/card.jpg?1650668141",
+              "stars": 3.72883
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6906578716,
+            "rank": "A",
+            "accuracy": 0.9472934472934473,
+            "pp": 52.0134,
+            "mods": [],
+            "combo": 380,
+            "created_at": "2026-06-18T21:24:52Z",
+            "beatmapset": {
+              "id": 1073128,
+              "title": "D-TecnoLife (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1073128/covers/card.jpg?1650688862",
+              "stars": 3.82277
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6906568273,
+            "rank": "S",
+            "accuracy": 0.9487179487179487,
+            "pp": 39.6497,
+            "mods": [],
+            "combo": 177,
+            "created_at": "2026-06-18T21:22:51Z",
+            "beatmapset": {
+              "id": 346339,
+              "title": "Unbreakable Heart",
+              "cover": "https://assets.ppy.sh/beatmaps/346339/covers/card.jpg?1650632156",
+              "stars": 3.42482
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6906562645,
+            "rank": "A",
+            "accuracy": 0.9333333333333333,
+            "pp": 45.5841,
+            "mods": [],
+            "combo": 230,
+            "created_at": "2026-06-18T21:21:46Z",
+            "beatmapset": {
+              "id": 765778,
+              "title": "Make a Move (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/765778/covers/card.jpg?1650663123",
+              "stars": 3.75862
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6906556551,
+            "rank": "B",
+            "accuracy": 0.8875555555555555,
+            "pp": 38.3561,
+            "mods": [],
+            "combo": 353,
+            "created_at": "2026-06-18T21:20:36Z",
+            "beatmapset": {
+              "id": 416426,
+              "title": "Fade (feat. Zak Waters)",
+              "cover": "https://assets.ppy.sh/beatmaps/416426/covers/card.jpg?1650655336",
+              "stars": 4.25871
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6906506156,
+            "rank": "B",
+            "accuracy": 0.9056603773584906,
+            "pp": 30.3215,
+            "mods": [],
+            "combo": 114,
+            "created_at": "2026-06-18T21:11:00Z",
+            "beatmapset": {
+              "id": 963651,
+              "title": "Shoukei to Shikabane no Michi (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/963651/covers/card.jpg?1650679924",
+              "stars": 4.21082
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6906497134,
+            "rank": "B",
+            "accuracy": 0.9109461966604824,
+            "pp": null,
+            "mods": [],
+            "combo": 260,
+            "created_at": "2026-06-18T21:09:22Z",
+            "beatmapset": {
+              "id": 358119,
+              "title": "Cold As Ice (PH Electro Remix) (Nightcore Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/358119/covers/card.jpg?1650663453",
+              "stars": 3.91426
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6906408033,
+            "rank": "B",
+            "accuracy": 0.8488529014844804,
+            "pp": 20.3038,
+            "mods": [],
+            "combo": 747,
+            "created_at": "2026-06-18T20:52:49Z",
+            "beatmapset": {
+              "id": 1312076,
+              "title": "SPUTNIK-3",
+              "cover": "https://assets.ppy.sh/beatmaps/1312076/covers/card.jpg?1650709296",
+              "stars": 3.82811
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "You Suck At Love (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2441966/covers/card.jpg?1762466202",
+        "unique_players": 10
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 113,
-    "longest": 113,
-    "last_updated": "2026-06-19"
+    "current": 114,
+    "longest": 114,
+    "last_updated": "2026-06-20"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -33820,6 +33820,292 @@
         "title": "You Suck At Love (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2441966/covers/card.jpg?1762466202",
         "unique_players": 10
+      }
+    },
+    "2026-06-20": {
+      "total_scores": 669,
+      "peak_hour_baghdad": 17,
+      "top_grinder": {
+        "user": "i9be",
+        "user_id": 35359675,
+        "count": 90,
+        "scores": [
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6913427596,
+            "rank": "A",
+            "accuracy": 0.9229747675962815,
+            "pp": null,
+            "mods": [],
+            "combo": 423,
+            "created_at": "2026-06-19T22:04:29Z",
+            "beatmapset": {
+              "id": 1243359,
+              "title": "perfect ft. oaf1 & dreamcache",
+              "cover": "https://assets.ppy.sh/beatmaps/1243359/covers/card.jpg?1632124822",
+              "stars": 3.60718
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6913419754,
+            "rank": "C",
+            "accuracy": 0.8333333333333334,
+            "pp": 35.2759,
+            "mods": [],
+            "combo": 97,
+            "created_at": "2026-06-19T22:02:53Z",
+            "beatmapset": {
+              "id": 979801,
+              "title": "Haru Urara, Kimi to Sakihokoru (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/979801/covers/card.jpg?1622163065",
+              "stars": 4.65275
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6913406931,
+            "rank": "B",
+            "accuracy": 0.8648247177658942,
+            "pp": 24.0921,
+            "mods": [],
+            "combo": 181,
+            "created_at": "2026-06-19T22:00:15Z",
+            "beatmapset": {
+              "id": 349052,
+              "title": "Bravely You",
+              "cover": "https://assets.ppy.sh/beatmaps/349052/covers/card.jpg?1622092428",
+              "stars": 4.65812
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6913378487,
+            "rank": "B",
+            "accuracy": 0.8515108593012276,
+            "pp": 24.3546,
+            "mods": [],
+            "combo": 398,
+            "created_at": "2026-06-19T21:54:29Z",
+            "beatmapset": {
+              "id": 941085,
+              "title": "Our Story",
+              "cover": "https://assets.ppy.sh/beatmaps/941085/covers/card.jpg?1631511654",
+              "stars": 4.47946
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6913354428,
+            "rank": "B",
+            "accuracy": 0.8839869281045751,
+            "pp": 19.088,
+            "mods": [],
+            "combo": 149,
+            "created_at": "2026-06-19T21:49:38Z",
+            "beatmapset": {
+              "id": 757410,
+              "title": "SAD!",
+              "cover": "https://assets.ppy.sh/beatmaps/757410/covers/card.jpg?1645776895",
+              "stars": 3.63273
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6913319980,
+            "rank": "C",
+            "accuracy": 0.8062015503875969,
+            "pp": 25.516,
+            "mods": [],
+            "combo": 99,
+            "created_at": "2026-06-19T21:42:50Z",
+            "beatmapset": {
+              "id": 213629,
+              "title": "Five Nights at Freddy's",
+              "cover": "https://assets.ppy.sh/beatmaps/213629/covers/card.jpg?1650627414",
+              "stars": 4.61824
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6913304142,
+            "rank": "B",
+            "accuracy": 0.8822553897180763,
+            "pp": 53.3977,
+            "mods": [],
+            "combo": 300,
+            "created_at": "2026-06-19T21:39:46Z",
+            "beatmapset": {
+              "id": 944993,
+              "title": "Chikatto Chika Chika (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/944993/covers/card.jpg?1622158792",
+              "stars": 4.31637
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6913294732,
+            "rank": "B",
+            "accuracy": 0.9065040650406504,
+            "pp": 50.0974,
+            "mods": [],
+            "combo": 169,
+            "created_at": "2026-06-19T21:37:55Z",
+            "beatmapset": {
+              "id": 56633,
+              "title": "Leave The Lights On (KROT Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/56633/covers/card.jpg?1650613672",
+              "stars": 4.53083
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6913274467,
+            "rank": "B",
+            "accuracy": 0.8975188781014024,
+            "pp": null,
+            "mods": [],
+            "combo": 237,
+            "created_at": "2026-06-19T21:33:57Z",
+            "beatmapset": {
+              "id": 358119,
+              "title": "Cold As Ice (PH Electro Remix) (Nightcore Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/358119/covers/card.jpg?1650663453",
+              "stars": 4.6025
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6913257132,
+            "rank": "B",
+            "accuracy": 0.9077181208053692,
+            "pp": 50.9188,
+            "mods": [],
+            "combo": 213,
+            "created_at": "2026-06-19T21:30:34Z",
+            "beatmapset": {
+              "id": 963651,
+              "title": "Shoukei to Shikabane no Michi (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/963651/covers/card.jpg?1650679924",
+              "stars": 4.35959
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6913247432,
+            "rank": "C",
+            "accuracy": 0.8125,
+            "pp": 33.8913,
+            "mods": [],
+            "combo": 114,
+            "created_at": "2026-06-19T21:28:39Z",
+            "beatmapset": {
+              "id": 765778,
+              "title": "Make a Move (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/765778/covers/card.jpg?1650663123",
+              "stars": 4.61016
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6913236550,
+            "rank": "C",
+            "accuracy": 0.8380187416331994,
+            "pp": 54.2606,
+            "mods": [],
+            "combo": 245,
+            "created_at": "2026-06-19T21:26:32Z",
+            "beatmapset": {
+              "id": 819112,
+              "title": "You Suck At Love (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/819112/covers/card.jpg?1650668141",
+              "stars": 4.53934
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6913221983,
+            "rank": "C",
+            "accuracy": 0.8391984359726296,
+            "pp": 23.9826,
+            "mods": [],
+            "combo": 115,
+            "created_at": "2026-06-19T21:23:43Z",
+            "beatmapset": {
+              "id": 1244123,
+              "title": "Natsukoi Hanabi (Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1244123/covers/card.jpg?1650700413",
+              "stars": 4.20564
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6913210001,
+            "rank": "B",
+            "accuracy": 0.8709677419354839,
+            "pp": 37.4394,
+            "mods": [],
+            "combo": 74,
+            "created_at": "2026-06-19T21:21:23Z",
+            "beatmapset": {
+              "id": 459149,
+              "title": "Yuima-ru*World TVver.",
+              "cover": "https://assets.ppy.sh/beatmaps/459149/covers/card.jpg?1622104099",
+              "stars": 4.39308
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6913201108,
+            "rank": "C",
+            "accuracy": 0.8011937557392103,
+            "pp": 38.7697,
+            "mods": [],
+            "combo": 181,
+            "created_at": "2026-06-19T21:19:41Z",
+            "beatmapset": {
+              "id": 2533832,
+              "title": "Zenmai Koidokei (T.E.B Summer Mix) (Game Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2533832/covers/card.jpg?1780861870",
+              "stars": 4.68778
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "I Don't Know (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+        "unique_players": 27
       }
     }
   }

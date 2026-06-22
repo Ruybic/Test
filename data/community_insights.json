@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 114,
-    "longest": 114,
-    "last_updated": "2026-06-20"
+    "current": 115,
+    "longest": 115,
+    "last_updated": "2026-06-21"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -34106,6 +34106,292 @@
         "title": "I Don't Know (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
         "unique_players": 27
+      }
+    },
+    "2026-06-21": {
+      "total_scores": 480,
+      "peak_hour_baghdad": 23,
+      "top_grinder": {
+        "user": "i9be",
+        "user_id": 35359675,
+        "count": 100,
+        "scores": [
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6920109124,
+            "rank": "B",
+            "accuracy": 0.8638676844783715,
+            "pp": 32.4206,
+            "mods": [],
+            "combo": 159,
+            "created_at": "2026-06-20T21:27:42Z",
+            "beatmapset": {
+              "id": 1004468,
+              "title": "Guinea Pig Bridge",
+              "cover": "https://assets.ppy.sh/beatmaps/1004468/covers/card.jpg?1645781181",
+              "stars": 4.1468
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6920104654,
+            "rank": "B",
+            "accuracy": 0.9007633587786259,
+            "pp": 38.0965,
+            "mods": [],
+            "combo": 100,
+            "created_at": "2026-06-20T21:26:49Z",
+            "beatmapset": {
+              "id": 1004468,
+              "title": "Guinea Pig Bridge",
+              "cover": "https://assets.ppy.sh/beatmaps/1004468/covers/card.jpg?1645781181",
+              "stars": 4.1468
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6920099287,
+            "rank": "C",
+            "accuracy": 0.7795238095238095,
+            "pp": 15.5462,
+            "mods": [],
+            "combo": 626,
+            "created_at": "2026-06-20T21:25:48Z",
+            "beatmapset": {
+              "id": 867737,
+              "title": "The Big Black",
+              "cover": "https://assets.ppy.sh/beatmaps/867737/covers/card.jpg?1645785490",
+              "stars": 3.62295
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6919990660,
+            "rank": "A",
+            "accuracy": 0.9289940828402367,
+            "pp": 78.5828,
+            "mods": [],
+            "combo": 238,
+            "created_at": "2026-06-20T21:05:30Z",
+            "beatmapset": {
+              "id": 798007,
+              "title": "Despacito ft. R3 Music Box",
+              "cover": "https://assets.ppy.sh/beatmaps/798007/covers/card.jpg?1650665377",
+              "stars": 4.42283
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6919985179,
+            "rank": "B",
+            "accuracy": 0.9112426035502958,
+            "pp": 53.794,
+            "mods": [],
+            "combo": 98,
+            "created_at": "2026-06-20T21:04:31Z",
+            "beatmapset": {
+              "id": 798007,
+              "title": "Despacito ft. R3 Music Box",
+              "cover": "https://assets.ppy.sh/beatmaps/798007/covers/card.jpg?1650665377",
+              "stars": 4.42283
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6919975860,
+            "rank": "A",
+            "accuracy": 0.8777120315581854,
+            "pp": 65.7105,
+            "mods": [],
+            "combo": 238,
+            "created_at": "2026-06-20T21:02:49Z",
+            "beatmapset": {
+              "id": 798007,
+              "title": "Despacito ft. R3 Music Box",
+              "cover": "https://assets.ppy.sh/beatmaps/798007/covers/card.jpg?1650665377",
+              "stars": 4.42283
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6919969333,
+            "rank": "C",
+            "accuracy": 0.8439306358381503,
+            "pp": 51.5094,
+            "mods": [],
+            "combo": 112,
+            "created_at": "2026-06-20T21:01:39Z",
+            "beatmapset": {
+              "id": 798007,
+              "title": "Despacito ft. R3 Music Box",
+              "cover": "https://assets.ppy.sh/beatmaps/798007/covers/card.jpg?1650665377",
+              "stars": 4.45622
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6919958350,
+            "rank": "C",
+            "accuracy": 0.7983091787439613,
+            "pp": 39.6602,
+            "mods": [],
+            "combo": 104,
+            "created_at": "2026-06-20T20:59:38Z",
+            "beatmapset": {
+              "id": 2210696,
+              "title": "Gravity Falls Theme Song (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2210696/covers/card.jpg?1737310112",
+              "stars": 4.75006
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6919952989,
+            "rank": "B",
+            "accuracy": 0.9015748031496063,
+            "pp": 36.8469,
+            "mods": [],
+            "combo": 89,
+            "created_at": "2026-06-20T20:58:41Z",
+            "beatmapset": {
+              "id": 527431,
+              "title": "Gravity Falls Theme Song",
+              "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+              "stars": 3.8861
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6919948022,
+            "rank": "B",
+            "accuracy": 0.8867102396514162,
+            "pp": 42.9339,
+            "mods": [],
+            "combo": 147,
+            "created_at": "2026-06-20T20:57:47Z",
+            "beatmapset": {
+              "id": 527431,
+              "title": "Gravity Falls Theme Song",
+              "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+              "stars": 4.43427
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6919942039,
+            "rank": "B",
+            "accuracy": 0.8880407124681934,
+            "pp": 51.2855,
+            "mods": [],
+            "combo": 103,
+            "created_at": "2026-06-20T20:56:41Z",
+            "beatmapset": {
+              "id": 2210696,
+              "title": "Gravity Falls Theme Song (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2210696/covers/card.jpg?1737310112",
+              "stars": 4.38247
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6919923387,
+            "rank": "C",
+            "accuracy": 0.7768916155419223,
+            "pp": 18.3835,
+            "mods": [],
+            "combo": 264,
+            "created_at": "2026-06-20T20:53:16Z",
+            "beatmapset": {
+              "id": 1163834,
+              "title": "Yoru Magai",
+              "cover": "https://assets.ppy.sh/beatmaps/1163834/covers/card.jpg?1645786196",
+              "stars": 4.91379
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6919900174,
+            "rank": "C",
+            "accuracy": 0.7954545454545454,
+            "pp": 28.0265,
+            "mods": [],
+            "combo": 281,
+            "created_at": "2026-06-20T20:49:00Z",
+            "beatmapset": {
+              "id": 865746,
+              "title": "Kimi no Sei (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/865746/covers/card.jpg?1650670889",
+              "stars": 4.61705
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6919888270,
+            "rank": "C",
+            "accuracy": 0.8182656826568265,
+            "pp": 27.9648,
+            "mods": [],
+            "combo": 266,
+            "created_at": "2026-06-20T20:46:49Z",
+            "beatmapset": {
+              "id": 2294338,
+              "title": "Tetoris",
+              "cover": "https://assets.ppy.sh/beatmaps/2294338/covers/card.jpg?1735651250",
+              "stars": 4.56676
+            }
+          },
+          {
+            "user": "i9be",
+            "user_id": 35359675,
+            "country": "IQ",
+            "score_id": 6919866994,
+            "rank": "B",
+            "accuracy": 0.9200385356454721,
+            "pp": 56.7672,
+            "mods": [],
+            "combo": 78,
+            "created_at": "2026-06-20T20:42:50Z",
+            "beatmapset": {
+              "id": 1114649,
+              "title": "222 - wewewe",
+              "cover": "https://assets.ppy.sh/beatmaps/1114649/covers/card.jpg?1650691985",
+              "stars": 4.45678
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Grandeur (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1380176/covers/card.jpg?1622207213",
+        "unique_players": 23
       }
     }
   }

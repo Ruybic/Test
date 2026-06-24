@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 116,
-    "longest": 116,
-    "last_updated": "2026-06-22"
+    "current": 117,
+    "longest": 117,
+    "last_updated": "2026-06-23"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -34678,6 +34678,324 @@
         "title": "Habits Of My Heart",
         "cover": "https://assets.ppy.sh/beatmaps/223719/covers/card.jpg?1645788512",
         "unique_players": 14
+      }
+    },
+    "2026-06-23": {
+      "total_scores": 426,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "FaZe Kawan",
+        "user_id": 12813974,
+        "count": 68,
+        "scores": [
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5041982472,
+            "rank": "D",
+            "accuracy": 0.6810089020771514,
+            "pp": 22.2529,
+            "mods": [
+              "EZ",
+              "HD",
+              "DT"
+            ],
+            "combo": 62,
+            "created_at": "2026-06-22T20:56:48Z",
+            "beatmapset": {
+              "id": 889671,
+              "title": "Reimei (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/889671/covers/card.jpg?1650673196",
+              "stars": 4.55019
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5041975306,
+            "rank": "B",
+            "accuracy": 0.9147058823529411,
+            "pp": 78.8511,
+            "mods": [
+              "HD"
+            ],
+            "combo": 362,
+            "created_at": "2026-06-22T20:38:37Z",
+            "beatmapset": {
+              "id": 1833640,
+              "title": "In the Black",
+              "cover": "https://assets.ppy.sh/beatmaps/1833640/covers/card.jpg?1691335498",
+              "stars": 5.47331
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5041973183,
+            "rank": "A",
+            "accuracy": 0.9755600814663951,
+            "pp": 119.617,
+            "mods": [
+              "HD"
+            ],
+            "combo": 584,
+            "created_at": "2026-06-22T20:33:21Z",
+            "beatmapset": {
+              "id": 695316,
+              "title": "SANTA SAN",
+              "cover": "https://assets.ppy.sh/beatmaps/695316/covers/card.jpg?1650656958",
+              "stars": 5.03801
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5041971396,
+            "rank": "A",
+            "accuracy": 0.9729832572298326,
+            "pp": 85.9126,
+            "mods": [
+              "HD"
+            ],
+            "combo": 1087,
+            "created_at": "2026-06-22T20:28:53Z",
+            "beatmapset": {
+              "id": 478405,
+              "title": "Snow Drive(01.23)",
+              "cover": "https://assets.ppy.sh/beatmaps/478405/covers/card.jpg?1650647231",
+              "stars": 4.97107
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5041968725,
+            "rank": "B",
+            "accuracy": 0.8791440626883665,
+            "pp": 40.0536,
+            "mods": [
+              "HD"
+            ],
+            "combo": 358,
+            "created_at": "2026-06-22T20:22:16Z",
+            "beatmapset": {
+              "id": 2219231,
+              "title": "Age of Tyranny",
+              "cover": "https://assets.ppy.sh/beatmaps/2219231/covers/card.jpg?1739205113",
+              "stars": 5.30184
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5041966566,
+            "rank": "B",
+            "accuracy": 0.917550839964633,
+            "pp": 104.506,
+            "mods": [
+              "HD"
+            ],
+            "combo": 416,
+            "created_at": "2026-06-22T20:16:58Z",
+            "beatmapset": {
+              "id": 384772,
+              "title": "Asu no Yozora Shoukaihan",
+              "cover": "https://assets.ppy.sh/beatmaps/384772/covers/card.jpg?1650716263",
+              "stars": 5.34627
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5041962923,
+            "rank": "A",
+            "accuracy": 0.9377372817008353,
+            "pp": 115.318,
+            "mods": [
+              "HD"
+            ],
+            "combo": 335,
+            "created_at": "2026-06-22T20:08:08Z",
+            "beatmapset": {
+              "id": 1012262,
+              "title": "GET BACK",
+              "cover": "https://assets.ppy.sh/beatmaps/1012262/covers/card.jpg?1622167074",
+              "stars": 5.46994
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5041960751,
+            "rank": "A",
+            "accuracy": 0.9658923303834809,
+            "pp": 143.981,
+            "mods": [
+              "HD"
+            ],
+            "combo": 812,
+            "created_at": "2026-06-22T20:02:41Z",
+            "beatmapset": {
+              "id": 940222,
+              "title": "Kanzen Kankaku Dreamer",
+              "cover": "https://assets.ppy.sh/beatmaps/940222/covers/card.jpg?1650688352",
+              "stars": 5.50789
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5041957975,
+            "rank": "C",
+            "accuracy": 0.7756076388888888,
+            "pp": 31.9916,
+            "mods": [
+              "HD"
+            ],
+            "combo": 309,
+            "created_at": "2026-06-22T19:56:03Z",
+            "beatmapset": {
+              "id": 1627846,
+              "title": "TENSION (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1627846/covers/card.jpg?1713128862",
+              "stars": 5.48856
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5041903856,
+            "rank": "C",
+            "accuracy": 0.8453159041394336,
+            "pp": 115.831,
+            "mods": [
+              "HD"
+            ],
+            "combo": 53,
+            "created_at": "2026-06-22T17:45:27Z",
+            "beatmapset": {
+              "id": 2279697,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/2279697/covers/card.jpg?1733354216",
+              "stars": 6.01432
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5041901876,
+            "rank": "SH",
+            "accuracy": 0.9699248120300752,
+            "pp": 213.184,
+            "mods": [
+              "HD"
+            ],
+            "combo": 179,
+            "created_at": "2026-06-22T17:40:34Z",
+            "beatmapset": {
+              "id": 1061287,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/1061287/covers/card.jpg?1650688170",
+              "stars": 5.83282
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5041901530,
+            "rank": "A",
+            "accuracy": 0.9348370927318296,
+            "pp": 166.412,
+            "mods": [
+              "HD"
+            ],
+            "combo": 170,
+            "created_at": "2026-06-22T17:39:44Z",
+            "beatmapset": {
+              "id": 1061287,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/1061287/covers/card.jpg?1650688170",
+              "stars": 5.83282
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5041900349,
+            "rank": "A",
+            "accuracy": 0.9624060150375939,
+            "pp": 181.402,
+            "mods": [
+              "HD"
+            ],
+            "combo": 122,
+            "created_at": "2026-06-22T17:36:53Z",
+            "beatmapset": {
+              "id": 1061287,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/1061287/covers/card.jpg?1650688170",
+              "stars": 5.83282
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5041899029,
+            "rank": "C",
+            "accuracy": 0.8512396694214877,
+            "pp": 93.4365,
+            "mods": [
+              "HD"
+            ],
+            "combo": 121,
+            "created_at": "2026-06-22T17:33:49Z",
+            "beatmapset": {
+              "id": 1061287,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/1061287/covers/card.jpg?1650688170",
+              "stars": 5.37215
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5041898661,
+            "rank": "A",
+            "accuracy": 0.9088319088319088,
+            "pp": 139.634,
+            "mods": [
+              "HD"
+            ],
+            "combo": 173,
+            "created_at": "2026-06-22T17:32:51Z",
+            "beatmapset": {
+              "id": 1061287,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/1061287/covers/card.jpg?1650688170",
+              "stars": 5.40258
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "PADORU / PADORU",
+        "cover": "https://assets.ppy.sh/beatmaps/2279697/covers/card.jpg?1733354216",
+        "unique_players": 16
       }
     }
   }

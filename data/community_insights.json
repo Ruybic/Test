@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 117,
-    "longest": 117,
-    "last_updated": "2026-06-23"
+    "current": 118,
+    "longest": 118,
+    "last_updated": "2026-06-24"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -34996,6 +34996,333 @@
         "title": "PADORU / PADORU",
         "cover": "https://assets.ppy.sh/beatmaps/2279697/covers/card.jpg?1733354216",
         "unique_players": 16
+      }
+    },
+    "2026-06-24": {
+      "total_scores": 539,
+      "peak_hour_baghdad": 14,
+      "top_grinder": {
+        "user": "Biscuits0",
+        "user_id": 23843313,
+        "count": 66,
+        "scores": [
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 6936239002,
+            "rank": "B",
+            "accuracy": 0.8822085889570552,
+            "pp": null,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 639,
+            "created_at": "2026-06-23T10:48:10Z",
+            "beatmapset": {
+              "id": 49459,
+              "title": "Extreme Fantasy",
+              "cover": "https://assets.ppy.sh/beatmaps/49459/covers/card.jpg?1622055451",
+              "stars": 5.30176
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 6936220476,
+            "rank": "A",
+            "accuracy": 0.9392156862745098,
+            "pp": 171.795,
+            "mods": [
+              "HD"
+            ],
+            "combo": 113,
+            "created_at": "2026-06-23T10:44:04Z",
+            "beatmapset": {
+              "id": 1341551,
+              "title": "Plasma Gun",
+              "cover": "https://assets.ppy.sh/beatmaps/1341551/covers/card.jpg?1650705775",
+              "stars": 6.31214
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 6936215799,
+            "rank": "B",
+            "accuracy": 0.9205882352941176,
+            "pp": 149.205,
+            "mods": [
+              "HD"
+            ],
+            "combo": 112,
+            "created_at": "2026-06-23T10:43:02Z",
+            "beatmapset": {
+              "id": 1341551,
+              "title": "Plasma Gun",
+              "cover": "https://assets.ppy.sh/beatmaps/1341551/covers/card.jpg?1650705775",
+              "stars": 6.31214
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 6936209686,
+            "rank": "A",
+            "accuracy": 0.9514705882352941,
+            "pp": 201.173,
+            "mods": [
+              "HD"
+            ],
+            "combo": 134,
+            "created_at": "2026-06-23T10:41:38Z",
+            "beatmapset": {
+              "id": 1341551,
+              "title": "Plasma Gun",
+              "cover": "https://assets.ppy.sh/beatmaps/1341551/covers/card.jpg?1650705775",
+              "stars": 6.31214
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 6936185644,
+            "rank": "B",
+            "accuracy": 0.8976586102719033,
+            "pp": 86.4339,
+            "mods": [
+              "HD"
+            ],
+            "combo": 456,
+            "created_at": "2026-06-23T10:36:11Z",
+            "beatmapset": {
+              "id": 1303143,
+              "title": "Peko Miko Daisensou!!",
+              "cover": "https://assets.ppy.sh/beatmaps/1303143/covers/card.jpg?1650704520",
+              "stars": 6.82796
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5042144460,
+            "rank": "B",
+            "accuracy": 0.8835978835978836,
+            "pp": 247.924,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 119,
+            "created_at": "2026-06-23T07:37:37Z",
+            "beatmapset": {
+              "id": 1073074,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/1073074/covers/card.jpg?1650689325",
+              "stars": 5.31202
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5042144366,
+            "rank": "C",
+            "accuracy": 0.8359788359788359,
+            "pp": 174.179,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 52,
+            "created_at": "2026-06-23T07:37:10Z",
+            "beatmapset": {
+              "id": 1073074,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/1073074/covers/card.jpg?1650689325",
+              "stars": 5.31202
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5042144271,
+            "rank": "B",
+            "accuracy": 0.8571428571428571,
+            "pp": 181.736,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 66,
+            "created_at": "2026-06-23T07:36:47Z",
+            "beatmapset": {
+              "id": 1073074,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/1073074/covers/card.jpg?1650689325",
+              "stars": 5.31202
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5042143974,
+            "rank": "A",
+            "accuracy": 0.9244935543278084,
+            "pp": 230.54,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 155,
+            "created_at": "2026-06-23T07:35:26Z",
+            "beatmapset": {
+              "id": 968171,
+              "title": "Mizuoto to Curtain",
+              "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
+              "stars": 5.14361
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5042143786,
+            "rank": "A",
+            "accuracy": 0.9355432780847146,
+            "pp": 307.198,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 156,
+            "created_at": "2026-06-23T07:34:35Z",
+            "beatmapset": {
+              "id": 968171,
+              "title": "Mizuoto to Curtain",
+              "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
+              "stars": 5.14361
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5042143612,
+            "rank": "B",
+            "accuracy": 0.8895027624309392,
+            "pp": 200.273,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 146,
+            "created_at": "2026-06-23T07:33:49Z",
+            "beatmapset": {
+              "id": 968171,
+              "title": "Mizuoto to Curtain",
+              "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
+              "stars": 5.14361
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5042142504,
+            "rank": "A",
+            "accuracy": 0.9307116104868914,
+            "pp": 186.208,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 136,
+            "created_at": "2026-06-23T07:28:40Z",
+            "beatmapset": {
+              "id": 2496558,
+              "title": "So Am I (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2496558/covers/card.jpg?1775073996",
+              "stars": 5.06739
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5042142041,
+            "rank": "A",
+            "accuracy": 0.9756554307116105,
+            "pp": 314.542,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 154,
+            "created_at": "2026-06-23T07:26:38Z",
+            "beatmapset": {
+              "id": 2496558,
+              "title": "So Am I (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2496558/covers/card.jpg?1775073996",
+              "stars": 5.06739
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5042141871,
+            "rank": "A",
+            "accuracy": 0.9456928838951311,
+            "pp": 230.213,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 121,
+            "created_at": "2026-06-23T07:25:56Z",
+            "beatmapset": {
+              "id": 2496558,
+              "title": "So Am I (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2496558/covers/card.jpg?1775073996",
+              "stars": 5.06739
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "score_id": 5042141707,
+            "rank": "A",
+            "accuracy": 0.9531835205992509,
+            "pp": 245.434,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 164,
+            "created_at": "2026-06-23T07:25:13Z",
+            "beatmapset": {
+              "id": 2496558,
+              "title": "So Am I (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2496558/covers/card.jpg?1775073996",
+              "stars": 5.06739
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+        "unique_players": 17
       }
     }
   }

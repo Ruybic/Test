@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 118,
-    "longest": 118,
-    "last_updated": "2026-06-24"
+    "current": 119,
+    "longest": 119,
+    "last_updated": "2026-06-25"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -35323,6 +35323,292 @@
         "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
         "unique_players": 17
+      }
+    },
+    "2026-06-25": {
+      "total_scores": 423,
+      "peak_hour_baghdad": 19,
+      "top_grinder": {
+        "user": "nxro1",
+        "user_id": 35237547,
+        "count": 38,
+        "scores": [
+          {
+            "user": "nxro1",
+            "user_id": 35237547,
+            "country": "IQ",
+            "score_id": 5042905100,
+            "rank": "B",
+            "accuracy": 0.90272614622057,
+            "pp": 28.5578,
+            "mods": [],
+            "combo": 367,
+            "created_at": "2026-06-24T21:07:36Z",
+            "beatmapset": {
+              "id": 2237410,
+              "title": "FREEDOM DiVE",
+              "cover": "https://assets.ppy.sh/beatmaps/2237410/covers/card.jpg?1736838465",
+              "stars": 4.78883
+            }
+          },
+          {
+            "user": "nxro1",
+            "user_id": 35237547,
+            "country": "IQ",
+            "score_id": 5042895297,
+            "rank": "B",
+            "accuracy": 0.9234620886981402,
+            "pp": 46.2763,
+            "mods": [],
+            "combo": 270,
+            "created_at": "2026-06-24T20:41:22Z",
+            "beatmapset": {
+              "id": 2160835,
+              "title": "i like the way you kiss me",
+              "cover": "https://assets.ppy.sh/beatmaps/2160835/covers/card.jpg?1718484860",
+              "stars": 4.59951
+            }
+          },
+          {
+            "user": "nxro1",
+            "user_id": 35237547,
+            "country": "IQ",
+            "score_id": 5042894012,
+            "rank": "C",
+            "accuracy": 0.7685185185185185,
+            "pp": 16.5467,
+            "mods": [],
+            "combo": 104,
+            "created_at": "2026-06-24T20:38:00Z",
+            "beatmapset": {
+              "id": 388441,
+              "title": "Transcendence",
+              "cover": "https://assets.ppy.sh/beatmaps/388441/covers/card.jpg?1622097344",
+              "stars": 4.59597
+            }
+          },
+          {
+            "user": "nxro1",
+            "user_id": 35237547,
+            "country": "IQ",
+            "score_id": 5042891795,
+            "rank": "B",
+            "accuracy": 0.9112745098039216,
+            "pp": 36.2572,
+            "mods": [],
+            "combo": 322,
+            "created_at": "2026-06-24T20:32:23Z",
+            "beatmapset": {
+              "id": 382664,
+              "title": "Higan Kikou ~ Titanic of Stygian",
+              "cover": "https://assets.ppy.sh/beatmaps/382664/covers/card.jpg?1650635039",
+              "stars": 4.32086
+            }
+          },
+          {
+            "user": "nxro1",
+            "user_id": 35237547,
+            "country": "IQ",
+            "score_id": 5042890337,
+            "rank": "B",
+            "accuracy": 0.9188311688311688,
+            "pp": 44.4373,
+            "mods": [],
+            "combo": 168,
+            "created_at": "2026-06-24T20:28:40Z",
+            "beatmapset": {
+              "id": 2278283,
+              "title": "Pedro (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2278283/covers/card.jpg?1756872826",
+              "stars": 4.23057
+            }
+          },
+          {
+            "user": "nxro1",
+            "user_id": 35237547,
+            "country": "IQ",
+            "score_id": 5042889734,
+            "rank": "C",
+            "accuracy": 0.8570640176600441,
+            "pp": 37.3501,
+            "mods": [],
+            "combo": 248,
+            "created_at": "2026-06-24T20:27:14Z",
+            "beatmapset": {
+              "id": 1912968,
+              "title": "Asayake no Starmine (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1912968/covers/card.jpg?1776860020",
+              "stars": 4.18068
+            }
+          },
+          {
+            "user": "nxro1",
+            "user_id": 35237547,
+            "country": "IQ",
+            "score_id": 5042888772,
+            "rank": "B",
+            "accuracy": 0.927536231884058,
+            "pp": 43.909,
+            "mods": [],
+            "combo": 270,
+            "created_at": "2026-06-24T20:24:52Z",
+            "beatmapset": {
+              "id": 999645,
+              "title": "Inferno (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/999645/covers/card.jpg?1650682203",
+              "stars": 4.17339
+            }
+          },
+          {
+            "user": "nxro1",
+            "user_id": 35237547,
+            "country": "IQ",
+            "score_id": 5042887675,
+            "rank": "A",
+            "accuracy": 0.9510752688172043,
+            "pp": 56.6913,
+            "mods": [],
+            "combo": 433,
+            "created_at": "2026-06-24T20:21:58Z",
+            "beatmapset": {
+              "id": 345450,
+              "title": "Techno Kitty",
+              "cover": "https://assets.ppy.sh/beatmaps/345450/covers/card.jpg?1631509391",
+              "stars": 4.18391
+            }
+          },
+          {
+            "user": "nxro1",
+            "user_id": 35237547,
+            "country": "IQ",
+            "score_id": 5042886367,
+            "rank": "B",
+            "accuracy": 0.8989625620207488,
+            "pp": 31.8425,
+            "mods": [],
+            "combo": 448,
+            "created_at": "2026-06-24T20:18:36Z",
+            "beatmapset": {
+              "id": 735660,
+              "title": "Bloodlip",
+              "cover": "https://assets.ppy.sh/beatmaps/735660/covers/card.jpg?1641087656",
+              "stars": 4.10121
+            }
+          },
+          {
+            "user": "nxro1",
+            "user_id": 35237547,
+            "country": "IQ",
+            "score_id": 5042882417,
+            "rank": "A",
+            "accuracy": 0.9619341563786008,
+            "pp": 56.5163,
+            "mods": [],
+            "combo": 540,
+            "created_at": "2026-06-24T20:08:38Z",
+            "beatmapset": {
+              "id": 375648,
+              "title": "Bass Slut (Original Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/375648/covers/card.jpg?1650635238",
+              "stars": 4.07036
+            }
+          },
+          {
+            "user": "nxro1",
+            "user_id": 35237547,
+            "country": "IQ",
+            "score_id": 5042880711,
+            "rank": "C",
+            "accuracy": 0.8348484848484848,
+            "pp": 27.2237,
+            "mods": [],
+            "combo": 243,
+            "created_at": "2026-06-24T20:04:10Z",
+            "beatmapset": {
+              "id": 2222398,
+              "title": "I Really Want to Stay At Your House",
+              "cover": "https://assets.ppy.sh/beatmaps/2222398/covers/card.jpg?1761237292",
+              "stars": 4.0958
+            }
+          },
+          {
+            "user": "nxro1",
+            "user_id": 35237547,
+            "country": "IQ",
+            "score_id": 5042878359,
+            "rank": "B",
+            "accuracy": 0.8999554367201426,
+            "pp": 28.7831,
+            "mods": [],
+            "combo": 719,
+            "created_at": "2026-06-24T19:58:11Z",
+            "beatmapset": {
+              "id": 1318545,
+              "title": "Day by day (PSYQUI Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/1318545/covers/card.jpg?1650710216",
+              "stars": 3.94383
+            }
+          },
+          {
+            "user": "nxro1",
+            "user_id": 35237547,
+            "country": "IQ",
+            "score_id": 5042872897,
+            "rank": "S",
+            "accuracy": 0.967930029154519,
+            "pp": 39.204,
+            "mods": [],
+            "combo": 621,
+            "created_at": "2026-06-24T19:44:11Z",
+            "beatmapset": {
+              "id": 570938,
+              "title": "Catch the Moment -Radio Edit ver.-",
+              "cover": "https://assets.ppy.sh/beatmaps/570938/covers/card.jpg?1650647994",
+              "stars": 3.60041
+            }
+          },
+          {
+            "user": "nxro1",
+            "user_id": 35237547,
+            "country": "IQ",
+            "score_id": 5042776178,
+            "rank": "A",
+            "accuracy": 0.9347181008902077,
+            "pp": 53.5166,
+            "mods": [],
+            "combo": 423,
+            "created_at": "2026-06-24T15:41:03Z",
+            "beatmapset": {
+              "id": 651692,
+              "title": "Tell Me What You Want",
+              "cover": "https://assets.ppy.sh/beatmaps/651692/covers/card.jpg?1650652587",
+              "stars": 4.27769
+            }
+          },
+          {
+            "user": "nxro1",
+            "user_id": 35237547,
+            "country": "IQ",
+            "score_id": 5042774941,
+            "rank": "S",
+            "accuracy": 0.9637462235649547,
+            "pp": 30.3671,
+            "mods": [],
+            "combo": 491,
+            "created_at": "2026-06-24T15:38:05Z",
+            "beatmapset": {
+              "id": 1035167,
+              "title": "Start Again",
+              "cover": "https://assets.ppy.sh/beatmaps/1035167/covers/card.jpg?1650685496",
+              "stars": 3.53128
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+        "unique_players": 20
       }
     }
   }

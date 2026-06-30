@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 122,
-    "longest": 122,
-    "last_updated": "2026-06-28"
+    "current": 123,
+    "longest": 123,
+    "last_updated": "2026-06-29"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -36518,6 +36518,296 @@
         "title": "PADORU / PADORU",
         "cover": "https://assets.ppy.sh/beatmaps/1061287/covers/card.jpg?1650688170",
         "unique_players": 16
+      }
+    },
+    "2026-06-29": {
+      "total_scores": 309,
+      "peak_hour_baghdad": 0,
+      "top_grinder": {
+        "user": "teto abo tez",
+        "user_id": 39878144,
+        "count": 49,
+        "scores": [
+          {
+            "user": "teto abo tez",
+            "user_id": 39878144,
+            "country": "IQ",
+            "score_id": 6972777129,
+            "rank": "C",
+            "accuracy": 0.7044573643410853,
+            "pp": 7.57947,
+            "mods": [],
+            "combo": 70,
+            "created_at": "2026-06-28T21:45:36Z",
+            "beatmapset": {
+              "id": 2369676,
+              "title": "OBSESSED POST-FRAILTY EXTENDED JERSEY MIX HOSTED BY TWERKNATION28 (NUMBER EDIT)",
+              "cover": "https://assets.ppy.sh/beatmaps/2369676/covers/card.jpg?1765884260",
+              "stars": 3.41951
+            }
+          },
+          {
+            "user": "teto abo tez",
+            "user_id": 39878144,
+            "country": "IQ",
+            "score_id": 6972768946,
+            "rank": "C",
+            "accuracy": 0.7197916666666667,
+            "pp": 13.1131,
+            "mods": [],
+            "combo": 91,
+            "created_at": "2026-06-28T21:43:58Z",
+            "beatmapset": {
+              "id": 2556198,
+              "title": "Six Seven",
+              "cover": "https://assets.ppy.sh/beatmaps/2556198/covers/card.jpg?1780609844",
+              "stars": 3.37014
+            }
+          },
+          {
+            "user": "teto abo tez",
+            "user_id": 39878144,
+            "country": "IQ",
+            "score_id": 6972760046,
+            "rank": "C",
+            "accuracy": 0.7777777777777778,
+            "pp": 5.49479,
+            "mods": [
+              "HR"
+            ],
+            "combo": 122,
+            "created_at": "2026-06-28T21:42:13Z",
+            "beatmapset": {
+              "id": 2563269,
+              "title": "Sell a Friend",
+              "cover": "https://assets.ppy.sh/beatmaps/2563269/covers/card.jpg?1780521511",
+              "stars": 2.46191
+            }
+          },
+          {
+            "user": "teto abo tez",
+            "user_id": 39878144,
+            "country": "IQ",
+            "score_id": 6972740613,
+            "rank": "D",
+            "accuracy": 0.6608348680171885,
+            "pp": 7.88534,
+            "mods": [],
+            "combo": 92,
+            "created_at": "2026-06-28T21:38:24Z",
+            "beatmapset": {
+              "id": 1635625,
+              "title": "PRESERVED VAMPIRE",
+              "cover": "https://assets.ppy.sh/beatmaps/1635625/covers/card.jpg?1779908848",
+              "stars": 3.61384
+            }
+          },
+          {
+            "user": "teto abo tez",
+            "user_id": 39878144,
+            "country": "IQ",
+            "score_id": 6972701775,
+            "rank": "C",
+            "accuracy": 0.7282051282051282,
+            "pp": 8.16791,
+            "mods": [],
+            "combo": 154,
+            "created_at": "2026-06-28T21:30:51Z",
+            "beatmapset": {
+              "id": 2448751,
+              "title": "FLOP ERA",
+              "cover": "https://assets.ppy.sh/beatmaps/2448751/covers/card.jpg?1765639661",
+              "stars": 3.58273
+            }
+          },
+          {
+            "user": "teto abo tez",
+            "user_id": 39878144,
+            "country": "IQ",
+            "score_id": 6972687002,
+            "rank": "C",
+            "accuracy": 0.7209302325581395,
+            "pp": 9.16311,
+            "mods": [],
+            "combo": 71,
+            "created_at": "2026-06-28T21:28:04Z",
+            "beatmapset": {
+              "id": 2369676,
+              "title": "OBSESSED POST-FRAILTY EXTENDED JERSEY MIX HOSTED BY TWERKNATION28 (NUMBER EDIT)",
+              "cover": "https://assets.ppy.sh/beatmaps/2369676/covers/card.jpg?1765884260",
+              "stars": 3.41951
+            }
+          },
+          {
+            "user": "teto abo tez",
+            "user_id": 39878144,
+            "country": "IQ",
+            "score_id": 6972670048,
+            "rank": "C",
+            "accuracy": 0.6982670744138634,
+            "pp": 5.98369,
+            "mods": [],
+            "combo": 103,
+            "created_at": "2026-06-28T21:24:48Z",
+            "beatmapset": {
+              "id": 2514004,
+              "title": "Looping the Rooms feat. Hatsune Miku",
+              "cover": "https://assets.ppy.sh/beatmaps/2514004/covers/card.jpg?1772054800",
+              "stars": 3.45811
+            }
+          },
+          {
+            "user": "teto abo tez",
+            "user_id": 39878144,
+            "country": "IQ",
+            "score_id": 6972657313,
+            "rank": "D",
+            "accuracy": 0.6893162393162393,
+            "pp": 7.02668,
+            "mods": [],
+            "combo": 85,
+            "created_at": "2026-06-28T21:22:18Z",
+            "beatmapset": {
+              "id": 2264192,
+              "title": "Kiss Me Again (Nightcore Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2264192/covers/card.jpg?1729559120",
+              "stars": 3.5157
+            }
+          },
+          {
+            "user": "teto abo tez",
+            "user_id": 39878144,
+            "country": "IQ",
+            "score_id": 6972644765,
+            "rank": "D",
+            "accuracy": 0.6818181818181818,
+            "pp": 7.62885,
+            "mods": [],
+            "combo": 125,
+            "created_at": "2026-06-28T21:19:52Z",
+            "beatmapset": {
+              "id": 2549663,
+              "title": "Brain Rot",
+              "cover": "https://assets.ppy.sh/beatmaps/2549663/covers/card.jpg?1780734591",
+              "stars": 3.19582
+            }
+          },
+          {
+            "user": "teto abo tez",
+            "user_id": 39878144,
+            "country": "IQ",
+            "score_id": 6972622899,
+            "rank": "C",
+            "accuracy": 0.8117559523809523,
+            "pp": 12.6746,
+            "mods": [
+              "HR"
+            ],
+            "combo": 265,
+            "created_at": "2026-06-28T21:15:42Z",
+            "beatmapset": {
+              "id": 16489,
+              "title": "Angel Of Darkness (Nightcore Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/16489/covers/card.jpg?1650606000",
+              "stars": 2.70286
+            }
+          },
+          {
+            "user": "teto abo tez",
+            "user_id": 39878144,
+            "country": "IQ",
+            "score_id": 6972595018,
+            "rank": "D",
+            "accuracy": 0.6846275752773375,
+            "pp": 4.92727,
+            "mods": [],
+            "combo": 125,
+            "created_at": "2026-06-28T21:10:24Z",
+            "beatmapset": {
+              "id": 1454027,
+              "title": "Hashire Uma Musume",
+              "cover": "https://assets.ppy.sh/beatmaps/1454027/covers/card.jpg?1650709485",
+              "stars": 3.85833
+            }
+          },
+          {
+            "user": "teto abo tez",
+            "user_id": 39878144,
+            "country": "IQ",
+            "score_id": 6972566416,
+            "rank": "D",
+            "accuracy": 0.6558139534883721,
+            "pp": 4.55437,
+            "mods": [],
+            "combo": 46,
+            "created_at": "2026-06-28T21:04:55Z",
+            "beatmapset": {
+              "id": 2253429,
+              "title": "doodle",
+              "cover": "https://assets.ppy.sh/beatmaps/2253429/covers/card.jpg?1730310660",
+              "stars": 3.30061
+            }
+          },
+          {
+            "user": "teto abo tez",
+            "user_id": 39878144,
+            "country": "IQ",
+            "score_id": 6972559494,
+            "rank": "C",
+            "accuracy": 0.757168458781362,
+            "pp": 4.44321,
+            "mods": [],
+            "combo": 100,
+            "created_at": "2026-06-28T21:03:36Z",
+            "beatmapset": {
+              "id": 2253429,
+              "title": "doodle",
+              "cover": "https://assets.ppy.sh/beatmaps/2253429/covers/card.jpg?1730310660",
+              "stars": 2.52829
+            }
+          },
+          {
+            "user": "teto abo tez",
+            "user_id": 39878144,
+            "country": "IQ",
+            "score_id": 6972551275,
+            "rank": "C",
+            "accuracy": 0.7210031347962382,
+            "pp": 9.03873,
+            "mods": [],
+            "combo": 125,
+            "created_at": "2026-06-28T21:02:01Z",
+            "beatmapset": {
+              "id": 2549663,
+              "title": "Brain Rot",
+              "cover": "https://assets.ppy.sh/beatmaps/2549663/covers/card.jpg?1780734591",
+              "stars": 3.19582
+            }
+          },
+          {
+            "user": "teto abo tez",
+            "user_id": 39878144,
+            "country": "IQ",
+            "score_id": 6972535460,
+            "rank": "C",
+            "accuracy": 0.735474006116208,
+            "pp": null,
+            "mods": [],
+            "combo": 54,
+            "created_at": "2026-06-28T20:59:03Z",
+            "beatmapset": {
+              "id": 2403948,
+              "title": "BIRDBRAIN (w/ OK Glass) feat. Kasane Teto",
+              "cover": "https://assets.ppy.sh/beatmaps/2403948/covers/card.jpg?1773950409",
+              "stars": 3.41603
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Ai Dua Em Ve (Cukak Remix) (Agnes Tachyon Low Cortisol Edit) (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2510616/covers/card.jpg?1772320588",
+        "unique_players": 7
       }
     }
   }

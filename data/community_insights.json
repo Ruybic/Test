@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 124,
-    "longest": 124,
-    "last_updated": "2026-06-30"
+    "current": 125,
+    "longest": 125,
+    "last_updated": "2026-07-01"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -37139,6 +37139,292 @@
         "title": "This Little Girl (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2379887/covers/card.jpg?1749535372",
         "unique_players": 14
+      }
+    },
+    "2026-07-01": {
+      "total_scores": 440,
+      "peak_hour_baghdad": 23,
+      "top_grinder": {
+        "user": "Quake203",
+        "user_id": 22846495,
+        "count": 36,
+        "scores": [
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6985353799,
+            "rank": "A",
+            "accuracy": 0.9423558897243107,
+            "pp": 147.906,
+            "mods": [],
+            "combo": 113,
+            "created_at": "2026-06-30T20:17:41Z",
+            "beatmapset": {
+              "id": 2279697,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/2279697/covers/card.jpg?1733354216",
+              "stars": 5.78145
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6985350344,
+            "rank": "A",
+            "accuracy": 0.9273182957393483,
+            "pp": 126.428,
+            "mods": [],
+            "combo": 99,
+            "created_at": "2026-06-30T20:17:05Z",
+            "beatmapset": {
+              "id": 2279697,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/2279697/covers/card.jpg?1733354216",
+              "stars": 5.78145
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6985342903,
+            "rank": "S",
+            "accuracy": 0.9571428571428572,
+            "pp": 188.274,
+            "mods": [],
+            "combo": 191,
+            "created_at": "2026-06-30T20:15:49Z",
+            "beatmapset": {
+              "id": 2279697,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/2279697/covers/card.jpg?1733354216",
+              "stars": 5.71986
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6985339093,
+            "rank": "A",
+            "accuracy": 0.9285714285714286,
+            "pp": 168.715,
+            "mods": [],
+            "combo": 191,
+            "created_at": "2026-06-30T20:15:09Z",
+            "beatmapset": {
+              "id": 2279697,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/2279697/covers/card.jpg?1733354216",
+              "stars": 5.71986
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6985335487,
+            "rank": "A",
+            "accuracy": 0.9547619047619048,
+            "pp": 169.822,
+            "mods": [],
+            "combo": 101,
+            "created_at": "2026-06-30T20:14:32Z",
+            "beatmapset": {
+              "id": 2279697,
+              "title": "PADORU / PADORU",
+              "cover": "https://assets.ppy.sh/beatmaps/2279697/covers/card.jpg?1733354216",
+              "stars": 5.71986
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6985268213,
+            "rank": "A",
+            "accuracy": 0.9494219653179191,
+            "pp": 110.498,
+            "mods": [],
+            "combo": 425,
+            "created_at": "2026-06-30T20:03:01Z",
+            "beatmapset": {
+              "id": 2205641,
+              "title": "YABABAINA",
+              "cover": "https://assets.ppy.sh/beatmaps/2205641/covers/card.jpg?1755878937",
+              "stars": 5.05029
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6985216975,
+            "rank": "S",
+            "accuracy": 0.9840510366826156,
+            "pp": 211.179,
+            "mods": [],
+            "combo": 341,
+            "created_at": "2026-06-30T19:54:22Z",
+            "beatmapset": {
+              "id": 2510715,
+              "title": "Why Worry (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2510715/covers/card.jpg?1773082262",
+              "stars": 5.64165
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6985198112,
+            "rank": "A",
+            "accuracy": 0.9665071770334929,
+            "pp": 173.818,
+            "mods": [],
+            "combo": 275,
+            "created_at": "2026-06-30T19:51:11Z",
+            "beatmapset": {
+              "id": 2510715,
+              "title": "Why Worry (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2510715/covers/card.jpg?1773082262",
+              "stars": 5.64165
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6985191229,
+            "rank": "A",
+            "accuracy": 0.9348958333333334,
+            "pp": 106.151,
+            "mods": [],
+            "combo": 99,
+            "created_at": "2026-06-30T19:50:01Z",
+            "beatmapset": {
+              "id": 2506744,
+              "title": "Thick of HiT (S8-10 Opening Mashup)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506744/covers/card.jpg?1777821017",
+              "stars": 5.20994
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6985187756,
+            "rank": "A",
+            "accuracy": 0.9348958333333334,
+            "pp": 118.649,
+            "mods": [],
+            "combo": 106,
+            "created_at": "2026-06-30T19:49:25Z",
+            "beatmapset": {
+              "id": 2506744,
+              "title": "Thick of HiT (S8-10 Opening Mashup)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506744/covers/card.jpg?1777821017",
+              "stars": 5.20994
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6985165119,
+            "rank": "B",
+            "accuracy": 0.8971880492091389,
+            "pp": 86.5106,
+            "mods": [],
+            "combo": 228,
+            "created_at": "2026-06-30T19:45:39Z",
+            "beatmapset": {
+              "id": 206750,
+              "title": "Dadadadadadadadadada",
+              "cover": "https://assets.ppy.sh/beatmaps/206750/covers/card.jpg?1645788401",
+              "stars": 5.7274
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6985155028,
+            "rank": "B",
+            "accuracy": 0.9127123608670181,
+            "pp": 95.0843,
+            "mods": [],
+            "combo": 337,
+            "created_at": "2026-06-30T19:44:00Z",
+            "beatmapset": {
+              "id": 206750,
+              "title": "Dadadadadadadadadada",
+              "cover": "https://assets.ppy.sh/beatmaps/206750/covers/card.jpg?1645788401",
+              "stars": 5.7274
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6985134820,
+            "rank": "A",
+            "accuracy": 0.9425434844596521,
+            "pp": 136.744,
+            "mods": [],
+            "combo": 763,
+            "created_at": "2026-06-30T19:40:37Z",
+            "beatmapset": {
+              "id": 2399376,
+              "title": "At the Speed of Light",
+              "cover": "https://assets.ppy.sh/beatmaps/2399376/covers/card.jpg?1760457791",
+              "stars": 5.40182
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6985098603,
+            "rank": "B",
+            "accuracy": 0.9111535199321459,
+            "pp": 61.0311,
+            "mods": [],
+            "combo": 132,
+            "created_at": "2026-06-30T19:34:32Z",
+            "beatmapset": {
+              "id": 2375004,
+              "title": "Monitoring",
+              "cover": "https://assets.ppy.sh/beatmaps/2375004/covers/card.jpg?1766431004",
+              "stars": 5.46039
+            }
+          },
+          {
+            "user": "Quake203",
+            "user_id": 22846495,
+            "country": "IQ",
+            "score_id": 6985069632,
+            "rank": "A",
+            "accuracy": 0.9636891793754538,
+            "pp": 125.72,
+            "mods": [],
+            "combo": 355,
+            "created_at": "2026-06-30T19:29:39Z",
+            "beatmapset": {
+              "id": 2422687,
+              "title": "Of Our Time (osu! Edit)",
+              "cover": "https://assets.ppy.sh/beatmaps/2422687/covers/card.jpg?1757433537",
+              "stars": 5.10503
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "So Am I (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2496558/covers/card.jpg?1775073996",
+        "unique_players": 12
       }
     }
   }

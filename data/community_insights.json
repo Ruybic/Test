@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 126,
-    "longest": 126,
-    "last_updated": "2026-07-02"
+    "current": 127,
+    "longest": 127,
+    "last_updated": "2026-07-03"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -37753,6 +37753,292 @@
         "title": "ESSE CARA!",
         "cover": "https://assets.ppy.sh/beatmaps/2440245/covers/card.jpg?1782188287",
         "unique_players": 19
+      }
+    },
+    "2026-07-03": {
+      "total_scores": 366,
+      "peak_hour_baghdad": 14,
+      "top_grinder": {
+        "user": "skiler1",
+        "user_id": 31252345,
+        "count": 31,
+        "scores": [
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6999782945,
+            "rank": "B",
+            "accuracy": 0.8764393268379097,
+            "pp": 36.088,
+            "mods": [],
+            "combo": 133,
+            "created_at": "2026-07-03T01:02:56Z",
+            "beatmapset": {
+              "id": 1019827,
+              "title": "Sad Dream",
+              "cover": "https://assets.ppy.sh/beatmaps/1019827/covers/card.jpg?1631512519",
+              "stars": 5.49212
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6999753143,
+            "rank": "B",
+            "accuracy": 0.8983180428134556,
+            "pp": 47.7719,
+            "mods": [],
+            "combo": 199,
+            "created_at": "2026-07-03T00:54:10Z",
+            "beatmapset": {
+              "id": 381529,
+              "title": "The Monk",
+              "cover": "https://assets.ppy.sh/beatmaps/381529/covers/card.jpg?1650634911",
+              "stars": 5.27323
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6999743831,
+            "rank": "C",
+            "accuracy": 0.7532084634061741,
+            "pp": 15.478,
+            "mods": [],
+            "combo": 141,
+            "created_at": "2026-07-03T00:51:26Z",
+            "beatmapset": {
+              "id": 158023,
+              "title": "Everything will freeze",
+              "cover": "https://assets.ppy.sh/beatmaps/158023/covers/card.jpg?1645787427",
+              "stars": 5.85635
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6999720852,
+            "rank": "B",
+            "accuracy": 0.8594040968342644,
+            "pp": null,
+            "mods": [],
+            "combo": 238,
+            "created_at": "2026-07-03T00:44:50Z",
+            "beatmapset": {
+              "id": 632870,
+              "title": "Imaginary Places",
+              "cover": "https://assets.ppy.sh/beatmaps/632870/covers/card.jpg?1650653182",
+              "stars": 4.80474
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6999705024,
+            "rank": "B",
+            "accuracy": 0.8951194184839044,
+            "pp": 49.9971,
+            "mods": [],
+            "combo": 184,
+            "created_at": "2026-07-03T00:40:18Z",
+            "beatmapset": {
+              "id": 653534,
+              "title": "ILY",
+              "cover": "https://assets.ppy.sh/beatmaps/653534/covers/card.jpg?1650652798",
+              "stars": 5.26466
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6999698653,
+            "rank": "B",
+            "accuracy": 0.8826583592938733,
+            "pp": 45.397,
+            "mods": [],
+            "combo": 119,
+            "created_at": "2026-07-03T00:38:27Z",
+            "beatmapset": {
+              "id": 653534,
+              "title": "ILY",
+              "cover": "https://assets.ppy.sh/beatmaps/653534/covers/card.jpg?1650652798",
+              "stars": 5.26466
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6999691943,
+            "rank": "B",
+            "accuracy": 0.8828282828282829,
+            "pp": 64.1915,
+            "mods": [],
+            "combo": 133,
+            "created_at": "2026-07-03T00:36:33Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 5.20377
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6999680457,
+            "rank": "B",
+            "accuracy": 0.8559463986599665,
+            "pp": 41.5554,
+            "mods": [],
+            "combo": 83,
+            "created_at": "2026-07-03T00:33:20Z",
+            "beatmapset": {
+              "id": 2431270,
+              "title": "Flandol (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2431270/covers/card.jpg?1773235784",
+              "stars": 5.04445
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6999674006,
+            "rank": "C",
+            "accuracy": 0.7599469496021221,
+            "pp": 18.7948,
+            "mods": [],
+            "combo": 93,
+            "created_at": "2026-07-03T00:31:34Z",
+            "beatmapset": {
+              "id": 2542245,
+              "title": "break/apart",
+              "cover": "https://assets.ppy.sh/beatmaps/2542245/covers/card.jpg?1777725675",
+              "stars": 4.91632
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6999666565,
+            "rank": "B",
+            "accuracy": 0.8766114180478821,
+            "pp": 66.2665,
+            "mods": [],
+            "combo": 117,
+            "created_at": "2026-07-03T00:29:31Z",
+            "beatmapset": {
+              "id": 968171,
+              "title": "Mizuoto to Curtain",
+              "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
+              "stars": 5.14361
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6999648240,
+            "rank": "B",
+            "accuracy": 0.8950276243093923,
+            "pp": 76.6839,
+            "mods": [],
+            "combo": 151,
+            "created_at": "2026-07-03T00:24:22Z",
+            "beatmapset": {
+              "id": 968171,
+              "title": "Mizuoto to Curtain",
+              "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
+              "stars": 5.14361
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6999644120,
+            "rank": "B",
+            "accuracy": 0.8563748079877113,
+            "pp": 29.8977,
+            "mods": [],
+            "combo": 145,
+            "created_at": "2026-07-03T00:23:13Z",
+            "beatmapset": {
+              "id": 43037,
+              "title": "Bird Sprite -Awakening of Light-",
+              "cover": "https://assets.ppy.sh/beatmaps/43037/covers/card.jpg?1650610413",
+              "stars": 4.61175
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6998026825,
+            "rank": "B",
+            "accuracy": 0.9107391910739191,
+            "pp": 68.9039,
+            "mods": [],
+            "combo": 172,
+            "created_at": "2026-07-02T18:57:05Z",
+            "beatmapset": {
+              "id": 952409,
+              "title": "Ai no Sukima",
+              "cover": "https://assets.ppy.sh/beatmaps/952409/covers/card.jpg?1645787548",
+              "stars": 5.0774
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6998019391,
+            "rank": "B",
+            "accuracy": 0.8637566137566137,
+            "pp": 43.0579,
+            "mods": [],
+            "combo": 59,
+            "created_at": "2026-07-02T18:55:47Z",
+            "beatmapset": {
+              "id": 2243784,
+              "title": "Ai no Sukima (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2243784/covers/card.jpg?1732410449",
+              "stars": 5.12594
+            }
+          },
+          {
+            "user": "skiler1",
+            "user_id": 31252345,
+            "country": "IQ",
+            "score_id": 6998007435,
+            "rank": "C",
+            "accuracy": 0.8405405405405405,
+            "pp": 52.7346,
+            "mods": [],
+            "combo": 92,
+            "created_at": "2026-07-02T18:53:43Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 5.12476
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+        "unique_players": 10
       }
     }
   }

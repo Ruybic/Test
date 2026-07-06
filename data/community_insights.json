@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 128,
-    "longest": 128,
-    "last_updated": "2026-07-04"
+    "current": 129,
+    "longest": 129,
+    "last_updated": "2026-07-05"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -38369,6 +38369,334 @@
         "title": "PADORU / PADORU",
         "cover": "https://assets.ppy.sh/beatmaps/1061287/covers/card.jpg?1650688170",
         "unique_players": 7
+      }
+    },
+    "2026-07-05": {
+      "total_scores": 589,
+      "peak_hour_baghdad": 23,
+      "top_grinder": {
+        "user": "I AM A GHOUL",
+        "user_id": 24991953,
+        "count": 63,
+        "scores": [
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5047555404,
+            "rank": "A",
+            "accuracy": 0.9926900584795322,
+            "pp": 300.693,
+            "mods": [],
+            "combo": 486,
+            "created_at": "2026-07-04T22:06:57Z",
+            "beatmapset": {
+              "id": 2284092,
+              "title": "Parasite (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2284092/covers/card.jpg?1741658673",
+              "stars": 6.71637
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5047388761,
+            "rank": "A",
+            "accuracy": 0.9670138888888888,
+            "pp": 327.252,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 286,
+            "created_at": "2026-07-04T15:20:33Z",
+            "beatmapset": {
+              "id": 2499570,
+              "title": "Still Into You (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499570/covers/card.jpg?1771093258",
+              "stars": 5.28216
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5047388264,
+            "rank": "A",
+            "accuracy": 0.9756944444444444,
+            "pp": 361.269,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 236,
+            "created_at": "2026-07-04T15:19:28Z",
+            "beatmapset": {
+              "id": 2499570,
+              "title": "Still Into You (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499570/covers/card.jpg?1771093258",
+              "stars": 5.28216
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5047387854,
+            "rank": "A",
+            "accuracy": 0.984375,
+            "pp": 407.633,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 287,
+            "created_at": "2026-07-04T15:18:35Z",
+            "beatmapset": {
+              "id": 2499570,
+              "title": "Still Into You (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499570/covers/card.jpg?1771093258",
+              "stars": 5.28216
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5047386003,
+            "rank": "SH",
+            "accuracy": 0.9681020733652312,
+            "pp": 382.33,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 331,
+            "created_at": "2026-07-04T15:14:27Z",
+            "beatmapset": {
+              "id": 2296940,
+              "title": "Start Again (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2296940/covers/card.jpg?1743374659",
+              "stars": 5.15873
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5047385609,
+            "rank": "SH",
+            "accuracy": 0.9744816586921851,
+            "pp": 351.532,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 238,
+            "created_at": "2026-07-04T15:13:32Z",
+            "beatmapset": {
+              "id": 2296940,
+              "title": "Start Again (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2296940/covers/card.jpg?1743374659",
+              "stars": 5.15873
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5047385013,
+            "rank": "A",
+            "accuracy": 0.9806763285024155,
+            "pp": 406.941,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 133,
+            "created_at": "2026-07-04T15:12:11Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.47155
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5047384546,
+            "rank": "B",
+            "accuracy": 0.9112709832134293,
+            "pp": 274.084,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 76,
+            "created_at": "2026-07-04T15:11:06Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.72421
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5047384324,
+            "rank": "A",
+            "accuracy": 0.9376498800959233,
+            "pp": 348.578,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 126,
+            "created_at": "2026-07-04T15:10:34Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.72421
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5047384038,
+            "rank": "A",
+            "accuracy": 0.9304556354916067,
+            "pp": 323.36,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 123,
+            "created_at": "2026-07-04T15:09:59Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.72421
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5047383193,
+            "rank": "A",
+            "accuracy": 0.9679012345679012,
+            "pp": 412.127,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 143,
+            "created_at": "2026-07-04T15:08:10Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.51141
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5047382490,
+            "rank": "A",
+            "accuracy": 0.9803030303030303,
+            "pp": 448.385,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 210,
+            "created_at": "2026-07-04T15:06:41Z",
+            "beatmapset": {
+              "id": 2463569,
+              "title": "How to Be a Heartbreaker (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2463569/covers/card.jpg?1777733995",
+              "stars": 5.44665
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5047381344,
+            "rank": "A",
+            "accuracy": 0.9769585253456221,
+            "pp": 413.334,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 118,
+            "created_at": "2026-07-04T15:04:06Z",
+            "beatmapset": {
+              "id": 2463569,
+              "title": "How to Be a Heartbreaker (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2463569/covers/card.jpg?1777733995",
+              "stars": 5.59921
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5047380528,
+            "rank": "A",
+            "accuracy": 0.9822866344605475,
+            "pp": 372.644,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 132,
+            "created_at": "2026-07-04T15:02:18Z",
+            "beatmapset": {
+              "id": 2463569,
+              "title": "How to Be a Heartbreaker (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2463569/covers/card.jpg?1777733995",
+              "stars": 5.31262
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5047379765,
+            "rank": "A",
+            "accuracy": 0.9573820395738204,
+            "pp": 295.551,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 116,
+            "created_at": "2026-07-04T15:00:41Z",
+            "beatmapset": {
+              "id": 2463569,
+              "title": "How to Be a Heartbreaker (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2463569/covers/card.jpg?1777733995",
+              "stars": 5.39906
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+        "unique_players": 15
       }
     }
   }

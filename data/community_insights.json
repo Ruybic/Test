@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 130,
-    "longest": 130,
-    "last_updated": "2026-07-06"
+    "current": 131,
+    "longest": 131,
+    "last_updated": "2026-07-07"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -38985,6 +38985,296 @@
         "title": "Black Rover (TV Size)",
         "cover": "https://assets.ppy.sh/beatmaps/781509/covers/card.jpg?1650664944",
         "unique_players": 7
+      }
+    },
+    "2026-07-07": {
+      "total_scores": 547,
+      "peak_hour_baghdad": 18,
+      "top_grinder": {
+        "user": "I AM A GHOUL",
+        "user_id": 24991953,
+        "count": 94,
+        "scores": [
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048375400,
+            "rank": "C",
+            "accuracy": 0.7645671148855863,
+            "pp": null,
+            "mods": [
+              "NF"
+            ],
+            "combo": 151,
+            "created_at": "2026-07-06T17:59:52Z",
+            "beatmapset": {
+              "id": 980552,
+              "title": "Flower Dance",
+              "cover": "https://assets.ppy.sh/beatmaps/980552/covers/card.jpg?1622163110",
+              "stars": 8.41372
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048372897,
+            "rank": "C",
+            "accuracy": 0.8067049808429119,
+            "pp": 56.3191,
+            "mods": [
+              "NF"
+            ],
+            "combo": 138,
+            "created_at": "2026-07-06T17:53:55Z",
+            "beatmapset": {
+              "id": 359173,
+              "title": "Speed of Link",
+              "cover": "https://assets.ppy.sh/beatmaps/359173/covers/card.jpg?1631509404",
+              "stars": 7.7824
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048369131,
+            "rank": "B",
+            "accuracy": 0.8878524046434494,
+            "pp": 91.735,
+            "mods": [],
+            "combo": 391,
+            "created_at": "2026-07-06T17:44:51Z",
+            "beatmapset": {
+              "id": 1987556,
+              "title": "Heavenly Blast (2022 Remaster)",
+              "cover": "https://assets.ppy.sh/beatmaps/1987556/covers/card.jpg?1702829680",
+              "stars": 6.84569
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048367810,
+            "rank": "C",
+            "accuracy": 0.7688842688842689,
+            "pp": 96.1935,
+            "mods": [],
+            "combo": 236,
+            "created_at": "2026-07-06T17:41:36Z",
+            "beatmapset": {
+              "id": 2214329,
+              "title": "NE PLACH'",
+              "cover": "https://assets.ppy.sh/beatmaps/2214329/covers/card.jpg?1755450769",
+              "stars": 6.78345
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048366742,
+            "rank": "A",
+            "accuracy": 0.8715769593956563,
+            "pp": 140.604,
+            "mods": [],
+            "combo": 388,
+            "created_at": "2026-07-06T17:39:06Z",
+            "beatmapset": {
+              "id": 2214329,
+              "title": "NE PLACH'",
+              "cover": "https://assets.ppy.sh/beatmaps/2214329/covers/card.jpg?1755450769",
+              "stars": 6.24953
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048365581,
+            "rank": "A",
+            "accuracy": 0.9169027384324835,
+            "pp": 163.94,
+            "mods": [],
+            "combo": 576,
+            "created_at": "2026-07-06T17:36:24Z",
+            "beatmapset": {
+              "id": 2214329,
+              "title": "NE PLACH'",
+              "cover": "https://assets.ppy.sh/beatmaps/2214329/covers/card.jpg?1755450769",
+              "stars": 6.24953
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048364936,
+            "rank": "B",
+            "accuracy": 0.8937677053824362,
+            "pp": 144.931,
+            "mods": [],
+            "combo": 285,
+            "created_at": "2026-07-06T17:34:56Z",
+            "beatmapset": {
+              "id": 2214329,
+              "title": "NE PLACH'",
+              "cover": "https://assets.ppy.sh/beatmaps/2214329/covers/card.jpg?1755450769",
+              "stars": 6.24953
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048364438,
+            "rank": "B",
+            "accuracy": 0.8739376770538244,
+            "pp": 111.144,
+            "mods": [],
+            "combo": 182,
+            "created_at": "2026-07-06T17:33:45Z",
+            "beatmapset": {
+              "id": 2214329,
+              "title": "NE PLACH'",
+              "cover": "https://assets.ppy.sh/beatmaps/2214329/covers/card.jpg?1755450769",
+              "stars": 6.24953
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048363919,
+            "rank": "B",
+            "accuracy": 0.8498583569405099,
+            "pp": 143.198,
+            "mods": [],
+            "combo": 681,
+            "created_at": "2026-07-06T17:32:33Z",
+            "beatmapset": {
+              "id": 2214329,
+              "title": "NE PLACH'",
+              "cover": "https://assets.ppy.sh/beatmaps/2214329/covers/card.jpg?1755450769",
+              "stars": 6.24953
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048363373,
+            "rank": "B",
+            "accuracy": 0.8574126534466477,
+            "pp": 97.1843,
+            "mods": [],
+            "combo": 357,
+            "created_at": "2026-07-06T17:31:12Z",
+            "beatmapset": {
+              "id": 2214329,
+              "title": "NE PLACH'",
+              "cover": "https://assets.ppy.sh/beatmaps/2214329/covers/card.jpg?1755450769",
+              "stars": 6.24953
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048362572,
+            "rank": "C",
+            "accuracy": 0.8526912181303116,
+            "pp": 122.874,
+            "mods": [],
+            "combo": 435,
+            "created_at": "2026-07-06T17:29:16Z",
+            "beatmapset": {
+              "id": 2214329,
+              "title": "NE PLACH'",
+              "cover": "https://assets.ppy.sh/beatmaps/2214329/covers/card.jpg?1755450769",
+              "stars": 6.24953
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048361984,
+            "rank": "C",
+            "accuracy": 0.785646836638338,
+            "pp": 64.0424,
+            "mods": [],
+            "combo": 278,
+            "created_at": "2026-07-06T17:27:54Z",
+            "beatmapset": {
+              "id": 2214329,
+              "title": "NE PLACH'",
+              "cover": "https://assets.ppy.sh/beatmaps/2214329/covers/card.jpg?1755450769",
+              "stars": 6.24953
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048355562,
+            "rank": "C",
+            "accuracy": 0.8261612021857924,
+            "pp": 120.317,
+            "mods": [],
+            "combo": 380,
+            "created_at": "2026-07-06T17:12:32Z",
+            "beatmapset": {
+              "id": 2191876,
+              "title": "Sidetracked Day",
+              "cover": "https://assets.ppy.sh/beatmaps/2191876/covers/card.jpg?1761462050",
+              "stars": 6.3039
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048354482,
+            "rank": "B",
+            "accuracy": 0.9103156274056967,
+            "pp": 130.003,
+            "mods": [],
+            "combo": 409,
+            "created_at": "2026-07-06T17:10:01Z",
+            "beatmapset": {
+              "id": 2191876,
+              "title": "Sidetracked Day",
+              "cover": "https://assets.ppy.sh/beatmaps/2191876/covers/card.jpg?1761462050",
+              "stars": 5.79447
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048353935,
+            "rank": "B",
+            "accuracy": 0.9118660758247169,
+            "pp": null,
+            "mods": [],
+            "combo": 795,
+            "created_at": "2026-07-06T17:08:42Z",
+            "beatmapset": {
+              "id": 43701,
+              "title": "Stream Practice Maps",
+              "cover": "https://assets.ppy.sh/beatmaps/43701/covers/card.jpg?1713920010",
+              "stars": 5.74893
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Red Swan (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/818610/covers/card.jpg?1650667338",
+        "unique_players": 14
       }
     }
   }

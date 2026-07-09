@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 131,
-    "longest": 131,
-    "last_updated": "2026-07-07"
+    "current": 132,
+    "longest": 132,
+    "last_updated": "2026-07-08"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -39275,6 +39275,337 @@
         "title": "Red Swan (TV Size)",
         "cover": "https://assets.ppy.sh/beatmaps/818610/covers/card.jpg?1650667338",
         "unique_players": 14
+      }
+    },
+    "2026-07-08": {
+      "total_scores": 400,
+      "peak_hour_baghdad": 21,
+      "top_grinder": {
+        "user": "I AM A GHOUL",
+        "user_id": 24991953,
+        "count": 100,
+        "scores": [
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048973742,
+            "rank": "A",
+            "accuracy": 0.9732770745428974,
+            "pp": 410.712,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 152,
+            "created_at": "2026-07-08T00:41:54Z",
+            "beatmapset": {
+              "id": 2281428,
+              "title": "Poison (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2281428/covers/card.jpg?1734634407",
+              "stars": 5.36896
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048973320,
+            "rank": "A",
+            "accuracy": 0.9686924493554327,
+            "pp": 350.42,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 195,
+            "created_at": "2026-07-08T00:40:12Z",
+            "beatmapset": {
+              "id": 2515511,
+              "title": "WONDERFUL WONDER (TV Size & Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2515511/covers/card.jpg?1774252089",
+              "stars": 5.4354
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048972181,
+            "rank": "A",
+            "accuracy": 0.9532710280373832,
+            "pp": 340.675,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 65,
+            "created_at": "2026-07-08T00:35:38Z",
+            "beatmapset": {
+              "id": 2506744,
+              "title": "Thick of HiT (S8-10 Opening Mashup)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506744/covers/card.jpg?1777821017",
+              "stars": 5.49765
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048972043,
+            "rank": "A",
+            "accuracy": 0.9376947040498442,
+            "pp": 299.433,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 47,
+            "created_at": "2026-07-08T00:35:06Z",
+            "beatmapset": {
+              "id": 2506744,
+              "title": "Thick of HiT (S8-10 Opening Mashup)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506744/covers/card.jpg?1777821017",
+              "stars": 5.49765
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048971804,
+            "rank": "A",
+            "accuracy": 0.9515151515151515,
+            "pp": 276.715,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 128,
+            "created_at": "2026-07-08T00:34:05Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 5.39372
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048971361,
+            "rank": "A",
+            "accuracy": 0.9711399711399712,
+            "pp": 327.046,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 158,
+            "created_at": "2026-07-08T00:32:11Z",
+            "beatmapset": {
+              "id": 2282704,
+              "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+              "stars": 5.25799
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048971038,
+            "rank": "A",
+            "accuracy": 0.9624819624819625,
+            "pp": 361.267,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 254,
+            "created_at": "2026-07-08T00:30:50Z",
+            "beatmapset": {
+              "id": 2282704,
+              "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+              "stars": 5.25799
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048970807,
+            "rank": "A",
+            "accuracy": 0.9668109668109668,
+            "pp": 352.877,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 284,
+            "created_at": "2026-07-08T00:29:55Z",
+            "beatmapset": {
+              "id": 2282704,
+              "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+              "stars": 5.25799
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048970492,
+            "rank": "SH",
+            "accuracy": 0.9653679653679653,
+            "pp": 390.21,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 225,
+            "created_at": "2026-07-08T00:28:45Z",
+            "beatmapset": {
+              "id": 2282704,
+              "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+              "stars": 5.25799
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048969672,
+            "rank": "A",
+            "accuracy": 0.9759887005649718,
+            "pp": 413.445,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 178,
+            "created_at": "2026-07-08T00:25:37Z",
+            "beatmapset": {
+              "id": 2506168,
+              "title": "Die A Million Times (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506168/covers/card.jpg?1773702471",
+              "stars": 5.27529
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048969010,
+            "rank": "A",
+            "accuracy": 0.9774011299435028,
+            "pp": 390.01,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 238,
+            "created_at": "2026-07-08T00:23:04Z",
+            "beatmapset": {
+              "id": 2506168,
+              "title": "Die A Million Times (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506168/covers/card.jpg?1773702471",
+              "stars": 5.27529
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048968572,
+            "rank": "B",
+            "accuracy": 0.9151515151515152,
+            "pp": 248.074,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 318,
+            "created_at": "2026-07-08T00:21:27Z",
+            "beatmapset": {
+              "id": 2463664,
+              "title": "hate the way you love me (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2463664/covers/card.jpg?1767818786",
+              "stars": 5.31494
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048968334,
+            "rank": "A",
+            "accuracy": 0.9786535303776683,
+            "pp": 406.732,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 270,
+            "created_at": "2026-07-08T00:20:27Z",
+            "beatmapset": {
+              "id": 2379887,
+              "title": "This Little Girl (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2379887/covers/card.jpg?1749535372",
+              "stars": 5.35007
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048968018,
+            "rank": "A",
+            "accuracy": 0.9679802955665024,
+            "pp": 385.727,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 283,
+            "created_at": "2026-07-08T00:19:16Z",
+            "beatmapset": {
+              "id": 2379887,
+              "title": "This Little Girl (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2379887/covers/card.jpg?1749535372",
+              "stars": 5.35007
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "score_id": 5048967387,
+            "rank": "B",
+            "accuracy": 0.9292929292929293,
+            "pp": 310.513,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 115,
+            "created_at": "2026-07-08T00:16:45Z",
+            "beatmapset": {
+              "id": 859783,
+              "title": "Harumachi Clover (Swing Arrangement)",
+              "cover": "https://assets.ppy.sh/beatmaps/859783/covers/card.jpg?1650679901",
+              "stars": 5.46038
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Kira Kira Days (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2478619/covers/card.jpg?1782798266",
+        "unique_players": 16
       }
     }
   }

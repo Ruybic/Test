@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 132,
-    "longest": 132,
-    "last_updated": "2026-07-08"
+    "current": 133,
+    "longest": 133,
+    "last_updated": "2026-07-09"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -39606,6 +39606,323 @@
         "title": "Kira Kira Days (Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2478619/covers/card.jpg?1782798266",
         "unique_players": 16
+      }
+    },
+    "2026-07-09": {
+      "total_scores": 528,
+      "peak_hour_baghdad": 22,
+      "top_grinder": {
+        "user": "FaZe Kawan",
+        "user_id": 12813974,
+        "count": 47,
+        "scores": [
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5049310270,
+            "rank": "B",
+            "accuracy": 0.9146241830065359,
+            "pp": 54.3726,
+            "mods": [
+              "HD"
+            ],
+            "combo": 188,
+            "created_at": "2026-07-08T19:38:30Z",
+            "beatmapset": {
+              "id": 805224,
+              "title": "Super Driver",
+              "cover": "https://assets.ppy.sh/beatmaps/805224/covers/card.jpg?1650665948",
+              "stars": 5.53515
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5049309369,
+            "rank": "A",
+            "accuracy": 0.9427402862985685,
+            "pp": 119.729,
+            "mods": [
+              "HD"
+            ],
+            "combo": 147,
+            "created_at": "2026-07-08T19:36:15Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.74502
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5049308403,
+            "rank": "SH",
+            "accuracy": 0.9679186228482003,
+            "pp": 110.36,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 359,
+            "created_at": "2026-07-08T19:33:47Z",
+            "beatmapset": {
+              "id": 2464479,
+              "title": "Maniac (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2464479/covers/card.jpg?1764663200",
+              "stars": 3.40105
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5049306419,
+            "rank": "SH",
+            "accuracy": 0.9957537154989384,
+            "pp": 210.491,
+            "mods": [
+              "HD"
+            ],
+            "combo": 237,
+            "created_at": "2026-07-08T19:28:47Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.42072
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5049306110,
+            "rank": "A",
+            "accuracy": 0.9660297239915074,
+            "pp": 123.521,
+            "mods": [
+              "HD"
+            ],
+            "combo": 188,
+            "created_at": "2026-07-08T19:27:56Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.42072
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5049305748,
+            "rank": "A",
+            "accuracy": 0.9549929676511955,
+            "pp": 108.479,
+            "mods": [
+              "HD"
+            ],
+            "combo": 223,
+            "created_at": "2026-07-08T19:27:01Z",
+            "beatmapset": {
+              "id": 978879,
+              "title": "American Girls (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/978879/covers/card.jpg?1650680660",
+              "stars": 5.32448
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5049304571,
+            "rank": "A",
+            "accuracy": 0.989247311827957,
+            "pp": 165.559,
+            "mods": [
+              "HD"
+            ],
+            "combo": 182,
+            "created_at": "2026-07-08T19:24:03Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.26419
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5049303760,
+            "rank": "A",
+            "accuracy": 0.9581529581529582,
+            "pp": 106.768,
+            "mods": [
+              "HD"
+            ],
+            "combo": 218,
+            "created_at": "2026-07-08T19:21:58Z",
+            "beatmapset": {
+              "id": 2282704,
+              "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+              "stars": 5.25799
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5049302822,
+            "rank": "A",
+            "accuracy": 0.9640287769784173,
+            "pp": 134.747,
+            "mods": [
+              "HD"
+            ],
+            "combo": 193,
+            "created_at": "2026-07-08T19:19:29Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.18861
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5049302477,
+            "rank": "SH",
+            "accuracy": 0.9708029197080292,
+            "pp": 155.92,
+            "mods": [
+              "HD"
+            ],
+            "combo": 183,
+            "created_at": "2026-07-08T19:18:34Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.18535
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5049302021,
+            "rank": "SH",
+            "accuracy": 0.9956989247311828,
+            "pp": 184.431,
+            "mods": [
+              "HD"
+            ],
+            "combo": 234,
+            "created_at": "2026-07-08T19:17:20Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.13544
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5049301548,
+            "rank": "A",
+            "accuracy": 0.9311827956989247,
+            "pp": 83.4756,
+            "mods": [
+              "HD"
+            ],
+            "combo": 186,
+            "created_at": "2026-07-08T19:16:04Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.13544
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5049300635,
+            "rank": "XH",
+            "accuracy": 1,
+            "pp": 179.242,
+            "mods": [
+              "HD"
+            ],
+            "combo": 197,
+            "created_at": "2026-07-08T19:13:35Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.00919
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5049300177,
+            "rank": "A",
+            "accuracy": 0.9492753623188406,
+            "pp": 106.244,
+            "mods": [
+              "HD"
+            ],
+            "combo": 154,
+            "created_at": "2026-07-08T19:12:26Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.00919
+            }
+          },
+          {
+            "user": "FaZe Kawan",
+            "user_id": 12813974,
+            "country": "IQ",
+            "score_id": 5049281296,
+            "rank": "A",
+            "accuracy": 0.9848484848484849,
+            "pp": 177.155,
+            "mods": [
+              "HD"
+            ],
+            "combo": 194,
+            "created_at": "2026-07-08T18:23:21Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.56999
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+        "unique_players": 18
       }
     }
   }

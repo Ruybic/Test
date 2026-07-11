@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 133,
-    "longest": 133,
-    "last_updated": "2026-07-09"
+    "current": 134,
+    "longest": 134,
+    "last_updated": "2026-07-10"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -39923,6 +39923,292 @@
         "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
         "unique_players": 18
+      }
+    },
+    "2026-07-10": {
+      "total_scores": 483,
+      "peak_hour_baghdad": 16,
+      "top_grinder": {
+        "user": "brianmoser1123",
+        "user_id": 39498643,
+        "count": 47,
+        "scores": [
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7044079993,
+            "rank": "D",
+            "accuracy": 0.6983178397521027,
+            "pp": 16.8852,
+            "mods": [],
+            "combo": 167,
+            "created_at": "2026-07-09T19:11:21Z",
+            "beatmapset": {
+              "id": 2095154,
+              "title": "Burning Star",
+              "cover": "https://assets.ppy.sh/beatmaps/2095154/covers/card.jpg?1715648464",
+              "stars": 5.1323
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7044063488,
+            "rank": "C",
+            "accuracy": 0.7405828002842928,
+            "pp": 28.9735,
+            "mods": [],
+            "combo": 229,
+            "created_at": "2026-07-09T19:08:26Z",
+            "beatmapset": {
+              "id": 2179269,
+              "title": "Pure Ruby (Game Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2179269/covers/card.jpg?1744304118",
+              "stars": 5.01175
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7044041076,
+            "rank": "C",
+            "accuracy": 0.7908878504672897,
+            "pp": 21.8532,
+            "mods": [],
+            "combo": 112,
+            "created_at": "2026-07-09T19:04:27Z",
+            "beatmapset": {
+              "id": 352570,
+              "title": "Night of Knights",
+              "cover": "https://assets.ppy.sh/beatmaps/352570/covers/card.jpg?1650634611",
+              "stars": 5.27004
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7044024115,
+            "rank": "C",
+            "accuracy": 0.8249417249417249,
+            "pp": 42.2675,
+            "mods": [],
+            "combo": 322,
+            "created_at": "2026-07-09T19:01:25Z",
+            "beatmapset": {
+              "id": 352570,
+              "title": "Night of Knights",
+              "cover": "https://assets.ppy.sh/beatmaps/352570/covers/card.jpg?1650634611",
+              "stars": 5.07879
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7044006303,
+            "rank": "B",
+            "accuracy": 0.8626097867001254,
+            "pp": 42.1713,
+            "mods": [],
+            "combo": 209,
+            "created_at": "2026-07-09T18:58:15Z",
+            "beatmapset": {
+              "id": 2159460,
+              "title": "grayscale dominator",
+              "cover": "https://assets.ppy.sh/beatmaps/2159460/covers/card.jpg?1736054145",
+              "stars": 5.07888
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7043981541,
+            "rank": "C",
+            "accuracy": 0.8520531400966184,
+            "pp": 45.0519,
+            "mods": [],
+            "combo": 188,
+            "created_at": "2026-07-09T18:53:52Z",
+            "beatmapset": {
+              "id": 2514004,
+              "title": "Looping the Rooms feat. Hatsune Miku",
+              "cover": "https://assets.ppy.sh/beatmaps/2514004/covers/card.jpg?1772054800",
+              "stars": 5.39158
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7043967548,
+            "rank": "C",
+            "accuracy": 0.7769827072152653,
+            "pp": 33.9893,
+            "mods": [],
+            "combo": 154,
+            "created_at": "2026-07-09T18:51:23Z",
+            "beatmapset": {
+              "id": 977552,
+              "title": "humanly",
+              "cover": "https://assets.ppy.sh/beatmaps/977552/covers/card.jpg?1650682070",
+              "stars": 5.0848
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7043942003,
+            "rank": "B",
+            "accuracy": 0.860248447204969,
+            "pp": 46.9098,
+            "mods": [],
+            "combo": 443,
+            "created_at": "2026-07-09T18:46:43Z",
+            "beatmapset": {
+              "id": 2045169,
+              "title": "INTERNET YAMERO",
+              "cover": "https://assets.ppy.sh/beatmaps/2045169/covers/card.jpg?1712333671",
+              "stars": 5.23065
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7043904552,
+            "rank": "C",
+            "accuracy": 0.703962703962704,
+            "pp": 52.9386,
+            "mods": [],
+            "combo": 77,
+            "created_at": "2026-07-09T18:39:58Z",
+            "beatmapset": {
+              "id": 2431217,
+              "title": "Boom Clap (kyoto Remix) (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2431217/covers/card.jpg?1764701917",
+              "stars": 5.87976
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7043871881,
+            "rank": "B",
+            "accuracy": 0.8571428571428571,
+            "pp": 85.1607,
+            "mods": [],
+            "combo": 114,
+            "created_at": "2026-07-09T18:34:01Z",
+            "beatmapset": {
+              "id": 2282704,
+              "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+              "stars": 5.77584
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7043863207,
+            "rank": "B",
+            "accuracy": 0.9081920903954802,
+            "pp": 98.0551,
+            "mods": [],
+            "combo": 181,
+            "created_at": "2026-07-09T18:32:26Z",
+            "beatmapset": {
+              "id": 2282704,
+              "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+              "stars": 5.67065
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7043841708,
+            "rank": "B",
+            "accuracy": 0.8613569321533924,
+            "pp": 74.279,
+            "mods": [],
+            "combo": 78,
+            "created_at": "2026-07-09T18:28:31Z",
+            "beatmapset": {
+              "id": 2282704,
+              "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+              "stars": 5.61731
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7043835728,
+            "rank": "B",
+            "accuracy": 0.8487282463186078,
+            "pp": 56.0937,
+            "mods": [],
+            "combo": 60,
+            "created_at": "2026-07-09T18:27:25Z",
+            "beatmapset": {
+              "id": 2282704,
+              "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+              "stars": 5.45514
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7043828170,
+            "rank": "C",
+            "accuracy": 0.735062893081761,
+            "pp": 30.9888,
+            "mods": [],
+            "combo": 239,
+            "created_at": "2026-07-09T18:26:02Z",
+            "beatmapset": {
+              "id": 2411700,
+              "title": "MoeChakkaFire",
+              "cover": "https://assets.ppy.sh/beatmaps/2411700/covers/card.jpg?1755505735",
+              "stars": 5.39924
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7042291104,
+            "rank": "C",
+            "accuracy": 0.7460727350979126,
+            "pp": 13.7928,
+            "mods": [],
+            "combo": 352,
+            "created_at": "2026-07-09T13:43:43Z",
+            "beatmapset": {
+              "id": 1357624,
+              "title": "true DJ MAG top ranker's song Zenpen (katagiri Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/1357624/covers/card.jpg?1645786045",
+              "stars": 5.31388
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+        "unique_players": 17
       }
     }
   }

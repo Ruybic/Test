@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 137,
-    "longest": 137,
-    "last_updated": "2026-07-13"
+    "current": 138,
+    "longest": 138,
+    "last_updated": "2026-07-14"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -41073,6 +41073,292 @@
         "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
         "unique_players": 20
+      }
+    },
+    "2026-07-14": {
+      "total_scores": 567,
+      "peak_hour_baghdad": 23,
+      "top_grinder": {
+        "user": "brianmoser1123",
+        "user_id": 39498643,
+        "count": 45,
+        "scores": [
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7071836629,
+            "rank": "B",
+            "accuracy": 0.8756410256410256,
+            "pp": 55.8509,
+            "mods": [],
+            "combo": 243,
+            "created_at": "2026-07-13T21:18:36Z",
+            "beatmapset": {
+              "id": 2380909,
+              "title": "Showdown (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2380909/covers/card.jpg?1761586291",
+              "stars": 4.73368
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7071823177,
+            "rank": "B",
+            "accuracy": 0.8592233009708737,
+            "pp": 37.876,
+            "mods": [],
+            "combo": 141,
+            "created_at": "2026-07-13T21:16:04Z",
+            "beatmapset": {
+              "id": 979100,
+              "title": "Greetings",
+              "cover": "https://assets.ppy.sh/beatmaps/979100/covers/card.jpg?1631512306",
+              "stars": 4.28161
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7071811505,
+            "rank": "B",
+            "accuracy": 0.9116997792494481,
+            "pp": 10.4695,
+            "mods": [],
+            "combo": 166,
+            "created_at": "2026-07-13T21:13:52Z",
+            "beatmapset": {
+              "id": 1279817,
+              "title": "sayonara! (ED Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1279817/covers/card.jpg?1725018750",
+              "stars": 2.38495
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7071799216,
+            "rank": "C",
+            "accuracy": 0.838849487785658,
+            "pp": 26.0747,
+            "mods": [],
+            "combo": 201,
+            "created_at": "2026-07-13T21:11:32Z",
+            "beatmapset": {
+              "id": 891338,
+              "title": "Apocalypse in Love",
+              "cover": "https://assets.ppy.sh/beatmaps/891338/covers/card.jpg?1650672736",
+              "stars": 3.79051
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7071783091,
+            "rank": "C",
+            "accuracy": 0.8466494845360825,
+            "pp": 40.2065,
+            "mods": [],
+            "combo": 111,
+            "created_at": "2026-07-13T21:08:29Z",
+            "beatmapset": {
+              "id": 977276,
+              "title": "Mellann",
+              "cover": "https://assets.ppy.sh/beatmaps/977276/covers/card.jpg?1650681491",
+              "stars": 4.94678
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7071757343,
+            "rank": "C",
+            "accuracy": 0.7837941628264209,
+            "pp": 56.2806,
+            "mods": [],
+            "combo": 436,
+            "created_at": "2026-07-13T21:03:40Z",
+            "beatmapset": {
+              "id": 1324853,
+              "title": "cold weather",
+              "cover": "https://assets.ppy.sh/beatmaps/1324853/covers/card.jpg?1774405284",
+              "stars": 4.54821
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7071740981,
+            "rank": "B",
+            "accuracy": 0.9046511627906977,
+            "pp": 25.8507,
+            "mods": [],
+            "combo": 336,
+            "created_at": "2026-07-13T21:00:37Z",
+            "beatmapset": {
+              "id": 1342280,
+              "title": "Theater Endroll",
+              "cover": "https://assets.ppy.sh/beatmaps/1342280/covers/card.jpg?1622204801",
+              "stars": 3.37843
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7071714283,
+            "rank": "B",
+            "accuracy": 0.8558501683501684,
+            "pp": 44.695,
+            "mods": [],
+            "combo": 204,
+            "created_at": "2026-07-13T20:55:43Z",
+            "beatmapset": {
+              "id": 1853651,
+              "title": "Reirou no Hibiki",
+              "cover": "https://assets.ppy.sh/beatmaps/1853651/covers/card.jpg?1664107299",
+              "stars": 5.30554
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7071678970,
+            "rank": "C",
+            "accuracy": 0.8345280764635603,
+            "pp": 48.6715,
+            "mods": [],
+            "combo": 207,
+            "created_at": "2026-07-13T20:49:18Z",
+            "beatmapset": {
+              "id": 613928,
+              "title": "The Noise of Rain",
+              "cover": "https://assets.ppy.sh/beatmaps/613928/covers/card.jpg?1622119194",
+              "stars": 5.56943
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7071651738,
+            "rank": "B",
+            "accuracy": 0.8590146750524109,
+            "pp": 49.4441,
+            "mods": [],
+            "combo": 147,
+            "created_at": "2026-07-13T20:44:22Z",
+            "beatmapset": {
+              "id": 2294338,
+              "title": "Tetoris",
+              "cover": "https://assets.ppy.sh/beatmaps/2294338/covers/card.jpg?1735651250",
+              "stars": 5.46541
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7071625194,
+            "rank": "C",
+            "accuracy": 0.8260517799352751,
+            "pp": 22.3945,
+            "mods": [],
+            "combo": 188,
+            "created_at": "2026-07-13T20:39:32Z",
+            "beatmapset": {
+              "id": 128931,
+              "title": "Tower Of Heaven (You Are Slaves)",
+              "cover": "https://assets.ppy.sh/beatmaps/128931/covers/card.jpg?1645785502",
+              "stars": 4.56412
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7071581932,
+            "rank": "C",
+            "accuracy": 0.8249916583249917,
+            "pp": null,
+            "mods": [],
+            "combo": 347,
+            "created_at": "2026-07-13T20:31:50Z",
+            "beatmapset": {
+              "id": 1975704,
+              "title": "Tenebre Rosso Sangue",
+              "cover": "https://assets.ppy.sh/beatmaps/1975704/covers/card.jpg?1699588830",
+              "stars": 5.20876
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7071549285,
+            "rank": "C",
+            "accuracy": 0.8010752688172043,
+            "pp": 59.1611,
+            "mods": [],
+            "combo": 274,
+            "created_at": "2026-07-13T20:26:06Z",
+            "beatmapset": {
+              "id": 479811,
+              "title": "Yuudachi no Ribbon",
+              "cover": "https://assets.ppy.sh/beatmaps/479811/covers/card.jpg?1650643518",
+              "stars": 5.20415
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7071528713,
+            "rank": "C",
+            "accuracy": 0.7606981981981982,
+            "pp": 44.0302,
+            "mods": [],
+            "combo": 130,
+            "created_at": "2026-07-13T20:22:30Z",
+            "beatmapset": {
+              "id": 2352872,
+              "title": "Daidaidaidaidaikirai",
+              "cover": "https://assets.ppy.sh/beatmaps/2352872/covers/card.jpg?1747424683",
+              "stars": 5.44998
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7071426770,
+            "rank": "C",
+            "accuracy": 0.7716378162450066,
+            "pp": 34.6358,
+            "mods": [],
+            "combo": 153,
+            "created_at": "2026-07-13T20:04:38Z",
+            "beatmapset": {
+              "id": 1976432,
+              "title": "Setsuna no Chikai (feat. Yuzaki Tsukasa (CV: Kito Akari))",
+              "cover": "https://assets.ppy.sh/beatmaps/1976432/covers/card.jpg?1749999617",
+              "stars": 5.07598
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "WEREWOLF (NIGHTCORE & CUT VER.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2515822/covers/card.jpg?1777248135",
+        "unique_players": 11
       }
     }
   }

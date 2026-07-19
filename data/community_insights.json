@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 141,
-    "longest": 141,
-    "last_updated": "2026-07-17"
+    "current": 142,
+    "longest": 142,
+    "last_updated": "2026-07-18"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -42305,6 +42305,292 @@
       "most_played_map": {
         "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+        "unique_players": 13
+      }
+    },
+    "2026-07-18": {
+      "total_scores": 585,
+      "peak_hour_baghdad": 23,
+      "top_grinder": {
+        "user": "manicide",
+        "user_id": 39330365,
+        "count": 62,
+        "scores": [
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5053470627,
+            "rank": "B",
+            "accuracy": 0.8514851485148515,
+            "pp": 60.541,
+            "mods": [],
+            "combo": 168,
+            "created_at": "2026-07-18T00:41:37Z",
+            "beatmapset": {
+              "id": 942642,
+              "title": "Chikatto Chika Chika",
+              "cover": "https://assets.ppy.sh/beatmaps/942642/covers/card.jpg?1650677241",
+              "stars": 5.47473
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5053467252,
+            "rank": "A",
+            "accuracy": 0.9333333333333333,
+            "pp": 57.3805,
+            "mods": [],
+            "combo": 223,
+            "created_at": "2026-07-18T00:28:10Z",
+            "beatmapset": {
+              "id": 84008,
+              "title": "Koi wa Chaos no Shimobenari (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/84008/covers/card.jpg?1650616125",
+              "stars": 4.58723
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5053466669,
+            "rank": "B",
+            "accuracy": 0.8761061946902655,
+            "pp": 45.9403,
+            "mods": [],
+            "combo": 104,
+            "created_at": "2026-07-18T00:25:51Z",
+            "beatmapset": {
+              "id": 2507398,
+              "title": "Never Wrong (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2507398/covers/card.jpg?1773880356",
+              "stars": 4.51594
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5053465251,
+            "rank": "B",
+            "accuracy": 0.9132149901380671,
+            "pp": 45.9257,
+            "mods": [],
+            "combo": 81,
+            "created_at": "2026-07-18T00:20:24Z",
+            "beatmapset": {
+              "id": 2499570,
+              "title": "Still Into You (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499570/covers/card.jpg?1771093258",
+              "stars": 4.6629
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5053464885,
+            "rank": "A",
+            "accuracy": 0.9338164251207729,
+            "pp": 47.7482,
+            "mods": [],
+            "combo": 157,
+            "created_at": "2026-07-18T00:18:52Z",
+            "beatmapset": {
+              "id": 260405,
+              "title": "Let Me Hear",
+              "cover": "https://assets.ppy.sh/beatmaps/260405/covers/card.jpg?1650627132",
+              "stars": 4.97299
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5053459877,
+            "rank": "S",
+            "accuracy": 0.9536019536019537,
+            "pp": 56.9127,
+            "mods": [],
+            "combo": 256,
+            "created_at": "2026-07-17T23:59:49Z",
+            "beatmapset": {
+              "id": 2524662,
+              "title": "TAIATARI*Romance feat. Ayuru Ohashi (Short Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2524662/covers/card.jpg?1774316200",
+              "stars": 4.22339
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5053459129,
+            "rank": "B",
+            "accuracy": 0.8726708074534162,
+            "pp": 60.7823,
+            "mods": [],
+            "combo": 161,
+            "created_at": "2026-07-17T23:57:06Z",
+            "beatmapset": {
+              "id": 2356114,
+              "title": "CAMELLIA",
+              "cover": "https://assets.ppy.sh/beatmaps/2356114/covers/card.jpg?1773025409",
+              "stars": 5.21824
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5053455908,
+            "rank": "B",
+            "accuracy": 0.9014336917562724,
+            "pp": 76.2368,
+            "mods": [],
+            "combo": 73,
+            "created_at": "2026-07-17T23:45:02Z",
+            "beatmapset": {
+              "id": 497769,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/497769/covers/card.jpg?1645785838",
+              "stars": 5.05263
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5053452757,
+            "rank": "B",
+            "accuracy": 0.8661616161616161,
+            "pp": 54.5022,
+            "mods": [],
+            "combo": 48,
+            "created_at": "2026-07-17T23:33:08Z",
+            "beatmapset": {
+              "id": 503141,
+              "title": "Zen Zen Zense",
+              "cover": "https://assets.ppy.sh/beatmaps/503141/covers/card.jpg?1650642836",
+              "stars": 4.73924
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5053452192,
+            "rank": "C",
+            "accuracy": 0.8350515463917526,
+            "pp": 59.5634,
+            "mods": [],
+            "combo": 241,
+            "created_at": "2026-07-17T23:31:06Z",
+            "beatmapset": {
+              "id": 2523937,
+              "title": "DAI*TAN SENSATION feat. Hatsune Miku (Short Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2523937/covers/card.jpg?1774420104",
+              "stars": 4.9159
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5053450382,
+            "rank": "C",
+            "accuracy": 0.8433179723502304,
+            "pp": 83.6857,
+            "mods": [],
+            "combo": 100,
+            "created_at": "2026-07-17T23:24:19Z",
+            "beatmapset": {
+              "id": 2463569,
+              "title": "How to Be a Heartbreaker (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2463569/covers/card.jpg?1777733995",
+              "stars": 5.49191
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5053449729,
+            "rank": "B",
+            "accuracy": 0.8740079365079365,
+            "pp": 85.7952,
+            "mods": [],
+            "combo": 140,
+            "created_at": "2026-07-17T23:22:03Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 5.34293
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5053448371,
+            "rank": "B",
+            "accuracy": 0.9268518518518518,
+            "pp": 53.1973,
+            "mods": [],
+            "combo": 169,
+            "created_at": "2026-07-17T23:17:00Z",
+            "beatmapset": {
+              "id": 444335,
+              "title": "Kira Kira Days",
+              "cover": "https://assets.ppy.sh/beatmaps/444335/covers/card.jpg?1650638834",
+              "stars": 4.72362
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5053447371,
+            "rank": "B",
+            "accuracy": 0.8784530386740331,
+            "pp": 71.7726,
+            "mods": [],
+            "combo": 61,
+            "created_at": "2026-07-17T23:13:23Z",
+            "beatmapset": {
+              "id": 2530233,
+              "title": "made for you (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2530233/covers/card.jpg?1777760143",
+              "stars": 5.39746
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5053445822,
+            "rank": "B",
+            "accuracy": 0.9154761904761904,
+            "pp": 60.1007,
+            "mods": [],
+            "combo": 237,
+            "created_at": "2026-07-17T23:07:48Z",
+            "beatmapset": {
+              "id": 2464474,
+              "title": "Cherry Pop (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2464474/covers/card.jpg?1763827557",
+              "stars": 5.06091
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Kaibutsu (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1328989/covers/card.jpg?1650707689",
         "unique_players": 13
       }
     }

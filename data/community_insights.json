@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 142,
-    "longest": 142,
-    "last_updated": "2026-07-18"
+    "current": 143,
+    "longest": 143,
+    "last_updated": "2026-07-19"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -42591,6 +42591,309 @@
       "most_played_map": {
         "title": "Kaibutsu (TV Size)",
         "cover": "https://assets.ppy.sh/beatmaps/1328989/covers/card.jpg?1650707689",
+        "unique_players": 13
+      }
+    },
+    "2026-07-19": {
+      "total_scores": 425,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "brianmoser1123",
+        "user_id": 39498643,
+        "count": 43,
+        "scores": [
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7105757095,
+            "rank": "B",
+            "accuracy": 0.8923357664233577,
+            "pp": 81.0045,
+            "mods": [
+              "HD"
+            ],
+            "combo": 234,
+            "created_at": "2026-07-19T00:30:08Z",
+            "beatmapset": {
+              "id": 769917,
+              "title": "BUBBLE TEA (feat. juu & cinders)",
+              "cover": "https://assets.ppy.sh/beatmaps/769917/covers/card.jpg?1650663270",
+              "stars": 5.11795
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7105724810,
+            "rank": "B",
+            "accuracy": 0.8652433425160698,
+            "pp": 66.2404,
+            "mods": [],
+            "combo": 330,
+            "created_at": "2026-07-19T00:22:29Z",
+            "beatmapset": {
+              "id": 2134722,
+              "title": "Kuuchuu Sanpo",
+              "cover": "https://assets.ppy.sh/beatmaps/2134722/covers/card.jpg?1745237278",
+              "stars": 5.49989
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7105698201,
+            "rank": "C",
+            "accuracy": 0.8319615912208504,
+            "pp": 37.1531,
+            "mods": [
+              "HD"
+            ],
+            "combo": 110,
+            "created_at": "2026-07-19T00:16:11Z",
+            "beatmapset": {
+              "id": 2499448,
+              "title": "Kiss Me When I'm Dead (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499448/covers/card.jpg?1776894558",
+              "stars": 4.2795
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7105666753,
+            "rank": "A",
+            "accuracy": 0.9452255418863503,
+            "pp": 61.947,
+            "mods": [],
+            "combo": 263,
+            "created_at": "2026-07-19T00:08:55Z",
+            "beatmapset": {
+              "id": 2460502,
+              "title": "ikasu",
+              "cover": "https://assets.ppy.sh/beatmaps/2460502/covers/card.jpg?1780747922",
+              "stars": 5.05384
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7105646691,
+            "rank": "A",
+            "accuracy": 0.9372230428360414,
+            "pp": 63.1301,
+            "mods": [],
+            "combo": 270,
+            "created_at": "2026-07-19T00:04:16Z",
+            "beatmapset": {
+              "id": 332532,
+              "title": "Highscore",
+              "cover": "https://assets.ppy.sh/beatmaps/332532/covers/card.jpg?1650631844",
+              "stars": 4.62214
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7105624261,
+            "rank": "B",
+            "accuracy": 0.9226495726495727,
+            "pp": 79.5775,
+            "mods": [],
+            "combo": 426,
+            "created_at": "2026-07-18T23:58:57Z",
+            "beatmapset": {
+              "id": 935098,
+              "title": "Raven Haven",
+              "cover": "https://assets.ppy.sh/beatmaps/935098/covers/card.jpg?1650676292",
+              "stars": 5.2474
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7105602065,
+            "rank": "B",
+            "accuracy": 0.906405051871899,
+            "pp": null,
+            "mods": [
+              "HD"
+            ],
+            "combo": 261,
+            "created_at": "2026-07-18T23:53:44Z",
+            "beatmapset": {
+              "id": 934878,
+              "title": "RAISE MY SWORD",
+              "cover": "https://assets.ppy.sh/beatmaps/934878/covers/card.jpg?1650680256",
+              "stars": 4.91099
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7105584995,
+            "rank": "C",
+            "accuracy": 0.7840136054421769,
+            "pp": 44.1389,
+            "mods": [
+              "HD"
+            ],
+            "combo": 348,
+            "created_at": "2026-07-18T23:49:48Z",
+            "beatmapset": {
+              "id": 2456175,
+              "title": "Totte Rogu Akuma (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2456175/covers/card.jpg?1779233294",
+              "stars": 4.53444
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7105573413,
+            "rank": "C",
+            "accuracy": 0.75271444082519,
+            "pp": 32.2946,
+            "mods": [
+              "HD"
+            ],
+            "combo": 192,
+            "created_at": "2026-07-18T23:47:05Z",
+            "beatmapset": {
+              "id": 703957,
+              "title": "Immortal Flame (feat. Anna Yvette)",
+              "cover": "https://assets.ppy.sh/beatmaps/703957/covers/card.jpg?1650658558",
+              "stars": 4.899
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7105533613,
+            "rank": "B",
+            "accuracy": 0.8680154142581888,
+            "pp": 44.7172,
+            "mods": [
+              "HD"
+            ],
+            "combo": 169,
+            "created_at": "2026-07-18T23:37:54Z",
+            "beatmapset": {
+              "id": 1274098,
+              "title": "Teo",
+              "cover": "https://assets.ppy.sh/beatmaps/1274098/covers/card.jpg?1645780962",
+              "stars": 5.02187
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7105494303,
+            "rank": "B",
+            "accuracy": 0.8870370370370371,
+            "pp": null,
+            "mods": [
+              "HD",
+              "HR"
+            ],
+            "combo": 60,
+            "created_at": "2026-07-18T23:28:59Z",
+            "beatmapset": {
+              "id": 2437278,
+              "title": "",
+              "cover": "https://assets.ppy.sh/beatmaps/2437278/covers/card.jpg?1760693419",
+              "stars": 4.94711
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7105399879,
+            "rank": "B",
+            "accuracy": 0.8975694444444444,
+            "pp": 87.2424,
+            "mods": [],
+            "combo": 117,
+            "created_at": "2026-07-18T23:07:13Z",
+            "beatmapset": {
+              "id": 2499570,
+              "title": "Still Into You (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499570/covers/card.jpg?1771093258",
+              "stars": 5.28394
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7105395074,
+            "rank": "C",
+            "accuracy": 0.8489326765188834,
+            "pp": 87.2929,
+            "mods": [],
+            "combo": 148,
+            "created_at": "2026-07-18T23:06:06Z",
+            "beatmapset": {
+              "id": 2499570,
+              "title": "Still Into You (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499570/covers/card.jpg?1771093258",
+              "stars": 5.36924
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7105390047,
+            "rank": "C",
+            "accuracy": 0.751207729468599,
+            "pp": 78.9045,
+            "mods": [
+              "HD"
+            ],
+            "combo": 64,
+            "created_at": "2026-07-18T23:04:55Z",
+            "beatmapset": {
+              "id": 2499570,
+              "title": "Still Into You (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499570/covers/card.jpg?1771093258",
+              "stars": 5.54937
+            }
+          },
+          {
+            "user": "brianmoser1123",
+            "user_id": 39498643,
+            "country": "IQ",
+            "score_id": 7105384835,
+            "rank": "C",
+            "accuracy": 0.8304597701149425,
+            "pp": 68.6441,
+            "mods": [],
+            "combo": 90,
+            "created_at": "2026-07-18T23:03:40Z",
+            "beatmapset": {
+              "id": 765778,
+              "title": "Make a Move (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/765778/covers/card.jpg?1650663123",
+              "stars": 5.05633
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "C-TYPE",
+        "cover": "https://assets.ppy.sh/beatmaps/757146/covers/card.jpg?1650662795",
         "unique_players": 13
       }
     }

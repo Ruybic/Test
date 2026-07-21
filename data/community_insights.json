@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 143,
-    "longest": 143,
-    "last_updated": "2026-07-19"
+    "current": 144,
+    "longest": 144,
+    "last_updated": "2026-07-20"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -42895,6 +42895,300 @@
         "title": "C-TYPE",
         "cover": "https://assets.ppy.sh/beatmaps/757146/covers/card.jpg?1650662795",
         "unique_players": 13
+      }
+    },
+    "2026-07-20": {
+      "total_scores": 419,
+      "peak_hour_baghdad": 14,
+      "top_grinder": {
+        "user": "manicide",
+        "user_id": 39330365,
+        "count": 43,
+        "scores": [
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5054373519,
+            "rank": "B",
+            "accuracy": 0.9173630454967502,
+            "pp": 65.5729,
+            "mods": [],
+            "combo": 167,
+            "created_at": "2026-07-20T02:51:48Z",
+            "beatmapset": {
+              "id": 1053509,
+              "title": "HIKARI (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1053509/covers/card.jpg?1650686981",
+              "stars": 5.52473
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5054372103,
+            "rank": "A",
+            "accuracy": 0.9400278940027894,
+            "pp": 73.5275,
+            "mods": [],
+            "combo": 141,
+            "created_at": "2026-07-20T02:45:35Z",
+            "beatmapset": {
+              "id": 952409,
+              "title": "Ai no Sukima",
+              "cover": "https://assets.ppy.sh/beatmaps/952409/covers/card.jpg?1645787548",
+              "stars": 4.99326
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5054371827,
+            "rank": "B",
+            "accuracy": 0.9038759689922481,
+            "pp": 46.3395,
+            "mods": [
+              "HD"
+            ],
+            "combo": 189,
+            "created_at": "2026-07-20T02:44:18Z",
+            "beatmapset": {
+              "id": 952409,
+              "title": "Ai no Sukima",
+              "cover": "https://assets.ppy.sh/beatmaps/952409/covers/card.jpg?1645787548",
+              "stars": 4.47357
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5054371555,
+            "rank": "A",
+            "accuracy": 0.953939393939394,
+            "pp": 61.8392,
+            "mods": [
+              "HD"
+            ],
+            "combo": 208,
+            "created_at": "2026-07-20T02:43:03Z",
+            "beatmapset": {
+              "id": 962088,
+              "title": "Marshmary",
+              "cover": "https://assets.ppy.sh/beatmaps/962088/covers/card.jpg?1645788534",
+              "stars": 4.41331
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5054371086,
+            "rank": "A",
+            "accuracy": 0.9806060606060606,
+            "pp": 84.8017,
+            "mods": [],
+            "combo": 310,
+            "created_at": "2026-07-20T02:40:59Z",
+            "beatmapset": {
+              "id": 962088,
+              "title": "Marshmary",
+              "cover": "https://assets.ppy.sh/beatmaps/962088/covers/card.jpg?1645788534",
+              "stars": 4.41331
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5054370751,
+            "rank": "B",
+            "accuracy": 0.8914930555555556,
+            "pp": 75.6904,
+            "mods": [],
+            "combo": 151,
+            "created_at": "2026-07-20T02:39:26Z",
+            "beatmapset": {
+              "id": 968171,
+              "title": "Mizuoto to Curtain",
+              "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
+              "stars": 5.49463
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5054369662,
+            "rank": "B",
+            "accuracy": 0.8671497584541062,
+            "pp": 72.7848,
+            "mods": [],
+            "combo": 64,
+            "created_at": "2026-07-20T02:34:18Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 5.29291
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5054368561,
+            "rank": "A",
+            "accuracy": 0.9362745098039216,
+            "pp": 68.5751,
+            "mods": [],
+            "combo": 112,
+            "created_at": "2026-07-20T02:28:59Z",
+            "beatmapset": {
+              "id": 2463569,
+              "title": "How to Be a Heartbreaker (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2463569/covers/card.jpg?1777733995",
+              "stars": 5.08689
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5054368217,
+            "rank": "A",
+            "accuracy": 0.9803921568627451,
+            "pp": 68.3589,
+            "mods": [],
+            "combo": 132,
+            "created_at": "2026-07-20T02:27:28Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 4.11547
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5054366633,
+            "rank": "A",
+            "accuracy": 0.9226441631504922,
+            "pp": 54.1257,
+            "mods": [],
+            "combo": 127,
+            "created_at": "2026-07-20T02:20:00Z",
+            "beatmapset": {
+              "id": 2506168,
+              "title": "Die A Million Times (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506168/covers/card.jpg?1773702471",
+              "stars": 4.93406
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5054365870,
+            "rank": "A",
+            "accuracy": 0.9467787114845938,
+            "pp": 59.5692,
+            "mods": [],
+            "combo": 107,
+            "created_at": "2026-07-20T02:16:26Z",
+            "beatmapset": {
+              "id": 2282704,
+              "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+              "stars": 4.78718
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5054364879,
+            "rank": "B",
+            "accuracy": 0.9049531459170014,
+            "pp": 76.1829,
+            "mods": [
+              "HD"
+            ],
+            "combo": 67,
+            "created_at": "2026-07-20T02:11:41Z",
+            "beatmapset": {
+              "id": 2288193,
+              "title": "Backstabber (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2288193/covers/card.jpg?1755044874",
+              "stars": 5.11846
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5054364444,
+            "rank": "A",
+            "accuracy": 0.9669669669669669,
+            "pp": 88.3858,
+            "mods": [
+              "HD"
+            ],
+            "combo": 195,
+            "created_at": "2026-07-20T02:09:38Z",
+            "beatmapset": {
+              "id": 2288193,
+              "title": "Backstabber (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2288193/covers/card.jpg?1755044874",
+              "stars": 4.76604
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5054364149,
+            "rank": "A",
+            "accuracy": 0.933933933933934,
+            "pp": 49.9339,
+            "mods": [],
+            "combo": 85,
+            "created_at": "2026-07-20T02:08:22Z",
+            "beatmapset": {
+              "id": 2288193,
+              "title": "Backstabber (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2288193/covers/card.jpg?1755044874",
+              "stars": 4.76604
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5054362985,
+            "rank": "A",
+            "accuracy": 0.9644572526416907,
+            "pp": 60.012,
+            "mods": [],
+            "combo": 469,
+            "created_at": "2026-07-20T02:02:59Z",
+            "beatmapset": {
+              "id": 1827914,
+              "title": "Mary -Figment of the World-",
+              "cover": "https://assets.ppy.sh/beatmaps/1827914/covers/card.jpg?1774974303",
+              "stars": 4.56423
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "overture",
+        "cover": "https://assets.ppy.sh/beatmaps/2513884/covers/card.jpg?1780611228",
+        "unique_players": 8
       }
     }
   }

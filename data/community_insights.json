@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 144,
-    "longest": 144,
-    "last_updated": "2026-07-20"
+    "current": 145,
+    "longest": 145,
+    "last_updated": "2026-07-21"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -43189,6 +43189,292 @@
         "title": "overture",
         "cover": "https://assets.ppy.sh/beatmaps/2513884/covers/card.jpg?1780611228",
         "unique_players": 8
+      }
+    },
+    "2026-07-21": {
+      "total_scores": 560,
+      "peak_hour_baghdad": 5,
+      "top_grinder": {
+        "user": "MrREXO",
+        "user_id": 25075871,
+        "count": 58,
+        "scores": [
+          {
+            "user": "MrREXO",
+            "user_id": 25075871,
+            "country": "IQ",
+            "score_id": 664912816,
+            "rank": "A",
+            "accuracy": 0.9292635658914729,
+            "pp": 8.87637,
+            "mods": [],
+            "combo": 123,
+            "created_at": "2026-07-20T22:35:56Z",
+            "beatmapset": {
+              "id": 2422832,
+              "title": "REIMEI",
+              "cover": "https://assets.ppy.sh/beatmaps/2422832/covers/card.jpg?1757243845",
+              "stars": 1.50439
+            }
+          },
+          {
+            "user": "MrREXO",
+            "user_id": 25075871,
+            "country": "IQ",
+            "score_id": 664912543,
+            "rank": "A",
+            "accuracy": 0.9305555555555556,
+            "pp": 8.93498,
+            "mods": [],
+            "combo": 181,
+            "created_at": "2026-07-20T22:31:44Z",
+            "beatmapset": {
+              "id": 2422832,
+              "title": "REIMEI",
+              "cover": "https://assets.ppy.sh/beatmaps/2422832/covers/card.jpg?1757243845",
+              "stars": 1.50439
+            }
+          },
+          {
+            "user": "MrREXO",
+            "user_id": 25075871,
+            "country": "IQ",
+            "score_id": 664912275,
+            "rank": "A",
+            "accuracy": 0.9269713261648745,
+            "pp": 11.295,
+            "mods": [],
+            "combo": 270,
+            "created_at": "2026-07-20T22:27:43Z",
+            "beatmapset": {
+              "id": 1928416,
+              "title": "O",
+              "cover": "https://assets.ppy.sh/beatmaps/1928416/covers/card.jpg?1783332279",
+              "stars": 1.6956
+            }
+          },
+          {
+            "user": "MrREXO",
+            "user_id": 25075871,
+            "country": "IQ",
+            "score_id": 664910441,
+            "rank": "B",
+            "accuracy": 0.8579749103942652,
+            "pp": 2.26856,
+            "mods": [],
+            "combo": 224,
+            "created_at": "2026-07-20T21:55:45Z",
+            "beatmapset": {
+              "id": 1928416,
+              "title": "O",
+              "cover": "https://assets.ppy.sh/beatmaps/1928416/covers/card.jpg?1783332279",
+              "stars": 1.6956
+            }
+          },
+          {
+            "user": "MrREXO",
+            "user_id": 25075871,
+            "country": "IQ",
+            "score_id": 664910243,
+            "rank": "C",
+            "accuracy": 0.795201668984701,
+            "pp": 0,
+            "mods": [],
+            "combo": 136,
+            "created_at": "2026-07-20T21:52:28Z",
+            "beatmapset": {
+              "id": 1928416,
+              "title": "O",
+              "cover": "https://assets.ppy.sh/beatmaps/1928416/covers/card.jpg?1783332279",
+              "stars": 2.71292
+            }
+          },
+          {
+            "user": "MrREXO",
+            "user_id": 25075871,
+            "country": "IQ",
+            "score_id": 664909978,
+            "rank": "S",
+            "accuracy": 0.9567652329749103,
+            "pp": 14.1031,
+            "mods": [],
+            "combo": 509,
+            "created_at": "2026-07-20T21:47:56Z",
+            "beatmapset": {
+              "id": 1928416,
+              "title": "O",
+              "cover": "https://assets.ppy.sh/beatmaps/1928416/covers/card.jpg?1783332279",
+              "stars": 1.6956
+            }
+          },
+          {
+            "user": "MrREXO",
+            "user_id": 25075871,
+            "country": "IQ",
+            "score_id": 664904722,
+            "rank": "A",
+            "accuracy": 0.9079005770084332,
+            "pp": 5.7348,
+            "mods": [],
+            "combo": 404,
+            "created_at": "2026-07-20T20:22:13Z",
+            "beatmapset": {
+              "id": 650415,
+              "title": "Mazare Party",
+              "cover": "https://assets.ppy.sh/beatmaps/650415/covers/card.jpg?1650666340",
+              "stars": 1.40711
+            }
+          },
+          {
+            "user": "MrREXO",
+            "user_id": 25075871,
+            "country": "IQ",
+            "score_id": 664904407,
+            "rank": "C",
+            "accuracy": 0.7251510159253157,
+            "pp": 0,
+            "mods": [],
+            "combo": 125,
+            "created_at": "2026-07-20T20:17:54Z",
+            "beatmapset": {
+              "id": 891417,
+              "title": "My life is for you",
+              "cover": "https://assets.ppy.sh/beatmaps/891417/covers/card.jpg?1650672786",
+              "stars": 2.34483
+            }
+          },
+          {
+            "user": "MrREXO",
+            "user_id": 25075871,
+            "country": "IQ",
+            "score_id": 664904242,
+            "rank": "C",
+            "accuracy": 0.7965451055662188,
+            "pp": 0,
+            "mods": [],
+            "combo": 96,
+            "created_at": "2026-07-20T20:15:26Z",
+            "beatmapset": {
+              "id": 682290,
+              "title": "Miracle Sugite Yabai (feat. shully)",
+              "cover": "https://assets.ppy.sh/beatmaps/682290/covers/card.jpg?1645786406",
+              "stars": 2.8176
+            }
+          },
+          {
+            "user": "MrREXO",
+            "user_id": 25075871,
+            "country": "IQ",
+            "score_id": 664904053,
+            "rank": "C",
+            "accuracy": 0.7825683820120538,
+            "pp": 0,
+            "mods": [],
+            "combo": 179,
+            "created_at": "2026-07-20T20:12:53Z",
+            "beatmapset": {
+              "id": 1928416,
+              "title": "O",
+              "cover": "https://assets.ppy.sh/beatmaps/1928416/covers/card.jpg?1783332279",
+              "stars": 2.71292
+            }
+          },
+          {
+            "user": "MrREXO",
+            "user_id": 25075871,
+            "country": "IQ",
+            "score_id": 664903805,
+            "rank": "A",
+            "accuracy": 0.923163082437276,
+            "pp": 10.2425,
+            "mods": [],
+            "combo": 151,
+            "created_at": "2026-07-20T20:09:31Z",
+            "beatmapset": {
+              "id": 1928416,
+              "title": "O",
+              "cover": "https://assets.ppy.sh/beatmaps/1928416/covers/card.jpg?1783332279",
+              "stars": 1.6956
+            }
+          },
+          {
+            "user": "MrREXO",
+            "user_id": 25075871,
+            "country": "IQ",
+            "score_id": 664903541,
+            "rank": "B",
+            "accuracy": 0.8326612903225806,
+            "pp": 0,
+            "mods": [],
+            "combo": 157,
+            "created_at": "2026-07-20T20:05:44Z",
+            "beatmapset": {
+              "id": 1928416,
+              "title": "O",
+              "cover": "https://assets.ppy.sh/beatmaps/1928416/covers/card.jpg?1783332279",
+              "stars": 1.6956
+            }
+          },
+          {
+            "user": "MrREXO",
+            "user_id": 25075871,
+            "country": "IQ",
+            "score_id": 664900268,
+            "rank": "B",
+            "accuracy": 0.875968992248062,
+            "pp": 4.56371,
+            "mods": [],
+            "combo": 132,
+            "created_at": "2026-07-20T19:16:46Z",
+            "beatmapset": {
+              "id": 2422832,
+              "title": "REIMEI",
+              "cover": "https://assets.ppy.sh/beatmaps/2422832/covers/card.jpg?1757243845",
+              "stars": 1.50439
+            }
+          },
+          {
+            "user": "MrREXO",
+            "user_id": 25075871,
+            "country": "IQ",
+            "score_id": 664900010,
+            "rank": "A",
+            "accuracy": 0.9060077519379846,
+            "pp": 6.85435,
+            "mods": [],
+            "combo": 132,
+            "created_at": "2026-07-20T19:12:48Z",
+            "beatmapset": {
+              "id": 2422832,
+              "title": "REIMEI",
+              "cover": "https://assets.ppy.sh/beatmaps/2422832/covers/card.jpg?1757243845",
+              "stars": 1.50439
+            }
+          },
+          {
+            "user": "MrREXO",
+            "user_id": 25075871,
+            "country": "IQ",
+            "score_id": 664897923,
+            "rank": "B",
+            "accuracy": 0.8959948320413437,
+            "pp": 5.80427,
+            "mods": [],
+            "combo": 92,
+            "created_at": "2026-07-20T18:41:18Z",
+            "beatmapset": {
+              "id": 2422832,
+              "title": "REIMEI",
+              "cover": "https://assets.ppy.sh/beatmaps/2422832/covers/card.jpg?1757243845",
+              "stars": 1.50439
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Mizuoto to Curtain",
+        "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
+        "unique_players": 12
       }
     }
   }

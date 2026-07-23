@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 145,
-    "longest": 145,
-    "last_updated": "2026-07-21"
+    "current": 146,
+    "longest": 146,
+    "last_updated": "2026-07-22"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -43475,6 +43475,303 @@
         "title": "Mizuoto to Curtain",
         "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
         "unique_players": 12
+      }
+    },
+    "2026-07-22": {
+      "total_scores": 476,
+      "peak_hour_baghdad": 4,
+      "top_grinder": {
+        "user": "manicide",
+        "user_id": 39330365,
+        "count": 55,
+        "scores": [
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5055170090,
+            "rank": "A",
+            "accuracy": 0.952855245683931,
+            "pp": 61.4979,
+            "mods": [],
+            "combo": 208,
+            "created_at": "2026-07-22T00:01:45Z",
+            "beatmapset": {
+              "id": 2422687,
+              "title": "Of Our Time (osu! Edit)",
+              "cover": "https://assets.ppy.sh/beatmaps/2422687/covers/card.jpg?1757433537",
+              "stars": 5.02954
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5055157710,
+            "rank": "A",
+            "accuracy": 0.9312169312169312,
+            "pp": 83.4915,
+            "mods": [],
+            "combo": 66,
+            "created_at": "2026-07-21T23:16:34Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 5.13362
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5055156462,
+            "rank": "S",
+            "accuracy": 0.9666666666666667,
+            "pp": 109.833,
+            "mods": [],
+            "combo": 114,
+            "created_at": "2026-07-21T23:12:03Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 5.07091
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5055154718,
+            "rank": "A",
+            "accuracy": 0.9591397849462365,
+            "pp": 95.7067,
+            "mods": [
+              "HD"
+            ],
+            "combo": 149,
+            "created_at": "2026-07-21T23:06:06Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.07485
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5055153729,
+            "rank": "A",
+            "accuracy": 0.9230769230769231,
+            "pp": 60.9857,
+            "mods": [
+              "HD"
+            ],
+            "combo": 117,
+            "created_at": "2026-07-21T23:02:32Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 4.71705
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5055152836,
+            "rank": "A",
+            "accuracy": 0.9781021897810219,
+            "pp": 68.6764,
+            "mods": [],
+            "combo": 203,
+            "created_at": "2026-07-21T22:59:31Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 4.20689
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5055152583,
+            "rank": "A",
+            "accuracy": 0.9506172839506173,
+            "pp": 37.1973,
+            "mods": [
+              "HR"
+            ],
+            "combo": 92,
+            "created_at": "2026-07-21T22:58:31Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 3.56728
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5055151918,
+            "rank": "B",
+            "accuracy": 0.9155937052932761,
+            "pp": 50.915,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 164,
+            "created_at": "2026-07-21T22:56:06Z",
+            "beatmapset": {
+              "id": 2474734,
+              "title": "BULLET MERMAID (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2474734/covers/card.jpg?1771944555",
+              "stars": 3.16552
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5055151299,
+            "rank": "A",
+            "accuracy": 0.9549356223175965,
+            "pp": 64.7303,
+            "mods": [
+              "DT"
+            ],
+            "combo": 235,
+            "created_at": "2026-07-21T22:53:57Z",
+            "beatmapset": {
+              "id": 2474734,
+              "title": "BULLET MERMAID (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2474734/covers/card.jpg?1771944555",
+              "stars": 3.16552
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5055150954,
+            "rank": "S",
+            "accuracy": 0.994277539341917,
+            "pp": 35.9911,
+            "mods": [],
+            "combo": 208,
+            "created_at": "2026-07-21T22:52:46Z",
+            "beatmapset": {
+              "id": 2474734,
+              "title": "BULLET MERMAID (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2474734/covers/card.jpg?1771944555",
+              "stars": 3.16552
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5055150214,
+            "rank": "A",
+            "accuracy": 0.9251572327044025,
+            "pp": 45.436,
+            "mods": [],
+            "combo": 111,
+            "created_at": "2026-07-21T22:50:14Z",
+            "beatmapset": {
+              "id": 504165,
+              "title": "Kumitate Koujou",
+              "cover": "https://assets.ppy.sh/beatmaps/504165/covers/card.jpg?1650643271",
+              "stars": 4.57164
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5055149620,
+            "rank": "B",
+            "accuracy": 0.915929203539823,
+            "pp": 39.9484,
+            "mods": [],
+            "combo": 82,
+            "created_at": "2026-07-21T22:48:07Z",
+            "beatmapset": {
+              "id": 687879,
+              "title": "Daisuki na Kototte Kuchi ni Dashite Iitai jan?",
+              "cover": "https://assets.ppy.sh/beatmaps/687879/covers/card.jpg?1650674145",
+              "stars": 4.2241
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5055147633,
+            "rank": "A",
+            "accuracy": 0.9355555555555556,
+            "pp": 88.5504,
+            "mods": [],
+            "combo": 243,
+            "created_at": "2026-07-21T22:41:30Z",
+            "beatmapset": {
+              "id": 2464474,
+              "title": "Cherry Pop (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2464474/covers/card.jpg?1763827557",
+              "stars": 5.41032
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5055146984,
+            "rank": "A",
+            "accuracy": 0.9351351351351351,
+            "pp": 79.8447,
+            "mods": [],
+            "combo": 121,
+            "created_at": "2026-07-21T22:39:20Z",
+            "beatmapset": {
+              "id": 2425417,
+              "title": "Determinate (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+              "stars": 5.01778
+            }
+          },
+          {
+            "user": "manicide",
+            "user_id": 39330365,
+            "country": "IQ",
+            "score_id": 5055142331,
+            "rank": "A",
+            "accuracy": 0.9392265193370166,
+            "pp": 71.1514,
+            "mods": [],
+            "combo": 148,
+            "created_at": "2026-07-21T22:24:06Z",
+            "beatmapset": {
+              "id": 968171,
+              "title": "Mizuoto to Curtain",
+              "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
+              "stars": 4.96063
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Determinate (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2425417/covers/card.jpg?1761335172",
+        "unique_players": 10
       }
     }
   }

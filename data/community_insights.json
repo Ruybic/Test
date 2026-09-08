@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 190,
-    "longest": 190,
-    "last_updated": "2026-09-06"
+    "current": 191,
+    "longest": 191,
+    "last_updated": "2026-09-07"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -57348,6 +57348,307 @@
         "title": "SpongeBob SquarePants Theme",
         "cover": "https://assets.ppy.sh/beatmaps/143939/covers/card.jpg?1650620130",
         "unique_players": 32
+      }
+    },
+    "2026-09-07": {
+      "total_scores": 1052,
+      "peak_hour_baghdad": 22,
+      "top_grinder": {
+        "user": "azalhussam",
+        "user_id": 37635103,
+        "count": 78,
+        "scores": [
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7428463733,
+            "rank": "C",
+            "accuracy": 0.810077519379845,
+            "pp": 48.2398,
+            "mods": [],
+            "combo": 106,
+            "created_at": "2026-09-07T06:49:39Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 4.51592
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7427348953,
+            "rank": "C",
+            "accuracy": 0.8123973727422004,
+            "pp": 30.0777,
+            "mods": [],
+            "combo": 116,
+            "created_at": "2026-09-07T01:10:45Z",
+            "beatmapset": {
+              "id": 2354325,
+              "title": "Oh My Little Baby Boy (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2354325/covers/card.jpg?1760881687",
+              "stars": 4.02105
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7427339100,
+            "rank": "C",
+            "accuracy": 0.8379120879120879,
+            "pp": 46.4648,
+            "mods": [],
+            "combo": 43,
+            "created_at": "2026-09-07T01:07:53Z",
+            "beatmapset": {
+              "id": 2556198,
+              "title": "Six Seven",
+              "cover": "https://assets.ppy.sh/beatmaps/2556198/covers/card.jpg?1780609844",
+              "stars": 4.52025
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7427333513,
+            "rank": "C",
+            "accuracy": 0.7545219638242894,
+            "pp": 44.0159,
+            "mods": [],
+            "combo": 115,
+            "created_at": "2026-09-07T01:06:17Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 4.51592
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7427328508,
+            "rank": "B",
+            "accuracy": 0.8761261261261262,
+            "pp": 45.9497,
+            "mods": [],
+            "combo": 75,
+            "created_at": "2026-09-07T01:04:49Z",
+            "beatmapset": {
+              "id": 557733,
+              "title": "Harumachi Clover",
+              "cover": "https://assets.ppy.sh/beatmaps/557733/covers/card.jpg?1650646480",
+              "stars": 4.29272
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7427321810,
+            "rank": "B",
+            "accuracy": 0.8782051282051282,
+            "pp": 46.557,
+            "mods": [],
+            "combo": 56,
+            "created_at": "2026-09-07T01:02:52Z",
+            "beatmapset": {
+              "id": 2556198,
+              "title": "Six Seven",
+              "cover": "https://assets.ppy.sh/beatmaps/2556198/covers/card.jpg?1780609844",
+              "stars": 4.52025
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7427316734,
+            "rank": "B",
+            "accuracy": 0.847985347985348,
+            "pp": 41.255,
+            "mods": [],
+            "combo": 60,
+            "created_at": "2026-09-07T01:01:23Z",
+            "beatmapset": {
+              "id": 2556198,
+              "title": "Six Seven",
+              "cover": "https://assets.ppy.sh/beatmaps/2556198/covers/card.jpg?1780609844",
+              "stars": 4.52025
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7427305610,
+            "rank": "B",
+            "accuracy": 0.8956043956043956,
+            "pp": 51.792,
+            "mods": [],
+            "combo": 54,
+            "created_at": "2026-09-07T00:58:11Z",
+            "beatmapset": {
+              "id": 2556198,
+              "title": "Six Seven",
+              "cover": "https://assets.ppy.sh/beatmaps/2556198/covers/card.jpg?1780609844",
+              "stars": 4.52025
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7427289901,
+            "rank": "C",
+            "accuracy": 0.7329013678905687,
+            "pp": 25.6221,
+            "mods": [],
+            "combo": 172,
+            "created_at": "2026-09-07T00:53:39Z",
+            "beatmapset": {
+              "id": 2178003,
+              "title": "Part Of Me (Whippa Hardstyle Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2178003/covers/card.jpg?1717004735",
+              "stars": 4.76357
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7427281491,
+            "rank": "C",
+            "accuracy": 0.7434944237918215,
+            "pp": 30.5558,
+            "mods": [],
+            "combo": 104,
+            "created_at": "2026-09-07T00:51:18Z",
+            "beatmapset": {
+              "id": 921889,
+              "title": "Chikatto Chika Chika (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/921889/covers/card.jpg?1650675795",
+              "stars": 5.00061
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7427270051,
+            "rank": "C",
+            "accuracy": 0.7390572390572391,
+            "pp": 37.0887,
+            "mods": [],
+            "combo": 101,
+            "created_at": "2026-09-07T00:48:02Z",
+            "beatmapset": {
+              "id": 2281428,
+              "title": "Poison (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2281428/covers/card.jpg?1734634407",
+              "stars": 4.51822
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7427264084,
+            "rank": "B",
+            "accuracy": 0.8626373626373627,
+            "pp": 42.9411,
+            "mods": [],
+            "combo": 56,
+            "created_at": "2026-09-07T00:46:22Z",
+            "beatmapset": {
+              "id": 2556198,
+              "title": "Six Seven",
+              "cover": "https://assets.ppy.sh/beatmaps/2556198/covers/card.jpg?1780609844",
+              "stars": 4.52025
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7427251899,
+            "rank": "A",
+            "accuracy": 0.9212454212454212,
+            "pp": 58.4583,
+            "mods": [],
+            "combo": 79,
+            "created_at": "2026-09-07T00:42:57Z",
+            "beatmapset": {
+              "id": 2556198,
+              "title": "Six Seven",
+              "cover": "https://assets.ppy.sh/beatmaps/2556198/covers/card.jpg?1780609844",
+              "stars": 4.52025
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7427241736,
+            "rank": "B",
+            "accuracy": 0.847985347985348,
+            "pp": 42.7597,
+            "mods": [],
+            "combo": 68,
+            "created_at": "2026-09-07T00:40:04Z",
+            "beatmapset": {
+              "id": 2556198,
+              "title": "Six Seven",
+              "cover": "https://assets.ppy.sh/beatmaps/2556198/covers/card.jpg?1780609844",
+              "stars": 4.52025
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7427236779,
+            "rank": "C",
+            "accuracy": 0.8342490842490843,
+            "pp": 37.2343,
+            "mods": [],
+            "combo": 34,
+            "created_at": "2026-09-07T00:38:40Z",
+            "beatmapset": {
+              "id": 2556198,
+              "title": "Six Seven",
+              "cover": "https://assets.ppy.sh/beatmaps/2556198/covers/card.jpg?1780609844",
+              "stars": 4.52025
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Harumachi Clover",
+        "cover": "https://assets.ppy.sh/beatmaps/557733/covers/card.jpg?1650646480",
+        "unique_players": 21
       }
     }
   }

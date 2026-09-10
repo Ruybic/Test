@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 192,
-    "longest": 192,
-    "last_updated": "2026-09-08"
+    "current": 193,
+    "longest": 193,
+    "last_updated": "2026-09-09"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -57950,6 +57950,333 @@
         "title": "bbydoll (nightcore & cut ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2374386/covers/card.jpg?1749993995",
         "unique_players": 11
+      }
+    },
+    "2026-09-09": {
+      "total_scores": 1143,
+      "peak_hour_baghdad": 22,
+      "top_grinder": {
+        "user": "corneliustheIII",
+        "user_id": 39262996,
+        "count": 76,
+        "scores": [
+          {
+            "user": "corneliustheIII",
+            "user_id": 39262996,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5074453903,
+            "rank": "D",
+            "accuracy": 0.27598566308243727,
+            "pp": 3.63328,
+            "mods": [
+              "NF"
+            ],
+            "combo": 18,
+            "created_at": "2026-09-08T20:00:15Z",
+            "beatmapset": {
+              "id": 497769,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/497769/covers/card.jpg?1645785838",
+              "stars": 5.05263
+            }
+          },
+          {
+            "user": "corneliustheIII",
+            "user_id": 39262996,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5074453200,
+            "rank": "D",
+            "accuracy": 0.24382716049382716,
+            "pp": 3.45766,
+            "mods": [
+              "NF"
+            ],
+            "combo": 14,
+            "created_at": "2026-09-08T19:58:07Z",
+            "beatmapset": {
+              "id": 219763,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/219763/covers/card.jpg?1650625235",
+              "stars": 5.05207
+            }
+          },
+          {
+            "user": "corneliustheIII",
+            "user_id": 39262996,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5074452846,
+            "rank": "D",
+            "accuracy": 0.28055555555555556,
+            "pp": 3.91611,
+            "mods": [
+              "NF"
+            ],
+            "combo": 7,
+            "created_at": "2026-09-08T19:56:59Z",
+            "beatmapset": {
+              "id": 219763,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/219763/covers/card.jpg?1650625235",
+              "stars": 5.2536
+            }
+          },
+          {
+            "user": "corneliustheIII",
+            "user_id": 39262996,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5074452538,
+            "rank": "D",
+            "accuracy": 0.3565121412803532,
+            "pp": 3.19169,
+            "mods": [
+              "NF"
+            ],
+            "combo": 11,
+            "created_at": "2026-09-08T19:56:05Z",
+            "beatmapset": {
+              "id": 219763,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/219763/covers/card.jpg?1650625235",
+              "stars": 4.12788
+            }
+          },
+          {
+            "user": "corneliustheIII",
+            "user_id": 39262996,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5074452290,
+            "rank": "D",
+            "accuracy": 0.32781456953642385,
+            "pp": 2.81942,
+            "mods": [
+              "NF"
+            ],
+            "combo": 11,
+            "created_at": "2026-09-08T19:55:15Z",
+            "beatmapset": {
+              "id": 219763,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/219763/covers/card.jpg?1650625235",
+              "stars": 4.12788
+            }
+          },
+          {
+            "user": "corneliustheIII",
+            "user_id": 39262996,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5074451864,
+            "rank": "D",
+            "accuracy": 0.595771144278607,
+            "pp": 4.75381,
+            "mods": [
+              "NF"
+            ],
+            "combo": 24,
+            "created_at": "2026-09-08T19:53:55Z",
+            "beatmapset": {
+              "id": 219763,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/219763/covers/card.jpg?1650625235",
+              "stars": 3.44762
+            }
+          },
+          {
+            "user": "corneliustheIII",
+            "user_id": 39262996,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5074451461,
+            "rank": "D",
+            "accuracy": 0.6626506024096386,
+            "pp": 11.0496,
+            "mods": [],
+            "combo": 36,
+            "created_at": "2026-09-08T19:52:34Z",
+            "beatmapset": {
+              "id": 2548932,
+              "title": "Underground Theme",
+              "cover": "https://assets.ppy.sh/beatmaps/2548932/covers/card.jpg?1788187068",
+              "stars": 3.21341
+            }
+          },
+          {
+            "user": "corneliustheIII",
+            "user_id": 39262996,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5074451199,
+            "rank": "C",
+            "accuracy": 0.7309236947791165,
+            "pp": 12.3446,
+            "mods": [],
+            "combo": 23,
+            "created_at": "2026-09-08T19:51:51Z",
+            "beatmapset": {
+              "id": 2548932,
+              "title": "Underground Theme",
+              "cover": "https://assets.ppy.sh/beatmaps/2548932/covers/card.jpg?1788187068",
+              "stars": 3.21341
+            }
+          },
+          {
+            "user": "corneliustheIII",
+            "user_id": 39262996,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5074450927,
+            "rank": "C",
+            "accuracy": 0.7329317269076305,
+            "pp": 9.05447,
+            "mods": [
+              "NF"
+            ],
+            "combo": 35,
+            "created_at": "2026-09-08T19:50:57Z",
+            "beatmapset": {
+              "id": 2548932,
+              "title": "Underground Theme",
+              "cover": "https://assets.ppy.sh/beatmaps/2548932/covers/card.jpg?1788187068",
+              "stars": 3.21341
+            }
+          },
+          {
+            "user": "corneliustheIII",
+            "user_id": 39262996,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5074450675,
+            "rank": "D",
+            "accuracy": 0.6686746987951807,
+            "pp": 9.40098,
+            "mods": [
+              "NF"
+            ],
+            "combo": 28,
+            "created_at": "2026-09-08T19:50:08Z",
+            "beatmapset": {
+              "id": 2548932,
+              "title": "Underground Theme",
+              "cover": "https://assets.ppy.sh/beatmaps/2548932/covers/card.jpg?1788187068",
+              "stars": 3.21341
+            }
+          },
+          {
+            "user": "corneliustheIII",
+            "user_id": 39262996,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5074450392,
+            "rank": "C",
+            "accuracy": 0.7543859649122807,
+            "pp": 1.75894,
+            "mods": [
+              "NF"
+            ],
+            "combo": 34,
+            "created_at": "2026-09-08T19:49:17Z",
+            "beatmapset": {
+              "id": 2548932,
+              "title": "Underground Theme",
+              "cover": "https://assets.ppy.sh/beatmaps/2548932/covers/card.jpg?1788187068",
+              "stars": 1.49556
+            }
+          },
+          {
+            "user": "corneliustheIII",
+            "user_id": 39262996,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5074444724,
+            "rank": "D",
+            "accuracy": 0.5671641791044776,
+            "pp": 4.9403,
+            "mods": [
+              "NF"
+            ],
+            "combo": 17,
+            "created_at": "2026-09-08T19:31:50Z",
+            "beatmapset": {
+              "id": 219763,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/219763/covers/card.jpg?1650625235",
+              "stars": 3.44762
+            }
+          },
+          {
+            "user": "corneliustheIII",
+            "user_id": 39262996,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5074440364,
+            "rank": "D",
+            "accuracy": 0.37410071942446044,
+            "pp": 3.1533,
+            "mods": [
+              "NF"
+            ],
+            "combo": 18,
+            "created_at": "2026-09-08T19:19:12Z",
+            "beatmapset": {
+              "id": 497769,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/497769/covers/card.jpg?1645785838",
+              "stars": 3.89464
+            }
+          },
+          {
+            "user": "corneliustheIII",
+            "user_id": 39262996,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5074440102,
+            "rank": "D",
+            "accuracy": 0.6206467661691543,
+            "pp": 6.29551,
+            "mods": [
+              "NF"
+            ],
+            "combo": 24,
+            "created_at": "2026-09-08T19:18:21Z",
+            "beatmapset": {
+              "id": 219763,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/219763/covers/card.jpg?1650625235",
+              "stars": 3.44762
+            }
+          },
+          {
+            "user": "corneliustheIII",
+            "user_id": 39262996,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5074439057,
+            "rank": "D",
+            "accuracy": 0.6218905472636815,
+            "pp": 6.57663,
+            "mods": [
+              "NF"
+            ],
+            "combo": 28,
+            "created_at": "2026-09-08T19:15:19Z",
+            "beatmapset": {
+              "id": 219763,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/219763/covers/card.jpg?1650625235",
+              "stars": 3.44762
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Granat",
+        "cover": "https://assets.ppy.sh/beatmaps/497769/covers/card.jpg?1645785838",
+        "unique_players": 51
       }
     }
   }

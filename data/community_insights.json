@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 194,
-    "longest": 194,
-    "last_updated": "2026-09-10"
+    "current": 195,
+    "longest": 195,
+    "last_updated": "2026-09-11"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -58617,6 +58617,328 @@
         "title": "Granat",
         "cover": "https://assets.ppy.sh/beatmaps/219763/covers/card.jpg?1650625235",
         "unique_players": 38
+      }
+    },
+    "2026-09-11": {
+      "total_scores": 780,
+      "peak_hour_baghdad": 2,
+      "top_grinder": {
+        "user": "clover_1",
+        "user_id": 40348123,
+        "count": 60,
+        "scores": [
+          {
+            "user": "clover_1",
+            "user_id": 40348123,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7451910889,
+            "rank": "C",
+            "accuracy": 0.8042505592841164,
+            "pp": 4.24729,
+            "mods": [],
+            "combo": 96,
+            "created_at": "2026-09-10T22:16:33Z",
+            "beatmapset": {
+              "id": 46862,
+              "title": "CORE PRIDE (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/46862/covers/card.jpg?1650611171",
+              "stars": 2.29009
+            }
+          },
+          {
+            "user": "clover_1",
+            "user_id": 40348123,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7451902116,
+            "rank": "C",
+            "accuracy": 0.8097826086956522,
+            "pp": 9.33048,
+            "mods": [
+              "HR",
+              "DT"
+            ],
+            "combo": 178,
+            "created_at": "2026-09-10T22:14:33Z",
+            "beatmapset": {
+              "id": 46862,
+              "title": "CORE PRIDE (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/46862/covers/card.jpg?1650611171",
+              "stars": 1.70862
+            }
+          },
+          {
+            "user": "clover_1",
+            "user_id": 40348123,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7451896009,
+            "rank": "C",
+            "accuracy": 0.7626811594202898,
+            "pp": 8.56751,
+            "mods": [
+              "HR",
+              "DT"
+            ],
+            "combo": 96,
+            "created_at": "2026-09-10T22:13:11Z",
+            "beatmapset": {
+              "id": 46862,
+              "title": "CORE PRIDE (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/46862/covers/card.jpg?1650611171",
+              "stars": 1.70862
+            }
+          },
+          {
+            "user": "clover_1",
+            "user_id": 40348123,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7451866552,
+            "rank": "A",
+            "accuracy": 0.8753753753753754,
+            "pp": 5.9207,
+            "mods": [],
+            "combo": 206,
+            "created_at": "2026-09-10T22:06:34Z",
+            "beatmapset": {
+              "id": 43839,
+              "title": "Kyoumu Densen (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/43839/covers/card.jpg?1650610856",
+              "stars": 1.96489
+            }
+          },
+          {
+            "user": "clover_1",
+            "user_id": 40348123,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7451852925,
+            "rank": "S",
+            "accuracy": 0.9534883720930233,
+            "pp": 6.02148,
+            "mods": [],
+            "combo": 191,
+            "created_at": "2026-09-10T22:03:28Z",
+            "beatmapset": {
+              "id": 43839,
+              "title": "Kyoumu Densen (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/43839/covers/card.jpg?1650610856",
+              "stars": 1.79147
+            }
+          },
+          {
+            "user": "clover_1",
+            "user_id": 40348123,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7451833720,
+            "rank": "C",
+            "accuracy": 0.8382352941176471,
+            "pp": 5.42538,
+            "mods": [],
+            "combo": 151,
+            "created_at": "2026-09-10T21:59:14Z",
+            "beatmapset": {
+              "id": 758101,
+              "title": "asphyxia (TV edit)",
+              "cover": "https://assets.ppy.sh/beatmaps/758101/covers/card.jpg?1650661558",
+              "stars": 2.16044
+            }
+          },
+          {
+            "user": "clover_1",
+            "user_id": 40348123,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7451808099,
+            "rank": "C",
+            "accuracy": 0.7512254901960784,
+            "pp": 4.64702,
+            "mods": [],
+            "combo": 90,
+            "created_at": "2026-09-10T21:53:41Z",
+            "beatmapset": {
+              "id": 758101,
+              "title": "asphyxia (TV edit)",
+              "cover": "https://assets.ppy.sh/beatmaps/758101/covers/card.jpg?1650661558",
+              "stars": 2.16044
+            }
+          },
+          {
+            "user": "clover_1",
+            "user_id": 40348123,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7451796902,
+            "rank": "C",
+            "accuracy": 0.6985294117647058,
+            "pp": 3.60303,
+            "mods": [],
+            "combo": 91,
+            "created_at": "2026-09-10T21:51:16Z",
+            "beatmapset": {
+              "id": 758101,
+              "title": "asphyxia (TV edit)",
+              "cover": "https://assets.ppy.sh/beatmaps/758101/covers/card.jpg?1650661558",
+              "stars": 2.16044
+            }
+          },
+          {
+            "user": "clover_1",
+            "user_id": 40348123,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7451783735,
+            "rank": "B",
+            "accuracy": 0.8870967741935484,
+            "pp": 10.4528,
+            "mods": [
+              "HR",
+              "DT"
+            ],
+            "combo": 139,
+            "created_at": "2026-09-10T21:48:26Z",
+            "beatmapset": {
+              "id": 758101,
+              "title": "asphyxia (TV edit)",
+              "cover": "https://assets.ppy.sh/beatmaps/758101/covers/card.jpg?1650661558",
+              "stars": 1.57186
+            }
+          },
+          {
+            "user": "clover_1",
+            "user_id": 40348123,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7451763455,
+            "rank": "A",
+            "accuracy": 0.8691756272401434,
+            "pp": 4.61619,
+            "mods": [
+              "HR"
+            ],
+            "combo": 212,
+            "created_at": "2026-09-10T21:44:07Z",
+            "beatmapset": {
+              "id": 758101,
+              "title": "asphyxia (TV edit)",
+              "cover": "https://assets.ppy.sh/beatmaps/758101/covers/card.jpg?1650661558",
+              "stars": 1.57186
+            }
+          },
+          {
+            "user": "clover_1",
+            "user_id": 40348123,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7451742045,
+            "rank": "C",
+            "accuracy": 0.7526041666666666,
+            "pp": 7.9185,
+            "mods": [
+              "HR"
+            ],
+            "combo": 113,
+            "created_at": "2026-09-10T21:39:34Z",
+            "beatmapset": {
+              "id": 219107,
+              "title": "unravel (TV edit)",
+              "cover": "https://assets.ppy.sh/beatmaps/219107/covers/card.jpg?1650625939",
+              "stars": 2.37993
+            }
+          },
+          {
+            "user": "clover_1",
+            "user_id": 40348123,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7451728731,
+            "rank": "C",
+            "accuracy": 0.7434895833333334,
+            "pp": 7.88907,
+            "mods": [
+              "HR"
+            ],
+            "combo": 95,
+            "created_at": "2026-09-10T21:36:45Z",
+            "beatmapset": {
+              "id": 219107,
+              "title": "unravel (TV edit)",
+              "cover": "https://assets.ppy.sh/beatmaps/219107/covers/card.jpg?1650625939",
+              "stars": 2.37993
+            }
+          },
+          {
+            "user": "clover_1",
+            "user_id": 40348123,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7451721257,
+            "rank": "C",
+            "accuracy": 0.73828125,
+            "pp": 8.13076,
+            "mods": [
+              "HR"
+            ],
+            "combo": 78,
+            "created_at": "2026-09-10T21:35:09Z",
+            "beatmapset": {
+              "id": 219107,
+              "title": "unravel (TV edit)",
+              "cover": "https://assets.ppy.sh/beatmaps/219107/covers/card.jpg?1650625939",
+              "stars": 2.37993
+            }
+          },
+          {
+            "user": "clover_1",
+            "user_id": 40348123,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7451713462,
+            "rank": "A",
+            "accuracy": 0.9567901234567902,
+            "pp": 5.28163,
+            "mods": [
+              "HR"
+            ],
+            "combo": 186,
+            "created_at": "2026-09-10T21:33:30Z",
+            "beatmapset": {
+              "id": 219107,
+              "title": "unravel (TV edit)",
+              "cover": "https://assets.ppy.sh/beatmaps/219107/covers/card.jpg?1650625939",
+              "stars": 1.51674
+            }
+          },
+          {
+            "user": "clover_1",
+            "user_id": 40348123,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7451699068,
+            "rank": "X",
+            "accuracy": 1,
+            "pp": null,
+            "mods": [
+              "HR"
+            ],
+            "combo": 36,
+            "created_at": "2026-09-10T21:30:29Z",
+            "beatmapset": {
+              "id": 1352412,
+              "title": "Unravel (Tokyo Ghoul)",
+              "cover": "https://assets.ppy.sh/beatmaps/1352412/covers/card.jpg?1772528413",
+              "stars": 1.22736
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Play",
+        "cover": "https://assets.ppy.sh/beatmaps/1322088/covers/card.jpg?1783978327",
+        "unique_players": 14
       }
     }
   }

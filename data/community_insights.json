@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 195,
-    "longest": 195,
-    "last_updated": "2026-09-11"
+    "current": 196,
+    "longest": 196,
+    "last_updated": "2026-09-12"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -58939,6 +58939,307 @@
         "title": "Play",
         "cover": "https://assets.ppy.sh/beatmaps/1322088/covers/card.jpg?1783978327",
         "unique_players": 14
+      }
+    },
+    "2026-09-12": {
+      "total_scores": 889,
+      "peak_hour_baghdad": 23,
+      "top_grinder": {
+        "user": "m7mdxD_old",
+        "user_id": 10427755,
+        "count": 100,
+        "scores": [
+          {
+            "user": "m7mdxD_old",
+            "user_id": 10427755,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7460322372,
+            "rank": "D",
+            "accuracy": 0.5305164319248826,
+            "pp": 7.12984,
+            "mods": [],
+            "combo": 87,
+            "created_at": "2026-09-12T02:48:18Z",
+            "beatmapset": {
+              "id": 2198896,
+              "title": "STRIKE BACK (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2198896/covers/card.jpg?1746322819",
+              "stars": 3.62165
+            }
+          },
+          {
+            "user": "m7mdxD_old",
+            "user_id": 10427755,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7460311827,
+            "rank": "D",
+            "accuracy": 0.5080808080808081,
+            "pp": 6.32672,
+            "mods": [],
+            "combo": 72,
+            "created_at": "2026-09-12T02:45:52Z",
+            "beatmapset": {
+              "id": 1853381,
+              "title": "STAR WALKIN'",
+              "cover": "https://assets.ppy.sh/beatmaps/1853381/covers/card.jpg?1685921340",
+              "stars": 4.02986
+            }
+          },
+          {
+            "user": "m7mdxD_old",
+            "user_id": 10427755,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7460297666,
+            "rank": "C",
+            "accuracy": 0.7317909168808912,
+            "pp": 8.00716,
+            "mods": [],
+            "combo": 106,
+            "created_at": "2026-09-12T02:42:37Z",
+            "beatmapset": {
+              "id": 1853381,
+              "title": "STAR WALKIN'",
+              "cover": "https://assets.ppy.sh/beatmaps/1853381/covers/card.jpg?1685921340",
+              "stars": 3.05167
+            }
+          },
+          {
+            "user": "m7mdxD_old",
+            "user_id": 10427755,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7460283767,
+            "rank": "C",
+            "accuracy": 0.8110709987966306,
+            "pp": 3.05756,
+            "mods": [],
+            "combo": 105,
+            "created_at": "2026-09-12T02:39:25Z",
+            "beatmapset": {
+              "id": 1853381,
+              "title": "STAR WALKIN'",
+              "cover": "https://assets.ppy.sh/beatmaps/1853381/covers/card.jpg?1685921340",
+              "stars": 2.07736
+            }
+          },
+          {
+            "user": "m7mdxD_old",
+            "user_id": 10427755,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7460263294,
+            "rank": "B",
+            "accuracy": 0.9041095890410958,
+            "pp": 8.12891,
+            "mods": [],
+            "combo": 197,
+            "created_at": "2026-09-12T02:34:41Z",
+            "beatmapset": {
+              "id": 2496533,
+              "title": "Serenade (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2496533/covers/card.jpg?1769545910",
+              "stars": 2.1896
+            }
+          },
+          {
+            "user": "m7mdxD_old",
+            "user_id": 10427755,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7460238474,
+            "rank": "C",
+            "accuracy": 0.8411088573360379,
+            "pp": 14.0594,
+            "mods": [],
+            "combo": 348,
+            "created_at": "2026-09-12T02:29:02Z",
+            "beatmapset": {
+              "id": 2237410,
+              "title": "FREEDOM DiVE",
+              "cover": "https://assets.ppy.sh/beatmaps/2237410/covers/card.jpg?1736838465",
+              "stars": 2.78804
+            }
+          },
+          {
+            "user": "m7mdxD_old",
+            "user_id": 10427755,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7460216638,
+            "rank": "C",
+            "accuracy": 0.7276995305164319,
+            "pp": 5.50985,
+            "mods": [],
+            "combo": 108,
+            "created_at": "2026-09-12T02:24:07Z",
+            "beatmapset": {
+              "id": 2198896,
+              "title": "STRIKE BACK (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2198896/covers/card.jpg?1746322819",
+              "stars": 2.46086
+            }
+          },
+          {
+            "user": "m7mdxD_old",
+            "user_id": 10427755,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7460203115,
+            "rank": "C",
+            "accuracy": 0.7410901467505241,
+            "pp": 6.01795,
+            "mods": [],
+            "combo": 131,
+            "created_at": "2026-09-12T02:21:06Z",
+            "beatmapset": {
+              "id": 1233402,
+              "title": "Connect (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1233402/covers/card.jpg?1622195097",
+              "stars": 2.49769
+            }
+          },
+          {
+            "user": "m7mdxD_old",
+            "user_id": 10427755,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7460192764,
+            "rank": "C",
+            "accuracy": 0.7829041487839771,
+            "pp": 7.85702,
+            "mods": [],
+            "combo": 261,
+            "created_at": "2026-09-12T02:18:44Z",
+            "beatmapset": {
+              "id": 348526,
+              "title": "NEXT TO YOU",
+              "cover": "https://assets.ppy.sh/beatmaps/348526/covers/card.jpg?1650636630",
+              "stars": 2.7912
+            }
+          },
+          {
+            "user": "m7mdxD_old",
+            "user_id": 10427755,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7460172041,
+            "rank": "B",
+            "accuracy": 0.8972296693476318,
+            "pp": 8.80357,
+            "mods": [],
+            "combo": 371,
+            "created_at": "2026-09-12T02:13:57Z",
+            "beatmapset": {
+              "id": 1218852,
+              "title": "Yoru ni Kakeru",
+              "cover": "https://assets.ppy.sh/beatmaps/1218852/covers/card.jpg?1645786453",
+              "stars": 2.38359
+            }
+          },
+          {
+            "user": "m7mdxD_old",
+            "user_id": 10427755,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7460147044,
+            "rank": "C",
+            "accuracy": 0.8217893217893217,
+            "pp": 6.68975,
+            "mods": [],
+            "combo": 258,
+            "created_at": "2026-09-12T02:08:15Z",
+            "beatmapset": {
+              "id": 1301332,
+              "title": "KING",
+              "cover": "https://assets.ppy.sh/beatmaps/1301332/covers/card.jpg?1622201719",
+              "stars": 2.27391
+            }
+          },
+          {
+            "user": "m7mdxD_old",
+            "user_id": 10427755,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7460133941,
+            "rank": "C",
+            "accuracy": 0.8517495395948435,
+            "pp": 13.857,
+            "mods": [],
+            "combo": 141,
+            "created_at": "2026-09-12T02:05:16Z",
+            "beatmapset": {
+              "id": 920346,
+              "title": "Goya no Machiawase (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/920346/covers/card.jpg?1650675170",
+              "stars": 2.86048
+            }
+          },
+          {
+            "user": "m7mdxD_old",
+            "user_id": 10427755,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7460122276,
+            "rank": "C",
+            "accuracy": 0.7116104868913857,
+            "pp": 6.31884,
+            "mods": [],
+            "combo": 82,
+            "created_at": "2026-09-12T02:02:34Z",
+            "beatmapset": {
+              "id": 2040420,
+              "title": "spiral (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2040420/covers/card.jpg?1692640573",
+              "stars": 2.97785
+            }
+          },
+          {
+            "user": "m7mdxD_old",
+            "user_id": 10427755,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7460109326,
+            "rank": "C",
+            "accuracy": 0.8003355704697986,
+            "pp": 5.03242,
+            "mods": [],
+            "combo": 257,
+            "created_at": "2026-09-12T01:59:32Z",
+            "beatmapset": {
+              "id": 413625,
+              "title": "This Little Girl (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/413625/covers/card.jpg?1650642703",
+              "stars": 2.31545
+            }
+          },
+          {
+            "user": "m7mdxD_old",
+            "user_id": 10427755,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7460094395,
+            "rank": "A",
+            "accuracy": 0.8902439024390244,
+            "pp": 10.67,
+            "mods": [],
+            "combo": 325,
+            "created_at": "2026-09-12T01:56:04Z",
+            "beatmapset": {
+              "id": 493273,
+              "title": "Can Do (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/493273/covers/card.jpg?1645788238",
+              "stars": 2.33734
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Alumina (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/11963/covers/card.jpg?1650603345",
+        "unique_players": 35
       }
     }
   }

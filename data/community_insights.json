@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 196,
-    "longest": 196,
-    "last_updated": "2026-09-12"
+    "current": 197,
+    "longest": 197,
+    "last_updated": "2026-09-13"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -59240,6 +59240,344 @@
         "title": "Alumina (TV Size)",
         "cover": "https://assets.ppy.sh/beatmaps/11963/covers/card.jpg?1650603345",
         "unique_players": 35
+      }
+    },
+    "2026-09-13": {
+      "total_scores": 1148,
+      "peak_hour_baghdad": 23,
+      "top_grinder": {
+        "user": "Biscuits0",
+        "user_id": 23843313,
+        "count": 60,
+        "scores": [
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7467666296,
+            "rank": "C",
+            "accuracy": 0.7976362759286059,
+            "pp": null,
+            "mods": [
+              "HD",
+              "HT"
+            ],
+            "combo": 69,
+            "created_at": "2026-09-12T22:51:06Z",
+            "beatmapset": {
+              "id": 1473006,
+              "title": "Mochio-",
+              "cover": "https://assets.ppy.sh/beatmaps/1473006/covers/card.jpg?1646852651",
+              "stars": 10.4035
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7467655107,
+            "rank": "C",
+            "accuracy": 0.7858176555716353,
+            "pp": null,
+            "mods": [
+              "HD",
+              "HT"
+            ],
+            "combo": 45,
+            "created_at": "2026-09-12T22:49:05Z",
+            "beatmapset": {
+              "id": 1473006,
+              "title": "Mochio-",
+              "cover": "https://assets.ppy.sh/beatmaps/1473006/covers/card.jpg?1646852651",
+              "stars": 10.4035
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7467637768,
+            "rank": "B",
+            "accuracy": 0.9049145299145299,
+            "pp": null,
+            "mods": [
+              "HD",
+              "HT"
+            ],
+            "combo": 83,
+            "created_at": "2026-09-12T22:46:02Z",
+            "beatmapset": {
+              "id": 1473006,
+              "title": "Mochio-",
+              "cover": "https://assets.ppy.sh/beatmaps/1473006/covers/card.jpg?1646852651",
+              "stars": 8.90838
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7467627300,
+            "rank": "A",
+            "accuracy": 0.9276175213675214,
+            "pp": null,
+            "mods": [
+              "HD",
+              "HT"
+            ],
+            "combo": 156,
+            "created_at": "2026-09-12T22:44:10Z",
+            "beatmapset": {
+              "id": 1473006,
+              "title": "Mochio-",
+              "cover": "https://assets.ppy.sh/beatmaps/1473006/covers/card.jpg?1646852651",
+              "stars": 8.90838
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7467612576,
+            "rank": "C",
+            "accuracy": 0.8178954001260239,
+            "pp": 112.825,
+            "mods": [
+              "HD"
+            ],
+            "combo": 102,
+            "created_at": "2026-09-12T22:41:37Z",
+            "beatmapset": {
+              "id": 1473006,
+              "title": "Mochio-",
+              "cover": "https://assets.ppy.sh/beatmaps/1473006/covers/card.jpg?1646852651",
+              "stars": 7.81402
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7467604195,
+            "rank": "C",
+            "accuracy": 0.8342785129174544,
+            "pp": 121.58,
+            "mods": [
+              "HD"
+            ],
+            "combo": 67,
+            "created_at": "2026-09-12T22:40:11Z",
+            "beatmapset": {
+              "id": 1473006,
+              "title": "Mochio-",
+              "cover": "https://assets.ppy.sh/beatmaps/1473006/covers/card.jpg?1646852651",
+              "stars": 7.81402
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7467589230,
+            "rank": "B",
+            "accuracy": 0.9265658747300216,
+            "pp": 199.015,
+            "mods": [
+              "HD"
+            ],
+            "combo": 180,
+            "created_at": "2026-09-12T22:37:38Z",
+            "beatmapset": {
+              "id": 1473006,
+              "title": "Mochio-",
+              "cover": "https://assets.ppy.sh/beatmaps/1473006/covers/card.jpg?1646852651",
+              "stars": 6.71976
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7467579924,
+            "rank": "B",
+            "accuracy": 0.9200863930885529,
+            "pp": 157.664,
+            "mods": [
+              "HD"
+            ],
+            "combo": 144,
+            "created_at": "2026-09-12T22:36:02Z",
+            "beatmapset": {
+              "id": 1473006,
+              "title": "Mochio-",
+              "cover": "https://assets.ppy.sh/beatmaps/1473006/covers/card.jpg?1646852651",
+              "stars": 6.71976
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7467515473,
+            "rank": "A",
+            "accuracy": 0.9323671497584541,
+            "pp": null,
+            "mods": [
+              "HD"
+            ],
+            "combo": 81,
+            "created_at": "2026-09-12T22:25:00Z",
+            "beatmapset": {
+              "id": 2469041,
+              "title": "Jump Pack 4",
+              "cover": "https://assets.ppy.sh/beatmaps/2469041/covers/card.jpg?1766912447",
+              "stars": 7.06549
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7467512525,
+            "rank": "B",
+            "accuracy": 0.9082125603864735,
+            "pp": null,
+            "mods": [
+              "HD"
+            ],
+            "combo": 48,
+            "created_at": "2026-09-12T22:24:29Z",
+            "beatmapset": {
+              "id": 2469041,
+              "title": "Jump Pack 4",
+              "cover": "https://assets.ppy.sh/beatmaps/2469041/covers/card.jpg?1766912447",
+              "stars": 7.06549
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7467505864,
+            "rank": "A",
+            "accuracy": 0.9492753623188406,
+            "pp": null,
+            "mods": [
+              "HD",
+              "HT"
+            ],
+            "combo": 74,
+            "created_at": "2026-09-12T22:23:20Z",
+            "beatmapset": {
+              "id": 2469041,
+              "title": "Jump Pack 4",
+              "cover": "https://assets.ppy.sh/beatmaps/2469041/covers/card.jpg?1766912447",
+              "stars": 7.06549
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7467499821,
+            "rank": "A",
+            "accuracy": 0.9516908212560387,
+            "pp": null,
+            "mods": [
+              "HD",
+              "HT"
+            ],
+            "combo": 94,
+            "created_at": "2026-09-12T22:22:17Z",
+            "beatmapset": {
+              "id": 2469041,
+              "title": "Jump Pack 4",
+              "cover": "https://assets.ppy.sh/beatmaps/2469041/covers/card.jpg?1766912447",
+              "stars": 7.06549
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7467489860,
+            "rank": "A",
+            "accuracy": 0.9830917874396136,
+            "pp": null,
+            "mods": [
+              "HD",
+              "HT"
+            ],
+            "combo": 152,
+            "created_at": "2026-09-12T22:20:33Z",
+            "beatmapset": {
+              "id": 2469041,
+              "title": "Jump Pack 4",
+              "cover": "https://assets.ppy.sh/beatmaps/2469041/covers/card.jpg?1766912447",
+              "stars": 7.06549
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7467484235,
+            "rank": "B",
+            "accuracy": 0.8429951690821256,
+            "pp": null,
+            "mods": [
+              "HD"
+            ],
+            "combo": 46,
+            "created_at": "2026-09-12T22:19:34Z",
+            "beatmapset": {
+              "id": 2469041,
+              "title": "Jump Pack 4",
+              "cover": "https://assets.ppy.sh/beatmaps/2469041/covers/card.jpg?1766912447",
+              "stars": 7.06549
+            }
+          },
+          {
+            "user": "Biscuits0",
+            "user_id": 23843313,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7467460656,
+            "rank": "A",
+            "accuracy": 0.9318407960199006,
+            "pp": null,
+            "mods": [
+              "HD"
+            ],
+            "combo": 89,
+            "created_at": "2026-09-12T22:15:36Z",
+            "beatmapset": {
+              "id": 2293648,
+              "title": "DT Jump Pack",
+              "cover": "https://assets.ppy.sh/beatmaps/2293648/covers/card.jpg?1743348618",
+              "stars": 7.18105
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Terranova (Original Radio Mix) (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2592110/covers/card.jpg?1788574475",
+        "unique_players": 25
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 197,
-    "longest": 197,
-    "last_updated": "2026-09-13"
+    "current": 198,
+    "longest": 198,
+    "last_updated": "2026-09-15"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -59578,6 +59578,313 @@
         "title": "Terranova (Original Radio Mix) (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2592110/covers/card.jpg?1788574475",
         "unique_players": 25
+      }
+    },
+    "2026-09-15": {
+      "total_scores": 1333,
+      "peak_hour_baghdad": 2,
+      "top_grinder": {
+        "user": "pq7wh",
+        "user_id": 39498643,
+        "count": 60,
+        "scores": [
+          {
+            "user": "pq7wh",
+            "user_id": 39498643,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7485023496,
+            "rank": "C",
+            "accuracy": 0.8029034059184813,
+            "pp": 35.4612,
+            "mods": [],
+            "combo": 101,
+            "created_at": "2026-09-15T08:56:41Z",
+            "beatmapset": {
+              "id": 2554421,
+              "title": "Heartless (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2554421/covers/card.jpg?1780696546",
+              "stars": 5.50322
+            }
+          },
+          {
+            "user": "pq7wh",
+            "user_id": 39498643,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7485017634,
+            "rank": "C",
+            "accuracy": 0.8239116309291747,
+            "pp": 33.6168,
+            "mods": [],
+            "combo": 104,
+            "created_at": "2026-09-15T08:54:58Z",
+            "beatmapset": {
+              "id": 879890,
+              "title": "Flight of the Bumblebee (RST Classic)",
+              "cover": "https://assets.ppy.sh/beatmaps/879890/covers/card.jpg?1717594056",
+              "stars": 5.03289
+            }
+          },
+          {
+            "user": "pq7wh",
+            "user_id": 39498643,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7484985759,
+            "rank": "B",
+            "accuracy": 0.8566735822959889,
+            "pp": null,
+            "mods": [],
+            "combo": 270,
+            "created_at": "2026-09-15T08:45:56Z",
+            "beatmapset": {
+              "id": 934878,
+              "title": "RAISE MY SWORD",
+              "cover": "https://assets.ppy.sh/beatmaps/934878/covers/card.jpg?1650680256",
+              "stars": 6.1335
+            }
+          },
+          {
+            "user": "pq7wh",
+            "user_id": 39498643,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7484958917,
+            "rank": "C",
+            "accuracy": 0.8025276461295419,
+            "pp": 32.8069,
+            "mods": [],
+            "combo": 184,
+            "created_at": "2026-09-15T08:38:17Z",
+            "beatmapset": {
+              "id": 1151004,
+              "title": "Embraced by the Flame",
+              "cover": "https://assets.ppy.sh/beatmaps/1151004/covers/card.jpg?1717460704",
+              "stars": 6.26581
+            }
+          },
+          {
+            "user": "pq7wh",
+            "user_id": 39498643,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7484944261,
+            "rank": "C",
+            "accuracy": 0.7565648445873526,
+            "pp": 25.5871,
+            "mods": [],
+            "combo": 101,
+            "created_at": "2026-09-15T08:34:01Z",
+            "beatmapset": {
+              "id": 2237410,
+              "title": "FREEDOM DiVE",
+              "cover": "https://assets.ppy.sh/beatmaps/2237410/covers/card.jpg?1736838465",
+              "stars": 6.85828
+            }
+          },
+          {
+            "user": "pq7wh",
+            "user_id": 39498643,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7484906269,
+            "rank": "B",
+            "accuracy": 0.8648330982604607,
+            "pp": null,
+            "mods": [
+              "RX"
+            ],
+            "combo": 161,
+            "created_at": "2026-09-15T08:22:35Z",
+            "beatmapset": {
+              "id": 2496950,
+              "title": "Armed and Ready",
+              "cover": "https://assets.ppy.sh/beatmaps/2496950/covers/card.jpg?1770938979",
+              "stars": 9.78055
+            }
+          },
+          {
+            "user": "pq7wh",
+            "user_id": 39498643,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7484814438,
+            "rank": "C",
+            "accuracy": 0.7583979328165374,
+            "pp": null,
+            "mods": [
+              "RX"
+            ],
+            "combo": 37,
+            "created_at": "2026-09-15T07:54:03Z",
+            "beatmapset": {
+              "id": 959470,
+              "title": "Planktonweed",
+              "cover": "https://assets.ppy.sh/beatmaps/959470/covers/card.jpg?1772756265",
+              "stars": 7.35375
+            }
+          },
+          {
+            "user": "pq7wh",
+            "user_id": 39498643,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7484533662,
+            "rank": "D",
+            "accuracy": 0.5906474820143884,
+            "pp": 15.3789,
+            "mods": [],
+            "combo": 57,
+            "created_at": "2026-09-15T06:24:14Z",
+            "beatmapset": {
+              "id": 2237410,
+              "title": "FREEDOM DiVE",
+              "cover": "https://assets.ppy.sh/beatmaps/2237410/covers/card.jpg?1736838465",
+              "stars": 7.17124
+            }
+          },
+          {
+            "user": "pq7wh",
+            "user_id": 39498643,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7484514601,
+            "rank": "B",
+            "accuracy": 0.8442521631644005,
+            "pp": 34.1505,
+            "mods": [],
+            "combo": 173,
+            "created_at": "2026-09-15T06:17:56Z",
+            "beatmapset": {
+              "id": 484532,
+              "title": "Sukisuki Zecchoushou",
+              "cover": "https://assets.ppy.sh/beatmaps/484532/covers/card.jpg?1650648029",
+              "stars": 5.47086
+            }
+          },
+          {
+            "user": "pq7wh",
+            "user_id": 39498643,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7484467036,
+            "rank": "C",
+            "accuracy": 0.8331273176761433,
+            "pp": 35.2361,
+            "mods": [],
+            "combo": 114,
+            "created_at": "2026-09-15T06:02:29Z",
+            "beatmapset": {
+              "id": 484532,
+              "title": "Sukisuki Zecchoushou",
+              "cover": "https://assets.ppy.sh/beatmaps/484532/covers/card.jpg?1650648029",
+              "stars": 5.47086
+            }
+          },
+          {
+            "user": "pq7wh",
+            "user_id": 39498643,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7484427717,
+            "rank": "C",
+            "accuracy": 0.8196457326892109,
+            "pp": 37.3942,
+            "mods": [],
+            "combo": 89,
+            "created_at": "2026-09-15T05:49:51Z",
+            "beatmapset": {
+              "id": 776187,
+              "title": "SHKOLA NE NUZHNA",
+              "cover": "https://assets.ppy.sh/beatmaps/776187/covers/card.jpg?1650665823",
+              "stars": 5.35522
+            }
+          },
+          {
+            "user": "pq7wh",
+            "user_id": 39498643,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7481543782,
+            "rank": "B",
+            "accuracy": 0.8517433751743375,
+            "pp": 37.1074,
+            "mods": [],
+            "combo": 118,
+            "created_at": "2026-09-14T19:04:39Z",
+            "beatmapset": {
+              "id": 353398,
+              "title": "Dance Number o Tomo ni",
+              "cover": "https://assets.ppy.sh/beatmaps/353398/covers/card.jpg?1622093344",
+              "stars": 5.91456
+            }
+          },
+          {
+            "user": "pq7wh",
+            "user_id": 39498643,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7481505100,
+            "rank": "A",
+            "accuracy": 0.9377559377559378,
+            "pp": 92.7109,
+            "mods": [],
+            "combo": 104,
+            "created_at": "2026-09-14T18:59:05Z",
+            "beatmapset": {
+              "id": 444335,
+              "title": "Kira Kira Days",
+              "cover": "https://assets.ppy.sh/beatmaps/444335/covers/card.jpg?1650638834",
+              "stars": 5.59753
+            }
+          },
+          {
+            "user": "pq7wh",
+            "user_id": 39498643,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7481486348,
+            "rank": "A",
+            "accuracy": 0.9516789516789517,
+            "pp": 113.248,
+            "mods": [],
+            "combo": 148,
+            "created_at": "2026-09-14T18:56:26Z",
+            "beatmapset": {
+              "id": 444335,
+              "title": "Kira Kira Days",
+              "cover": "https://assets.ppy.sh/beatmaps/444335/covers/card.jpg?1650638834",
+              "stars": 5.59753
+            }
+          },
+          {
+            "user": "pq7wh",
+            "user_id": 39498643,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7481464166,
+            "rank": "B",
+            "accuracy": 0.8919502971366828,
+            "pp": 58.102,
+            "mods": [
+              "HD"
+            ],
+            "combo": 261,
+            "created_at": "2026-09-14T18:53:17Z",
+            "beatmapset": {
+              "id": 1414573,
+              "title": "Black Pentagram",
+              "cover": "https://assets.ppy.sh/beatmaps/1414573/covers/card.jpg?1644151889",
+              "stars": 5.2427
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Two time",
+        "cover": "https://assets.ppy.sh/beatmaps/1674501/covers/card.jpg?1644609718",
+        "unique_players": 28
       }
     }
   }

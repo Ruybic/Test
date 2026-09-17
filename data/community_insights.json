@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 198,
-    "longest": 198,
-    "last_updated": "2026-09-15"
+    "current": 199,
+    "longest": 199,
+    "last_updated": "2026-09-16"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -59885,6 +59885,346 @@
         "title": "Two time",
         "cover": "https://assets.ppy.sh/beatmaps/1674501/covers/card.jpg?1644609718",
         "unique_players": 28
+      }
+    },
+    "2026-09-16": {
+      "total_scores": 952,
+      "peak_hour_baghdad": 21,
+      "top_grinder": {
+        "user": "Kaiju13",
+        "user_id": 26916963,
+        "count": 50,
+        "scores": [
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7489301176,
+            "rank": "A",
+            "accuracy": 0.9863013698630136,
+            "pp": null,
+            "mods": [
+              "RX"
+            ],
+            "combo": 109,
+            "created_at": "2026-09-15T20:26:04Z",
+            "beatmapset": {
+              "id": 2513884,
+              "title": "overture",
+              "cover": "https://assets.ppy.sh/beatmaps/2513884/covers/card.jpg?1780611228",
+              "stars": 7.59506
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7489283276,
+            "rank": "C",
+            "accuracy": 0.7853107344632768,
+            "pp": null,
+            "mods": [],
+            "combo": 102,
+            "created_at": "2026-09-15T20:23:17Z",
+            "beatmapset": {
+              "id": 2312368,
+              "title": "GOLD GOLD GOLD",
+              "cover": "https://assets.ppy.sh/beatmaps/2312368/covers/card.jpg?1740047436",
+              "stars": 5.64112
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7489194008,
+            "rank": "C",
+            "accuracy": 0.7799263351749539,
+            "pp": 59.9263,
+            "mods": [],
+            "combo": 104,
+            "created_at": "2026-09-15T20:09:28Z",
+            "beatmapset": {
+              "id": 2530233,
+              "title": "made for you (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2530233/covers/card.jpg?1777760143",
+              "stars": 5.39746
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7489151611,
+            "rank": "B",
+            "accuracy": 0.8989463601532567,
+            "pp": 148.024,
+            "mods": [
+              "EZ",
+              "DT"
+            ],
+            "combo": 238,
+            "created_at": "2026-09-15T20:03:03Z",
+            "beatmapset": {
+              "id": 2152637,
+              "title": "Song of the Dead (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2152637/covers/card.jpg?1720298862",
+              "stars": 5.44643
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7489082256,
+            "rank": "B",
+            "accuracy": 0.8625730994152047,
+            "pp": null,
+            "mods": [
+              "HD",
+              "DT",
+              "RX"
+            ],
+            "combo": 111,
+            "created_at": "2026-09-15T19:52:54Z",
+            "beatmapset": {
+              "id": 2325261,
+              "title": "Nevermind (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2325261/covers/card.jpg?1742675452",
+              "stars": 6.30573
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7488990200,
+            "rank": "A",
+            "accuracy": 0.9714912280701754,
+            "pp": 358.833,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 307,
+            "created_at": "2026-09-15T19:39:51Z",
+            "beatmapset": {
+              "id": 2389248,
+              "title": "burbank house",
+              "cover": "https://assets.ppy.sh/beatmaps/2389248/covers/card.jpg?1772077288",
+              "stars": 4.95012
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7488936658,
+            "rank": "A",
+            "accuracy": 0.9757142857142858,
+            "pp": 350.255,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 408,
+            "created_at": "2026-09-15T19:32:19Z",
+            "beatmapset": {
+              "id": 2363063,
+              "title": "Blame Brett (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2363063/covers/card.jpg?1753576499",
+              "stars": 5.09107
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7488871292,
+            "rank": "B",
+            "accuracy": 0.9061302681992337,
+            "pp": 171.235,
+            "mods": [
+              "EZ",
+              "DT"
+            ],
+            "combo": 236,
+            "created_at": "2026-09-15T19:23:16Z",
+            "beatmapset": {
+              "id": 2152637,
+              "title": "Song of the Dead (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2152637/covers/card.jpg?1720298862",
+              "stars": 5.44643
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7488844556,
+            "rank": "A",
+            "accuracy": 0.9267241379310345,
+            "pp": 187.702,
+            "mods": [
+              "EZ",
+              "DT"
+            ],
+            "combo": 239,
+            "created_at": "2026-09-15T19:19:36Z",
+            "beatmapset": {
+              "id": 2152637,
+              "title": "Song of the Dead (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2152637/covers/card.jpg?1720298862",
+              "stars": 5.44643
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7488815799,
+            "rank": "A",
+            "accuracy": 0.9348659003831418,
+            "pp": 210.307,
+            "mods": [
+              "EZ",
+              "DT"
+            ],
+            "combo": 169,
+            "created_at": "2026-09-15T19:15:39Z",
+            "beatmapset": {
+              "id": 2152637,
+              "title": "Song of the Dead (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2152637/covers/card.jpg?1720298862",
+              "stars": 5.44643
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7488761214,
+            "rank": "B",
+            "accuracy": 0.9247747747747748,
+            "pp": 127.677,
+            "mods": [
+              "EZ",
+              "HD"
+            ],
+            "combo": 115,
+            "created_at": "2026-09-15T19:08:03Z",
+            "beatmapset": {
+              "id": 1060207,
+              "title": "Still Into You (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1060207/covers/card.jpg?1636481675",
+              "stars": 5.5626
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7488696575,
+            "rank": "B",
+            "accuracy": 0.8486486486486486,
+            "pp": 61.2447,
+            "mods": [
+              "EZ",
+              "HD"
+            ],
+            "combo": 104,
+            "created_at": "2026-09-15T18:59:08Z",
+            "beatmapset": {
+              "id": 1060207,
+              "title": "Still Into You (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1060207/covers/card.jpg?1636481675",
+              "stars": 5.5626
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7488600080,
+            "rank": "A",
+            "accuracy": 0.9335016835016835,
+            "pp": 364.45,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 289,
+            "created_at": "2026-09-15T18:46:08Z",
+            "beatmapset": {
+              "id": 1315700,
+              "title": "Kimeta yo Hand in Hand (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1315700/covers/card.jpg?1650704449",
+              "stars": 5.20627
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7488555182,
+            "rank": "A",
+            "accuracy": 0.9576271186440678,
+            "pp": 313.16,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 262,
+            "created_at": "2026-09-15T18:40:07Z",
+            "beatmapset": {
+              "id": 2506168,
+              "title": "Die A Million Times (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506168/covers/card.jpg?1773702471",
+              "stars": 5.1883
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7488479327,
+            "rank": "B",
+            "accuracy": 0.9154040404040404,
+            "pp": 228.449,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 117,
+            "created_at": "2026-09-15T18:29:47Z",
+            "beatmapset": {
+              "id": 2380556,
+              "title": "Alive and Unwell (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2380556/covers/card.jpg?1788115906",
+              "stars": 5.16011
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Among Us phonk remix",
+        "cover": "https://assets.ppy.sh/beatmaps/1710003/covers/card.jpg?1648557032",
+        "unique_players": 13
       }
     }
   }

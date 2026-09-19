@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 200,
-    "longest": 200,
-    "last_updated": "2026-09-17"
+    "current": 201,
+    "longest": 201,
+    "last_updated": "2026-09-18"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -60528,6 +60528,309 @@
         "title": "Gravity Falls Main Title Theme",
         "cover": "https://assets.ppy.sh/beatmaps/293039/covers/card.jpg?1650628324",
         "unique_players": 25
+      }
+    },
+    "2026-09-18": {
+      "total_scores": 1019,
+      "peak_hour_baghdad": 22,
+      "top_grinder": {
+        "user": "starben",
+        "user_id": 25021441,
+        "count": 74,
+        "scores": [
+          {
+            "user": "starben",
+            "user_id": 25021441,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7504713759,
+            "rank": "B",
+            "accuracy": 0.8629032258064516,
+            "pp": null,
+            "mods": [],
+            "combo": 131,
+            "created_at": "2026-09-17T20:41:29Z",
+            "beatmapset": {
+              "id": 473634,
+              "title": "Unity",
+              "cover": "https://assets.ppy.sh/beatmaps/473634/covers/card.jpg?1645785889",
+              "stars": 3.25794
+            }
+          },
+          {
+            "user": "starben",
+            "user_id": 25021441,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7504669724,
+            "rank": "C",
+            "accuracy": 0.8317853457172343,
+            "pp": 14.4593,
+            "mods": [],
+            "combo": 210,
+            "created_at": "2026-09-17T20:34:55Z",
+            "beatmapset": {
+              "id": 2107187,
+              "title": "Cake by the Ocean",
+              "cover": "https://assets.ppy.sh/beatmaps/2107187/covers/card.jpg?1718062619",
+              "stars": 3.45474
+            }
+          },
+          {
+            "user": "starben",
+            "user_id": 25021441,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7504636194,
+            "rank": "D",
+            "accuracy": 0.5461254612546126,
+            "pp": 17.0206,
+            "mods": [],
+            "combo": 97,
+            "created_at": "2026-09-17T20:29:58Z",
+            "beatmapset": {
+              "id": 456986,
+              "title": "(can you) understand me?",
+              "cover": "https://assets.ppy.sh/beatmaps/456986/covers/card.jpg?1645783310",
+              "stars": 4.28903
+            }
+          },
+          {
+            "user": "starben",
+            "user_id": 25021441,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7504623807,
+            "rank": "D",
+            "accuracy": 0.5301353013530136,
+            "pp": 17.9741,
+            "mods": [],
+            "combo": 81,
+            "created_at": "2026-09-17T20:28:11Z",
+            "beatmapset": {
+              "id": 456986,
+              "title": "(can you) understand me?",
+              "cover": "https://assets.ppy.sh/beatmaps/456986/covers/card.jpg?1645783310",
+              "stars": 4.28903
+            }
+          },
+          {
+            "user": "starben",
+            "user_id": 25021441,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7504593522,
+            "rank": "S",
+            "accuracy": 0.9520383693045563,
+            "pp": 40.3947,
+            "mods": [],
+            "combo": 169,
+            "created_at": "2026-09-17T20:23:47Z",
+            "beatmapset": {
+              "id": 325112,
+              "title": "Yoru no Kodomo tachi",
+              "cover": "https://assets.ppy.sh/beatmaps/325112/covers/card.jpg?1650631180",
+              "stars": 3.19586
+            }
+          },
+          {
+            "user": "starben",
+            "user_id": 25021441,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7504583635,
+            "rank": "B",
+            "accuracy": 0.8961038961038961,
+            "pp": 43.1404,
+            "mods": [],
+            "combo": 95,
+            "created_at": "2026-09-17T20:22:22Z",
+            "beatmapset": {
+              "id": 325112,
+              "title": "Yoru no Kodomo tachi",
+              "cover": "https://assets.ppy.sh/beatmaps/325112/covers/card.jpg?1650631180",
+              "stars": 3.79768
+            }
+          },
+          {
+            "user": "starben",
+            "user_id": 25021441,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7504576410,
+            "rank": "B",
+            "accuracy": 0.8690476190476191,
+            "pp": 40.1441,
+            "mods": [],
+            "combo": 83,
+            "created_at": "2026-09-17T20:21:16Z",
+            "beatmapset": {
+              "id": 325112,
+              "title": "Yoru no Kodomo tachi",
+              "cover": "https://assets.ppy.sh/beatmaps/325112/covers/card.jpg?1650631180",
+              "stars": 3.79768
+            }
+          },
+          {
+            "user": "starben",
+            "user_id": 25021441,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7504569329,
+            "rank": "C",
+            "accuracy": 0.8116883116883117,
+            "pp": 34.5985,
+            "mods": [],
+            "combo": 82,
+            "created_at": "2026-09-17T20:20:15Z",
+            "beatmapset": {
+              "id": 325112,
+              "title": "Yoru no Kodomo tachi",
+              "cover": "https://assets.ppy.sh/beatmaps/325112/covers/card.jpg?1650631180",
+              "stars": 3.79768
+            }
+          },
+          {
+            "user": "starben",
+            "user_id": 25021441,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7504557161,
+            "rank": "C",
+            "accuracy": 0.7530516431924883,
+            "pp": 24.8641,
+            "mods": [],
+            "combo": 162,
+            "created_at": "2026-09-17T20:18:30Z",
+            "beatmapset": {
+              "id": 2283381,
+              "title": "Honeypie",
+              "cover": "https://assets.ppy.sh/beatmaps/2283381/covers/card.jpg?1736660924",
+              "stars": 3.83767
+            }
+          },
+          {
+            "user": "starben",
+            "user_id": 25021441,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7504519938,
+            "rank": "A",
+            "accuracy": 0.9155374887082204,
+            "pp": null,
+            "mods": [
+              "RX"
+            ],
+            "combo": 106,
+            "created_at": "2026-09-17T20:13:13Z",
+            "beatmapset": {
+              "id": 53519,
+              "title": "Magic Girl !!",
+              "cover": "https://assets.ppy.sh/beatmaps/53519/covers/card.jpg?1633531557",
+              "stars": 4.89401
+            }
+          },
+          {
+            "user": "starben",
+            "user_id": 25021441,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7504447820,
+            "rank": "C",
+            "accuracy": 0.776595744680851,
+            "pp": 17.9871,
+            "mods": [],
+            "combo": 191,
+            "created_at": "2026-09-17T20:03:10Z",
+            "beatmapset": {
+              "id": 2447154,
+              "title": "Marshmallow feat. Hatsune Miku",
+              "cover": "https://assets.ppy.sh/beatmaps/2447154/covers/card.jpg?1767676251",
+              "stars": 3.77799
+            }
+          },
+          {
+            "user": "starben",
+            "user_id": 25021441,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7504419735,
+            "rank": "D",
+            "accuracy": 0.6306107431935246,
+            "pp": 11.33,
+            "mods": [],
+            "combo": 134,
+            "created_at": "2026-09-17T19:59:15Z",
+            "beatmapset": {
+              "id": 2491684,
+              "title": "Take",
+              "cover": "https://assets.ppy.sh/beatmaps/2491684/covers/card.jpg?1775395450",
+              "stars": 3.77656
+            }
+          },
+          {
+            "user": "starben",
+            "user_id": 25021441,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7504397182,
+            "rank": "B",
+            "accuracy": 0.8948643410852714,
+            "pp": 29.6325,
+            "mods": [],
+            "combo": 296,
+            "created_at": "2026-09-17T19:56:10Z",
+            "beatmapset": {
+              "id": 2375698,
+              "title": "D/N/A",
+              "cover": "https://assets.ppy.sh/beatmaps/2375698/covers/card.jpg?1748780916",
+              "stars": 3.46123
+            }
+          },
+          {
+            "user": "starben",
+            "user_id": 25021441,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7504373714,
+            "rank": "C",
+            "accuracy": 0.7699214365881033,
+            "pp": 15.3323,
+            "mods": [],
+            "combo": 218,
+            "created_at": "2026-09-17T19:52:56Z",
+            "beatmapset": {
+              "id": 2246377,
+              "title": "The Emptiness Machine (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2246377/covers/card.jpg?1726770838",
+              "stars": 3.53739
+            }
+          },
+          {
+            "user": "starben",
+            "user_id": 25021441,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7504337591,
+            "rank": "B",
+            "accuracy": 0.8115942028985508,
+            "pp": 4.95597,
+            "mods": [],
+            "combo": 104,
+            "created_at": "2026-09-17T19:48:01Z",
+            "beatmapset": {
+              "id": 2444362,
+              "title": "Basketball: Results (Win)",
+              "cover": "https://assets.ppy.sh/beatmaps/2444362/covers/card.jpg?1780627685",
+              "stars": 1.90039
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "I Don't Know (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+        "unique_players": 16
       }
     }
   }

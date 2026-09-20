@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 201,
-    "longest": 201,
-    "last_updated": "2026-09-18"
+    "current": 202,
+    "longest": 202,
+    "last_updated": "2026-09-19"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -60831,6 +60831,307 @@
         "title": "I Don't Know (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
         "unique_players": 16
+      }
+    },
+    "2026-09-19": {
+      "total_scores": 1123,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "azalhussam",
+        "user_id": 37635103,
+        "count": 66,
+        "scores": [
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7515845979,
+            "rank": "C",
+            "accuracy": 0.7872427983539094,
+            "pp": 38.5221,
+            "mods": [],
+            "combo": 116,
+            "created_at": "2026-09-19T07:32:25Z",
+            "beatmapset": {
+              "id": 1890877,
+              "title": "SPIT IN MY FACE!",
+              "cover": "https://assets.ppy.sh/beatmaps/1890877/covers/card.jpg?1720122432",
+              "stars": 5.10666
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7515812951,
+            "rank": "D",
+            "accuracy": 0.45410628019323673,
+            "pp": 13.7,
+            "mods": [],
+            "combo": 48,
+            "created_at": "2026-09-19T07:24:54Z",
+            "beatmapset": {
+              "id": 2513884,
+              "title": "overture",
+              "cover": "https://assets.ppy.sh/beatmaps/2513884/covers/card.jpg?1780611228",
+              "stars": 5.23934
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7515803520,
+            "rank": "C",
+            "accuracy": 0.8106060606060606,
+            "pp": 60.8979,
+            "mods": [],
+            "combo": 65,
+            "created_at": "2026-09-19T07:22:48Z",
+            "beatmapset": {
+              "id": 2390209,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2390209/covers/card.jpg?1760399535",
+              "stars": 5.22913
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7515775488,
+            "rank": "D",
+            "accuracy": 0.6678321678321678,
+            "pp": 24.3354,
+            "mods": [],
+            "combo": 58,
+            "created_at": "2026-09-19T07:16:28Z",
+            "beatmapset": {
+              "id": 2536830,
+              "title": "Suisei ni Nareta nara (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2536830/covers/card.jpg?1783186482",
+              "stars": 5.11642
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7515762593,
+            "rank": "C",
+            "accuracy": 0.795995670995671,
+            "pp": 28.7747,
+            "mods": [],
+            "combo": 102,
+            "created_at": "2026-09-19T07:13:35Z",
+            "beatmapset": {
+              "id": 1546834,
+              "title": "Issee noo de",
+              "cover": "https://assets.ppy.sh/beatmaps/1546834/covers/card.jpg?1635126236",
+              "stars": 5.36183
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7515740428,
+            "rank": "D",
+            "accuracy": 0.5236686390532544,
+            "pp": 28.6074,
+            "mods": [],
+            "combo": 54,
+            "created_at": "2026-09-19T07:08:31Z",
+            "beatmapset": {
+              "id": 2440245,
+              "title": "ESSE CARA!",
+              "cover": "https://assets.ppy.sh/beatmaps/2440245/covers/card.jpg?1782188287",
+              "stars": 5.25709
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7515724740,
+            "rank": "D",
+            "accuracy": 0.48953662182361735,
+            "pp": 9.46839,
+            "mods": [],
+            "combo": 56,
+            "created_at": "2026-09-19T07:04:54Z",
+            "beatmapset": {
+              "id": 2407039,
+              "title": "Tower Of Heaven (You Are Slaves) (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2407039/covers/card.jpg?1782758781",
+              "stars": 5.03162
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7515671738,
+            "rank": "C",
+            "accuracy": 0.7737737737737738,
+            "pp": 41.1153,
+            "mods": [],
+            "combo": 77,
+            "created_at": "2026-09-19T06:52:33Z",
+            "beatmapset": {
+              "id": 765169,
+              "title": "(can you) understand me?",
+              "cover": "https://assets.ppy.sh/beatmaps/765169/covers/card.jpg?1650662185",
+              "stars": 4.9883
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7515664721,
+            "rank": "C",
+            "accuracy": 0.7777777777777778,
+            "pp": 47.9357,
+            "mods": [],
+            "combo": 181,
+            "created_at": "2026-09-19T06:50:56Z",
+            "beatmapset": {
+              "id": 765169,
+              "title": "(can you) understand me?",
+              "cover": "https://assets.ppy.sh/beatmaps/765169/covers/card.jpg?1650662185",
+              "stars": 4.9883
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7515645510,
+            "rank": "D",
+            "accuracy": 0.69916142557652,
+            "pp": 58.5646,
+            "mods": [],
+            "combo": 90,
+            "created_at": "2026-09-19T06:46:27Z",
+            "beatmapset": {
+              "id": 2572861,
+              "title": "MONTAGEM BATCHI",
+              "cover": "https://assets.ppy.sh/beatmaps/2572861/covers/card.jpg?1786064954",
+              "stars": 5.343
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7515640453,
+            "rank": "C",
+            "accuracy": 0.7159329140461216,
+            "pp": 49.6611,
+            "mods": [],
+            "combo": 142,
+            "created_at": "2026-09-19T06:45:18Z",
+            "beatmapset": {
+              "id": 2572861,
+              "title": "MONTAGEM BATCHI",
+              "cover": "https://assets.ppy.sh/beatmaps/2572861/covers/card.jpg?1786064954",
+              "stars": 5.343
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7515636003,
+            "rank": "C",
+            "accuracy": 0.8355048859934854,
+            "pp": 57.8333,
+            "mods": [],
+            "combo": 151,
+            "created_at": "2026-09-19T06:44:16Z",
+            "beatmapset": {
+              "id": 2533966,
+              "title": "Rockefeller Street (New Nightcore) [#Rockefellerstreet Remix] (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2533966/covers/card.jpg?1787131220",
+              "stars": 5.08594
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7515628950,
+            "rank": "C",
+            "accuracy": 0.8496681980602349,
+            "pp": 35.9082,
+            "mods": [],
+            "combo": 166,
+            "created_at": "2026-09-19T06:42:37Z",
+            "beatmapset": {
+              "id": 391823,
+              "title": "Emoji",
+              "cover": "https://assets.ppy.sh/beatmaps/391823/covers/card.jpg?1650636103",
+              "stars": 4.96651
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7515564782,
+            "rank": "C",
+            "accuracy": 0.7417374881964117,
+            "pp": null,
+            "mods": [],
+            "combo": 155,
+            "created_at": "2026-09-19T06:27:32Z",
+            "beatmapset": {
+              "id": 112651,
+              "title": "Square Jump Practice Maps",
+              "cover": "https://assets.ppy.sh/beatmaps/112651/covers/card.jpg?1677686556",
+              "stars": 5.05277
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7515550608,
+            "rank": "C",
+            "accuracy": 0.8375065206051121,
+            "pp": 35.3482,
+            "mods": [],
+            "combo": 187,
+            "created_at": "2026-09-19T06:24:13Z",
+            "beatmapset": {
+              "id": 1044785,
+              "title": "Army Of The Night",
+              "cover": "https://assets.ppy.sh/beatmaps/1044785/covers/card.jpg?1650688773",
+              "stars": 5.06442
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Rockefeller Street (New Nightcore) [#Rockefellerstreet Remix] (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2533966/covers/card.jpg?1787131220",
+        "unique_players": 34
       }
     }
   }

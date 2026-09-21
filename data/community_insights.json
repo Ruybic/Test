@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 202,
-    "longest": 202,
-    "last_updated": "2026-09-19"
+    "current": 203,
+    "longest": 203,
+    "last_updated": "2026-09-20"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -61132,6 +61132,320 @@
         "title": "Rockefeller Street (New Nightcore) [#Rockefellerstreet Remix] (Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2533966/covers/card.jpg?1787131220",
         "unique_players": 34
+      }
+    },
+    "2026-09-20": {
+      "total_scores": 894,
+      "peak_hour_baghdad": 16,
+      "top_grinder": {
+        "user": "Kaiju13",
+        "user_id": 26916963,
+        "count": 76,
+        "scores": [
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7523041637,
+            "rank": "A",
+            "accuracy": 0.9710144927536232,
+            "pp": 336.156,
+            "mods": [],
+            "combo": 110,
+            "created_at": "2026-09-20T02:13:55Z",
+            "beatmapset": {
+              "id": 2513884,
+              "title": "overture",
+              "cover": "https://assets.ppy.sh/beatmaps/2513884/covers/card.jpg?1780611228",
+              "stars": 7.18408
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7523036308,
+            "rank": "C",
+            "accuracy": 0.8428775948460988,
+            "pp": null,
+            "mods": [],
+            "combo": 373,
+            "created_at": "2026-09-20T02:12:40Z",
+            "beatmapset": {
+              "id": 813569,
+              "title": "Sound Chimera",
+              "cover": "https://assets.ppy.sh/beatmaps/813569/covers/card.jpg?1622143597",
+              "stars": 6.90239
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7523009468,
+            "rank": "A",
+            "accuracy": 0.9812173086067523,
+            "pp": null,
+            "mods": [
+              "HD"
+            ],
+            "combo": 534,
+            "created_at": "2026-09-20T02:06:21Z",
+            "beatmapset": {
+              "id": 426890,
+              "title": "thinking of you",
+              "cover": "https://assets.ppy.sh/beatmaps/426890/covers/card.jpg?1683195501",
+              "stars": 6.4701
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7522995921,
+            "rank": "C",
+            "accuracy": 0.8341397849462365,
+            "pp": 101.178,
+            "mods": [],
+            "combo": 361,
+            "created_at": "2026-09-20T02:03:09Z",
+            "beatmapset": {
+              "id": 2438988,
+              "title": "My Heart Will Go On",
+              "cover": "https://assets.ppy.sh/beatmaps/2438988/covers/card.jpg?1780322085",
+              "stars": 6.89503
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7522980441,
+            "rank": "A",
+            "accuracy": 0.9581529581529582,
+            "pp": null,
+            "mods": [],
+            "combo": 331,
+            "created_at": "2026-09-20T01:59:34Z",
+            "beatmapset": {
+              "id": 510241,
+              "title": "A Young Girl, So Vivid in the Night",
+              "cover": "https://assets.ppy.sh/beatmaps/510241/covers/card.jpg?0",
+              "stars": 6.98017
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7522961504,
+            "rank": "C",
+            "accuracy": 0.8014520202020202,
+            "pp": 57.7958,
+            "mods": [],
+            "combo": 114,
+            "created_at": "2026-09-20T01:55:13Z",
+            "beatmapset": {
+              "id": 1683876,
+              "title": "Ekoro",
+              "cover": "https://assets.ppy.sh/beatmaps/1683876/covers/card.jpg?1646535006",
+              "stars": 6.07671
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7522947818,
+            "rank": "A",
+            "accuracy": 0.946743663779275,
+            "pp": 216.573,
+            "mods": [
+              "HD"
+            ],
+            "combo": 389,
+            "created_at": "2026-09-20T01:52:03Z",
+            "beatmapset": {
+              "id": 2382290,
+              "title": "Thank You for the Venom (2025 Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2382290/covers/card.jpg?1779718309",
+              "stars": 6.80501
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7522926146,
+            "rank": "C",
+            "accuracy": 0.7744741100323624,
+            "pp": null,
+            "mods": [],
+            "combo": 284,
+            "created_at": "2026-09-20T01:47:06Z",
+            "beatmapset": {
+              "id": 859515,
+              "title": "Bon Appetit S (Oldskool HappyHardcore Remix) (Short Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/859515/covers/card.jpg?1622148546",
+              "stars": 6.29166
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7522890948,
+            "rank": "A",
+            "accuracy": 0.9508519003931848,
+            "pp": 201.808,
+            "mods": [],
+            "combo": 423,
+            "created_at": "2026-09-20T01:39:00Z",
+            "beatmapset": {
+              "id": 839248,
+              "title": "Sesshoku",
+              "cover": "https://assets.ppy.sh/beatmaps/839248/covers/card.jpg?1650668485",
+              "stars": 6.28979
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7522872871,
+            "rank": "A",
+            "accuracy": 0.9535353535353536,
+            "pp": 229.098,
+            "mods": [],
+            "combo": 194,
+            "created_at": "2026-09-20T01:34:53Z",
+            "beatmapset": {
+              "id": 2513884,
+              "title": "overture",
+              "cover": "https://assets.ppy.sh/beatmaps/2513884/covers/card.jpg?1780611228",
+              "stars": 6.31163
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7522865832,
+            "rank": "A",
+            "accuracy": 0.946360153256705,
+            "pp": 135.714,
+            "mods": [],
+            "combo": 346,
+            "created_at": "2026-09-20T01:33:15Z",
+            "beatmapset": {
+              "id": 1070357,
+              "title": "Anoyo-iki no Bus ni Notte Saraba.",
+              "cover": "https://assets.ppy.sh/beatmaps/1070357/covers/card.jpg?1650696598",
+              "stars": 6.25705
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7522846242,
+            "rank": "C",
+            "accuracy": 0.7236180904522613,
+            "pp": 53.808,
+            "mods": [],
+            "combo": 117,
+            "created_at": "2026-09-20T01:28:43Z",
+            "beatmapset": {
+              "id": 685008,
+              "title": "QLWA",
+              "cover": "https://assets.ppy.sh/beatmaps/685008/covers/card.jpg?1650665081",
+              "stars": 6.6141
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7522361250,
+            "rank": "A",
+            "accuracy": 0.9770114942528736,
+            "pp": 272.599,
+            "mods": [
+              "EZ",
+              "DT"
+            ],
+            "combo": 237,
+            "created_at": "2026-09-19T23:42:35Z",
+            "beatmapset": {
+              "id": 2152637,
+              "title": "Song of the Dead (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2152637/covers/card.jpg?1720298862",
+              "stars": 5.44643
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7522354741,
+            "rank": "A",
+            "accuracy": 0.9458812260536399,
+            "pp": 199.263,
+            "mods": [
+              "EZ",
+              "DT"
+            ],
+            "combo": 236,
+            "created_at": "2026-09-19T23:41:16Z",
+            "beatmapset": {
+              "id": 2152637,
+              "title": "Song of the Dead (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2152637/covers/card.jpg?1720298862",
+              "stars": 5.44643
+            }
+          },
+          {
+            "user": "Kaiju13",
+            "user_id": 26916963,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7522311323,
+            "rank": "B",
+            "accuracy": 0.8891797556719022,
+            "pp": null,
+            "mods": [
+              "EZ",
+              "DT"
+            ],
+            "combo": 145,
+            "created_at": "2026-09-19T23:32:34Z",
+            "beatmapset": {
+              "id": 1883095,
+              "title": "Escape Rope",
+              "cover": "https://assets.ppy.sh/beatmaps/1883095/covers/card.jpg?1781055850",
+              "stars": 6.85931
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Gravity Falls Theme Song",
+        "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+        "unique_players": 13
       }
     }
   }

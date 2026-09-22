@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 203,
-    "longest": 203,
-    "last_updated": "2026-09-20"
+    "current": 204,
+    "longest": 204,
+    "last_updated": "2026-09-21"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -61446,6 +61446,307 @@
         "title": "Gravity Falls Theme Song",
         "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
         "unique_players": 13
+      }
+    },
+    "2026-09-21": {
+      "total_scores": 1047,
+      "peak_hour_baghdad": 1,
+      "top_grinder": {
+        "user": "Zhu Xi",
+        "user_id": 38045718,
+        "count": 76,
+        "scores": [
+          {
+            "user": "Zhu Xi",
+            "user_id": 38045718,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7531865658,
+            "rank": "B",
+            "accuracy": 0.8678915135608049,
+            "pp": 121.48,
+            "mods": [],
+            "combo": 179,
+            "created_at": "2026-09-21T05:54:37Z",
+            "beatmapset": {
+              "id": 2280225,
+              "title": "Polar 240",
+              "cover": "https://assets.ppy.sh/beatmaps/2280225/covers/card.jpg?1740443610",
+              "stars": 6.40568
+            }
+          },
+          {
+            "user": "Zhu Xi",
+            "user_id": 38045718,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7531854845,
+            "rank": "C",
+            "accuracy": 0.7729397293972939,
+            "pp": 68.3674,
+            "mods": [],
+            "combo": 538,
+            "created_at": "2026-09-21T05:51:10Z",
+            "beatmapset": {
+              "id": 1390922,
+              "title": "Lionheart",
+              "cover": "https://assets.ppy.sh/beatmaps/1390922/covers/card.jpg?1653231574",
+              "stars": 6.04502
+            }
+          },
+          {
+            "user": "Zhu Xi",
+            "user_id": 38045718,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7531609999,
+            "rank": "B",
+            "accuracy": 0.9126984126984127,
+            "pp": 181.606,
+            "mods": [],
+            "combo": 445,
+            "created_at": "2026-09-21T04:36:35Z",
+            "beatmapset": {
+              "id": 1017271,
+              "title": "AaAaAaAAaAaAAa",
+              "cover": "https://assets.ppy.sh/beatmaps/1017271/covers/card.jpg?1650683889",
+              "stars": 6.18022
+            }
+          },
+          {
+            "user": "Zhu Xi",
+            "user_id": 38045718,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7531547840,
+            "rank": "B",
+            "accuracy": 0.8693333333333333,
+            "pp": 119.398,
+            "mods": [],
+            "combo": 160,
+            "created_at": "2026-09-21T04:18:01Z",
+            "beatmapset": {
+              "id": 1049899,
+              "title": "Say Goodbye (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1049899/covers/card.jpg?1724193986",
+              "stars": 5.99699
+            }
+          },
+          {
+            "user": "Zhu Xi",
+            "user_id": 38045718,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7531524939,
+            "rank": "B",
+            "accuracy": 0.8962962962962963,
+            "pp": 54.6001,
+            "mods": [],
+            "combo": 284,
+            "created_at": "2026-09-21T04:11:17Z",
+            "beatmapset": {
+              "id": 2165707,
+              "title": "STUDY STEADY",
+              "cover": "https://assets.ppy.sh/beatmaps/2165707/covers/card.jpg?1722160853",
+              "stars": 4.52871
+            }
+          },
+          {
+            "user": "Zhu Xi",
+            "user_id": 38045718,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7531518117,
+            "rank": "B",
+            "accuracy": 0.905367231638418,
+            "pp": 103.576,
+            "mods": [],
+            "combo": 224,
+            "created_at": "2026-09-21T04:09:16Z",
+            "beatmapset": {
+              "id": 921855,
+              "title": "Feelings of fake (feat. Tsuyuri Karin)",
+              "cover": "https://assets.ppy.sh/beatmaps/921855/covers/card.jpg?1650677448",
+              "stars": 6.08405
+            }
+          },
+          {
+            "user": "Zhu Xi",
+            "user_id": 38045718,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7531508729,
+            "rank": "C",
+            "accuracy": 0.8529046287666977,
+            "pp": 59.9321,
+            "mods": [],
+            "combo": 557,
+            "created_at": "2026-09-21T04:06:30Z",
+            "beatmapset": {
+              "id": 2022054,
+              "title": "STINGER",
+              "cover": "https://assets.ppy.sh/beatmaps/2022054/covers/card.jpg?1700911133",
+              "stars": 5.35557
+            }
+          },
+          {
+            "user": "Zhu Xi",
+            "user_id": 38045718,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7531490842,
+            "rank": "B",
+            "accuracy": 0.8945168839852892,
+            "pp": 110.009,
+            "mods": [],
+            "combo": 438,
+            "created_at": "2026-09-21T04:01:17Z",
+            "beatmapset": {
+              "id": 695743,
+              "title": "Yoru Naku Usagi wa Yume o Miru",
+              "cover": "https://assets.ppy.sh/beatmaps/695743/covers/card.jpg?1650658337",
+              "stars": 5.73276
+            }
+          },
+          {
+            "user": "Zhu Xi",
+            "user_id": 38045718,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7531476095,
+            "rank": "B",
+            "accuracy": 0.8938294010889292,
+            "pp": 88.5146,
+            "mods": [],
+            "combo": 321,
+            "created_at": "2026-09-21T03:57:05Z",
+            "beatmapset": {
+              "id": 1883095,
+              "title": "Escape Rope",
+              "cover": "https://assets.ppy.sh/beatmaps/1883095/covers/card.jpg?1781055850",
+              "stars": 5.63615
+            }
+          },
+          {
+            "user": "Zhu Xi",
+            "user_id": 38045718,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7531465869,
+            "rank": "B",
+            "accuracy": 0.8921985815602836,
+            "pp": 58.9922,
+            "mods": [],
+            "combo": 240,
+            "created_at": "2026-09-21T03:54:07Z",
+            "beatmapset": {
+              "id": 1391589,
+              "title": "Play Poker Remix (w/Maple) (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1391589/covers/card.jpg?1650707807",
+              "stars": 4.51464
+            }
+          },
+          {
+            "user": "Zhu Xi",
+            "user_id": 38045718,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7531458935,
+            "rank": "C",
+            "accuracy": 0.8556644880174292,
+            "pp": 49.787,
+            "mods": [],
+            "combo": 150,
+            "created_at": "2026-09-21T03:52:11Z",
+            "beatmapset": {
+              "id": 2524873,
+              "title": "Neppa feat. Butter",
+              "cover": "https://assets.ppy.sh/beatmaps/2524873/covers/card.jpg?1782057972",
+              "stars": 4.597
+            }
+          },
+          {
+            "user": "Zhu Xi",
+            "user_id": 38045718,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7531445344,
+            "rank": "C",
+            "accuracy": 0.7769679300291545,
+            "pp": 24.3568,
+            "mods": [],
+            "combo": 179,
+            "created_at": "2026-09-21T03:48:21Z",
+            "beatmapset": {
+              "id": 1578257,
+              "title": "Rain",
+              "cover": "https://assets.ppy.sh/beatmaps/1578257/covers/card.jpg?1637159544",
+              "stars": 3.87672
+            }
+          },
+          {
+            "user": "Zhu Xi",
+            "user_id": 38045718,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7531434341,
+            "rank": "B",
+            "accuracy": 0.8962378640776699,
+            "pp": 47.1846,
+            "mods": [],
+            "combo": 331,
+            "created_at": "2026-09-21T03:45:12Z",
+            "beatmapset": {
+              "id": 1559330,
+              "title": "Fake",
+              "cover": "https://assets.ppy.sh/beatmaps/1559330/covers/card.jpg?1654753140",
+              "stars": 4.83448
+            }
+          },
+          {
+            "user": "Zhu Xi",
+            "user_id": 38045718,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7531363508,
+            "rank": "B",
+            "accuracy": 0.8619791666666666,
+            "pp": 4.92982,
+            "mods": [],
+            "combo": 560,
+            "created_at": "2026-09-21T03:25:14Z",
+            "beatmapset": {
+              "id": 1061218,
+              "title": "GLASS RIVER",
+              "cover": "https://assets.ppy.sh/beatmaps/1061218/covers/card.jpg?1631513060",
+              "stars": 1.87395
+            }
+          },
+          {
+            "user": "Zhu Xi",
+            "user_id": 38045718,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7531346996,
+            "rank": "B",
+            "accuracy": 0.9262193227710469,
+            "pp": 106.14,
+            "mods": [],
+            "combo": 391,
+            "created_at": "2026-09-21T03:20:37Z",
+            "beatmapset": {
+              "id": 2022054,
+              "title": "STINGER",
+              "cover": "https://assets.ppy.sh/beatmaps/2022054/covers/card.jpg?1700911133",
+              "stars": 5.35557
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Terranova (Original Radio Mix) (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2592110/covers/card.jpg?1788574475",
+        "unique_players": 30
       }
     }
   }

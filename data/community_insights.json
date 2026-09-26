@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 207,
-    "longest": 207,
-    "last_updated": "2026-09-24"
+    "current": 208,
+    "longest": 208,
+    "last_updated": "2026-09-25"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -62689,6 +62689,352 @@
         "title": "12151109",
         "cover": "https://assets.ppy.sh/beatmaps/2541950/covers/card.jpg?1777555913",
         "unique_players": 22
+      }
+    },
+    "2026-09-25": {
+      "total_scores": 636,
+      "peak_hour_baghdad": 13,
+      "top_grinder": {
+        "user": "Meaco",
+        "user_id": 32837861,
+        "count": 52,
+        "scores": [
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5080520633,
+            "rank": "A",
+            "accuracy": 0.949748743718593,
+            "pp": 238.041,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 145,
+            "created_at": "2026-09-24T12:44:35Z",
+            "beatmapset": {
+              "id": 1280506,
+              "title": "WONDERFUL WONDER (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1280506/covers/card.jpg?1645786525",
+              "stars": 4.92603
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5080520307,
+            "rank": "A",
+            "accuracy": 0.9390243902439024,
+            "pp": 188.186,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 153,
+            "created_at": "2026-09-24T12:43:31Z",
+            "beatmapset": {
+              "id": 2515511,
+              "title": "WONDERFUL WONDER (TV Size & Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2515511/covers/card.jpg?1774252089",
+              "stars": 4.83534
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5080516976,
+            "rank": "A",
+            "accuracy": 0.9633333333333334,
+            "pp": 213.901,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 210,
+            "created_at": "2026-09-24T12:31:54Z",
+            "beatmapset": {
+              "id": 2379887,
+              "title": "This Little Girl (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2379887/covers/card.jpg?1749535372",
+              "stars": 4.47431
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5080516334,
+            "rank": "A",
+            "accuracy": 0.9583333333333334,
+            "pp": 223.204,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 264,
+            "created_at": "2026-09-24T12:29:37Z",
+            "beatmapset": {
+              "id": 2379887,
+              "title": "This Little Girl (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2379887/covers/card.jpg?1749535372",
+              "stars": 4.47431
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5080515576,
+            "rank": "SH",
+            "accuracy": 0.9946666666666667,
+            "pp": 274.094,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 192,
+            "created_at": "2026-09-24T12:26:59Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 4.27866
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5080513373,
+            "rank": "A",
+            "accuracy": 0.9731800766283525,
+            "pp": 258.785,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 189,
+            "created_at": "2026-09-24T12:19:06Z",
+            "beatmapset": {
+              "id": 2294177,
+              "title": "Take a Hint feat. Victoria Justice & Elizabeth Gillies (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2294177/covers/card.jpg?1736370924",
+              "stars": 4.66033
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5080513061,
+            "rank": "A",
+            "accuracy": 0.975095785440613,
+            "pp": 250.202,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 197,
+            "created_at": "2026-09-24T12:17:58Z",
+            "beatmapset": {
+              "id": 2294177,
+              "title": "Take a Hint feat. Victoria Justice & Elizabeth Gillies (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2294177/covers/card.jpg?1736370924",
+              "stars": 4.66033
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5080512785,
+            "rank": "A",
+            "accuracy": 0.9409888357256778,
+            "pp": 139.808,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 142,
+            "created_at": "2026-09-24T12:16:57Z",
+            "beatmapset": {
+              "id": 2445174,
+              "title": "Sunshine (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+              "stars": 4.29133
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5080512019,
+            "rank": "A",
+            "accuracy": 0.9467455621301775,
+            "pp": 210.744,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 152,
+            "created_at": "2026-09-24T12:14:16Z",
+            "beatmapset": {
+              "id": 2499570,
+              "title": "Still Into You (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2499570/covers/card.jpg?1771093258",
+              "stars": 4.6629
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5080511388,
+            "rank": "A",
+            "accuracy": 0.9728997289972899,
+            "pp": 240.535,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 262,
+            "created_at": "2026-09-24T12:11:55Z",
+            "beatmapset": {
+              "id": 2240889,
+              "title": "Some Kind Of Magic (feat. MYZICA) (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2240889/covers/card.jpg?1734649789",
+              "stars": 4.5015
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5080509328,
+            "rank": "A",
+            "accuracy": 0.9696969696969697,
+            "pp": 214.9,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 170,
+            "created_at": "2026-09-24T12:03:58Z",
+            "beatmapset": {
+              "id": 2496558,
+              "title": "So Am I (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2496558/covers/card.jpg?1775073996",
+              "stars": 4.67795
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5080509029,
+            "rank": "A",
+            "accuracy": 0.9757575757575757,
+            "pp": 255.741,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 226,
+            "created_at": "2026-09-24T12:02:52Z",
+            "beatmapset": {
+              "id": 2496558,
+              "title": "So Am I (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2496558/covers/card.jpg?1775073996",
+              "stars": 4.67795
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5080508349,
+            "rank": "A",
+            "accuracy": 0.9444444444444444,
+            "pp": 184.928,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 148,
+            "created_at": "2026-09-24T12:00:19Z",
+            "beatmapset": {
+              "id": 2351045,
+              "title": "Remember When (Push Rewind) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2351045/covers/card.jpg?1755544292",
+              "stars": 4.51546
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5080506001,
+            "rank": "A",
+            "accuracy": 0.9810606060606061,
+            "pp": 227.915,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 122,
+            "created_at": "2026-09-24T11:51:22Z",
+            "beatmapset": {
+              "id": 2278283,
+              "title": "Pedro (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2278283/covers/card.jpg?1756872826",
+              "stars": 4.46282
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5080505426,
+            "rank": "A",
+            "accuracy": 0.9641350210970464,
+            "pp": 205.651,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 210,
+            "created_at": "2026-09-24T11:49:14Z",
+            "beatmapset": {
+              "id": 2487912,
+              "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+              "stars": 4.425
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Granat",
+        "cover": "https://assets.ppy.sh/beatmaps/497769/covers/card.jpg?1645785838",
+        "unique_players": 11
       }
     }
   }

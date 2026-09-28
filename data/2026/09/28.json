@@ -7,9 +7,9 @@
     "fruits",
     "mania"
   ],
-  "generated_at": "2026-09-28T10:45:57.971Z",
+  "generated_at": "2026-09-28T11:04:09.187Z",
   "complete": false,
-  "players_checked": 1000,
+  "players_checked": 2000,
   "players_total": 2801,
   "scores": [
     {
@@ -529,6 +529,25 @@
         "title": "Mizuoto to Curtain",
         "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
         "stars": 5.49463
+      }
+    },
+    {
+      "user": "hemmyham",
+      "user_id": 40375251,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7583931708,
+      "rank": "A",
+      "accuracy": 0.8843971631205674,
+      "pp": 5.42176,
+      "mods": [],
+      "combo": 402,
+      "created_at": "2026-09-28T09:45:26Z",
+      "beatmapset": {
+        "id": 2468654,
+        "title": "Peach Pit and Cyanide",
+        "cover": "https://assets.ppy.sh/beatmaps/2468654/covers/card.jpg?1765890290",
+        "stars": 1.84459
       }
     },
     {
@@ -1113,25 +1132,6 @@
       }
     },
     {
-      "user": "normal person n",
-      "user_id": 39844000,
-      "country": "IQ",
-      "mode": "osu",
-      "score_id": 0,
-      "rank": "A",
-      "accuracy": 0.9362745098039216,
-      "pp": null,
-      "mods": [],
-      "combo": 73,
-      "created_at": "2026-09-28T02:52:44Z",
-      "beatmapset": {
-        "id": 1011011,
-        "title": "new beginnings",
-        "cover": "https://assets.ppy.sh/beatmaps/1011011/covers/card.jpg?1645787013",
-        "stars": 1.16737
-      }
-    },
-    {
       "user": "jovnw",
       "user_id": 40518739,
       "country": "IQ",
@@ -1169,6 +1169,27 @@
         "title": "KARMANATIONS",
         "cover": "https://assets.ppy.sh/beatmaps/1283387/covers/card.jpg?1622200105",
         "stars": 6.68255
+      }
+    },
+    {
+      "user": "aAsTrO",
+      "user_id": 40574657,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7582246709,
+      "rank": "D",
+      "accuracy": 0.5130718954248366,
+      "pp": 0.177871,
+      "mods": [
+        "TD"
+      ],
+      "combo": 47,
+      "created_at": "2026-09-28T00:47:14Z",
+      "beatmapset": {
+        "id": 20871,
+        "title": "Halcyon",
+        "cover": "https://assets.ppy.sh/beatmaps/20871/covers/card.jpg?1640420704",
+        "stars": 1.17634
       }
     },
     {
@@ -2402,6 +2423,25 @@
       }
     },
     {
+      "user": "AflyingBanana",
+      "user_id": 40570183,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7581671630,
+      "rank": "C",
+      "accuracy": 0.7313953488372092,
+      "pp": null,
+      "mods": [],
+      "combo": 94,
+      "created_at": "2026-09-27T22:25:05Z",
+      "beatmapset": {
+        "id": 2585706,
+        "title": "Limbus Company OST- Canto IX SAKAI (Rien)",
+        "cover": "https://assets.ppy.sh/beatmaps/2585706/covers/card.jpg?1786572043",
+        "stars": 2.74715
+      }
+    },
+    {
       "user": "kojie12",
       "user_id": 25752574,
       "country": "IQ",
@@ -2418,6 +2458,25 @@
         "title": "Carol of the Bells (Nightstep Mix)",
         "cover": "https://assets.ppy.sh/beatmaps/842355/covers/card.jpg?1650668671",
         "stars": 3.24551
+      }
+    },
+    {
+      "user": "AflyingBanana",
+      "user_id": 40570183,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7581591566,
+      "rank": "B",
+      "accuracy": 0.8868421052631579,
+      "pp": 5.08033,
+      "mods": [],
+      "combo": 205,
+      "created_at": "2026-09-27T22:07:48Z",
+      "beatmapset": {
+        "id": 1048705,
+        "title": "Never Give Up",
+        "cover": "https://assets.ppy.sh/beatmaps/1048705/covers/card.jpg?1650703832",
+        "stars": 1.95369
       }
     },
     {
@@ -3964,6 +4023,27 @@
       }
     },
     {
+      "user": "bi6wz",
+      "user_id": 37907515,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7581267374,
+      "rank": "D",
+      "accuracy": 0.6379310344827587,
+      "pp": 2.50155,
+      "mods": [
+        "TD"
+      ],
+      "combo": 53,
+      "created_at": "2026-09-27T21:04:36Z",
+      "beatmapset": {
+        "id": 765778,
+        "title": "Make a Move (Speed Up Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/765778/covers/card.jpg?1650663123",
+        "stars": 2.32977
+      }
+    },
+    {
       "user": "El_Srphoenixz",
       "user_id": 35497499,
       "country": "IQ",
@@ -5478,6 +5558,25 @@
       }
     },
     {
+      "user": "M7YT",
+      "user_id": 40516068,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7580623569,
+      "rank": "D",
+      "accuracy": 0.7003129890453834,
+      "pp": 3.83958,
+      "mods": [],
+      "combo": 73,
+      "created_at": "2026-09-27T19:21:58Z",
+      "beatmapset": {
+        "id": 2247565,
+        "title": "chase",
+        "cover": "https://assets.ppy.sh/beatmaps/2247565/covers/card.jpg?1737694305",
+        "stars": 2.30311
+      }
+    },
+    {
       "user": "Dr Lako",
       "user_id": 30352441,
       "country": "IQ",
@@ -5573,6 +5672,25 @@
       }
     },
     {
+      "user": "m_y6y",
+      "user_id": 39927137,
+      "country": "IQ",
+      "mode": "taiko",
+      "score_id": 7580602171,
+      "rank": "C",
+      "accuracy": 0.7489082969432315,
+      "pp": 2.1306,
+      "mods": [],
+      "combo": 29,
+      "created_at": "2026-09-27T19:18:45Z",
+      "beatmapset": {
+        "id": 2544838,
+        "title": "Nyanderful <3 Summer!!",
+        "cover": "https://assets.ppy.sh/beatmaps/2544838/covers/card.jpg?1783850332",
+        "stars": 1.63777
+      }
+    },
+    {
       "user": "ALI GAMES AXD",
       "user_id": 27442324,
       "country": "IQ",
@@ -5608,6 +5726,25 @@
         "title": "FLY ME TO THE MOON <Rei (#5) (TV Size) Remix Version>",
         "cover": "https://assets.ppy.sh/beatmaps/1364732/covers/card.jpg?1622206376",
         "stars": 3.17504
+      }
+    },
+    {
+      "user": "m_y6y",
+      "user_id": 39927137,
+      "country": "IQ",
+      "mode": "taiko",
+      "score_id": 7580585740,
+      "rank": "C",
+      "accuracy": 0.847953216374269,
+      "pp": 5.5709,
+      "mods": [],
+      "combo": 47,
+      "created_at": "2026-09-27T19:16:19Z",
+      "beatmapset": {
+        "id": 2544035,
+        "title": "HoYoHoYo ni Shite Ageru",
+        "cover": "https://assets.ppy.sh/beatmaps/2544035/covers/card.jpg?1785938505",
+        "stars": 1.33111
       }
     },
     {
@@ -5665,6 +5802,25 @@
         "title": "Presenter* (Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2474192/covers/card.jpg?1766001186",
         "stars": 4.69134
+      }
+    },
+    {
+      "user": "m_y6y",
+      "user_id": 39927137,
+      "country": "IQ",
+      "mode": "taiko",
+      "score_id": 7580567094,
+      "rank": "C",
+      "accuracy": 0.8478260869565217,
+      "pp": 8.01688,
+      "mods": [],
+      "combo": 90,
+      "created_at": "2026-09-27T19:13:33Z",
+      "beatmapset": {
+        "id": 2209334,
+        "title": "Help me, ERINNNNNN!! (Game Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2209334/covers/card.jpg?1751639309",
+        "stars": 1.62965
       }
     },
     {
@@ -5746,6 +5902,25 @@
       }
     },
     {
+      "user": "M7YT",
+      "user_id": 40516068,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7580549024,
+      "rank": "D",
+      "accuracy": 0.6533646322378717,
+      "pp": 3.44001,
+      "mods": [],
+      "combo": 76,
+      "created_at": "2026-09-27T19:10:50Z",
+      "beatmapset": {
+        "id": 2247565,
+        "title": "chase",
+        "cover": "https://assets.ppy.sh/beatmaps/2247565/covers/card.jpg?1737694305",
+        "stars": 2.30311
+      }
+    },
+    {
       "user": "terbiyesiz",
       "user_id": 40385244,
       "country": "IQ",
@@ -5800,6 +5975,25 @@
         "title": "Lady Brown (feat. Cise Starr)",
         "cover": "https://assets.ppy.sh/beatmaps/205425/covers/card.jpg?1772567740",
         "stars": 5.08916
+      }
+    },
+    {
+      "user": "m_y6y",
+      "user_id": 39927137,
+      "country": "IQ",
+      "mode": "taiko",
+      "score_id": 7580542639,
+      "rank": "B",
+      "accuracy": 0.8742138364779874,
+      "pp": 11.488,
+      "mods": [],
+      "combo": 73,
+      "created_at": "2026-09-27T19:09:54Z",
+      "beatmapset": {
+        "id": 1646430,
+        "title": "Sound In Motion vs. AH (Fauxami Mashup) (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/1646430/covers/card.jpg?1645200545",
+        "stars": 1.37331
       }
     },
     {
@@ -5938,6 +6132,25 @@
       }
     },
     {
+      "user": "m_y6y",
+      "user_id": 39927137,
+      "country": "IQ",
+      "mode": "taiko",
+      "score_id": 7580507796,
+      "rank": "C",
+      "accuracy": 0.7947761194029851,
+      "pp": 4.41511,
+      "mods": [],
+      "combo": 23,
+      "created_at": "2026-09-27T19:04:45Z",
+      "beatmapset": {
+        "id": 2530646,
+        "title": "FLOP ERA",
+        "cover": "https://assets.ppy.sh/beatmaps/2530646/covers/card.jpg?1782447977",
+        "stars": 1.36455
+      }
+    },
+    {
       "user": "gf7yef675rf3",
       "user_id": 40277621,
       "country": "IQ",
@@ -5992,6 +6205,44 @@
         "title": "MONTAGEM BATCHI",
         "cover": "https://assets.ppy.sh/beatmaps/2572861/covers/card.jpg?1786064954",
         "stars": 4.46042
+      }
+    },
+    {
+      "user": "m_y6y",
+      "user_id": 39927137,
+      "country": "IQ",
+      "mode": "taiko",
+      "score_id": 7580487184,
+      "rank": "C",
+      "accuracy": 0.8523316062176166,
+      "pp": 7.45753,
+      "mods": [],
+      "combo": 41,
+      "created_at": "2026-09-27T19:01:42Z",
+      "beatmapset": {
+        "id": 2364833,
+        "title": "Cirno's Perfect Math Academy (Game Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2364833/covers/card.jpg?1770531808",
+        "stars": 1.39914
+      }
+    },
+    {
+      "user": "M7YT",
+      "user_id": 40516068,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7580474102,
+      "rank": "D",
+      "accuracy": 0.6298904538341158,
+      "pp": 2.76429,
+      "mods": [],
+      "combo": 80,
+      "created_at": "2026-09-27T18:59:49Z",
+      "beatmapset": {
+        "id": 2247565,
+        "title": "chase",
+        "cover": "https://assets.ppy.sh/beatmaps/2247565/covers/card.jpg?1737694305",
+        "stars": 2.30311
       }
     },
     {
@@ -6991,6 +7242,25 @@
         "title": "The Glory Days",
         "cover": "https://assets.ppy.sh/beatmaps/391953/covers/card.jpg?1650636786",
         "stars": 5.00447
+      }
+    },
+    {
+      "user": "iampepsii",
+      "user_id": 40369338,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 0,
+      "rank": "C",
+      "accuracy": 0.7876230661040787,
+      "pp": null,
+      "mods": [],
+      "combo": 49,
+      "created_at": "2026-09-27T17:37:38Z",
+      "beatmapset": {
+        "id": 1819021,
+        "title": "Mary on a cross",
+        "cover": "https://assets.ppy.sh/beatmaps/1819021/covers/card.jpg?1731240017",
+        "stars": 2.89634
       }
     },
     {
@@ -12904,6 +13174,27 @@
         "title": "When It Falls (feat. Casey Lee Williams) (TV Size)",
         "cover": "https://assets.ppy.sh/beatmaps/1091102/covers/card.jpg?1622178942",
         "stars": 6.63248
+      }
+    },
+    {
+      "user": "Silver08",
+      "user_id": 40435198,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7577369483,
+      "rank": "D",
+      "accuracy": 0.4878048780487805,
+      "pp": 0.74052,
+      "mods": [
+        "TD"
+      ],
+      "combo": 22,
+      "created_at": "2026-09-27T11:23:06Z",
+      "beatmapset": {
+        "id": 1991315,
+        "title": "Tower Of Heaven (You Are Slaves) (Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/1991315/covers/card.jpg?1695404998",
+        "stars": 2.25403
       }
     },
     {

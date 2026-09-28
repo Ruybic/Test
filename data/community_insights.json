@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 209,
-    "longest": 209,
-    "last_updated": "2026-09-26"
+    "current": 210,
+    "longest": 210,
+    "last_updated": "2026-09-27"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -63346,6 +63346,337 @@
         "title": "4ever (cut ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2484768/covers/card.jpg?1782936873",
         "unique_players": 19
+      }
+    },
+    "2026-09-27": {
+      "total_scores": 672,
+      "peak_hour_baghdad": 18,
+      "top_grinder": {
+        "user": "0ilen",
+        "user_id": 25015591,
+        "count": 60,
+        "scores": [
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7573564080,
+            "rank": "C",
+            "accuracy": 0.8563725490196078,
+            "pp": 197.672,
+            "mods": [
+              "DT"
+            ],
+            "combo": 181,
+            "created_at": "2026-09-26T21:31:29Z",
+            "beatmapset": {
+              "id": 1129819,
+              "title": "Dakara, Hitori ja Nai (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1129819/covers/card.jpg?1645787031",
+              "stars": 4.94156
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7573532458,
+            "rank": "C",
+            "accuracy": 0.8294117647058824,
+            "pp": 161.08,
+            "mods": [
+              "DT"
+            ],
+            "combo": 104,
+            "created_at": "2026-09-26T21:26:34Z",
+            "beatmapset": {
+              "id": 1129819,
+              "title": "Dakara, Hitori ja Nai (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1129819/covers/card.jpg?1645787031",
+              "stars": 4.94156
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7573525484,
+            "rank": "C",
+            "accuracy": 0.8,
+            "pp": 123.305,
+            "mods": [
+              "DT"
+            ],
+            "combo": 103,
+            "created_at": "2026-09-26T21:25:30Z",
+            "beatmapset": {
+              "id": 1129819,
+              "title": "Dakara, Hitori ja Nai (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1129819/covers/card.jpg?1645787031",
+              "stars": 4.94156
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7573491703,
+            "rank": "C",
+            "accuracy": 0.817156862745098,
+            "pp": 163.567,
+            "mods": [
+              "DT"
+            ],
+            "combo": 164,
+            "created_at": "2026-09-26T21:20:18Z",
+            "beatmapset": {
+              "id": 1129819,
+              "title": "Dakara, Hitori ja Nai (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1129819/covers/card.jpg?1645787031",
+              "stars": 4.94156
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7573483443,
+            "rank": "C",
+            "accuracy": 0.7691176470588236,
+            "pp": 142.701,
+            "mods": [
+              "DT"
+            ],
+            "combo": 180,
+            "created_at": "2026-09-26T21:19:02Z",
+            "beatmapset": {
+              "id": 1129819,
+              "title": "Dakara, Hitori ja Nai (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1129819/covers/card.jpg?1645787031",
+              "stars": 4.94156
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7573469084,
+            "rank": "A",
+            "accuracy": 0.9300411522633745,
+            "pp": 194.142,
+            "mods": [
+              "DT"
+            ],
+            "combo": 205,
+            "created_at": "2026-09-26T21:16:50Z",
+            "beatmapset": {
+              "id": 968171,
+              "title": "Mizuoto to Curtain",
+              "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
+              "stars": 4.37492
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7573464354,
+            "rank": "B",
+            "accuracy": 0.8827160493827161,
+            "pp": 163.236,
+            "mods": [
+              "DT"
+            ],
+            "combo": 136,
+            "created_at": "2026-09-26T21:16:06Z",
+            "beatmapset": {
+              "id": 968171,
+              "title": "Mizuoto to Curtain",
+              "cover": "https://assets.ppy.sh/beatmaps/968171/covers/card.jpg?1645788271",
+              "stars": 4.37492
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7573446038,
+            "rank": "B",
+            "accuracy": 0.8913502109704642,
+            "pp": 148.579,
+            "mods": [
+              "DT"
+            ],
+            "combo": 343,
+            "created_at": "2026-09-26T21:13:21Z",
+            "beatmapset": {
+              "id": 455482,
+              "title": "(can you) understand me?",
+              "cover": "https://assets.ppy.sh/beatmaps/455482/covers/card.jpg?1650639576",
+              "stars": 4.32332
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7573436095,
+            "rank": "C",
+            "accuracy": 0.8356481481481481,
+            "pp": 151.548,
+            "mods": [
+              "DT"
+            ],
+            "combo": 421,
+            "created_at": "2026-09-26T21:11:51Z",
+            "beatmapset": {
+              "id": 966062,
+              "title": "Totsugeki Rock",
+              "cover": "https://assets.ppy.sh/beatmaps/966062/covers/card.jpg?1650679641",
+              "stars": 4.31951
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7573428133,
+            "rank": "C",
+            "accuracy": 0.8182870370370371,
+            "pp": 114.753,
+            "mods": [
+              "DT"
+            ],
+            "combo": 191,
+            "created_at": "2026-09-26T21:10:40Z",
+            "beatmapset": {
+              "id": 966062,
+              "title": "Totsugeki Rock",
+              "cover": "https://assets.ppy.sh/beatmaps/966062/covers/card.jpg?1650679641",
+              "stars": 4.31951
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7571011875,
+            "rank": "S",
+            "accuracy": 0.9698681732580038,
+            "pp": 379.974,
+            "mods": [
+              "DT"
+            ],
+            "combo": 261,
+            "created_at": "2026-09-26T15:39:57Z",
+            "beatmapset": {
+              "id": 2494398,
+              "title": "Last Friday Night (T.G.I.F.) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2494398/covers/card.jpg?1777897504",
+              "stars": 4.98632
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7571004318,
+            "rank": "A",
+            "accuracy": 0.9585687382297552,
+            "pp": 309.072,
+            "mods": [
+              "DT"
+            ],
+            "combo": 211,
+            "created_at": "2026-09-26T15:38:57Z",
+            "beatmapset": {
+              "id": 2494398,
+              "title": "Last Friday Night (T.G.I.F.) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2494398/covers/card.jpg?1777897504",
+              "stars": 4.98632
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7570999234,
+            "rank": "A",
+            "accuracy": 0.9510357815442562,
+            "pp": 274.716,
+            "mods": [
+              "DT"
+            ],
+            "combo": 132,
+            "created_at": "2026-09-26T15:38:17Z",
+            "beatmapset": {
+              "id": 2494398,
+              "title": "Last Friday Night (T.G.I.F.) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2494398/covers/card.jpg?1777897504",
+              "stars": 4.98632
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7570968120,
+            "rank": "A",
+            "accuracy": 0.96045197740113,
+            "pp": 326.672,
+            "mods": [
+              "DT"
+            ],
+            "combo": 181,
+            "created_at": "2026-09-26T15:34:08Z",
+            "beatmapset": {
+              "id": 2494398,
+              "title": "Last Friday Night (T.G.I.F.) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2494398/covers/card.jpg?1777897504",
+              "stars": 4.98632
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7570962220,
+            "rank": "A",
+            "accuracy": 0.9717514124293786,
+            "pp": 342.758,
+            "mods": [
+              "DT"
+            ],
+            "combo": 143,
+            "created_at": "2026-09-26T15:33:21Z",
+            "beatmapset": {
+              "id": 2494398,
+              "title": "Last Friday Night (T.G.I.F.) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2494398/covers/card.jpg?1777897504",
+              "stars": 4.98632
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Take a Hint feat. Victoria Justice & Elizabeth Gillies (Speed Up Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/984684/covers/card.jpg?1650681093",
+        "unique_players": 24
       }
     }
   }

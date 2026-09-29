@@ -7,9 +7,9 @@
     "fruits",
     "mania"
   ],
-  "generated_at": "2026-09-29T10:40:32.448Z",
+  "generated_at": "2026-09-29T10:58:43.315Z",
   "complete": false,
-  "players_checked": 1000,
+  "players_checked": 2000,
   "players_total": 2807,
   "scores": [
     {
@@ -3583,6 +3583,25 @@
       }
     },
     {
+      "user": "s4toru0",
+      "user_id": 30232063,
+      "country": "IQ",
+      "mode": "taiko",
+      "score_id": 7588889352,
+      "rank": "C",
+      "accuracy": 0.7504288164665524,
+      "pp": 4.24631,
+      "mods": [],
+      "combo": 56,
+      "created_at": "2026-09-29T01:22:20Z",
+      "beatmapset": {
+        "id": 1539995,
+        "title": "INDUSTRY BABY (feat. Jack Harlow)",
+        "cover": "https://assets.ppy.sh/beatmaps/1539995/covers/card.jpg?1632781295",
+        "stars": 1.73129
+      }
+    },
+    {
       "user": "Laz3rVort3x",
       "user_id": 25921522,
       "country": "IQ",
@@ -4105,6 +4124,25 @@
         "title": "Gravity Falls Theme Song (TV Size)",
         "cover": "https://assets.ppy.sh/beatmaps/2210696/covers/card.jpg?1737310112",
         "stars": 4.34719
+      }
+    },
+    {
+      "user": "PhantomYA24",
+      "user_id": 40313273,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7588104618,
+      "rank": "C",
+      "accuracy": 0.7801724137931034,
+      "pp": 3.74738,
+      "mods": [],
+      "combo": 180,
+      "created_at": "2026-09-28T22:02:36Z",
+      "beatmapset": {
+        "id": 2271680,
+        "title": "Burning Desires",
+        "cover": "https://assets.ppy.sh/beatmaps/2271680/covers/card.jpg?1730258991",
+        "stars": 1.76842
       }
     },
     {
@@ -5146,6 +5184,27 @@
         "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
         "stars": 5.29291
+      }
+    },
+    {
+      "user": "inforuse",
+      "user_id": 37924612,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7587616216,
+      "rank": "A",
+      "accuracy": 0.9031446540880503,
+      "pp": null,
+      "mods": [
+        "RX"
+      ],
+      "combo": 72,
+      "created_at": "2026-09-28T20:29:06Z",
+      "beatmapset": {
+        "id": 2345539,
+        "title": "\"AKAGE\" (feat. Hatsune Miku)",
+        "cover": "https://assets.ppy.sh/beatmaps/2345539/covers/card.jpg?1748650746",
+        "stars": 2.51319
       }
     },
     {
@@ -6213,6 +6272,25 @@
       }
     },
     {
+      "user": "M7YT",
+      "user_id": 40516068,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7587332099,
+      "rank": "D",
+      "accuracy": 0.6303854875283447,
+      "pp": 3.59369,
+      "mods": [],
+      "combo": 46,
+      "created_at": "2026-09-28T19:42:53Z",
+      "beatmapset": {
+        "id": 674882,
+        "title": "BLOODY STREAM",
+        "cover": "https://assets.ppy.sh/beatmaps/674882/covers/card.jpg?1622125712",
+        "stars": 2.47561
+      }
+    },
+    {
       "user": "Laz3rVort3x",
       "user_id": 25921522,
       "country": "IQ",
@@ -6470,6 +6548,25 @@
         "title": "Just The Way You Are (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2553422/covers/card.jpg?1785638040",
         "stars": 4.58972
+      }
+    },
+    {
+      "user": "M7YT",
+      "user_id": 40516068,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7587289978,
+      "rank": "D",
+      "accuracy": 0.6549295774647887,
+      "pp": 3.396,
+      "mods": [],
+      "combo": 131,
+      "created_at": "2026-09-28T19:36:19Z",
+      "beatmapset": {
+        "id": 2247565,
+        "title": "chase",
+        "cover": "https://assets.ppy.sh/beatmaps/2247565/covers/card.jpg?1737694305",
+        "stars": 2.30311
       }
     },
     {
@@ -9113,6 +9210,25 @@
       }
     },
     {
+      "user": "PhantomYA24",
+      "user_id": 40313273,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7586654420,
+      "rank": "C",
+      "accuracy": 0.7530864197530864,
+      "pp": 5.87751,
+      "mods": [],
+      "combo": 109,
+      "created_at": "2026-09-28T17:59:29Z",
+      "beatmapset": {
+        "id": 2556198,
+        "title": "Six Seven",
+        "cover": "https://assets.ppy.sh/beatmaps/2556198/covers/card.jpg?1780609844",
+        "stars": 2.26933
+      }
+    },
+    {
       "user": "onlybow",
       "user_id": 40548983,
       "country": "IQ",
@@ -9333,6 +9449,25 @@
         "title": "Forget About Me (Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2291799/covers/card.jpg?1739629072",
         "stars": 3.61437
+      }
+    },
+    {
+      "user": "syde_old_7",
+      "user_id": 36983187,
+      "country": "IQ",
+      "mode": "taiko",
+      "score_id": 7586551020,
+      "rank": "S",
+      "accuracy": 0.9921465968586387,
+      "pp": 49.2707,
+      "mods": [],
+      "combo": 191,
+      "created_at": "2026-09-28T17:43:59Z",
+      "beatmapset": {
+        "id": 1841885,
+        "title": "triangles",
+        "cover": "https://assets.ppy.sh/beatmaps/1841885/covers/card.jpg?1668775807",
+        "stars": 1.40369
       }
     },
     {
@@ -10046,6 +10181,25 @@
       }
     },
     {
+      "user": "T-X-T-R",
+      "user_id": 40557921,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 5082099641,
+      "rank": "B",
+      "accuracy": 0.8562271062271062,
+      "pp": 2.63736,
+      "mods": [],
+      "combo": 102,
+      "created_at": "2026-09-28T16:04:13Z",
+      "beatmapset": {
+        "id": 2586326,
+        "title": "It's Me",
+        "cover": "https://assets.ppy.sh/beatmaps/2586326/covers/card.jpg?1789817654",
+        "stars": 1.76275
+      }
+    },
+    {
       "user": "azalhussam",
       "user_id": 37635103,
       "country": "IQ",
@@ -10062,6 +10216,25 @@
         "title": "Mizuoto to Curtain (Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2391166/covers/card.jpg?1758206673",
         "stars": 5.09743
+      }
+    },
+    {
+      "user": "T-X-T-R",
+      "user_id": 40557921,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 5082098559,
+      "rank": "D",
+      "accuracy": 0.47043010752688175,
+      "pp": null,
+      "mods": [],
+      "combo": 9,
+      "created_at": "2026-09-28T16:01:12Z",
+      "beatmapset": {
+        "id": 2604206,
+        "title": "Samsung Washer End Tune (Extended Edit)",
+        "cover": "https://assets.ppy.sh/beatmaps/2604206/covers/card.jpg?1790530602",
+        "stars": 1.14113
       }
     },
     {

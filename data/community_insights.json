@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 210,
-    "longest": 210,
-    "last_updated": "2026-09-27"
+    "current": 211,
+    "longest": 211,
+    "last_updated": "2026-09-28"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -63677,6 +63677,336 @@
         "title": "Take a Hint feat. Victoria Justice & Elizabeth Gillies (Speed Up Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/984684/covers/card.jpg?1650681093",
         "unique_players": 24
+      }
+    },
+    "2026-09-28": {
+      "total_scores": 946,
+      "peak_hour_baghdad": 0,
+      "top_grinder": {
+        "user": "RAWI03",
+        "user_id": 38341733,
+        "count": 71,
+        "scores": [
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7580320926,
+            "rank": "A",
+            "accuracy": 0.9571078431372549,
+            "pp": 151.343,
+            "mods": [
+              "DT"
+            ],
+            "combo": 230,
+            "created_at": "2026-09-27T18:37:35Z",
+            "beatmapset": {
+              "id": 223180,
+              "title": "Hikaru nara -TV size-",
+              "cover": "https://assets.ppy.sh/beatmaps/223180/covers/card.jpg?1650625206",
+              "stars": 3.99394
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7580307109,
+            "rank": "A",
+            "accuracy": 0.971604938271605,
+            "pp": 208.293,
+            "mods": [
+              "DT"
+            ],
+            "combo": 227,
+            "created_at": "2026-09-27T18:35:37Z",
+            "beatmapset": {
+              "id": 1324491,
+              "title": "Gotoubun no Katachi (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1324491/covers/card.jpg?1650705663",
+              "stars": 4.27111
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7580290169,
+            "rank": "A",
+            "accuracy": 0.9767827529021559,
+            "pp": 230.861,
+            "mods": [
+              "DT"
+            ],
+            "combo": 239,
+            "created_at": "2026-09-27T18:33:14Z",
+            "beatmapset": {
+              "id": 2478741,
+              "title": "Lucky (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2478741/covers/card.jpg?1776123108",
+              "stars": 4.32274
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7580257926,
+            "rank": "A",
+            "accuracy": 0.9457070707070707,
+            "pp": 194.984,
+            "mods": [
+              "DT"
+            ],
+            "combo": 202,
+            "created_at": "2026-09-27T18:28:42Z",
+            "beatmapset": {
+              "id": 2323038,
+              "title": "What The Hell (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2323038/covers/card.jpg?1740092483",
+              "stars": 4.5025
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7580241222,
+            "rank": "A",
+            "accuracy": 0.9570707070707071,
+            "pp": 213.445,
+            "mods": [
+              "DT"
+            ],
+            "combo": 154,
+            "created_at": "2026-09-27T18:26:24Z",
+            "beatmapset": {
+              "id": 2323038,
+              "title": "What The Hell (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2323038/covers/card.jpg?1740092483",
+              "stars": 4.5025
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7580228601,
+            "rank": "A",
+            "accuracy": 0.9293924466338259,
+            "pp": 174.823,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 129,
+            "created_at": "2026-09-27T18:24:38Z",
+            "beatmapset": {
+              "id": 2478741,
+              "title": "Lucky (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2478741/covers/card.jpg?1776123108",
+              "stars": 4.66861
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7580084143,
+            "rank": "C",
+            "accuracy": 0.8060344827586207,
+            "pp": 92.4837,
+            "mods": [
+              "DT"
+            ],
+            "combo": 35,
+            "created_at": "2026-09-27T18:04:00Z",
+            "beatmapset": {
+              "id": 2211003,
+              "title": "Harumachi Clover (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2211003/covers/card.jpg?1720679711",
+              "stars": 4.20006
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7580032865,
+            "rank": "B",
+            "accuracy": 0.867231638418079,
+            "pp": 94.0746,
+            "mods": [
+              "DT"
+            ],
+            "combo": 53,
+            "created_at": "2026-09-27T17:56:33Z",
+            "beatmapset": {
+              "id": 2211003,
+              "title": "Harumachi Clover (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2211003/covers/card.jpg?1720679711",
+              "stars": 3.97009
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7579866911,
+            "rank": "B",
+            "accuracy": 0.8714689265536724,
+            "pp": 112.122,
+            "mods": [
+              "DT"
+            ],
+            "combo": 57,
+            "created_at": "2026-09-27T17:32:43Z",
+            "beatmapset": {
+              "id": 2211003,
+              "title": "Harumachi Clover (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2211003/covers/card.jpg?1720679711",
+              "stars": 3.97009
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7579862612,
+            "rank": "B",
+            "accuracy": 0.8601694915254238,
+            "pp": 104.711,
+            "mods": [
+              "DT"
+            ],
+            "combo": 40,
+            "created_at": "2026-09-27T17:32:06Z",
+            "beatmapset": {
+              "id": 2211003,
+              "title": "Harumachi Clover (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/2211003/covers/card.jpg?1720679711",
+              "stars": 3.97009
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7579856234,
+            "rank": "B",
+            "accuracy": 0.8615384615384616,
+            "pp": 124.672,
+            "mods": [
+              "DT"
+            ],
+            "combo": 138,
+            "created_at": "2026-09-27T17:31:11Z",
+            "beatmapset": {
+              "id": 2298826,
+              "title": "Merry Bitchmas (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2298826/covers/card.jpg?1735332907",
+              "stars": 4.07155
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7579352804,
+            "rank": "S",
+            "accuracy": 0.9529914529914529,
+            "pp": 144.348,
+            "mods": [
+              "DT"
+            ],
+            "combo": 405,
+            "created_at": "2026-09-27T16:19:15Z",
+            "beatmapset": {
+              "id": 819112,
+              "title": "You Suck At Love (Speed Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/819112/covers/card.jpg?1650668141",
+              "stars": 3.61533
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7579233422,
+            "rank": "B",
+            "accuracy": 0.8622710622710623,
+            "pp": 98.4402,
+            "mods": [],
+            "combo": 126,
+            "created_at": "2026-09-27T16:02:04Z",
+            "beatmapset": {
+              "id": 472143,
+              "title": "Overtime",
+              "cover": "https://assets.ppy.sh/beatmaps/472143/covers/card.jpg?1645785995",
+              "stars": 7.03701
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7578768106,
+            "rank": "B",
+            "accuracy": 0.9261083743842364,
+            "pp": 141.777,
+            "mods": [
+              "DT"
+            ],
+            "combo": 133,
+            "created_at": "2026-09-27T14:55:45Z",
+            "beatmapset": {
+              "id": 378596,
+              "title": "STARRING STAR",
+              "cover": "https://assets.ppy.sh/beatmaps/378596/covers/card.jpg?1650634933",
+              "stars": 4.18924
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7578762854,
+            "rank": "B",
+            "accuracy": 0.8899835796387521,
+            "pp": 108.141,
+            "mods": [
+              "DT"
+            ],
+            "combo": 82,
+            "created_at": "2026-09-27T14:55:01Z",
+            "beatmapset": {
+              "id": 378596,
+              "title": "STARRING STAR",
+              "cover": "https://assets.ppy.sh/beatmaps/378596/covers/card.jpg?1650634933",
+              "stars": 4.18924
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+        "unique_players": 30
       }
     }
   }

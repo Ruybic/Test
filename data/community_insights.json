@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 211,
-    "longest": 211,
-    "last_updated": "2026-09-28"
+    "current": 212,
+    "longest": 212,
+    "last_updated": "2026-09-29"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -64007,6 +64007,325 @@
         "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
         "unique_players": 30
+      }
+    },
+    "2026-09-29": {
+      "total_scores": 784,
+      "peak_hour_baghdad": 22,
+      "top_grinder": {
+        "user": "RAWI03",
+        "user_id": 38341733,
+        "count": 75,
+        "scores": [
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7590110552,
+            "rank": "B",
+            "accuracy": 0.8644240570846076,
+            "pp": null,
+            "mods": [],
+            "combo": 284,
+            "created_at": "2026-09-29T07:48:29Z",
+            "beatmapset": {
+              "id": 1919786,
+              "title": "10 Things I Hate About Ai no Sukima",
+              "cover": "https://assets.ppy.sh/beatmaps/1919786/covers/card.jpg?1675743963",
+              "stars": 6.1573
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7590106564,
+            "rank": "A",
+            "accuracy": 0.9310344827586207,
+            "pp": 189.945,
+            "mods": [
+              "DT"
+            ],
+            "combo": 88,
+            "created_at": "2026-09-29T07:47:05Z",
+            "beatmapset": {
+              "id": 2478741,
+              "title": "Lucky (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2478741/covers/card.jpg?1776123108",
+              "stars": 4.66861
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7590102975,
+            "rank": "B",
+            "accuracy": 0.9105504587155964,
+            "pp": 152.69,
+            "mods": [
+              "DT"
+            ],
+            "combo": 112,
+            "created_at": "2026-09-29T07:45:48Z",
+            "beatmapset": {
+              "id": 975620,
+              "title": "Vanilla Chocolat (Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/975620/covers/card.jpg?1650680911",
+              "stars": 4.27574
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7590098261,
+            "rank": "A",
+            "accuracy": 0.967304625199362,
+            "pp": 181.065,
+            "mods": [
+              "DT"
+            ],
+            "combo": 267,
+            "created_at": "2026-09-29T07:44:07Z",
+            "beatmapset": {
+              "id": 909559,
+              "title": "Starting Forest",
+              "cover": "https://assets.ppy.sh/beatmaps/909559/covers/card.jpg?1650676235",
+              "stars": 4.04221
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7590095020,
+            "rank": "B",
+            "accuracy": 0.8570102135561746,
+            "pp": 88.7672,
+            "mods": [],
+            "combo": 92,
+            "created_at": "2026-09-29T07:43:01Z",
+            "beatmapset": {
+              "id": 1608572,
+              "title": "Gourmet Race",
+              "cover": "https://assets.ppy.sh/beatmaps/1608572/covers/card.jpg?1645787270",
+              "stars": 6.35721
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7590085788,
+            "rank": "B",
+            "accuracy": 0.9090064995357474,
+            "pp": 131.861,
+            "mods": [],
+            "combo": 89,
+            "created_at": "2026-09-29T07:39:48Z",
+            "beatmapset": {
+              "id": 1608572,
+              "title": "Gourmet Race",
+              "cover": "https://assets.ppy.sh/beatmaps/1608572/covers/card.jpg?1645787270",
+              "stars": 6.35721
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7590061526,
+            "rank": "A",
+            "accuracy": 0.9242424242424242,
+            "pp": 159.05,
+            "mods": [
+              "DT"
+            ],
+            "combo": 212,
+            "created_at": "2026-09-29T07:31:14Z",
+            "beatmapset": {
+              "id": 2323038,
+              "title": "What The Hell (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2323038/covers/card.jpg?1740092483",
+              "stars": 4.5025
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7590052635,
+            "rank": "B",
+            "accuracy": 0.8681780016792612,
+            "pp": 123.275,
+            "mods": [],
+            "combo": 169,
+            "created_at": "2026-09-29T07:28:06Z",
+            "beatmapset": {
+              "id": 2299895,
+              "title": "R U 4 Me? (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2299895/covers/card.jpg?1736121656",
+              "stars": 7.31409
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7590046632,
+            "rank": "B",
+            "accuracy": 0.9151973131821999,
+            "pp": 160.254,
+            "mods": [],
+            "combo": 149,
+            "created_at": "2026-09-29T07:26:00Z",
+            "beatmapset": {
+              "id": 2299895,
+              "title": "R U 4 Me? (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2299895/covers/card.jpg?1736121656",
+              "stars": 7.00176
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7590040982,
+            "rank": "A",
+            "accuracy": 0.958139534883721,
+            "pp": 138.757,
+            "mods": [
+              "DT"
+            ],
+            "combo": 252,
+            "created_at": "2026-09-29T07:23:58Z",
+            "beatmapset": {
+              "id": 41384,
+              "title": "Natsu no Hi (Short Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/41384/covers/card.jpg?1622051864",
+              "stars": 3.79919
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7590038553,
+            "rank": "A",
+            "accuracy": 0.9550387596899225,
+            "pp": 128.227,
+            "mods": [
+              "DT"
+            ],
+            "combo": 182,
+            "created_at": "2026-09-29T07:23:05Z",
+            "beatmapset": {
+              "id": 41384,
+              "title": "Natsu no Hi (Short Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/41384/covers/card.jpg?1622051864",
+              "stars": 3.79919
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7590035473,
+            "rank": "C",
+            "accuracy": 0.8386605783866058,
+            "pp": 84.501,
+            "mods": [
+              "DT"
+            ],
+            "combo": 169,
+            "created_at": "2026-09-29T07:21:59Z",
+            "beatmapset": {
+              "id": 1264300,
+              "title": "Still Into You (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/1264300/covers/card.jpg?1650706329",
+              "stars": 3.88803
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7590032540,
+            "rank": "B",
+            "accuracy": 0.85,
+            "pp": 112.844,
+            "mods": [],
+            "combo": 92,
+            "created_at": "2026-09-29T07:20:55Z",
+            "beatmapset": {
+              "id": 2472271,
+              "title": "Christmas Slop",
+              "cover": "https://assets.ppy.sh/beatmaps/2472271/covers/card.jpg?1765043571",
+              "stars": 7.12706
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7590029160,
+            "rank": "C",
+            "accuracy": 0.8074494949494949,
+            "pp": 86.2298,
+            "mods": [
+              "HR"
+            ],
+            "combo": 68,
+            "created_at": "2026-09-29T07:19:41Z",
+            "beatmapset": {
+              "id": 2472271,
+              "title": "Christmas Slop",
+              "cover": "https://assets.ppy.sh/beatmaps/2472271/covers/card.jpg?1765043571",
+              "stars": 6.52059
+            }
+          },
+          {
+            "user": "RAWI03",
+            "user_id": 38341733,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7590021663,
+            "rank": "B",
+            "accuracy": 0.8681592039800995,
+            "pp": 101.688,
+            "mods": [
+              "HR"
+            ],
+            "combo": 88,
+            "created_at": "2026-09-29T07:17:02Z",
+            "beatmapset": {
+              "id": 2472271,
+              "title": "Christmas Slop",
+              "cover": "https://assets.ppy.sh/beatmaps/2472271/covers/card.jpg?1765043571",
+              "stars": 5.78914
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+        "unique_players": 57
       }
     }
   }

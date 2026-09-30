@@ -7,9 +7,9 @@
     "fruits",
     "mania"
   ],
-  "generated_at": "2026-09-30T10:33:34.392Z",
+  "generated_at": "2026-09-30T10:51:44.900Z",
   "complete": false,
-  "players_checked": 1000,
+  "players_checked": 2000,
   "players_total": 2813,
   "scores": [
     {
@@ -1695,6 +1695,25 @@
       }
     },
     {
+      "user": "Darwinea",
+      "user_id": 40564321,
+      "country": "IQ",
+      "mode": "taiko",
+      "score_id": 7596588616,
+      "rank": "C",
+      "accuracy": 0.8584905660377359,
+      "pp": 5.58914,
+      "mods": [],
+      "combo": 184,
+      "created_at": "2026-09-30T07:15:40Z",
+      "beatmapset": {
+        "id": 1118896,
+        "title": "Be Your Light",
+        "cover": "https://assets.ppy.sh/beatmaps/1118896/covers/card.jpg?1650692338",
+        "stars": 1.43629
+      }
+    },
+    {
       "user": "kartel",
       "user_id": 16368385,
       "country": "IQ",
@@ -3317,6 +3336,82 @@
       }
     },
     {
+      "user": "SUKUNAIQ",
+      "user_id": 39897090,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7595795700,
+      "rank": "C",
+      "accuracy": 0.819047619047619,
+      "pp": 6.90387,
+      "mods": [],
+      "combo": 61,
+      "created_at": "2026-09-30T02:52:56Z",
+      "beatmapset": {
+        "id": 2252051,
+        "title": "klik klak brazil strelyayet",
+        "cover": "https://assets.ppy.sh/beatmaps/2252051/covers/card.jpg?1738632773",
+        "stars": 2.29744
+      }
+    },
+    {
+      "user": "SUKUNAIQ",
+      "user_id": 39897090,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7595792469,
+      "rank": "D",
+      "accuracy": 0.6714285714285714,
+      "pp": 4.65875,
+      "mods": [],
+      "combo": 58,
+      "created_at": "2026-09-30T02:52:00Z",
+      "beatmapset": {
+        "id": 2252051,
+        "title": "klik klak brazil strelyayet",
+        "cover": "https://assets.ppy.sh/beatmaps/2252051/covers/card.jpg?1738632773",
+        "stars": 2.29744
+      }
+    },
+    {
+      "user": "SUKUNAIQ",
+      "user_id": 39897090,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7595789403,
+      "rank": "C",
+      "accuracy": 0.7428571428571429,
+      "pp": 5.6622,
+      "mods": [],
+      "combo": 49,
+      "created_at": "2026-09-30T02:51:06Z",
+      "beatmapset": {
+        "id": 2252051,
+        "title": "klik klak brazil strelyayet",
+        "cover": "https://assets.ppy.sh/beatmaps/2252051/covers/card.jpg?1738632773",
+        "stars": 2.29744
+      }
+    },
+    {
+      "user": "SUKUNAIQ",
+      "user_id": 39897090,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7595782595,
+      "rank": "C",
+      "accuracy": 0.830952380952381,
+      "pp": 7.05952,
+      "mods": [],
+      "combo": 83,
+      "created_at": "2026-09-30T02:49:11Z",
+      "beatmapset": {
+        "id": 2252051,
+        "title": "klik klak brazil strelyayet",
+        "cover": "https://assets.ppy.sh/beatmaps/2252051/covers/card.jpg?1738632773",
+        "stars": 2.29744
+      }
+    },
+    {
       "user": "astryst",
       "user_id": 9612440,
       "country": "IQ",
@@ -3333,6 +3428,101 @@
         "title": "Hot N Cold",
         "cover": "https://assets.ppy.sh/beatmaps/2318586/covers/card.jpg?1790374412",
         "stars": 4.1773
+      }
+    },
+    {
+      "user": "SUKUNAIQ",
+      "user_id": 39897090,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7595762089,
+      "rank": "C",
+      "accuracy": 0.7581699346405228,
+      "pp": 6.90543,
+      "mods": [],
+      "combo": 49,
+      "created_at": "2026-09-30T02:43:24Z",
+      "beatmapset": {
+        "id": 2252051,
+        "title": "klik klak brazil strelyayet",
+        "cover": "https://assets.ppy.sh/beatmaps/2252051/covers/card.jpg?1738632773",
+        "stars": 2.61913
+      }
+    },
+    {
+      "user": "SUKUNAIQ",
+      "user_id": 39897090,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7595759127,
+      "rank": "D",
+      "accuracy": 0.6977124183006536,
+      "pp": 5.60727,
+      "mods": [],
+      "combo": 38,
+      "created_at": "2026-09-30T02:42:34Z",
+      "beatmapset": {
+        "id": 2252051,
+        "title": "klik klak brazil strelyayet",
+        "cover": "https://assets.ppy.sh/beatmaps/2252051/covers/card.jpg?1738632773",
+        "stars": 2.61913
+      }
+    },
+    {
+      "user": "SUKUNAIQ",
+      "user_id": 39897090,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7595748131,
+      "rank": "C",
+      "accuracy": 0.6895424836601307,
+      "pp": 4.82296,
+      "mods": [],
+      "combo": 32,
+      "created_at": "2026-09-30T02:39:26Z",
+      "beatmapset": {
+        "id": 2252051,
+        "title": "klik klak brazil strelyayet",
+        "cover": "https://assets.ppy.sh/beatmaps/2252051/covers/card.jpg?1738632773",
+        "stars": 2.61913
+      }
+    },
+    {
+      "user": "SUKUNAIQ",
+      "user_id": 39897090,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7595740547,
+      "rank": "D",
+      "accuracy": 0.5849673202614379,
+      "pp": 3.66687,
+      "mods": [],
+      "combo": 40,
+      "created_at": "2026-09-30T02:37:19Z",
+      "beatmapset": {
+        "id": 2252051,
+        "title": "klik klak brazil strelyayet",
+        "cover": "https://assets.ppy.sh/beatmaps/2252051/covers/card.jpg?1738632773",
+        "stars": 2.61913
+      }
+    },
+    {
+      "user": "SUKUNAIQ",
+      "user_id": 39897090,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7595733961,
+      "rank": "D",
+      "accuracy": 0.6552287581699346,
+      "pp": 3.83981,
+      "mods": [],
+      "combo": 37,
+      "created_at": "2026-09-30T02:35:32Z",
+      "beatmapset": {
+        "id": 2252051,
+        "title": "klik klak brazil strelyayet",
+        "cover": "https://assets.ppy.sh/beatmaps/2252051/covers/card.jpg?1738632773",
+        "stars": 2.61913
       }
     },
     {
@@ -4778,6 +4968,25 @@
       }
     },
     {
+      "user": "mr_kepl",
+      "user_id": 30297562,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7594487507,
+      "rank": "D",
+      "accuracy": 0.635593220338983,
+      "pp": 2.27122,
+      "mods": [],
+      "combo": 43,
+      "created_at": "2026-09-29T21:21:40Z",
+      "beatmapset": {
+        "id": 1841885,
+        "title": "triangles",
+        "cover": "https://assets.ppy.sh/beatmaps/1841885/covers/card.jpg?1668775807",
+        "stars": 2.42884
+      }
+    },
+    {
       "user": "hxcpfr",
       "user_id": 37746499,
       "country": "IQ",
@@ -4794,6 +5003,25 @@
         "title": "Quinoa",
         "cover": "https://assets.ppy.sh/beatmaps/462231/covers/card.jpg?1650640538",
         "stars": 2.29586
+      }
+    },
+    {
+      "user": "mr_kepl",
+      "user_id": 30297562,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7594472546,
+      "rank": "C",
+      "accuracy": 0.7898305084745763,
+      "pp": 2.12546,
+      "mods": [],
+      "combo": 87,
+      "created_at": "2026-09-29T21:18:42Z",
+      "beatmapset": {
+        "id": 140662,
+        "title": "Tear Rain",
+        "cover": "https://assets.ppy.sh/beatmaps/140662/covers/card.jpg?1622070421",
+        "stars": 1.87759
       }
     },
     {
@@ -4897,6 +5125,25 @@
         "title": "Shinsaku no Shiawase wa Kochira!",
         "cover": "https://assets.ppy.sh/beatmaps/443751/covers/card.jpg?1650639287",
         "stars": 5.74272
+      }
+    },
+    {
+      "user": "mr_kepl",
+      "user_id": 30297562,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7594438440,
+      "rank": "A",
+      "accuracy": 0.9100660066006601,
+      "pp": 7.05314,
+      "mods": [],
+      "combo": 262,
+      "created_at": "2026-09-29T21:12:06Z",
+      "beatmapset": {
+        "id": 486535,
+        "title": "Moonlight Sonata",
+        "cover": "https://assets.ppy.sh/beatmaps/486535/covers/card.jpg?1631509836",
+        "stars": 2.02175
       }
     },
     {
@@ -5019,6 +5266,25 @@
         "title": "Forward",
         "cover": "https://assets.ppy.sh/beatmaps/731899/covers/card.jpg?1645783339",
         "stars": 6.14473
+      }
+    },
+    {
+      "user": "mr_kepl",
+      "user_id": 30297562,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7594408740,
+      "rank": "D",
+      "accuracy": 0.6567796610169492,
+      "pp": 1.65676,
+      "mods": [],
+      "combo": 62,
+      "created_at": "2026-09-29T21:06:32Z",
+      "beatmapset": {
+        "id": 2412331,
+        "title": "Haiboku no Altra Vita",
+        "cover": "https://assets.ppy.sh/beatmaps/2412331/covers/card.jpg?1763107982",
+        "stars": 2.19936
       }
     },
     {
@@ -5486,6 +5752,44 @@
       }
     },
     {
+      "user": "lilithDvo",
+      "user_id": 40583075,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7594156084,
+      "rank": "D",
+      "accuracy": 0.46703296703296704,
+      "pp": 0.772947,
+      "mods": [],
+      "combo": 23,
+      "created_at": "2026-09-29T20:21:52Z",
+      "beatmapset": {
+        "id": 1738293,
+        "title": "Akuma no Ko (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1738293/covers/card.jpg?1651604067",
+        "stars": 1.73398
+      }
+    },
+    {
+      "user": "ItZtosha",
+      "user_id": 40544220,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7594115926,
+      "rank": "D",
+      "accuracy": 0.484472049689441,
+      "pp": 2.00916,
+      "mods": [],
+      "combo": 42,
+      "created_at": "2026-09-29T20:15:09Z",
+      "beatmapset": {
+        "id": 1738293,
+        "title": "Akuma no Ko (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1738293/covers/card.jpg?1651604067",
+        "stars": 2.33229
+      }
+    },
+    {
       "user": "onlybow",
       "user_id": 40548983,
       "country": "IQ",
@@ -5524,6 +5828,25 @@
       }
     },
     {
+      "user": "ItZtosha",
+      "user_id": 40544220,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7594102807,
+      "rank": "D",
+      "accuracy": 0.32338308457711445,
+      "pp": 0.290334,
+      "mods": [],
+      "combo": 37,
+      "created_at": "2026-09-29T20:12:59Z",
+      "beatmapset": {
+        "id": 116306,
+        "title": "departure! (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/116306/covers/card.jpg?1650619061",
+        "stars": 1.56753
+      }
+    },
+    {
       "user": "pq7wh",
       "user_id": 39498643,
       "country": "IQ",
@@ -5559,6 +5882,25 @@
         "title": "TECHNO KILLA",
         "cover": "https://assets.ppy.sh/beatmaps/1835962/covers/card.jpg?1663860686",
         "stars": 4.3188
+      }
+    },
+    {
+      "user": "ItZtosha",
+      "user_id": 40544220,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7594051604,
+      "rank": "D",
+      "accuracy": 0.3877551020408163,
+      "pp": 0.463403,
+      "mods": [],
+      "combo": 22,
+      "created_at": "2026-09-29T20:04:39Z",
+      "beatmapset": {
+        "id": 856627,
+        "title": "unravel (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/856627/covers/card.jpg?1650680662",
+        "stars": 1.64497
       }
     },
     {
@@ -5718,6 +6060,25 @@
       }
     },
     {
+      "user": "mohannd",
+      "user_id": 36944278,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 5082510012,
+      "rank": "C",
+      "accuracy": 0.8031914893617021,
+      "pp": 4.26701,
+      "mods": [],
+      "combo": 71,
+      "created_at": "2026-09-29T19:52:00Z",
+      "beatmapset": {
+        "id": 437055,
+        "title": "Redo",
+        "cover": "https://assets.ppy.sh/beatmaps/437055/covers/card.jpg?1650638468",
+        "stars": 2.47561
+      }
+    },
+    {
       "user": "gf7yef675rf3",
       "user_id": 40277621,
       "country": "IQ",
@@ -5734,6 +6095,25 @@
         "title": "TECHNO KILLA",
         "cover": "https://assets.ppy.sh/beatmaps/1835962/covers/card.jpg?1663860686",
         "stars": 4.3188
+      }
+    },
+    {
+      "user": "mohannd",
+      "user_id": 36944278,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 5082509190,
+      "rank": "A",
+      "accuracy": 0.9011299435028248,
+      "pp": 3.29777,
+      "mods": [],
+      "combo": 91,
+      "created_at": "2026-09-29T19:49:38Z",
+      "beatmapset": {
+        "id": 437055,
+        "title": "Redo",
+        "cover": "https://assets.ppy.sh/beatmaps/437055/covers/card.jpg?1650638468",
+        "stars": 1.9219
       }
     },
     {
@@ -7620,6 +8000,25 @@
         "title": "Everlasting Shine (TV Size)",
         "cover": "https://assets.ppy.sh/beatmaps/1297671/covers/card.jpg?1778874688",
         "stars": 4.91727
+      }
+    },
+    {
+      "user": "PhantomYA24",
+      "user_id": 40313273,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7592918833,
+      "rank": "B",
+      "accuracy": 0.7988505747126436,
+      "pp": 4.36393,
+      "mods": [],
+      "combo": 271,
+      "created_at": "2026-09-29T17:11:13Z",
+      "beatmapset": {
+        "id": 2271680,
+        "title": "Burning Desires",
+        "cover": "https://assets.ppy.sh/beatmaps/2271680/covers/card.jpg?1730258991",
+        "stars": 1.76842
       }
     },
     {
@@ -10447,6 +10846,25 @@
         "title": "Bamboo Dance",
         "cover": "https://assets.ppy.sh/beatmaps/39056/covers/card.jpg?1633531528",
         "stars": 3.50088
+      }
+    },
+    {
+      "user": "xbugs_bunnyx",
+      "user_id": 40228317,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7590805889,
+      "rank": "C",
+      "accuracy": 0.6929824561403509,
+      "pp": 4.04511,
+      "mods": [],
+      "combo": 80,
+      "created_at": "2026-09-29T11:11:12Z",
+      "beatmapset": {
+        "id": 1089606,
+        "title": "Black Catcher (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1089606/covers/card.jpg?1650690279",
+        "stars": 2.27066
       }
     },
     {

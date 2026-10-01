@@ -7,9 +7,9 @@
     "fruits",
     "mania"
   ],
-  "generated_at": "2026-10-01T10:59:39.341Z",
+  "generated_at": "2026-10-01T11:17:50.693Z",
   "complete": false,
-  "players_checked": 1000,
+  "players_checked": 2000,
   "players_total": 2816,
   "scores": [
     {
@@ -333,6 +333,25 @@
       }
     },
     {
+      "user": "rinrou",
+      "user_id": 40559742,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7603612783,
+      "rank": "C",
+      "accuracy": 0.8305785123966942,
+      "pp": 2.501,
+      "mods": [],
+      "combo": 22,
+      "created_at": "2026-10-01T09:44:56Z",
+      "beatmapset": {
+        "id": 1864323,
+        "title": "KICK BACK (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1864323/covers/card.jpg?1667078221",
+        "stars": 2.10798
+      }
+    },
+    {
       "user": "frantic",
       "user_id": 40504451,
       "country": "IQ",
@@ -370,6 +389,25 @@
         "title": "Idola no Circus",
         "cover": "https://assets.ppy.sh/beatmaps/903106/covers/card.jpg?1650673608",
         "stars": 4.59201
+      }
+    },
+    {
+      "user": "rinrou",
+      "user_id": 40559742,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7603600251,
+      "rank": "D",
+      "accuracy": 0.630568356374808,
+      "pp": 2.03822,
+      "mods": [],
+      "combo": 30,
+      "created_at": "2026-10-01T09:41:27Z",
+      "beatmapset": {
+        "id": 1270438,
+        "title": "Kaikai Kitan (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1270438/covers/card.jpg?1650702015",
+        "stars": 2.41947
       }
     },
     {
@@ -2801,6 +2839,25 @@
         "title": "Mephisto",
         "cover": "https://assets.ppy.sh/beatmaps/2602772/covers/card.jpg?1789396583",
         "stars": 5.82
+      }
+    },
+    {
+      "user": "ELDENLORDXX",
+      "user_id": 40588958,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7602418888,
+      "rank": "D",
+      "accuracy": 0.6623931623931624,
+      "pp": 1.18093,
+      "mods": [],
+      "combo": 44,
+      "created_at": "2026-10-01T03:18:41Z",
+      "beatmapset": {
+        "id": 1685122,
+        "title": "Time files",
+        "cover": "https://assets.ppy.sh/beatmaps/1685122/covers/card.jpg?1645791000",
+        "stars": 1.64466
       }
     },
     {
@@ -5971,6 +6028,25 @@
       }
     },
     {
+      "user": "Aqeell",
+      "user_id": 40587535,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7601096677,
+      "rank": "C",
+      "accuracy": 0.7542372881355932,
+      "pp": 4.50355,
+      "mods": [],
+      "combo": 203,
+      "created_at": "2026-09-30T21:34:10Z",
+      "beatmapset": {
+        "id": 2412292,
+        "title": "Locus Amoenus (feat. Megurine Luka)",
+        "cover": "https://assets.ppy.sh/beatmaps/2412292/covers/card.jpg?1757011618",
+        "stars": 2.15828
+      }
+    },
+    {
       "user": "Ds_Jinx",
       "user_id": 37410533,
       "country": "IQ",
@@ -6009,6 +6085,25 @@
       }
     },
     {
+      "user": "Aqeell",
+      "user_id": 40587535,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7601082737,
+      "rank": "C",
+      "accuracy": 0.7184557438794726,
+      "pp": 4.05015,
+      "mods": [],
+      "combo": 184,
+      "created_at": "2026-09-30T21:31:18Z",
+      "beatmapset": {
+        "id": 2412292,
+        "title": "Locus Amoenus (feat. Megurine Luka)",
+        "cover": "https://assets.ppy.sh/beatmaps/2412292/covers/card.jpg?1757011618",
+        "stars": 2.15828
+      }
+    },
+    {
       "user": "Ds_Jinx",
       "user_id": 37410533,
       "country": "IQ",
@@ -6044,6 +6139,25 @@
         "title": "FLY ME TO THE MOON <Rei (#5) (TV Size) Remix Version>",
         "cover": "https://assets.ppy.sh/beatmaps/1364732/covers/card.jpg?1622206376",
         "stars": 3.17504
+      }
+    },
+    {
+      "user": "Aqeell",
+      "user_id": 40587535,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7601068366,
+      "rank": "D",
+      "accuracy": 0.58545197740113,
+      "pp": 1.57219,
+      "mods": [],
+      "combo": 54,
+      "created_at": "2026-09-30T21:28:21Z",
+      "beatmapset": {
+        "id": 2412331,
+        "title": "Haiboku no Altra Vita",
+        "cover": "https://assets.ppy.sh/beatmaps/2412331/covers/card.jpg?1763107982",
+        "stars": 2.19936
       }
     },
     {
@@ -6104,6 +6218,25 @@
       }
     },
     {
+      "user": "Aqeell",
+      "user_id": 40587535,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7601041226,
+      "rank": "C",
+      "accuracy": 0.7429378531073446,
+      "pp": 3.91345,
+      "mods": [],
+      "combo": 154,
+      "created_at": "2026-09-30T21:22:55Z",
+      "beatmapset": {
+        "id": 2412292,
+        "title": "Locus Amoenus (feat. Megurine Luka)",
+        "cover": "https://assets.ppy.sh/beatmaps/2412292/covers/card.jpg?1757011618",
+        "stars": 2.15828
+      }
+    },
+    {
       "user": "terbiyesiz",
       "user_id": 40385244,
       "country": "IQ",
@@ -6120,6 +6253,25 @@
         "title": "FLY ME TO THE MOON <Rei (#5) (TV Size) Remix Version>",
         "cover": "https://assets.ppy.sh/beatmaps/1364732/covers/card.jpg?1622206376",
         "stars": 3.17504
+      }
+    },
+    {
+      "user": "Aqeell",
+      "user_id": 40587535,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7601027158,
+      "rank": "D",
+      "accuracy": 0.6657250470809792,
+      "pp": 2.77833,
+      "mods": [],
+      "combo": 107,
+      "created_at": "2026-09-30T21:20:08Z",
+      "beatmapset": {
+        "id": 2412292,
+        "title": "Locus Amoenus (feat. Megurine Luka)",
+        "cover": "https://assets.ppy.sh/beatmaps/2412292/covers/card.jpg?1757011618",
+        "stars": 2.15828
       }
     },
     {
@@ -6158,6 +6310,25 @@
         "title": "PADORU / PADORU",
         "cover": "https://assets.ppy.sh/beatmaps/2279697/covers/card.jpg?1733354216",
         "stars": 5.35932
+      }
+    },
+    {
+      "user": "Aqeell",
+      "user_id": 40587535,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7601011771,
+      "rank": "D",
+      "accuracy": 0.6223862238622386,
+      "pp": 1.75541,
+      "mods": [],
+      "combo": 122,
+      "created_at": "2026-09-30T21:17:10Z",
+      "beatmapset": {
+        "id": 151878,
+        "title": "Lost",
+        "cover": "https://assets.ppy.sh/beatmaps/151878/covers/card.jpg?1622071759",
+        "stars": 2.10063
       }
     },
     {
@@ -6619,6 +6790,25 @@
       }
     },
     {
+      "user": "HaiD3er",
+      "user_id": 39703569,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7600813625,
+      "rank": "C",
+      "accuracy": 0.8015873015873016,
+      "pp": 3.89589,
+      "mods": [],
+      "combo": 129,
+      "created_at": "2026-09-30T20:40:55Z",
+      "beatmapset": {
+        "id": 2412244,
+        "title": "Rift Walker",
+        "cover": "https://assets.ppy.sh/beatmaps/2412244/covers/card.jpg?1759157730",
+        "stars": 1.93081
+      }
+    },
+    {
       "user": "thebest85787",
       "user_id": 38515271,
       "country": "IQ",
@@ -6942,6 +7132,25 @@
       }
     },
     {
+      "user": "Aqeell",
+      "user_id": 40587535,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7600601990,
+      "rank": "D",
+      "accuracy": 0.612280701754386,
+      "pp": 1.51366,
+      "mods": [],
+      "combo": 51,
+      "created_at": "2026-09-30T20:04:29Z",
+      "beatmapset": {
+        "id": 1048705,
+        "title": "Never Give Up",
+        "cover": "https://assets.ppy.sh/beatmaps/1048705/covers/card.jpg?1650703832",
+        "stars": 1.95369
+      }
+    },
+    {
       "user": "onlybow",
       "user_id": 40548983,
       "country": "IQ",
@@ -6958,6 +7167,25 @@
         "title": "E.T. (Nightcore Mix)",
         "cover": "https://assets.ppy.sh/beatmaps/33761/covers/card.jpg?1650608831",
         "stars": 1.92423
+      }
+    },
+    {
+      "user": "Aqeell",
+      "user_id": 40587535,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7600583442,
+      "rank": "D",
+      "accuracy": 0.5988700564971752,
+      "pp": 1.66735,
+      "mods": [],
+      "combo": 46,
+      "created_at": "2026-09-30T20:01:23Z",
+      "beatmapset": {
+        "id": 2412292,
+        "title": "Locus Amoenus (feat. Megurine Luka)",
+        "cover": "https://assets.ppy.sh/beatmaps/2412292/covers/card.jpg?1757011618",
+        "stars": 2.15828
       }
     },
     {
@@ -7034,6 +7262,25 @@
         "title": "Gimme! Gimme! Gimme! (Nightcore Mix)",
         "cover": "https://assets.ppy.sh/beatmaps/46218/covers/card.jpg?1622054242",
         "stars": 1.982
+      }
+    },
+    {
+      "user": "Aqeell",
+      "user_id": 40587535,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7600540648,
+      "rank": "D",
+      "accuracy": 0.6084905660377359,
+      "pp": 1.21629,
+      "mods": [],
+      "combo": 69,
+      "created_at": "2026-09-30T19:54:20Z",
+      "beatmapset": {
+        "id": 1689372,
+        "title": "Y",
+        "cover": "https://assets.ppy.sh/beatmaps/1689372/covers/card.jpg?1645783829",
+        "stars": 1.85339
       }
     },
     {
@@ -8443,6 +8690,25 @@
       }
     },
     {
+      "user": "rinrou",
+      "user_id": 40559742,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7599502842,
+      "rank": "C",
+      "accuracy": 0.7589531680440771,
+      "pp": 1.57385,
+      "mods": [],
+      "combo": 10,
+      "created_at": "2026-09-30T17:13:45Z",
+      "beatmapset": {
+        "id": 1864323,
+        "title": "KICK BACK (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/1864323/covers/card.jpg?1667078221",
+        "stars": 2.10798
+      }
+    },
+    {
       "user": "Tokbro",
       "user_id": 40012180,
       "country": "IQ",
@@ -9469,6 +9735,25 @@
         "title": "Unidentified Flavourful Object",
         "cover": "https://assets.ppy.sh/beatmaps/1259728/covers/card.jpg?1650708688",
         "stars": 3.62796
+      }
+    },
+    {
+      "user": "SUKUNAIQ",
+      "user_id": 39897090,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7598839496,
+      "rank": "C",
+      "accuracy": 0.7880952380952381,
+      "pp": 6.74363,
+      "mods": [],
+      "combo": 72,
+      "created_at": "2026-09-30T15:31:42Z",
+      "beatmapset": {
+        "id": 2252051,
+        "title": "klik klak brazil strelyayet",
+        "cover": "https://assets.ppy.sh/beatmaps/2252051/covers/card.jpg?1738632773",
+        "stars": 2.29744
       }
     },
     {

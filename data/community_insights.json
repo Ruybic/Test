@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 212,
-    "longest": 212,
-    "last_updated": "2026-09-29"
+    "current": 213,
+    "longest": 213,
+    "last_updated": "2026-09-30"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -64326,6 +64326,309 @@
         "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
         "unique_players": 57
+      }
+    },
+    "2026-09-30": {
+      "total_scores": 561,
+      "peak_hour_baghdad": 8,
+      "top_grinder": {
+        "user": "astryst",
+        "user_id": 9612440,
+        "count": 55,
+        "scores": [
+          {
+            "user": "astryst",
+            "user_id": 9612440,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7596278769,
+            "rank": "B",
+            "accuracy": 0.8521739130434782,
+            "pp": 74.139,
+            "mods": [
+              "DT"
+            ],
+            "combo": 124,
+            "created_at": "2026-09-30T05:26:54Z",
+            "beatmapset": {
+              "id": 816264,
+              "title": "MY REZHEM KINOLENTY (feat. Cut The Crap)",
+              "cover": "https://assets.ppy.sh/beatmaps/816264/covers/card.jpg?1622143933",
+              "stars": 3.65359
+            }
+          },
+          {
+            "user": "astryst",
+            "user_id": 9612440,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7596276768,
+            "rank": "B",
+            "accuracy": 0.8608695652173913,
+            "pp": 30.3208,
+            "mods": [],
+            "combo": 125,
+            "created_at": "2026-09-30T05:26:15Z",
+            "beatmapset": {
+              "id": 816264,
+              "title": "MY REZHEM KINOLENTY (feat. Cut The Crap)",
+              "cover": "https://assets.ppy.sh/beatmaps/816264/covers/card.jpg?1622143933",
+              "stars": 3.65359
+            }
+          },
+          {
+            "user": "astryst",
+            "user_id": 9612440,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7596265598,
+            "rank": "C",
+            "accuracy": 0.8534031413612565,
+            "pp": 49.2481,
+            "mods": [],
+            "combo": 105,
+            "created_at": "2026-09-30T05:22:31Z",
+            "beatmapset": {
+              "id": 2295884,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
+              "stars": 4.25257
+            }
+          },
+          {
+            "user": "astryst",
+            "user_id": 9612440,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7596260210,
+            "rank": "B",
+            "accuracy": 0.8848167539267016,
+            "pp": 51.9244,
+            "mods": [],
+            "combo": 94,
+            "created_at": "2026-09-30T05:20:43Z",
+            "beatmapset": {
+              "id": 2295884,
+              "title": "Pretty Little Psycho (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2295884/covers/card.jpg?1751383816",
+              "stars": 4.25257
+            }
+          },
+          {
+            "user": "astryst",
+            "user_id": 9612440,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7596252455,
+            "rank": "C",
+            "accuracy": 0.7546063651591289,
+            "pp": 53.242,
+            "mods": [],
+            "combo": 140,
+            "created_at": "2026-09-30T05:18:07Z",
+            "beatmapset": {
+              "id": 1280506,
+              "title": "WONDERFUL WONDER (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1280506/covers/card.jpg?1645786525",
+              "stars": 4.92603
+            }
+          },
+          {
+            "user": "astryst",
+            "user_id": 9612440,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7596239705,
+            "rank": "C",
+            "accuracy": 0.8031825795644891,
+            "pp": 66.7512,
+            "mods": [],
+            "combo": 85,
+            "created_at": "2026-09-30T05:13:50Z",
+            "beatmapset": {
+              "id": 1280506,
+              "title": "WONDERFUL WONDER (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1280506/covers/card.jpg?1645786525",
+              "stars": 4.92603
+            }
+          },
+          {
+            "user": "astryst",
+            "user_id": 9612440,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7596232950,
+            "rank": "C",
+            "accuracy": 0.8190954773869347,
+            "pp": 53.2177,
+            "mods": [],
+            "combo": 143,
+            "created_at": "2026-09-30T05:11:32Z",
+            "beatmapset": {
+              "id": 1280506,
+              "title": "WONDERFUL WONDER (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1280506/covers/card.jpg?1645786525",
+              "stars": 4.92603
+            }
+          },
+          {
+            "user": "astryst",
+            "user_id": 9612440,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7596202312,
+            "rank": "C",
+            "accuracy": 0.8376906318082789,
+            "pp": 49.4547,
+            "mods": [],
+            "combo": 143,
+            "created_at": "2026-09-30T05:01:12Z",
+            "beatmapset": {
+              "id": 527431,
+              "title": "Gravity Falls Theme Song",
+              "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+              "stars": 4.23563
+            }
+          },
+          {
+            "user": "astryst",
+            "user_id": 9612440,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7596199878,
+            "rank": "C",
+            "accuracy": 0.7396514161220044,
+            "pp": 43.995,
+            "mods": [],
+            "combo": 141,
+            "created_at": "2026-09-30T05:00:24Z",
+            "beatmapset": {
+              "id": 527431,
+              "title": "Gravity Falls Theme Song",
+              "cover": "https://assets.ppy.sh/beatmaps/527431/covers/card.jpg?1645788302",
+              "stars": 4.23563
+            }
+          },
+          {
+            "user": "astryst",
+            "user_id": 9612440,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7596197422,
+            "rank": "C",
+            "accuracy": 0.7730263157894737,
+            "pp": 37.7397,
+            "mods": [],
+            "combo": 134,
+            "created_at": "2026-09-30T04:59:36Z",
+            "beatmapset": {
+              "id": 2543417,
+              "title": "good 4 u (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2543417/covers/card.jpg?1778547204",
+              "stars": 4.56925
+            }
+          },
+          {
+            "user": "astryst",
+            "user_id": 9612440,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7596194621,
+            "rank": "C",
+            "accuracy": 0.7983014861995754,
+            "pp": 39.5781,
+            "mods": [],
+            "combo": 80,
+            "created_at": "2026-09-30T04:58:37Z",
+            "beatmapset": {
+              "id": 2543417,
+              "title": "good 4 u (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2543417/covers/card.jpg?1778547204",
+              "stars": 4.39945
+            }
+          },
+          {
+            "user": "astryst",
+            "user_id": 9612440,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7596183431,
+            "rank": "C",
+            "accuracy": 0.768640350877193,
+            "pp": 34.8259,
+            "mods": [],
+            "combo": 152,
+            "created_at": "2026-09-30T04:54:53Z",
+            "beatmapset": {
+              "id": 2543417,
+              "title": "good 4 u (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2543417/covers/card.jpg?1778547204",
+              "stars": 4.56925
+            }
+          },
+          {
+            "user": "astryst",
+            "user_id": 9612440,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7596180054,
+            "rank": "B",
+            "accuracy": 0.868421052631579,
+            "pp": 50.1509,
+            "mods": [],
+            "combo": 114,
+            "created_at": "2026-09-30T04:53:44Z",
+            "beatmapset": {
+              "id": 2543417,
+              "title": "good 4 u (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2543417/covers/card.jpg?1778547204",
+              "stars": 4.56925
+            }
+          },
+          {
+            "user": "astryst",
+            "user_id": 9612440,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7596175354,
+            "rank": "C",
+            "accuracy": 0.7795358649789029,
+            "pp": 29.5514,
+            "mods": [],
+            "combo": 96,
+            "created_at": "2026-09-30T04:52:10Z",
+            "beatmapset": {
+              "id": 750458,
+              "title": "Spider Dance",
+              "cover": "https://assets.ppy.sh/beatmaps/750458/covers/card.jpg?1650661035",
+              "stars": 4.31871
+            }
+          },
+          {
+            "user": "astryst",
+            "user_id": 9612440,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7596166019,
+            "rank": "C",
+            "accuracy": 0.8083028083028083,
+            "pp": 33.7185,
+            "mods": [],
+            "combo": 134,
+            "created_at": "2026-09-30T04:49:05Z",
+            "beatmapset": {
+              "id": 873811,
+              "title": "quaver",
+              "cover": "https://assets.ppy.sh/beatmaps/873811/covers/card.jpg?1650672502",
+              "stars": 4.73308
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Time to Say Goodbye (TV Size)",
+        "cover": "https://assets.ppy.sh/beatmaps/2285243/covers/card.jpg?1736632238",
+        "unique_players": 16
       }
     }
   }

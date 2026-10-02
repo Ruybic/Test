@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 213,
-    "longest": 213,
-    "last_updated": "2026-09-30"
+    "current": 214,
+    "longest": 214,
+    "last_updated": "2026-10-01"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -64629,6 +64629,337 @@
         "title": "Time to Say Goodbye (TV Size)",
         "cover": "https://assets.ppy.sh/beatmaps/2285243/covers/card.jpg?1736632238",
         "unique_players": 16
+      }
+    },
+    "2026-10-01": {
+      "total_scores": 735,
+      "peak_hour_baghdad": 17,
+      "top_grinder": {
+        "user": "0ilen",
+        "user_id": 25015591,
+        "count": 65,
+        "scores": [
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7597860973,
+            "rank": "B",
+            "accuracy": 0.9275037369207773,
+            "pp": 295.347,
+            "mods": [
+              "DT"
+            ],
+            "combo": 225,
+            "created_at": "2026-09-30T12:51:23Z",
+            "beatmapset": {
+              "id": 2445174,
+              "title": "Sunshine (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+              "stars": 4.93066
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7597855462,
+            "rank": "B",
+            "accuracy": 0.8811659192825112,
+            "pp": 202.94,
+            "mods": [
+              "DT"
+            ],
+            "combo": 125,
+            "created_at": "2026-09-30T12:50:22Z",
+            "beatmapset": {
+              "id": 2445174,
+              "title": "Sunshine (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+              "stars": 4.93066
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7597850706,
+            "rank": "B",
+            "accuracy": 0.8781763826606876,
+            "pp": 218.566,
+            "mods": [
+              "DT"
+            ],
+            "combo": 151,
+            "created_at": "2026-09-30T12:49:31Z",
+            "beatmapset": {
+              "id": 2445174,
+              "title": "Sunshine (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+              "stars": 4.93066
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7597845888,
+            "rank": "B",
+            "accuracy": 0.9112081513828238,
+            "pp": 308.675,
+            "mods": [
+              "DT"
+            ],
+            "combo": 212,
+            "created_at": "2026-09-30T12:48:36Z",
+            "beatmapset": {
+              "id": 2445174,
+              "title": "Sunshine (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+              "stars": 5.08595
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7597841585,
+            "rank": "B",
+            "accuracy": 0.8981077147016011,
+            "pp": 282.331,
+            "mods": [
+              "DT"
+            ],
+            "combo": 125,
+            "created_at": "2026-09-30T12:47:49Z",
+            "beatmapset": {
+              "id": 2445174,
+              "title": "Sunshine (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+              "stars": 5.08595
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7597830957,
+            "rank": "B",
+            "accuracy": 0.9141193595342066,
+            "pp": 293.6,
+            "mods": [
+              "DT"
+            ],
+            "combo": 247,
+            "created_at": "2026-09-30T12:45:49Z",
+            "beatmapset": {
+              "id": 2445174,
+              "title": "Sunshine (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+              "stars": 5.08595
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7597826944,
+            "rank": "B",
+            "accuracy": 0.8631732168850073,
+            "pp": 214.241,
+            "mods": [
+              "DT"
+            ],
+            "combo": 155,
+            "created_at": "2026-09-30T12:45:03Z",
+            "beatmapset": {
+              "id": 2445174,
+              "title": "Sunshine (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+              "stars": 5.08595
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7597814127,
+            "rank": "B",
+            "accuracy": 0.9025974025974026,
+            "pp": 261.109,
+            "mods": [
+              "DT"
+            ],
+            "combo": 116,
+            "created_at": "2026-09-30T12:42:37Z",
+            "beatmapset": {
+              "id": 2445174,
+              "title": "Sunshine (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+              "stars": 5.15456
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7597807618,
+            "rank": "B",
+            "accuracy": 0.8961038961038961,
+            "pp": 269.837,
+            "mods": [
+              "DT"
+            ],
+            "combo": 210,
+            "created_at": "2026-09-30T12:41:24Z",
+            "beatmapset": {
+              "id": 2445174,
+              "title": "Sunshine (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+              "stars": 5.15456
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7597802273,
+            "rank": "B",
+            "accuracy": 0.9177489177489178,
+            "pp": 296.939,
+            "mods": [
+              "DT"
+            ],
+            "combo": 285,
+            "created_at": "2026-09-30T12:40:23Z",
+            "beatmapset": {
+              "id": 2445174,
+              "title": "Sunshine (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+              "stars": 5.15456
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7597797439,
+            "rank": "B",
+            "accuracy": 0.9163059163059163,
+            "pp": 311.166,
+            "mods": [
+              "DT"
+            ],
+            "combo": 224,
+            "created_at": "2026-09-30T12:39:28Z",
+            "beatmapset": {
+              "id": 2445174,
+              "title": "Sunshine (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+              "stars": 5.15456
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7597793016,
+            "rank": "B",
+            "accuracy": 0.8744588744588745,
+            "pp": 237.155,
+            "mods": [
+              "DT"
+            ],
+            "combo": 83,
+            "created_at": "2026-09-30T12:38:38Z",
+            "beatmapset": {
+              "id": 2445174,
+              "title": "Sunshine (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+              "stars": 5.15456
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7597788636,
+            "rank": "B",
+            "accuracy": 0.8845598845598845,
+            "pp": 251.955,
+            "mods": [
+              "DT"
+            ],
+            "combo": 140,
+            "created_at": "2026-09-30T12:37:48Z",
+            "beatmapset": {
+              "id": 2445174,
+              "title": "Sunshine (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+              "stars": 5.15456
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7597781343,
+            "rank": "B",
+            "accuracy": 0.8744588744588745,
+            "pp": 218.869,
+            "mods": [
+              "DT"
+            ],
+            "combo": 130,
+            "created_at": "2026-09-30T12:36:24Z",
+            "beatmapset": {
+              "id": 2445174,
+              "title": "Sunshine (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+              "stars": 5.15456
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7597776947,
+            "rank": "B",
+            "accuracy": 0.8701298701298701,
+            "pp": 225.959,
+            "mods": [
+              "DT"
+            ],
+            "combo": 199,
+            "created_at": "2026-09-30T12:35:35Z",
+            "beatmapset": {
+              "id": 2445174,
+              "title": "Sunshine (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+              "stars": 5.15456
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Sunshine (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
+        "unique_players": 18
       }
     }
   }

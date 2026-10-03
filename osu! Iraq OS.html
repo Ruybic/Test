@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>osu! Iraq OS</title>
+<link rel="icon" href="https://i.imgur.com/Zgd9kDC.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16324f;--face:#e3ecf4;--face2:#cfdce8;--hi:#fff;--lo:#7d93a8;--t1:#1b4f94;--t2:#74a9de;--pink:#e0388a;--desk1:#2d6aa3;--desk2:#8ec1e8;--bar:#d5e2ee;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#dbe8f5;--face:#26384b;--face2:#1d2d3d;--hi:#4a6179;--lo:#0d1722;--t1:#0e2f5c;--t2:#3c6ea8;--desk1:#10243a;--desk2:#2b5a8a;--bar:#1b2c3d}}
+:root[data-theme="dark"]{--ink:#dbe8f5;--face:#26384b;--face2:#1d2d3d;--hi:#4a6179;--lo:#0d1722;--t1:#0e2f5c;--t2:#3c6ea8;--desk1:#10243a;--desk2:#2b5a8a;--bar:#1b2c3d}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;overflow:hidden}
+body{background:#2d6aa3;font:13px/1.35 Lato,Tahoma,Verdana,sans-serif;color:var(--ink);user-select:none}
+#os{position:fixed;inset:0;background:radial-gradient(ellipse at 70% 10%,var(--desk2),var(--desk1) 70%);overflow:hidden}
+#os:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.06) 0 1px,transparent 1px 4px);pointer-events:none}
+.bev,.btn,.bar button,.bar select,.bar input,.tb button,#start,#sd2,#tasks button{border:2px solid;border-color:var(--hi) var(--lo) var(--lo) var(--hi)}
+.sunk{border:2px solid;border-color:var(--lo) var(--hi) var(--hi) var(--lo)}
+button,select,input{font:700 12px Lato;color:var(--ink);background:var(--face)}
+#desk{position:absolute;inset:0 0 38px 0}
+.ic{position:absolute;width:84px;height:86px;display:flex;flex-direction:column;align-items:center;gap:3px;color:#fff;text-shadow:0 1px 2px #000;font-weight:700;cursor:pointer;padding-top:4px;border-radius:4px;border:1px dashed transparent;touch-action:none}
+.ic:hover,.ic:focus,.ic.sel{background:rgba(255,255,255,.18);border-color:#fff8;outline:0}
+.ic i{font-style:normal;font-size:28px;width:46px;height:42px;display:grid;place-items:center;border-radius:9px;background:linear-gradient(#fff,#bcd5ec);box-shadow:0 2px 4px #0006,inset 0 0 0 2px #fff8}
+.ic span{font-size:12px;text-align:center}
+.ic.drag{opacity:.8;z-index:99;cursor:grabbing}.ic.hot i{outline:3px dashed #ff0;transform:scale(1.2)}
+.ic.pop{animation:pop .7s}@keyframes pop{0%{transform:scale(0) rotate(-25deg)}60%{transform:scale(1.3)}100%{transform:none}}
+#wins{position:absolute;inset:0 0 38px 0;pointer-events:none}
+.win{position:absolute;pointer-events:auto;background:var(--face);display:flex;flex-direction:column;box-shadow:4px 6px 0 rgba(0,20,50,.3);max-width:100vw;max-height:calc(100% - 2px);min-width:260px;min-height:160px}
+.win.min{display:none}
+.tb{display:flex;align-items:center;gap:5px;padding:3px 4px 3px 6px;color:#fff;font-weight:900;background:linear-gradient(90deg,var(--t1),var(--t2));cursor:grab;touch-action:none}
+.tb b{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 0 #0006}
+.tb button{width:22px;height:20px;padding:0;cursor:pointer}
+.bd{flex:1;min-height:0;display:flex;flex-direction:column;margin:3px;background:var(--face2) repeating-linear-gradient(0deg,transparent 0 3px,rgba(120,150,180,.12) 3px 4px);overflow:hidden}
+.win.max{left:0!important;top:0!important;width:100%!important;height:100%!important}
+.rz{position:absolute;z-index:5}
+.rz[data-d=n],.rz[data-d=s]{left:10px;right:10px;height:8px;cursor:ns-resize}.rz[data-d=n]{top:-4px}.rz[data-d=s]{bottom:-4px}
+.rz[data-d=e],.rz[data-d=w]{top:10px;bottom:10px;width:8px;cursor:ew-resize}.rz[data-d=e]{right:-4px}.rz[data-d=w]{left:-4px}
+.rz[data-d$=e],.rz[data-d$=w]{width:14px;height:14px}.rz[data-d=ne],.rz[data-d=nw]{top:-5px}.rz[data-d=se],.rz[data-d=sw]{bottom:-5px;top:auto}
+.rz[data-d=ne]{right:-5px;cursor:nesw-resize}.rz[data-d=sw]{left:-5px;cursor:nesw-resize}.rz[data-d=nw]{left:-5px;cursor:nwse-resize}.rz[data-d=se]{right:-5px;cursor:nwse-resize}
+.bar{display:flex;gap:6px;align-items:center;padding:5px;background:var(--bar);flex-wrap:wrap;border-bottom:1px solid var(--lo)}
+.bar button,.bar select,.bar input,.btn{padding:3px 9px;cursor:pointer;text-decoration:none;display:inline-block}
+.bar input[type=search]{width:110px}.sp{flex:1}.cnt{font-weight:700;opacity:.75}
+.list{flex:1;overflow:auto;padding:5px;display:flex;flex-direction:column;gap:5px;user-select:text}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:4px;background:var(--face);color:inherit;text-decoration:none;cursor:pointer}.row:hover{background:var(--hi)}
+.row .cv{width:76px;height:48px;flex:none}
+.av{width:30px;height:30px;border-radius:50%;flex:none;border:2px solid var(--hi)}
+.m{flex:1;min-width:0}.m b,.m small{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.m small{opacity:.8}
+.dt{width:100%;padding:5px 8px;background:var(--bar);font-size:12px;line-height:1.7}.dt a{color:var(--pink);font-weight:900}
+.pp{font-weight:900;color:var(--pink);font-size:15px;text-align:right}.pp small{display:block;color:var(--ink);font-size:11px}
+.rk{display:inline-block;min-width:18px;text-align:center;font-weight:900;background:var(--t1);color:#fff;padding:0 4px;margin-right:4px}
+.md{padding:0 5px;color:#fff;font-size:9px;font-weight:900;display:inline-block;line-height:15px}
+.msg{padding:22px;text-align:center;font-weight:700}
+.cv{position:relative;overflow:hidden;background:linear-gradient(135deg,hsl(var(--h,210) 60% 55%),hsl(calc(var(--h,210) + 40) 60% 38%));display:grid;place-items:center;color:#fff;font-weight:900}
+.cv:before{content:attr(data-l)}.cv img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.cv.big{height:110px;font-size:40px}
+.cal{padding:10px;display:grid;grid-template-columns:repeat(7,1fr);gap:3px;text-align:center}.cal u{text-decoration:none;font-weight:900;opacity:.6;font-size:11px}
+.cal span{padding:7px 0;opacity:.35}.cal span.has{opacity:1;cursor:pointer;background:var(--face);border:2px solid;border-color:var(--hi) var(--lo) var(--lo) var(--hi);font-weight:900}
+.cal span.has:hover,.cal span.sel{background:var(--pink);color:#fff}
+.hero{padding:10px 12px;color:#fff;background:linear-gradient(90deg,var(--t1),var(--pink));font-weight:900;font-size:16px;text-shadow:1px 1px 0 #0006}
+.card{display:flex;gap:10px;align-items:center;padding:7px;background:var(--face)}.card .m small{white-space:normal}
+.card>i{font-style:normal;font-size:26px;width:46px;height:46px;flex:none;display:grid;place-items:center;background:linear-gradient(#fff,#bcd5ec);border-radius:9px;box-shadow:inset 0 0 0 2px #fff8}
+.act{width:120px;text-align:right;flex:none}.act small{display:block}
+.pg{height:14px;background:var(--lo);padding:2px;margin-bottom:2px}.pg b{display:block;height:100%;background:repeating-linear-gradient(90deg,var(--pink) 0 8px,transparent 8px 10px)}
+.fly{position:fixed;z-index:99999;font-size:30px;pointer-events:none}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}.stats div{background:var(--face);text-align:center;padding:6px;font-size:11px}.stats b{display:block;font-size:20px;color:var(--pink)}
+.b2{display:grid;grid-template-columns:70px 1fr 30px;align-items:center;gap:6px;margin-top:4px}.b2 i{height:10px;display:block}
+.doc{user-select:text;line-height:1.55;padding:12px 16px;background:var(--hi);margin:5px;flex:1;overflow:auto}.doc h4{margin:12px 0 2px;color:var(--pink)}.doc h3{margin:0}
+iframe{flex:1;border:0;background:#000;width:100%}
+.motd{display:flex;gap:7px;align-items:center;cursor:pointer;padding:2px 8px 2px 3px;height:30px;background:var(--face)}
+.motd .cv{width:36px;height:24px;flex:none}.motd small{display:block;font-size:9px;font-weight:900;color:var(--pink);text-transform:uppercase;line-height:1}
+.motd b{display:block;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:150px}
+#hm{display:none}
+#tray{position:absolute;left:0;right:0;bottom:0;height:38px;background:var(--face);display:flex;gap:4px;align-items:center;padding:3px;border-top:2px solid var(--hi);z-index:9999}
+#start,#sd2{font:900 14px Lato;display:flex;gap:6px;align-items:center;height:100%;cursor:pointer;color:var(--ink);background:var(--face);padding:2px 10px 2px 4px}#sd2{padding:2px 8px}
+#start img{height:22px;border-radius:5px}
+#tasks{flex:1;display:flex;gap:4px;overflow:hidden}
+#tasks button{max-width:150px;flex:1;height:28px;cursor:pointer;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#tasks button.on{border-color:var(--lo) var(--hi) var(--hi) var(--lo);background:var(--hi)}
+#clock{padding:4px 10px;font-weight:700;height:28px}
+#smenu{position:absolute;left:3px;bottom:40px;width:310px;max-height:calc(100% - 50px);overflow:auto;background:var(--face);display:none;z-index:10000;box-shadow:4px 4px 0 #0004}#smenu.on{display:block}
+.sh{display:flex;gap:10px;align-items:center;padding:10px;color:#fff;background:linear-gradient(135deg,var(--t1),var(--pink))}.sh img{height:38px;border-radius:8px}.sh small{display:block;opacity:.9}
+.sx{padding:8px 10px;border-bottom:1px solid var(--lo)}.sx>small{display:block;font-weight:900;color:var(--pink);font-size:10px;margin-bottom:3px}
+.sx .row{padding:3px;gap:6px;flex-wrap:nowrap}.sx .row .cv{width:44px;height:30px}.sx .pp{font-size:13px}
+.sa{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:8px}.sa button{padding:7px;cursor:pointer;border:2px solid;border-color:var(--hi) var(--lo) var(--lo) var(--hi)}.sa button:hover{background:var(--t1);color:#fff}
+#status,#nav{display:none}
+@media(max-width:760px),(pointer:coarse) and (max-width:900px){
+ #os{display:flex;flex-direction:column}
+ #status{display:flex;justify-content:space-between;padding:4px 12px;height:26px;align-items:center;color:#fff;font-weight:900;font-size:12px;background:#0b1f36cc;position:relative;z-index:9998;flex:none}
+ #hm{display:flex;margin:12px 12px 0;height:64px;padding:6px;gap:10px;position:relative;z-index:2}#hm .cv{width:76px;height:50px}#hm b{max-width:none;font-size:14px}
+ #desk{position:static;flex:1;display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:96px;padding:16px 8px;gap:8px 2px;align-content:start;overflow:auto;position:relative}
+ .ic{position:relative!important;left:auto!important;top:auto!important;width:auto;height:auto;border:0}.ic i{width:56px;height:56px;font-size:32px;border-radius:14px}.ic:active{transform:scale(.92)}
+ #wins{inset:26px 0 44px 0;z-index:50}
+ .win{left:0!important;top:0!important;width:100%!important;height:100%!important;max-height:none;box-shadow:none;border:0}.win:not(.top){display:none}
+ .tb{cursor:default}.tb button[data-a=m],.rz{display:none}
+ #tray,#smenu{display:none!important}
+ #nav{display:flex;justify-content:space-around;align-items:center;height:44px;flex:none;background:#0b1f36;position:relative;z-index:9998}
+ #nav button{background:none;border:0;color:#fff;font-size:22px;width:80px;height:100%;cursor:pointer}
+ .act{width:100px}
+}
+</style>
+</head>
+<body>
+<div id="os">
+ <div id="status"><span id="sclock">--:--</span><span>osu!OS ▂▄▆ 📶 🔋</span></div>
+ <div id="hm" class="motd bev"></div>
+ <div id="desk"></div>
+ <div id="wins"></div>
+ <div id="smenu" class="bev"></div>
+ <div id="tray"><button id="start"><img src="https://i.imgur.com/Zgd9kDC.jpg" alt="">Start</button><button id="sd2" title="Hide all windows">🖥</button><div id="tasks"></div><div id="tbm" class="motd bev" title="Open Community"></div><div id="clock" class="sunk">--:--</div></div>
+ <div id="nav"><button id="bBack" aria-label="Back">◀</button><button id="bHome" aria-label="Home">●</button><button id="bRec" aria-label="Close all">■</button></div>
+</div>
+<script>
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const MODES={osu:'Standard',taiko:'Taiko',fruits:'Catch',mania:'Mania'},MC={osu:'#e0388a',taiko:'#d93a4a',fruits:'#2e9e6b',mania:'#2f7fd1'};
+const S={date:null,scores:[],demo:false,avail:new Set(),mode:'all',q:'',loading:false,A:null},D={},W={};
+let ST={inst:[],bin:[],pos:{}};try{ST={...ST,...JSON.parse(localStorage.getItem('osuos1')||'{}')}}catch(e){}
+const save=()=>{try{localStorage.setItem('osuos1',JSON.stringify(ST))}catch(e){}};
+const pad=n=>String(n).padStart(2,'0'),key=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const hue=s=>[...String(s)].reduce((a,c)=>(a*31+c.charCodeAt(0))&0xffff,7)%360,rd=Math.round;
+const fAcc=a=>a==null?'':((a>1?a:a*100).toFixed(2)+'%');
+const cv=(b,c='')=>`<div class="cv ${c}" style="--h:${hue(b.title)}" data-l="${esc((b.title||'?')[0])}">${b.cover?`<img loading="lazy" src="${esc(b.cover)}" alt="" onerror="this.remove()">`:''}</div>`;
+const mt=m=>`<span class="md" style="background:${MC[m]||MC.osu}">${(MODES[m]||'Standard').toUpperCase()}</span>`;
+const av=id=>`<img class="av" src="https://a.ppy.sh/${esc(id)}" alt="" onerror="this.style.visibility='hidden'">`;
+let AC;const beep=(f,d)=>{try{AC??=new(window.AudioContext||webkitAudioContext)();const o=AC.createOscillator(),g=AC.createGain();o.type='square';o.frequency.value=f;g.gain.value=.04;o.connect(g);g.connect(AC.destination);o.start();o.stop(AC.currentTime+d)}catch(e){}};
+const DEMO=[['Hyunj',412.7,'osu','SS','Secret Love Song'],['Dijla',288.1,'taiko','S','Kokiatsu'],['Basra',301.4,'mania','A','Moonlight Sonata'],['Mosul',190.9,'fruits','S','Blue Zenith'],['Hyunj',250.2,'osu','S','Secret Love Song'],['Erbil',330.5,'osu','SS','Secret Love Song']].map((x,i)=>({score_id:i+1,user:x[0],user_id:i+2,mode:x[2],pp:x[1],accuracy:.97+i/300,rank:x[3],country:'IQ',stars:5.4,mods:i%2?['HD']:[],beatmapset:{id:x[4],title:x[4],cover:''}}));
+
+/* ───── DATA ───── */
+function agg(){const P={},M={},Mo={};let pp=0;
+ S.scores.forEach(s=>{const m=s.mode||'osu',b=s.beatmapset||{},p=P[s.user]??={name:s.user,id:s.user_id,n:0,pp:0,best:0,acc:0,cc:s.country};
+  p.n++;p.pp+=s.pp||0;p.best=Math.max(p.best,s.pp||0);p.acc+=(s.accuracy>1?s.accuracy/100:s.accuracy)||0;
+  const x=M[(b.id||b.title)+'|'+m]??={b,mode:m,n:0,top:s,ps:new Set()};x.n++;x.ps.add(s.user);if(s.pp>x.top.pp)x.top=s;Mo[m]=(Mo[m]||0)+1;pp+=s.pp||0});
+ const ms=Object.values(M).sort((a,b)=>b.n-a.n||b.top.pp-a.top.pp);S.A={ps:Object.values(P),ms,Mo,pp,motd:ms[0]}}
+async function load(ds){S.date=ds;S.loading=true;sync();const[y,m,d]=ds.split('-');
+ try{const r=await fetch(`data/${y}/${m}/${d}.json?t=${Date.now()}`);if(!r.ok)throw 0;S.scores=((await r.json()).scores||[]).sort((a,b)=>b.pp-a.pp);S.demo=false}
+ catch(e){S.scores=ds===key(new Date())&&!S.avail.size?DEMO:[];S.demo=S.scores===DEMO}
+ S.loading=false;agg();motd();sync()}
+async function loadIndex(){try{const r=await fetch('data/index.json?t='+Date.now());if(r.ok){const j=await r.json();(j.dates||j.available_dates||Object.keys(j)).forEach(d=>S.avail.add(d));sync()}}catch(e){}}
+function motd(){const m=S.A&&S.A.motd,h=m?`${cv(m.b)}<div><small>Map of the day</small><b>${esc(m.b.title)}</b></div>${mt(m.mode)}<small>${m.n}×</small>`:`<div><small>Map of the day</small><b>No plays yet</b></div>`;$('#tbm').innerHTML=$('#hm').innerHTML=h}
+
+/* ───── APPS ───── */
+const jsonApp=(f,head,empty,row,click)=>bd=>{bd.innerHTML=`<div class="bar"><b>${head}</b></div><div class="list"><div class="msg">Loading…</div></div>`;const ls=$('.list',bd);
+ fetch(f+'?t='+Date.now()).then(r=>r.ok?r.json():Promise.reject()).then(j=>{const a=Array.isArray(j)?j:j.items||[];ls.innerHTML=a.length?a.map(row).join(''):`<div class="msg">${empty}</div>`;if(click)ls.onclick=e=>click(e,bd)}).catch(()=>ls.innerHTML=`<div class="msg">${empty}</div>`)};
+const SYS={
+ store:{name:'Store',ico:'🛒',w:540,h:560,build(bd){
+  bd.innerHTML='<div class="hero">🛒 osu!OS Store <small style="font-weight:400">· free downloads · 56k friendly</small></div><div class="list"></div>';const ls=$('.list',bd);
+  ls.onclick=e=>{const b=e.target.closest('button');if(!b)return;const id=b.dataset.id,a=b.dataset.a;a=='get'?get(id):a=='open'?openApp(id):trash(id)};
+  return()=>{ls.innerHTML=Object.entries(CAT).map(([id,a])=>{const d=D[id],on=ST.inst.includes(id);
+   const act=d?`<div class="pg"><b style="width:${d.p}%"></b></div><small>${d.t}</small>`:on?`<button class="btn" data-a="open" data-id="${id}">Open</button> <button class="btn" data-a="rm" data-id="${id}" title="Move to Recycle Bin">🗑</button>`:`<button class="btn" data-a="get" data-id="${id}">⬇ Get</button>`;
+   return `<div class="card"><i data-ic="${id}">${a.ico}</i><div class="m"><b>${a.name}${a.star?' <span class="md" style="background:var(--pink)">START HERE</span>':''}</b><small>${a.kb} KB · ★★★★☆</small><small>${a.desc}</small></div><div class="act">${act}</div></div>`}).join('')}}},
+ bin:{name:'Recycle Bin',ico:'🗑️',w:420,h:360,build(bd){
+  bd.innerHTML='<div class="bar"><button id="em">🔥 Empty Bin</button><span class="sp"></span><span class="cnt"></span></div><div class="list"></div>';const ls=$('.list',bd);
+  $('#em',bd).onclick=()=>{ST.bin=[];save();renderDesk();sync()};
+  ls.onclick=e=>{const b=e.target.closest('button');if(!b)return;const id=b.dataset.id;ST.bin=ST.bin.filter(x=>x!=id);if(b.dataset.a=='rs')ST.inst.push(id);save();renderDesk();sync()};
+  return()=>{$('.cnt',bd).textContent=ST.bin.length+' item(s)';ls.innerHTML=ST.bin.length?ST.bin.map(id=>`<div class="card"><i>${CAT[id].ico}</i><div class="m"><b>${CAT[id].name}</b><small>Deleted app</small></div><button class="btn" data-a="rs" data-id="${id}">Restore</button><button class="btn" data-a="del" data-id="${id}">Delete</button></div>`).join(''):'<div class="msg">🗑️ The bin is empty.<br>Drag an app icon here to uninstall it.</div>'}}}
+};
+const CAT={
+ docs:{name:'Documentation',ico:'📖',star:1,w:460,h:480,kb:24,desc:'How osu!OS works: icons, windows, store and data files.',build(bd){bd.innerHTML=`<div class="doc"><h3>📖 osu!OS Manual</h3><small>README.TXT · v1.0</small>
+<h4>Desktop</h4>Drag icons anywhere. Double-click (tap on phones) to open. Drag an app onto ♻ Recycle Bin to uninstall it; restore it later from the bin or re-download it from the Store.
+<h4>Windows</h4>Drag the title bar to move. Drag any edge or corner to resize. <b>–</b> hides a window (reopen it from its icon or the taskbar), <b>▭</b> maximizes, <b>✕</b> closes.
+<h4>Store</h4>Everything lives in the Store: Scores, Archive, Rankings, Mapping, Community, Videos, Socials. Hit <b>Get</b> and watch the download.
+<h4>Taskbar</h4>The Map of the Day (most played beatmap and its mode) sits next to the clock. Click it for Community. 🖥 hides every window. Start shows today's stats and top plays.
+<h4>Phone mode</h4>On small screens the OS becomes a retro Android: home screen widget, fullscreen apps, ◀ back, ● home, ■ close all.
+<h4>Data files</h4><code>data/YYYY/MM/DD.json</code> {scores:[…]} · <code>data/index.json</code> {dates:[…]} · <code>data/videos.json</code> [{title,id,by}] (YouTube ids) · <code>data/socials.json</code> [{name,url,desc,ico}]</div>`}},
+ scores:{name:'Scores',ico:'🎯',w:580,h:540,kb:312,desc:'Daily score feed with search, mode filter and per-play details.',build(bd){
+  bd.innerHTML=`<div class="bar"><button id="pv">◀</button><input type="date" id="dt"><button id="nx">▶</button><select id="md"><option value="all">All modes</option>${Object.entries(MODES).map(([k,v])=>`<option value="${k}">${v}</option>`).join('')}</select><input type="search" id="q" placeholder="Search…"><span class="sp"></span><span class="cnt"></span></div><div class="list"></div>`;
+  const shift=n=>{const d=new Date(S.date+'T12:00');d.setDate(d.getDate()+n);load(key(d))},ls=$('.list',bd);
+  $('#pv',bd).onclick=()=>shift(-1);$('#nx',bd).onclick=()=>shift(1);$('#dt',bd).onchange=e=>e.target.value&&load(e.target.value);
+  $('#md',bd).onchange=e=>{S.mode=e.target.value;sync()};$('#q',bd).oninput=e=>{S.q=e.target.value.toLowerCase();sync()};
+  ls.onclick=e=>{const r=e.target.closest('.row');if(r&&!e.target.closest('a'))$('.dt',r).hidden=!$('.dt',r).hidden};
+  return()=>{$('#dt',bd).value=S.date||'';$('#md',bd).value=S.mode;if($('#q',bd)!==document.activeElement)$('#q',bd).value=S.q;
+   if(S.loading){ls.innerHTML='<div class="msg">⏳ Loading scores…</div>';return}
+   const f=S.scores.filter(s=>(S.mode=='all'||(s.mode||'osu')==S.mode)&&(!S.q||(s.user+' '+(s.beatmapset||{}).title).toLowerCase().includes(S.q)));
+   $('.cnt',bd).textContent=f.length+' scores'+(S.demo?' · demo':'');
+   if(!f.length){ls.innerHTML='<div class="msg">No scores recorded for this day.</div>';return}
+   ls.innerHTML=(S.demo?'<div class="msg" style="padding:6px">📁 Demo data — no <code>data/</code> folder found next to this file.</div>':'')+f.map(s=>{const b=s.beatmapset||{},st=b.stars??b.difficulty_rating??s.stars,m=s.mode||'osu';
+    return `<div class="row">${cv(b)}${av(s.user_id)}<div class="m"><b>${esc(b.title)}</b><small><span class="rk">${esc(s.rank)}</span>${esc(s.user)} ${s.country?'· '+esc(s.country):''}</small></div><div class="pp">${rd(s.pp)}pp<small>${fAcc(s.accuracy)}</small></div><div class="dt" hidden>${mt(m)} ${st!=null?'★'+Number(st).toFixed(2)+' · ':''}Mods: ${(s.mods||[]).join(' ')||'NM'}${s.created_at?' · '+new Date(s.created_at).toLocaleTimeString('en',{hour:'2-digit',minute:'2-digit'}):''} · <a target="_blank" href="https://osu.ppy.sh/scores/${esc(m)}/${esc(s.score_id)}">osu! ↗</a></div></div>`}).join('')}}},
+ archive:{name:'Archive',ico:'🗓️',w:340,h:410,kb:48,desc:'Calendar of every day with recorded scores.',build(bd){
+  let cur=new Date();cur.setDate(1);bd.innerHTML='<div class="bar"><button id="a1">◀</button><b id="mt" style="flex:1;text-align:center"></b><button id="a2">▶</button></div><div class="cal"></div><div class="msg" style="opacity:.7">Highlighted days have scores. Tap one to open it in Scores.</div>';
+  $('#a1',bd).onclick=()=>{cur.setMonth(cur.getMonth()-1);r()};$('#a2',bd).onclick=()=>{cur.setMonth(cur.getMonth()+1);r()};
+  function r(){const y=cur.getFullYear(),m=cur.getMonth(),n=new Date(y,m+1,0).getDate();$('#mt',bd).textContent=cur.toLocaleDateString('en',{month:'long',year:'numeric'});
+   $('.cal',bd).innerHTML='SMTWTFS'.split('').map(d=>`<u>${d}</u>`).join('')+'<span></span>'.repeat(new Date(y,m,1).getDay())+Array.from({length:n},(_,i)=>{const k=`${y}-${pad(m+1)}-${pad(i+1)}`;return `<span class="${S.avail.has(k)?'has':''} ${k==S.date?'sel':''}" data-d="${k}">${i+1}</span>`}).join('')}
+  $('.cal',bd).onclick=e=>{const k=e.target.dataset?.d;if(k&&S.avail.has(k)){load(k);openApp('scores')}};r();return r}},
+ rankings:{name:'Rankings',ico:'🏆',w:520,h:500,kb:96,desc:"Today's player leaderboard by total pp, best play or play count.",build(bd){
+  bd.innerHTML='<div class="bar"><b>Leaderboard</b><select id="so"><option value="pp">Total pp</option><option value="best">Best play</option><option value="n">Plays</option></select><span class="sp"></span><span class="cnt"></span></div><div class="list"></div>';let so='pp';
+  $('#so',bd).onchange=e=>{so=e.target.value;r()};const r=()=>{const ps=S.A?[...S.A.ps].sort((a,b)=>b[so]-a[so]):[];$('.cnt',bd).textContent=S.date||'';
+   $('.list',bd).innerHTML=ps.length?ps.map((p,i)=>`<div class="row"><span class="rk">${i+1}</span>${av(p.id)}<div class="m"><b>${esc(p.name)}</b><small>${p.n} plays · avg ${(p.acc/p.n*100).toFixed(2)}% ${p.cc?'· '+esc(p.cc):''}</small></div><div class="pp">${rd(so=='best'?p.best:p.pp)}pp<small>${so=='n'?p.n+' plays':'best '+rd(p.best)}</small></div></div>`).join(''):'<div class="msg">No players for this day.</div>'};return r}},
+ mapping:{name:'Mapping',ico:'🎼',w:520,h:500,kb:88,desc:"Every beatmap played today with play counts and top scorer.",build(bd){
+  bd.innerHTML='<div class="bar"><b>Beatmaps played</b><span class="sp"></span><span class="cnt"></span></div><div class="list"></div>';
+  return()=>{const ms=S.A?S.A.ms:[];$('.cnt',bd).textContent=ms.length+' maps';$('.list',bd).innerHTML=ms.length?ms.map(x=>`<div class="row">${cv(x.b)}<div class="m"><b>${esc(x.b.title)}</b><small>${mt(x.mode)} ${x.n} plays · ${x.ps.size} players</small></div><div class="pp">${rd(x.top.pp)}pp<small>${esc(x.top.user)}</small></div></div>`).join(''):'<div class="msg">No maps for this day.</div>'}}},
+ community:{name:'Community',ico:'🧑‍🤝‍🧑',w:480,h:540,kb:120,desc:'Daily grinders, mode split and the Map of the Day.',build(bd){
+  return()=>{const A=S.A,t=S.scores.length;if(!A||!t){bd.innerHTML='<div class="msg">No data for this day.</div>';return}
+   const m=A.motd,g=[...A.ps].sort((a,b)=>b.n-a.n).slice(0,6);
+   bd.innerHTML=`<div class="list"><div class="card" style="display:block">${cv(m.b,'big')}<b>★ Map of the Day — ${esc(m.b.title)}</b><br>${mt(m.mode)} ${m.n} plays · ${m.ps.size} players · top ${esc(m.top.user)} ${rd(m.top.pp)}pp</div>
+<div class="stats"><div class="bev"><b>${t}</b>scores</div><div class="bev"><b>${A.ps.length}</b>players</div><div class="bev"><b>${rd(A.pp)}</b>total pp</div></div>
+<div class="card" style="display:block"><b>Mode split</b>${Object.entries(A.Mo).map(([k,v])=>`<div class="b2"><span>${MODES[k]}</span><i style="width:${v/t*100}%;background:${MC[k]}"></i><em>${v}</em></div>`).join('')}</div>
+<div class="card" style="display:block"><b>Daily grinders</b>${g.map((p,i)=>`<div>${i+1}. ${esc(p.name)} — ${p.n} plays · ${rd(p.pp)}pp</div>`).join('')}</div></div>`}}},
+ videos:{name:'Videos',ico:'📺',w:560,h:480,kb:210,desc:'Gameplay highlights played inside the OS (data/videos.json).',
+  build:jsonApp('data/videos.json','Highlights','Add <code>data/videos.json</code> → [{title, id, by}] to fill this player.',x=>`<div class="row" data-v="${esc(x.id)}"><div class="cv" style="--h:${hue(x.title)}" data-l="▶"></div><div class="m"><b>${esc(x.title)}</b><small>${esc(x.by||'')}</small></div></div>`,
+  (e,bd)=>{const v=e.target.closest('[data-v]')?.dataset.v;if(!v)return;bd.innerHTML=`<div class="bar"><button id="bk">◀ Back</button></div><iframe allowfullscreen src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v)}"></iframe>`;$('#bk',bd).onclick=()=>CAT.videos.build(bd)})},
+ socials:{name:'Socials',ico:'💬',w:460,h:440,kb:36,desc:'Community links (data/socials.json).',
+  build:jsonApp('data/socials.json','Find the community','Add <code>data/socials.json</code> → [{name, url, desc, ico}] to fill this list.',x=>`<a class="row" target="_blank" rel="noopener" href="${/^https?:/.test(x.url)?esc(x.url):'#'}"><div class="cv" style="--h:${hue(x.name)}" data-l="${esc(x.ico||(x.name||'?')[0])}"></div><div class="m"><b>${esc(x.name)}</b><small>${esc(x.desc||'')}</small></div></a>`)}
+};
+const APPS={...SYS,...CAT};
+
+/* ───── STORE: DOWNLOADS ───── */
+function get(id){if(D[id])return;ST.bin=ST.bin.filter(x=>x!=id);D[id]={p:0,t:'📞 Dialing…'};beep(300,.08);const T=['📞 Dialing…','🔊 Handshake…','⬇ Downloading…','📦 Unpacking…','💾 Installing…'];
+ const iv=setInterval(()=>{const d=D[id];d.p=Math.min(100,d.p+2+Math.random()*7);d.t=T[Math.min(4,d.p/20|0)]+' '+(d.p|0)+'%';
+  if(d.p>=100){clearInterval(iv);delete D[id];ST.inst.push(id);save();renderDesk();fly(id);beep(660,.1);setTimeout(()=>beep(990,.16),120)}sync()},110)}
+function fly(id){const s=$(`[data-ic=${id}]`),sr=s?s.getBoundingClientRect():{left:innerWidth/2,top:innerHeight/2},t=$(`.ic[data-id=${id}]`);if(!t)return;t.style.visibility='hidden';const tr=t.getBoundingClientRect(),f=document.createElement('div');
+ f.className='fly';f.textContent=APPS[id].ico;f.style.cssText=`left:${sr.left}px;top:${sr.top}px`;document.body.append(f);const dx=tr.left-sr.left+19,dy=tr.top-sr.top+8;
+ f.animate([{transform:'none'},{transform:`translate(${dx/2}px,${dy/2-90}px) scale(2) rotate(180deg)`,offset:.5},{transform:`translate(${dx}px,${dy}px) rotate(360deg)`}],{duration:950,easing:'ease-in-out'}).onfinish=()=>{f.remove();t.style.visibility='';t.classList.add('pop')}}
+function trash(id){if(W[id])close(id);ST.inst=ST.inst.filter(x=>x!=id);ST.bin.push(id);save();beep(200,.12);renderDesk();sync()}
+
+/* ───── DESKTOP ICONS (draggable) ───── */
+const mob=()=>matchMedia('(max-width:760px),(pointer:coarse) and (max-width:900px)').matches;
+const over=(b,e)=>{const r=b.getBoundingClientRect();return e.clientX>r.left&&e.clientX<r.right&&e.clientY>r.top&&e.clientY<r.bottom};
+function renderDesk(){const d=$('#desk'),ids=['store',...ST.inst],rows=Math.max(1,((innerHeight-60)/92)|0);d.innerHTML='';
+ const mk=(id,dx,dy)=>{const p=ST.pos[id]||[dx,dy],el=document.createElement('div');el.className='ic';el.dataset.id=id;el.tabIndex=0;
+  el.style.left=Math.max(0,Math.min(p[0],innerWidth-84))+'px';el.style.top=Math.max(0,Math.min(p[1],innerHeight-130))+'px';
+  el.innerHTML=`<i>${id=='bin'&&ST.bin.length?'♻️':APPS[id].ico}</i><span>${APPS[id].name}</span>`;d.append(el);
+  el.ondblclick=()=>openApp(id);el.onclick=()=>mob()&&openApp(id);el.onkeydown=e=>e.key=='Enter'&&openApp(id);
+  el.onpointerdown=e=>{if(mob())return;const sx=e.clientX,sy=e.clientY,ox=el.offsetLeft,oy=el.offsetTop;let m=0;el.setPointerCapture(e.pointerId);$$('.ic').forEach(x=>x.classList.remove('sel'));el.classList.add('sel');
+   el.onpointermove=ev=>{if(!m&&Math.hypot(ev.clientX-sx,ev.clientY-sy)<5)return;m=1;el.classList.add('drag');
+    el.style.left=Math.max(0,Math.min(innerWidth-84,ox+ev.clientX-sx))+'px';el.style.top=Math.max(0,Math.min(innerHeight-130,oy+ev.clientY-sy))+'px';
+    const b=$('.ic[data-id=bin]');if(id!='bin'&&id!='store')b.classList.toggle('hot',over(b,ev))};
+   el.onpointerup=ev=>{el.onpointermove=el.onpointerup=null;el.classList.remove('drag');const b=$('.ic[data-id=bin]');b.classList.remove('hot');if(!m)return;
+    if(id!='bin'&&id!='store'&&over(b,ev))return trash(id);ST.pos[id]=[el.offsetLeft,el.offsetTop];save()}}};
+ ids.forEach((id,i)=>mk(id,10+((i/rows)|0)*92,10+(i%rows)*92));mk('bin',innerWidth-96,innerHeight-38-96)}
+
+/* ───── WINDOW MANAGER ───── */
+let z=10,n=0;
+const sync=()=>Object.values(W).forEach(w=>w.r&&w.r());
+function tasks(){$('#tasks').innerHTML='';Object.entries(W).forEach(([id,w])=>{const b=document.createElement('button');b.textContent=APPS[id].ico+' '+APPS[id].name;
+ if(!w.el.classList.contains('min')&&w.el.classList.contains('top'))b.className='on';
+ b.onclick=()=>{if(w.el.classList.contains('top')&&!w.el.classList.contains('min')){w.el.classList.add('min');w.el.classList.remove('top');tasks()}else focus(id)};$('#tasks').append(b)})}
+function focus(id){const w=W[id];Object.values(W).forEach(x=>x.el.classList.remove('top'));w.el.classList.remove('min');w.el.classList.add('top');w.el.style.zIndex=++z;tasks()}
+function close(id){W[id].el.remove();delete W[id];tasks()}
+const hideAll=()=>{Object.values(W).forEach(w=>{w.el.classList.add('min');w.el.classList.remove('top')});tasks()};
+function openApp(id){$('#smenu').classList.remove('on');
+ if(!SYS[id]&&!ST.inst.includes(id))return openApp('store');
+ if(W[id])return focus(id);
+ const a=APPS[id],el=document.createElement('div');el.className='win bev';
+ el.style.cssText=`left:${90+(n*30)%240}px;top:${24+(n*30)%140}px;width:${Math.min(a.w,innerWidth-20)}px;height:${Math.min(a.h,innerHeight-80)}px`;n++;
+ el.innerHTML=`<div class="tb"><span>${a.ico}</span><b>${a.name}</b><button data-a="h" title="Hide">–</button><button data-a="m" title="Maximize">▭</button><button data-a="x" title="Close">✕</button></div><div class="bd sunk"></div>`;
+ ['n','s','e','w','ne','nw','se','sw'].forEach(d=>{const h=document.createElement('i');h.className='rz';h.dataset.d=d;el.append(h)});
+ $('#wins').append(el);const r=a.build($('.bd',el));W[id]={el,r};focus(id);r&&r();
+ el.addEventListener('pointerdown',e=>{if(!el.classList.contains('top'))focus(id);const d=e.target.dataset?.d;if(!e.target.classList.contains('rz')||mob())return;e.preventDefault();
+  const o={x:e.clientX,y:e.clientY,l:el.offsetLeft,t:el.offsetTop,w:el.offsetWidth,h:el.offsetHeight};el.classList.remove('max');
+  const mv=ev=>{const dx=ev.clientX-o.x,dy=ev.clientY-o.y;let l=o.l,t=o.t,w=o.w,h=o.h;
+   if(d.includes('e'))w=Math.max(260,o.w+dx);if(d.includes('s'))h=Math.max(160,o.h+dy);
+   if(d.includes('w')){w=Math.max(260,o.w-dx);l=o.l+o.w-w}if(d.includes('n')){h=Math.max(160,o.h-dy);t=o.t+o.h-h}
+   Object.assign(el.style,{left:l+'px',top:Math.max(0,t)+'px',width:w+'px',height:h+'px'})};
+  const up=()=>{removeEventListener('pointermove',mv);removeEventListener('pointerup',up)};addEventListener('pointermove',mv);addEventListener('pointerup',up)});
+ const tb=$('.tb',el);
+ tb.addEventListener('click',e=>{const t=e.target.dataset?.a;if(t=='x')close(id);if(t=='m')el.classList.toggle('max');if(t=='h'){el.classList.add('min');el.classList.remove('top');tasks()}});
+ tb.addEventListener('dblclick',e=>{if(!mob()&&e.target.tagName!='BUTTON')el.classList.toggle('max')});
+ tb.addEventListener('pointerdown',e=>{if(mob()||e.target.tagName=='BUTTON'||el.classList.contains('max'))return;const ox=e.clientX-el.offsetLeft,oy=e.clientY-el.offsetTop;
+  const mv=ev=>{el.style.left=Math.max(-el.offsetWidth+80,Math.min(innerWidth-80,ev.clientX-ox))+'px';el.style.top=Math.max(0,Math.min(innerHeight-80,ev.clientY-oy))+'px'};
+  const up=()=>{removeEventListener('pointermove',mv);removeEventListener('pointerup',up)};addEventListener('pointermove',mv);addEventListener('pointerup',up)})}
+
+/* ───── START MENU (live info) ───── */
+function startMenu(){const A=S.A,m=A&&A.motd,top=S.scores.slice(0,3),lbl=S.date?new Date(S.date+'T12:00').toLocaleDateString('en',{weekday:'short',month:'short',day:'numeric'}):'—';
+ $('#smenu').innerHTML=`<div class="sh"><img src="https://i.imgur.com/Zgd9kDC.jpg" alt=""><div><b>osu! Iraq OS</b><small>${lbl} · ${S.scores.length} scores · ${A?A.ps.length:0} players</small></div></div>
+${m?`<div class="sx"><small>MAP OF THE DAY</small><div class="row" data-go="community">${cv(m.b)}<div class="m"><b>${esc(m.b.title)}</b><small>${mt(m.mode)} ${m.n} plays</small></div><div class="pp">${rd(m.top.pp)}pp<small>${esc(m.top.user)}</small></div></div></div>`:''}
+<div class="sx"><small>TOP PLAYS TODAY</small>${top.length?top.map(s=>`<div class="row" data-go="scores">${cv(s.beatmapset||{})}<div class="m"><b>${esc((s.beatmapset||{}).title)}</b><small>${esc(s.user)} · ${esc(s.rank)}</small></div><div class="pp">${rd(s.pp)}pp</div></div>`).join(''):'<small>No plays yet.</small>'}</div>
+<div class="sx"><small>GRINDER OF THE DAY</small>${A&&A.ps.length?(p=>`<div class="row" data-go="rankings">${av(p.id)}<div class="m"><b>${esc(p.name)}</b><small>${p.n} plays today</small></div><div class="pp">${rd(p.pp)}pp</div></div>`)([...A.ps].sort((a,b)=>b.n-a.n)[0]):'<small>Nobody yet.</small>'}</div>
+<div class="sa"><button data-go="store">🛒 Store</button><button data-go="bin">🗑 Recycle Bin</button><button data-go="hide">🖥 Hide all</button><button data-go="theme">🌓 Theme</button><button data-go="reset" style="grid-column:span 2">⏻ Reset OS</button></div>`}
+$('#smenu').onclick=e=>{const g=e.target.closest('[data-go]')?.dataset.go;if(!g)return;$('#smenu').classList.remove('on');
+ if(g=='hide')hideAll();else if(g=='theme'){const r=document.documentElement;r.dataset.theme=getComputedStyle(r).getPropertyValue('--face').trim()=='#26384b'?'light':'dark'}
+ else if(g=='reset'){Object.keys(W).forEach(close);ST={inst:[],bin:[],pos:{}};save();renderDesk();openApp('store')}else openApp(g)};
+$('#start').onclick=e=>{e.stopPropagation();startMenu();$('#smenu').classList.toggle('on')};
+document.addEventListener('pointerdown',e=>{if(!e.target.closest('#smenu,#start'))$('#smenu').classList.remove('on')});
+$('#sd2').onclick=hideAll;$('#bHome').onclick=hideAll;$('#tbm').onclick=$('#hm').onclick=()=>openApp('community');
+$('#bBack').onclick=()=>{const t=Object.keys(W).find(k=>W[k].el.classList.contains('top')&&!W[k].el.classList.contains('min'));t&&close(t)};
+$('#bRec').onclick=()=>Object.keys(W).forEach(close);
+const tick=()=>{const t=new Date().toLocaleTimeString('en',{hour:'2-digit',minute:'2-digit'});$('#clock').textContent=$('#sclock').textContent=t};tick();setInterval(tick,15000);
+addEventListener('resize',renderDesk);
+/* boot */
+renderDesk();motd();loadIndex();load(key(new Date()));if(!ST.inst.length)openApp('store');
+</script>
+</body>
+</html>

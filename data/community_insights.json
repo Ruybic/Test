@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 214,
-    "longest": 214,
-    "last_updated": "2026-10-01"
+    "current": 215,
+    "longest": 215,
+    "last_updated": "2026-10-02"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -64960,6 +64960,309 @@
         "title": "Sunshine (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2445174/covers/card.jpg?1768884015",
         "unique_players": 18
+      }
+    },
+    "2026-10-02": {
+      "total_scores": 687,
+      "peak_hour_baghdad": 1,
+      "top_grinder": {
+        "user": "azalhussam",
+        "user_id": 37635103,
+        "count": 72,
+        "scores": [
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7608545999,
+            "rank": "D",
+            "accuracy": 0.6554336468129571,
+            "pp": 19.4872,
+            "mods": [],
+            "combo": 225,
+            "created_at": "2026-10-02T00:37:05Z",
+            "beatmapset": {
+              "id": 867737,
+              "title": "The Big Black",
+              "cover": "https://assets.ppy.sh/beatmaps/867737/covers/card.jpg?1645785490",
+              "stars": 5.00835
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7608532751,
+            "rank": "C",
+            "accuracy": 0.7679083094555874,
+            "pp": 59.0336,
+            "mods": [],
+            "combo": 134,
+            "created_at": "2026-10-02T00:33:34Z",
+            "beatmapset": {
+              "id": 983911,
+              "title": "Bass Slut (Original Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/983911/covers/card.jpg?1650683411",
+              "stars": 5.67532
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7608524112,
+            "rank": "B",
+            "accuracy": 0.8897180762852405,
+            "pp": 26.3591,
+            "mods": [
+              "DT"
+            ],
+            "combo": 211,
+            "created_at": "2026-10-02T00:31:18Z",
+            "beatmapset": {
+              "id": 983911,
+              "title": "Bass Slut (Original Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/983911/covers/card.jpg?1650683411",
+              "stars": 2.41884
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7608518040,
+            "rank": "C",
+            "accuracy": 0.821360153256705,
+            "pp": 63.2677,
+            "mods": [],
+            "combo": 107,
+            "created_at": "2026-10-02T00:29:43Z",
+            "beatmapset": {
+              "id": 983911,
+              "title": "Bass Slut (Original Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/983911/covers/card.jpg?1650683411",
+              "stars": 5.67338
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7608510402,
+            "rank": "B",
+            "accuracy": 0.8870143149284253,
+            "pp": 56.1495,
+            "mods": [],
+            "combo": 163,
+            "created_at": "2026-10-02T00:27:42Z",
+            "beatmapset": {
+              "id": 983911,
+              "title": "Bass Slut (Original Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/983911/covers/card.jpg?1650683411",
+              "stars": 4.51676
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7608502381,
+            "rank": "B",
+            "accuracy": 0.8849557522123894,
+            "pp": 63.339,
+            "mods": [],
+            "combo": 149,
+            "created_at": "2026-10-02T00:25:35Z",
+            "beatmapset": {
+              "id": 983911,
+              "title": "Bass Slut (Original Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/983911/covers/card.jpg?1650683411",
+              "stars": 4.87049
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7608489190,
+            "rank": "B",
+            "accuracy": 0.9093567251461988,
+            "pp": 47.7532,
+            "mods": [],
+            "combo": 193,
+            "created_at": "2026-10-02T00:22:09Z",
+            "beatmapset": {
+              "id": 375648,
+              "title": "Bass Slut (Original Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/375648/covers/card.jpg?1650635238",
+              "stars": 4.86589
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7608460144,
+            "rank": "B",
+            "accuracy": 0.8830508474576271,
+            "pp": 56.3323,
+            "mods": [],
+            "combo": 422,
+            "created_at": "2026-10-02T00:14:25Z",
+            "beatmapset": {
+              "id": 1986983,
+              "title": "Sirius (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1986983/covers/card.jpg?1790071321",
+              "stars": 4.34781
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7608452008,
+            "rank": "C",
+            "accuracy": 0.760053619302949,
+            "pp": 33.48,
+            "mods": [],
+            "combo": 81,
+            "created_at": "2026-10-02T00:12:17Z",
+            "beatmapset": {
+              "id": 1986983,
+              "title": "Sirius (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1986983/covers/card.jpg?1790071321",
+              "stars": 5.50575
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7608445579,
+            "rank": "C",
+            "accuracy": 0.7372654155495979,
+            "pp": 34.1475,
+            "mods": [],
+            "combo": 54,
+            "created_at": "2026-10-02T00:10:35Z",
+            "beatmapset": {
+              "id": 1986983,
+              "title": "Sirius (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/1986983/covers/card.jpg?1790071321",
+              "stars": 5.50575
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7608423281,
+            "rank": "C",
+            "accuracy": 0.7768115942028986,
+            "pp": 27.1708,
+            "mods": [],
+            "combo": 125,
+            "created_at": "2026-10-02T00:04:49Z",
+            "beatmapset": {
+              "id": 891356,
+              "title": "Legend of Genesis",
+              "cover": "https://assets.ppy.sh/beatmaps/891356/covers/card.jpg?1650672766",
+              "stars": 4.43902
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7608412939,
+            "rank": "C",
+            "accuracy": 0.855515587529976,
+            "pp": 42.956,
+            "mods": [],
+            "combo": 241,
+            "created_at": "2026-10-02T00:02:11Z",
+            "beatmapset": {
+              "id": 2540568,
+              "title": "Rockefeller Street (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2540568/covers/card.jpg?1782555004",
+              "stars": 4.05657
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7608400305,
+            "rank": "C",
+            "accuracy": 0.8043478260869565,
+            "pp": 37.2979,
+            "mods": [],
+            "combo": 172,
+            "created_at": "2026-10-01T23:58:53Z",
+            "beatmapset": {
+              "id": 223711,
+              "title": "affection (Short Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/223711/covers/card.jpg?1737545062",
+              "stars": 5.24164
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7608027694,
+            "rank": "A",
+            "accuracy": 0.9546351084812623,
+            "pp": 19.849,
+            "mods": [],
+            "combo": 195,
+            "created_at": "2026-10-01T22:28:38Z",
+            "beatmapset": {
+              "id": 2151044,
+              "title": "Yakusoku (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2151044/covers/card.jpg?1784020612",
+              "stars": 2.72626
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7608018671,
+            "rank": "B",
+            "accuracy": 0.9013292433537833,
+            "pp": 47.5861,
+            "mods": [],
+            "combo": 186,
+            "created_at": "2026-10-01T22:26:33Z",
+            "beatmapset": {
+              "id": 223711,
+              "title": "affection (Short Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/223711/covers/card.jpg?1737545062",
+              "stars": 4.56439
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Terranova (Original Radio Mix) (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2592110/covers/card.jpg?1788574475",
+        "unique_players": 13
       }
     }
   }

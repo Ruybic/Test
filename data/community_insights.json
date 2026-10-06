@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 217,
-    "longest": 217,
-    "last_updated": "2026-10-04"
+    "current": 218,
+    "longest": 218,
+    "last_updated": "2026-10-05"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -65917,6 +65917,325 @@
         "title": "I Don't Know (Nightcore & Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
         "unique_players": 25
+      }
+    },
+    "2026-10-05": {
+      "total_scores": 725,
+      "peak_hour_baghdad": 22,
+      "top_grinder": {
+        "user": "asuka1n",
+        "user_id": 40584515,
+        "count": 38,
+        "scores": [
+          {
+            "user": "asuka1n",
+            "user_id": 40584515,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7632846673,
+            "rank": "S",
+            "accuracy": 0.9677083333333333,
+            "pp": 59.4291,
+            "mods": [],
+            "combo": 152,
+            "created_at": "2026-10-05T11:50:16Z",
+            "beatmapset": {
+              "id": 2611208,
+              "title": "I Wanna Go To China (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2611208/covers/card.jpg?1790678635",
+              "stars": 3.03676
+            }
+          },
+          {
+            "user": "asuka1n",
+            "user_id": 40584515,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7632841752,
+            "rank": "S",
+            "accuracy": 0.9774774774774775,
+            "pp": 52.6273,
+            "mods": [
+              "DT"
+            ],
+            "combo": 209,
+            "created_at": "2026-10-05T11:49:12Z",
+            "beatmapset": {
+              "id": 2611208,
+              "title": "I Wanna Go To China (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2611208/covers/card.jpg?1790678635",
+              "stars": 2.06153
+            }
+          },
+          {
+            "user": "asuka1n",
+            "user_id": 40584515,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7632839551,
+            "rank": "S",
+            "accuracy": 0.9669669669669669,
+            "pp": 47.5411,
+            "mods": [
+              "DT"
+            ],
+            "combo": 75,
+            "created_at": "2026-10-05T11:48:43Z",
+            "beatmapset": {
+              "id": 2611208,
+              "title": "I Wanna Go To China (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2611208/covers/card.jpg?1790678635",
+              "stars": 2.06153
+            }
+          },
+          {
+            "user": "asuka1n",
+            "user_id": 40584515,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7632836947,
+            "rank": "S",
+            "accuracy": 0.9906103286384976,
+            "pp": 26.2971,
+            "mods": [
+              "DT"
+            ],
+            "combo": 142,
+            "created_at": "2026-10-05T11:48:09Z",
+            "beatmapset": {
+              "id": 2611208,
+              "title": "I Wanna Go To China (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2611208/covers/card.jpg?1790678635",
+              "stars": 1.56739
+            }
+          },
+          {
+            "user": "asuka1n",
+            "user_id": 40584515,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7632834814,
+            "rank": "S",
+            "accuracy": 0.9859154929577465,
+            "pp": 25.7307,
+            "mods": [
+              "DT"
+            ],
+            "combo": 142,
+            "created_at": "2026-10-05T11:47:40Z",
+            "beatmapset": {
+              "id": 2611208,
+              "title": "I Wanna Go To China (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2611208/covers/card.jpg?1790678635",
+              "stars": 1.56739
+            }
+          },
+          {
+            "user": "asuka1n",
+            "user_id": 40584515,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7632832446,
+            "rank": "S",
+            "accuracy": 0.9812206572769953,
+            "pp": 24.9518,
+            "mods": [
+              "DT"
+            ],
+            "combo": 142,
+            "created_at": "2026-10-05T11:47:08Z",
+            "beatmapset": {
+              "id": 2611208,
+              "title": "I Wanna Go To China (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2611208/covers/card.jpg?1790678635",
+              "stars": 1.56739
+            }
+          },
+          {
+            "user": "asuka1n",
+            "user_id": 40584515,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7632830075,
+            "rank": "S",
+            "accuracy": 0.9929577464788732,
+            "pp": 27.1468,
+            "mods": [
+              "DT"
+            ],
+            "combo": 142,
+            "created_at": "2026-10-05T11:46:38Z",
+            "beatmapset": {
+              "id": 2611208,
+              "title": "I Wanna Go To China (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2611208/covers/card.jpg?1790678635",
+              "stars": 1.56739
+            }
+          },
+          {
+            "user": "asuka1n",
+            "user_id": 40584515,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7632212634,
+            "rank": "A",
+            "accuracy": 0.9282278949315576,
+            "pp": 63.1077,
+            "mods": [],
+            "combo": 353,
+            "created_at": "2026-10-05T09:05:37Z",
+            "beatmapset": {
+              "id": 2220369,
+              "title": "EVERYTHING BLACK feat. RATIRL [Lieless FRENCHCORE BOOTLEG] (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2220369/covers/card.jpg?1734544941",
+              "stars": 3.54984
+            }
+          },
+          {
+            "user": "asuka1n",
+            "user_id": 40584515,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7632191835,
+            "rank": "A",
+            "accuracy": 0.9480105105105106,
+            "pp": 65.6563,
+            "mods": [],
+            "combo": 305,
+            "created_at": "2026-10-05T08:59:12Z",
+            "beatmapset": {
+              "id": 349774,
+              "title": "Kakushinteki*Metamaruphose!",
+              "cover": "https://assets.ppy.sh/beatmaps/349774/covers/card.jpg?1622092612",
+              "stars": 3.36617
+            }
+          },
+          {
+            "user": "asuka1n",
+            "user_id": 40584515,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7632185906,
+            "rank": "A",
+            "accuracy": 0.9412844036697248,
+            "pp": 37.6773,
+            "mods": [],
+            "combo": 190,
+            "created_at": "2026-10-05T08:57:23Z",
+            "beatmapset": {
+              "id": 2056100,
+              "title": "ischezayu (Lieless FRENCHCORE BOOTLEG)",
+              "cover": "https://assets.ppy.sh/beatmaps/2056100/covers/card.jpg?1710029292",
+              "stars": 2.74019
+            }
+          },
+          {
+            "user": "asuka1n",
+            "user_id": 40584515,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7631319688,
+            "rank": "S",
+            "accuracy": 0.9742120343839542,
+            "pp": 21.7641,
+            "mods": [],
+            "combo": 195,
+            "created_at": "2026-10-05T04:04:50Z",
+            "beatmapset": {
+              "id": 877895,
+              "title": "Altros",
+              "cover": "https://assets.ppy.sh/beatmaps/877895/covers/card.jpg?1622150568",
+              "stars": 1.97251
+            }
+          },
+          {
+            "user": "asuka1n",
+            "user_id": 40584515,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7631313796,
+            "rank": "A",
+            "accuracy": 0.933142311365807,
+            "pp": 31.7502,
+            "mods": [
+              "DT"
+            ],
+            "combo": 88,
+            "created_at": "2026-10-05T04:02:55Z",
+            "beatmapset": {
+              "id": 877895,
+              "title": "Altros",
+              "cover": "https://assets.ppy.sh/beatmaps/877895/covers/card.jpg?1622150568",
+              "stars": 1.97251
+            }
+          },
+          {
+            "user": "asuka1n",
+            "user_id": 40584515,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7631308847,
+            "rank": "S",
+            "accuracy": 0.9566490919742238,
+            "pp": 53.098,
+            "mods": [],
+            "combo": 194,
+            "created_at": "2026-10-05T04:01:23Z",
+            "beatmapset": {
+              "id": 2549704,
+              "title": "Bed Bath & Batman Beyond",
+              "cover": "https://assets.ppy.sh/beatmaps/2549704/covers/card.jpg?1787399919",
+              "stars": 2.99864
+            }
+          },
+          {
+            "user": "asuka1n",
+            "user_id": 40584515,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7631304839,
+            "rank": "A",
+            "accuracy": 0.9491954022988506,
+            "pp": 43.7014,
+            "mods": [
+              "DT"
+            ],
+            "combo": 310,
+            "created_at": "2026-10-05T04:00:04Z",
+            "beatmapset": {
+              "id": 200552,
+              "title": "BLACK or WHITE?",
+              "cover": "https://assets.ppy.sh/beatmaps/200552/covers/card.jpg?1650624114",
+              "stars": 2.1129
+            }
+          },
+          {
+            "user": "asuka1n",
+            "user_id": 40584515,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7631299310,
+            "rank": "S",
+            "accuracy": 0.9599853157121879,
+            "pp": 21.2671,
+            "mods": [
+              "DT"
+            ],
+            "combo": 454,
+            "created_at": "2026-10-05T03:58:19Z",
+            "beatmapset": {
+              "id": 200552,
+              "title": "BLACK or WHITE?",
+              "cover": "https://assets.ppy.sh/beatmaps/200552/covers/card.jpg?1650624114",
+              "stars": 1.52911
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "sad child (nightcore & cut ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2594428/covers/card.jpg?1789702884",
+        "unique_players": 9
       }
     }
   }

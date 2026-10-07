@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 218,
-    "longest": 218,
-    "last_updated": "2026-10-05"
+    "current": 219,
+    "longest": 219,
+    "last_updated": "2026-10-06"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -66236,6 +66236,352 @@
         "title": "sad child (nightcore & cut ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2594428/covers/card.jpg?1789702884",
         "unique_players": 9
+      }
+    },
+    "2026-10-06": {
+      "total_scores": 595,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "Meaco",
+        "user_id": 32837861,
+        "count": 38,
+        "scores": [
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084656106,
+            "rank": "A",
+            "accuracy": 0.9447619047619048,
+            "pp": 170.564,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 212,
+            "created_at": "2026-10-06T03:12:05Z",
+            "beatmapset": {
+              "id": 2530233,
+              "title": "made for you (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2530233/covers/card.jpg?1777760143",
+              "stars": 4.3181
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084652831,
+            "rank": "SH",
+            "accuracy": 0.9775910364145658,
+            "pp": 219.876,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 176,
+            "created_at": "2026-10-06T02:51:13Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 4.11547
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084652371,
+            "rank": "B",
+            "accuracy": 0.8943089430894309,
+            "pp": 180.263,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 165,
+            "created_at": "2026-10-06T02:48:22Z",
+            "beatmapset": {
+              "id": 2463569,
+              "title": "How to Be a Heartbreaker (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2463569/covers/card.jpg?1777733995",
+              "stars": 4.89683
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084652082,
+            "rank": "A",
+            "accuracy": 0.9682539682539683,
+            "pp": 182.543,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 137,
+            "created_at": "2026-10-06T02:46:37Z",
+            "beatmapset": {
+              "id": 2405583,
+              "title": "How Do You Do? (Potatoheadz Remix) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2405583/covers/card.jpg?1764783562",
+              "stars": 4.37806
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084651888,
+            "rank": "A",
+            "accuracy": 0.971947194719472,
+            "pp": 199.608,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 287,
+            "created_at": "2026-10-06T02:45:22Z",
+            "beatmapset": {
+              "id": 2463664,
+              "title": "hate the way you love me (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2463664/covers/card.jpg?1767818786",
+              "stars": 4.44216
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084651666,
+            "rank": "A",
+            "accuracy": 0.9316239316239316,
+            "pp": 187.115,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 121,
+            "created_at": "2026-10-06T02:43:56Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 4.71705
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084650170,
+            "rank": "A",
+            "accuracy": 0.9506172839506173,
+            "pp": 164.341,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 232,
+            "created_at": "2026-10-06T02:34:27Z",
+            "beatmapset": {
+              "id": 2506168,
+              "title": "Die A Million Times (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506168/covers/card.jpg?1773702471",
+              "stars": 4.45851
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084648837,
+            "rank": "A",
+            "accuracy": 0.9857881136950905,
+            "pp": 280.941,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 187,
+            "created_at": "2026-10-06T02:25:59Z",
+            "beatmapset": {
+              "id": 2314502,
+              "title": "blu",
+              "cover": "https://assets.ppy.sh/beatmaps/2314502/covers/card.jpg?1745681749",
+              "stars": 4.4307
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084647955,
+            "rank": "A",
+            "accuracy": 0.9819121447028424,
+            "pp": 237.184,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 184,
+            "created_at": "2026-10-06T02:20:34Z",
+            "beatmapset": {
+              "id": 2314502,
+              "title": "blu",
+              "cover": "https://assets.ppy.sh/beatmaps/2314502/covers/card.jpg?1745681749",
+              "stars": 4.4307
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084646659,
+            "rank": "A",
+            "accuracy": 0.9612403100775194,
+            "pp": 202.586,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 190,
+            "created_at": "2026-10-06T02:12:51Z",
+            "beatmapset": {
+              "id": 2495437,
+              "title": "Best Day Of My Life (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495437/covers/card.jpg?1771550749",
+              "stars": 4.72656
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084646156,
+            "rank": "B",
+            "accuracy": 0.8838951310861424,
+            "pp": 180.666,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 124,
+            "created_at": "2026-10-06T02:09:55Z",
+            "beatmapset": {
+              "id": 2446228,
+              "title": "bad times (sped up & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2446228/covers/card.jpg?1768233080",
+              "stars": 4.92221
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084645943,
+            "rank": "A",
+            "accuracy": 0.9438596491228071,
+            "pp": 185.562,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 138,
+            "created_at": "2026-10-06T02:08:45Z",
+            "beatmapset": {
+              "id": 2446228,
+              "title": "bad times (sped up & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2446228/covers/card.jpg?1768233080",
+              "stars": 4.81487
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084645750,
+            "rank": "A",
+            "accuracy": 0.9578947368421052,
+            "pp": 213.676,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 137,
+            "created_at": "2026-10-06T02:07:35Z",
+            "beatmapset": {
+              "id": 2446228,
+              "title": "bad times (sped up & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2446228/covers/card.jpg?1768233080",
+              "stars": 4.81487
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084645174,
+            "rank": "B",
+            "accuracy": 0.9072039072039072,
+            "pp": 131.504,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 106,
+            "created_at": "2026-10-06T02:03:58Z",
+            "beatmapset": {
+              "id": 2338699,
+              "title": "18 (Nightcore & Cut Russian Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2338699/covers/card.jpg?1745436240",
+              "stars": 4.71259
+            }
+          },
+          {
+            "user": "Meaco",
+            "user_id": 32837861,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084644169,
+            "rank": "A",
+            "accuracy": 0.9512195121951219,
+            "pp": 185.089,
+            "mods": [
+              "HD",
+              "NC"
+            ],
+            "combo": 143,
+            "created_at": "2026-10-06T01:58:11Z",
+            "beatmapset": {
+              "id": 2240889,
+              "title": "Some Kind Of Magic (feat. MYZICA) (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2240889/covers/card.jpg?1734649789",
+              "stars": 4.5015
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "PADORU / PADORU",
+        "cover": "https://assets.ppy.sh/beatmaps/1073074/covers/card.jpg?1650689325",
+        "unique_players": 12
       }
     }
   }

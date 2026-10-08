@@ -7,11 +7,32 @@
     "fruits",
     "mania"
   ],
-  "generated_at": "2026-10-08T11:25:27.578Z",
+  "generated_at": "2026-10-08T11:43:38.104Z",
   "complete": false,
-  "players_checked": 1000,
+  "players_checked": 2000,
   "players_total": 2847,
   "scores": [
+    {
+      "user": "JUSTKILLER57",
+      "user_id": 40602917,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7651556461,
+      "rank": "C",
+      "accuracy": 0.7305236270753512,
+      "pp": 5.09774,
+      "mods": [
+        "TD"
+      ],
+      "combo": 244,
+      "created_at": "2026-10-08T11:24:32Z",
+      "beatmapset": {
+        "id": 2574791,
+        "title": "Old Wounds",
+        "cover": "https://assets.ppy.sh/beatmaps/2574791/covers/card.jpg?1790538964",
+        "stars": 2.60808
+      }
+    },
     {
       "user": "Kamastro1",
       "user_id": 17489164,
@@ -5560,6 +5581,27 @@
       }
     },
     {
+      "user": "avvex",
+      "user_id": 40620972,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7648480969,
+      "rank": "D",
+      "accuracy": 0.6739766081871345,
+      "pp": 0.78795,
+      "mods": [
+        "TD"
+      ],
+      "combo": 87,
+      "created_at": "2026-10-07T20:36:05Z",
+      "beatmapset": {
+        "id": 2351998,
+        "title": "glitter *.+^",
+        "cover": "https://assets.ppy.sh/beatmaps/2351998/covers/card.jpg?1769068015",
+        "stars": 1.71585
+      }
+    },
+    {
       "user": "KRmuu",
       "user_id": 35847666,
       "country": "IQ",
@@ -6055,6 +6097,27 @@
         "title": "Cherry Pop (Cut Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/2464474/covers/card.jpg?1763827557",
         "stars": 5.06091
+      }
+    },
+    {
+      "user": "JUSTKILLER57",
+      "user_id": 40602917,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7648379323,
+      "rank": "C",
+      "accuracy": 0.7177522349936143,
+      "pp": 3.99236,
+      "mods": [
+        "TD"
+      ],
+      "combo": 136,
+      "created_at": "2026-10-07T20:17:42Z",
+      "beatmapset": {
+        "id": 2574791,
+        "title": "Old Wounds",
+        "cover": "https://assets.ppy.sh/beatmaps/2574791/covers/card.jpg?1790538964",
+        "stars": 2.60808
       }
     },
     {
@@ -8923,6 +8986,25 @@
       }
     },
     {
+      "user": "KLAUS1UP",
+      "user_id": 40071248,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7647301379,
+      "rank": "D",
+      "accuracy": 0.6645435244161358,
+      "pp": 0.492,
+      "mods": [],
+      "combo": 20,
+      "created_at": "2026-10-07T17:21:33Z",
+      "beatmapset": {
+        "id": 2193814,
+        "title": "BIRDS OF A FEATHER",
+        "cover": "https://assets.ppy.sh/beatmaps/2193814/covers/card.jpg?1723937106",
+        "stars": 1.59343
+      }
+    },
+    {
       "user": "KM1232",
       "user_id": 36169048,
       "country": "IQ",
@@ -9132,6 +9214,27 @@
       }
     },
     {
+      "user": "JUSTKILLER57",
+      "user_id": 40602917,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7647240104,
+      "rank": "C",
+      "accuracy": 0.8253715498938429,
+      "pp": 6.20344,
+      "mods": [
+        "TD"
+      ],
+      "combo": 241,
+      "created_at": "2026-10-07T17:11:18Z",
+      "beatmapset": {
+        "id": 2227145,
+        "title": "reach for your victory!!!",
+        "cover": "https://assets.ppy.sh/beatmaps/2227145/covers/card.jpg?1790199797",
+        "stars": 2.65133
+      }
+    },
+    {
       "user": "Slowpoke1578",
       "user_id": 36439102,
       "country": "IQ",
@@ -9224,6 +9327,27 @@
         "title": "Prom Queen",
         "cover": "https://assets.ppy.sh/beatmaps/2470141/covers/card.jpg?1773651195",
         "stars": 4.34307
+      }
+    },
+    {
+      "user": "JUSTKILLER57",
+      "user_id": 40602917,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7647219489,
+      "rank": "C",
+      "accuracy": 0.7180555555555556,
+      "pp": null,
+      "mods": [
+        "TD"
+      ],
+      "combo": 93,
+      "created_at": "2026-10-07T17:07:48Z",
+      "beatmapset": {
+        "id": 2227145,
+        "title": "reach for your victory!!!",
+        "cover": "https://assets.ppy.sh/beatmaps/2227145/covers/card.jpg?1790199797",
+        "stars": 4.07966
       }
     },
     {
@@ -10362,6 +10486,25 @@
         "title": "MONONOKE",
         "cover": "https://assets.ppy.sh/beatmaps/1280194/covers/card.jpg?1631507638",
         "stars": 2.38354
+      }
+    },
+    {
+      "user": "eclipsdo",
+      "user_id": 40523266,
+      "country": "IQ",
+      "mode": "osu",
+      "score_id": 7646050868,
+      "rank": "A",
+      "accuracy": 0.9207383279044516,
+      "pp": 8.48471,
+      "mods": [],
+      "combo": 125,
+      "created_at": "2026-10-07T13:54:02Z",
+      "beatmapset": {
+        "id": 1114627,
+        "title": "Monster High Fright Song (Theme Song)",
+        "cover": "https://assets.ppy.sh/beatmaps/1114627/covers/card.jpg?1648586916",
+        "stars": 2.59501
       }
     },
     {

@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 219,
-    "longest": 219,
-    "last_updated": "2026-10-06"
+    "current": 220,
+    "longest": 220,
+    "last_updated": "2026-10-07"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -66582,6 +66582,351 @@
         "title": "PADORU / PADORU",
         "cover": "https://assets.ppy.sh/beatmaps/1073074/covers/card.jpg?1650689325",
         "unique_players": 12
+      }
+    },
+    "2026-10-07": {
+      "total_scores": 648,
+      "peak_hour_baghdad": 19,
+      "top_grinder": {
+        "user": "I AM A GHOUL",
+        "user_id": 24991953,
+        "count": 72,
+        "scores": [
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084762406,
+            "rank": "A",
+            "accuracy": 0.9597378277153558,
+            "pp": 343.835,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 164,
+            "created_at": "2026-10-06T13:27:58Z",
+            "beatmapset": {
+              "id": 2487912,
+              "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+              "stars": 5.31288
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084762193,
+            "rank": "A",
+            "accuracy": 0.9569288389513109,
+            "pp": 336.851,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 150,
+            "created_at": "2026-10-06T13:27:19Z",
+            "beatmapset": {
+              "id": 2487912,
+              "title": "My First Kiss (feat. Ke$ha) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2487912/covers/card.jpg?1774063530",
+              "stars": 5.31288
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084761339,
+            "rank": "B",
+            "accuracy": 0.9234800838574424,
+            "pp": 273.9,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 274,
+            "created_at": "2026-10-06T13:24:24Z",
+            "beatmapset": {
+              "id": 2490629,
+              "title": "Tomorrow (Game Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2490629/covers/card.jpg?1769029460",
+              "stars": 5.33012
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084760804,
+            "rank": "B",
+            "accuracy": 0.8681377825618946,
+            "pp": 99.676,
+            "mods": [
+              "DT"
+            ],
+            "combo": 213,
+            "created_at": "2026-10-06T13:22:27Z",
+            "beatmapset": {
+              "id": 1390922,
+              "title": "Lionheart",
+              "cover": "https://assets.ppy.sh/beatmaps/1390922/covers/card.jpg?1653231574",
+              "stars": 4.97476
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084759932,
+            "rank": "B",
+            "accuracy": 0.9158986175115207,
+            "pp": 198.515,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 101,
+            "created_at": "2026-10-06T13:19:26Z",
+            "beatmapset": {
+              "id": 2365162,
+              "title": "i like the way you kiss me (DETHVEDA Frenchcore Edit)",
+              "cover": "https://assets.ppy.sh/beatmaps/2365162/covers/card.jpg?1758954451",
+              "stars": 5.21538
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084759509,
+            "rank": "A",
+            "accuracy": 0.9685264663805436,
+            "pp": 346.676,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 88,
+            "created_at": "2026-10-06T13:17:59Z",
+            "beatmapset": {
+              "id": 2281428,
+              "title": "Poison (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2281428/covers/card.jpg?1734634407",
+              "stars": 5.30491
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084758492,
+            "rank": "A",
+            "accuracy": 0.9613733905579399,
+            "pp": 291.816,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 255,
+            "created_at": "2026-10-06T13:14:23Z",
+            "beatmapset": {
+              "id": 1249048,
+              "title": "Horrible Kids",
+              "cover": "https://assets.ppy.sh/beatmaps/1249048/covers/card.jpg?1650700671",
+              "stars": 5.31793
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084758210,
+            "rank": "A",
+            "accuracy": 0.9599427753934192,
+            "pp": 361.533,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 262,
+            "created_at": "2026-10-06T13:13:24Z",
+            "beatmapset": {
+              "id": 1249048,
+              "title": "Horrible Kids",
+              "cover": "https://assets.ppy.sh/beatmaps/1249048/covers/card.jpg?1650700671",
+              "stars": 5.31793
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084757934,
+            "rank": "A",
+            "accuracy": 0.9742489270386266,
+            "pp": 385.014,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 240,
+            "created_at": "2026-10-06T13:12:31Z",
+            "beatmapset": {
+              "id": 1249048,
+              "title": "Horrible Kids",
+              "cover": "https://assets.ppy.sh/beatmaps/1249048/covers/card.jpg?1650700671",
+              "stars": 5.31793
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084757680,
+            "rank": "A",
+            "accuracy": 0.9564896755162242,
+            "pp": 360.526,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 183,
+            "created_at": "2026-10-06T13:11:32Z",
+            "beatmapset": {
+              "id": 2296940,
+              "title": "Start Again (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2296940/covers/card.jpg?1743374659",
+              "stars": 5.29235
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084757434,
+            "rank": "A",
+            "accuracy": 0.948377581120944,
+            "pp": 279.513,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 178,
+            "created_at": "2026-10-06T13:10:41Z",
+            "beatmapset": {
+              "id": 2296940,
+              "title": "Start Again (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2296940/covers/card.jpg?1743374659",
+              "stars": 5.29235
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084756839,
+            "rank": "A",
+            "accuracy": 0.9861111111111112,
+            "pp": 420.847,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 272,
+            "created_at": "2026-10-06T13:08:36Z",
+            "beatmapset": {
+              "id": 2505860,
+              "title": "Blame Brett (Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2505860/covers/card.jpg?1771625233",
+              "stars": 5.17297
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084756303,
+            "rank": "A",
+            "accuracy": 0.9849537037037037,
+            "pp": 397.385,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 327,
+            "created_at": "2026-10-06T13:06:38Z",
+            "beatmapset": {
+              "id": 2505860,
+              "title": "Blame Brett (Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2505860/covers/card.jpg?1771625233",
+              "stars": 5.17297
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084755721,
+            "rank": "A",
+            "accuracy": 0.9832175925925926,
+            "pp": 408.473,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 381,
+            "created_at": "2026-10-06T13:04:19Z",
+            "beatmapset": {
+              "id": 2505860,
+              "title": "Blame Brett (Sped Up Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2505860/covers/card.jpg?1771625233",
+              "stars": 5.17297
+            }
+          },
+          {
+            "user": "I AM A GHOUL",
+            "user_id": 24991953,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 5084755152,
+            "rank": "B",
+            "accuracy": 0.9196787148594378,
+            "pp": 229.507,
+            "mods": [
+              "HD",
+              "DT"
+            ],
+            "combo": 72,
+            "created_at": "2026-10-06T13:02:14Z",
+            "beatmapset": {
+              "id": 1255746,
+              "title": "Simarik",
+              "cover": "https://assets.ppy.sh/beatmaps/1255746/covers/card.jpg?1622197442",
+              "stars": 5.19736
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Make a Move (Speed Up Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/765778/covers/card.jpg?1650663123",
+        "unique_players": 18
       }
     }
   }

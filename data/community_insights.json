@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 220,
-    "longest": 220,
-    "last_updated": "2026-10-07"
+    "current": 221,
+    "longest": 221,
+    "last_updated": "2026-10-08"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -66927,6 +66927,311 @@
         "title": "Make a Move (Speed Up Ver.)",
         "cover": "https://assets.ppy.sh/beatmaps/765778/covers/card.jpg?1650663123",
         "unique_players": 18
+      }
+    },
+    "2026-10-08": {
+      "total_scores": 644,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "KRmuu",
+        "user_id": 35847666,
+        "count": 51,
+        "scores": [
+          {
+            "user": "KRmuu",
+            "user_id": 35847666,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7650524218,
+            "rank": "C",
+            "accuracy": 0.8449612403100775,
+            "pp": 59.3019,
+            "mods": [],
+            "combo": 155,
+            "created_at": "2026-10-08T05:54:40Z",
+            "beatmapset": {
+              "id": 1207609,
+              "title": "how to create the weeknd's \"blinding lights\"",
+              "cover": "https://assets.ppy.sh/beatmaps/1207609/covers/card.jpg?1645786654",
+              "stars": 4.56028
+            }
+          },
+          {
+            "user": "KRmuu",
+            "user_id": 35847666,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7650521895,
+            "rank": "D",
+            "accuracy": 0.6588983050847458,
+            "pp": 37.83,
+            "mods": [],
+            "combo": 121,
+            "created_at": "2026-10-08T05:53:48Z",
+            "beatmapset": {
+              "id": 2570640,
+              "title": "Insert Coin",
+              "cover": "https://assets.ppy.sh/beatmaps/2570640/covers/card.jpg?1783490654",
+              "stars": 5.07683
+            }
+          },
+          {
+            "user": "KRmuu",
+            "user_id": 35847666,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7650518292,
+            "rank": "A",
+            "accuracy": 0.9194139194139194,
+            "pp": 62.4501,
+            "mods": [
+              "DT"
+            ],
+            "combo": 141,
+            "created_at": "2026-10-08T05:52:28Z",
+            "beatmapset": {
+              "id": 816264,
+              "title": "MY REZHEM KINOLENTY (feat. Cut The Crap)",
+              "cover": "https://assets.ppy.sh/beatmaps/816264/covers/card.jpg?1622143933",
+              "stars": 2.94538
+            }
+          },
+          {
+            "user": "KRmuu",
+            "user_id": 35847666,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7650516565,
+            "rank": "B",
+            "accuracy": 0.8869565217391304,
+            "pp": 95.9616,
+            "mods": [
+              "DT"
+            ],
+            "combo": 77,
+            "created_at": "2026-10-08T05:51:49Z",
+            "beatmapset": {
+              "id": 816264,
+              "title": "MY REZHEM KINOLENTY (feat. Cut The Crap)",
+              "cover": "https://assets.ppy.sh/beatmaps/816264/covers/card.jpg?1622143933",
+              "stars": 3.65359
+            }
+          },
+          {
+            "user": "KRmuu",
+            "user_id": 35847666,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7650511836,
+            "rank": "B",
+            "accuracy": 0.8638676844783715,
+            "pp": 61.0039,
+            "mods": [],
+            "combo": 167,
+            "created_at": "2026-10-08T05:50:04Z",
+            "beatmapset": {
+              "id": 2431217,
+              "title": "Boom Clap (kyoto Remix) (Sped Up & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2431217/covers/card.jpg?1764701917",
+              "stars": 4.38961
+            }
+          },
+          {
+            "user": "KRmuu",
+            "user_id": 35847666,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7650509305,
+            "rank": "C",
+            "accuracy": 0.7787610619469026,
+            "pp": 64.4015,
+            "mods": [],
+            "combo": 109,
+            "created_at": "2026-10-08T05:49:11Z",
+            "beatmapset": {
+              "id": 853469,
+              "title": "Gu Niang De Jiu Wo",
+              "cover": "https://assets.ppy.sh/beatmaps/853469/covers/card.jpg?1650669639",
+              "stars": 4.59298
+            }
+          },
+          {
+            "user": "KRmuu",
+            "user_id": 35847666,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7650505252,
+            "rank": "A",
+            "accuracy": 0.9036281179138322,
+            "pp": 58.3118,
+            "mods": [],
+            "combo": 197,
+            "created_at": "2026-10-08T05:47:41Z",
+            "beatmapset": {
+              "id": 206284,
+              "title": "In my room",
+              "cover": "https://assets.ppy.sh/beatmaps/206284/covers/card.jpg?1622077156",
+              "stars": 4.08256
+            }
+          },
+          {
+            "user": "KRmuu",
+            "user_id": 35847666,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7650496871,
+            "rank": "B",
+            "accuracy": 0.927536231884058,
+            "pp": 93.3427,
+            "mods": [],
+            "combo": 148,
+            "created_at": "2026-10-08T05:44:34Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 4.88959
+            }
+          },
+          {
+            "user": "KRmuu",
+            "user_id": 35847666,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7650491358,
+            "rank": "B",
+            "accuracy": 0.8595238095238096,
+            "pp": 75.9875,
+            "mods": [],
+            "combo": 47,
+            "created_at": "2026-10-08T05:42:31Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.28803
+            }
+          },
+          {
+            "user": "KRmuu",
+            "user_id": 35847666,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7650489346,
+            "rank": "B",
+            "accuracy": 0.8897243107769424,
+            "pp": 77.3189,
+            "mods": [],
+            "combo": 70,
+            "created_at": "2026-10-08T05:41:47Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.00917
+            }
+          },
+          {
+            "user": "KRmuu",
+            "user_id": 35847666,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7650487350,
+            "rank": "C",
+            "accuracy": 0.8309002433090025,
+            "pp": 56.9437,
+            "mods": [],
+            "combo": 77,
+            "created_at": "2026-10-08T05:41:03Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 4.99519
+            }
+          },
+          {
+            "user": "KRmuu",
+            "user_id": 35847666,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7650481379,
+            "rank": "B",
+            "accuracy": 0.8924731182795699,
+            "pp": 90.8186,
+            "mods": [],
+            "combo": 76,
+            "created_at": "2026-10-08T05:38:52Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 4.97143
+            }
+          },
+          {
+            "user": "KRmuu",
+            "user_id": 35847666,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7650478634,
+            "rank": "A",
+            "accuracy": 0.9388888888888889,
+            "pp": 79.3249,
+            "mods": [],
+            "combo": 139,
+            "created_at": "2026-10-08T05:37:55Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 4.56194
+            }
+          },
+          {
+            "user": "KRmuu",
+            "user_id": 35847666,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7650474387,
+            "rank": "C",
+            "accuracy": 0.8146551724137931,
+            "pp": 79.6238,
+            "mods": [],
+            "combo": 69,
+            "created_at": "2026-10-08T05:36:19Z",
+            "beatmapset": {
+              "id": 842412,
+              "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+              "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+              "stars": 5.12911
+            }
+          },
+          {
+            "user": "KRmuu",
+            "user_id": 35847666,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7650470591,
+            "rank": "C",
+            "accuracy": 0.8407079646017699,
+            "pp": 63.7076,
+            "mods": [],
+            "combo": 142,
+            "created_at": "2026-10-08T05:34:57Z",
+            "beatmapset": {
+              "id": 842412,
+              "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+              "cover": "https://assets.ppy.sh/beatmaps/842412/covers/card.jpg?1650668705",
+              "stars": 4.54866
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "GRIM (NIGHTCORE & CUT VER.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+        "unique_players": 17
       }
     }
   }

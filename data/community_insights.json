@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 221,
-    "longest": 221,
-    "last_updated": "2026-10-08"
+    "current": 222,
+    "longest": 222,
+    "last_updated": "2026-10-09"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -67231,6 +67231,307 @@
       "most_played_map": {
         "title": "GRIM (NIGHTCORE & CUT VER.)",
         "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+        "unique_players": 17
+      }
+    },
+    "2026-10-09": {
+      "total_scores": 588,
+      "peak_hour_baghdad": 11,
+      "top_grinder": {
+        "user": "azalhussam",
+        "user_id": 37635103,
+        "count": 56,
+        "scores": [
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7658088925,
+            "rank": "C",
+            "accuracy": 0.825925925925926,
+            "pp": 51.8446,
+            "mods": [],
+            "combo": 134,
+            "created_at": "2026-10-09T11:08:16Z",
+            "beatmapset": {
+              "id": 2178003,
+              "title": "Part Of Me (Whippa Hardstyle Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2178003/covers/card.jpg?1717004735",
+              "stars": 5.38463
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7658069286,
+            "rank": "C",
+            "accuracy": 0.8043771043771044,
+            "pp": 50.9278,
+            "mods": [],
+            "combo": 162,
+            "created_at": "2026-10-09T11:03:44Z",
+            "beatmapset": {
+              "id": 2178003,
+              "title": "Part Of Me (Whippa Hardstyle Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2178003/covers/card.jpg?1717004735",
+              "stars": 5.38463
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7658059825,
+            "rank": "C",
+            "accuracy": 0.7733585858585859,
+            "pp": 56.7884,
+            "mods": [],
+            "combo": 176,
+            "created_at": "2026-10-09T11:01:34Z",
+            "beatmapset": {
+              "id": 2252729,
+              "title": "Song That Might Play When You Fight Sans",
+              "cover": "https://assets.ppy.sh/beatmaps/2252729/covers/card.jpg?1729521130",
+              "stars": 5.14919
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7658054453,
+            "rank": "C",
+            "accuracy": 0.7714646464646465,
+            "pp": 46.0182,
+            "mods": [],
+            "combo": 90,
+            "created_at": "2026-10-09T11:00:19Z",
+            "beatmapset": {
+              "id": 2252729,
+              "title": "Song That Might Play When You Fight Sans",
+              "cover": "https://assets.ppy.sh/beatmaps/2252729/covers/card.jpg?1729521130",
+              "stars": 5.14919
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7658049155,
+            "rank": "D",
+            "accuracy": 0.6930057547587428,
+            "pp": 21.9101,
+            "mods": [],
+            "combo": 120,
+            "created_at": "2026-10-09T10:59:05Z",
+            "beatmapset": {
+              "id": 2225917,
+              "title": "Cubibibibism",
+              "cover": "https://assets.ppy.sh/beatmaps/2225917/covers/card.jpg?1729782297",
+              "stars": 5.23824
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7657942367,
+            "rank": "B",
+            "accuracy": 0.8648018648018648,
+            "pp": 86.7671,
+            "mods": [],
+            "combo": 56,
+            "created_at": "2026-10-09T10:33:44Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.13143
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7657931767,
+            "rank": "C",
+            "accuracy": 0.8333333333333334,
+            "pp": 69.2674,
+            "mods": [],
+            "combo": 46,
+            "created_at": "2026-10-09T10:31:10Z",
+            "beatmapset": {
+              "id": 2479183,
+              "title": "I Don't Know (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
+              "stars": 5.28803
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7657913309,
+            "rank": "B",
+            "accuracy": 0.8944444444444445,
+            "pp": 31.5611,
+            "mods": [],
+            "combo": 610,
+            "created_at": "2026-10-09T10:26:44Z",
+            "beatmapset": {
+              "id": 891356,
+              "title": "Legend of Genesis",
+              "cover": "https://assets.ppy.sh/beatmaps/891356/covers/card.jpg?1650672766",
+              "stars": 3.40372
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7657859701,
+            "rank": "B",
+            "accuracy": 0.8944193061840121,
+            "pp": 24.009,
+            "mods": [],
+            "combo": 297,
+            "created_at": "2026-10-09T10:13:31Z",
+            "beatmapset": {
+              "id": 1112375,
+              "title": "Callback",
+              "cover": "https://assets.ppy.sh/beatmaps/1112375/covers/card.jpg?1650691798",
+              "stars": 3.31297
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7657851937,
+            "rank": "B",
+            "accuracy": 0.87,
+            "pp": 10.389,
+            "mods": [],
+            "combo": 261,
+            "created_at": "2026-10-09T10:11:33Z",
+            "beatmapset": {
+              "id": 2301628,
+              "title": "Seculo Seculorum",
+              "cover": "https://assets.ppy.sh/beatmaps/2301628/covers/card.jpg?1744770328",
+              "stars": 2.58253
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7657839856,
+            "rank": "B",
+            "accuracy": 0.9051186017478152,
+            "pp": 28.4665,
+            "mods": [],
+            "combo": 213,
+            "created_at": "2026-10-09T10:08:27Z",
+            "beatmapset": {
+              "id": 1654195,
+              "title": "Suisei ni Nareta nara",
+              "cover": "https://assets.ppy.sh/beatmaps/1654195/covers/card.jpg?1679733611",
+              "stars": 3.83842
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7657820262,
+            "rank": "B",
+            "accuracy": 0.8690476190476191,
+            "pp": 23.1691,
+            "mods": [],
+            "combo": 401,
+            "created_at": "2026-10-09T10:03:28Z",
+            "beatmapset": {
+              "id": 914691,
+              "title": "MTC (Different Heaven Remix)",
+              "cover": "https://assets.ppy.sh/beatmaps/914691/covers/card.jpg?1631514780",
+              "stars": 3.52918
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7657805356,
+            "rank": "B",
+            "accuracy": 0.9064856711915535,
+            "pp": 55.0601,
+            "mods": [],
+            "combo": 121,
+            "created_at": "2026-10-09T09:59:39Z",
+            "beatmapset": {
+              "id": 2252460,
+              "title": "Suisei ni Nareta nara (Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2252460/covers/card.jpg?1745295283",
+              "stars": 4.40212
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7657794740,
+            "rank": "C",
+            "accuracy": 0.7768939393939394,
+            "pp": 29.94,
+            "mods": [],
+            "combo": 135,
+            "created_at": "2026-10-09T09:56:55Z",
+            "beatmapset": {
+              "id": 1846677,
+              "title": "Minimum",
+              "cover": "https://assets.ppy.sh/beatmaps/1846677/covers/card.jpg?1663608466",
+              "stars": 4.60742
+            }
+          },
+          {
+            "user": "azalhussam",
+            "user_id": 37635103,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7654839316,
+            "rank": "A",
+            "accuracy": 0.9432234432234432,
+            "pp": 75.888,
+            "mods": [],
+            "combo": 194,
+            "created_at": "2026-10-08T20:34:08Z",
+            "beatmapset": {
+              "id": 2556198,
+              "title": "Six Seven",
+              "cover": "https://assets.ppy.sh/beatmaps/2556198/covers/card.jpg?1780609844",
+              "stars": 4.52025
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "I Don't Know (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2479183/covers/card.jpg?1768172625",
         "unique_players": 17
       }
     }

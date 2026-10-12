@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 223,
-    "longest": 223,
-    "last_updated": "2026-10-10"
+    "current": 224,
+    "longest": 224,
+    "last_updated": "2026-10-11"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -67834,6 +67834,337 @@
         "title": "Honeypie",
         "cover": "https://assets.ppy.sh/beatmaps/1554080/covers/card.jpg?1631799038",
         "unique_players": 27
+      }
+    },
+    "2026-10-11": {
+      "total_scores": 668,
+      "peak_hour_baghdad": 20,
+      "top_grinder": {
+        "user": "0ilen",
+        "user_id": 25015591,
+        "count": 75,
+        "scores": [
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7668420478,
+            "rank": "S",
+            "accuracy": 0.9403444034440345,
+            "pp": 379.728,
+            "mods": [
+              "DT"
+            ],
+            "combo": 376,
+            "created_at": "2026-10-10T18:27:13Z",
+            "beatmapset": {
+              "id": 2475962,
+              "title": "HandClap (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2475962/covers/card.jpg?1784243645",
+              "stars": 5.14554
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7668396745,
+            "rank": "A",
+            "accuracy": 0.9458794587945879,
+            "pp": 312.259,
+            "mods": [
+              "DT"
+            ],
+            "combo": 233,
+            "created_at": "2026-10-10T18:23:50Z",
+            "beatmapset": {
+              "id": 2475962,
+              "title": "HandClap (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2475962/covers/card.jpg?1784243645",
+              "stars": 5.14554
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7668387673,
+            "rank": "B",
+            "accuracy": 0.9274292742927429,
+            "pp": 295.107,
+            "mods": [
+              "DT"
+            ],
+            "combo": 222,
+            "created_at": "2026-10-10T18:22:32Z",
+            "beatmapset": {
+              "id": 2475962,
+              "title": "HandClap (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2475962/covers/card.jpg?1784243645",
+              "stars": 5.14554
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7668367058,
+            "rank": "B",
+            "accuracy": 0.9249692496924969,
+            "pp": 324.193,
+            "mods": [
+              "DT"
+            ],
+            "combo": 224,
+            "created_at": "2026-10-10T18:19:33Z",
+            "beatmapset": {
+              "id": 2475962,
+              "title": "HandClap (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2475962/covers/card.jpg?1784243645",
+              "stars": 5.14554
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7668343116,
+            "rank": "A",
+            "accuracy": 0.9630996309963099,
+            "pp": 353.384,
+            "mods": [
+              "DT"
+            ],
+            "combo": 282,
+            "created_at": "2026-10-10T18:16:05Z",
+            "beatmapset": {
+              "id": 2475962,
+              "title": "HandClap (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2475962/covers/card.jpg?1784243645",
+              "stars": 5.14554
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7668334106,
+            "rank": "A",
+            "accuracy": 0.940959409594096,
+            "pp": 323.158,
+            "mods": [
+              "DT"
+            ],
+            "combo": 209,
+            "created_at": "2026-10-10T18:14:47Z",
+            "beatmapset": {
+              "id": 2475962,
+              "title": "HandClap (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2475962/covers/card.jpg?1784243645",
+              "stars": 5.14554
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7668326070,
+            "rank": "B",
+            "accuracy": 0.8831488314883149,
+            "pp": 245.416,
+            "mods": [
+              "DT"
+            ],
+            "combo": 248,
+            "created_at": "2026-10-10T18:13:38Z",
+            "beatmapset": {
+              "id": 2475962,
+              "title": "HandClap (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2475962/covers/card.jpg?1784243645",
+              "stars": 5.14554
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7668307575,
+            "rank": "B",
+            "accuracy": 0.853125,
+            "pp": 194.739,
+            "mods": [
+              "DT"
+            ],
+            "combo": 151,
+            "created_at": "2026-10-10T18:10:58Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.33228
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7668303410,
+            "rank": "B",
+            "accuracy": 0.8739583333333333,
+            "pp": 216.326,
+            "mods": [
+              "DT"
+            ],
+            "combo": 149,
+            "created_at": "2026-10-10T18:10:22Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.33228
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7668296787,
+            "rank": "C",
+            "accuracy": 0.8458333333333333,
+            "pp": 207.568,
+            "mods": [
+              "DT"
+            ],
+            "combo": 149,
+            "created_at": "2026-10-10T18:09:25Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.33228
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7668290342,
+            "rank": "B",
+            "accuracy": 0.8635416666666667,
+            "pp": 204.57,
+            "mods": [
+              "DT"
+            ],
+            "combo": 97,
+            "created_at": "2026-10-10T18:08:28Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.33228
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7668285598,
+            "rank": "B",
+            "accuracy": 0.88125,
+            "pp": 246.389,
+            "mods": [
+              "DT"
+            ],
+            "combo": 150,
+            "created_at": "2026-10-10T18:07:48Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.33228
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7668280005,
+            "rank": "C",
+            "accuracy": 0.8177083333333334,
+            "pp": 235.342,
+            "mods": [
+              "DT"
+            ],
+            "combo": 151,
+            "created_at": "2026-10-10T18:06:59Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.33228
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7668275720,
+            "rank": "C",
+            "accuracy": 0.7885416666666667,
+            "pp": 201.537,
+            "mods": [
+              "DT"
+            ],
+            "combo": 178,
+            "created_at": "2026-10-10T18:06:22Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.33228
+            }
+          },
+          {
+            "user": "0ilen",
+            "user_id": 25015591,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7668270713,
+            "rank": "B",
+            "accuracy": 0.8980891719745223,
+            "pp": 228.539,
+            "mods": [
+              "DT"
+            ],
+            "combo": 172,
+            "created_at": "2026-10-10T18:05:40Z",
+            "beatmapset": {
+              "id": 2513672,
+              "title": "GRIM (NIGHTCORE & CUT VER.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+              "stars": 5.25163
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "GRIM (NIGHTCORE & CUT VER.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
+        "unique_players": 25
       }
     }
   }

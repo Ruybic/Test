@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 224,
-    "longest": 224,
-    "last_updated": "2026-10-11"
+    "current": 225,
+    "longest": 225,
+    "last_updated": "2026-10-12"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -68165,6 +68165,307 @@
         "title": "GRIM (NIGHTCORE & CUT VER.)",
         "cover": "https://assets.ppy.sh/beatmaps/2513672/covers/card.jpg?1772985710",
         "unique_players": 25
+      }
+    },
+    "2026-10-12": {
+      "total_scores": 769,
+      "peak_hour_baghdad": 23,
+      "top_grinder": {
+        "user": "_noble_",
+        "user_id": 40631547,
+        "count": 67,
+        "scores": [
+          {
+            "user": "_noble_",
+            "user_id": 40631547,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7680017446,
+            "rank": "C",
+            "accuracy": 0.8518518518518519,
+            "pp": 33.5775,
+            "mods": [],
+            "combo": 208,
+            "created_at": "2026-10-12T11:42:52Z",
+            "beatmapset": {
+              "id": 332860,
+              "title": "Anata no Omimi ni Plug-In!",
+              "cover": "https://assets.ppy.sh/beatmaps/332860/covers/card.jpg?1650630931",
+              "stars": 3.85154
+            }
+          },
+          {
+            "user": "_noble_",
+            "user_id": 40631547,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7679997500,
+            "rank": "B",
+            "accuracy": 0.8723544973544973,
+            "pp": 32.8987,
+            "mods": [],
+            "combo": 128,
+            "created_at": "2026-10-12T11:38:11Z",
+            "beatmapset": {
+              "id": 332860,
+              "title": "Anata no Omimi ni Plug-In!",
+              "cover": "https://assets.ppy.sh/beatmaps/332860/covers/card.jpg?1650630931",
+              "stars": 3.85154
+            }
+          },
+          {
+            "user": "_noble_",
+            "user_id": 40631547,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7679985743,
+            "rank": "B",
+            "accuracy": 0.8664021164021164,
+            "pp": 33.8391,
+            "mods": [],
+            "combo": 234,
+            "created_at": "2026-10-12T11:35:24Z",
+            "beatmapset": {
+              "id": 332860,
+              "title": "Anata no Omimi ni Plug-In!",
+              "cover": "https://assets.ppy.sh/beatmaps/332860/covers/card.jpg?1650630931",
+              "stars": 3.85154
+            }
+          },
+          {
+            "user": "_noble_",
+            "user_id": 40631547,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7679978201,
+            "rank": "C",
+            "accuracy": 0.8392857142857143,
+            "pp": 22.5238,
+            "mods": [],
+            "combo": 186,
+            "created_at": "2026-10-12T11:33:37Z",
+            "beatmapset": {
+              "id": 332860,
+              "title": "Anata no Omimi ni Plug-In!",
+              "cover": "https://assets.ppy.sh/beatmaps/332860/covers/card.jpg?1650630931",
+              "stars": 3.85154
+            }
+          },
+          {
+            "user": "_noble_",
+            "user_id": 40631547,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7679960494,
+            "rank": "C",
+            "accuracy": 0.8505291005291006,
+            "pp": 32.119,
+            "mods": [],
+            "combo": 163,
+            "created_at": "2026-10-12T11:29:22Z",
+            "beatmapset": {
+              "id": 332860,
+              "title": "Anata no Omimi ni Plug-In!",
+              "cover": "https://assets.ppy.sh/beatmaps/332860/covers/card.jpg?1650630931",
+              "stars": 3.85154
+            }
+          },
+          {
+            "user": "_noble_",
+            "user_id": 40631547,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7679953265,
+            "rank": "B",
+            "accuracy": 0.8538359788359788,
+            "pp": 23.8146,
+            "mods": [],
+            "combo": 185,
+            "created_at": "2026-10-12T11:27:39Z",
+            "beatmapset": {
+              "id": 332860,
+              "title": "Anata no Omimi ni Plug-In!",
+              "cover": "https://assets.ppy.sh/beatmaps/332860/covers/card.jpg?1650630931",
+              "stars": 3.85154
+            }
+          },
+          {
+            "user": "_noble_",
+            "user_id": 40631547,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7679931403,
+            "rank": "B",
+            "accuracy": 0.8584656084656085,
+            "pp": 23.2779,
+            "mods": [],
+            "combo": 142,
+            "created_at": "2026-10-12T11:22:18Z",
+            "beatmapset": {
+              "id": 332860,
+              "title": "Anata no Omimi ni Plug-In!",
+              "cover": "https://assets.ppy.sh/beatmaps/332860/covers/card.jpg?1650630931",
+              "stars": 3.85154
+            }
+          },
+          {
+            "user": "_noble_",
+            "user_id": 40631547,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7679923351,
+            "rank": "B",
+            "accuracy": 0.8525132275132276,
+            "pp": 21.6196,
+            "mods": [],
+            "combo": 102,
+            "created_at": "2026-10-12T11:20:17Z",
+            "beatmapset": {
+              "id": 332860,
+              "title": "Anata no Omimi ni Plug-In!",
+              "cover": "https://assets.ppy.sh/beatmaps/332860/covers/card.jpg?1650630931",
+              "stars": 3.85154
+            }
+          },
+          {
+            "user": "_noble_",
+            "user_id": 40631547,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7679913973,
+            "rank": "B",
+            "accuracy": 0.8644179894179894,
+            "pp": 27.9015,
+            "mods": [],
+            "combo": 124,
+            "created_at": "2026-10-12T11:17:55Z",
+            "beatmapset": {
+              "id": 332860,
+              "title": "Anata no Omimi ni Plug-In!",
+              "cover": "https://assets.ppy.sh/beatmaps/332860/covers/card.jpg?1650630931",
+              "stars": 3.85154
+            }
+          },
+          {
+            "user": "_noble_",
+            "user_id": 40631547,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7679847406,
+            "rank": "D",
+            "accuracy": 0.6460942158616577,
+            "pp": 7.12778,
+            "mods": [],
+            "combo": 84,
+            "created_at": "2026-10-12T11:00:59Z",
+            "beatmapset": {
+              "id": 954272,
+              "title": "Kanzen Shouri*Esper Girl",
+              "cover": "https://assets.ppy.sh/beatmaps/954272/covers/card.jpg?1631512033",
+              "stars": 3.81466
+            }
+          },
+          {
+            "user": "_noble_",
+            "user_id": 40631547,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7679824694,
+            "rank": "C",
+            "accuracy": 0.8123689727463312,
+            "pp": 20.2888,
+            "mods": [],
+            "combo": 141,
+            "created_at": "2026-10-12T10:55:08Z",
+            "beatmapset": {
+              "id": 2494398,
+              "title": "Last Friday Night (T.G.I.F.) (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2494398/covers/card.jpg?1777897504",
+              "stars": 3.19014
+            }
+          },
+          {
+            "user": "_noble_",
+            "user_id": 40631547,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7679819089,
+            "rank": "B",
+            "accuracy": 0.8666666666666667,
+            "pp": 17.049,
+            "mods": [],
+            "combo": 145,
+            "created_at": "2026-10-12T10:53:41Z",
+            "beatmapset": {
+              "id": 2592578,
+              "title": "LEFT RIGHT",
+              "cover": "https://assets.ppy.sh/beatmaps/2592578/covers/card.jpg?1789988117",
+              "stars": 3.09247
+            }
+          },
+          {
+            "user": "_noble_",
+            "user_id": 40631547,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7679800726,
+            "rank": "B",
+            "accuracy": 0.8632958801498127,
+            "pp": 14.4408,
+            "mods": [],
+            "combo": 97,
+            "created_at": "2026-10-12T10:48:57Z",
+            "beatmapset": {
+              "id": 2510464,
+              "title": "MONTAGEM AMOUR DE MA VIE",
+              "cover": "https://assets.ppy.sh/beatmaps/2510464/covers/card.jpg?1781975720",
+              "stars": 3.21609
+            }
+          },
+          {
+            "user": "_noble_",
+            "user_id": 40631547,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7679793552,
+            "rank": "C",
+            "accuracy": 0.7444444444444445,
+            "pp": 20.9048,
+            "mods": [],
+            "combo": 94,
+            "created_at": "2026-10-12T10:47:06Z",
+            "beatmapset": {
+              "id": 2572861,
+              "title": "MONTAGEM BATCHI",
+              "cover": "https://assets.ppy.sh/beatmaps/2572861/covers/card.jpg?1786064954",
+              "stars": 3.58878
+            }
+          },
+          {
+            "user": "_noble_",
+            "user_id": 40631547,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7679788754,
+            "rank": "C",
+            "accuracy": 0.782608695652174,
+            "pp": 15.3368,
+            "mods": [],
+            "combo": 116,
+            "created_at": "2026-10-12T10:45:52Z",
+            "beatmapset": {
+              "id": 57984,
+              "title": "Poison (Nightcore Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/57984/covers/card.jpg?1622058508",
+              "stars": 3.4893
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Harumachi Clover (Swing Arrangement)",
+        "cover": "https://assets.ppy.sh/beatmaps/859783/covers/card.jpg?1650679901",
+        "unique_players": 42
       }
     }
   }

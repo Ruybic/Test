@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 225,
-    "longest": 225,
-    "last_updated": "2026-10-12"
+    "current": 226,
+    "longest": 226,
+    "last_updated": "2026-10-13"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -68466,6 +68466,312 @@
         "title": "Harumachi Clover (Swing Arrangement)",
         "cover": "https://assets.ppy.sh/beatmaps/859783/covers/card.jpg?1650679901",
         "unique_players": 42
+      }
+    },
+    "2026-10-13": {
+      "total_scores": 832,
+      "peak_hour_baghdad": 21,
+      "top_grinder": {
+        "user": "osaka00",
+        "user_id": 36473293,
+        "count": 78,
+        "scores": [
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7686149703,
+            "rank": "B",
+            "accuracy": 0.8022565579852473,
+            "pp": null,
+            "mods": [
+              "EZ",
+              "HT"
+            ],
+            "combo": 582,
+            "created_at": "2026-10-13T10:38:50Z",
+            "beatmapset": {
+              "id": 523735,
+              "title": "Scattered Faith",
+              "cover": "https://assets.ppy.sh/beatmaps/523735/covers/card.jpg?1622110353",
+              "stars": 6.73858
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7686051932,
+            "rank": "C",
+            "accuracy": 0.7586854460093897,
+            "pp": 0,
+            "mods": [],
+            "combo": 99,
+            "created_at": "2026-10-13T10:12:14Z",
+            "beatmapset": {
+              "id": 574811,
+              "title": "The Shortest Mashcore Ever",
+              "cover": "https://assets.ppy.sh/beatmaps/574811/covers/card.jpg?1622115427",
+              "stars": 3.25846
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7686031225,
+            "rank": "B",
+            "accuracy": 0.8907463694697737,
+            "pp": 12.3977,
+            "mods": [],
+            "combo": 112,
+            "created_at": "2026-10-13T10:06:27Z",
+            "beatmapset": {
+              "id": 385056,
+              "title": "Dragon Valley (Toni Leys Remix feat. Esteban Bellucci)",
+              "cover": "https://assets.ppy.sh/beatmaps/385056/covers/card.jpg?1622097121",
+              "stars": 2.10238
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7686013802,
+            "rank": "A",
+            "accuracy": 0.9197429587093245,
+            "pp": 73.9025,
+            "mods": [],
+            "combo": 273,
+            "created_at": "2026-10-13T10:01:31Z",
+            "beatmapset": {
+              "id": 2439051,
+              "title": "good bye",
+              "cover": "https://assets.ppy.sh/beatmaps/2439051/covers/card.jpg?1765389968",
+              "stars": 3.95276
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "mania",
+            "score_id": 7685942029,
+            "rank": "B",
+            "accuracy": 0.8103778096604496,
+            "pp": 0,
+            "mods": [],
+            "combo": 127,
+            "created_at": "2026-10-13T09:40:16Z",
+            "beatmapset": {
+              "id": 2412331,
+              "title": "Haiboku no Altra Vita",
+              "cover": "https://assets.ppy.sh/beatmaps/2412331/covers/card.jpg?1763107982",
+              "stars": 2.44712
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7683562773,
+            "rank": "D",
+            "accuracy": 0.550314465408805,
+            "pp": 26.4519,
+            "mods": [],
+            "combo": 86,
+            "created_at": "2026-10-12T21:32:40Z",
+            "beatmapset": {
+              "id": 2506744,
+              "title": "Thick of HiT (S8-10 Opening Mashup)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506744/covers/card.jpg?1777821017",
+              "stars": 4.01606
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7683547819,
+            "rank": "A",
+            "accuracy": 0.9175824175824175,
+            "pp": 26.0311,
+            "mods": [],
+            "combo": 140,
+            "created_at": "2026-10-12T21:29:39Z",
+            "beatmapset": {
+              "id": 2506744,
+              "title": "Thick of HiT (S8-10 Opening Mashup)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506744/covers/card.jpg?1777821017",
+              "stars": 3.07787
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7683543872,
+            "rank": "B",
+            "accuracy": 0.8717948717948718,
+            "pp": 20.7122,
+            "mods": [],
+            "combo": 85,
+            "created_at": "2026-10-12T21:28:52Z",
+            "beatmapset": {
+              "id": 2506744,
+              "title": "Thick of HiT (S8-10 Opening Mashup)",
+              "cover": "https://assets.ppy.sh/beatmaps/2506744/covers/card.jpg?1777821017",
+              "stars": 3.07787
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7683529639,
+            "rank": "C",
+            "accuracy": 0.7692307692307693,
+            "pp": 19.1488,
+            "mods": [],
+            "combo": 111,
+            "created_at": "2026-10-12T21:26:03Z",
+            "beatmapset": {
+              "id": 920459,
+              "title": "Within (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/920459/covers/card.jpg?1650675069",
+              "stars": 3.51639
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7683515047,
+            "rank": "D",
+            "accuracy": 0.47530864197530864,
+            "pp": 17.8296,
+            "mods": [],
+            "combo": 31,
+            "created_at": "2026-10-12T21:23:10Z",
+            "beatmapset": {
+              "id": 141,
+              "title": "Vivid",
+              "cover": "https://assets.ppy.sh/beatmaps/141/covers/card.jpg?1622018148",
+              "stars": 4.87504
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7683506518,
+            "rank": "D",
+            "accuracy": 0.575075075075075,
+            "pp": 20.7675,
+            "mods": [
+              "HR"
+            ],
+            "combo": 91,
+            "created_at": "2026-10-12T21:21:30Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 3.37893
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7683496923,
+            "rank": "S",
+            "accuracy": 0.933933933933934,
+            "pp": 36.2183,
+            "mods": [],
+            "combo": 175,
+            "created_at": "2026-10-12T21:19:36Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 3.37893
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7683492217,
+            "rank": "A",
+            "accuracy": 0.9219219219219219,
+            "pp": 34.9232,
+            "mods": [],
+            "combo": 175,
+            "created_at": "2026-10-12T21:18:41Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 3.37893
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7683488227,
+            "rank": "A",
+            "accuracy": 0.9219219219219219,
+            "pp": 34.9232,
+            "mods": [],
+            "combo": 175,
+            "created_at": "2026-10-12T21:17:54Z",
+            "beatmapset": {
+              "id": 2495916,
+              "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2495916/covers/card.jpg?1771958689",
+              "stars": 3.37893
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7683483190,
+            "rank": "C",
+            "accuracy": 0.7579288025889968,
+            "pp": 18.271,
+            "mods": [],
+            "combo": 219,
+            "created_at": "2026-10-12T21:16:55Z",
+            "beatmapset": {
+              "id": 452057,
+              "title": "Sendan Life",
+              "cover": "https://assets.ppy.sh/beatmaps/452057/covers/card.jpg?1706197584",
+              "stars": 4.05611
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "MONTAGEM BATCHI",
+        "cover": "https://assets.ppy.sh/beatmaps/2572861/covers/card.jpg?1786064954",
+        "unique_players": 23
       }
     }
   }

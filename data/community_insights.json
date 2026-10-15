@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 226,
-    "longest": 226,
-    "last_updated": "2026-10-13"
+    "current": 227,
+    "longest": 227,
+    "last_updated": "2026-10-14"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -68771,6 +68771,315 @@
       "most_played_map": {
         "title": "MONTAGEM BATCHI",
         "cover": "https://assets.ppy.sh/beatmaps/2572861/covers/card.jpg?1786064954",
+        "unique_players": 23
+      }
+    },
+    "2026-10-14": {
+      "total_scores": 612,
+      "peak_hour_baghdad": 19,
+      "top_grinder": {
+        "user": "osaka00",
+        "user_id": 36473293,
+        "count": 100,
+        "scores": [
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7690270755,
+            "rank": "C",
+            "accuracy": 0.821522309711286,
+            "pp": 18.5745,
+            "mods": [],
+            "combo": 194,
+            "created_at": "2026-10-13T23:16:14Z",
+            "beatmapset": {
+              "id": 2104327,
+              "title": "Brazil",
+              "cover": "https://assets.ppy.sh/beatmaps/2104327/covers/card.jpg?1704552605",
+              "stars": 3.24178
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7690267463,
+            "rank": "C",
+            "accuracy": 0.7862985685071575,
+            "pp": 23.1276,
+            "mods": [],
+            "combo": 134,
+            "created_at": "2026-10-13T23:15:21Z",
+            "beatmapset": {
+              "id": 115873,
+              "title": "BLOODY STREAM (TV Size)",
+              "cover": "https://assets.ppy.sh/beatmaps/115873/covers/card.jpg?1650618093",
+              "stars": 3.53281
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7690257699,
+            "rank": "C",
+            "accuracy": 0.7696078431372549,
+            "pp": 29.6865,
+            "mods": [],
+            "combo": 169,
+            "created_at": "2026-10-13T23:12:46Z",
+            "beatmapset": {
+              "id": 917345,
+              "title": "POP/STARS",
+              "cover": "https://assets.ppy.sh/beatmaps/917345/covers/card.jpg?1650674742",
+              "stars": 4.21415
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7690231477,
+            "rank": "C",
+            "accuracy": 0.8525179856115108,
+            "pp": 40.0699,
+            "mods": [],
+            "combo": 158,
+            "created_at": "2026-10-13T23:05:42Z",
+            "beatmapset": {
+              "id": 497769,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/497769/covers/card.jpg?1645785838",
+              "stars": 3.89464
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7690227825,
+            "rank": "B",
+            "accuracy": 0.8848920863309353,
+            "pp": 40.0802,
+            "mods": [],
+            "combo": 155,
+            "created_at": "2026-10-13T23:04:42Z",
+            "beatmapset": {
+              "id": 497769,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/497769/covers/card.jpg?1645785838",
+              "stars": 3.89464
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7690218213,
+            "rank": "B",
+            "accuracy": 0.8705035971223022,
+            "pp": 34.9557,
+            "mods": [],
+            "combo": 75,
+            "created_at": "2026-10-13T23:02:06Z",
+            "beatmapset": {
+              "id": 497769,
+              "title": "Granat",
+              "cover": "https://assets.ppy.sh/beatmaps/497769/covers/card.jpg?1645785838",
+              "stars": 3.89464
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7690212695,
+            "rank": "B",
+            "accuracy": 0.9175438596491228,
+            "pp": 31.7153,
+            "mods": [],
+            "combo": 190,
+            "created_at": "2026-10-13T23:00:38Z",
+            "beatmapset": {
+              "id": 873811,
+              "title": "quaver",
+              "cover": "https://assets.ppy.sh/beatmaps/873811/covers/card.jpg?1650672502",
+              "stars": 3.5582
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7690196078,
+            "rank": "C",
+            "accuracy": 0.7622309197651663,
+            "pp": 14.8654,
+            "mods": [],
+            "combo": 333,
+            "created_at": "2026-10-13T22:56:17Z",
+            "beatmapset": {
+              "id": 1889729,
+              "title": "Non-breath oblige",
+              "cover": "https://assets.ppy.sh/beatmaps/1889729/covers/card.jpg?1671759413",
+              "stars": 4.0596
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7690184128,
+            "rank": "D",
+            "accuracy": 0.6865828092243187,
+            "pp": 28.8398,
+            "mods": [
+              "HT"
+            ],
+            "combo": 71,
+            "created_at": "2026-10-13T22:53:14Z",
+            "beatmapset": {
+              "id": 2572861,
+              "title": "MONTAGEM BATCHI",
+              "cover": "https://assets.ppy.sh/beatmaps/2572861/covers/card.jpg?1786064954",
+              "stars": 5.343
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7690155345,
+            "rank": "C",
+            "accuracy": 0.8166666666666667,
+            "pp": 36.6383,
+            "mods": [],
+            "combo": 95,
+            "created_at": "2026-10-13T22:45:52Z",
+            "beatmapset": {
+              "id": 649373,
+              "title": "Harumachi Clover",
+              "cover": "https://assets.ppy.sh/beatmaps/649373/covers/card.jpg?1650653987",
+              "stars": 4.18217
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7690152380,
+            "rank": "C",
+            "accuracy": 0.7607260726072608,
+            "pp": 44.2792,
+            "mods": [],
+            "combo": 147,
+            "created_at": "2026-10-13T22:45:07Z",
+            "beatmapset": {
+              "id": 2463664,
+              "title": "hate the way you love me (nightcore & cut ver.)",
+              "cover": "https://assets.ppy.sh/beatmaps/2463664/covers/card.jpg?1767818786",
+              "stars": 4.44216
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7690146662,
+            "rank": "A",
+            "accuracy": 0.9126984126984127,
+            "pp": 18.9136,
+            "mods": [],
+            "combo": 131,
+            "created_at": "2026-10-13T22:43:39Z",
+            "beatmapset": {
+              "id": 600702,
+              "title": "Harumachi Clover",
+              "cover": "https://assets.ppy.sh/beatmaps/600702/covers/card.jpg?1650649403",
+              "stars": 2.85296
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7690141414,
+            "rank": "C",
+            "accuracy": 0.7123015873015873,
+            "pp": 29.4057,
+            "mods": [
+              "DT"
+            ],
+            "combo": 57,
+            "created_at": "2026-10-13T22:42:20Z",
+            "beatmapset": {
+              "id": 600702,
+              "title": "Harumachi Clover",
+              "cover": "https://assets.ppy.sh/beatmaps/600702/covers/card.jpg?1650649403",
+              "stars": 2.85296
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7690139104,
+            "rank": "C",
+            "accuracy": 0.7857142857142857,
+            "pp": 34.6938,
+            "mods": [
+              "DT"
+            ],
+            "combo": 64,
+            "created_at": "2026-10-13T22:41:42Z",
+            "beatmapset": {
+              "id": 600702,
+              "title": "Harumachi Clover",
+              "cover": "https://assets.ppy.sh/beatmaps/600702/covers/card.jpg?1650649403",
+              "stars": 2.85296
+            }
+          },
+          {
+            "user": "osaka00",
+            "user_id": 36473293,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7690137317,
+            "rank": "C",
+            "accuracy": 0.7817460317460317,
+            "pp": 34.4272,
+            "mods": [
+              "DT"
+            ],
+            "combo": 67,
+            "created_at": "2026-10-13T22:41:14Z",
+            "beatmapset": {
+              "id": 600702,
+              "title": "Harumachi Clover",
+              "cover": "https://assets.ppy.sh/beatmaps/600702/covers/card.jpg?1650649403",
+              "stars": 2.85296
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Miniministop Hitoyasumi no Uta[Mokuyoubi]Gakusei no Uta",
+        "cover": "https://assets.ppy.sh/beatmaps/705423/covers/card.jpg?1645788448",
         "unique_players": 23
       }
     }

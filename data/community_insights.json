@@ -1,8 +1,8 @@
 {
   "community_streak": {
-    "current": 227,
-    "longest": 227,
-    "last_updated": "2026-10-14"
+    "current": 228,
+    "longest": 228,
+    "last_updated": "2026-10-15"
   },
   "daily_stats": {
     "2026-02-26": {
@@ -69081,6 +69081,368 @@
         "title": "Miniministop Hitoyasumi no Uta[Mokuyoubi]Gakusei no Uta",
         "cover": "https://assets.ppy.sh/beatmaps/705423/covers/card.jpg?1645788448",
         "unique_players": 23
+      }
+    },
+    "2026-10-15": {
+      "total_scores": 746,
+      "peak_hour_baghdad": 17,
+      "top_grinder": {
+        "user": "ali_xtq",
+        "user_id": 40453734,
+        "count": 77,
+        "scores": [
+          {
+            "user": "ali_xtq",
+            "user_id": 40453734,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7695716786,
+            "rank": "B",
+            "accuracy": 0.921613394216134,
+            "pp": null,
+            "mods": [
+              "HR",
+              "FL",
+              "AP"
+            ],
+            "combo": 137,
+            "created_at": "2026-10-14T20:05:27Z",
+            "beatmapset": {
+              "id": 930316,
+              "title": "Con Calma feat. Snow",
+              "cover": "https://assets.ppy.sh/beatmaps/930316/covers/card.jpg?1573013306",
+              "stars": 1.92909
+            }
+          },
+          {
+            "user": "ali_xtq",
+            "user_id": 40453734,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7695693570,
+            "rank": "C",
+            "accuracy": 0.8379629629629629,
+            "pp": null,
+            "mods": [
+              "HR",
+              "FL",
+              "AP"
+            ],
+            "combo": 42,
+            "created_at": "2026-10-14T20:01:32Z",
+            "beatmapset": {
+              "id": 2481675,
+              "title": "I Can't Wait feat. GUMI",
+              "cover": "https://assets.ppy.sh/beatmaps/2481675/covers/card.jpg?1791306976",
+              "stars": 1.85113
+            }
+          },
+          {
+            "user": "ali_xtq",
+            "user_id": 40453734,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7695535670,
+            "rank": "C",
+            "accuracy": 0.8333333333333334,
+            "pp": null,
+            "mods": [
+              "HR",
+              "DT",
+              "FL",
+              "AP"
+            ],
+            "combo": 54,
+            "created_at": "2026-10-14T19:35:07Z",
+            "beatmapset": {
+              "id": 2481675,
+              "title": "I Can't Wait feat. GUMI",
+              "cover": "https://assets.ppy.sh/beatmaps/2481675/covers/card.jpg?1791306976",
+              "stars": 1.53626
+            }
+          },
+          {
+            "user": "ali_xtq",
+            "user_id": 40453734,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7695425783,
+            "rank": "C",
+            "accuracy": 0.7145061728395061,
+            "pp": null,
+            "mods": [
+              "HR",
+              "DT",
+              "FL"
+            ],
+            "combo": 79,
+            "created_at": "2026-10-14T19:16:56Z",
+            "beatmapset": {
+              "id": 2481675,
+              "title": "I Can't Wait feat. GUMI",
+              "cover": "https://assets.ppy.sh/beatmaps/2481675/covers/card.jpg?1791306976",
+              "stars": 1.85113
+            }
+          },
+          {
+            "user": "ali_xtq",
+            "user_id": 40453734,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7695404975,
+            "rank": "D",
+            "accuracy": 0.6940928270042194,
+            "pp": null,
+            "mods": [
+              "HR",
+              "DT",
+              "FL"
+            ],
+            "combo": 78,
+            "created_at": "2026-10-14T19:13:32Z",
+            "beatmapset": {
+              "id": 2481675,
+              "title": "I Can't Wait feat. GUMI",
+              "cover": "https://assets.ppy.sh/beatmaps/2481675/covers/card.jpg?1791306976",
+              "stars": 1.53626
+            }
+          },
+          {
+            "user": "ali_xtq",
+            "user_id": 40453734,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7695396250,
+            "rank": "C",
+            "accuracy": 0.7834645669291339,
+            "pp": null,
+            "mods": [
+              "HR",
+              "DT",
+              "FL"
+            ],
+            "combo": 169,
+            "created_at": "2026-10-14T19:12:07Z",
+            "beatmapset": {
+              "id": 60111,
+              "title": "dreamin dreamin",
+              "cover": "https://assets.ppy.sh/beatmaps/60111/covers/card.jpg?1650615603",
+              "stars": 1.49845
+            }
+          },
+          {
+            "user": "ali_xtq",
+            "user_id": 40453734,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7695385046,
+            "rank": "D",
+            "accuracy": 0.6631205673758865,
+            "pp": null,
+            "mods": [
+              "HR",
+              "DT",
+              "FL"
+            ],
+            "combo": 53,
+            "created_at": "2026-10-14T19:10:17Z",
+            "beatmapset": {
+              "id": 632128,
+              "title": "Haruka Kanata",
+              "cover": "https://assets.ppy.sh/beatmaps/632128/covers/card.jpg?1650654503",
+              "stars": 1.79812
+            }
+          },
+          {
+            "user": "ali_xtq",
+            "user_id": 40453734,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7695377665,
+            "rank": "C",
+            "accuracy": 0.8490740740740741,
+            "pp": null,
+            "mods": [
+              "HR",
+              "DT",
+              "FL"
+            ],
+            "combo": 129,
+            "created_at": "2026-10-14T19:09:04Z",
+            "beatmapset": {
+              "id": 2235601,
+              "title": "Temptation (feat. Rebecca) (Nightcore Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/2235601/covers/card.jpg?1749116184",
+              "stars": 1.71772
+            }
+          },
+          {
+            "user": "ali_xtq",
+            "user_id": 40453734,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7695361909,
+            "rank": "C",
+            "accuracy": 0.8343313373253493,
+            "pp": null,
+            "mods": [
+              "HR",
+              "DT",
+              "FL"
+            ],
+            "combo": 120,
+            "created_at": "2026-10-14T19:06:30Z",
+            "beatmapset": {
+              "id": 2352872,
+              "title": "Daidaidaidaidaikirai",
+              "cover": "https://assets.ppy.sh/beatmaps/2352872/covers/card.jpg?1747424683",
+              "stars": 1.64064
+            }
+          },
+          {
+            "user": "ali_xtq",
+            "user_id": 40453734,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7695348597,
+            "rank": "D",
+            "accuracy": 0.6397435897435897,
+            "pp": null,
+            "mods": [
+              "HR",
+              "DT",
+              "FL"
+            ],
+            "combo": 90,
+            "created_at": "2026-10-14T19:04:20Z",
+            "beatmapset": {
+              "id": 200374,
+              "title": "Don't Stop Push It Now (Nightcore Mix)",
+              "cover": "https://assets.ppy.sh/beatmaps/200374/covers/card.jpg?1650624010",
+              "stars": 1.69022
+            }
+          },
+          {
+            "user": "ali_xtq",
+            "user_id": 40453734,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7695331295,
+            "rank": "B",
+            "accuracy": 0.8101851851851852,
+            "pp": null,
+            "mods": [
+              "HR",
+              "DT",
+              "FL"
+            ],
+            "combo": 69,
+            "created_at": "2026-10-14T19:01:28Z",
+            "beatmapset": {
+              "id": 600702,
+              "title": "Harumachi Clover",
+              "cover": "https://assets.ppy.sh/beatmaps/600702/covers/card.jpg?1650649403",
+              "stars": 1.36483
+            }
+          },
+          {
+            "user": "ali_xtq",
+            "user_id": 40453734,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7695325604,
+            "rank": "C",
+            "accuracy": 0.8148148148148148,
+            "pp": null,
+            "mods": [
+              "HR",
+              "DT",
+              "FL"
+            ],
+            "combo": 58,
+            "created_at": "2026-10-14T19:00:32Z",
+            "beatmapset": {
+              "id": 600702,
+              "title": "Harumachi Clover",
+              "cover": "https://assets.ppy.sh/beatmaps/600702/covers/card.jpg?1650649403",
+              "stars": 1.36483
+            }
+          },
+          {
+            "user": "ali_xtq",
+            "user_id": 40453734,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7695318155,
+            "rank": "C",
+            "accuracy": 0.8194444444444444,
+            "pp": null,
+            "mods": [
+              "HR",
+              "DT",
+              "FL"
+            ],
+            "combo": 58,
+            "created_at": "2026-10-14T18:59:21Z",
+            "beatmapset": {
+              "id": 600702,
+              "title": "Harumachi Clover",
+              "cover": "https://assets.ppy.sh/beatmaps/600702/covers/card.jpg?1650649403",
+              "stars": 1.36483
+            }
+          },
+          {
+            "user": "ali_xtq",
+            "user_id": 40453734,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7695310101,
+            "rank": "C",
+            "accuracy": 0.7824074074074074,
+            "pp": null,
+            "mods": [
+              "HR",
+              "DT",
+              "FL"
+            ],
+            "combo": 40,
+            "created_at": "2026-10-14T18:58:04Z",
+            "beatmapset": {
+              "id": 600702,
+              "title": "Harumachi Clover",
+              "cover": "https://assets.ppy.sh/beatmaps/600702/covers/card.jpg?1650649403",
+              "stars": 1.36483
+            }
+          },
+          {
+            "user": "ali_xtq",
+            "user_id": 40453734,
+            "country": "IQ",
+            "mode": "osu",
+            "score_id": 7695303790,
+            "rank": "D",
+            "accuracy": 0.6461988304093568,
+            "pp": null,
+            "mods": [
+              "HR",
+              "DT",
+              "FL"
+            ],
+            "combo": 64,
+            "created_at": "2026-10-14T18:57:02Z",
+            "beatmapset": {
+              "id": 1888384,
+              "title": "am i a girl? am i a boy? do i really care? i'm hungry anyway",
+              "cover": "https://assets.ppy.sh/beatmaps/1888384/covers/card.jpg?1731529803",
+              "stars": 1.35064
+            }
+          }
+        ]
+      },
+      "most_played_map": {
+        "title": "Bubblegum Bitch (Nightcore & Cut Ver.)",
+        "cover": "https://assets.ppy.sh/beatmaps/2282704/covers/card.jpg?1756038849",
+        "unique_players": 22
       }
     }
   }
